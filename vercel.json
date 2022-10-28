@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "\http://img.zhufengpeixun.cn/(.*)",
+      "source": "\/imgApi/(.*)",
       "destination": "/api/proxy"
     }
   ]
