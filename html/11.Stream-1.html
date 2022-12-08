@@ -667,7 +667,7 @@ rs.on(&apos;close&apos;, function () {
 </code></pre><pre><code>let fs = require(&apos;fs&apos;);
 let EventEmitter = require(&apos;events&apos;);
 
-class WriteStream extends EventEmitter {
+class ReadStream extends EventEmitter {
     constructor(path, options) {
         super(path, options);
         this.path = path;

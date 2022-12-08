@@ -70,7 +70,7 @@ const downLoad = () => {
         path: `/${fileName}`,// 子路径
         method: 'GET',
       };
-      console.log(fileName,'--------------------')
+      console.log(fileName, '--------------------')
       const req = http.request(options, (res) => {
         let imgData = ''
         res.setEncoding("binary");
@@ -107,4 +107,65 @@ const downLoad = () => {
 }
 
 
-downLoad();
+test()
+function test() {
+  const file = imgList[1]
+  const fileName = path.basename(file);
+  let options;
+
+  options = {
+    hostname: 'img.zhufengpeixun.cn',// 这里别加http://，否则会出现ENOTFOUND错误
+    path: `/${fileName}`,// 子路径
+    method: 'GET',
+  };
+
+  function createRequest(fd) {
+    const req = http.request(options, (res) => {
+      let offset = 0
+      res.on('error', err => console.log(err, 'err'))
+      res.on('data', (chunk) => {
+        res.pause()
+        const l = chunk.length;
+        fs.write(fd, chunk, 0, l, offset, (err, written) => {
+          if (!err) {
+            offset += l;
+            res.resume()
+          }
+        })
+      })
+      console.log(res.pipe(fs.createWriteStream('./aaa.png')))
+
+
+      // res.on('data', (chunk) => {
+      //   imgData += chunk
+      //   console.log(chunk.toString())
+      // })
+
+      // res.on('end', () => {
+      //   fs.writeFile('aaa.txt', imgData, (err) => {
+      //     if (err) {
+      //       console.log("文件下载失败.");
+      //       // reject()
+      //     }
+      //     // resolve()
+      //     console.log("下载成功");
+      //   })
+      // })
+    })
+    req.end()
+
+  }
+  fs.open('./test.png', 'w', (err, fd) => {
+    if (err) return;
+    createRequest(fd)
+    // res.pipe(,'binary')
+  })
+  // console.dir(req,{depth:100})
+}
+
+
+// downLoad();
+
+
+
+
