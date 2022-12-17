@@ -3,8 +3,68 @@ console.log('theme')
 
 function main() {
     settingLoginFonSize()
+    toggleMenuState()
+
+    
 }
 main()
+
+function toggleMenuState(){
+   const  pageToc = document.querySelector('.page-toc')
+    // pageToc.style.transition  = '300ms';
+    pageToc.style.cssText += `
+        transition:300ms;
+        padding-top:40px;
+    `;
+    pageToc.innerHTML += `
+        <img src='/static/icon/toggle-left.png' id='toggleImg'/>
+    `
+    const imgEl = document.querySelector('#toggleImg')
+    
+    const setttingImgSrc = (darkImg,lightImg) => {
+        if(selectTheme.selectedIndex === 1){
+            toggleImg.src = `/static/icon/${lightImg}.png`
+        }else{
+            toggleImg.src = `/static/icon/${darkImg}.png`
+        }
+    }
+    if(imgEl){
+        imgEl.style.cssText = `
+            position:absolute;
+            z-index:1;
+            right:15px;
+            top:20px;
+            width:20px;
+            height:20px;
+            cursor:pointer;
+        `;
+        setttingImgSrc('toggle-left','fff_toggle-left');
+    }
+
+    const contentEl = document.querySelector('.content.markdown-body')
+    contentEl.style.transition = '300ms';
+    imgEl.onclick = function(){
+        console.log(this.src,'src')
+        if(this.getAttribute('src').indexOf('toggle-right.png') !== -1){
+            this.setAttribute('src','/static/icon/toggle-left.png')
+            setttingImgSrc('toggle-left','fff_toggle-left');
+            this.parentElement.style.width = '';
+            contentEl.style.marginLeft = ''
+        }else{
+            this.setAttribute('src','/static/icon/toggle-right.png')
+            setttingImgSrc('toggle-right','fff_toggle-right');
+            this.parentElement.style.width = `60px`;
+            contentEl.style.marginLeft = '60px';
+        }
+
+
+    }
+    
+
+
+}
+
+
 
 function settingLoginFonSize() {
     const logo = document.querySelector('.nav .logo')
@@ -12,14 +72,14 @@ function settingLoginFonSize() {
     logo.innerHTML += addThemeSelectList();
     bindEvent()
 
-    if (select.selectedIndex === 1) {
+    if (selectTheme.selectedIndex === 1) {
         darkTheme()
     } else {
         lightTheme()
     }
 }
 function bindEvent() {
-    select.onclick = function (e) {
+    selectTheme.onclick = function (e) {
         e.stopPropagation()
         const n = document.querySelector('.nav')
         setTimeout(() => {
@@ -27,14 +87,25 @@ function bindEvent() {
         }, 0)
         console.log(n)
     }
-    select.onchange = function (e) {
+    selectTheme.onchange = function (e) {
         const v = e.target.selectedIndex
         localStorage.setItem('$$_THEME_STYLE', v)
 
         if (v === 0) {
             lightTheme()
+            if(toggleImg.src.indexOf('toggle-left') !== -1){
+                toggleImg.src = '/static/icon/toggle-left.png'
+            }else{
+                toggleImg.src = '/static/icon/toggle-right.png'
+            }
+
         } else if (v === 1) {
             darkTheme()
+            if(toggleImg.src.indexOf('toggle-left') !== -1){
+                toggleImg.src = '/static/icon/fff_toggle-left.png'
+            }else{
+                toggleImg.src = '/static/icon/fff_toggle-right.png'
+            }
         }
     }
 }
@@ -94,7 +165,7 @@ function addThemeSelectList() {
         }
     }
     let html = `
-        <select id='select' style='background-color:#393939;'>
+        <select id='selectTheme' style='background-color:#393939;'>
             ${s}
         </select>
     `
