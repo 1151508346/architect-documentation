@@ -86,6 +86,7 @@ exports.copy = copy = () => {
   return src([
     "./static/img/*",
     "./static/zhufengImg/*",
+    "./static/icon/*",
   ],{
     base:'./'  // 用来保留原来的目录结构
   }).pipe(dest('dist'))
