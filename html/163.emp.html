@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li class="active"><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01.基础知识">1.基础知识</a><ul><li><a href="#t11.1 EMP">1.1 EMP</a></li><li><a href="#t21.2 Module Federation">1.2 Module Federation</a><ul><li><a href="#t31.2.1 动机">1.2.1 动机</a></li><li><a href="#t41.2.2 概念">1.2.2 概念</a></li><li><a href="#t51.2.3 配置参数">1.2.3 配置参数</a></li></ul></li><li><a href="#t61.3 webpack-chain">1.3 webpack-chain</a><ul><li><a href="#t71.3.1 use.js">1.3.1 use.js</a></li><li><a href="#t81.3.2 webpack-chain\index.js">1.3.2 webpack-chain\index.js</a></li><li><a href="#t91.3.3 ChainedMap.js">1.3.3 ChainedMap.js</a></li><li><a href="#t101.3.4 ChainedSet.js">1.3.4 ChainedSet.js</a></li><li><a href="#t111.3.5 Chainable.js">1.3.5 Chainable.js</a></li><li><a href="#t121.3.6 Output.js">1.3.6 Output.js</a></li></ul></li><li><a href="#t131.4 其它工具">1.4 其它工具</a></li></ul></li><li><a href="#t142.EMP2启动">2.EMP2启动</a></li><li><a href="#t153.实现init">3.实现init</a><ul><li><a href="#t163.1 安装依赖">3.1 安装依赖</a></li><li><a href="#t173.2 package.json">3.2 package.json</a></li><li><a href="#t183.3 bin\zmp6.js">3.3 bin\zmp6.js</a></li><li><a href="#t193.4 cli\index.js">3.4 cli\index.js</a></li><li><a href="#t203.5 cli\init.js">3.5 cli\init.js</a></li></ul></li><li><a href="#t214.实现dev">4.实现dev</a><ul><li><a href="#t224.1 bin\zmp6.js">4.1 bin\zmp6.js</a></li><li><a href="#t234.2 cli\dev.js">4.2 cli\dev.js</a></li><li><a href="#t244.3 config\index.js">4.3 config\index.js</a></li><li><a href="#t254.4 template\index.html">4.4 template\index.html</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01.基础知识">1.基础知识 <a href="#t01.基础知识"> # </a></h2>
+<h3 id="t11.1 EMP">1.1 EMP <a href="#t11.1 EMP"> # </a></h3>
+<ul>
+<li><a href="https://emp2.netlify.app/">emp2</a>是一个用于构建企业级微前端应用的框架。它允许您将大型前端应用程序分解为独立的、可独立开发、部署和维护的模块。这种模块化方法提高了可维护性和可扩展性，同时降低了开发复杂性</li>
+</ul>
+<h3 id="t21.2 Module Federation">1.2 Module Federation <a href="#t21.2 Module Federation"> # </a></h3>
+<h4 id="t31.2.1 动机">1.2.1 动机 <a href="#t31.2.1 动机"> # </a></h4>
+<ul>
+<li>Module Federation的动机是为了不同开发小组间共同开发一个或者多个应用</li>
+<li>应用将被划分为更小的应用块，一个应用块，可以是比如头部导航或者侧边栏的前端组件，也可以是数据获取逻辑的逻辑组件</li>
+<li>每个应用块由不同的组开发</li>
+<li>应用或应用块共享其他其他应用块或者库</li>
+</ul>
+<p><img src="https://img.zhufengpeixun.com/1608392171072" alt=""></p>
+<h4 id="t41.2.2 概念">1.2.2 概念 <a href="#t41.2.2 概念"> # </a></h4>
+<ul>
+<li>使用Module Federation时，每个应用块都是一个独立的构建，这些构建都将编译为容器</li>
+<li>容器可以被其他应用或者其他容器应用</li>
+<li>一个被引用的容器被称为remote, 引用者被称为host，remote暴露模块给host, host则可以使用这些暴露的模块，这些模块被成为remote模块</li>
+</ul>
+<p><img src="https://img.zhufengpeixun.com/1608722799323" alt=""></p>
+<h4 id="t51.2.3 配置参数">1.2.3 配置参数 <a href="#t51.2.3 配置参数"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">必传值，即输出的模块名，被远程引用时路径为${name}/${expose}</td>
+</tr>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">指定导出的 remoteEntry 文件的名称。这个文件包含了模块联邦的运行时和引导代码</td>
+</tr>
+<tr>
+<td style="text-align:left">remotes</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">定义其他应用程序的引用映射。这个参数是一个对象，键是别名，值是远程应用的 URL。当我们想在当前应用中引用其他应用的模块时，可以使用这个别名</td>
+</tr>
+<tr>
+<td style="text-align:left">exposes</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">定义当前应用要暴露给其他应用的模块。这个参数是一个对象，键是别名，值是模块的相对路径。别名将用于其他应用在引用该模块时</td>
+</tr>
+<tr>
+<td style="text-align:left">shared</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">定义哪些模块应该在应用程序之间共享。这个参数可以是一个数组，包含共享模块的名称，或者是一个对象，包含共享模块的名称及其配置选项。共享模块可以避免重复加载，从而减少应用的体积和加载时间</td>
+</tr>
+</tbody>
+</table>
+<h3 id="t61.3 webpack-chain">1.3 webpack-chain <a href="#t61.3 webpack-chain"> # </a></h3>
+<ul>
+<li><a href="https://github.com/neutrinojs/webpack-chain">webpack-chain</a>是一个用于创建和修改 Webpack 配置的 Node.js 库。它提供了一种直观的链式 API，允许您以可读的方式构建复杂的 Webpack 配置
+这个库的主要目的是让您可以通过链式方法调用轻松地对 Webpack 配置进行更改，而无需直接操作配置对象。这使得配置更加可读和易于维护。以下是 <code>webpack-chain</code> 的一些主要特性<ul>
+<li>链式 API：<code>webpack-chain</code> 使用了流行的链式 API 设计模式，允许您通过链式方法调用轻松地修改 Webpack 配置。这种设计模式提高了代码的可读性和维护性</li>
+<li>命名规则和插件：您可以为规则和插件分配名称，稍后可以轻松地修改它们。这可以帮助您组织和管理配置中的各个部分</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/webpackchain_1681039118173.png" alt=""></p>
+<h4 id="t71.3.1 use.js">1.3.1 use.js <a href="#t71.3.1 use.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-comment">// 导入 'webpack-chain' 模块，它是一个构造函数，用于创建配置 API</span>
+<span class="hljs-keyword">const</span> Config = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./webpack-chain'</span>);
+<span class="hljs-comment">// 实例化一个新的配置 API 对象</span>
+<span class="hljs-keyword">const</span> config = <span class="hljs-keyword">new</span> Config();
+<span class="hljs-comment">// 使用链式 API 修改配置</span>
+config
+    <span class="hljs-comment">// 添加一个入口点</span>
+    .entry(<span class="hljs-string">'index'</span>)
+    <span class="hljs-comment">// 为入口点添加文件路径</span>
+    .add(<span class="hljs-string">'src/index.js'</span>)
+    <span class="hljs-comment">// 结束对当前入口点的操作并返回 config 实例</span>
+    .end()
+    <span class="hljs-comment">// 修改输出设置</span>
+    .output
+    <span class="hljs-comment">// 设置输出目录</span>
+    .path(<span class="hljs-string">'dist'</span>)
+    <span class="hljs-comment">// 设置输出文件名</span>
+    .filename(<span class="hljs-string">'[name].bundle.js'</span>);
+<span class="hljs-comment">// 将配置转换为 webpack 可以使用的配置对象</span>
+<span class="hljs-keyword">const</span> options = config.toConfig();
+<span class="hljs-comment">// 打印配置对象</span>
+<span class="hljs-built_in">console</span>.log(options);
+
+<span class="hljs-comment">/**
+{
+  entry: { index: [ 'src/index.js' ] },
+  output: { path: 'dist', filename: '[name].bundle.js' }
+}
+ */</span>
+</code></pre>
+<h4 id="t81.3.2 webpack-chain\index.js">1.3.2 webpack-chain\index.js <a href="#t81.3.2 webpack-chain\index.js"> # </a></h4>
+<p>chain\webpack-chain\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> ChainedMap = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./ChainedMap'</span>);
+<span class="hljs-keyword">const</span> ChainedSet = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./ChainedSet'</span>);
+<span class="hljs-keyword">const</span> Output = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./Output'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Config</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ChainedMap</span> </span>{
+    <span class="hljs-keyword">constructor</span>(parent) {
+        <span class="hljs-keyword">super</span>(parent);
+        <span class="hljs-keyword">this</span>.entryPoints = <span class="hljs-keyword">new</span> ChainedMap(<span class="hljs-keyword">this</span>);
+        <span class="hljs-keyword">this</span>.output = <span class="hljs-keyword">new</span> Output(<span class="hljs-keyword">this</span>);
+    }
+    entry(name) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.entryPoints.getOrCompute(name, () =&gt; <span class="hljs-keyword">new</span> ChainedSet(<span class="hljs-keyword">this</span>));
+    }
+    toConfig() {
+        <span class="hljs-keyword">const</span> entryPoints = <span class="hljs-keyword">this</span>.entryPoints.entries();
+        <span class="hljs-keyword">return</span> {
+            <span class="hljs-attr">entry</span>: <span class="hljs-built_in">Object</span>.keys(entryPoints).reduce(
+                <span class="hljs-function">(<span class="hljs-params">acc, key</span>) =&gt;</span>
+                    <span class="hljs-built_in">Object</span>.assign(acc, { [key]: entryPoints[key].values() }),
+                {},
+            ),
+            <span class="hljs-attr">output</span>: <span class="hljs-keyword">this</span>.output.entries()
+        }
+    }
+}
+<span class="hljs-built_in">module</span>.exports = Config;
+</code></pre>
+<h4 id="t91.3.3 ChainedMap.js">1.3.3 ChainedMap.js <a href="#t91.3.3 ChainedMap.js"> # </a></h4>
+<p>chain\webpack-chain\ChainedMap.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Chainable = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./Chainable'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChainedMap</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Chainable</span> </span>{
+    <span class="hljs-keyword">constructor</span>(parent) {
+        <span class="hljs-keyword">super</span>(parent);
+        <span class="hljs-keyword">this</span>.store = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+    }
+    extend(methods) {
+        <span class="hljs-keyword">this</span>.shorthands = methods;
+        methods.forEach(<span class="hljs-function">(<span class="hljs-params">method</span>) =&gt;</span> {
+            <span class="hljs-keyword">this</span>[method] = <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> <span class="hljs-keyword">this</span>.set(method, value);
+        });
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+    getOrCompute(key, fn) {
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.has(key)) {
+            <span class="hljs-keyword">this</span>.set(key, fn());
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.get(key);
+    }
+    has(key) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.store.has(key);
+    }
+    <span class="hljs-keyword">set</span>(key, value) {
+        <span class="hljs-keyword">this</span>.store.set(key, value);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+    <span class="hljs-keyword">get</span>(key) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.store.get(key);
+    }
+    entries() {
+        <span class="hljs-keyword">const</span> entries = [...this.store].reduce(<span class="hljs-function">(<span class="hljs-params">acc, [key, value]</span>) =&gt;</span> {
+            acc[key] = value;
+            <span class="hljs-keyword">return</span> acc;
+        }, {});
+        <span class="hljs-keyword">return</span> entries;
+    }
+}
+<span class="hljs-built_in">module</span>.exports = ChainedMap
+</code></pre>
+<h4 id="t101.3.4 ChainedSet.js">1.3.4 ChainedSet.js <a href="#t101.3.4 ChainedSet.js"> # </a></h4>
+<p>chain\webpack-chain\ChainedSet.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Chainable = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./Chainable'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChainedSet</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Chainable</span> </span>{
+    <span class="hljs-keyword">constructor</span>(parent) {
+        <span class="hljs-keyword">super</span>(parent);
+        <span class="hljs-keyword">this</span>.store = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>();
+    }
+    add(value) {
+        <span class="hljs-keyword">this</span>.store.add(value);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+    values() {
+        <span class="hljs-keyword">return</span> [...this.store];
+    }
+}
+<span class="hljs-built_in">module</span>.exports = ChainedSet;
+</code></pre>
+<h4 id="t111.3.5 Chainable.js">1.3.5 Chainable.js <a href="#t111.3.5 Chainable.js"> # </a></h4>
+<p>chain\webpack-chain\Chainable.js</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Chainable</span> </span>{
+    <span class="hljs-keyword">constructor</span>(parent) {
+        <span class="hljs-keyword">this</span>.parent = parent;
+    }
+    end() {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.parent;
+    }
+};
+<span class="hljs-built_in">module</span>.exports = Chainable;
+</code></pre>
+<h4 id="t121.3.6 Output.js">1.3.6 Output.js <a href="#t121.3.6 Output.js"> # </a></h4>
+<p>chain\webpack-chain\Output.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> ChainedMap = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./ChainedMap'</span>);
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ChainedMap</span> </span>{
+    <span class="hljs-keyword">constructor</span>(parent) {
+        <span class="hljs-keyword">super</span>(parent);
+        <span class="hljs-keyword">this</span>.extend([
+            <span class="hljs-string">'path'</span>,
+            <span class="hljs-string">'filename'</span>
+        ]);
+    }
+};
+</code></pre>
+<h3 id="t131.4 其它工具">1.4 其它工具 <a href="#t131.4 其它工具"> # </a></h3>
+<ul>
+<li>@babel/core: Babel的核心编译器，用于将ES6+代码转换为向后兼容的JavaScript版本</li>
+<li>@babel/preset-env: Babel预设，根据目标环境自动确定需要的Babel插件和polyfills</li>
+<li>@babel/preset-react: Babel预设，用于转换React JSX语法为普通的JavaScript</li>
+<li>babel-loader: Webpack加载器，允许使用Babel和Webpack一起转换JavaScript文件</li>
+<li>commander: 一个功能强大的命令行界面库，用于创建Node.js命令行应用</li>
+<li>fs-extra: 一个扩展了Node.js内置fs模块的库，提供额外的文件系统相关功能</li>
+<li>git-promise: 一个用于在Node.js中处理Git命令的简单Promise封装库</li>
+<li>html-webpack-plugin: 一个Webpack插件，用于简化HTML文件的创建，以便为你的bundle提供服务</li>
+<li>inquirer: 一个交互式命令行用户界面的集合，用于在Node.js中创建自定义的命令行界面</li>
+<li>nanospinner: 一个轻量级的命令行spinner库，用于在命令行中显示加载进度</li>
+<li>webpack: 一个用于现代JavaScript应用程序的静态模块打包工具</li>
+<li>webpack-chain: 一个流畅的API，用于编程地配置Webpack</li>
+<li>webpack-cli: Webpack的命令行工具，用于在命令行中运行Webpack</li>
+<li>webpack-dev-server: 一个开发服务器，使用热模块替换（HMR）提供实时重新加载功能</li>
+<li>axios: 一个基于Promise的HTTP客户端库，用于浏览器和Node.js中进行AJAX请求</li>
+</ul>
+<h2 id="t142.EMP2启动">2.EMP2启动 <a href="#t142.EMP2启动"> # </a></h2>
+<pre><code class="lang-js">npm i -g @efox/emp
+emp init -d https:<span class="hljs-comment">//static.zhufengpeixun.com/template_1680930323773.json</span>
+emp dev
+</code></pre>
+<h2 id="t153.实现init">3.实现init <a href="#t153.实现init"> # </a></h2>
+<h3 id="t163.1 安装依赖">3.1 安装依赖 <a href="#t163.1 安装依赖"> # </a></h3>
+<pre><code class="lang-js">npm install @babel/core @babel/preset-env @babel/preset-react babel-loader commander fs-extra git-promise html-webpack-plugin inquirer nanospinner webpack webpack-chain webpack-cli webpack-dev-server axios --save
+</code></pre>
+<h3 id="t173.2 package.json">3.2 package.json <a href="#t173.2 package.json"> # </a></h3>
+<p>package.json</p>
+<pre><code class="lang-json">{
+    <span class="hljs-attr">"bin"</span>: {
+        <span class="hljs-attr">"zmp6"</span>: <span class="hljs-string">"./bin/zmp6.js"</span>
+    }
+}
+</code></pre>
+<h3 id="t183.3 bin\zmp6.js">3.3 bin\zmp6.js <a href="#t183.3 bin\zmp6.js"> # </a></h3>
+<p>bin\zmp6.js</p>
+<pre><code class="lang-js"><span class="hljs-comment">// 声明一个 Node.js 脚本，并指定使用的解释器</span>
+<span class="hljs-meta">#!/usr/bin/env node</span>
+<span class="hljs-comment">// 引入 commander 库，用于处理命令行参数和选项</span>
+<span class="hljs-keyword">const</span> program = <span class="hljs-built_in">require</span>(<span class="hljs-string">'commander'</span>);
+<span class="hljs-comment">// 引入 package.json 文件，以获取版本号等信息</span>
+<span class="hljs-keyword">const</span> pkg = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../package.json'</span>);
+<span class="hljs-comment">// 引入自定义的 CLI 模块</span>
+<span class="hljs-keyword">const</span> cli = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../cli'</span>);
+<span class="hljs-comment">// 设置版本号，并添加一个用于显示版本号的选项</span>
+program.version(pkg.version, <span class="hljs-string">'-v, --version'</span>).usage(<span class="hljs-string">'&lt;command&gt; [options]'</span>);
+<span class="hljs-comment">// 添加 init 命令，用于初始化项目</span>
+program.command(<span class="hljs-string">'init'</span>)
+    .description(<span class="hljs-string">'初始化项目'</span>)
+    .option(<span class="hljs-string">'-d, --data [data]'</span>, <span class="hljs-string">'JSON数据 http地址或者文件路径相对、绝对路径'</span>)
+    .action(<span class="hljs-function">(<span class="hljs-params">options</span>) =&gt;</span> {
+        cli.exec(<span class="hljs-string">'init'</span>, options);
+    });
+<span class="hljs-comment">// 添加 dev 命令，用于启动开发服务器</span>
+program.command(<span class="hljs-string">'dev'</span>)
+    .description(<span class="hljs-string">'Dev Server'</span>)
+    .action(<span class="hljs-keyword">async</span> (options) =&gt; {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'dev'</span>, options);
+    });
+<span class="hljs-comment">// 解析命令行参数</span>
+program.parse(process.argv);
+</code></pre>
+<h3 id="t193.4 cli\index.js">3.4 cli\index.js <a href="#t193.4 cli\index.js"> # </a></h3>
+<p>cli\index.js</p>
+<pre><code class="lang-js"><span class="hljs-comment">// 定义一个名为 ZMPScript 的类</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ZMPScript</span> </span>{
+    <span class="hljs-comment">// 定义一个名为 exec 的异步方法，接受两个参数：name 和 options</span>
+    <span class="hljs-keyword">async</span> exec(name, options) {
+        <span class="hljs-comment">// 使用 require 动态加载指定名称的模块（文件），并调用其 setup 方法，传递 options 参数</span>
+        <span class="hljs-keyword">await</span> <span class="hljs-built_in">require</span>(<span class="hljs-string">`./<span class="hljs-subst">${name}</span>`</span>).setup(options);
+    }
+}
+<span class="hljs-comment">// 创建一个 ZMPScript 类的实例，并导出该实例</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">new</span> ZMPScript();
+</code></pre>
+<h3 id="t203.5 cli\init.js">3.5 cli\init.js <a href="#t203.5 cli\init.js"> # </a></h3>
+<p>cli\init.js</p>
+<pre><code class="lang-js"><span class="hljs-comment">// 导入依赖模块</span>
+<span class="hljs-keyword">const</span> { createSpinner } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nanospinner'</span>);
+<span class="hljs-keyword">const</span> git = <span class="hljs-built_in">require</span>(<span class="hljs-string">'git-promise'</span>);
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs-extra'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> axios = <span class="hljs-built_in">require</span>(<span class="hljs-string">'axios'</span>);
+
+<span class="hljs-comment">// 定义项目模板的URL</span>
+<span class="hljs-keyword">const</span> templates = {
+    <span class="hljs-string">'remote'</span>: <span class="hljs-string">`https://gitee.com/zhufengpeixun/remote.git`</span>,
+    <span class="hljs-string">'host'</span>: <span class="hljs-string">`https://gitee.com/zhufengpeixun/host.git`</span>,
+};
+
+<span class="hljs-comment">// 定义 Init 类</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Init</span> </span>{
+    templates = templates
+    <span class="hljs-comment">// 检查传入的URL是否是HTTP地址，并返回数据</span>
+    <span class="hljs-keyword">async</span> checkData(url) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/^http(s)?:\/\/.+/</span>.test(url)) {
+            <span class="hljs-keyword">const</span> { data } = <span class="hljs-keyword">await</span> axios.get(url);
+            <span class="hljs-keyword">return</span> data;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">const</span> filepath = path.join(process.cwd(), url);
+            <span class="hljs-keyword">this</span>.templates = <span class="hljs-built_in">require</span>(filepath);
+        }
+    }
+    <span class="hljs-comment">// 设置模板</span>
+    <span class="hljs-keyword">async</span> setup(options) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> options.data === <span class="hljs-string">'string'</span>) {
+            <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.checkData(options.data);
+            <span class="hljs-keyword">if</span> (data) {
+                <span class="hljs-keyword">this</span>.templates = data;
+            }
+        }
+        <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.selectTemplate();
+    }
+    <span class="hljs-comment">// 选择模板</span>
+    <span class="hljs-keyword">async</span> selectTemplate() {
+        <span class="hljs-keyword">const</span> inquirer = <span class="hljs-keyword">await</span> (<span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'inquirer'</span>)).default;
+        <span class="hljs-keyword">let</span> answers = <span class="hljs-keyword">await</span> inquirer.prompt([{
+            <span class="hljs-attr">type</span>: <span class="hljs-string">'input'</span>,
+            <span class="hljs-attr">name</span>: <span class="hljs-string">'name'</span>,
+            <span class="hljs-attr">message</span>: <span class="hljs-string">'请输入项目名:'</span>,
+            <span class="hljs-attr">default</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">return</span> <span class="hljs-string">'zmp-project'</span>;
+            }
+        }, {
+            <span class="hljs-attr">type</span>: <span class="hljs-string">'list'</span>,
+            <span class="hljs-attr">name</span>: <span class="hljs-string">'template'</span>,
+            <span class="hljs-attr">message</span>: <span class="hljs-string">'请选择模板:'</span>,
+            <span class="hljs-attr">choices</span>: <span class="hljs-built_in">Object</span>.keys(<span class="hljs-keyword">this</span>.templates)
+        }]);
+        <span class="hljs-keyword">let</span> downLoadUrl = <span class="hljs-keyword">this</span>.templates[answers.template];
+        <span class="hljs-keyword">const</span> downLoadName = answers.name;
+        <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.downloadRepo(downLoadUrl, downLoadName);
+    }
+    <span class="hljs-comment">// 下载仓库</span>
+    <span class="hljs-keyword">async</span> downloadRepo(repoPath, localPath) {
+        <span class="hljs-keyword">const</span> spinner = createSpinner().start();
+        spinner.start({ <span class="hljs-attr">text</span>: <span class="hljs-string">`[downloading]\n`</span> });
+        <span class="hljs-keyword">await</span> git(<span class="hljs-string">`clone <span class="hljs-subst">${repoPath}</span> ./<span class="hljs-subst">${localPath}</span>`</span>);
+        fs.removeSync(<span class="hljs-string">`./<span class="hljs-subst">${localPath}</span>/.git`</span>);
+        spinner.success({
+            <span class="hljs-attr">text</span>: <span class="hljs-string">` cd <span class="hljs-subst">${localPath}</span> &amp;&amp; npm i &amp;&amp; npm run dev`</span>
+        });
+    }
+}
+<span class="hljs-comment">// 导出 Init 类的实例</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">new</span> Init();
+</code></pre>
+<h2 id="t214.实现dev">4.实现dev <a href="#t214.实现dev"> # </a></h2>
+<h3 id="t224.1 bin\zmp6.js">4.1 bin\zmp6.js <a href="#t224.1 bin\zmp6.js"> # </a></h3>
+<p>bin\zmp6.js</p>
+<pre><code class="lang-diff">#!/usr/bin/env node
+const program = require('commander');
+const pkg = require('../package.json');
+const cli = require('../cli');
+program.version(pkg.version, '-v, --version').usage('&lt;command&gt; [options]');
+program.command('init')
+    .description('初始化项目')
+    .option('-d, --data [data]', 'JSON数据 http地址或者文件路径相对、绝对路径')
+    .action((options) =&gt; {
+        cli.exec('init', options);
+    });
+program.command('dev')
+    .description('Dev Server')
+    .action(async (options) =&gt; {
+<span class="hljs-addition">+        cli.exec('dev',options);</span>
+    });
+program.parse(process.argv);
+</code></pre>
+<h3 id="t234.2 cli\dev.js">4.2 cli\dev.js <a href="#t234.2 cli\dev.js"> # </a></h3>
+<p>cli\dev.js</p>
+<pre><code class="lang-js"><span class="hljs-comment">// 引入 webpack-dev-server 模块</span>
+<span class="hljs-keyword">const</span> WebpackDevServer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack-dev-server'</span>); 
+<span class="hljs-comment">// 引入 webpack 模块</span>
+<span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>); 
+ <span class="hljs-comment">// 引入 getConfig 方法，用于获取 webpack 配置</span>
+<span class="hljs-keyword">const</span> { getConfig } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../config'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">devServer</span> </span>{
+    <span class="hljs-comment">// 定义异步的 setup 方法</span>
+  <span class="hljs-keyword">async</span> setup() { 
+        <span class="hljs-comment">// 调用 setServer 方法来设置服务器</span>
+    <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.setServer();
+  }
+    <span class="hljs-comment">// 定义异步的 setServer 方法</span>
+  <span class="hljs-keyword">async</span> setServer() { 
+        <span class="hljs-comment">// 通过 getConfig 方法获取 webpack 配置</span>
+    <span class="hljs-keyword">const</span> config = getConfig(); 
+        <span class="hljs-comment">// 使用 webpack 函数创建一个编译器实例</span>
+    <span class="hljs-keyword">const</span> compiler = webpack(config); 
+        <span class="hljs-comment">// 创建一个新的 webpack-dev-server 实例，传入 devServer 配置和编译器实例</span>
+    <span class="hljs-keyword">this</span>.server = <span class="hljs-keyword">new</span> WebpackDevServer(config.devServer, compiler); 
+        <span class="hljs-comment">// 启动 webpack-dev-server</span>
+    <span class="hljs-keyword">this</span>.server.start(); 
+  }
+}
+<span class="hljs-comment">// 导出 devServer 类的一个实例</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">new</span> devServer(); 
+</code></pre>
+<h3 id="t244.3 config\index.js">4.3 config\index.js <a href="#t244.3 config\index.js"> # </a></h3>
+<p>config\index.js</p>
+<pre><code class="lang-js"><span class="hljs-comment">// 引入 path、webpack 和 WebpackChain 模块</span>
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>);
+<span class="hljs-keyword">const</span> WebpackChain = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack-chain'</span>);
+<span class="hljs-comment">// 导出 defineConfig 函数，接收一个配置对象并返回它</span>
+exports.defineConfig = <span class="hljs-function">(<span class="hljs-params">config</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> config;
+}
+<span class="hljs-comment">// 导出 getConfig 函数，返回经过处理后的 webpack 配置对象</span>
+exports.getConfig = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-comment">// 创建一个 webpack-chain 实例</span>
+    <span class="hljs-keyword">const</span> webpackChain = <span class="hljs-keyword">new</span> WebpackChain();
+    <span class="hljs-comment">// 解析 emp-config.js 配置文件，并获取其导出值</span>
+    <span class="hljs-keyword">const</span> configPath = path.resolve(process.cwd(), <span class="hljs-string">'emp-config.js'</span>);
+    <span class="hljs-keyword">const</span> configExport = <span class="hljs-built_in">require</span>(configPath);
+    <span class="hljs-comment">// 对默认配置进行处理，如将 server 属性提取到 devServer 属性中</span>
+    <span class="hljs-keyword">const</span> config = processDefault(configExport);
+    <span class="hljs-comment">// 将处理后的配置与 webpack-chain 实例合并</span>
+    webpackChain.merge(config);
+    <span class="hljs-comment">// 将合并后的 webpack-chain 实例转换成 webpack 配置对象并返回</span>
+    <span class="hljs-keyword">return</span> webpackChain.toConfig();
+}
+<span class="hljs-comment">// 处理默认配置的函数，返回处理后的配置对象</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">processDefault</span>(<span class="hljs-params">configExport</span>) </span>{
+    <span class="hljs-comment">// 将 server 属性提取到 devServer 属性中</span>
+    <span class="hljs-keyword">const</span> devServer = configExport.server || {};
+    <span class="hljs-keyword">delete</span> configExport.server;
+    <span class="hljs-comment">// 将 empShare 属性的值作为 mfOptions 的一部分，并将 empShare 属性删除</span>
+    <span class="hljs-keyword">const</span> mfOptions = {
+        <span class="hljs-attr">filename</span>: <span class="hljs-string">"emp.js"</span>,
+        ...configExport.empShare
+    }
+    <span class="hljs-keyword">delete</span> configExport.empShare;
+    <span class="hljs-comment">// 返回处理后的配置对象</span>
+    <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">context</span>: process.cwd(),
+        <span class="hljs-attr">mode</span>: <span class="hljs-string">'development'</span>,
+        <span class="hljs-attr">devtool</span>: <span class="hljs-literal">false</span>,
+        devServer,
+        <span class="hljs-attr">plugin</span>: {
+            <span class="hljs-attr">html</span>: {
+                <span class="hljs-attr">plugin</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">'html-webpack-plugin'</span>),
+                <span class="hljs-attr">args</span>: [{
+                    <span class="hljs-attr">template</span>: path.join(__dirname, <span class="hljs-string">'../template/index.html'</span>)
+                }]
+            },
+            <span class="hljs-attr">mf</span>: {
+                <span class="hljs-attr">plugin</span>: webpack.container.ModuleFederationPlugin,
+                <span class="hljs-attr">args</span>: [mfOptions]
+            }
+        },
+        <span class="hljs-attr">module</span>: {
+            <span class="hljs-attr">rule</span>: {
+                <span class="hljs-attr">compile</span>: {
+                    <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.js$/</span>,
+                    <span class="hljs-attr">exclude</span>: [<span class="hljs-regexp">/node_modules/</span>],
+                    <span class="hljs-attr">use</span>: {
+                        <span class="hljs-string">'babel-loader'</span>: {
+                            <span class="hljs-attr">loader</span>: <span class="hljs-built_in">require</span>.resolve(<span class="hljs-string">'babel-loader'</span>),
+                            <span class="hljs-attr">options</span>: {
+                                <span class="hljs-attr">presets</span>: [
+                                    <span class="hljs-built_in">require</span>.resolve(<span class="hljs-string">'@babel/preset-env'</span>),
+                                    <span class="hljs-built_in">require</span>.resolve(<span class="hljs-string">'@babel/preset-react'</span>)
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        ...configExport,
+    }
+}
+</code></pre>
+<h3 id="t254.4 template\index.html">4.4 template\index.html <a href="#t254.4 template\index.html"> # </a></h3>
+<p>template\index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"emp-root"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

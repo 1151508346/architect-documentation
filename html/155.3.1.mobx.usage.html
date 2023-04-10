@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li class="active"><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01.课程大纲">1.课程大纲</a><ul><li><a href="#t11.1 mobx实战篇">1.1 mobx实战篇</a></li><li><a href="#t21.2 mobx源码篇">1.2 mobx源码篇</a></li></ul></li><li><a href="#t32.Mobx">2.Mobx</a><ul><li><a href="#t42.1 安装">2.1 安装</a></li><li><a href="#t52.2 vite.config.ts">2.2 vite.config.ts</a></li><li><a href="#t62.3 jsconfig.json">2.3 jsconfig.json</a></li><li><a href="#t72.4 src\main.tsx">2.4 src\main.tsx</a></li></ul></li><li><a href="#t83.mobx">3.mobx</a><ul><li><a href="#t93.1 创建可观察对象">3.1 创建可观察对象</a></li><li><a href="#t103.2 observable">3.2 observable</a></li><li><a href="#t113.3 reactions">3.3 reactions</a></li><li><a href="#t123.4 Autorun">3.4 Autorun</a></li><li><a href="#t133.5 makeObservable">3.5 makeObservable</a></li><li><a href="#t143.6 computed">3.6 computed</a></li><li><a href="#t153.7 action">3.7 action</a></li><li><a href="#t163.8 flow">3.8 flow</a></li><li><a href="#t173.9 bound">3.9 bound</a></li><li><a href="#t183.10 makeAutoObservable">3.10 makeAutoObservable</a></li><li><a href="#t193.11 Reaction">3.11 Reaction</a></li><li><a href="#t203.12 When">3.12 When</a></li><li><a href="#t213.13 runInAction">3.13 runInAction</a></li></ul></li><li><a href="#t224.mobx-react">4.mobx-react</a><ul><li><a href="#t234.1 observer">4.1 observer</a><ul><li><a href="#t244.1.1 main.jsx">4.1.1 main.jsx</a></li><li><a href="#t254.1.2 observer">4.1.2 observer</a></li></ul></li><li><a href="#t264.2 observer class">4.2 observer class</a><ul><li><a href="#t274.2.1 Counter.jsx">4.2.1 Counter.jsx</a></li></ul></li><li><a href="#t284.3 Observer">4.3 Observer</a><ul><li><a href="#t294.3.1 Counter.jsx">4.3.1 Counter.jsx</a></li></ul></li><li><a href="#t304.4 useObserver">4.4 useObserver</a><ul><li><a href="#t314.4.1 Counter.jsx">4.4.1 Counter.jsx</a></li></ul></li><li><a href="#t324.5 useLocalObservable">4.5 useLocalObservable</a><ul><li><a href="#t334.5.1 Counter.jsx">4.5.1 Counter.jsx</a></li></ul></li><li><a href="#t344.6 todos">4.6 todos</a><ul><li><a href="#t354.6.1 main.jsx">4.6.1 main.jsx</a></li><li><a href="#t364.6.2 App.jsx">4.6.2 App.jsx</a></li><li><a href="#t374.6.3 context.jsx">4.6.3 context.jsx</a></li><li><a href="#t384.6.4 User.jsx">4.6.4 User.jsx</a></li><li><a href="#t394.6.5 Todos.jsx">4.6.5 Todos.jsx</a></li><li><a href="#t404.6.6 user\index.jsx">4.6.6 user\index.jsx</a></li><li><a href="#t414.6.7  todos\index.jsx">4.6.7  todos\index.jsx</a></li><li><a href="#t424.6.8 todo.jsx">4.6.8 todo.jsx</a></li><li><a href="#t434.6.9 store\index.jsx">4.6.9 store\index.jsx</a></li></ul></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01.课程大纲">1.课程大纲 <a href="#t01.课程大纲"> # </a></h2>
+<h3 id="t11.1 mobx实战篇">1.1 mobx实战篇 <a href="#t11.1 mobx实战篇"> # </a></h3>
+<ul>
+<li>observable、makeObservable、makeAutoObservable</li>
+<li>Autorun、computed、action、flow、bound、Reaction、When、runInAction</li>
+<li>mobx+mobx-react综合案例</li>
+</ul>
+<h3 id="t21.2 mobx源码篇">1.2 mobx源码篇 <a href="#t21.2 mobx源码篇"> # </a></h3>
+<ul>
+<li>实现observable、reaction、autorun、action</li>
+<li>实现observer、useObserver、Observer、useLocalObservable</li>
+</ul>
+<h2 id="t32.Mobx">2.Mobx <a href="#t32.Mobx"> # </a></h2>
+<ul>
+<li><a href="https://mobx.js.org/README.html">mobx</a></li>
+<li><a href="https://zh.mobx.js.org/README.html">中文</a></li>
+<li>任何可以从应用状态中派生出来的值都应该被自动派生出来</li>
+<li>MobX 是一个身经百战的库，它通过运用透明的函数式响应编程使状态管理变得简单和可扩展</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/zhflow_1659261254516.png" alt=""></p>
+<h3 id="t42.1 安装">2.1 安装 <a href="#t42.1 安装"> # </a></h3>
+<pre><code class="lang-js">pnpm create vite
+pnpm install @babel/core @babel/plugin-proposal-decorators @babel/plugin-proposal-<span class="hljs-class"><span class="hljs-keyword">class</span>-<span class="hljs-title">properties</span>
+<span class="hljs-title">pnpm</span> <span class="hljs-title">install</span> <span class="hljs-title">mobx</span> <span class="hljs-title">mobx</span>-<span class="hljs-title">react</span>
+</span></code></pre>
+<h3 id="t52.2 vite.config.ts">2.2 vite.config.ts <a href="#t52.2 vite.config.ts"> # </a></h3>
+<p>vite.config.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>
+<span class="hljs-keyword">import</span> react <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-react'</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({
+  <span class="hljs-attr">plugins</span>: [react({
+    <span class="hljs-attr">babel</span>: {
+      <span class="hljs-attr">plugins</span>: [
+        [<span class="hljs-string">"@babel/plugin-proposal-decorators"</span>, { <span class="hljs-attr">legacy</span>: <span class="hljs-literal">true</span> }],
+        [<span class="hljs-string">"@babel/plugin-proposal-class-properties"</span>, { <span class="hljs-attr">loose</span>: <span class="hljs-literal">true</span> }],
+      ],
+    },
+  })]
+})
+</code></pre>
+<h3 id="t62.3 jsconfig.json">2.3 jsconfig.json <a href="#t62.3 jsconfig.json"> # </a></h3>
+<p>jsconfig.json</p>
+<pre><code class="lang-json">{
+    <span class="hljs-attr">"compilerOptions"</span>: {
+        <span class="hljs-attr">"experimentalDecorators"</span>: <span class="hljs-literal">true</span>
+    }
+}
+</code></pre>
+<h3 id="t72.4 src\main.tsx">2.4 src\main.tsx <a href="#t72.4 src\main.tsx"> # </a></h3>
+<p>src\main.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {observable} <span class="hljs-keyword">from</span> <span class="hljs-string">'mobx'</span>;
+<span class="hljs-built_in">console</span>.log(observable);
+</code></pre>
+<h2 id="t83.mobx">3.mobx <a href="#t83.mobx"> # </a></h2>
+<h3 id="t93.1 创建可观察对象">3.1 创建可观察对象 <a href="#t93.1 创建可观察对象"> # </a></h3>
+<ul>
+<li><a href="https://zh.mobx.js.org/observable-state.html#%E5%88%9B%E5%BB%BA%E5%8F%AF%E8%A7%82%E5%AF%9F%E7%8A%B6%E6%80%81">创建可观察状态</a></li>
+<li>属性，完整的对象，数组，Maps 和 Sets 都可以被转化为可观察对象。 使得对象可观察的基本方法是使用 <code>makeObservable</code>为每个属性指定一个注解。 最重要的注解如下：<ul>
+<li><code>observable</code> 定义一个存储 state 的可追踪字段。</li>
+<li><code>action</code> 将一个方法标记为可以修改 state 的 action。</li>
+<li><code>computed</code> 标记一个可以由 state 派生出新的值并且缓存其输出的 getter。</li>
+</ul>
+</li>
+<li>像数组，Maps 和 Sets 这样的集合都将被自动转化为可观察对象。</li>
+</ul>
+<h3 id="t103.2 observable">3.2 observable <a href="#t103.2 observable"> # </a></h3>
+<ul>
+<li>用法: <code>observable(source, overrides?, options?)</code></li>
+<li><a href="https://zh.mobx.js.org/observable-state.html#observable">observable</a>注解可以作为一个函数进行调用，从而一次性将整个对象变成可观察的。 <code>source</code>对象将会被克隆并且所有的成员都将会成为可观察的</li>
+<li>由 <code>observable</code> 返回的对象将会使用 Proxy 包装，这意味着之后被添加到这个对象中的属性也将被侦测并使其转化为可观察对象</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {observable,reaction} <span class="hljs-keyword">from</span> <span class="hljs-string">'mobx'</span>;
+<span class="hljs-keyword">let</span> obj = {<span class="hljs-attr">name</span>:<span class="hljs-string">'1'</span>}
+<span class="hljs-keyword">let</span> proxyObj = observable(obj);
+<span class="hljs-built_in">console</span>.log(proxyObj);
+</code></pre>
+<h3 id="t113.3 reactions">3.3 reactions <a href="#t113.3 reactions"> # </a></h3>
+<ul>
+<li><a href="https://zh.mobx.js.org/reactions.html#%E4%BD%BF%E7%94%A8-reactions-%E5%A4%84%E7%90%86%E5%89%AF%E4%BD%9C%E7%94%A8-">reactions</a>是需要理解的重要概念，因为他可以将 MobX 中所有的特性有机地融合在一起</li>
+<li><code>reactions</code>的目的是对自动发生的副作用进行建模。 它们的意义在于为你的可观察状态创建消费者，以及每当关联的值发生变化时，自动运行副作用</li>
+</ul>
+<h3 id="t123.4 Autorun">3.4 Autorun <a href="#t123.4 Autorun"> # </a></h3>
+<ul>
+<li>用法： <code>autorun(effect: (reaction) =&gt; void)</code></li>
+<li><a href="https://zh.mobx.js.org/reactions.html#autorun">Autorun</a> 函数接受一个函数作为参数，每当该函数所观察的值发生变化时，它都应该运行。 当你自己创建 autorun 时，它也会运行一次。它仅仅对可观察状态的变化做出响应，比如那些你用 <code>observable</code> 或者 <code>computed</code> 注解的</li>
+<li><code>Autorun</code>通过在响应式上下文运行 <code>effect</code>来工作。在给定的函数执行期间，MobX 会持续跟踪被 effect 直接或间接读取过的所有可观察对象和计算值。 一旦函数执行完毕，MobX 将收集并订阅所有被读取过的可观察对象，并等待其中任意一个再次发生改变。 一旦有改变发生，autorun 将会再次触发，重复整个过程</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/autorun_1659261925166.png" alt=""></p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {observable,autorun} <span class="hljs-keyword">from</span> <span class="hljs-string">'mobx'</span>;
+<span class="hljs-keyword">let</span> obj = {<span class="hljs-attr">name</span>:<span class="hljs-string">'1'</span>}
+<span class="hljs-keyword">let</span> proxyObj = observable(obj);
+autorun(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+    <span class="hljs-built_in">console</span>.log(proxyObj.name);
+})
+proxyObj.name = <span class="hljs-string">'2'</span>;
+</code></pre>
+<h3 id="t133.5 makeObservable">3.5 makeObservable <a href="#t133.5 makeObservable"> # </a></h3>
+<ul>
+<li>用法: <code>makeObservable(target, annotations?, options?)</code></li>
+<li><a href="https://zh.mobx.js.org/observable-state.html#makeobservable">makeObservable</a>函数可以捕获已经存在的对象属性并且使得它们可观察。任何 JavaScript 对象（包括类的实例）都可以作为 target 被传递给这个函数。 一般情况下，makeObservable 是在类的构造函数中调用的，并且它的第一个参数是 this</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {observable,makeObservable,autorun} <span class="hljs-keyword">from</span> <span class="hljs-string">'mobx'</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Doubler</span> </span>{
+    value
+    <span class="hljs-keyword">constructor</span>(value) {
+        makeObservable(<span class="hljs-keyword">this</span>, {
+            <span class="hljs-attr">value</span>: observable,
+        })
+        <span class="hljs-keyword">this</span>.value = value
+    }
+}
+<span class="hljs-keyword">const</span> doubler = <span class="hljs-keyword">new</span> Doubler(<span class="hljs-number">1</span>);
+autorun(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+    <span class="hljs-built_in">console</span>.log(doubler.value);
+});
+doubler.value = <span class="hljs-number">2</span>;
+</code></pre>
+<h3 id="t143.6 computed">3.6 computed <a href="#t143.6 computed"> # </a></h3>
+<ul>
+<li><a href="https://zh.mobx.js.org/computeds.html#%E9%80%9A%E8%BF%87-computeds-%E6%B4%BE%E7%94%9F%E4%BF%A1%E6%81%AF">computed</a></li>
+<li>计算值可以用来从其他可观察对象中派生信息。 计算值采用惰性求值，会缓存其输出，并且只有当其依赖的可观察对象被改变时才会重新计算。 它们在不被任何值观察时会被暂时停用</li>
+<li>计算值可以通过在 <code>JavaScript getters</code> 上添加 <code>computed</code> 注解来创建。 使用 <code>makeObservable</code> 将 getter 声明为 <code>computed</code>。或者如果你希望所有的 getters 被自动声明为 computed，可以使用 <code>makeAutoObservable</code></li>
+</ul>
+<pre><code class="lang-diff"><span class="hljs-addition">+import {observable,makeObservable,autorun,computed} from 'mobx';</span>
+class Doubler {
+    value
+    constructor(value) {
+        makeObservable(this, {
+            value: observable,
+<span class="hljs-addition">+           double: computed,</span>
+        })
+        this.value = value
+    }
+<span class="hljs-addition">+   get double() {</span>
+<span class="hljs-addition">+       return this.value * 2</span>
+<span class="hljs-addition">+   }</span>
+}
+const doubler = new Doubler(1);
+autorun(()=&gt;{
+    console.log(doubler.value);
+<span class="hljs-addition">+   console.log(doubler.double);</span>
+});
+doubler.value = 2;
+</code></pre>
+<h3 id="t153.7 action">3.7 action <a href="#t153.7 action"> # </a></h3>
+<ul>
+<li><a href="https://zh.mobx.js.org/actions.html#%E4%BD%BF%E7%94%A8-actions-%E6%9B%B4%E6%96%B0-state">actions</a></li>
+<li>所有的应用程序都有 actions。action 就是任意一段修改 state 的代码。原则上，actions 总会为了对一个事件做出响应而发生。例如，点击了一个按钮，一些输入被改变了，一个 websocket 消息被送达了，等等</li>
+<li>尽管 makeAutoObservable 可以自动帮你声明一部分 actions，但是 MobX 还是要求你声明你的 actions。Actions 可以帮助你更好的组织你的代码并提供以下性能优势：<ul>
+<li>它们在 transactions 内部运行。任何可观察对象在最外层的 action 完成之前都不会被更新，这一点保证了在 action 完成之前，action 执行期间生成的中间值或不完整的值对应用程序的其余部分都是不可见的</li>
+<li>默认情况下，不允许在 actions 之外改变 state。这有助于在代码中清楚地对状态更新发生的位置进行定位</li>
+</ul>
+</li>
+<li>action 注解应该仅用于会修改 state 的函数。派生其他信息（执行查询或者过滤数据）的函数不应该被标记为 actions，以便 MobX 可以对它们的调用进行跟踪</li>
+</ul>
+<pre><code class="lang-diff"><span class="hljs-addition">+import {observable,makeObservable,autorun,computed,action} from 'mobx';</span>
+class Doubler {
+    value
+    constructor(value) {
+        makeObservable(this, {
+            value: observable,
+            double: computed,
+<span class="hljs-addition">+           increment: action</span>
+        })
+        this.value = value
+    }
+    get double() {
+        return this.value * 2
+    }
+<span class="hljs-addition">+   increment() {</span>
+<span class="hljs-addition">+       this.value++</span>
+<span class="hljs-addition">+       this.value++</span>
+<span class="hljs-addition">+   }</span>
+}
+const doubler = new Doubler(1);
+autorun(()=&gt;{
+    console.log(doubler.value);
+    console.log(doubler.double);
+});
+<span class="hljs-addition">+doubler.increment();</span>
+</code></pre>
+<h3 id="t163.8 flow">3.8 flow <a href="#t163.8 flow"> # </a></h3>
+<ul>
+<li><a href="https://zh.mobx.js.org/actions.html#%E4%BD%BF%E7%94%A8-flow-%E4%BB%A3%E6%9B%BF-async--await-">flow</a> 包装器是一个可选的 async / await 替代方案，它让 MobX action 使用起来更加容易</li>
+<li>flow 将一个 generator 函数 作为唯一输入。 在 generator 内部，你可以使用 yield 串联 Promise（使用 yield somePromise 代替 await somePromise）。 flow 机制将会确保 generator 在 Promise resolve 之后继续运行或者抛出错误。</li>
+<li>所以 flow 是 async / await 的一个替代方案，不需要再用 action 进行包装。它可以按照下面的方式使用：<ul>
+<li>使用 flow 包装你的异步函数</li>
+<li>使用 function * 代替 async</li>
+<li>使用 yield 代替 await</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-diff"><span class="hljs-addition">+import {observable,makeObservable,autorun,computed,flow,action} from 'mobx';</span>
+class Doubler {
+    value
+    constructor(value) {
+        makeObservable(this, {
+            value: observable,
+            double: computed,
+            increment: action,
+<span class="hljs-addition">+           fetch: flow</span>
+        })
+        this.value = value
+    }
+    get double() {
+        return this.value * 2
+    }
+    increment() {
+        this.value++
+        this.value++
+    }
+<span class="hljs-addition">+   *fetch() {</span>
+<span class="hljs-addition">+       const response = yield new Promise((resolve)=&gt;setTimeout(()=&gt;resolve(5),1000))</span>
+<span class="hljs-addition">+       this.value = response;</span>
+<span class="hljs-addition">+   }</span>
+}
+const doubler = new Doubler(1);
+autorun(()=&gt;{
+    console.log(doubler.value);
+    console.log(doubler.double);
+});
+doubler.increment();
+<span class="hljs-addition">+doubler.fetch();</span>
+</code></pre>
+<h3 id="t173.9 bound">3.9 bound <a href="#t173.9 bound"> # </a></h3>
+<ul>
+<li><a href="https://zh.mobx.js.org/actions.html#flowbound">flow.bound</a>注解可用于将方法自动绑定到正确的实例，这样 this 会始终被正确绑定在函数内部。 与 actions 一样，flows 默认可以使用 <code>autoBind</code> 选项</li>
+</ul>
+<pre><code class="lang-diff">import {observable,makeObservable,autorun,computed,flow,action} from 'mobx';
+class Doubler {
+    value
+    constructor(value) {
+        makeObservable(this, {
+            value: observable,
+            double: computed,
+<span class="hljs-addition">+           increment: action.bound,</span>
+<span class="hljs-addition">+           fetch: flow.bound</span>
+        })
+        this.value = value
+    }
+    get double() {
+        return this.value * 2
+    }
+    increment() {
+        this.value++
+        this.value++
+    }
+    *fetch() {
+        const response = yield new Promise((resolve)=&gt;setTimeout(()=&gt;resolve(5),1000))
+        this.value = response;
+    }
+}
+const doubler = new Doubler(1);
+autorun(()=&gt;{
+    console.log(doubler.value);
+    console.log(doubler.double);
+});
+<span class="hljs-addition">+const increment = doubler.increment;</span>
+<span class="hljs-addition">+increment();</span>
+<span class="hljs-addition">+const fetch = doubler.fetch;</span>
+<span class="hljs-addition">+fetch();</span>
+</code></pre>
+<h3 id="t183.10 makeAutoObservable">3.10 makeAutoObservable <a href="#t183.10 makeAutoObservable"> # </a></h3>
+<ul>
+<li>使用 <code>makeAutoObservable(target, overrides?, options?)</code></li>
+<li><a href="https://zh.mobx.js.org/observable-state.html#makeautoobservable">makeAutoObservable</a>
+就像是加强版的 makeObservable，在默认情况下它将推断所有的属性。你仍然可以使用 overrides 重写某些注解的默认行为</li>
+<li>与使用 makeObservable 相比，makeAutoObservable 函数更紧凑，也更容易维护，因为新成员不需要显式地提及。 然而，makeAutoObservable 不能被用于带有 super 的类或 子类</li>
+<li>推断规则：<ul>
+<li>所有 自有 属性都成为 observable</li>
+<li>所有 getters 都成为 computed</li>
+<li>所有 setters 都成为 action</li>
+<li>所有 prototype 中的 functions 都成为 autoAction</li>
+<li>所有 prototype 中的 generator functions 都成为 flow</li>
+<li>在 overrides 参数中标记为 false 的成员将不会被添加注解。例如，将其用于像标识符这样的只读字段</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-diff"><span class="hljs-addition">+import {observable,makeObservable,autorun,computed,flow,action,makeAutoObservable} from 'mobx';</span>
+class Doubler {
+<span class="hljs-addition">+   PI=3.14</span>
+    value
+    constructor(value) {
+<span class="hljs-addition">+       makeAutoObservable(this,{PI:false},{autoBind:true})</span>
+        this.value = value
+    }
+    get double() {
+        return this.value * 2
+    }
+    increment() {
+        this.value++
+        this.value++
+    }
+    *fetch() {
+        const response = yield new Promise((resolve)=&gt;setTimeout(()=&gt;resolve(5),1000))
+        this.value = response;
+    }
+}
+const doubler = new Doubler(1);
+<span class="hljs-addition">+autorun(()=&gt;{</span>
+<span class="hljs-addition">+    console.log(doubler.PI);</span>
+<span class="hljs-addition">+});</span>
+autorun(()=&gt;{
+    console.log(doubler.value);
+    console.log(doubler.double);
+});
+const increment = doubler.increment;
+increment();
+const fetch = doubler.fetch;
+fetch();
+<span class="hljs-addition">+doubler.PI=3.15;</span>
+</code></pre>
+<h3 id="t193.11 Reaction">3.11 Reaction <a href="#t193.11 Reaction"> # </a></h3>
+<ul>
+<li>使用<code>reaction(() =&gt; value, (value, previousValue, reaction) =&gt; { sideEffect }, options?).</code></li>
+<li><a href="https://zh.mobx.js.org/reactions.html#reaction">Reaction</a>类似于 autorun，但可以让你更加精细地控制要跟踪的可观察对象。 它接受两个函数作为参数：第一个 data 函数，其是被跟踪的函数并且其返回值将会作为第二个函数，effect 函数的输入。 重要的是要注意，副作用只会对 data 函数中被访问过的数据做出反应，这些数据可能少于 effect 函数中实际使用的数据。</li>
+<li>一般的模式是在 data 函数中返回你在副作用中需要的所有数据， 并以这种方式更精确地控制副作用触发的时机。 与 autorun 不同，副作用在初始化时不会自动运行，而只会在 data 表达式首次返回新值之后运行</li>
+</ul>
+<pre><code class="lang-diff"><span class="hljs-addition">+import {makeAutoObservable,reaction} from 'mobx';</span>
+class Doubler {
+    PI=3.14
+    value
+    constructor(value) {
+        makeAutoObservable(this,{PI:false},{autoBind:true})
+        this.value = value
+    }
+    get double() {
+        return this.value * 2
+    }
+    increment() {
+        this.value++
+        this.value++
+    }
+    *fetch() {
+        const response = yield new Promise((resolve)=&gt;setTimeout(()=&gt;resolve(5),1000))
+        this.value = response;
+    }
+}
+const doubler = new Doubler(1);
+<span class="hljs-addition">+reaction(</span>
+<span class="hljs-addition">+    () =&gt; doubler.value,</span>
+<span class="hljs-addition">+    value =&gt; {</span>
+<span class="hljs-addition">+        console.log('value',value);</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+)</span>
+<span class="hljs-addition">+doubler.value=2;</span>
+</code></pre>
+<h3 id="t203.12 When">3.12 When <a href="#t203.12 When"> # </a></h3>
+<ul>
+<li>使用方式 <code>when(predicate: () =&gt; boolean, effect?: () =&gt; void, options?)</code></li>
+<li><a href="https://zh.mobx.js.org/reactions.html#when">when</a>会观察并运行给定的 predicate 函数，直到其返回 true。 一旦 predicate 返回了 true，给定的 effect 函数就会执行并且自动执行器函数将会被清理掉</li>
+<li>如果你没有传入 effect 函数，when 函数返回一个 Promise 类型的 disposer，并允许你手动取消</li>
+</ul>
+<pre><code class="lang-diff"><span class="hljs-addition">+import {makeAutoObservable,reaction,when} from 'mobx';</span>
+class Doubler {
+    PI=3.14
+    value
+    constructor(value) {
+        makeAutoObservable(this,{PI:false},{autoBind:true})
+        this.value = value
+    }
+    get double() {
+        return this.value * 2
+    }
+    increment() {
+        this.value++
+        this.value++
+    }
+    *fetch() {
+        const response = yield new Promise((resolve)=&gt;setTimeout(()=&gt;resolve(5),1000))
+        this.value = response;
+    }
+}
+const doubler = new Doubler(1);
+<span class="hljs-addition">+when(</span>
+<span class="hljs-addition">+    () =&gt; doubler.value === 3,</span>
+<span class="hljs-addition">+    () =&gt; {</span>
+<span class="hljs-addition">+        console.log('value',doubler.value);</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+)</span>
+<span class="hljs-addition">+doubler.value++;</span>
+<span class="hljs-addition">+doubler.value++;</span>
+<span class="hljs-addition">+doubler.value++;</span>
+</code></pre>
+<h3 id="t213.13 runInAction">3.13 runInAction <a href="#t213.13 runInAction"> # </a></h3>
+<ul>
+<li>使用方式 <code>runInAction(fn)</code></li>
+<li>使用<a href="https://mobx.js.org/actions.html#runinaction">runInAction</a>来创建一个会被立即调用的临时 <code>action</code>。在异步进程中非常有用</li>
+</ul>
+<pre><code class="lang-diff">import {makeAutoObservable,reaction,when,autorun,runInAction} from 'mobx';
+class Doubler {
+    PI=3.14
+    value
+    constructor(value) {
+        makeAutoObservable(this,{PI:false},{autoBind:true})
+        this.value = value
+    }
+    get double() {
+        return this.value * 2
+    }
+    increment() {
+        this.value++
+        this.value++
+    }
+    *fetch() {
+        const response = yield new Promise((resolve)=&gt;setTimeout(()=&gt;resolve(5),1000))
+        this.value = response;
+    }
+}
+const doubler = new Doubler(1);
+<span class="hljs-addition">+autorun(()=&gt;console.log(doubler.value));</span>
+<span class="hljs-addition">+runInAction(()=&gt;{</span>
+<span class="hljs-addition">+    doubler.value++;</span>
+<span class="hljs-addition">+    doubler.value++;</span>
+<span class="hljs-addition">+    doubler.value++;</span>
+<span class="hljs-addition">+});</span>
+</code></pre>
+<h2 id="t224.mobx-react">4.mobx-react <a href="#t224.mobx-react"> # </a></h2>
+<ul>
+<li><a href="https://github.com/mobxjs/mobx/tree/main/packages/mobx-react">mobx-react</a></li>
+<li><a href="https://github.com/mobxjs/mobx/tree/main/packages/mobx-react-lite">mobx-react-lite</a></li>
+</ul>
+<h3 id="t234.1 observer">4.1 observer <a href="#t234.1 observer"> # </a></h3>
+<h4 id="t244.1.1 main.jsx">4.1.1 main.jsx <a href="#t244.1.1 main.jsx"> # </a></h4>
+<p>src\main.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createRoot } <span class="hljs-keyword">from</span> <span class="hljs-string">"react-dom/client"</span>;
+<span class="hljs-keyword">import</span> Counter <span class="hljs-keyword">from</span> <span class="hljs-string">"./Counter"</span>;
+<span class="hljs-keyword">const</span> rootElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"root"</span>);
+<span class="hljs-keyword">const</span> root = createRoot(rootElement);
+root.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Counter</span>/&gt;</span></span>);
+</code></pre>
+<h4 id="t254.1.2 observer">4.1.2 observer <a href="#t254.1.2 observer"> # </a></h4>
+<ul>
+<li>使用<code>observer&lt;P&gt;(baseComponent: FunctionComponent&lt;P&gt;): FunctionComponent&lt;P&gt;</code></li>
+<li>将React组件、React类组件或独立渲染函数转换为React组件的函数。转换后的组件将跟踪其有效渲染使用的观察值，并在其中一个值更改时自动重新渲染组件</li>
+<li><code>React.memo</code>自动应用于提供给观察者的功能组件</li>
+<li>当使用React类组件时，<code>this.props</code>和<code>this.state</code>变得可观察，因此组件将对渲染使用的属性和状态的所有更改作出反应</li>
+</ul>
+<p>src\Counter.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {makeAutoObservable} <span class="hljs-keyword">from</span> <span class="hljs-string">'mobx'</span>;
+<span class="hljs-keyword">import</span> {observer} <span class="hljs-keyword">from</span> <span class="hljs-string">'mobx-react'</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Store</span> </span>{
+    number=<span class="hljs-number">1</span>
+    <span class="hljs-keyword">constructor</span>(){
+        makeAutoObservable(<span class="hljs-keyword">this</span>,{},{<span class="hljs-attr">autoBind</span>:<span class="hljs-literal">true</span>});
+    }
+    add(){
+        <span class="hljs-keyword">this</span>.number++;
+    }
+}
+<span class="hljs-keyword">let</span> store=<span class="hljs-keyword">new</span> Store();
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> observer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{store.number}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{store.add}</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+});
+</code></pre>
+<h3 id="t264.2 observer class">4.2 observer class <a href="#t264.2 observer class"> # </a></h3>
+<h4 id="t274.2.1 Counter.jsx">4.2.1 Counter.jsx <a href="#t274.2.1 Counter.jsx"> # </a></h4>
+<p>src\Counter.jsx</p>
+<pre><code class="lang-diff">import React from 'react';
+import {makeAutoObservable} from 'mobx';
+import {observer} from 'mobx-react';
+class Store {
+    number=1
+    constructor(){
+        makeAutoObservable(this,{},{autoBind:true});
+    }
+    add(){
+        this.number++;
+    }
+}
+let store=new Store();
+<span class="hljs-addition">+@observer</span>
+<span class="hljs-addition">+export default class Counter extends React.Component{</span>
+  render(){
+    return (
+        &lt;div&gt;
+            &lt;p&gt;{store.number}&lt;/p&gt;
+            &lt;button onClick={store.add}&gt;+&lt;/button&gt;
+        &lt;/div&gt;
+    )
+  }
+<span class="hljs-addition">+}</span>
+</code></pre>
+<h3 id="t284.3 Observer">4.3 Observer <a href="#t284.3 Observer"> # </a></h3>
+<ul>
+<li>使用 <code>&lt;Observer&gt;{renderFn}&lt;/Observer&gt;</code></li>
+<li><a href="https://github.com/mobxjs/mobx/tree/main/packages/mobx-react#observer">Observer</a></li>
+<li><code>Observer</code>是一个React组件，它将观察者应用于组件中的匿名区域。它将单个无参数函数作为子函数，该函数应只返回一个React组件。将跟踪函数中的渲染，并在需要时自动重新渲染</li>
+</ul>
+<h4 id="t294.3.1 Counter.jsx">4.3.1 Counter.jsx <a href="#t294.3.1 Counter.jsx"> # </a></h4>
+<p>src\Counter.jsx</p>
+<pre><code class="lang-diff">import React from 'react';
+import {makeAutoObservable} from 'mobx';
+<span class="hljs-addition">+import {observer,Observer} from 'mobx-react';</span>
+class Store {
+    number=1
+    constructor(){
+        makeAutoObservable(this,{},{autoBind:true});
+    }
+    add(){
+        this.number++;
+    }
+}
+let store=new Store();
+export default function () {
+    return (
+<span class="hljs-addition">+       &lt;Observer&gt;</span>
+            {
+                ()=&gt;(
+                  &lt;&gt;
+                    &lt;p&gt;{store.number}&lt;/p&gt;
+                    &lt;button onClick={store.add}&gt;+&lt;/button&gt;
+                  &lt;/&gt;
+                )
+            }
+<span class="hljs-addition">+      &lt;/Observer&gt;</span>
+    )
+}
+</code></pre>
+<h3 id="t304.4 useObserver">4.4 useObserver <a href="#t304.4 useObserver"> # </a></h3>
+<ul>
+<li><a href="https://github.com/mobxjs/mobx/tree/main/packages/mobx-react-lite#useobservertfn---t-basecomponentname--observed-options-iuseobserveroptions-t-deprecated">useObserver</a>允许您使用类似观察者的行为，但仍然允许您以任何方式优化组件（例如，使用自定义areEqual的memo，使用forwardRef等），并准确声明观察到的部分（渲染阶段）</li>
+</ul>
+<h4 id="t314.4.1 Counter.jsx">4.4.1 Counter.jsx <a href="#t314.4.1 Counter.jsx"> # </a></h4>
+<p>src\Counter.jsx</p>
+<pre><code class="lang-diff">import React from 'react';
+import {makeAutoObservable} from 'mobx';
+import {observer,Observer,useObserver} from 'mobx-react';
+class Store {
+    number=1
+    constructor(){
+        makeAutoObservable(this,{},{autoBind:true});
+    }
+    add(){
+        this.number++;
+    }
+}
+let store=new Store();
+export default function () {
+<span class="hljs-addition">+    return useObserver(()=&gt;(</span>
+        &lt;&gt;
+          &lt;p&gt;{store.number}&lt;/p&gt;
+          &lt;button onClick={store.add}&gt;+&lt;/button&gt;
+        &lt;/&gt;
+<span class="hljs-addition">+     ));</span>
+}
+</code></pre>
+<h3 id="t324.5 useLocalObservable">4.5 useLocalObservable <a href="#t324.5 useLocalObservable"> # </a></h3>
+<ul>
+<li>使用 <code>useLocalObservable&lt;T&gt;(initializer: () =&gt; T, annotations?: AnnotationsMap&lt;T&gt;): T</code></li>
+<li>当使用<a href="https://github.com/mobxjs/mobx/tree/main/packages/mobx-react-lite#uselocalobservabletinitializer---t-annotations-annotationsmapt-t">useLocalObservable</a>时，返回对象的所有属性都将自动可观察，getter将转换为计算属性，方法将绑定到存储并自动应用mobx事务</li>
+</ul>
+<h4 id="t334.5.1 Counter.jsx">4.5.1 Counter.jsx <a href="#t334.5.1 Counter.jsx"> # </a></h4>
+<p>src\Counter.jsx</p>
+<pre><code class="lang-diff">import React from 'react';
+import {makeAutoObservable} from 'mobx';
+import {observer,Observer,useObserver,useLocalObservable} from 'mobx-react';
+export default function () {
+<span class="hljs-addition">+   const store = useLocalObservable(()=&gt;({</span>
+<span class="hljs-addition">+       number:1,</span>
+<span class="hljs-addition">+       add(){</span>
+<span class="hljs-addition">+           this.number++;</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+   }));</span>
+    return useObserver(()=&gt;(
+        &lt;&gt;
+          &lt;p&gt;{store.number}&lt;/p&gt;
+          &lt;button onClick={store.add}&gt;+&lt;/button&gt;
+        &lt;/&gt;
+      ));
+}
+</code></pre>
+<h3 id="t344.6 todos">4.6 todos <a href="#t344.6 todos"> # </a></h3>
+<h4 id="t354.6.1 main.jsx">4.6.1 main.jsx <a href="#t354.6.1 main.jsx"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createRoot } <span class="hljs-keyword">from</span> <span class="hljs-string">"react-dom/client"</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">"./App"</span>;
+<span class="hljs-keyword">const</span> rootElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"root"</span>);
+<span class="hljs-keyword">const</span> root = createRoot(rootElement);
+root.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span>/&gt;</span></span>);
+</code></pre>
+<h4 id="t364.6.2 App.jsx">4.6.2 App.jsx <a href="#t364.6.2 App.jsx"> # </a></h4>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">"./store"</span>;
+<span class="hljs-keyword">import</span> StoreContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./context'</span>;
+<span class="hljs-keyword">import</span> Todos <span class="hljs-keyword">from</span> <span class="hljs-string">'./Todos'</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">'./User'</span>;
+<span class="hljs-keyword">const</span> App = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StoreContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{store}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">User</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Todos</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">StoreContext.Provider</span>&gt;</span></span>
+  );
+};
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h4 id="t374.6.3 context.jsx">4.6.3 context.jsx <a href="#t374.6.3 context.jsx"> # </a></h4>
+<p>src\context.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+<span class="hljs-keyword">const</span> StoreContext = React.createContext();
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> StoreContext;
+</code></pre>
+<h4 id="t384.6.4 User.jsx">4.6.4 User.jsx <a href="#t384.6.4 User.jsx"> # </a></h4>
+<p>src\User.jsx</p>
+<pre><code class="lang-js">import { useContext,useRef } from 'react';
+import StoreContext from './context';
+import { observer } from "mobx-react";
+const User = observer(function () {
+  const { userStore } = useContext(StoreContext);
+  const ref = useRef(null);
+  return (
+    &lt;div&gt;
+     {userStore.isLogin?(
+      &lt;&gt;
+      {userStore.username}&lt;button onClick={() =&gt; userStore.logout()}&gt;退出&lt;/button&gt;
+      &lt;/&gt;
+     ):(
+      &lt;&gt;
+      &lt;input ref={ref} type="text" /&gt;
+      &lt;button onClick={() =&gt; userStore.login(ref.current.value)}&gt;登录&lt;/button&gt;
+      &lt;/&gt;
+     )}
+    &lt;/div&gt;
+  );
+});
+export default User;
+</code></pre>
+<h4 id="t394.6.5 Todos.jsx">4.6.5 Todos.jsx <a href="#t394.6.5 Todos.jsx"> # </a></h4>
+<p>src\Todos.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { useContext ,useRef} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> StoreContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./context'</span>;
+<span class="hljs-keyword">import</span> { observer } <span class="hljs-keyword">from</span> <span class="hljs-string">"mobx-react"</span>;
+<span class="hljs-keyword">import</span> {TodoStore} <span class="hljs-keyword">from</span> <span class="hljs-string">'./store'</span>;
+<span class="hljs-keyword">const</span> Todo = observer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">{todo}</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>
+        <span class="hljs-attr">checked</span>=<span class="hljs-string">{todo.completed}</span>
+        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{()</span> =&gt;</span> todo.toggle()}
+      /&gt;
+      {todo.text}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+  );
+});
+
+<span class="hljs-keyword">const</span> TodoList = observer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> { todoStore } = useContext(StoreContext);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        {todoStore.list.map((todo, index) =&gt; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">Todo</span> <span class="hljs-attr">todo</span>=<span class="hljs-string">{todo}</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span> /&gt;</span>
+        ))}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+});
+
+<span class="hljs-keyword">const</span> TodoLeft = observer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> { todoStore } = useContext(StoreContext);
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;&gt;</span>未完成: {todoStore.unCompletedCount}<span class="hljs-tag">&lt;/&gt;</span></span>;
+});
+
+<span class="hljs-keyword">const</span> AddTodo = observer(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">AddTodo</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> { todoStore } = useContext(StoreContext);
+  <span class="hljs-keyword">const</span> ref = useRef(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{ref}</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> {
+          const item = new TodoStore(ref.current.value);
+          todoStore.add(item);
+          ref.current.value = "";
+        }}
+      &gt;新增<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  );
+});
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> observer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">AddTodo</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">TodoList</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">TodoLeft</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  );
+});
+</code></pre>
+<h4 id="t404.6.6 user\index.jsx">4.6.6 user\index.jsx <a href="#t404.6.6 user\index.jsx"> # </a></h4>
+<p>src\store\user\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { makeAutoObservable } <span class="hljs-keyword">from</span> <span class="hljs-string">"mobx"</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserStore</span> </span>{
+  username=<span class="hljs-string">''</span>;
+  <span class="hljs-keyword">constructor</span>() {
+    makeAutoObservable(<span class="hljs-keyword">this</span>, {}, { <span class="hljs-attr">autoBind</span>: <span class="hljs-literal">true</span> });
+  }
+  <span class="hljs-keyword">get</span> isLogin() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.username.length &gt; <span class="hljs-number">0</span>;
+  }
+  login(username) {
+    <span class="hljs-keyword">this</span>.username = username;
+  }
+  logout() {
+    <span class="hljs-keyword">this</span>.username = <span class="hljs-string">""</span>;
+  }
+}
+<span class="hljs-keyword">const</span> userStore = <span class="hljs-keyword">new</span> UserStore();
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> userStore;
+</code></pre>
+<h4 id="t414.6.7  todos\index.jsx">4.6.7  todos\index.jsx <a href="#t414.6.7  todos\index.jsx"> # </a></h4>
+<p>src\store\todos\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { makeAutoObservable } <span class="hljs-keyword">from</span> <span class="hljs-string">"mobx"</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TodoStore</span> </span>{
+  list = [];
+  <span class="hljs-keyword">get</span> unCompletedCount() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.list.filter(<span class="hljs-function">(<span class="hljs-params">todo</span>) =&gt;</span> !todo.completed).length;
+  }
+  <span class="hljs-keyword">constructor</span>() {
+    makeAutoObservable(<span class="hljs-keyword">this</span>,{},{<span class="hljs-attr">autoBind</span>: <span class="hljs-literal">true</span>});
+  }
+  add(todo) {
+    <span class="hljs-keyword">this</span>.list.push(todo);
+  }
+}
+<span class="hljs-keyword">const</span> todoStore = <span class="hljs-keyword">new</span> TodoStore();
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> todoStore;
+</code></pre>
+<h4 id="t424.6.8 todo.jsx">4.6.8 todo.jsx <a href="#t424.6.8 todo.jsx"> # </a></h4>
+<p>src\store\todos\todo.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { makeAutoObservable } <span class="hljs-keyword">from</span> <span class="hljs-string">"mobx"</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TodoStore</span> </span>{
+  text = <span class="hljs-string">""</span>;
+  completed = <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">constructor</span>(text) {
+    makeAutoObservable(
+      <span class="hljs-keyword">this</span>,{},{<span class="hljs-attr">autoBind</span>: <span class="hljs-literal">true</span>}
+    );
+    <span class="hljs-keyword">this</span>.text = text;
+  }
+  toggle() {
+    <span class="hljs-keyword">this</span>.completed = !<span class="hljs-keyword">this</span>.completed;
+  }
+}
+</code></pre>
+<h4 id="t434.6.9 store\index.jsx">4.6.9 store\index.jsx <a href="#t434.6.9 store\index.jsx"> # </a></h4>
+<p>src\store\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> todoStore <span class="hljs-keyword">from</span> <span class="hljs-string">"./todos"</span>;
+<span class="hljs-keyword">import</span> userStore <span class="hljs-keyword">from</span> <span class="hljs-string">"./user"</span>;
+<span class="hljs-keyword">const</span> store = { todoStore, userStore };
+<span class="hljs-keyword">export</span> { TodoStore } <span class="hljs-keyword">from</span> <span class="hljs-string">"./todos/todo"</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> store;
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

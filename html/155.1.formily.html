@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li class="active"><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01 课程大纲">1 课程大纲</a></li><li><a href="#t12.formily">2.formily</a><ul><li><a href="#t22.1 核心优势">2.1 核心优势</a></li><li><a href="#t32.2 分层架构">2.2 分层架构</a></li><li><a href="#t42.3 竞品对比">2.3 竞品对比</a></li><li><a href="#t52.4 安装">2.4 安装</a></li><li><a href="#t62.5 配置">2.5 配置</a></li></ul></li><li><a href="#t73. 字段数量多">3. 字段数量多</a><ul><li><a href="#t83.1 问题">3.1 问题</a></li><li><a href="#t93.2 解决方案">3.2 解决方案</a><ul><li><a href="#t103.2.1 MVVM">3.2.1 MVVM</a></li><li><a href="#t113.2.2 observable">3.2.2 observable</a></li><li><a href="#t123.2.2 Reaction">3.2.2 Reaction</a></li><li><a href="#t133.2.3 autorun">3.2.3 autorun</a></li><li><a href="#t143.2.4 实现observable">3.2.4 实现observable</a><ul><li><a href="#t153.2.4.1 src\main.tsx">3.2.4.1 src\main.tsx</a></li><li><a href="#t163.2.4.2 reactive\index.ts">3.2.4.2 reactive\index.ts</a></li></ul></li><li><a href="#t173.2.5 Observer">3.2.5 Observer</a><ul><li><a href="#t183.2.5.1 src\main.tsx">3.2.5.1 src\main.tsx</a></li><li><a href="#t193.2.5.2 src\App.tsx">3.2.5.2 src\App.tsx</a></li><li><a href="#t203.2.5.3 reactive-react\index.tsx">3.2.5.3 reactive-react\index.tsx</a></li><li><a href="#t213.2.5.4 reactive\index.ts">3.2.5.4 reactive\index.ts</a></li></ul></li></ul></li></ul></li><li><a href="#t224. 字段关联逻辑复杂">4. 字段关联逻辑复杂</a><ul><li><a href="#t234.1 问题">4.1 问题</a></li><li><a href="#t244.2 领域模型">4.2 领域模型</a></li><li><a href="#t254.3 DDD(领域驱动)">4.3 DDD(领域驱动)</a><ul><li><a href="#t264.3.1 表单">4.3.1 表单</a></li><li><a href="#t274.3.2 字段">4.3.2 字段</a></li></ul></li><li><a href="#t284.4 路径系统">4.4 路径系统</a></li></ul></li><li><a href="#t295. 生命周期">5. 生命周期</a><ul><li><a href="#t305.1 问题">5.1 问题</a></li><li><a href="#t315.2 解决方案">5.2 解决方案</a></li></ul></li><li><a href="#t326 协议驱动">6 协议驱动</a><ul><li><a href="#t336.1 问题">6.1 问题</a></li><li><a href="#t346.2 解决方案">6.2 解决方案</a></li><li><a href="#t356.3 JSON-Schema">6.3 JSON-Schema</a></li><li><a href="#t366.4 扩展的JSON-Schema">6.4 扩展的JSON-Schema</a></li><li><a href="#t376.5 API">6.5 API</a></li><li><a href="#t386.5 表单渲染">6.5 表单渲染</a><ul><li><a href="#t396.5.1  JSX 案例">6.5.1  JSX 案例</a></li><li><a href="#t406.5.2  JSON Schema案例">6.5.2  JSON Schema案例</a></li><li><a href="#t416.5.3 Markup Schema 案例">6.5.3 Markup Schema 案例</a></li></ul></li><li><a href="#t426.6 联动校验">6.6 联动校验</a><ul><li><a href="#t436.6.1 主动联动">6.6.1 主动联动</a></li><li><a href="#t446.6.2 被动联动">6.6.2 被动联动</a></li><li><a href="#t456.6.3 effects">6.6.3 effects</a></li></ul></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01 课程大纲">1 课程大纲 <a href="#t01 课程大纲"> # </a></h2>
+<ul>
+<li>第1次课 formily基础使用</li>
+<li>第2次课 formily进阶使用和表单设计器</li>
+<li>第3次课 formily开发低代码平台</li>
+<li>第4次课 手写实现简版@formily/reactive、@formily/core、@formily/react、@formily/antd</li>
+</ul>
+<h2 id="t12.formily">2.formily <a href="#t12.formily"> # </a></h2>
+<ul>
+<li><a href="https://formilyjs.org">formily</a>是一款面向中后台复杂场景的数据+协议驱动的表单框架，也是阿里巴巴集团统一表单解决方案,可以完成复杂表单需求，而且提供了表单设计器让我们快速设计表单 </li>
+</ul>
+<h3 id="t22.1 核心优势">2.1 核心优势 <a href="#t22.1 核心优势"> # </a></h3>
+<ul>
+<li>高性能 字段数据极多的情况下保持快速响应，可以实现高效联动逻辑</li>
+<li>跨端能力 与框架无关，可以兼容<code>react</code>和<code>vue</code>等框架</li>
+<li>生态完备 支持了业界主流的<code>antd</code>和<code>element</code>等组件库</li>
+<li>协议驱动 可以通过JSON驱动表单渲染，可以成为领域视图模型驱动的低代码渲染引擎</li>
+</ul>
+<h3 id="t32.2 分层架构">2.2 分层架构 <a href="#t32.2 分层架构"> # </a></h3>
+<ul>
+<li><a href="https://core.formilyjs.org/zh-CN">@formily/core</a>负责管理表单的状态、校验和联动等</li>
+<li><a href="https://react.formilyjs.org/zh-CN/guide">@formily/react</a>是UI桥接库，用来接入内核数据实现最终的表单交互效果，不同框架有不同的桥接库</li>
+<li><a href="https://antd.formilyjs.org/zh-CN/components">@formily/antd</a>封装了场景化的组件</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/cells_1655566023464.svg" alt="cells"></p>
+<ul>
+<li>这张图主要将 Formily 分为了内核协议层，UI胶水桥接层，扩展组件层，和配置应用层</li>
+<li>内核层是 UI 无关的，它保证了用户管理的逻辑和状态是不耦合任何一个框架</li>
+<li>JSON Schema 独立存在，给 UI 桥接层消费，保证了协议驱动在不同 UI 框架下的绝对一致性，不需要重复实现协议解析逻辑</li>
+<li>扩展组件层，提供一系列表单场景化组件，保证用户开箱即用。无需花大量时间做二次开发</li>
+</ul>
+<h3 id="t42.3 竞品对比">2.3 竞品对比 <a href="#t42.3 竞品对比"> # </a></h3>
+<p><img src="https://static.zhufengpeixun.com/formcompare_1655566386488.png" alt="formcompare"></p>
+<h3 id="t52.4 安装">2.4 安装 <a href="#t52.4 安装"> # </a></h3>
+<pre><code class="lang-js">npm init vite@latest
+npm install @formily/reactive @formily/core @formily/reactive-react @formily/react @formily/antd ajv less --save
+</code></pre>
+<h3 id="t62.5 配置">2.5 配置 <a href="#t62.5 配置"> # </a></h3>
+<ul>
+<li><a href="https://github.com/vitejs/vite/tree/main/packages/plugin-react#opting-out-of-the-automatic-jsx-runtime">jsxRuntime</a></li>
+<li>在 <code>less`</code> 文件中引入 <code>antd</code> 的 <code>less</code> 文件会有一个<code>~</code>前置符，这种写法对于 ESM 构建工具是不兼容的</li>
+<li><code>javascriptEnabled</code>这个参数在less3.0之后是默认为false</li>
+</ul>
+<p>vite.config.ts</p>
+<pre><code class="lang-diff">import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+<span class="hljs-addition">+ plugins: [react({</span>
+<span class="hljs-addition">+   jsxRuntime: 'classic'</span>
+<span class="hljs-addition">+ })],</span>
+<span class="hljs-addition">+ resolve: {</span>
+<span class="hljs-addition">+   alias: [</span>
+<span class="hljs-addition">+     { find: /^~/, replacement: '' }</span>
+<span class="hljs-addition">+   ]</span>
+<span class="hljs-addition">+ },</span>
+<span class="hljs-addition">+ css: {</span>
+<span class="hljs-addition">+   preprocessorOptions: {</span>
+<span class="hljs-addition">+     less: {</span>
+<span class="hljs-addition">+       // 支持内联 JavaScript</span>
+<span class="hljs-addition">+       javascriptEnabled: true,</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ }</span>
+})
+</code></pre>
+<p>tsconfig.json</p>
+<pre><code class="lang-diff">{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+<span class="hljs-addition">+   "strict": false,</span>
+<span class="hljs-addition">+   "noImplicitAny": false,</span>
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+</code></pre>
+<h2 id="t73. 字段数量多">3. 字段数量多 <a href="#t73. 字段数量多"> # </a></h2>
+<h3 id="t83.1 问题">3.1 问题 <a href="#t83.1 问题"> # </a></h3>
+<ul>
+<li>字段数量多，如何让性能不随字段数量增加而变差？</li>
+</ul>
+<h3 id="t93.2 解决方案">3.2 解决方案 <a href="#t93.2 解决方案"> # </a></h3>
+<ul>
+<li>依赖<a href="https://reactive.formilyjs.org/zh-CN">@formily/reactive</a>响应式解决方案，构建响应式表单的领域模型实现精确渲染</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/Reaction_1655437930177.png" alt="Reaction"></p>
+<h4 id="t103.2.1 MVVM">3.2.1 MVVM <a href="#t103.2.1 MVVM"> # </a></h4>
+<ul>
+<li>MVVM（Model–view–viewmodel）是一种 OOP 软件架构模式，它的核心是将我们的应用程序的逻辑与视图做分离，提升代码可维护性与应用健壮性</li>
+<li>View(视图层)负责维护 UI 结构与样式，同时负责与 ViewModel(视图模型)做数据绑定</li>
+<li>这里的数据绑定关系是双向的，也就是，ViewModel(视图模型)的数据发生变化，会触发 View(视图层)的更新，同时视图层的数据变化又会触发 ViewModel(视图模型)的变化,Model 则更偏实际业务数据处理模型</li>
+<li>ViewModel 和 Model 都是充血模型，两者都注入了不同领域的业务逻辑，比如 ViewModel 的业务逻辑更偏视图交互层的领域逻辑，而 Model 的业务逻辑则更偏业务数据的处理逻辑</li>
+<li>Formily 它提供了 <code>View</code> 和 <code>ViewModel</code> 两层能力，<code>View</code> 则是<code>@formily/react</code>，专门用来与<code>@formily/core</code> 做桥接通讯的，所以，<code>@formily/core</code> 的定位就是 <code>ViewModel</code> 层</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/MVVM_1655440368376.svg" alt="MVVM"></p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>MVVM<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"bookTitle"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"红楼梦"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span></span>{
+            <span class="hljs-keyword">constructor</span>(title){
+                <span class="hljs-keyword">this</span>.title=title;
+            }
+        }
+        <span class="hljs-comment">//Model</span>
+        <span class="hljs-keyword">let</span> book = <span class="hljs-keyword">new</span> Book(<span class="hljs-string">'红楼梦'</span>);
+        <span class="hljs-comment">//ViewModel</span>
+        <span class="hljs-keyword">let</span> viewModel = {<span class="hljs-attr">display</span>:<span class="hljs-string">'block'</span>};
+        <span class="hljs-built_in">Object</span>.defineProperty(viewModel,<span class="hljs-string">'title'</span>,{
+                <span class="hljs-keyword">get</span>(){
+                    <span class="hljs-keyword">return</span> book.title;
+                },
+                <span class="hljs-keyword">set</span>(newTitle){
+                    bookTitle.value = book.title = newTitle;
+                }
+        });
+        <span class="hljs-built_in">Object</span>.defineProperty(viewModel,<span class="hljs-string">'display'</span>,{
+                <span class="hljs-keyword">get</span>(){
+                    <span class="hljs-keyword">return</span> bookTitle.style.display;
+                },
+                <span class="hljs-keyword">set</span>(display){
+                    bookTitle.style.display = display;
+                }
+        });
+        <span class="hljs-comment">//View(视图层)负责维护 UI 结构与样式</span>
+        <span class="hljs-comment">//同时负责与 ViewModel(视图模型)做数据绑定</span>
+        <span class="hljs-comment">//这里的数据绑定关系是双向的，也就是，ViewModel(视图模型)的数据发生变化，会触发 View(视图层)的更新</span>
+        viewModel.title=<span class="hljs-string">'新红楼梦'</span>;
+        setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+            viewModel.display= <span class="hljs-string">'none'</span>;
+        },<span class="hljs-number">3000</span>);
+        <span class="hljs-comment">//同时视图层的数据变化又会触发 ViewModel(视图模型)的变化</span>
+        bookTitle.onchange = <span class="hljs-function">(<span class="hljs-params">event</span>)=&gt;</span>{
+            viewModel.title = event.target.value;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="t113.2.2 observable">3.2.2 observable <a href="#t113.2.2 observable"> # </a></h4>
+<ul>
+<li><a href="https://reactive.formilyjs.org/zh-CN/api/observable">observable</a>主要用于创建不同响应式行为的 <code>observable</code> 对象</li>
+<li>一个<code>observable</code>对象，字面意思是可订阅对象，我们通过创建一个可订阅对象，在每次操作该对象的属性数据的过程中，会自动通知订阅者</li>
+<li><a href="https://reactive.formilyjs.org/zh-CN">@formily/reactive</a> 创建 <a href="https://reactive.formilyjs.org/zh-CN/api/observable">observable</a> 对象主要是通过 <code>ES Proxy</code> 来创建的，它可以做到完美劫持数据操作</li>
+</ul>
+<h4 id="t123.2.2 Reaction">3.2.2 Reaction <a href="#t123.2.2 Reaction"> # </a></h4>
+<ul>
+<li>`<a href="https://reactive.formilyjs.org/zh-CN/api/reaction">reaction</a>在响应式编程模型中，它就相当于是可订阅对象的订阅者</li>
+<li>它接收一个 <code>tracker</code> 函数，这个函数在执行的时候，如果函数内部有对 <code>observable</code> 对象中的某个属性进行读操作会进行依赖收集，那当前 <code>reaction</code> 就会与该属性进行一个绑定(依赖追踪)，该属性在其它地方发生了写操作，就会触发 <code>tracker</code> 函数重复执行</li>
+<li>从订阅到派发订阅，其实是一个封闭的循环状态机，每次 <code>tracker</code> 函数执行的时候都会重新收集依赖，依赖变化时又会重新触发<code>tracker</code>执行</li>
+</ul>
+<h4 id="t133.2.3 autorun">3.2.3 autorun <a href="#t133.2.3 autorun"> # </a></h4>
+<ul>
+<li><a href="https://reactive.formilyjs.org/zh-CN/api/autorun">autorun</a>可以创建一个自动执行的响应器</li>
+<li>接收一个 <code>tracker</code> 函数，如果函数内部有消费 <code>observable</code> 数据，数据发生变化时，<code>tracker</code> 函数会重复执行</li>
+</ul>
+<h4 id="t143.2.4 实现observable">3.2.4 实现observable <a href="#t143.2.4 实现observable"> # </a></h4>
+<h5 id="t153.2.4.1 src\main.tsx">3.2.4.1 src\main.tsx <a href="#t153.2.4.1 src\main.tsx"> # </a></h5>
+<p>src\main.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { observable, autorun } <span class="hljs-keyword">from</span> <span class="hljs-string">'./@formily/reactive'</span>
+<span class="hljs-keyword">const</span> obs = observable({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'zhu'</span>,
+})
+<span class="hljs-keyword">const</span> tracker = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(obs.name);
+}
+autorun(tracker)
+obs.name = <span class="hljs-string">'feng'</span>;
+<span class="hljs-comment">/**
+zhu
+feng
+ */</span>
+</code></pre>
+<pre><code class="lang-diff">import { observable, autorun } from '@formily/reactive'
+const obs = observable({
+  name: 'zhu',
+<span class="hljs-addition">+ age: 12</span>
+})
+<span class="hljs-addition">+let counter = 0;</span>
+const tracker = () =&gt; {
+  console.log(obs.name);
+<span class="hljs-addition">+ if (counter++) {</span>
+<span class="hljs-addition">+   console.log(obs.age);</span>
+<span class="hljs-addition">+ }</span>
+}
+autorun(tracker)
+<span class="hljs-addition">+obs.age = 13;</span>
+obs.name = 'feng';
+<span class="hljs-addition">+obs.age = 14;</span>
+/**
+tracker第1次执行
+zhu
+tracker第2次执行
+feng
+13
+tracker第3次执行
+feng
+14
+ */
+</code></pre>
+<h5 id="t163.2.4.2 reactive\index.ts">3.2.4.2 reactive\index.ts <a href="#t163.2.4.2 reactive\index.ts"> # </a></h5>
+<p>src\@formily\reactive\index.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> RawReactionsMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakMap</span>()
+<span class="hljs-keyword">let</span> currentReaction;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">observable</span>(<span class="hljs-params">value</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(value, baseHandlers)
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> autorun = <span class="hljs-function">(<span class="hljs-params">tracker</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> reaction = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        currentReaction = reaction;
+        tracker()
+        currentReaction = <span class="hljs-literal">null</span>;
+    }
+    reaction()
+}
+<span class="hljs-keyword">const</span> baseHandlers = {
+    <span class="hljs-keyword">get</span>(target, key) {
+        <span class="hljs-keyword">const</span> result = target[key]
+        <span class="hljs-keyword">if</span> (currentReaction) {
+            addRawReactionsMap(target, key, currentReaction)
+        }
+        <span class="hljs-keyword">return</span> result
+    },
+    <span class="hljs-keyword">set</span>(target, key, value) {
+        target[key] = value
+        RawReactionsMap.get(target)?.get(key)?.forEach(<span class="hljs-function">(<span class="hljs-params">reaction</span>) =&gt;</span> reaction())
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+}
+<span class="hljs-keyword">const</span> addRawReactionsMap = <span class="hljs-function">(<span class="hljs-params">target, key, reaction</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> reactionsMap = RawReactionsMap.get(target)
+    <span class="hljs-keyword">if</span> (reactionsMap) {
+        <span class="hljs-keyword">const</span> reactions = reactionsMap.get(key)
+        <span class="hljs-keyword">if</span> (reactions) {
+            reactions.push(reaction)
+        } <span class="hljs-keyword">else</span> {
+            reactionsMap.set(key, [reaction])
+        }
+        <span class="hljs-keyword">return</span> reactionsMap
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">const</span> reactionsMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()
+        reactionsMap.set(key, [reaction]);
+        RawReactionsMap.set(target, reactionsMap)
+        <span class="hljs-keyword">return</span> reactionsMap
+    }
+}
+</code></pre>
+<h4 id="t173.2.5 Observer">3.2.5 Observer <a href="#t173.2.5 Observer"> # </a></h4>
+<ul>
+<li><a href="https://reactive.formilyjs.org/zh-CN/api/react/observer">Observer</a>接收一个 <code>Function RenderProps</code>，只要在 <code>Function</code> 内部消费到的任何响应式数据，都会随数据变化而自动重新渲染，也更容易实现局部精确渲染</li>
+</ul>
+<h5 id="t183.2.5.1 src\main.tsx">3.2.5.1 src\main.tsx <a href="#t183.2.5.1 src\main.tsx"> # </a></h5>
+<p>src\main.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>;
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'root'</span>)!);
+</code></pre>
+<h5 id="t193.2.5.2 src\App.tsx">3.2.5.2 src\App.tsx <a href="#t193.2.5.2 src\App.tsx"> # </a></h5>
+<p>src\App.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'./@formily/reactive'</span>
+<span class="hljs-keyword">import</span> { Observer } <span class="hljs-keyword">from</span> <span class="hljs-string">'./@formily/reactive-react'</span>
+<span class="hljs-keyword">const</span> username = observable({ <span class="hljs-attr">value</span>: <span class="hljs-string">'zhangsan'</span> })
+<span class="hljs-keyword">const</span> age = observable({ <span class="hljs-attr">value</span>: <span class="hljs-number">14</span> })
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Observer</span>&gt;</span>
+        {() =&gt; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+            <span class="hljs-attr">value</span>=<span class="hljs-string">{username.value}</span>
+            <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(event)</span> =&gt;</span> {
+              username.value = event.target.value
+            }}
+          /&gt;
+        )}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Observer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Observer</span>&gt;</span>{() =&gt; {
+        console.log('username render');
+        return <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{username.value}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>;
+      }}<span class="hljs-tag">&lt;/<span class="hljs-name">Observer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Observer</span>&gt;</span>
+        {() =&gt; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+            <span class="hljs-attr">value</span>=<span class="hljs-string">{age.value}</span>
+            <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(event)</span> =&gt;</span> {
+              age.value = +event.target.value
+            }}
+          /&gt;
+        )}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Observer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Observer</span>&gt;</span>{() =&gt; {
+        console.log('age render');
+        return <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{age.value}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>;
+      }}<span class="hljs-tag">&lt;/<span class="hljs-name">Observer</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  )
+}
+</code></pre>
+<h5 id="t203.2.5.3 reactive-react\index.tsx">3.2.5.3 reactive-react\index.tsx <a href="#t203.2.5.3 reactive-react\index.tsx"> # </a></h5>
+<p>src\@formily\reactive-react\index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { useReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { Tracker } <span class="hljs-keyword">from</span> <span class="hljs-string">'../../@formily/reactive'</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> Observer = <span class="hljs-function">(<span class="hljs-params">props</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> [, forceUpdate] = useReducer(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x + <span class="hljs-number">1</span>, <span class="hljs-number">0</span>)
+    <span class="hljs-keyword">const</span> trackerRef = React.useRef(<span class="hljs-literal">null</span>)
+    <span class="hljs-keyword">if</span> (!trackerRef.current)
+        trackerRef.current = <span class="hljs-keyword">new</span> Tracker(forceUpdate)
+    <span class="hljs-keyword">return</span> trackerRef.current.track(props.children)
+}
+</code></pre>
+<h5 id="t213.2.5.4 reactive\index.ts">3.2.5.4 reactive\index.ts <a href="#t213.2.5.4 reactive\index.ts"> # </a></h5>
+<p>src\@formily\reactive\index.ts</p>
+<pre><code class="lang-diff">const RawReactionsMap = new WeakMap()
+let currentReaction;
+export function observable(value) {
+    return new Proxy(value, baseHandlers)
+}
+export const autorun = (tracker) =&gt; {
+    const reaction = () =&gt; {
+        currentReaction = reaction;
+        tracker()
+        currentReaction = null;
+    }
+    reaction()
+}
+const baseHandlers = {
+    get(target, key) {
+        const result = target[key]
+        if (currentReaction) {
+            addRawReactionsMap(target, key, currentReaction)
+        }
+        return result
+    },
+    set(target, key, value) {
+        target[key] = value
+        RawReactionsMap.get(target)?.get(key)?.forEach((reaction) =&gt; {
+<span class="hljs-addition">+           if (typeof reaction._scheduler === 'function') {</span>
+<span class="hljs-addition">+               reaction._scheduler()</span>
+<span class="hljs-addition">+           } else {</span>
+<span class="hljs-addition">+               reaction()</span>
+<span class="hljs-addition">+           }</span>
+        })
+        return true;
+    }
+}
+const addRawReactionsMap = (target, key, reaction) =&gt; {
+    const reactionsMap = RawReactionsMap.get(target)
+    if (reactionsMap) {
+        const reactions = reactionsMap.get(key)
+        if (reactions) {
+            reactions.push(reaction)
+        } else {
+            reactionsMap.set(key, [reaction])
+        }
+        return reactionsMap
+    } else {
+        const reactionsMap = new Map()
+        reactionsMap.set(key, [reaction]);
+        RawReactionsMap.set(target, reactionsMap)
+        return reactionsMap
+    }
+}
+
+<span class="hljs-addition">+export class Tracker {</span>
+<span class="hljs-addition">+    constructor(scheduler) {</span>
+<span class="hljs-addition">+        this.track._scheduler = scheduler</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    track: any = (tracker) =&gt; {</span>
+<span class="hljs-addition">+        currentReaction = this.track;</span>
+<span class="hljs-addition">+        return tracker()</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+}</span>
+</code></pre>
+<h2 id="t224. 字段关联逻辑复杂">4. 字段关联逻辑复杂 <a href="#t224. 字段关联逻辑复杂"> # </a></h2>
+<h3 id="t234.1 问题">4.1 问题 <a href="#t234.1 问题"> # </a></h3>
+<ul>
+<li>字段关联逻辑复杂，如何更简单的实现复杂的联动逻辑？字段与字段关联时，如何保证不影响表单性能？<ul>
+<li>一对多(异步)</li>
+<li>多对一(异步)</li>
+<li>多对多(异步)</li>
+</ul>
+</li>
+</ul>
+<h3 id="t244.2 领域模型">4.2 领域模型 <a href="#t244.2 领域模型"> # </a></h3>
+<ul>
+<li>字段值的改变和应用状态、服务器返回数据等都可能会引发字段的联动</li>
+<li>联动关系核心是将字段的某些状态属性与某些数据关联起来</li>
+<li>可以定义针对表单领域的<code>领域模型</code></li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/models/form">Form</a>是调用<code>createForm</code>所返回的核心表单模型</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/models/field">Field</a>是调用<code>createField</code>所返回的字段模型</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/entry/create-form">createForm</a>用来创建表单核心领域模型，它是作为MVVM设计模式的标准 <code>ViewModel</code></li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/fields_1655444784309.svg" alt="fields"></p>
+<p>src\main.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">const</span> form = createForm()
+<span class="hljs-keyword">const</span> field = form.createField({ <span class="hljs-attr">name</span>: <span class="hljs-string">'target'</span> })
+</code></pre>
+<h3 id="t254.3 DDD(领域驱动)">4.3 DDD(领域驱动) <a href="#t254.3 DDD(领域驱动)"> # </a></h3>
+<ul>
+<li>DDD(Domain-Driven Design)即领域驱动设计是思考问题的方法论,用于对实际问题建模</li>
+<li>它以一种领域专家、设计人员、开发人员都能理解的通用语言作为相互交流的工具，然后将这些概念设计成一个领域模型。由领域模型驱动软件设计，用代码来实现该领域模型</li>
+</ul>
+<h4 id="t264.3.1 表单">4.3.1 表单 <a href="#t264.3.1 表单"> # </a></h4>
+<pre><code class="lang-js">interface Form {
+   values,<span class="hljs-comment">//值</span>
+   visible, <span class="hljs-comment">//是否可见</span>
+   submit() <span class="hljs-comment">//提交</span>
+}
+</code></pre>
+<h4 id="t274.3.2 字段">4.3.2 字段 <a href="#t274.3.2 字段"> # </a></h4>
+<pre><code class="lang-js">interface Field {
+   value,     <span class="hljs-comment">//值</span>
+   visible,   <span class="hljs-comment">//是否可见</span>
+   setValue() <span class="hljs-comment">//设置值</span>
+}
+</code></pre>
+<h3 id="t284.4 路径系统">4.4 路径系统 <a href="#t284.4 路径系统"> # </a></h3>
+<ul>
+<li>表单模型作为顶层模型管理着所有字段模型，每个字段都有着自己的路径</li>
+<li>如何优雅的查找某个字段?</li>
+<li>Formily 独创的路径系统<a href="https://core.formilyjs.org/zh-CN/api/entry/form-path">@formily/path</a>让字段查找变得优雅</li>
+<li><code>FormPath</code> 在 Formily 中核心是解决路径匹配问题和数据操作问题</li>
+</ul>
+<p>src\main.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { FormPath } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">const</span> target = { <span class="hljs-attr">array</span>: [] }
+<span class="hljs-comment">//点路径 就是我们最常用的a.b.c格式，用点符号来分割每个路径节点，主要用来读写数据</span>
+FormPath.setIn(target, <span class="hljs-string">'a.b.c'</span>, <span class="hljs-string">'dotValue'</span>)
+<span class="hljs-built_in">console</span>.log(FormPath.getIn(target, <span class="hljs-string">'a.b.c'</span>)) <span class="hljs-comment">//'dotValue'</span>
+
+<span class="hljs-comment">//下标路径 对于数组路径，都会有下标，我们的下标可以用点语法，也可以用中括号</span>
+FormPath.setIn(target, <span class="hljs-string">'array.0.d'</span>, <span class="hljs-string">'arrayValue'</span>)
+<span class="hljs-built_in">console</span>.log(FormPath.getIn(target, <span class="hljs-string">'array.0.d'</span>)) <span class="hljs-comment">//arrayValue</span>
+
+<span class="hljs-comment">//解构表达式 解构表达式类似于 ES6 的解构语法,在前后端数据不一致的场景非常适用,解构表达式会作为点路径的某个节点</span>
+FormPath.setIn(target, <span class="hljs-string">'parent.[f,g]'</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>])
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(target))
+<span class="hljs-comment">//{"array":[{"d":"arrayValue"}],"a":{"b":{"c":"dotValue"}},"parent":{"f":1,"g":2}}</span>
+</code></pre>
+<h2 id="t295. 生命周期">5. 生命周期 <a href="#t295. 生命周期"> # </a></h2>
+<h3 id="t305.1 问题">5.1 问题 <a href="#t305.1 问题"> # </a></h3>
+<ul>
+<li>响应式和路径系统组成一个较为完备的表单方案,但是一个黑盒</li>
+<li>想要在某个过程阶段内实现一些自定义逻辑如何实现?</li>
+</ul>
+<h3 id="t315.2 解决方案">5.2 解决方案 <a href="#t315.2 解决方案"> # </a></h3>
+<ul>
+<li><a href="https://core.formilyjs.org/zh-CN/api/entry/form-effect-hooks">Form Effect Hooks</a>可以将整个表单生命周期作为事件钩子暴露给外界，这样就能做到了既有抽象，但又灵活的表单方案</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/entry/form-effect-hooks#onforminit">onFormInit</a>用于监听某个表单初始化的副作用钩子，我们在调用 createForm 的时候就会触发初始化事件</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/entry/form-effect-hooks#%E6%8F%8F%E8%BF%B0-3">onFormReact</a>用于实现表单响应式逻辑的副作用钩子，它的核心原理就是表单初始化的时候会执行回调函数，同时自动追踪依赖，依赖数据发生变化时回调函数会重复执行</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { useMemo, useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> { createForm, onFormInit, onFormReact } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; {
+  <span class="hljs-keyword">const</span> [state, setState] = useState(<span class="hljs-string">'init'</span>)
+  <span class="hljs-keyword">const</span> form = useMemo(
+    <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span>
+      createForm({
+        effects() {
+          onFormInit(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+            setState(<span class="hljs-string">'表单已初始化'</span>)
+          })
+          onFormReact(<span class="hljs-function">(<span class="hljs-params">form</span>) =&gt;</span> {
+            <span class="hljs-keyword">if</span> (form.values.input == <span class="hljs-string">'Hello'</span>) {
+              setState(<span class="hljs-string">'响应Hello'</span>)
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (form.values.input == <span class="hljs-string">'World'</span>) {
+              setState(<span class="hljs-string">'响应World'</span>)
+            }
+          })
+        },
+
+      }),
+    []
+  )
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{state}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> {
+          form.setValuesIn('input', 'Hello')
+        }}
+      &gt;
+        Hello
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> {
+          form.setValuesIn('input', 'World')
+        }}
+      &gt;
+        World
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  )
+}
+</code></pre>
+<h2 id="t326 协议驱动">6 协议驱动 <a href="#t326 协议驱动"> # </a></h2>
+<h3 id="t336.1 问题">6.1 问题 <a href="#t336.1 问题"> # </a></h3>
+<ul>
+<li>动态渲染述求很强烈<ul>
+<li>字段配置化，让非专业前端也能快速搭建复杂表单</li>
+<li>跨端渲染，一份 JSON Schema，多端适配</li>
+<li>如何在表单协议中描述布局？<ul>
+<li>纵向布局</li>
+<li>横向布局</li>
+<li>网格布局</li>
+<li>弹性布局</li>
+<li>自由布局</li>
+</ul>
+</li>
+<li>如何在表单协议中描述逻辑？</li>
+</ul>
+</li>
+</ul>
+<h3 id="t346.2 解决方案">6.2 解决方案 <a href="#t346.2 解决方案"> # </a></h3>
+<ul>
+<li>表单场景的数据协议最流行就是<a href="https://json-schema.org/">JSON-Schema</a></li>
+<li>定义一套通用协议，简单高效的描述表单逻辑，适合开发低代码</li>
+</ul>
+<h3 id="t356.3 JSON-Schema">6.3 JSON-Schema <a href="#t356.3 JSON-Schema"> # </a></h3>
+<ul>
+<li><a href="https://json-schema.org">JSON-Schema</a>以数据描述视角驱动UI渲染，不好描述UI</li>
+<li><a href="https://ajv.js.org">ajv</a>是一个JSON Schema验证器
+-</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> Ajv <span class="hljs-keyword">from</span> <span class="hljs-string">'ajv'</span>;
+<span class="hljs-keyword">const</span> ajv = <span class="hljs-keyword">new</span> Ajv()
+
+<span class="hljs-keyword">const</span> schema = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">"object"</span>,
+  <span class="hljs-attr">properties</span>: {
+    <span class="hljs-attr">foo</span>: { <span class="hljs-attr">type</span>: <span class="hljs-string">"integer"</span> },
+    <span class="hljs-attr">bar</span>: { <span class="hljs-attr">type</span>: <span class="hljs-string">"string"</span> }
+  },
+  <span class="hljs-attr">required</span>: [<span class="hljs-string">"foo"</span>],
+  <span class="hljs-attr">additionalProperties</span>: <span class="hljs-literal">false</span>
+}
+
+<span class="hljs-keyword">const</span> validate = ajv.compile(schema)
+
+<span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">foo</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">bar</span>: <span class="hljs-string">"abc"</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">1</span>
+}
+
+<span class="hljs-keyword">const</span> valid = validate(data)
+<span class="hljs-keyword">if</span> (!valid)
+  <span class="hljs-built_in">console</span>.log(validate.errors)
+</code></pre>
+<h3 id="t366.4 扩展的JSON-Schema">6.4 扩展的JSON-Schema <a href="#t366.4 扩展的JSON-Schema"> # </a></h3>
+<ul>
+<li><code>Formily</code>扩展了<code>JSON-Schema</code> 属性，统一以<code>x-*</code>格式来表达扩展属性以描述数据无关的布局容器和控件，实现UI协议与数据协议混合在一起</li>
+<li>JSON Schema 引入 <code>void</code>，代表一个虚数据节点，表示该节点并不占用实际数据结构</li>
+<li>DSL(领域特定语言)(Domain Specific Language)是针对某一领域，具有受限表达性的一种计算机程序设计语言</li>
+</ul>
+<pre><code class="lang-js">{
+  <span class="hljs-string">"type"</span>: <span class="hljs-string">"string"</span>,
+  <span class="hljs-string">"title"</span>: <span class="hljs-string">"字符串"</span>,
+  <span class="hljs-string">"description"</span>: <span class="hljs-string">"这是一个字符串"</span>,
+  <span class="hljs-string">"x-component"</span>: <span class="hljs-string">"Input"</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+  <span class="hljs-string">"x-component-props"</span>: {<span class="hljs-comment">//字段 UI 组件属性</span>
+    <span class="hljs-string">"placeholder"</span>: <span class="hljs-string">"请输入"</span>
+  }
+}
+</code></pre>
+<pre><code class="lang-js">{
+  <span class="hljs-string">"type"</span>: <span class="hljs-string">"void"</span>,
+  <span class="hljs-string">"title"</span>: <span class="hljs-string">"卡片"</span>,
+  <span class="hljs-string">"description"</span>: <span class="hljs-string">"这是一个卡片"</span>,
+  <span class="hljs-string">"x-component"</span>: <span class="hljs-string">"Card"</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+  <span class="hljs-string">"properties"</span>: {
+    <span class="hljs-string">"name"</span>: {
+      <span class="hljs-string">"type"</span>: <span class="hljs-string">"string"</span>,
+      <span class="hljs-string">"title"</span>: <span class="hljs-string">"字符串"</span>,
+      <span class="hljs-string">"description"</span>: <span class="hljs-string">"这是一个字符串"</span>,
+      <span class="hljs-string">"x-component"</span>: <span class="hljs-string">"Input"</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+      <span class="hljs-string">"x-component-props"</span>: {<span class="hljs-comment">//字段 UI 组件属性</span>
+        <span class="hljs-string">"placeholder"</span>: <span class="hljs-string">"请输入"</span>
+      }
+    }
+  }
+}
+</code></pre>
+<h3 id="t376.5 API">6.5 API <a href="#t376.5 API"> # </a></h3>
+<ul>
+<li><a href="https://core.formilyjs.org/zh-CN/api/entry/create-form">createForm</a>创建一个 Form 实例，作为 ViewModel 给 UI 框架层消费<ul>
+<li>effects 副作用逻辑，用于实现各种联动逻辑</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/entry/field-effect-hooks#onfieldmount">onFieldMount</a>用于监听某个字段已挂载的副作用钩子</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/entry/field-effect-hooks#onfieldvaluechange">onFieldValueChange</a>用于监听某个字段值变化的副作用钩子</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/models/form#setfieldstate">setFieldState</a>可以设置字段状态</li>
+</ul>
+</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/models/field">core/Field</a>组件是用来承接普通字段的组件</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/components/field">react/Field</a>作为<code>@formily/core</code> 的 <code>createField</code> React 实现，它是专门用于将 <code>ViewModel</code> 与输入控件做绑定的桥接组件<ul>
+<li><a href="https://core.formilyjs.org/zh-CN/api/models/field#%E5%B1%9E%E6%80%A7">title</a>字段标题</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/models/field#%E5%B1%9E%E6%80%A7">required</a>字段是否必填,如果 <code>decorator</code> 指定为 <code>FormItem</code>，那么会自动出现星号提示</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/models/field#%E5%B1%9E%E6%80%A7">component</a>字段组件,注意 component 属性传递的是数组形式，第一个参数代表指定组件类型，第二个参数代表指定组件属性</li>
+<li><a href="https://core.formilyjs.org/zh-CN/api/models/field#%E5%B1%9E%E6%80%A7">decorator</a>字段装饰器,通常我们都会指定为 FormItem,注意 decorator 属性传递的是数组形式，第一个参数代表指定组件类型，第二个参数代表指定组件属性</li>
+</ul>
+</li>
+<li><code>SchemaField</code>组件是专门用于解析<code>JSON-Schema</code>动态渲染表单的组件。 在使用<code>SchemaField</code>组件的时候，需要通过 <a href="https://react.formilyjs.org/zh-CN/api/components/schema-field">createSchemaField</a> 工厂函数创建一个 <code>SchemaField`</code> 组件</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">Schema</a>是<code>@formily/react</code>协议驱动最核心的部分<ul>
+<li>解析 <code>json-schema</code> 的能力</li>
+<li>将 <code>json-schema</code> 转换成 <code>Field Model</code> 的能力</li>
+<li>编译 <code>json-schema</code> 表达式的能力</li>
+<li><code>x-component</code> 的组件标识与<code>createSchemaField</code>传入的组件集合的 <code>Key</code> 匹配</li>
+<li><code>x-decorator</code> 的组件标识与<code>createSchemaField</code>传入的组件集合的 <code>Key</code> 匹配</li>
+<li><code>Schema</code> 的每个属性都能使用字符串表达式<code>{{expression}}</code>，表达式变量可以从 <code>createSchemaField</code> 中传入，也可以从 <code>SchemaField</code> 组件中传入</li>
+</ul>
+</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">Schema</a>属性<ul>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">type</a>类型</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">properties</a>属性描述</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">title</a>标题</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">required</a>必填</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">x-decorator</a>字段 UI 包装器组件</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">x-component</a>字段 UI 组件属性</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">x-component-props</a>字段 UI 组件属性</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema#schemareactions">x-reactions</a>字段联动协议</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema#deps">$deps</a>只能在<code>x-reactions</code>中的表达式消费，与 <code>x-reactions`</code> 定义的 <code>dependencies`</code> 对应，数组顺序一致</li>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema#self">$self</a>代表当前字段实例，可以在普通属性表达式中使用，也能在 x-reactions 中使用</li>
+</ul>
+</li>
+</ul>
+<h3 id="t386.5 表单渲染">6.5 表单渲染 <a href="#t386.5 表单渲染"> # </a></h3>
+<ul>
+<li>Formily 的表单校验使用了极其强大且灵活的<a href="https://core.formilyjs.org/zh-CN/api/models/field#fieldvalidator">FieldValidator</a>校验引擎，校验主要分两种场景：<ul>
+<li>纯 <code>JSX</code> 场景校验属性，使用 <code>validator</code> 属性实现校验</li>
+<li><code>Markup(JSON) Schema</code>场景协议校验属性校验，使用 <code>JSON Schema</code> 本身的校验属性与 <code>x-validator</code> 属性实现校验</li>
+</ul>
+</li>
+</ul>
+<h4 id="t396.5.1  JSX 案例">6.5.1  JSX 案例 <a href="#t396.5.1  JSX 案例"> # </a></h4>
+<p>src\App.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { Field } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'antd/dist/antd.css'</span>
+<span class="hljs-keyword">import</span> { Form, FormItem, Input, NumberPicker } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-comment">//createForm创建一个 Form 实例，作为 ViewModel 给 UI 框架层消费</span>
+<span class="hljs-keyword">const</span> form = createForm()
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">form</span>=<span class="hljs-string">{form}</span> <span class="hljs-attr">labelCol</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">wrapperCol</span>=<span class="hljs-string">{10}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Field</span>
+        <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>
+        <span class="hljs-attr">title</span>=<span class="hljs-string">"姓名"</span>
+        <span class="hljs-attr">required</span>
+        <span class="hljs-attr">component</span>=<span class="hljs-string">{[Input]}</span>
+        <span class="hljs-attr">decorator</span>=<span class="hljs-string">{[FormItem]}</span>
+      /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Field</span>
+        <span class="hljs-attr">name</span>=<span class="hljs-string">"age"</span>
+        <span class="hljs-attr">title</span>=<span class="hljs-string">"年龄"</span>
+        <span class="hljs-attr">validator</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">maximum:</span> <span class="hljs-attr">5</span> }}
+        <span class="hljs-attr">component</span>=<span class="hljs-string">{[NumberPicker]}</span>
+        <span class="hljs-attr">decorator</span>=<span class="hljs-string">{[FormItem]}</span>
+      /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h4 id="t406.5.2  JSON Schema案例">6.5.2  JSON Schema案例 <a href="#t406.5.2  JSON Schema案例"> # </a></h4>
+<ul>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema">schema</a>是<code>@formily/react</code>协议驱动最核心的部分<ul>
+<li>解析 <code>json-schema</code> 的能力</li>
+<li>将 <code>json-schema</code> 转换成 <code>Field Model</code> 的能力</li>
+<li>编译 <code>json-schema</code> 表达式的能力</li>
+</ul>
+</li>
+</ul>
+<p>src\App.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { createSchemaField } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'antd/dist/antd.css'</span>
+<span class="hljs-keyword">import</span> { Form, FormItem, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">const</span> form = createForm()
+<span class="hljs-keyword">const</span> SchemaField = createSchemaField({
+  <span class="hljs-attr">components</span>: {
+    FormItem,
+    Input
+  },
+})
+<span class="hljs-keyword">const</span> schema = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'object'</span>,
+  <span class="hljs-attr">properties</span>: {
+    <span class="hljs-attr">name</span>: {
+      <span class="hljs-attr">title</span>: <span class="hljs-string">`姓名`</span>,
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>,
+      <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">'x-decorator'</span>: <span class="hljs-string">'FormItem'</span>,<span class="hljs-comment">//字段 UI 包装器组件</span>
+      <span class="hljs-string">'x-component'</span>: <span class="hljs-string">'Input'</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+    },
+    <span class="hljs-attr">age</span>: {
+      <span class="hljs-attr">title</span>: <span class="hljs-string">`邮箱`</span>,
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>,
+      <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">'x-validator'</span>: <span class="hljs-string">'email'</span>,
+      <span class="hljs-string">'x-decorator'</span>: <span class="hljs-string">'FormItem'</span>,<span class="hljs-comment">//字段 UI 包装器组件</span>
+      <span class="hljs-string">'x-component'</span>: <span class="hljs-string">'Input'</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+    },
+  },
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">form</span>=<span class="hljs-string">{form}</span> <span class="hljs-attr">labelCol</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">wrapperCol</span>=<span class="hljs-string">{10}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span> <span class="hljs-attr">schema</span>=<span class="hljs-string">{schema}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h4 id="t416.5.3 Markup Schema 案例">6.5.3 Markup Schema 案例 <a href="#t416.5.3 Markup Schema 案例"> # </a></h4>
+<p>src\App.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { createSchemaField } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'antd/dist/antd.css'</span>
+<span class="hljs-keyword">import</span> { Form, FormItem, Input, NumberPicker } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">const</span> form = createForm()
+<span class="hljs-keyword">const</span> SchemaField = createSchemaField({
+  <span class="hljs-attr">components</span>: {
+    Input,
+    FormItem,
+    NumberPicker
+  },
+})
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">form</span>=<span class="hljs-string">{form}</span> <span class="hljs-attr">labelCol</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">wrapperCol</span>=<span class="hljs-string">{10}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+          <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>
+          <span class="hljs-attr">title</span>=<span class="hljs-string">"姓名"</span>
+          <span class="hljs-attr">required</span>
+          <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>//字段 <span class="hljs-attr">UI</span> 组件属性
+          <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>//字段 <span class="hljs-attr">UI</span> 包装器组件
+        /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Number</span>
+          <span class="hljs-attr">name</span>=<span class="hljs-string">"age"</span>
+          <span class="hljs-attr">title</span>=<span class="hljs-string">"年龄"</span>
+          <span class="hljs-attr">maximum</span>=<span class="hljs-string">{120}</span>
+          <span class="hljs-attr">x-component</span>=<span class="hljs-string">"NumberPicker"</span>//字段 <span class="hljs-attr">UI</span> 组件属性
+          <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>//字段 <span class="hljs-attr">UI</span> 包装器组件
+        /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h3 id="t426.6 联动校验">6.6 联动校验 <a href="#t426.6 联动校验"> # </a></h3>
+<ul>
+<li>同时我们还能在 <code>effects</code> 或者 <code>x-reactions</code> 中实现联动校验</li>
+</ul>
+<h4 id="t436.6.1 主动联动">6.6.1 主动联动 <a href="#t436.6.1 主动联动"> # </a></h4>
+<ul>
+<li><a href="https://react.formilyjs.org/zh-CN/api/shared/schema#schemareactions">Schema 联动协议</a>，如果<code>reaction</code>对象里包含<code>target</code>，则代表<code>主动</code>联动模式，否则代表<code>被动</code>联动模式</li>
+</ul>
+<p>src\App.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { createSchemaField } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'antd/dist/antd.css'</span>
+<span class="hljs-keyword">import</span> { Form, FormItem, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">const</span> form = createForm()
+<span class="hljs-keyword">const</span> SchemaField = createSchemaField({
+  <span class="hljs-attr">components</span>: {
+    FormItem,
+    Input
+  },
+})
+<span class="hljs-keyword">const</span> schema = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'object'</span>,
+  <span class="hljs-attr">properties</span>: {
+    <span class="hljs-attr">source</span>: {
+      <span class="hljs-attr">title</span>: <span class="hljs-string">`来源`</span>,
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>,
+      <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">'x-decorator'</span>: <span class="hljs-string">'FormItem'</span>,<span class="hljs-comment">//字段 UI 包装器组件</span>
+      <span class="hljs-string">'x-component'</span>: <span class="hljs-string">'Input'</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+      <span class="hljs-string">"x-component-props"</span>: {<span class="hljs-comment">//字段 UI 组件属性</span>
+        <span class="hljs-string">"placeholder"</span>: <span class="hljs-string">"请输入"</span>
+      },
+      <span class="hljs-string">"x-reactions"</span>: [<span class="hljs-comment">//字段联动协议</span>
+        {
+          <span class="hljs-string">"target"</span>: <span class="hljs-string">"target"</span>,<span class="hljs-comment">///要操作的字段路径，支持FormPathPattern路径语法</span>
+          <span class="hljs-comment">//代表当前字段实例，可以在普通属性表达式中使用，也能在 x-reactions 中使用</span>
+          <span class="hljs-string">"when"</span>: <span class="hljs-string">"{{$self.value == '123'}}"</span>,<span class="hljs-comment">//联动条件</span>
+          <span class="hljs-string">"fulfill"</span>: { <span class="hljs-comment">//满足条件</span>
+            <span class="hljs-string">"state"</span>: {<span class="hljs-comment">//更新状态</span>
+              <span class="hljs-string">"visible"</span>: <span class="hljs-literal">true</span>
+            }
+          },
+          <span class="hljs-string">"otherwise"</span>: { <span class="hljs-comment">//不满足条件</span>
+            <span class="hljs-string">"state"</span>: {<span class="hljs-comment">//更新状态</span>
+              <span class="hljs-string">"visible"</span>: <span class="hljs-literal">false</span>
+            }
+          }
+        }
+      ]
+    },
+    <span class="hljs-attr">target</span>: {
+      <span class="hljs-string">"title"</span>: <span class="hljs-string">"目标"</span>,
+      <span class="hljs-string">"type"</span>: <span class="hljs-string">"string"</span>,
+      <span class="hljs-string">"x-component"</span>: <span class="hljs-string">"Input"</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+      <span class="hljs-string">"x-component-props"</span>: {<span class="hljs-comment">//字段 UI 组件属性</span>
+        <span class="hljs-string">"placeholder"</span>: <span class="hljs-string">"请输入"</span>
+      },
+      <span class="hljs-string">'x-decorator'</span>: <span class="hljs-string">'FormItem'</span><span class="hljs-comment">//字段 UI 包装器组件</span>
+    }
+  },
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">form</span>=<span class="hljs-string">{form}</span> <span class="hljs-attr">labelCol</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">wrapperCol</span>=<span class="hljs-string">{10}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span> <span class="hljs-attr">schema</span>=<span class="hljs-string">{schema}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h4 id="t446.6.2 被动联动">6.6.2 被动联动 <a href="#t446.6.2 被动联动"> # </a></h4>
+<p>src\App.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { createSchemaField } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'antd/dist/antd.css'</span>
+<span class="hljs-keyword">import</span> { Form, FormItem, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">const</span> form = createForm()
+<span class="hljs-keyword">const</span> SchemaField = createSchemaField({
+  <span class="hljs-attr">components</span>: {
+    FormItem,
+    Input
+  },
+})
+<span class="hljs-keyword">const</span> schema = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'object'</span>,
+  <span class="hljs-attr">properties</span>: {
+    <span class="hljs-attr">source</span>: {
+      <span class="hljs-attr">title</span>: <span class="hljs-string">`来源`</span>,
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>,
+      <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">'x-decorator'</span>: <span class="hljs-string">'FormItem'</span>,<span class="hljs-comment">//字段 UI 包装器组件</span>
+      <span class="hljs-string">'x-component'</span>: <span class="hljs-string">'Input'</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+      <span class="hljs-string">"x-component-props"</span>: {<span class="hljs-comment">//字段 UI 组件属性</span>
+        <span class="hljs-string">"placeholder"</span>: <span class="hljs-string">"请输入"</span>
+      }
+    },
+    <span class="hljs-attr">target</span>: {
+      <span class="hljs-string">"title"</span>: <span class="hljs-string">"目标"</span>,
+      <span class="hljs-string">"type"</span>: <span class="hljs-string">"string"</span>,
+      <span class="hljs-string">"x-component"</span>: <span class="hljs-string">"Input"</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+      <span class="hljs-string">"x-component-props"</span>: {<span class="hljs-comment">//字段 UI 组件属性</span>
+        <span class="hljs-string">"placeholder"</span>: <span class="hljs-string">"请输入"</span>
+      },
+      <span class="hljs-string">'x-decorator'</span>: <span class="hljs-string">'FormItem'</span>,<span class="hljs-comment">//字段 UI 包装器组件</span>
+      <span class="hljs-string">"x-reactions"</span>: [<span class="hljs-comment">//字段联动协议</span>
+        {
+          <span class="hljs-string">"dependencies"</span>: [<span class="hljs-string">"source"</span>],
+          <span class="hljs-comment">//只能在x-reactions中的表达式消费，与 x-reactions 定义的 dependencies 对应，数组顺序一致</span>
+          <span class="hljs-string">"when"</span>: <span class="hljs-string">"{{$deps[0] == '123'}}"</span>,
+          <span class="hljs-string">"fulfill"</span>: {
+            <span class="hljs-string">"state"</span>: {
+              <span class="hljs-string">"visible"</span>: <span class="hljs-literal">true</span>
+            }
+          },
+          <span class="hljs-string">"otherwise"</span>: {
+            <span class="hljs-string">"state"</span>: {
+              <span class="hljs-string">"visible"</span>: <span class="hljs-literal">false</span>
+            }
+          }
+        }
+      ]
+    }
+  },
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">form</span>=<span class="hljs-string">{form}</span> <span class="hljs-attr">labelCol</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">wrapperCol</span>=<span class="hljs-string">{10}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span> <span class="hljs-attr">schema</span>=<span class="hljs-string">{schema}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h4 id="t456.6.3 effects">6.6.3 effects <a href="#t456.6.3 effects"> # </a></h4>
+<p>src\App.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createForm, onFieldMount, onFieldValueChange } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { createSchemaField } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'antd/dist/antd.css'</span>
+<span class="hljs-keyword">import</span> { Form, FormItem, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">const</span> form = createForm({
+  effects() {<span class="hljs-comment">//effects 副作用逻辑，用于实现各种联动逻辑</span>
+    <span class="hljs-comment">//用于监听某个字段已挂载的副作用钩子</span>
+    onFieldMount(<span class="hljs-string">'target'</span>, (field: any) =&gt; {
+      <span class="hljs-comment">//可以设置字段状态</span>
+      form.setFieldState(field.query(<span class="hljs-string">'target'</span>), (state) =&gt; {
+        <span class="hljs-keyword">if</span> (field.value === <span class="hljs-string">'123'</span>) {
+          state.visible = <span class="hljs-literal">true</span>;
+        } <span class="hljs-keyword">else</span> {
+          state.visible = <span class="hljs-literal">false</span>;
+        }
+      })
+    })
+    <span class="hljs-comment">//用于监听某个字段值变化的副作用钩子</span>
+    onFieldValueChange(<span class="hljs-string">'source'</span>, (field: any) =&gt; {
+      form.setFieldState(field.query(<span class="hljs-string">'target'</span>), (state) =&gt; {
+        <span class="hljs-keyword">if</span> (field.value === <span class="hljs-string">'123'</span>) {
+          state.visible = <span class="hljs-literal">true</span>;
+        } <span class="hljs-keyword">else</span> {
+          state.visible = <span class="hljs-literal">false</span>;
+        }
+      })
+    })
+  },
+})
+<span class="hljs-keyword">const</span> SchemaField = createSchemaField({
+  <span class="hljs-attr">components</span>: {
+    FormItem,
+    Input
+  },
+})
+<span class="hljs-keyword">const</span> schema = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'object'</span>,
+  <span class="hljs-attr">properties</span>: {
+    <span class="hljs-attr">source</span>: {
+      <span class="hljs-attr">title</span>: <span class="hljs-string">`来源`</span>,
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>,
+      <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">'x-decorator'</span>: <span class="hljs-string">'FormItem'</span>,<span class="hljs-comment">//字段 UI 包装器组件</span>
+      <span class="hljs-string">'x-component'</span>: <span class="hljs-string">'Input'</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+      <span class="hljs-string">"x-component-props"</span>: {<span class="hljs-comment">//字段 UI 组件属性</span>
+        <span class="hljs-string">"placeholder"</span>: <span class="hljs-string">"请输入"</span>
+      }
+    },
+    <span class="hljs-attr">target</span>: {
+      <span class="hljs-string">"title"</span>: <span class="hljs-string">"目标"</span>,
+      <span class="hljs-string">"type"</span>: <span class="hljs-string">"string"</span>,
+      <span class="hljs-string">'x-decorator'</span>: <span class="hljs-string">'FormItem'</span>,<span class="hljs-comment">//字段 UI 包装器组件</span>
+      <span class="hljs-string">"x-component"</span>: <span class="hljs-string">"Input"</span>,<span class="hljs-comment">//字段 UI 组件属性</span>
+      <span class="hljs-string">"x-component-props"</span>: {<span class="hljs-comment">//字段 UI 组件属性</span>
+        <span class="hljs-string">"placeholder"</span>: <span class="hljs-string">"请输入"</span>
+      }
+    }
+  }
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">form</span>=<span class="hljs-string">{form}</span> <span class="hljs-attr">labelCol</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">wrapperCol</span>=<span class="hljs-string">{10}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span> <span class="hljs-attr">schema</span>=<span class="hljs-string">{schema}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

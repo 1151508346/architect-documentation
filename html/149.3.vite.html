@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li class="active"><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01. rollup">1. rollup</a><ul><li><a href="#t11.1 debugger.js">1.1 debugger.js</a></li><li><a href="#t21.2 rollup.config.js">1.2 rollup.config.js</a></li><li><a href="#t31.3 package.json">1.3 package.json</a></li></ul></li><li><a href="#t42. rollup插件">2. rollup插件</a><ul><li><a href="#t52.1 插件规范">2.1 插件规范</a></li><li><a href="#t62.2.插件属性">2.2.插件属性</a><ul><li><a href="#t72.2.1 name">2.2.1 name</a></li></ul></li><li><a href="#t82.2 Build Hooks">2.2 Build Hooks</a><ul><li><a href="#t92.2.1 rollup-plugin-build.js">2.2.1 rollup-plugin-build.js</a></li><li><a href="#t102.2.2 rollup.config.js">2.2.2 rollup.config.js</a></li><li><a href="#t112.2.3 options">2.2.3 options</a></li><li><a href="#t122.2.4 buildStart">2.2.4 buildStart</a></li><li><a href="#t132.2.5 resolveId">2.2.5 resolveId</a></li><li><a href="#t142.2.6 load">2.2.6 load</a></li><li><a href="#t152.2.7 transform">2.2.7 transform</a></li><li><a href="#t162.2.8 shouldTransformCachedModule">2.2.8 shouldTransformCachedModule</a></li><li><a href="#t172.2.9 moduleParsed">2.2.9 moduleParsed</a></li><li><a href="#t182.2.10 resolveDynamicImport">2.2.10 resolveDynamicImport</a></li><li><a href="#t192.2.11 buildEnd">2.2.11 buildEnd</a></li></ul></li><li><a href="#t202.3 Output Generation Hooks">2.3 Output Generation Hooks</a><ul><li><a href="#t212.3.1 rollup-plugin-generation.js">2.3.1 rollup-plugin-generation.js</a></li><li><a href="#t222.3.2 rollup.config.js">2.3.2 rollup.config.js</a></li><li><a href="#t232.3.3 outputOptions">2.3.3 outputOptions</a></li><li><a href="#t242.3.4 renderStart">2.3.4 renderStart</a></li><li><a href="#t252.3.5 banner">2.3.5 banner</a></li><li><a href="#t262.3.6 footer">2.3.6 footer</a></li><li><a href="#t272.3.7 intro">2.3.7 intro</a></li><li><a href="#t282.3.8 outro">2.3.8 outro</a></li><li><a href="#t292.3.9 renderDynamicImport">2.3.9 renderDynamicImport</a></li><li><a href="#t302.3.9 augmentChunkHash">2.3.9 augmentChunkHash</a></li><li><a href="#t312.3.10 resolveFileUrl">2.3.10 resolveFileUrl</a></li><li><a href="#t322.3.11 resolveImportMeta">2.3.11 resolveImportMeta</a></li><li><a href="#t332.3.12 renderChunk">2.3.12 renderChunk</a></li><li><a href="#t342.3.13 generateBundle">2.3.13 generateBundle</a></li><li><a href="#t352.3.14 writeBundle">2.3.14 writeBundle</a></li><li><a href="#t362.3.15 renderError">2.3.15 renderError</a></li><li><a href="#t372.3.16 closeBundle">2.3.16 closeBundle</a></li></ul></li></ul></li><li><a href="#t383.Plugin Context">3.Plugin Context</a><ul><li><a href="#t393.1 this.emitFile">3.1 this.emitFile</a></li><li><a href="#t403.2 this.load">3.2 this.load</a></li><li><a href="#t413.3 this.load">3.3 this.load</a></li><li><a href="#t423.4 this.resolve">3.4 this.resolve</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01. rollup">1. rollup <a href="#t01. rollup"> # </a></h2>
+<ul>
+<li><code>Rollup</code>是一个<code>JavaScript</code>模块打包器，可以将小块代码编译成大块复杂的代码，例如<code>library</code>或应用程序</li>
+</ul>
+<h3 id="t11.1 debugger.js">1.1 debugger.js <a href="#t11.1 debugger.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { rollup, watch } <span class="hljs-keyword">from</span> <span class="hljs-string">'rollup'</span>;
+<span class="hljs-keyword">import</span> inputOptions <span class="hljs-keyword">from</span> <span class="hljs-string">'./rollup.config.js'</span>
+  ; (<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">//打包阶段 </span>
+    <span class="hljs-keyword">const</span> bundle = <span class="hljs-keyword">await</span> rollup(inputOptions);
+    <span class="hljs-comment">//生成阶段</span>
+    <span class="hljs-keyword">await</span> bundle.generate(inputOptions.output);
+    <span class="hljs-comment">//写入阶段</span>
+    <span class="hljs-keyword">await</span> bundle.write(inputOptions.output);
+    <span class="hljs-comment">/* 
+    const watcher = watch(inputOptions);
+    watcher.on('event', event =&gt; {
+      console.log(event);
+    });
+    setTimeout(() =&gt; {
+      watcher.close();
+    }, 1000); */</span>
+    <span class="hljs-comment">//关闭阶段</span>
+    <span class="hljs-keyword">await</span> bundle.close();
+  })();
+</code></pre>
+<h3 id="t21.2 rollup.config.js">1.2 rollup.config.js <a href="#t21.2 rollup.config.js"> # </a></h3>
+<p>rollup.config.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">input</span>: <span class="hljs-string">"./src/index.js"</span>,
+  <span class="hljs-attr">output</span>: {
+    <span class="hljs-attr">dir</span>: <span class="hljs-string">'dist'</span>,
+  }
+}
+</code></pre>
+<h3 id="t31.3 package.json">1.3 package.json <a href="#t31.3 package.json"> # </a></h3>
+<p>package.json</p>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"build"</span>: <span class="hljs-string">"rollup -c"</span>
+  },
+}
+</code></pre>
+<h2 id="t42. rollup插件">2. rollup插件 <a href="#t42. rollup插件"> # </a></h2>
+<ul>
+<li><a href="https://rollupjs.org/guide/en/#plugins-overview">Rollup 插件</a>是一个具有以下描述的一个或多个<code>属性</code>、<code>构建钩子</code>和<code>输出生成钩子</code>的对象，它遵循我们的约定。插件应该作为一个包分发，该包导出一个可以使用插件特定选项调用的函数并返回这样一个对象</li>
+<li><a href="https://github.com/rollup/awesome">插件列表</a></li>
+</ul>
+<h3 id="t52.1 插件规范">2.1 插件规范 <a href="#t52.1 插件规范"> # </a></h3>
+<ul>
+<li>插件应该有一个清晰的名称，带有<code>rollup-plugin-prefix</code></li>
+<li>在package.json中包含插件关键字</li>
+<li>插件应该经过测试。我们推荐mocha或ava，它们支持开箱即用的Promise</li>
+<li>尽可能使用异步方法。</li>
+<li>编写英文文档</li>
+<li>如果合适的话，确保你的插件输出正确的<code>sourcemap</code></li>
+<li>如果您的插件使用“虚拟模块”（例如，用于辅助功能），请在模块ID前面加上<code>\0</code>。这会阻止其他插件尝试处理它</li>
+</ul>
+<h3 id="t62.2.插件属性">2.2.插件属性 <a href="#t62.2.插件属性"> # </a></h3>
+<h4 id="t72.2.1 name">2.2.1 name <a href="#t72.2.1 name"> # </a></h4>
+<ul>
+<li>插件的名称，用于错误消息和警告</li>
+<li>Type: 字符串</li>
+</ul>
+<h3 id="t82.2 Build Hooks">2.2 Build Hooks <a href="#t82.2 Build Hooks"> # </a></h3>
+<ul>
+<li>为了与构建过程交互，你的插件对象包括“钩子”</li>
+<li>钩子是在构建的不同阶段调用的函数</li>
+<li>钩子可以影响构建的运行方式，提供关于构建的信息，或者在构建完成后修改构建</li>
+<li>有不同种类的钩子<ul>
+<li><code>async</code> 钩子还可以返回解析为相同类型值的<code>Promise</code>；否则，钩子将被标记为<code>sync</code></li>
+<li><code>first</code> 如果有几个插件实现了这个钩子，钩子会按顺序运行，直到钩子返回一个<code>非null</code>或未定义的值</li>
+<li><code>sequential</code> 如果几个插件实现了这个钩子，那么它们都将按照指定的插件顺序运行。如果一个钩子是异步的，那么这种类型的后续钩子将等待当前钩子被解析</li>
+<li><code>parallel</code> 如果多个插件实现了这个钩子，那么它们都将按照指定的插件顺序运行。如果一个钩子是异步的，那么这类后续钩子将并行运行，而不是等待当前钩子</li>
+</ul>
+</li>
+<li><code>Build Hooks</code>在构建阶段运行，该阶段由<code>rollup.rollup(inputOptions)</code>触发</li>
+<li>它们主要负责在<code>rollup</code>处理输入文件之前定位、提供和转换输入文件</li>
+<li>构建阶段的第一个钩子是<code>options</code>，最后一个钩子总是<code>buildEnd</code></li>
+<li>如果出现生成错误，将在此之后调用<code>closeBundle</code></li>
+</ul>
+<h4 id="t92.2.1 rollup-plugin-build.js">2.2.1 rollup-plugin-build.js <a href="#t92.2.1 rollup-plugin-build.js"> # </a></h4>
+<p>plugins\rollup-plugin-build.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">build</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'build'</span>,
+    <span class="hljs-keyword">async</span> watchChange(id, change) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'watchChange'</span>, id, change);
+    },
+    <span class="hljs-keyword">async</span> closeWatcher() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'closeWatcher'</span>);
+    },
+    <span class="hljs-keyword">async</span> options(inputOptions) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'options'</span>);
+      <span class="hljs-comment">//inputOptions.input = './src/main.js';</span>
+    },
+    <span class="hljs-keyword">async</span> buildStart(inputOptions) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'buildStart'</span>);
+    },
+    <span class="hljs-keyword">async</span> resolveId(source, importer) {
+      <span class="hljs-keyword">if</span> (source === <span class="hljs-string">'virtual'</span>) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'resolveId'</span>, source);
+        <span class="hljs-comment">//如果resolveId钩子有返回值了，那么就会跳过后面的查找逻辑，以此返回值作为最终的模块ID</span>
+        <span class="hljs-keyword">return</span> source;
+      }
+    },
+    <span class="hljs-comment">//加载此模块ID对应的内容</span>
+    <span class="hljs-keyword">async</span> load(id) {
+      <span class="hljs-keyword">if</span> (id === <span class="hljs-string">'virtual'</span>) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'load'</span>, id);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`export default "virtual"`</span>;
+      }
+    },
+    <span class="hljs-keyword">async</span> shouldTransformCachedModule({ id, code, ast }) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'shouldTransformCachedModule'</span>);
+      <span class="hljs-comment">//不使用缓存，再次进行转换</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    },
+    <span class="hljs-keyword">async</span> transform(code, id) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'transform'</span>);
+    },
+    <span class="hljs-keyword">async</span> moduleParsed(moduleInfo) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'moduleParsed'</span>);
+    },
+    <span class="hljs-keyword">async</span> resolveDynamicImport(specifier, importer) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'resolveDynamicImport'</span>, specifier, importer);
+    },
+    <span class="hljs-keyword">async</span> buildEnd() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'buildEnd'</span>);
+    }
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> build;
+</code></pre>
+<h4 id="t102.2.2 rollup.config.js">2.2.2 rollup.config.js <a href="#t102.2.2 rollup.config.js"> # </a></h4>
+<p>rollup.config.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+import build from './plugins/rollup-plugin-build.js';</span>
+export default {
+  input: "./src/index.js",
+  output: [{
+    dir: 'dist',
+  }],
+  plugins: [
+<span class="hljs-addition">+   build()</span>
+  ]
+}
+</code></pre>
+<h4 id="t112.2.3 options">2.2.3 options <a href="#t112.2.3 options"> # </a></h4>
+<ul>
+<li><a href="https://rollupjs.org/guide/en/#big-list-of-options">big-list-of-options</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(options: InputOptions) =&gt; InputOptions</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, sequential</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">这是构建阶段的第一个钩子</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">buildStart</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>替换或操作传递给<code>rollup</code>的选项对象</li>
+<li>返回<code>null</code>的话rollup不会替换任何内容</li>
+<li>如果只需要阅读<code>options</code>，建议使用<code>buildStart</code>钩子，因为在考虑了所有选项钩子的转换后，该钩子可以访问选项</li>
+<li>这是唯一一个无法访问大多数插件上下文实用程序功能的钩子，因为它是在完全配置汇总之前运行的</li>
+</ul>
+<h4 id="t122.2.4 buildStart">2.2.4 buildStart <a href="#t122.2.4 buildStart"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(options: InputOptions) =&gt; void</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">options</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">resolveId并行解析每个入口点</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>每次<code>rollup.rollup build</code>都要调用此钩子</li>
+<li>当您需要访问传递给rollup的选项时，建议使用这个钩子</li>
+<li>因为它考虑了所有<code>options</code>钩子的转换，还包含未设置选项的正确默认值</li>
+</ul>
+<h4 id="t132.2.5 resolveId">2.2.5 resolveId <a href="#t132.2.5 resolveId"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(source, importer) =&gt; string</td>
+<td>false</td>
+<td>null</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, first</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>buildStart</code>(如果我们正在解析入口点)，<code>moduleParsed</code>（如果我们正在解析导入），或者作为<code>resolveDynamicImport</code>的后备方案。此外，这个钩子可以在构建阶段通过调用插件钩子触发。<code>emitFile</code>发出一个入口点，或在任何时候通过调用此。<code>resolve</code>可手动解析id</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">如果解析的<code>id</code>尚未加载，则<code>load</code>，否则<code>buildEnd</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>定义自定义解析器</li>
+<li>解析程序可用于定位第三方依赖关系等。这里<code>source</code>是导入语句中所写的导入对象，即</li>
+<li><p>来源就是 <code>"../bar.js"</code></p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { foo } <span class="hljs-keyword">from</span> <span class="hljs-string">'../bar.js'</span>;
+</code></pre>
+</li>
+<li><p><code>importer</code>是导入模块的完全解析id</p>
+</li>
+<li>在解析入口点时，<code>importer</code>通常是undefined</li>
+<li>这里的一个例外是通过<code>this.emitFile</code>生成的入口点。在这里，您可以提供一个<code>importer</code>参数</li>
+<li>对于这些情况，<code>isEntry</code>选项将告诉您，我们是否正在解析用户定义的入口点、发出的块，或者是否为此提供了<code>isEntry</code>参数。解析上下文函数</li>
+<li>例如，您可以将其用作为入口点定义自定义代理模块的机制。以下插件将代理所有入口点以注入<code>polyfill</code>导入</li>
+<li>返回<code>null</code>将遵循其他<code>resolveId</code>函数，最终遵循默认的解析行</li>
+<li>返回<code>false</code>信号，表示源应被视为<code>外部模块</code>，不包括在<code>bundle</code>中</li>
+</ul>
+<p>index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> virtual <span class="hljs-keyword">from</span> <span class="hljs-string">'virtual-module'</span>
+<span class="hljs-built_in">console</span>.log(virtual);
+</code></pre>
+<p>plugins\rollup-plugin-build.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">build</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'build'</span>,
+    <span class="hljs-keyword">async</span> resolveId(source, importer) {
+      <span class="hljs-keyword">if</span> (source === <span class="hljs-string">'virtual'</span>) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'resolveId'</span>, source);
+        <span class="hljs-comment">//如果resolveId钩子有返回值了，那么就会跳过后面的查找逻辑，以此返回值作为最终的模块ID</span>
+        <span class="hljs-keyword">return</span> source;
+      }
+    },
+    <span class="hljs-comment">//加载此模块ID对应的内容</span>
+    <span class="hljs-keyword">async</span> load(id) {
+      <span class="hljs-keyword">if</span> (id === <span class="hljs-string">'virtual'</span>) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'load'</span>, id);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`export default "virtual"`</span>;
+      }
+    }
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> build;
+</code></pre>
+<h4 id="t142.2.6 load">2.2.6 load <a href="#t142.2.6 load"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(id) =&gt; string</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, first</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">解析加载id的<code>resolveId</code>或<code>resolveDynamicImport</code>。此外，这个钩子可以在任何时候从插件钩子中通过调用<code>this.load</code>来触发预加载与id对应的模块</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>transform</code>可在未使用缓存或没有使用相同代码的缓存副本时转换加载的文件，否则应使用<code>TransformCachedModule</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>定义自定义加载程序</li>
+<li>返回<code>null</code>会推迟到其他加载函数（最终是从文件系统加载的默认行为）</li>
+<li>为了防止额外的解析开销，例如这个钩子已经使用了这个。parse出于某种原因，为了生成AST，这个钩子可以选择性地返回<code>{code，AST，map}</code>对象。<code>ast</code>必须是标准的<code>ESTree ast</code>，每个节点都有开始和结束属性。如果转换不移动代码，可以通过将map设置为null来保留现有的sourcemaps。否则，您可能需要生成源映射。请参阅关于源代码转换的部分</li>
+</ul>
+<h4 id="t152.2.7 transform">2.2.7 transform <a href="#t152.2.7 transform"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(code, id) =&gt; string</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, sequential</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>load</code> 当前处理的文件的位置。如果使用了缓存，并且有该模块的缓存副本，那么如果插件为该钩子返回true，则应<code>shouldTransformCachedModule</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>moduleParsed</code> 一旦文件被处理和解析，模块就会被解析</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>可用于转换单个模块</li>
+<li>为了防止额外的解析开销，例如这个钩子已经使用了<code>this.parse</code>出于某种原因，为了生成AST</li>
+<li>这个钩子可以选择性地返回<code>{code，AST，map}</code>对象</li>
+<li>ast必须是标准的ESTree ast，每个节点都有<code>start</code>和<code>end</code>属性</li>
+<li>如果转换不移动代码，可以通过将map设置为null来保留现有的sourcemaps。否则，您可能需要生成源映射。请参阅关于源代码转换的部分</li>
+</ul>
+<p>plugins\rollup-plugin-babel.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createFilter } <span class="hljs-keyword">from</span> <span class="hljs-string">'rollup-pluginutils'</span>
+<span class="hljs-keyword">import</span> babel <span class="hljs-keyword">from</span> <span class="hljs-string">'@babel/core'</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">plugin</span>(<span class="hljs-params">pluginOptions = {}</span>) </span>{
+  <span class="hljs-keyword">const</span> defaultExtensions = [<span class="hljs-string">'.js'</span>, <span class="hljs-string">'.jsx'</span>]
+  <span class="hljs-keyword">const</span> { exclude, include, extensions = defaultExtensions } = pluginOptions;
+  <span class="hljs-keyword">const</span> extensionRegExp = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">`(<span class="hljs-subst">${extensions.join(<span class="hljs-string">'|'</span>)}</span>)$`</span>)
+  <span class="hljs-keyword">const</span> userDefinedFilter = createFilter(include, exclude);
+  <span class="hljs-keyword">const</span> filter = <span class="hljs-function"><span class="hljs-params">id</span> =&gt;</span> extensionRegExp.test(id) &amp;&amp; userDefinedFilter(id);
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'babel'</span>,
+    <span class="hljs-keyword">async</span> transform(code, filename) {
+      <span class="hljs-keyword">if</span> (!filter(filename)) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+      <span class="hljs-keyword">let</span> result = <span class="hljs-keyword">await</span> babel.transformAsync(code);
+      <span class="hljs-keyword">return</span> result
+    }
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> plugin
+</code></pre>
+<h4 id="t162.2.8 shouldTransformCachedModule">2.2.8 shouldTransformCachedModule <a href="#t162.2.8 shouldTransformCachedModule"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">({id, code, ast, resoledSources, moduleSideEffects, syntheticNamedExports) =&gt; boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, first</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>load</code> 加载缓存文件以将其代码与缓存版本进行比较的位置</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>moduleParsed</code> if no plugin returns true, otherwise <code>transform</code>.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>如果使用了<code>Rollup</code>缓存（例如，在监视模式下或通过JavaScript API显式使用），如果在加载钩子之后，加载的代码与缓存副本的代码相同，则Rollup将跳过模块的转换钩子</li>
+<li>为了防止这种情况，丢弃缓存的副本，而是转换一个模块，插件可以实现这个钩子并返回true。</li>
+<li>这个钩子还可以用来找出缓存了哪些模块，并访问它们缓存的元信息</li>
+<li>如果一个插件没有返回true，Rollup将触发其他插件的这个钩子，否则将跳过所有剩余的插件。</li>
+</ul>
+<pre><code class="lang-js">npx rollup -c -w
+shouldTransformCachedModule
+transform
+moduleParsed
+
+shouldTransformCachedModule
+moduleParsed
+</code></pre>
+<h4 id="t172.2.9 moduleParsed">2.2.9 moduleParsed <a href="#t172.2.9 moduleParsed"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(moduleInfo: ModuleInfo) =&gt; void</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>transform</code> 转换当前处理的文件的位置</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>resolveId</code> 和 <code>resolveDynamicImport</code> 并行解析所有发现的静态和动态导入（如果存在），否则buildEnd</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>每当模块被<code>Rollup</code>完全解析时，就会调用这个钩子。看看<code>this.getModuleInfo</code>了解传递给这个钩子的信息</li>
+<li>与<code>transform</code>钩子不同，这个钩子从不缓存，可以用来获取缓存模块和其他模块的信息，包括元属性的最终形状、代码和ast</li>
+</ul>
+<h4 id="t182.2.10 resolveDynamicImport">2.2.10 resolveDynamicImport <a href="#t182.2.10 resolveDynamicImport"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(specifier, importer) =&gt; string</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, first</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>moduleParsed</code> 已为导入文件分配模块</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>load</code> 如果钩子使用尚未加载的id ,如果动态导入包含字符串且钩子未解析，请加载<code>resolveId</code>，否则为<code>buildEnd</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>为动态导入定义自定义解析程序</li>
+<li>返回<code>false</code>表明导入应该保持原样，而不是传递给其他解析程序，从而使其成为外部的</li>
+<li>与<code>resolveId</code>钩子类似，还可以返回一个对象，将导入解析为不同的id，同时将其标记为外部</li>
+<li>如果动态导入被传递一个字符串作为参数，那么从这个钩子返回的字符串将被解释为一个现有的模块id，而返回null将推迟到其它解析器resolveId</li>
+</ul>
+<p>index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span>(<span class="hljs-string">'./msg.js'</span>).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res))
+</code></pre>
+<h4 id="t192.2.11 buildEnd">2.2.11 buildEnd <a href="#t192.2.11 buildEnd"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(error) =&gt; void</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">moduleParsed, resolveId or resolveDynamicImport.</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">outputOptions  输出生成阶段的输出，因为这是构建阶段的最后一个挂钩</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>在<code>rollup</code>完成打包时调用，但在调用<code>generate</code>或<code>write</code>之前调用；你也可以返回一个<code>Promise</code></li>
+<li>如果在构建过程中发生错误，则会将其传递给此钩子</li>
+</ul>
+<h3 id="t202.3 Output Generation Hooks">2.3 Output Generation Hooks <a href="#t202.3 Output Generation Hooks"> # </a></h3>
+<ul>
+<li>输出生成钩子可以提供有关生成的包的信息，并在完成后修改构建</li>
+<li>输出生成阶段的第一个钩子是<code>outputOptions</code>，最后一个钩子要么<code>generateBundle</code>是通过成功生成输出</li>
+<li>或者在输出生成过程中的任何时候发生错误 <code>renderError</code></li>
+<li>此外，<code>closeBundle</code>可以作为最后一个钩子调用，但用户有责任手动调用<code>bundle.close()</code>以触发此钩子</li>
+</ul>
+<h4 id="t212.3.1 rollup-plugin-generation.js">2.3.1 rollup-plugin-generation.js <a href="#t212.3.1 rollup-plugin-generation.js"> # </a></h4>
+<p>plugins\rollup-plugin-generation.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">generation</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'rollup-plugin-generation'</span>,
+    <span class="hljs-comment">//这个钩子是同步的，不能加async</span>
+    outputOptions(outputOptions) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'outputOptions'</span>);
+    },
+    renderStart() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'renderStart'</span>);
+    },
+    banner() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'banner'</span>);
+    },
+    footer() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'footer'</span>);
+    },
+    intro() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'intro'</span>);
+    },
+    outro() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'outro'</span>);
+    },
+    renderDynamicImport() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'renderDynamicImport'</span>);
+    },
+    augmentChunkHash() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'augmentChunkHash'</span>);
+    },
+    resolveFileUrl() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'resolveFileUrl'</span>);
+    },
+    resolveImportMeta() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'resolveImportMeta'</span>);
+    },
+    renderChunk() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'renderChunk'</span>);
+    },
+    generateBundle() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'generateBundle'</span>);
+    },
+    writeBundle() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'writeBundle'</span>);
+    },
+    renderError() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'renderError'</span>);
+    },
+    closeBundle() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'closeBundle'</span>);
+    }
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> generation;
+</code></pre>
+<h4 id="t222.3.2 rollup.config.js">2.3.2 rollup.config.js <a href="#t222.3.2 rollup.config.js"> # </a></h4>
+<p>rollup.config.js</p>
+<pre><code class="lang-diff">import build from './plugins/rollup-plugin-build.js';
+<span class="hljs-addition">+import generation from './plugins/rollup-plugin-generation.js';</span>
+export default {
+  input: "./src/index.js",
+  output: [{
+    dir: 'dist',
+  }],
+  plugins: [
+    build(),
+<span class="hljs-addition">+   generation()</span>
+  ]
+}
+</code></pre>
+<h4 id="t232.3.3 outputOptions">2.3.3 outputOptions <a href="#t232.3.3 outputOptions"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(outputOptions) =&gt; null</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>buildEnd</code>如果这是第一次生成输出，否则为<code>generateBundle</code>，<code>writeBundle</code>或<code>renderError</code>取决于先前生成的输出。这是输出生成阶段的第一个钩子</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>outputOptions</code>  输出生成阶段的输出，因为这是构建阶段的最后一个挂钩</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>替换或操作传递给<code>bundle.generate()</code>的输出选项对象<code>bundle.write()</code></li>
+<li>返回<code>null</code>并不能代替任何东西</li>
+<li>如果您只需要读取输出选项，建议使用<code>renderStart</code>钩子，因为在考虑<code>renderStart</code>所有钩子的转换后，此钩子可以访问输出选项</li>
+</ul>
+<h4 id="t242.3.4 renderStart">2.3.4 renderStart <a href="#t242.3.4 renderStart"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(outputOptions, inputOptions) =&gt; void</td>
+</tr>
+<tr>
+<td style="text-align:left">种类</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">上一个钩子</td>
+<td style="text-align:left">outputOptions</td>
+</tr>
+<tr>
+<td style="text-align:left">下一个钩子</td>
+<td style="text-align:left">banner, footer, intro and outro 并行运行</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>每次初始调用<code>bundle.generate()</code>或被<code>bundle.write()</code>调用</li>
+<li>要在生成完成时收到通知，请使用<code>generateBundle</code>和<code>renderError</code>挂钩</li>
+<li>当您需要访问传递给的输出选项时，建议使用此挂钩.<code>bundle.generate()</code>或者<code>bundle.write()</code>因为它考虑了所有<code>outputOptions</code>挂钩的转换，并且还包含未设置选项的正确默认值。它还接收传递给的输入选项</li>
+</ul>
+<h4 id="t252.3.5 banner">2.3.5 banner <a href="#t252.3.5 banner"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">() =&gt; string)</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">renderStart</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">针对每个动态导入表达式 <code>renderDynamicImport</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="t262.3.6 footer">2.3.6 footer <a href="#t262.3.6 footer"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">() =&gt; string)</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">renderStart</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">针对每个动态导入表达式 <code>renderDynamicImport</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="t272.3.7 intro">2.3.7 intro <a href="#t272.3.7 intro"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">() =&gt; string)</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">renderStart</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">针对每个动态导入表达式 <code>renderDynamicImport</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="t282.3.8 outro">2.3.8 outro <a href="#t282.3.8 outro"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">() =&gt; string)</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">renderStart</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">针对每个动态导入表达式 <code>renderDynamicImport</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="t292.3.9 renderDynamicImport">2.3.9 renderDynamicImport <a href="#t292.3.9 renderDynamicImport"> # </a></h4>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import.meta">import.meta</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/URL/URL">URL</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">({format, moduleId, targetModuleId, customResolution}) =&gt; {left: string, right: string}</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">banner , footer, intro, outro</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>augmentChunkHash</code>对于每个在文件名中包含哈希的块</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>这个钩子提供了对如何呈现动态导入的细粒度控制</li>
+<li>方法是替换导入表达式参数的左侧 ( import() 和右侧 ( ) 的代码)</li>
+<li>返回null延迟到此类型的其他钩子并最终呈现特定于格式的默认值</li>
+<li>format是渲染的输出格式</li>
+<li>moduleId执行动态导入的模块的 id</li>
+<li>如果导入可以解析为内部或外部 id，targetModuleId则将设置为此 id，否则将为null</li>
+</ul>
+<p>plugins\rollup-plugin-import-polyfill.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">importPolyfill</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'importPolyfill'</span>,
+    <span class="hljs-keyword">async</span> moduleParsed(moduleInfo) {
+      <span class="hljs-keyword">if</span> (moduleInfo.isEntry) {
+        moduleInfo.moduleSideEffects = <span class="hljs-string">'no-treeshake'</span>;
+      }
+    },
+    renderDynamicImport({ format, moduleId, targetModuleId }) {
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">left</span>: <span class="hljs-string">'dynamicImportPolyfill('</span>,
+        <span class="hljs-attr">right</span>: <span class="hljs-string">', import.meta.url)'</span>
+      };
+    }
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> importPolyfill;
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span>(<span class="hljs-string">'./msg.js'</span>).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(res.default))
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dynamicImportPolyfill</span>(<span class="hljs-params">filename, url</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =&gt;</span> {
+    <span class="hljs-built_in">window</span>.dynamicImportPolyfillResolve = resolve;
+    <span class="hljs-keyword">const</span> resourceUrl = <span class="hljs-keyword">new</span> URL(filename, url).href;
+    <span class="hljs-keyword">let</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'script'</span>);
+    script.type = <span class="hljs-string">'module'</span>;
+    script.innerHTML = <span class="hljs-string">`
+    import * as resource from <span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(resourceUrl)}</span>;
+    dynamicImportPolyfillResolve(resource);
+    `</span>;
+    <span class="hljs-built_in">document</span>.head.appendChild(script);
+  });
+}
+<span class="hljs-built_in">console</span>.log(dynamicImportPolyfill);
+</code></pre>
+<h4 id="t302.3.9 augmentChunkHash">2.3.9 augmentChunkHash <a href="#t302.3.9 augmentChunkHash"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(chunkInfo: ChunkInfo) =&gt; string</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">sync, sequential</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">renderDynamicImport针对每个动态导入表达式</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>resolveFileUrl</code>对于每次使用<code>import.meta.ROLLUP_FILE_URL_referenceId</code>和<code>resolveImportMeta</code>所有其他访问<code>import.meta</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>可用于增加单个块的散列</li>
+<li>为每个<code>Rollup</code>输出块调用</li>
+<li>返回一个<code>false</code>值不会修改散列</li>
+<li>真实值将传递给<code>hash.update</code>.</li>
+<li>这<code>chunkInfo</code>是<code>generateBundle</code>不依赖文件名的属性的简化版本</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">generation</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'generation'</span>,
+    augmentChunkHash(chunkInfo) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'augmentChunkHash'</span>, chunkInfo.name);
+      <span class="hljs-keyword">if</span> (chunkInfo.name === <span class="hljs-string">'msg'</span>) {
+        <span class="hljs-comment">//返回不是hash，而是计算hash的内容</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Date</span>.now().toString();
+      }
+    }
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> generation
+</code></pre>
+<h4 id="t312.3.10 resolveFileUrl">2.3.10 resolveFileUrl <a href="#t312.3.10 resolveFileUrl"> # </a></h4>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import.meta">import.meta</a>是一个给JavaScript模块暴露特定上下文的元数据属性的对象。它包含了这个模块的信息，比如说这个模块的URL。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">({chunkId, fileName, format, moduleId, referenceId, relativePath}) =&gt; string</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">sync, first</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>augmentChunkHash</code>对于在文件名中包含哈希的每个块</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>renderChunk</code>对于每个块</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>允许自定义Rollup如何解析插件通过此链接发出的文件的URL<code>this.emitFile</code></li>
+<li>默认情况下，Rollup 将生成代码</li>
+<li><code>import.meta.ROLLUP_FILE_URL_referenceId</code>该代码应正确生成发出文件的绝对URL，而与输出格式和部署代码的主机系统无关</li>
+</ul>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> logger <span class="hljs-keyword">from</span> <span class="hljs-string">'logger'</span>
+<span class="hljs-built_in">console</span>.log(logger);
+</code></pre>
+<p>plugins\rollup-plugin-resolveFileUrl.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resolveFileUrl</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'resolveFileUrl'</span>,
+    resolveId(source) {
+      <span class="hljs-keyword">if</span> (source === <span class="hljs-string">'logger'</span>) {
+        <span class="hljs-keyword">return</span> source;
+      }
+    },
+    load(importee) {
+      <span class="hljs-keyword">if</span> (importee === <span class="hljs-string">'logger'</span>) {
+        <span class="hljs-keyword">let</span> referenceId = <span class="hljs-keyword">this</span>.emitFile({ <span class="hljs-attr">type</span>: <span class="hljs-string">'asset'</span>, <span class="hljs-attr">source</span>: <span class="hljs-string">'console.log("logger")'</span>, <span class="hljs-attr">fileName</span>: <span class="hljs-string">"logger.js"</span> });
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`export default import.meta.ROLLUP_FILE_URL_<span class="hljs-subst">${referenceId}</span>`</span>;
+      }
+    },
+    resolveFileUrl({ chunkId, fileName, format, moduleId, referenceId, relativePath }) {<span class="hljs-comment">//import.meta.url</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-string">`new URL('<span class="hljs-subst">${fileName}</span>', document.baseURI).href`</span>;
+    }
+  };
+}
+</code></pre>
+<h4 id="t322.3.11 resolveImportMeta">2.3.11 resolveImportMeta <a href="#t322.3.11 resolveImportMeta"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(property, {chunkId, moduleId, format}) =&gt; string</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">sync, first</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>augmentChunkHash</code>对于在文件名中包含哈希的每个块</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>renderChunk</code>对于每个块</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>允许自定义 Rollup 如何处理<code>import.meta</code>,<code>import.meta.someProperty</code>特别是<code>import.meta.url</code></li>
+<li>在 ES 模块中，<code>import.meta</code>是一个对象，<code>import.meta.url</code>包含当前模块的 URL</li>
+</ul>
+<h4 id="t332.3.12 renderChunk">2.3.12 renderChunk <a href="#t332.3.12 renderChunk"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(code, chunk, options) =&gt; string</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, sequential</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>resolveFileUrl</code>对于 . 的每次使用<code>import.meta.ROLLUP_FILE_URL_referenceId</code>和<code>resolveImportMeta</code>所有其他访问<code>import.meta</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>generateBundle</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>可用于转换单个块</li>
+<li>为每个<code>rollup</code>输出块文件调用。返回null将不应用任何转换</li>
+</ul>
+<h4 id="t342.3.13 generateBundle">2.3.13 generateBundle <a href="#t342.3.13 generateBundle"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(options, bundle, isWrite) =&gt; void</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, sequential</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">renderChunk对于每个块</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>writeBundle</code>如果输出是通过生成的，否则这是输出生成阶段的最后一个钩子，如果生成另一个输出<code>bundle.write()</code>，可能会再次跟随<code>outputOptions</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>在<code>bundle.generate()</code>之后调用</li>
+<li>或者在 <code>bundle.write()</code>把文件写入之前调用</li>
+<li>要在写入文件后修改文件，请使用<code>writeBundle</code>挂钩</li>
+<li><code>writeBundle</code>提供正在写入或生成的文件的完整列表及其详细信息</li>
+<li>您可以通过从该钩子中的捆绑对象中删除文件来防止发出文件。要发出其他文件，请使用<code>this.emitFile</code>插件上下文功能</li>
+</ul>
+<p>plugins\rollup-plugin-html.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> dedent <span class="hljs-keyword">from</span> <span class="hljs-string">'dedent'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">html</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'html'</span>,
+    generateBundle(options, bundle) {
+      <span class="hljs-keyword">let</span> entryName;
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> fileName <span class="hljs-keyword">in</span> bundle) {
+        <span class="hljs-keyword">let</span> assetOrChunkInfo = bundle[fileName];
+        <span class="hljs-comment">//console.log(fileName, assetOrChunkInfo);</span>
+        <span class="hljs-keyword">if</span> (assetOrChunkInfo.isEntry) {
+          entryName = fileName;
+        }
+      }
+      <span class="hljs-keyword">this</span>.emitFile({
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'asset'</span>,
+        <span class="hljs-attr">fileName</span>: <span class="hljs-string">'index.html'</span>,
+        <span class="hljs-attr">source</span>: dedent<span class="hljs-string">`
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;title&gt;rollup&lt;/title&gt;
+         &lt;/head&gt;
+        &lt;body&gt;
+          &lt;script src="<span class="hljs-subst">${entryName}</span>" type="module"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;`</span>
+      });
+    }
+  };
+}
+</code></pre>
+<h4 id="t352.3.14 writeBundle">2.3.14 writeBundle <a href="#t352.3.14 writeBundle"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(options,bundle) =&gt; void</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">generateBundle</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left">如果被调用，这是输出生成阶段的最后一个钩子，如果生成另一个输出，可能会再次跟随<code>outputOptions</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>bundle.write()</code>仅在写入所有文件后才调用</li>
+<li>与<code>generateBundle</code>钩子类似，<code>bundle</code>提供正在写入的文件的完整列表及其详细信息</li>
+</ul>
+<h4 id="t362.3.15 renderError">2.3.15 renderError <a href="#t362.3.15 renderError"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">(error: Error) =&gt; void</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left">renderStart从到 的任何钩子renderChunk</td>
+</tr>
+<tr>
+<td style="text-align:left">Next Hook</td>
+<td style="text-align:left"><code>outputOptions</code>如果它被调用，这是输出生成阶段的最后一个钩子，如果生成另一个输出，可能会再次跟随</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>bundle.generate()</code>当 rollup 在或期间遇到错误时调用<code>bundle.write()</code></li>
+<li>错误被传递给这个钩子。要在生成成功完成时收到通知，请使用<code>generateBundle</code>钩子</li>
+</ul>
+<h4 id="t372.3.16 closeBundle">2.3.16 closeBundle <a href="#t372.3.16 closeBundle"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Type</td>
+<td style="text-align:left">closeBundle: () =&gt; Promise<void></void></td>
+<td>void</td>
+</tr>
+<tr>
+<td style="text-align:left">Kind</td>
+<td style="text-align:left">async, parallel</td>
+</tr>
+<tr>
+<td style="text-align:left">Previous Hook</td>
+<td style="text-align:left"><code>buildEnd</code> 如果有构建错误.否则何时bundle.close()被调用，在这种情况下，这将是最后一个被触发的钩子。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>可用于清理可能正在运行的任何外部服务</li>
+<li><code>Rollup</code> 的 <code>CLI</code> 将确保在每次运行后调用此钩子</li>
+<li>但 <code>JavaScript API</code> 的用户有责任在<code>bundle.close()</code>他们完成生成包后手动调用</li>
+</ul>
+<h2 id="t383.Plugin Context">3.Plugin Context <a href="#t383.Plugin Context"> # </a></h2>
+<h3 id="t393.1 this.emitFile">3.1 this.emitFile <a href="#t393.1 this.emitFile"> # </a></h3>
+<ul>
+<li><a href="https://rollupjs.org/guide/en/#thisemitfile">thisemitfile</a></li>
+<li>Type: (emittedFile) =&gt; string</li>
+<li>发出一个包含在生成输出中的新文件，并返回一个referenceId，该ID可在不同位置用于引用发出的文件</li>
+<li>emittedFile 可以有两种形式之一</li>
+</ul>
+<pre><code class="lang-js">type EmittedChunk = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'chunk'</span>;
+  id: string;
+  name?: string;
+  fileName?: string;
+};
+
+type EmittedAsset = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'asset'</span>;
+  name?: string;
+  fileName?: string;
+  source?: string | <span class="hljs-built_in">Uint8Array</span>;
+};
+</code></pre>
+<h3 id="t403.2 this.load">3.2 this.load <a href="#t403.2 this.load"> # </a></h3>
+<ul>
+<li><a href="https://rollupjs.org/guide/en/#thisgetmoduleinfo">thisgetmoduleinfo</a></li>
+<li>Type: (moduleId) =&gt; (ModuleInfo)</li>
+<li>返回有关相关模块的其他信息</li>
+</ul>
+<h3 id="t413.3 this.load">3.3 this.load <a href="#t413.3 this.load"> # </a></h3>
+<ul>
+<li><a href="https://rollupjs.org/guide/en/#thisload">thisload</a></li>
+<li>Type: ({id, moduleSideEffects, syntheticNamedExports, resolveDependencies?: boolean}) =&gt;ModuleInfo</li>
+<li>加载并解析与给定id对应的模块，并将附加的元信息附加到模块（如果提供）</li>
+<li>这将触发与另一个模块导入该模块时相同的加载、转换和模块授权挂钩</li>
+</ul>
+<h3 id="t423.4 this.resolve">3.4 this.resolve <a href="#t423.4 this.resolve"> # </a></h3>
+<ul>
+<li><a href="https://rollupjs.org/guide/en/#thisresolve">thisresolve</a></li>
+<li>使用Rollup使用的相同插件将导入解析为模块ID（即文件名），并确定导入是否应该是外部的</li>
+<li>如果返回null，则无法通过Rollup或任何插件解析导入，但用户未明确将其标记为外部</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

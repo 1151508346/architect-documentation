@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li class="active"><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01.核心知识">1.核心知识</a><ul><li><a href="#t11.1 安装依赖">1.1 安装依赖</a></li><li><a href="#t21.2 Connect">1.2 Connect</a></li><li><a href="#t31.3 serve-static">1.3 serve-static</a></li><li><a href="#t41.4 es-module-lexer">1.4 es-module-lexer</a></li><li><a href="#t51.5 resolve">1.5 resolve</a></li><li><a href="#t61.6 fast-glob">1.6 fast-glob</a></li><li><a href="#t71.7 magic-string">1.7 magic-string</a></li><li><a href="#t81.8 esbuild">1.8 esbuild</a><ul><li><a href="#t91.8.1 命令行">1.8.1 命令行</a></li><li><a href="#t101.8.2 API">1.8.2 API</a></li><li><a href="#t111.8.3 插件">1.8.3 插件</a><ul><li><a href="#t121.8.2.1 build.js">1.8.2.1 build.js</a></li></ul></li></ul></li></ul></li><li><a href="#t132.实现命令行">2.实现命令行</a><ul><li><a href="#t142.1 package.json">2.1 package.json</a></li><li><a href="#t152.2 vite3.js">2.2 vite3.js</a></li><li><a href="#t162.3 cli.js">2.3 cli.js</a></li></ul></li><li><a href="#t173.实现http服务器">3.实现http服务器</a><ul><li><a href="#t183.1 cli.js">3.1 cli.js</a></li><li><a href="#t193.2 server\index.js">3.2 server\index.js</a></li></ul></li><li><a href="#t204.实现静态文件中间件">4.实现静态文件中间件</a><ul><li><a href="#t214.1 server\index.js">4.1 server\index.js</a></li><li><a href="#t224.2 static.js">4.2 static.js</a></li><li><a href="#t234.3 config.js">4.3 config.js</a></li><li><a href="#t244.4 utils.js">4.4 utils.js</a></li><li><a href="#t254.5 index.html">4.5 index.html</a></li><li><a href="#t264.6 main.js">4.6 main.js</a></li></ul></li><li><a href="#t275.分析第三方依赖">5.分析第三方依赖</a><ul><li><a href="#t285.1 server\index.js">5.1 server\index.js</a></li><li><a href="#t295.2 optimizer\index.js">5.2 optimizer\index.js</a></li><li><a href="#t305.3 scan.js">5.3 scan.js</a></li><li><a href="#t315.4 esbuildScanPlugin.js">5.4 esbuildScanPlugin.js</a></li><li><a href="#t325.5 pluginContainer.js">5.5 pluginContainer.js</a></li><li><a href="#t335.6 resolve.js">5.6 resolve.js</a></li></ul></li><li><a href="#t346. 预编译并保存metadata">6. 预编译并保存metadata</a><ul><li><a href="#t356.1 server\index.js">6.1 server\index.js</a></li><li><a href="#t366.2 lib\config.js">6.2 lib\config.js</a></li><li><a href="#t376.3 utils.js">6.3 utils.js</a></li><li><a href="#t386.4 optimizer\index.js">6.4 optimizer\index.js</a></li></ul></li><li><a href="#t397.修改导入路径">7.修改导入路径</a><ul><li><a href="#t407.1 lib\server\index.js">7.1 lib\server\index.js</a></li><li><a href="#t417.2 transform.js">7.2 transform.js</a></li><li><a href="#t427.3 pluginContainer.js">7.3 pluginContainer.js</a></li><li><a href="#t437.4 utils.js">7.4 utils.js</a></li><li><a href="#t447.5 transformRequest.js">7.5 transformRequest.js</a></li><li><a href="#t457.6 send.js">7.6 send.js</a></li><li><a href="#t467.7 plugins\index.js">7.7 plugins\index.js</a></li><li><a href="#t477.8 importAnalysis.js">7.8 importAnalysis.js</a></li><li><a href="#t487.9 preAlias.js">7.9 preAlias.js</a></li><li><a href="#t497.10 lib\config.js">7.10 lib\config.js</a></li></ul></li><li><a href="#t508.支持vue插件">8.支持vue插件</a><ul><li><a href="#t518.1 esbuildDepPlugin.js">8.1 esbuildDepPlugin.js</a></li><li><a href="#t528.2 lib\plugins\index.js">8.2 lib\plugins\index.js</a></li><li><a href="#t538.3 lib\utils.js">8.3 lib\utils.js</a></li><li><a href="#t548.4 config.js">8.4 config.js</a></li><li><a href="#t558.5 index.html">8.5 index.html</a></li><li><a href="#t568.6 src\main.js">8.6 src\main.js</a></li><li><a href="#t578.7 src\App.vue">8.7 src\App.vue</a></li><li><a href="#t588.8 vue.js">8.8 vue.js</a></li></ul></li><li><a href="#t599.支持style">9.支持style</a><ul><li><a href="#t609.1 config.js">9.1 config.js</a></li><li><a href="#t619.2  src\App.vue">9.2  src\App.vue</a></li><li><a href="#t629.3 vue.js">9.3 vue.js</a></li></ul></li><li><a href="#t6310.支持环境变量">10.支持环境变量</a><ul><li><a href="#t6410.1 plugins\index.js">10.1 plugins\index.js</a></li><li><a href="#t6510.2 define.js">10.2 define.js</a></li><li><a href="#t6610.3 plugins\vue.js">10.3 plugins\vue.js</a></li></ul></li><li><a href="#t6711.支持HMR">11.支持HMR</a><ul><li><a href="#t6811.1 server\index.js">11.1 server\index.js</a></li><li><a href="#t6911.2 lib\server\ws.js">11.2 lib\server\ws.js</a></li><li><a href="#t7011.3 hmr.js">11.3 hmr.js</a></li><li><a href="#t7111.4  transformRequest.js">11.4  transformRequest.js</a></li><li><a href="#t7211.5  moduleGraph.js">11.5  moduleGraph.js</a></li><li><a href="#t7311.6 importAnalysis.js">11.6 importAnalysis.js</a></li><li><a href="#t7411.7 index.html">11.7 index.html</a></li><li><a href="#t7511.8 src\main.js">11.8 src\main.js</a></li><li><a href="#t7611.9 src\render.js">11.9 src\render.js</a></li><li><a href="#t7711.10 src\client.js">11.10 src\client.js</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01.核心知识">1.核心知识 <a href="#t01.核心知识"> # </a></h2>
+<h3 id="t11.1 安装依赖">1.1 安装依赖 <a href="#t11.1 安装依赖"> # </a></h3>
+<pre><code class="lang-js">npm install connect es-<span class="hljs-built_in">module</span>-lexer resolve check-is-array esbuild fast-glob fs-extra serve-<span class="hljs-keyword">static</span> magic-string chokidar ws --save
+</code></pre>
+<h3 id="t21.2 Connect">1.2 Connect <a href="#t21.2 Connect"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/connect">Connect</a>是一个框架，它使用被称为中间件的模块化组件，以可重用的方式实现web程序的逻辑</li>
+<li>在Connect中，中间件组件是一个函数，它拦截HTTP服务器提供的请求和响应，执行逻辑，然后，或者结束响应，或者把它传递给下一个中间件组件</li>
+<li>Connect用分配器把中间件<code>连接</code>在一起</li>
+<li>Express构建在Connect之上的更高层的框架</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> connect = <span class="hljs-built_in">require</span>(<span class="hljs-string">'connect'</span>);
+<span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+
+<span class="hljs-keyword">const</span> middlewares = connect();
+middlewares.use(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'middleware1'</span>);
+  next();
+});
+middlewares.use(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'middleware2'</span>);
+  next();
+});
+middlewares.use(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  res.end(<span class="hljs-string">'Hello from Connect!'</span>);
+});
+http.createServer(middlewares).listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<h3 id="t31.3 serve-static">1.3 serve-static <a href="#t31.3 serve-static"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/serve-static">serve-static</a>是一个静态文件中中间件</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> connect = <span class="hljs-built_in">require</span>(<span class="hljs-string">'connect'</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">static</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'serve-static'</span>);
+<span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+
+<span class="hljs-keyword">const</span> middlewares = connect();
+middlewares.use(<span class="hljs-keyword">static</span>(__dirname));
+http.createServer(middlewares).listen(<span class="hljs-number">3001</span>);
+</code></pre>
+<h3 id="t41.4 es-module-lexer">1.4 es-module-lexer <a href="#t41.4 es-module-lexer"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/es-module-lexer">es-module-lexer</a>是一个JS模块语法解析器</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { init, parse } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'es-module-lexer'</span>);
+<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (</span>) =&gt;</span> {
+  <span class="hljs-keyword">await</span> init;
+  <span class="hljs-keyword">const</span> [imports, exports] = parse(<span class="hljs-string">`import _ from 'lodash';\nexport var p = 5`</span>);
+  <span class="hljs-built_in">console</span>.log(imports);
+  <span class="hljs-built_in">console</span>.log(exports);
+})();
+</code></pre>
+<h3 id="t51.5 resolve">1.5 resolve <a href="#t51.5 resolve"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/es-module-lexer">es-module-lexer</a>实现了node的<code>require.resolve()</code>算法</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> resolve = <span class="hljs-built_in">require</span>(<span class="hljs-string">'resolve'</span>);
+<span class="hljs-keyword">const</span> res = resolve.sync(<span class="hljs-string">'check-is-array'</span>, { <span class="hljs-attr">basedir</span>: __dirname });
+<span class="hljs-built_in">console</span>.log(res);
+</code></pre>
+<h3 id="t61.6 fast-glob">1.6 fast-glob <a href="#t61.6 fast-glob"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/fast-glob">fast-glob</a>该包提供了一些方法，用于遍历文件系统，并根据<code>Unix Bash shell</code>使用的规则返回与指定模式的定义集匹配的路径名</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fg = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fast-glob'</span>);
+<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> entries = <span class="hljs-keyword">await</span> fg([<span class="hljs-string">'**/*.js'</span>]);
+  <span class="hljs-built_in">console</span>.log(entries);
+})();
+</code></pre>
+<h3 id="t71.7 magic-string">1.7 magic-string <a href="#t71.7 magic-string"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/magic-string">magic-string</a>是一个用来操作字符串的库</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">'magic-string'</span>);
+<span class="hljs-keyword">const</span> ms = <span class="hljs-keyword">new</span> MagicString(<span class="hljs-string">'var age = 10'</span>);
+ms.overwrite(<span class="hljs-number">10</span>, <span class="hljs-number">12</span>, <span class="hljs-string">'11'</span>);
+<span class="hljs-built_in">console</span>.log(ms.toString());
+</code></pre>
+<h3 id="t81.8 esbuild">1.8 esbuild <a href="#t81.8 esbuild"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/esbuild">esbuild</a>是一个JS打包工具</li>
+</ul>
+<h4 id="t91.8.1 命令行">1.8.1 命令行 <a href="#t91.8.1 命令行"> # </a></h4>
+<pre><code class="lang-js">esbuild index.js
+esbuild index.js --outfile=dist.js
+esbuild index.js --outfile=dist.js --bundle
+esbuild index.js --outfile=dist.js --bundle --target=esnext
+esbuild index.js --outfile=dist.js --bundle --target=esnext --platform=node
+esbuild index.js --outfile=dist.js  --platform=node --format=esm
+esbuild index.js --outfile=dist.js  --platform=node --format=esm --watch
+esbuild index.js --outfile=dist.js  --platform=node --format=esm --define:AGE=<span class="hljs-number">12</span>
+esbuild index.js --outfile=dist.js  --bundle --platform=browser --format=iife --loader:.jpg=dataurl
+esbuild index.js --outdir=dist
+esbuild index.jsx --outdir=dist
+esbuild index.jsx --outdir=dist --bundle --jsx-factory=createVnode
+</code></pre>
+<h4 id="t101.8.2 API">1.8.2 API <a href="#t101.8.2 API"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> { build } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'esbuild'</span>);
+(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">await</span> build({
+    <span class="hljs-attr">absWorkingDir</span>: process.cwd(),
+    <span class="hljs-attr">entryPoints</span>: [path.resolve(<span class="hljs-string">'main.js'</span>)],
+    <span class="hljs-attr">outfile</span>: path.resolve(<span class="hljs-string">'dist/main.js'</span>),
+    <span class="hljs-attr">bundle</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">write</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">format</span>: <span class="hljs-string">'esm'</span>
+  })
+})();
+</code></pre>
+<h4 id="t111.8.3 插件">1.8.3 插件 <a href="#t111.8.3 插件"> # </a></h4>
+<ul>
+<li><code>error: No loader is configured for ".html" files: index.html</code></li>
+<li><a href="https://esbuild.github.io/content-types/">content-types</a></li>
+<li><a href="https://esbuild.github.io/plugins/#using-plugins">plugins</a></li>
+</ul>
+<h5 id="t121.8.2.1 build.js">1.8.2.1 build.js <a href="#t121.8.2.1 build.js"> # </a></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> envPlugin = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'env'</span>,
+  setup(build) {
+    <span class="hljs-comment">//拦截名为env的导入路径，以便esbuild不会尝试将它们映射到文件系统位置</span>
+    <span class="hljs-comment">//用env-ns名称空间标记它们，以便为该插件保留它们</span>
+    build.onResolve({ <span class="hljs-attr">filter</span>: <span class="hljs-regexp">/^env$/</span> }, ({ path }) =&gt; ({
+      path,
+      <span class="hljs-attr">namespace</span>: <span class="hljs-string">'env-ns'</span>,<span class="hljs-comment">//默认是file</span>
+    }))
+    <span class="hljs-comment">//加载带有env-ns名称空间标记的路径，它们的行为就像指向包含环境变量的JSON文件一样</span>
+    build.onLoad({ <span class="hljs-attr">filter</span>: <span class="hljs-regexp">/.*/</span>, <span class="hljs-attr">namespace</span>: <span class="hljs-string">'env-ns'</span> }, () =&gt; ({
+      <span class="hljs-attr">contents</span>: <span class="hljs-built_in">JSON</span>.stringify(process.env),
+      <span class="hljs-attr">loader</span>: <span class="hljs-string">'json'</span>,
+    }))
+  },
+}
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'esbuild'</span>).build({
+  <span class="hljs-attr">entryPoints</span>: [<span class="hljs-string">'app.js'</span>],
+  <span class="hljs-attr">bundle</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">outfile</span>: <span class="hljs-string">'out.js'</span>,
+  <span class="hljs-attr">plugins</span>: [envPlugin],
+}).catch(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> process.exit(<span class="hljs-number">1</span>))
+</code></pre>
+<h2 id="t132.实现命令行">2.实现命令行 <a href="#t132.实现命令行"> # </a></h2>
+<h3 id="t142.1 package.json">2.1 package.json <a href="#t142.1 package.json"> # </a></h3>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"bin"</span>: {
+    <span class="hljs-attr">"vite3"</span>: <span class="hljs-string">"./bin/vite3.js"</span>
+  },
+}
+</code></pre>
+<h3 id="t152.2 vite3.js">2.2 vite3.js <a href="#t152.2 vite3.js"> # </a></h3>
+<p>bin\vite3.js</p>
+<pre><code class="lang-js"><span class="hljs-meta">#!/usr/bin/env node</span>
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'../lib/cli'</span>);
+</code></pre>
+<h3 id="t162.3 cli.js">2.3 cli.js <a href="#t162.3 cli.js"> # </a></h3>
+<p>lib\cli.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'vite3'</span>);
+</code></pre>
+<h2 id="t173.实现http服务器">3.实现http服务器 <a href="#t173.实现http服务器"> # </a></h2>
+<h3 id="t183.1 cli.js">3.1 cli.js <a href="#t183.1 cli.js"> # </a></h3>
+<p>lib\cli.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+let { createServer } = require('./server');</span>
+<span class="hljs-addition">+(async function () {</span>
+<span class="hljs-addition">+  const server = await createServer();</span>
+<span class="hljs-addition">+  server.listen(9999);</span>
+<span class="hljs-addition">+})();</span>
+</code></pre>
+<h3 id="t193.2 server\index.js">3.2 server\index.js <a href="#t193.2 server\index.js"> # </a></h3>
+<p>lib\server\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> connect = <span class="hljs-built_in">require</span>(<span class="hljs-string">'connect'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createServer</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> middlewares = connect();
+  <span class="hljs-keyword">const</span> server = {
+    <span class="hljs-keyword">async</span> listen(port) {
+      <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>).createServer(middlewares)
+        .listen(port, <span class="hljs-keyword">async</span> () =&gt; {
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`dev server running at: http://localhost:<span class="hljs-subst">${port}</span>`</span>)
+        })
+    }
+  }
+  <span class="hljs-keyword">return</span> server;
+}
+exports.createServer = createServer;
+</code></pre>
+<h2 id="t204.实现静态文件中间件">4.实现静态文件中间件 <a href="#t204.实现静态文件中间件"> # </a></h2>
+<h3 id="t214.1 server\index.js">4.1 server\index.js <a href="#t214.1 server\index.js"> # </a></h3>
+<p>lib\server\index.js</p>
+<pre><code class="lang-diff">const connect = require('connect');
+<span class="hljs-addition">+const serveStaticMiddleware = require('./middlewares/static');</span>
+<span class="hljs-addition">+const resolveConfig = require('../config');</span>
+async function createServer() {
+<span class="hljs-addition">+ const config = await resolveConfig()</span>
+  const middlewares = connect();
+  const server = {
+    async listen(port) {
+      require('http').createServer(middlewares)
+        .listen(port, async () =&gt; {
+          console.log(`dev server running at: http://localhost:${port}`)
+        })
+    }
+  }
+<span class="hljs-addition">+ middlewares.use(serveStaticMiddleware(config))</span>
+  return server;
+}
+exports.createServer = createServer;
+</code></pre>
+<h3 id="t224.2 static.js">4.2 static.js <a href="#t224.2 static.js"> # </a></h3>
+<p>lib\server\middlewares\static.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> <span class="hljs-keyword">static</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'serve-static'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">serveStaticMiddleware</span>(<span class="hljs-params">{ root }</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">static</span>(root)
+}
+<span class="hljs-built_in">module</span>.exports = serveStaticMiddleware;
+</code></pre>
+<h3 id="t234.3 config.js">4.3 config.js <a href="#t234.3 config.js"> # </a></h3>
+<p>lib\config.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { normalizePath } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./utils'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resolveConfig</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> root = normalizePath(process.cwd());
+  <span class="hljs-keyword">let</span> config = {
+    root
+  };
+  <span class="hljs-keyword">return</span> config;
+}
+<span class="hljs-built_in">module</span>.exports = resolveConfig;
+</code></pre>
+<h3 id="t244.4 utils.js">4.4 utils.js <a href="#t244.4 utils.js"> # </a></h3>
+<p>lib\utils.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">normalizePath</span>(<span class="hljs-params">id</span>) </span>{
+  <span class="hljs-keyword">return</span> id.replace(<span class="hljs-regexp">/\\/g</span>, <span class="hljs-string">'/'</span>)
+}
+exports.normalizePath = normalizePath;
+</code></pre>
+<h3 id="t254.5 index.html">4.5 index.html <a href="#t254.5 index.html"> # </a></h3>
+<p>index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>vite2<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/main.js"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="t264.6 main.js">4.6 main.js <a href="#t264.6 main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'main'</span>);
+</code></pre>
+<h2 id="t275.分析第三方依赖">5.分析第三方依赖 <a href="#t275.分析第三方依赖"> # </a></h2>
+<h3 id="t285.1 server\index.js">5.1 server\index.js <a href="#t285.1 server\index.js"> # </a></h3>
+<p>lib\server\index.js</p>
+<pre><code class="lang-diff">const connect = require('connect');
+const serveStaticMiddleware = require('./middlewares/static');
+const resolveConfig = require('../config');
+<span class="hljs-addition">+const { createOptimizeDepsRun } = require('../optimizer');</span>
+async function createServer() {
+  const config = await resolveConfig()
+  const middlewares = connect();
+  const server = {
+    async listen(port) {
+<span class="hljs-addition">+     await runOptimize(config, server)</span>
+      require('http').createServer(middlewares)
+        .listen(port, async () =&gt; {
+          console.log(`dev server running at: http://localhost:${port}`)
+        })
+    }
+  }
+  middlewares.use(serveStaticMiddleware(config))
+  return server;
+}
+<span class="hljs-addition">+async function runOptimize(config, server) {</span>
+<span class="hljs-addition">+  await createOptimizeDepsRun(config)</span>
+<span class="hljs-addition">+}</span>
+exports.createServer = createServer;
+</code></pre>
+<h3 id="t295.2 optimizer\index.js">5.2 optimizer\index.js <a href="#t295.2 optimizer\index.js"> # </a></h3>
+<p>lib\optimizer\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> scanImports = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./scan'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createOptimizeDepsRun</span>(<span class="hljs-params">config</span>) </span>{
+  <span class="hljs-keyword">const</span> deps = <span class="hljs-keyword">await</span> scanImports(config)
+  <span class="hljs-built_in">console</span>.log(deps);
+}
+exports.createOptimizeDepsRun = createOptimizeDepsRun;
+</code></pre>
+<h3 id="t305.3 scan.js">5.3 scan.js <a href="#t305.3 scan.js"> # </a></h3>
+<p>lib\optimizer\scan.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { build } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'esbuild'</span>);
+<span class="hljs-keyword">const</span> esbuildScanPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./esbuildScanPlugin'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">scanImports</span>(<span class="hljs-params">config</span>) </span>{
+  <span class="hljs-keyword">const</span> depImports = {};
+  <span class="hljs-keyword">const</span> esPlugin = <span class="hljs-keyword">await</span> esbuildScanPlugin(config, depImports);
+  <span class="hljs-keyword">await</span> build({
+    <span class="hljs-attr">absWorkingDir</span>: config.root,
+    <span class="hljs-attr">entryPoints</span>: [path.resolve(<span class="hljs-string">'./index.html'</span>)],
+    <span class="hljs-attr">bundle</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">format</span>: <span class="hljs-string">'esm'</span>,
+    <span class="hljs-attr">outfile</span>: <span class="hljs-string">'dist/index.js'</span>,
+    <span class="hljs-attr">write</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">plugins</span>: [esPlugin]
+  })
+  <span class="hljs-keyword">return</span> depImports;
+}
+<span class="hljs-built_in">module</span>.exports = scanImports;
+</code></pre>
+<h3 id="t315.4 esbuildScanPlugin.js">5.4 esbuildScanPlugin.js <a href="#t315.4 esbuildScanPlugin.js"> # </a></h3>
+<p>lib\optimizer\esbuildScanPlugin.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs-extra'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> { createPluginContainer } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../server/pluginContainer'</span>);
+<span class="hljs-keyword">const</span> resolvePlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../plugins/resolve'</span>);
+<span class="hljs-keyword">const</span> { normalizePath } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../utils'</span>);
+<span class="hljs-keyword">const</span> htmlTypesRE = <span class="hljs-regexp">/\.html$/</span>
+<span class="hljs-keyword">const</span> scriptModuleRE = <span class="hljs-regexp">/&lt;script src\="(.+?)" type="module"&gt;&lt;\/script&gt;/</span>;
+<span class="hljs-keyword">const</span> JS_TYPES_RE = <span class="hljs-regexp">/\.js$/</span>;
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">esbuildScanPlugin</span>(<span class="hljs-params">config, depImports</span>) </span>{
+  config.plugins = [resolvePlugin(config)];
+  <span class="hljs-keyword">const</span> container = <span class="hljs-keyword">await</span> createPluginContainer(config)
+  <span class="hljs-keyword">const</span> resolve = <span class="hljs-keyword">async</span> (id, importer) =&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> container.resolveId(id, importer)
+  }
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vite:dep-scan'</span>,
+    setup(build) {
+      build.onResolve({ <span class="hljs-attr">filter</span>: htmlTypesRE }, <span class="hljs-keyword">async</span> ({ path, importer }) =&gt; {
+        <span class="hljs-keyword">const</span> resolved = <span class="hljs-keyword">await</span> resolve(path, importer)
+        <span class="hljs-keyword">if</span> (resolved) {
+          <span class="hljs-keyword">return</span> {
+            <span class="hljs-attr">path</span>: resolved.id || resolved,
+            <span class="hljs-attr">namespace</span>: <span class="hljs-string">'html'</span>
+          }
+        }
+      })
+      build.onResolve({ <span class="hljs-attr">filter</span>: <span class="hljs-regexp">/.*/</span> }, <span class="hljs-keyword">async</span> ({ path, importer }) =&gt; {
+        <span class="hljs-keyword">const</span> resolved = <span class="hljs-keyword">await</span> resolve(path, importer)
+        <span class="hljs-keyword">if</span> (resolved) {
+          <span class="hljs-keyword">const</span> id = resolved.id || resolved;
+          <span class="hljs-keyword">const</span> included = id.includes(<span class="hljs-string">'node_modules'</span>);
+          <span class="hljs-keyword">if</span> (included) {
+            depImports[path] = normalizePath(id)
+            <span class="hljs-keyword">return</span> {
+              <span class="hljs-attr">path</span>: id,
+              <span class="hljs-attr">external</span>: <span class="hljs-literal">true</span>
+            }
+          }
+          <span class="hljs-keyword">return</span> {
+            <span class="hljs-attr">path</span>: id
+          }
+        }
+        <span class="hljs-keyword">return</span> { path }
+      })
+      build.onLoad({ <span class="hljs-attr">filter</span>: htmlTypesRE, <span class="hljs-attr">namespace</span>: <span class="hljs-string">'html'</span> }, <span class="hljs-keyword">async</span> ({ path }) =&gt; {
+        <span class="hljs-keyword">let</span> html = fs.readFileSync(path, <span class="hljs-string">'utf-8'</span>)
+        <span class="hljs-keyword">let</span> [, scriptSrc] = html.match(scriptModuleRE);
+        <span class="hljs-keyword">let</span> js = <span class="hljs-string">`import <span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(scriptSrc)}</span>;\n`</span>
+        <span class="hljs-keyword">return</span> {
+          <span class="hljs-attr">loader</span>: <span class="hljs-string">'js'</span>,
+          <span class="hljs-attr">contents</span>: js
+        }
+      })
+      build.onLoad({ <span class="hljs-attr">filter</span>: JS_TYPES_RE }, ({ <span class="hljs-attr">path</span>: id }) =&gt; {
+        <span class="hljs-keyword">let</span> ext = path.extname(id).slice(<span class="hljs-number">1</span>)
+        <span class="hljs-keyword">let</span> contents = fs.readFileSync(id, <span class="hljs-string">'utf-8'</span>)
+        <span class="hljs-keyword">return</span> {
+          <span class="hljs-attr">loader</span>: ext,
+          contents
+        }
+      })
+    }
+  }
+}
+<span class="hljs-built_in">module</span>.exports = esbuildScanPlugin;
+</code></pre>
+<h3 id="t325.5 pluginContainer.js">5.5 pluginContainer.js <a href="#t325.5 pluginContainer.js"> # </a></h3>
+<p>lib\server\pluginContainer.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { normalizePath } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"../utils"</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createPluginContainer</span>(<span class="hljs-params">{ plugins,root }</span>) </span>{
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PluginContext</span> </span>{
+    <span class="hljs-keyword">async</span> resolve(id, , importer = path.join(root, <span class="hljs-string">'index.html'</span>)) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> container.resolveId(id, importer)
+    }
+  }
+  <span class="hljs-keyword">const</span> container = {
+     <span class="hljs-keyword">async</span> resolveId(id, importer) {
+      <span class="hljs-keyword">let</span> ctx = <span class="hljs-keyword">new</span> PluginContext();
+      <span class="hljs-keyword">let</span> resolveId = id;
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> plugin <span class="hljs-keyword">of</span> plugins) {
+        <span class="hljs-keyword">if</span> (!plugin.resolveId) <span class="hljs-keyword">continue</span>;
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> plugin.resolveId.call(ctx, id, importer);
+        <span class="hljs-keyword">if</span> (result) {
+          resolveId = result.id || result;
+          <span class="hljs-keyword">break</span>;
+        }
+      }
+      <span class="hljs-keyword">return</span> { <span class="hljs-attr">id</span>: normalizePath(resolveId) }
+    }
+  }
+  <span class="hljs-keyword">return</span> container;
+}
+exports.createPluginContainer = createPluginContainer;
+</code></pre>
+<h3 id="t335.6 resolve.js">5.6 resolve.js <a href="#t335.6 resolve.js"> # </a></h3>
+<p>lib\plugins\resolve.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> resolve = <span class="hljs-built_in">require</span>(<span class="hljs-string">'resolve'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resolvePlugin</span>(<span class="hljs-params">config</span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vite:resolve'</span>,
+    resolveId(id, importer) {
+      <span class="hljs-comment">//如果/开头表示是绝对路径</span>
+      <span class="hljs-keyword">if</span> (id.startsWith(<span class="hljs-string">'/'</span>)) {
+        <span class="hljs-keyword">return</span> { <span class="hljs-attr">id</span>: path.resolve(config.root, id.slice(<span class="hljs-number">1</span>)) };
+      }
+      <span class="hljs-comment">//如果是绝对路径</span>
+      <span class="hljs-keyword">if</span> (path.isAbsolute(id)) {
+        <span class="hljs-keyword">return</span> { id }
+      }
+      <span class="hljs-comment">//如果是相对路径</span>
+      <span class="hljs-keyword">if</span> (id.startsWith(<span class="hljs-string">'.'</span>)) {
+        <span class="hljs-keyword">const</span> basedir = path.dirname(importer);
+        <span class="hljs-keyword">const</span> fsPath = path.resolve(basedir, id)
+        <span class="hljs-keyword">return</span> { <span class="hljs-attr">id</span>: fsPath };
+      }
+      <span class="hljs-comment">//如果是第三方包</span>
+      <span class="hljs-keyword">let</span> res = tryNodeResolve(id, importer, config);
+      <span class="hljs-keyword">if</span> (res) {
+        <span class="hljs-keyword">return</span> res;
+      }
+    }
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tryNodeResolve</span>(<span class="hljs-params">id, importer, config</span>) </span>{
+  <span class="hljs-keyword">const</span> pkgPath = resolve.sync(<span class="hljs-string">`<span class="hljs-subst">${id}</span>/package.json`</span>, { <span class="hljs-attr">basedir</span>: config.root })
+  <span class="hljs-keyword">const</span> pkgDir = path.dirname(pkgPath)
+  <span class="hljs-keyword">const</span> pkg = <span class="hljs-built_in">JSON</span>.parse(fs.readFileSync(pkgPath, <span class="hljs-string">'utf-8'</span>))
+  <span class="hljs-keyword">const</span> entryPoint = pkg.module
+  <span class="hljs-keyword">const</span> entryPointPath = path.join(pkgDir, entryPoint)
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">id</span>: entryPointPath }
+}
+<span class="hljs-built_in">module</span>.exports = resolvePlugin;
+</code></pre>
+<h2 id="t346. 预编译并保存metadata">6. 预编译并保存metadata <a href="#t346. 预编译并保存metadata"> # </a></h2>
+<h3 id="t356.1 server\index.js">6.1 server\index.js <a href="#t356.1 server\index.js"> # </a></h3>
+<p>lib\server\index.js</p>
+<pre><code class="lang-diff">const connect = require('connect');
+const http = require('http');
+const serveStaticMiddleware = require('./middlewares/static');
+const resolveConfig = require('../config');
+const { createOptimizeDepsRun } = require('../optimizer');
+async function createServer() {
+  const config = await resolveConfig();
+  const middlewares = connect();
+  const server = {
+    async listen(port) {
+<span class="hljs-addition">+     await runOptimize(config, server)</span>
+      http.createServer(middlewares).listen(port, async () =&gt; {
+        console.log(`server running at http://localhost:${port}`);
+      });
+    }
+  }
+  middlewares.use(serveStaticMiddleware(config));
+  return server;
+}
+<span class="hljs-addition">+async function runOptimize(config, server) {</span>
+<span class="hljs-addition">+  const optimizeDeps = await createOptimizeDepsRun(config);</span>
+<span class="hljs-addition">+  server._optimizeDepsMetadata = optimizeDeps.metadata</span>
+}
+exports.createServer = createServer;
+</code></pre>
+<h3 id="t366.2 lib\config.js">6.2 lib\config.js <a href="#t366.2 lib\config.js"> # </a></h3>
+<p>lib\config.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+const path = require('path');</span>
+const { normalizePath } = require('./utils');
+async function resolveConfig() {
+  //当前的根目录 window \\  linux /
+  const root = normalizePath(process.cwd());
+<span class="hljs-addition">+ const cacheDir = normalizePath(path.resolve(`node_modules/.vite7`))</span>
+  let config = {
+    root,
+<span class="hljs-addition">+   cacheDir</span>
+  }
+  return config;
+}
+module.exports = resolveConfig;
+</code></pre>
+<h3 id="t376.3 utils.js">6.3 utils.js <a href="#t376.3 utils.js"> # </a></h3>
+<p>lib\utils.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">normalizePath</span>(<span class="hljs-params">id</span>) </span>{
+  <span class="hljs-keyword">return</span> id.replace(<span class="hljs-regexp">/\\/g</span>, <span class="hljs-string">'/'</span>)
+}
+exports.normalizePath = normalizePath;
+</code></pre>
+<h3 id="t386.4 optimizer\index.js">6.4 optimizer\index.js <a href="#t386.4 optimizer\index.js"> # </a></h3>
+<p>lib\optimizer\index.js</p>
+<pre><code class="lang-diff">const scanImports = require('./scan');
+<span class="hljs-addition">+const fs = require('fs-extra');</span>
+<span class="hljs-addition">+const path = require('path');</span>
+<span class="hljs-addition">+const { build } = require('esbuild');</span>
+<span class="hljs-addition">+const { normalizePath } = require('../utils');</span>
+async function createOptimizeDepsRun(config) {
+  const deps = await scanImports(config);
+<span class="hljs-addition">+ const { cacheDir } = config;</span>
+<span class="hljs-addition">+ const depsCacheDir = path.resolve(cacheDir, 'deps')</span>
+<span class="hljs-addition">+ const metadataPath = path.join(depsCacheDir, '_metadata.json');</span>
+<span class="hljs-addition">+ const metadata = {</span>
+<span class="hljs-addition">+   optimized: {}</span>
+<span class="hljs-addition">+ }</span>
+<span class="hljs-addition">+ for (const id in deps) {</span>
+<span class="hljs-addition">+   const entry = deps[id]</span>
+<span class="hljs-addition">+   metadata.optimized[id] = {</span>
+<span class="hljs-addition">+     file: normalizePath(path.resolve(depsCacheDir, id + '.js')),</span>
+<span class="hljs-addition">+     src: entry</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+   await build({</span>
+<span class="hljs-addition">+     absWorkingDir: process.cwd(),</span>
+<span class="hljs-addition">+     entryPoints: [deps[id]],</span>
+<span class="hljs-addition">+     outfile: path.resolve(depsCacheDir, id + '.js'),</span>
+<span class="hljs-addition">+     bundle: true,</span>
+<span class="hljs-addition">+     write: true,</span>
+<span class="hljs-addition">+     format: 'esm'</span>
+<span class="hljs-addition">+   })</span>
+<span class="hljs-addition">+ }</span>
+<span class="hljs-addition">+ await fs.ensureDir(depsCacheDir);</span>
+<span class="hljs-addition">+ await fs.writeFile(metadataPath, JSON.stringify(metadata, (key, value) =&gt; {</span>
+<span class="hljs-addition">+   if (key === 'file' || key === 'src') {</span>
+<span class="hljs-addition">+     console.log(depsCacheDir, value);</span>
+<span class="hljs-addition">+     return normalizePath(path.relative(depsCacheDir, value));</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+   return value</span>
+<span class="hljs-addition">+ }, 2));</span>
+<span class="hljs-addition">+ return { metadata };</span>
+}
+exports.createOptimizeDepsRun = createOptimizeDepsRun;
+</code></pre>
+<h2 id="t397.修改导入路径">7.修改导入路径 <a href="#t397.修改导入路径"> # </a></h2>
+<ul>
+<li><code>import { createApp } from 'vue'</code></li>
+<li><code>import { createApp } from '/node_modules/.vite7/deps/vue.js'</code></li>
+</ul>
+<h3 id="t407.1 lib\server\index.js">7.1 lib\server\index.js <a href="#t407.1 lib\server\index.js"> # </a></h3>
+<p>lib\server\index.js</p>
+<pre><code class="lang-diff">const connect = require('connect');
+const http = require('http');
+const serveStaticMiddleware = require('./middlewares/static');
+const resolveConfig = require('../config');
+const { createOptimizeDepsRun } = require('../optimizer');
+<span class="hljs-addition">+const transformMiddleware = require('./middlewares/transform');</span>
+<span class="hljs-addition">+const { createPluginContainer } = require('./pluginContainer');</span>
+async function createServer() {
+  const config = await resolveConfig();
+  const middlewares = connect();
+<span class="hljs-addition">+ const pluginContainer = await createPluginContainer(config)</span>
+  const server = {
+<span class="hljs-addition">+   pluginContainer,</span>
+    async listen(port) {
+      await runOptimize(config, server)
+      http.createServer(middlewares).listen(port, async () =&gt; {
+        console.log(`server running at http://localhost:${port}`);
+      });
+    }
+  }
+<span class="hljs-addition">+ for (const plugin of config.plugins) {</span>
+<span class="hljs-addition">+   if (plugin.configureServer) {</span>
+<span class="hljs-addition">+     await plugin.configureServer(server)</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ }</span>
+<span class="hljs-addition">+ middlewares.use(transformMiddleware(server))</span>
+  middlewares.use(serveStaticMiddleware(config));
+  return server;
+}
+async function runOptimize(config, server) {
+  const optimizeDeps = await createOptimizeDepsRun(config);
+  server._optimizeDepsMetadata = optimizeDeps.metadata
+}
+exports.createServer = createServer;
+</code></pre>
+<h3 id="t417.2 transform.js">7.2 transform.js <a href="#t417.2 transform.js"> # </a></h3>
+<p>lib\server\middlewares\transform.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { isJSRequest } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../../utils'</span>);
+<span class="hljs-keyword">const</span> send = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../send'</span>);
+<span class="hljs-keyword">const</span> transformRequest = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../transformRequest'</span>);
+<span class="hljs-keyword">const</span> { parse } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">transformMiddleware</span>(<span class="hljs-params">server</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+    <span class="hljs-keyword">if</span> (req.method !== <span class="hljs-string">'GET'</span>) {
+      <span class="hljs-keyword">return</span> next()
+    }
+    <span class="hljs-keyword">let</span> url = parse(req.url).pathname;
+    <span class="hljs-keyword">if</span> (isJSRequest(url)) {
+      <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> transformRequest(url, server)
+      <span class="hljs-keyword">if</span> (result) {
+        <span class="hljs-keyword">const</span> type = <span class="hljs-string">'js'</span>
+        <span class="hljs-keyword">return</span> send(req, res, result.code, type)
+      }
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> next();
+    }
+  }
+}
+<span class="hljs-built_in">module</span>.exports = transformMiddleware
+</code></pre>
+<h3 id="t427.3 pluginContainer.js">7.3 pluginContainer.js <a href="#t427.3 pluginContainer.js"> # </a></h3>
+<p>lib\server\pluginContainer.js</p>
+<pre><code class="lang-diff">const { normalizePath } = require("../utils");
+const path = require('path');
+async function createPluginContainer({ plugins,root }) {
+  class PluginContext {
+<span class="hljs-addition">+   async resolve(id, importer= path.join(root, 'index.html')) {</span>
+<span class="hljs-addition">+     return await container.resolveId(id, importer)</span>
+<span class="hljs-addition">+   }</span>
+  }
+  //插件容器是一个用来执行插件的容器
+  const container = {
+    //resolve是一个方法，是一个根据标记符计算路径的方法
+    //vue=&gt;vue在硬盘上对应路径 
+    async resolveId(id, importer) {
+      let ctx = new PluginContext();
+      let resolveId = id;
+      for (const plugin of plugins) {
+        if (!plugin.resolveId) continue;
+        const result = await plugin.resolveId.call(ctx, id, importer);
+        if (result) {
+          resolveId = result.id || result;
+          break;
+        }
+      }
+      return { id: normalizePath(resolveId) }
+    },
+<span class="hljs-addition">+   async load(id) {</span>
+<span class="hljs-addition">+     const ctx = new PluginContext()</span>
+<span class="hljs-addition">+     for (const plugin of plugins) {</span>
+<span class="hljs-addition">+       if (!plugin.load) continue</span>
+<span class="hljs-addition">+       const result = await plugin.load.call(ctx, id)</span>
+<span class="hljs-addition">+       if (result !== null) {</span>
+<span class="hljs-addition">+         return result</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+     return null</span>
+<span class="hljs-addition">+   },</span>
+<span class="hljs-addition">+   async transform(code, id) {</span>
+<span class="hljs-addition">+     for (const plugin of plugins) {</span>
+<span class="hljs-addition">+       if (!plugin.transform) continue</span>
+<span class="hljs-addition">+       const ctx = new PluginContext()</span>
+<span class="hljs-addition">+       const result = await plugin.transform.call(ctx, code, id)</span>
+<span class="hljs-addition">+       if (!result) continue</span>
+<span class="hljs-addition">+       code = result.code || result;</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+     return { code }</span>
+<span class="hljs-addition">+   }</span>
+  }
+  return container;
+}
+exports.createPluginContainer = createPluginContainer;
+</code></pre>
+<h3 id="t437.4 utils.js">7.4 utils.js <a href="#t437.4 utils.js"> # </a></h3>
+<p>lib\utils.js</p>
+<pre><code class="lang-diff">function normalizePath(id) {
+  return id.replace(/\\/g, '/')
+}
+exports.normalizePath = normalizePath;
+
+<span class="hljs-addition">+const knownJsSrcRE = /\.js/</span>
+<span class="hljs-addition">+const isJSRequest = (url) =&gt; {</span>
+<span class="hljs-addition">+  if (knownJsSrcRE.test(url)) {</span>
+<span class="hljs-addition">+    return true</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  return false</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+exports.isJSRequest = isJSRequest;</span>
+</code></pre>
+<h3 id="t447.5 transformRequest.js">7.5 transformRequest.js <a href="#t447.5 transformRequest.js"> # </a></h3>
+<p>lib\server\transformRequest.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs-extra'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">transformRequest</span>(<span class="hljs-params">url, server</span>) </span>{
+  <span class="hljs-keyword">const</span> { pluginContainer } = server
+  <span class="hljs-keyword">const</span> { id } = <span class="hljs-keyword">await</span> pluginContainer.resolveId(url);
+  <span class="hljs-keyword">const</span> loadResult = <span class="hljs-keyword">await</span> pluginContainer.load(id)
+   <span class="hljs-keyword">let</span> code;
+  <span class="hljs-keyword">if</span> (loadResult) {
+    code = loadResult.code;;
+  } <span class="hljs-keyword">else</span> {
+    code = <span class="hljs-keyword">await</span> fs.readFile(id, <span class="hljs-string">'utf-8'</span>)
+  }
+  <span class="hljs-keyword">const</span> transformResult = <span class="hljs-keyword">await</span> pluginContainer.transform(code, id)
+  <span class="hljs-keyword">return</span> transformResult;
+}
+<span class="hljs-built_in">module</span>.exports = transformRequest;
+</code></pre>
+<h3 id="t457.6 send.js">7.6 send.js <a href="#t457.6 send.js"> # </a></h3>
+<p>lib\server\send.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> alias = {
+  <span class="hljs-attr">js</span>: <span class="hljs-string">'application/javascript'</span>,
+  <span class="hljs-attr">css</span>: <span class="hljs-string">'text/css'</span>,
+  <span class="hljs-attr">html</span>: <span class="hljs-string">'text/html'</span>,
+  <span class="hljs-attr">json</span>: <span class="hljs-string">'application/json'</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">send</span>(<span class="hljs-params">_req, res, content, type</span>) </span>{
+  res.setHeader(<span class="hljs-string">'Content-Type'</span>, alias[type] || type)
+  res.statusCode = <span class="hljs-number">200</span>
+  <span class="hljs-keyword">return</span> res.end(content)
+}
+<span class="hljs-built_in">module</span>.exports = send;
+</code></pre>
+<h3 id="t467.7 plugins\index.js">7.7 plugins\index.js <a href="#t467.7 plugins\index.js"> # </a></h3>
+<p>lib\plugins\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> importAnalysisPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./importAnalysis'</span>);
+<span class="hljs-keyword">const</span> preAliasPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./preAlias'</span>);
+<span class="hljs-keyword">const</span> resolvePlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./resolve'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resolvePlugins</span>(<span class="hljs-params">config</span>) </span>{
+  <span class="hljs-keyword">return</span> [
+    preAliasPlugin(config),
+    resolvePlugin(config),
+    importAnalysisPlugin(config)
+  ]
+}
+exports.resolvePlugins = resolvePlugins;
+</code></pre>
+<h3 id="t477.8 importAnalysis.js">7.8 importAnalysis.js <a href="#t477.8 importAnalysis.js"> # </a></h3>
+<p>lib\plugins\importAnalysis.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { init, parse } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'es-module-lexer'</span>)
+<span class="hljs-keyword">const</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">'magic-string'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">importAnalysisPlugin</span>(<span class="hljs-params">config</span>) </span>{
+  <span class="hljs-keyword">const</span> { root } = config
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vite:import-analysis'</span>,
+    <span class="hljs-keyword">async</span> transform(source, importer) {
+      <span class="hljs-keyword">await</span> init
+      <span class="hljs-keyword">let</span> imports = parse(source)[<span class="hljs-number">0</span>]
+      <span class="hljs-keyword">if</span> (!imports.length) {
+        <span class="hljs-keyword">return</span> source
+      }
+      <span class="hljs-keyword">let</span> ms = <span class="hljs-keyword">new</span> MagicString(source);
+      <span class="hljs-keyword">const</span> normalizeUrl = <span class="hljs-keyword">async</span> (url) =&gt; {
+        <span class="hljs-keyword">const</span> resolved = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.resolve(url, importer)
+        <span class="hljs-keyword">if</span> (resolved.id.startsWith(root + <span class="hljs-string">'/'</span>)) {
+          url = resolved.id.slice(root.length)
+        }
+        <span class="hljs-keyword">return</span> url;
+      }
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span>; index &lt; imports.length; index++) {
+        <span class="hljs-keyword">const</span> { <span class="hljs-attr">s</span>: start, <span class="hljs-attr">e</span>: end, <span class="hljs-attr">n</span>: specifier } = imports[index]
+        <span class="hljs-keyword">if</span> (specifier) {
+          <span class="hljs-keyword">const</span> normalizedUrl = <span class="hljs-keyword">await</span> normalizeUrl(specifier)
+          <span class="hljs-keyword">if</span> (normalizedUrl !== specifier) {
+            ms.overwrite(start, end, normalizedUrl)
+          }
+        }
+      }
+      <span class="hljs-keyword">return</span> ms.toString()
+    }
+  }
+}
+<span class="hljs-built_in">module</span>.exports = importAnalysisPlugin;
+</code></pre>
+<h3 id="t487.9 preAlias.js">7.9 preAlias.js <a href="#t487.9 preAlias.js"> # </a></h3>
+<p>lib\plugins\preAlias.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs-extra'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preAliasPlugin</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">let</span> server
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vite:pre-alias'</span>,
+    configureServer(_server) {
+      server = _server
+    },
+    resolveId(id) {
+      <span class="hljs-keyword">const</span> metadata = server._optimizeDepsMetadata;
+      <span class="hljs-keyword">const</span> isOptimized = metadata.optimized[id]
+      <span class="hljs-keyword">if</span> (isOptimized) {
+        <span class="hljs-keyword">return</span> {
+          <span class="hljs-attr">id</span>: isOptimized.file
+        };
+      }
+    }
+  }
+}
+<span class="hljs-built_in">module</span>.exports = preAliasPlugin;
+</code></pre>
+<h3 id="t497.10 lib\config.js">7.10 lib\config.js <a href="#t497.10 lib\config.js"> # </a></h3>
+<p>lib\config.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> { normalizePath } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./utils'</span>);
+<span class="hljs-keyword">const</span> { resolvePlugins } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./plugins'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resolveConfig</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">//当前的根目录 window \\  linux /</span>
+  <span class="hljs-keyword">const</span> root = normalizePath(process.cwd());
+  <span class="hljs-keyword">const</span> cacheDir = normalizePath(path.resolve(<span class="hljs-string">`node_modules/.vite7`</span>))
+  <span class="hljs-keyword">let</span> config = {
+    root,
+    cacheDir
+  }
+  <span class="hljs-keyword">const</span> plugins = <span class="hljs-keyword">await</span> resolvePlugins(config);
+  config.plugins = plugins;
+  <span class="hljs-keyword">return</span> config;
+}
+<span class="hljs-built_in">module</span>.exports = resolveConfig;
+</code></pre>
+<h2 id="t508.支持vue插件">8.支持vue插件 <a href="#t508.支持vue插件"> # </a></h2>
+<h3 id="t518.1 esbuildDepPlugin.js">8.1 esbuildDepPlugin.js <a href="#t518.1 esbuildDepPlugin.js"> # </a></h3>
+<p>lib\optimizer\esbuildDepPlugin.js</p>
+<pre><code class="lang-diff">const path = require('path');
+const fs = require('fs-extra');
+const htmlTypesRE = /\.html$/;
+const scriptModuleRE = /&lt;script src\="(.+?)" type\="module"&gt;&lt;\/script&gt;/;
+const { createPluginContainer } = require('../server/pluginContainer');
+const resolvePlugin = require('../plugins/resolve');
+const jsRE = /\.js$/;
+async function esBuildScanPlugin(config, deps) {
+  //在此处其实调用的vite插件系统
+  config.plugins = [resolvePlugin(config)];
+  const container = await createPluginContainer(config);
+  const resolve = async (id, importer) =&gt; {
+    return await container.resolveId(id, importer);
+  }
+  return {
+    name: 'vite:dep-scan',
+    setup(build) {
+      //X [ERROR] No loader is configured for ".vue" files: src/App.vue
+<span class="hljs-addition">+     build.onResolve(</span>
+<span class="hljs-addition">+       {</span>
+<span class="hljs-addition">+         filter: /\.vue$/</span>
+<span class="hljs-addition">+       },</span>
+<span class="hljs-addition">+       async ({ path: id, importer }) =&gt; {</span>
+<span class="hljs-addition">+         const resolved = await resolve(id, importer)</span>
+<span class="hljs-addition">+         if (resolved) {</span>
+<span class="hljs-addition">+           return {</span>
+<span class="hljs-addition">+             path: resolved.id,</span>
+<span class="hljs-addition">+             external: true</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+         }</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+     )</span>
+      //用来处理路径的
+      build.onResolve({ filter: htmlTypesRE }, async ({ path, importer }) =&gt; {
+        //path=C:\aproject\vite5\doc\index.html importer 空
+        const resolved = await resolve(path, importer);
+        if (resolved) {
+          return {
+            path: resolved.id || resolved,
+            namespace: 'html' //为了更细化区分不同的文件类型，我可以给文件添加一个命名空间
+          }
+        }
+      });
+      //对于其它所有的类型文件我们也进行处理
+      build.onResolve({ filter: /.*/ }, async ({ path, importer }) =&gt; {
+        const resolved = await resolve(path, importer);
+        //返回值可能是 {id:xx} 或 xx
+        //C:\aproject\vite5\doc\main.js
+        if (resolved) {
+          const id = resolved.id || resolved;
+          const included = id.includes('node_modules');
+          if (included) {
+            //deps.vue = "C:/aproject/viteproject/node_modules/vue/dist/vue.runtime.esm-bundler.js"
+            deps[path] = id;
+            return {
+              path,
+              external: true //external设置为true的话说明这是一个外部模块，不会进行后续的打包分析，直接返回了
+            }
+          }
+          return { path: id }
+        }
+        return { path }
+      });
+      //用来处理读取内容 自定义读取器
+      build.onLoad({ filter: htmlTypesRE, namespace: 'html' }, async ({ path }) =&gt; {
+        let html = fs.readFileSync(path, 'utf8');
+        let [, scriptSrc] = html.match(scriptModuleRE);
+        let js = `import ${JSON.stringify(scriptSrc)}`;//import "/main.js"
+        return {
+          loader: 'js',
+          contents: js
+        }
+      })
+      build.onLoad({ filter: jsRE }, async ({ path: id }) =&gt; {
+        let ext = path.extname(id).slice(1);// .js  js
+        const contents = fs.readFileSync(id, 'utf8');
+        return {
+          loader: ext,
+          contents
+        }
+      })
+    }
+  }
+}
+module.exports = esBuildScanPlugin;
+</code></pre>
+<h3 id="t528.2 lib\plugins\index.js">8.2 lib\plugins\index.js <a href="#t528.2 lib\plugins\index.js"> # </a></h3>
+<p>lib\plugins\index.js</p>
+<pre><code class="lang-diff">const importAnalysisPlugin = require('./importAnalysis');
+const preAliasPlugin = require('./preAlias');
+const resolvePlugin = require('./resolve');
+<span class="hljs-addition">+async function resolvePlugins(config, userPlugins) {</span>
+  return [
+    preAliasPlugin(config),
+    resolvePlugin(config),
+<span class="hljs-addition">+   ...userPlugins,</span>
+    importAnalysisPlugin(config)
+  ]
+}
+exports.resolvePlugins = resolvePlugins;
+</code></pre>
+<h3 id="t538.3 lib\utils.js">8.3 lib\utils.js <a href="#t538.3 lib\utils.js"> # </a></h3>
+<p>lib\utils.js</p>
+<pre><code class="lang-diff">function normalizePath(id) {
+  return id.replace(/\\/g, '/')
+}
+exports.normalizePath = normalizePath;
+<span class="hljs-addition">+const knownJsSrcRE = /\.(js|vue)/</span>
+const isJSRequest = (url) =&gt; {
+  if (knownJsSrcRE.test(url)) {
+    return true
+  }
+  return false
+}
+exports.isJSRequest = isJSRequest;
+</code></pre>
+<h3 id="t548.4 config.js">8.4 config.js <a href="#t548.4 config.js"> # </a></h3>
+<p>lib\config.js</p>
+<pre><code class="lang-diff">const path = require('path');
+const { normalizePath } = require('./utils');
+const { resolvePlugins } = require('./plugins');
+<span class="hljs-addition">+const fs = require('fs-extra');</span>
+async function resolveConfig() {
+  //当前的根目录 window \\  linux /
+  const root = normalizePath(process.cwd());
+  const cacheDir = normalizePath(path.resolve(`node_modules/.vite7`))
+  let config = {
+    root,
+    cacheDir
+  }
+<span class="hljs-addition">+ const jsconfigFile = path.resolve(root, 'vite.config.js')</span>
+<span class="hljs-addition">+ const exists = await fs.pathExists(jsconfigFile)</span>
+<span class="hljs-addition">+ if (exists) {</span>
+<span class="hljs-addition">+   const userConfig = require(jsconfigFile);</span>
+<span class="hljs-addition">+   config = { ...config, ...userConfig };</span>
+<span class="hljs-addition">+ }</span>
+<span class="hljs-addition">+ const userPlugins = config.plugins || [];</span>
+<span class="hljs-addition">+ const plugins = await resolvePlugins(config, userPlugins);</span>
+  config.plugins = plugins;
+  return config;
+}
+module.exports = resolveConfig;
+</code></pre>
+<h3 id="t558.5 index.html">8.5 index.html <a href="#t558.5 index.html"> # </a></h3>
+<p>index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/main.js"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="t568.6 src\main.js">8.6 src\main.js <a href="#t568.6 src\main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'/src/App.vue'</span>;
+createApp(App).mount(<span class="hljs-string">"#app"</span>);
+</code></pre>
+<h3 id="t578.7 src\App.vue">8.7 src\App.vue <a href="#t578.7 src\App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-js">&lt;template&gt;
+  &lt;h1&gt;App&lt;/h1&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+  name: 'App'
+}
+&lt;/script&gt;
+</code></pre>
+<h3 id="t588.8 vue.js">8.8 vue.js <a href="#t588.8 vue.js"> # </a></h3>
+<p>plugins\vue.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { parse, compileScript, rewriteDefault, compileTemplate } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vue/compiler-sfc'</span>);
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> descriptorCache = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">vue</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vue'</span>,
+    <span class="hljs-keyword">async</span> transform(code, id) {
+      <span class="hljs-keyword">const</span> { filename } = parseVueRequest(id);
+      <span class="hljs-keyword">if</span> (filename.endsWith(<span class="hljs-string">'.vue'</span>)) {
+        <span class="hljs-keyword">let</span> result = <span class="hljs-keyword">await</span> transformMain(code, filename);
+        <span class="hljs-keyword">return</span> result;
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+  }
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDescriptor</span>(<span class="hljs-params">filename</span>) </span>{
+  <span class="hljs-keyword">let</span> descriptor = descriptorCache.get(filename);
+  <span class="hljs-keyword">if</span> (descriptor) <span class="hljs-keyword">return</span> descriptor;
+  <span class="hljs-keyword">const</span> content = <span class="hljs-keyword">await</span> fs.promises.readFile(filename, <span class="hljs-string">'utf8'</span>);
+  <span class="hljs-keyword">const</span> result = parse(content, { filename });
+  descriptor = result.descriptor;
+  descriptorCache.set(filename, descriptor);
+  <span class="hljs-keyword">return</span> descriptor;
+}
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">transformMain</span>(<span class="hljs-params">source, filename</span>) </span>{
+  <span class="hljs-keyword">const</span> descriptor = <span class="hljs-keyword">await</span> getDescriptor(filename);
+  <span class="hljs-keyword">const</span> scriptCode = genScriptCode(descriptor, filename)
+  <span class="hljs-keyword">const</span> templateCode = genTemplateCode(descriptor, filename);
+  <span class="hljs-keyword">let</span> resolvedCode = [
+    templateCode,
+    scriptCode,
+    <span class="hljs-string">`_sfc_main['render'] = render`</span>,
+    <span class="hljs-string">`export default _sfc_main`</span>
+  ].join(<span class="hljs-string">'\n'</span>);
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">code</span>: resolvedCode }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">genScriptCode</span>(<span class="hljs-params">descriptor, id</span>) </span>{
+  <span class="hljs-keyword">let</span> scriptCode = <span class="hljs-string">''</span>
+  <span class="hljs-keyword">let</span> script = compileScript(descriptor, { id });
+  <span class="hljs-keyword">if</span> (!script.lang) {
+    scriptCode = rewriteDefault(
+      script.content,
+      <span class="hljs-string">'_sfc_main'</span>,
+    )
+  }
+  <span class="hljs-keyword">return</span> scriptCode;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">genTemplateCode</span>(<span class="hljs-params">descriptor, id</span>) </span>{
+  <span class="hljs-keyword">let</span> content = descriptor.template.content;
+  <span class="hljs-keyword">const</span> result = compileTemplate({ <span class="hljs-attr">source</span>: content, id });
+  <span class="hljs-keyword">return</span> result.code;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parseVueRequest</span>(<span class="hljs-params">id</span>) </span>{
+  <span class="hljs-keyword">const</span> [filename, querystring = <span class="hljs-string">''</span>] = id.split(<span class="hljs-string">'?'</span>);
+  <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">new</span> URLSearchParams(querystring);
+  <span class="hljs-keyword">return</span> {
+    filename, query
+  };
+}
+<span class="hljs-built_in">module</span>.exports = vue;
+</code></pre>
+<h2 id="t599.支持style">9.支持style <a href="#t599.支持style"> # </a></h2>
+<h3 id="t609.1 config.js">9.1 config.js <a href="#t609.1 config.js"> # </a></h3>
+<p>lib\config.js</p>
+<pre><code class="lang-diff">const path = require('path');
+const { normalizePath } = require('./utils');
+const { resolvePlugins } = require('./plugins');
+const fs = require('fs-extra');
+async function resolveConfig() {
+  //当前的根目录 window \\  linux /
+  const root = normalizePath(process.cwd());
+  const cacheDir = normalizePath(path.resolve(`node_modules/.vite7`))
+  let config = {
+    root,
+    cacheDir
+  }
+  const jsconfigFile = path.resolve(root, 'vite.config.js')
+  const exists = await fs.pathExists(jsconfigFile)
+  if (exists) {
+    const userConfig = require(jsconfigFile);
+    config = { ...config, ...userConfig };
+  }
+  const userPlugins = config.plugins || [];
+<span class="hljs-addition">+ for (const plugin of userPlugins) {</span>
+<span class="hljs-addition">+   if (plugin.config) {</span>
+<span class="hljs-addition">+     const res = await plugin.config(config)</span>
+<span class="hljs-addition">+     if (res) {</span>
+<span class="hljs-addition">+       config = { ...config, ...res }</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ }</span>
+  const plugins = await resolvePlugins(config, userPlugins);
+  config.plugins = plugins;
+  return config;
+}
+module.exports = resolveConfig;
+</code></pre>
+<h3 id="t619.2  src\App.vue">9.2  src\App.vue <a href="#t619.2  src\App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-diff">&lt;template&gt;
+  &lt;h1&gt;App&lt;/h1&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+  name: 'App'
+}
+&lt;/script&gt;
+<span class="hljs-addition">+&lt;style&gt;</span>
+<span class="hljs-addition">+h1 {</span>
+<span class="hljs-addition">+  color: red;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+&lt;/style&gt;</span>
+</code></pre>
+<h3 id="t629.3 vue.js">9.3 vue.js <a href="#t629.3 vue.js"> # </a></h3>
+<p>plugins\vue.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+const { parse, compileScript, rewriteDefault, compileTemplate, compileStyleAsync } = require('vue/compiler-sfc');</span>
+const fs = require('fs');
+const path = require('path');
+<span class="hljs-addition">+const hash = require('hash-sum');</span>
+<span class="hljs-addition">+const descriptorCache = new Map();</span>
+function vue() {
+  let root;
+  return {
+    name: 'vue',
+<span class="hljs-addition">+   config(config) {</span>
+<span class="hljs-addition">+     root = config.root;</span>
+<span class="hljs-addition">+     console.log(root, 'root');</span>
+<span class="hljs-addition">+   },</span>
+<span class="hljs-addition">+   async load(id) {</span>
+<span class="hljs-addition">+     const { filename, query } = parseVueRequest(id);</span>
+<span class="hljs-addition">+     if (query.has('vue')) {</span>
+<span class="hljs-addition">+       const descriptor = await getDescriptor(filename, root);</span>
+<span class="hljs-addition">+       if (query.get('type') === 'style') {</span>
+<span class="hljs-addition">+         let block = descriptor.styles[Number(query.get('index'))];</span>
+<span class="hljs-addition">+         if (block) {</span>
+<span class="hljs-addition">+           return { code: block.content };</span>
+<span class="hljs-addition">+         }</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   },</span>
+    async transform(code, id) {
+<span class="hljs-addition">+     const { filename, query } = parseVueRequest(id);</span>
+<span class="hljs-addition">+     if (filename.endsWith('.vue')) {</span>
+<span class="hljs-addition">+       if (query.get('type') === 'style') {</span>
+<span class="hljs-addition">+         const descriptor = await getDescriptor(filename, root);</span>
+<span class="hljs-addition">+         let result = await transformStyle(code, descriptor, query.get('index'));</span>
+<span class="hljs-addition">+         return result;</span>
+<span class="hljs-addition">+       } else {</span>
+<span class="hljs-addition">+         let result = await transformMain(code, filename);</span>
+<span class="hljs-addition">+         return result;</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+     }</span>
+      return null;
+    }
+  }
+}
+<span class="hljs-addition">+async function transformStyle(code, descriptor, index) {</span>
+<span class="hljs-addition">+  const block = descriptor.styles[index];</span>
+<span class="hljs-addition">+  //如果是CSS，其实翻译之后和翻译之前内容是一样的</span>
+<span class="hljs-addition">+  const result = await compileStyleAsync({</span>
+<span class="hljs-addition">+    filename: descriptor.filename,</span>
+<span class="hljs-addition">+    source: code,</span>
+<span class="hljs-addition">+    id: `data-v-${descriptor.id}`,//必须传递，不然报错</span>
+<span class="hljs-addition">+    scoped: block.scoped</span>
+<span class="hljs-addition">+  });</span>
+<span class="hljs-addition">+  let styleCode = result.code;</span>
+<span class="hljs-addition">+  const injectCode =</span>
+<span class="hljs-addition">+    `\nvar  style = document.createElement('style');` +</span>
+<span class="hljs-addition">+    `\nstyle.innerHTML = ${JSON.stringify(styleCode)};` +</span>
+<span class="hljs-addition">+    `\ndocument.head.appendChild(style);`</span>
+<span class="hljs-addition">+  return {</span>
+<span class="hljs-addition">+    code: injectCode</span>
+<span class="hljs-addition">+  };</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+async function getDescriptor(filename, root) {</span>
+<span class="hljs-addition">+  let descriptor = descriptorCache.get(filename);</span>
+<span class="hljs-addition">+  if (descriptor) return descriptor;</span>
+<span class="hljs-addition">+  const content = await fs.promises.readFile(filename, 'utf8');</span>
+<span class="hljs-addition">+  const result = parse(content, { filename });</span>
+<span class="hljs-addition">+  descriptor = result.descriptor;</span>
+<span class="hljs-addition">+  descriptor.id = hash(path.relative(root, filename));</span>
+<span class="hljs-addition">+  descriptorCache.set(filename, descriptor);</span>
+<span class="hljs-addition">+  return descriptor;</span>
+<span class="hljs-addition">+}</span>
+async function transformMain(source, filename) {
+  const descriptor = await getDescriptor(filename, root);
+  const scriptCode = genScriptCode(descriptor, filename)
+  const templateCode = genTemplateCode(descriptor, filename);
+<span class="hljs-addition">+ const stylesCode = genStyleCode(descriptor, filename);</span>
+  let resolvedCode = [
+<span class="hljs-addition">+   stylesCode,</span>
+    templateCode,
+    scriptCode,
+    `_sfc_main['render'] = render`,
+    `export default _sfc_main`
+  ].join('\n');
+  return { code: resolvedCode }
+}
+<span class="hljs-addition">+function genStyleCode(descriptor, filename) {</span>
+<span class="hljs-addition">+  let styleCode = '';</span>
+<span class="hljs-addition">+  if (descriptor.styles.length) {</span>
+<span class="hljs-addition">+    descriptor.styles.forEach((style, index) =&gt; {</span>
+<span class="hljs-addition">+      const query = `?vue&amp;type=style&amp;index=${index}&amp;lang=css`;</span>
+<span class="hljs-addition">+      const styleRequest = (filename + query).replace(/\\/g, '/');</span>
+<span class="hljs-addition">+      styleCode += `\nimport ${JSON.stringify(styleRequest)}`;</span>
+<span class="hljs-addition">+    });</span>
+<span class="hljs-addition">+    return styleCode;</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+}</span>
+function genScriptCode(descriptor, id) {
+  let scriptCode = ''
+  let script = compileScript(descriptor, { id });
+  if (!script.lang) {
+    scriptCode = rewriteDefault(
+      script.content,
+      '_sfc_main',
+    )
+  }
+  return scriptCode;
+}
+function genTemplateCode(descriptor, id) {
+  let content = descriptor.template.content;
+  const result = compileTemplate({ source: content, id });
+  return result.code;
+}
+<span class="hljs-addition">+function parseVueRequest(id) {</span>
+<span class="hljs-addition">+  const [filename, querystring = ''] = id.split('?');</span>
+<span class="hljs-addition">+  let query = new URLSearchParams(querystring);</span>
+<span class="hljs-addition">+  return {</span>
+<span class="hljs-addition">+    filename, query</span>
+<span class="hljs-addition">+  };</span>
+<span class="hljs-addition">+}</span>
+module.exports = vue;
+</code></pre>
+<h2 id="t6310.支持环境变量">10.支持环境变量 <a href="#t6310.支持环境变量"> # </a></h2>
+<h3 id="t6410.1 plugins\index.js">10.1 plugins\index.js <a href="#t6410.1 plugins\index.js"> # </a></h3>
+<p>lib\plugins\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> importAnalysisPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./importAnalysis'</span>);
+<span class="hljs-keyword">const</span> preAliasPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./preAlias'</span>);
+<span class="hljs-keyword">const</span> resolvePlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./resolve'</span>);
+<span class="hljs-keyword">const</span> definePlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./define'</span>);
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resolvePlugins</span>(<span class="hljs-params">config, userPlugins</span>) </span>{
+  <span class="hljs-keyword">return</span> [
+    preAliasPlugin(config),
+    resolvePlugin(config),
+    ...userPlugins,
+    definePlugin(config),
+    importAnalysisPlugin(config)
+  ]
+}
+exports.resolvePlugins = resolvePlugins;
+</code></pre>
+<h3 id="t6510.2 define.js">10.2 define.js <a href="#t6510.2 define.js"> # </a></h3>
+<p>lib\plugins\define.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">'magic-string'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">definePlugin</span>(<span class="hljs-params">config</span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vite:define'</span>,
+    transform(code) {
+      <span class="hljs-keyword">const</span> replacements = config.define || {};
+      <span class="hljs-keyword">const</span> replacementsKeys = <span class="hljs-built_in">Object</span>.keys(replacements)
+      <span class="hljs-keyword">const</span> pattern = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">'('</span> + replacementsKeys.map(<span class="hljs-function"><span class="hljs-params">str</span> =&gt;</span> str).join(<span class="hljs-string">'|'</span>) + <span class="hljs-string">')'</span>, <span class="hljs-string">'g'</span>);
+      <span class="hljs-keyword">const</span> s = <span class="hljs-keyword">new</span> MagicString(code)
+      <span class="hljs-keyword">let</span> hasReplaced = <span class="hljs-literal">false</span>
+      <span class="hljs-keyword">let</span> match
+      <span class="hljs-keyword">while</span> ((match = pattern.exec(code))) {
+        hasReplaced = <span class="hljs-literal">true</span>
+        <span class="hljs-keyword">const</span> start = match.index
+        <span class="hljs-keyword">const</span> end = start + match[<span class="hljs-number">0</span>].length
+        <span class="hljs-keyword">const</span> replacement = <span class="hljs-string">''</span> + replacements[match[<span class="hljs-number">1</span>]]
+        s.overwrite(start, end, replacement)
+      }
+      <span class="hljs-keyword">if</span> (!hasReplaced) {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>
+      }
+      <span class="hljs-keyword">return</span> { <span class="hljs-attr">code</span>: s.toString() }
+    }
+  }
+}
+<span class="hljs-built_in">module</span>.exports = definePlugin;
+</code></pre>
+<h3 id="t6610.3 plugins\vue.js">10.3 plugins\vue.js <a href="#t6610.3 plugins\vue.js"> # </a></h3>
+<p>plugins\vue.js</p>
+<pre><code class="lang-diff">const { parse, compileScript, rewriteDefault, compileTemplate, compileStyleAsync } = require('vue/compiler-sfc');
+const fs = require('fs');
+const path = require('path');
+const hash = require('hash-sum');
+const descriptorCache = new Map();
+function vue() {
+  let root;
+  return {
+    name: 'vue',
+    config(config) {
+      root = config.root;
+<span class="hljs-addition">+     return {</span>
+<span class="hljs-addition">+       define: {</span>
+<span class="hljs-addition">+         __VUE_OPTIONS_API__: true,</span>
+<span class="hljs-addition">+         __VUE_PROD_DEVTOOLS__: false</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+     }</span>
+    },
+    async load(id) {
+      const { filename, query } = parseVueRequest(id);
+      if (query.has('vue')) {
+        const descriptor = await getDescriptor(filename, root);
+        if (query.get('type') <span class="hljs-comment">=== 'style') {</span>
+          let block = descriptor.styles[Number(query.get('index'))];
+          if (block) {
+            return { code: block.content };
+          }
+        }
+      }
+    },
+    async transform(code, id) {
+      const { filename, query } = parseVueRequest(id);
+      if (filename.endsWith('.vue')) {
+        if (query.get('type') <span class="hljs-comment">=== 'style') {</span>
+          const descriptor = await getDescriptor(filename, root);
+          let result = await transformStyle(code, descriptor, query.get('index'));
+          return result;
+        } else {
+          let result = await transformMain(code, filename);
+          return result;
+        }
+      }
+      return null;
+    }
+  }
+}
+async function transformStyle(code, descriptor, index) {
+  const block = descriptor.styles[index];
+  //如果是CSS，其实翻译之后和翻译之前内容是一样的，最终返回的JS靠packages\vite\src\node\plugins\css.ts
+  const result = await compileStyleAsync({
+    filename: descriptor.filename,
+    source: code,
+    id: `data-v-${descriptor.id}`,//必须传递，不然报错
+    scoped: block.scoped
+  });
+  let styleCode = result.code;
+  const injectCode =
+    `\nvar  style = document.createElement('style');` +
+    `\nstyle.innerHTML = ${JSON.stringify(styleCode)};` +
+    `\ndocument.head.appendChild(style);`
+  return {
+    code: injectCode
+  };
+}
+async function getDescriptor(filename, root) {
+  let descriptor = descriptorCache.get(filename);
+  if (descriptor) return descriptor;
+  const content = await fs.promises.readFile(filename, 'utf8');
+  const result = parse(content, { filename });
+  descriptor = result.descriptor;
+  descriptor.id = hash(path.relative(root, filename));
+  descriptorCache.set(filename, descriptor);
+  return descriptor;
+}
+async function transformMain(source, filename) {
+  const { descriptor } = parse(source, { filename });
+  const scriptCode = genScriptCode(descriptor, filename)
+  const templateCode = genTemplateCode(descriptor, filename);
+  const stylesCode = genStyleCode(descriptor, filename);
+  let resolvedCode = [
+    stylesCode,
+    templateCode,
+    scriptCode,
+    `_sfc_main['render'] = render`,
+    `export default _sfc_main`
+  ].join('\n');
+  return { code: resolvedCode }
+}
+function genStyleCode(descriptor, filename) {
+  let styleCode = '';
+  if (descriptor.styles.length) {
+    descriptor.styles.forEach((style, index) =&gt; {
+      const query = `?vue&amp;type=style&amp;index=${index}&amp;lang=css`;
+      const styleRequest = (filename + query).replace(/\\/g, '/');
+      styleCode += `\nimport ${JSON.stringify(styleRequest)}`;
+    });
+    return styleCode;
+  }
+}
+function genScriptCode(descriptor, id) {
+  let scriptCode = ''
+  let script = compileScript(descriptor, { id });
+  if (!script.lang) {
+    scriptCode = rewriteDefault(
+      script.content,
+      '_sfc_main',
+    )
+  }
+  return scriptCode;
+}
+function genTemplateCode(descriptor, id) {
+  let content = descriptor.template.content;
+  const result = compileTemplate({ source: content, id });
+  return result.code;
+}
+function parseVueRequest(id) {
+  const [filename, querystring = ''] = id.split('?');
+  let query = new URLSearchParams(querystring);
+  return {
+    filename, query
+  };
+}
+module.exports = vue;
+</code></pre>
+<h2 id="t6711.支持HMR">11.支持HMR <a href="#t6711.支持HMR"> # </a></h2>
+<h3 id="t6811.1 server\index.js">11.1 server\index.js <a href="#t6811.1 server\index.js"> # </a></h3>
+<p>lib\server\index.js</p>
+<pre><code class="lang-diff">const connect = require('connect');
+const http = require('http');
+const serveStaticMiddleware = require('./middlewares/static');
+const resolveConfig = require('../config');
+const { createOptimizeDepsRun } = require('../optimizer');
+const transformMiddleware = require('./middlewares/transform');
+const { createPluginContainer } = require('./pluginContainer');
+<span class="hljs-addition">+const { handleHMRUpdate } = require('./hmr');</span>
+<span class="hljs-addition">+const { createWebSocketServer } = require('./ws');</span>
+<span class="hljs-addition">+const { normalizePath } = require('../utils');</span>
+<span class="hljs-addition">+const chokidar = require('chokidar');</span>
+<span class="hljs-addition">+const { ModuleGraph } = require('./moduleGraph')</span>
+<span class="hljs-addition">+const path = require('path');</span>
+async function createServer() {
+  const config = await resolveConfig();
+  const middlewares = connect();
+<span class="hljs-addition">+ const httpServer = require('http').createServer(middlewares)</span>
+<span class="hljs-addition">+ const ws = createWebSocketServer(httpServer, config)</span>
+<span class="hljs-addition">+ const watcher = chokidar.watch(path.resolve(config.root), {</span>
+<span class="hljs-addition">+   ignored: [</span>
+<span class="hljs-addition">+     '**/node_modules/**',</span>
+<span class="hljs-addition">+     '**/.git/**'</span>
+<span class="hljs-addition">+   ]</span>
+<span class="hljs-addition">+ });</span>
+<span class="hljs-addition">+ const moduleGraph = new ModuleGraph((url) =&gt;</span>
+<span class="hljs-addition">+   pluginContainer.resolveId(url)</span>
+<span class="hljs-addition">+ )</span>
+<span class="hljs-addition">+ const pluginContainer = await createPluginContainer(config)</span>
+  const server = {
+<span class="hljs-addition">+   config,</span>
+<span class="hljs-addition">+   ws,</span>
+<span class="hljs-addition">+   watcher,</span>
+<span class="hljs-addition">+   moduleGraph,</span>
+<span class="hljs-addition">+   httpServer,</span>
+    pluginContainer,
+    async listen(port) {
+      await runOptimize(config, server)
+<span class="hljs-addition">+     httpServer.listen(port, async () =&gt; {</span>
+        console.log(`server running at http://localhost:${port}`);
+      });
+    }
+  }
+<span class="hljs-addition">+ watcher.on('change', async (file) =&gt; {</span>
+<span class="hljs-addition">+   file = normalizePath(file)</span>
+<span class="hljs-addition">+   await handleHMRUpdate(file, server)</span>
+<span class="hljs-addition">+ })</span>
+  for (const plugin of config.plugins) {
+    if (plugin.configureServer) {
+      await plugin.configureServer(server)
+    }
+  }
+  middlewares.use(transformMiddleware(server))
+  middlewares.use(serveStaticMiddleware(config));
+  return server;
+}
+async function runOptimize(config, server) {
+  const optimizeDeps = await createOptimizeDepsRun(config);
+  server._optimizeDepsMetadata = optimizeDeps.metadata
+}
+exports.createServer = createServer;
+</code></pre>
+<h3 id="t6911.2 lib\server\ws.js">11.2 lib\server\ws.js <a href="#t6911.2 lib\server\ws.js"> # </a></h3>
+<p>lib\server\ws.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { WebSocketServer } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'ws'</span>);
+<span class="hljs-keyword">const</span> HMR_HEADER = <span class="hljs-string">'vite-hmr'</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createWebSocketServer</span>(<span class="hljs-params">httpServer</span>) </span>{
+  <span class="hljs-keyword">const</span> wss = <span class="hljs-keyword">new</span> WebSocketServer({ <span class="hljs-attr">noServer</span>: <span class="hljs-literal">true</span> });
+  httpServer.on(<span class="hljs-string">'upgrade'</span>, (req, socket, head) =&gt; {
+    <span class="hljs-keyword">if</span> (req.headers[<span class="hljs-string">'sec-websocket-protocol'</span>] === HMR_HEADER) {
+      wss.handleUpgrade(req, socket, head, (ws) =&gt; {
+        wss.emit(<span class="hljs-string">'connection'</span>, ws, req)
+      })
+    }
+  })
+  wss.on(<span class="hljs-string">'connection'</span>, (socket) =&gt; {
+    socket.send(<span class="hljs-built_in">JSON</span>.stringify({ <span class="hljs-attr">type</span>: <span class="hljs-string">'connected'</span> }))
+  })
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">on</span>: wss.on.bind(wss),
+    <span class="hljs-attr">off</span>: wss.off.bind(wss),
+    send(payload) {
+      <span class="hljs-keyword">const</span> stringified = <span class="hljs-built_in">JSON</span>.stringify(payload)
+      wss.clients.forEach(<span class="hljs-function">(<span class="hljs-params">client</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (client.readyState === <span class="hljs-number">1</span>) {
+          client.send(stringified)
+        }
+      })
+    }
+  }
+}
+exports.createWebSocketServer = createWebSocketServer;
+</code></pre>
+<h3 id="t7011.3 hmr.js">11.3 hmr.js <a href="#t7011.3 hmr.js"> # </a></h3>
+<p>lib\server\hmr.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> LexerState = {
+  <span class="hljs-attr">inCall</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">inSingleQuoteString</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">inTemplateString</span>: <span class="hljs-number">2</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getShortName</span>(<span class="hljs-params">file, root</span>) </span>{
+  <span class="hljs-keyword">return</span> file.startsWith(root + <span class="hljs-string">'/'</span>) ? path.posix.relative(root, file) : file
+}
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleHMRUpdate</span>(<span class="hljs-params">file, server</span>) </span>{
+  <span class="hljs-keyword">const</span> { config, moduleGraph } = server
+  <span class="hljs-keyword">const</span> shortFile = getShortName(file, config.root)
+  <span class="hljs-keyword">const</span> modules = moduleGraph.getModulesByFile(file) || []
+  updateModules(shortFile, modules, server)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateModules</span>(<span class="hljs-params">file, modules, { ws }</span>) </span>{
+  <span class="hljs-keyword">const</span> updates = []
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> mod <span class="hljs-keyword">of</span> modules) {
+    <span class="hljs-keyword">const</span> boundaries = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()
+    propagateUpdate(mod, boundaries)
+    updates.push(
+      ...[...boundaries].map(<span class="hljs-function">(<span class="hljs-params">{ boundary, acceptedVia }</span>) =&gt;</span> ({
+        <span class="hljs-attr">type</span>: <span class="hljs-string">`<span class="hljs-subst">${boundary.type}</span>-update`</span>,
+        <span class="hljs-attr">path</span>: boundary.url,
+        <span class="hljs-attr">acceptedPath</span>: acceptedVia.url
+      }))
+    )
+  }
+  ws.send({
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'update'</span>,
+    updates
+  })
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">propagateUpdate</span>(<span class="hljs-params">node, boundaries</span>) </span>{
+  <span class="hljs-keyword">if</span> (!node.importers.size) {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+  }
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> importer <span class="hljs-keyword">of</span> node.importers) {
+    <span class="hljs-keyword">if</span> (importer.acceptedHmrDeps.has(node)) {
+      boundaries.add({
+        <span class="hljs-attr">boundary</span>: importer,
+        <span class="hljs-attr">acceptedVia</span>: node
+      })
+      <span class="hljs-keyword">continue</span>
+    }
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">lexAcceptedHmrDeps</span>(<span class="hljs-params">code, start, urls</span>) </span>{
+  <span class="hljs-keyword">let</span> state = LexerState.inCall
+  <span class="hljs-keyword">let</span> prevState = LexerState.inCall
+  <span class="hljs-keyword">let</span> currentDep = <span class="hljs-string">''</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addDep</span>(<span class="hljs-params">index</span>) </span>{
+    urls.add({
+      <span class="hljs-attr">url</span>: currentDep,
+      <span class="hljs-attr">start</span>: index - currentDep.length - <span class="hljs-number">1</span>,
+      <span class="hljs-attr">end</span>: index + <span class="hljs-number">1</span>
+    })
+    currentDep = <span class="hljs-string">''</span>
+  }
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; code.length; i++) {
+    <span class="hljs-keyword">const</span> char = code.charAt(i)
+    <span class="hljs-keyword">switch</span> (state) {
+      <span class="hljs-keyword">case</span> LexerState.inCall:
+        <span class="hljs-keyword">if</span> (char === <span class="hljs-string">`'`</span>) {
+          prevState = state
+          state = LexerState.inSingleQuoteString
+        }
+        <span class="hljs-keyword">break</span>
+      <span class="hljs-keyword">case</span> LexerState.inSingleQuoteString:
+        <span class="hljs-keyword">if</span> (char === <span class="hljs-string">`'`</span>) {
+          addDep(i)
+          <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+        } <span class="hljs-keyword">else</span> {
+          currentDep += char
+        }
+        <span class="hljs-keyword">break</span>
+      <span class="hljs-attr">default</span>:
+        <span class="hljs-keyword">break</span>;
+    }
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+}
+exports.handleHMRUpdate = handleHMRUpdate;
+exports.updateModules = updateModules;
+exports.lexAcceptedHmrDeps = lexAcceptedHmrDeps;
+</code></pre>
+<h3 id="t7111.4  transformRequest.js">11.4  transformRequest.js <a href="#t7111.4  transformRequest.js"> # </a></h3>
+<p>lib\server\transformRequest.js</p>
+<pre><code class="lang-diff">const fs = require('fs-extra');
+async function transformRequest(url, server) {
+  const { pluginContainer } = server
+  const { id } = await pluginContainer.resolveId(url);
+  const loadResult = await pluginContainer.load(id)
+  let code;
+  if (loadResult) {
+    code = loadResult.code;;
+  } else {
+    code = await fs.readFile(id, 'utf-8')
+  }
+<span class="hljs-addition">+ await server.moduleGraph.ensureEntryFromUrl(url)</span>
+  const transformResult = await pluginContainer.transform(code, id)
+  return transformResult;
+}
+module.exports = transformRequest;
+</code></pre>
+<h3 id="t7211.5  moduleGraph.js">11.5  moduleGraph.js <a href="#t7211.5  moduleGraph.js"> # </a></h3>
+<p>lib\server\moduleGraph.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ModuleNode</span> </span>{
+  importers = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()
+  acceptedHmrDeps = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()
+  <span class="hljs-keyword">constructor</span>(url) {
+    <span class="hljs-keyword">this</span>.url = url
+    <span class="hljs-keyword">this</span>.type = <span class="hljs-string">'js'</span>
+  }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ModuleGraph</span> </span>{
+  <span class="hljs-keyword">constructor</span>(resolveId) {
+    <span class="hljs-keyword">this</span>.resolveId = resolveId;
+  }
+
+  fileToModulesMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()
+  urlToModuleMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()
+  idToModuleMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()
+
+  getModulesByFile(file) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.fileToModulesMap.get(file)
+  }
+  getModuleById(id) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.idToModuleMap.get(id)
+  }
+  <span class="hljs-keyword">async</span> ensureEntryFromUrl(rawUrl) {
+    <span class="hljs-keyword">const</span> [url, resolvedId] = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.resolveUrl(rawUrl)
+    <span class="hljs-keyword">let</span> mod = <span class="hljs-keyword">this</span>.urlToModuleMap.get(url)
+    <span class="hljs-keyword">if</span> (!mod) {
+      mod = <span class="hljs-keyword">new</span> ModuleNode(url)
+      <span class="hljs-keyword">this</span>.urlToModuleMap.set(url, mod)
+      <span class="hljs-keyword">this</span>.idToModuleMap.set(resolvedId, mod)
+      <span class="hljs-keyword">const</span> file = (mod.file = resolvedId)
+      <span class="hljs-keyword">let</span> fileMappedModules = <span class="hljs-keyword">this</span>.fileToModulesMap.get(file)
+      <span class="hljs-keyword">if</span> (!fileMappedModules) {
+        fileMappedModules = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()
+        <span class="hljs-keyword">this</span>.fileToModulesMap.set(file, fileMappedModules)
+      }
+      fileMappedModules.add(mod)
+    }
+    <span class="hljs-keyword">return</span> mod;
+  }
+  <span class="hljs-keyword">async</span> resolveUrl(url) {
+    <span class="hljs-keyword">const</span> resolved = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.resolveId(url)
+    <span class="hljs-keyword">const</span> resolvedId = resolved.id || url
+    <span class="hljs-keyword">return</span> [url, resolvedId]
+  }
+  <span class="hljs-keyword">async</span> updateModuleInfo(mod, importedModules, acceptedModules) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> imported <span class="hljs-keyword">of</span> importedModules) {
+      <span class="hljs-keyword">const</span> dep = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.ensureEntryFromUrl(imported)
+      dep.importers.add(mod)
+    }
+    <span class="hljs-keyword">const</span> deps = (mod.acceptedHmrDeps = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>())
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> accepted <span class="hljs-keyword">of</span> acceptedModules) {
+      <span class="hljs-keyword">const</span> dep = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.ensureEntryFromUrl(accepted)
+      deps.add(dep)
+    }
+  }
+}
+exports.ModuleGraph = ModuleGraph;
+</code></pre>
+<h3 id="t7311.6 importAnalysis.js">11.6 importAnalysis.js <a href="#t7311.6 importAnalysis.js"> # </a></h3>
+<p>lib\plugins\importAnalysis.js</p>
+<pre><code class="lang-diff">const { init, parse } = require('es-module-lexer')
+const MagicString = require('magic-string');
+<span class="hljs-addition">+const { lexAcceptedHmrDeps } = require('../server/hmr');</span>
+<span class="hljs-addition">+const path = require('path');</span>
+function importAnalysisPlugin(config) {
+  const { root } = config
+<span class="hljs-addition">+ let server</span>
+  return {
+    name: 'vite:import-analysis',
+<span class="hljs-addition">+   configureServer(_server) {</span>
+<span class="hljs-addition">+     server = _server</span>
+<span class="hljs-addition">+   },</span>
+    async transform(source, importer) {
+      await init
+      let imports = parse(source)[0]
+      if (!imports.length) {
+        return source
+      }
+<span class="hljs-addition">+     const { moduleGraph } = server</span>
+<span class="hljs-addition">+     const importerModule = moduleGraph.getModuleById(importer)</span>
+<span class="hljs-addition">+     const importedUrls = new Set()</span>
+<span class="hljs-addition">+     const acceptedUrls = new Set()</span>
+      let ms = new MagicString(source);
+      const normalizeUrl = async (url) =&gt; {
+        const resolved = await this.resolve(url, importer)
+        if (resolved.id.startsWith(root + '/')) {
+          url = resolved.id.slice(root.length)
+        }
+<span class="hljs-addition">+       await moduleGraph.ensureEntryFromUrl(url)</span>
+        return url;
+      }
+      for (let index = 0; index &lt; imports.length; index++) {
+        const { s: start, e: end, n: specifier } = imports[index]
+        const rawUrl = source.slice(start, end)
+<span class="hljs-addition">+       if (rawUrl === 'import.meta') {</span>
+<span class="hljs-addition">+         const prop = source.slice(end, end + 4)</span>
+<span class="hljs-addition">+         if (prop === '.hot') {</span>
+<span class="hljs-addition">+           if (source.slice(end + 4, end + 11) === '.accept') {</span>
+<span class="hljs-addition">+             lexAcceptedHmrDeps(source, source.indexOf('(', end + 11) + 1, acceptedUrls)</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+         }</span>
+<span class="hljs-addition">+       }</span>
+        if (specifier) {
+          const normalizedUrl = await normalizeUrl(specifier)
+          if (normalizedUrl !== specifier) {
+            ms.overwrite(start, end, normalizedUrl)
+          }
+<span class="hljs-addition">+         importedUrls.add(normalizedUrl)</span>
+        }
+      }
+<span class="hljs-addition">+     const normalizedAcceptedUrls = new Set()</span>
+<span class="hljs-addition">+     const toAbsoluteUrl = (url) =&gt;</span>
+<span class="hljs-addition">+       path.posix.resolve(path.posix.dirname(importerModule.url), url)</span>
+<span class="hljs-addition">+     for (const { url, start, end } of acceptedUrls) {</span>
+<span class="hljs-addition">+       const [normalized] = await moduleGraph.resolveUrl(toAbsoluteUrl(url),)</span>
+<span class="hljs-addition">+       normalizedAcceptedUrls.add(normalized)</span>
+<span class="hljs-addition">+       ms.overwrite(start, end, JSON.stringify(normalized))</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+     await moduleGraph.updateModuleInfo(</span>
+<span class="hljs-addition">+       importerModule,</span>
+<span class="hljs-addition">+       importedUrls,</span>
+<span class="hljs-addition">+       normalizedAcceptedUrls</span>
+<span class="hljs-addition">+     )</span>
+      return ms.toString()
+    }
+  }
+}
+module.exports = importAnalysisPlugin;
+</code></pre>
+<h3 id="t7411.7 index.html">11.7 index.html <a href="#t7411.7 index.html"> # </a></h3>
+<p>index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/main.js"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/client.js"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="t7511.8 src\main.js">11.8 src\main.js <a href="#t7511.8 src\main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { render } <span class="hljs-keyword">from</span> <span class="hljs-string">'./render.js'</span>;
+render();
+<span class="hljs-built_in">window</span>.hotModulesMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()
+<span class="hljs-keyword">var</span> ownerPath = <span class="hljs-string">"/src/main.js"</span>;
+<span class="hljs-keyword">import</span>.meta.hot = {
+  accept(deps, callback) {
+    acceptDeps(deps, callback)
+  }
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">acceptDeps</span>(<span class="hljs-params">deps, callback</span>) </span>{
+  <span class="hljs-keyword">const</span> mod = hotModulesMap.get(ownerPath) || {
+    <span class="hljs-attr">id</span>: ownerPath,
+    <span class="hljs-attr">callbacks</span>: []
+  }
+  mod.callbacks.push({
+    deps,
+    <span class="hljs-attr">fn</span>: callback
+  })
+  hotModulesMap.set(ownerPath, mod)
+}
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">import</span>.meta.hot) {
+  <span class="hljs-keyword">import</span>.meta.hot.accept([<span class="hljs-string">'./render.js'</span>], ([renderMod]) =&gt; {
+    renderMod.render();
+  });
+}
+</code></pre>
+<h3 id="t7611.9 src\render.js">11.9 src\render.js <a href="#t7611.9 src\render.js"> # </a></h3>
+<p>src\render.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params"></span>) </span>{
+  app.innerHTML = <span class="hljs-string">'title1'</span>;
+}
+</code></pre>
+<h3 id="t7711.10 src\client.js">11.10 src\client.js <a href="#t7711.10 src\client.js"> # </a></h3>
+<p>src\client.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'[vite] connecting...'</span>)
+<span class="hljs-keyword">var</span> socket = <span class="hljs-keyword">new</span> WebSocket(<span class="hljs-string">`ws://<span class="hljs-subst">${<span class="hljs-built_in">window</span>.location.host}</span>`</span>, <span class="hljs-string">'vite-hmr'</span>)
+socket.addEventListener(<span class="hljs-string">'message'</span>, <span class="hljs-keyword">async</span> ({ data }) =&gt; {
+  handleMessage(<span class="hljs-built_in">JSON</span>.parse(data))
+})
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleMessage</span>(<span class="hljs-params">payload</span>) </span>{
+  <span class="hljs-keyword">switch</span> (payload.type) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'connected'</span>:
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`[vite] connected.`</span>)
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'update'</span>:
+      payload.updates.forEach(<span class="hljs-function">(<span class="hljs-params">update</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (update.type === <span class="hljs-string">'js-update'</span>) {
+          fetchUpdate(update)
+        }
+      });
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'full-reload'</span>:
+      location.reload()
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-keyword">break</span>;
+  }
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fetchUpdate</span>(<span class="hljs-params">{ path, acceptedPath }</span>) </span>{
+  <span class="hljs-keyword">const</span> mod = <span class="hljs-built_in">window</span>.hotModulesMap.get(path)
+  <span class="hljs-keyword">if</span> (!mod) {
+    <span class="hljs-keyword">return</span>
+  }
+  <span class="hljs-keyword">const</span> moduleMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()
+  <span class="hljs-keyword">const</span> modulesToUpdate = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> { deps } <span class="hljs-keyword">of</span> mod.callbacks) {
+    deps.forEach(<span class="hljs-function">(<span class="hljs-params">dep</span>) =&gt;</span> {
+      <span class="hljs-keyword">if</span> (acceptedPath === dep) {
+        modulesToUpdate.add(dep)
+      }
+    })
+  }
+  <span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.all(
+    <span class="hljs-built_in">Array</span>.from(modulesToUpdate).map(<span class="hljs-keyword">async</span> (dep) =&gt; {
+      <span class="hljs-keyword">const</span> newMod = <span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(dep + <span class="hljs-string">'?ts='</span> + <span class="hljs-built_in">Date</span>.now())
+      moduleMap.set(dep, newMod)
+    })
+  )
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> { deps, fn } <span class="hljs-keyword">of</span> mod.callbacks) {
+    fn(deps.map(<span class="hljs-function">(<span class="hljs-params">dep</span>) =&gt;</span> moduleMap.get(dep)))
+  }
+  <span class="hljs-keyword">const</span> loggedPath = <span class="hljs-string">`<span class="hljs-subst">${acceptedPath}</span> via <span class="hljs-subst">${path}</span>`</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`[vite] hot updated: <span class="hljs-subst">${loggedPath}</span>`</span>)
+}
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

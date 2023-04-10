@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li class="active"><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01. CSS模块化方案">1. CSS模块化方案</a><ul><li><a href="#t11.1 CSS 命名方法">1.1 CSS 命名方法</a></li><li><a href="#t21.2 CSS Modules">1.2 CSS Modules</a></li><li><a href="#t31.3 CSS-in-JS">1.3 CSS-in-JS</a><ul><li><a href="#t41.3.1 案例">1.3.1 案例</a></li><li><a href="#t51.3.2 CSS-IN-JS优缺点">1.3.2 CSS-IN-JS优缺点</a></li><li><a href="#t61.3.3 选型">1.3.3 选型</a></li></ul></li></ul></li><li><a href="#t72. emotion">2. emotion</a></li><li><a href="#t83.@emotion/css">3.@emotion/css</a><ul><li><a href="#t93.1 模板字符串">3.1 模板字符串</a><ul><li><a href="#t103.1.1  src\main.jsx">3.1.1  src\main.jsx</a></li><li><a href="#t113.1.2 src\App.jsx">3.1.2 src\App.jsx</a></li><li><a href="#t123.1.3 css\index.js">3.1.3 css\index.js</a></li><li><a href="#t133.1.4 css.js">3.1.4 css.js</a></li><li><a href="#t143.1.5 serialize\index.jsx">3.1.5 serialize\index.jsx</a></li><li><a href="#t153.1.6 serializeStyles.jsx">3.1.6 serializeStyles.jsx</a></li><li><a href="#t163.1.7 utils\index.jsx">3.1.7 utils\index.jsx</a></li><li><a href="#t173.1.8 hashString.jsx">3.1.8 hashString.jsx</a></li><li><a href="#t183.1.9 insertStyles.jsx">3.1.9 insertStyles.jsx</a></li></ul></li><li><a href="#t193.2 对象">3.2 对象</a><ul><li><a href="#t203.2.1  src\App.jsx">3.2.1  src\App.jsx</a></li><li><a href="#t213.2.2 serializeStyles.jsx">3.2.2 serializeStyles.jsx</a></li></ul></li></ul></li><li><a href="#t224.@emotion/react">4.@emotion/react</a><ul><li><a href="#t234.1 vite.config.js">4.1 vite.config.js</a></li><li><a href="#t244.2 src\App.jsx">4.2 src\App.jsx</a></li><li><a href="#t254.3 react\index.jsx">4.3 react\index.jsx</a></li><li><a href="#t264.4 css.jsx">4.4 css.jsx</a></li><li><a href="#t274.5 jsx.jsx">4.5 jsx.jsx</a></li><li><a href="#t284.6 serializeStyles.jsx">4.6 serializeStyles.jsx</a></li><li><a href="#t294.7 Insertion.jsx">4.7 Insertion.jsx</a></li><li><a href="#t304.8 utils\index.jsx">4.8 utils\index.jsx</a></li></ul></li><li><a href="#t315. @emotion/styled">5. @emotion/styled</a><ul><li><a href="#t325.1 src\App.jsx">5.1 src\App.jsx</a></li><li><a href="#t335.2 styled\index.jsx">5.2 styled\index.jsx</a></li></ul></li><li><a href="#t346. 根据props属性覆盖样式">6. 根据props属性覆盖样式</a><ul><li><a href="#t356.1 src\App.jsx">6.1 src\App.jsx</a></li><li><a href="#t366.2 styled\index.jsx">6.2 styled\index.jsx</a></li><li><a href="#t376.3 serializeStyles.jsx">6.3 serializeStyles.jsx</a></li></ul></li><li><a href="#t387. 为组件添加样式">7. 为组件添加样式</a><ul><li><a href="#t397.1 src\App.jsx">7.1 src\App.jsx</a></li></ul></li><li><a href="#t408. 父组件设置子组件">8. 父组件设置子组件</a><ul><li><a href="#t418.1 vite.config.js">8.1 vite.config.js</a></li><li><a href="#t428.2 src\App.jsx">8.2 src\App.jsx</a></li></ul></li><li><a href="#t439. 嵌套选择器">9. 嵌套选择器</a><ul><li><a href="#t449.1 src\App.jsx">9.1 src\App.jsx</a></li></ul></li><li><a href="#t4510. as属性">10. as属性</a><ul><li><a href="#t4610.1 src\App.jsx">10.1 src\App.jsx</a></li></ul></li><li><a href="#t4711.组合样式">11.组合样式</a><ul><li><a href="#t4811.1 src\App.jsx">11.1 src\App.jsx</a></li></ul></li><li><a href="#t4912.全局样式">12.全局样式</a><ul><li><a href="#t5012.1 src\App.jsx">12.1 src\App.jsx</a></li></ul></li><li><a href="#t5113.关键帧动画">13.关键帧动画</a><ul><li><a href="#t5213.1 src\App.jsx">13.1 src\App.jsx</a></li></ul></li><li><a href="#t5314.模板字符串">14.模板字符串</a></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01. CSS模块化方案">1. CSS模块化方案 <a href="#t01. CSS模块化方案"> # </a></h2>
+<h3 id="t11.1 CSS 命名方法">1.1 CSS 命名方法 <a href="#t11.1 CSS 命名方法"> # </a></h3>
+<ul>
+<li>通过人工的方式来约定命名规则</li>
+<li><a href="https://www.bemcss.com/">BEM</a>是一种典型的 CSS 命名方法论,BEM的命名规矩就是<code>block-name__element-name--modifier-name</code>，也就是模块名 + 元素名 + 修饰器名</li>
+<li><a href="http://oocss.org">OOCSS</a>（Object-Oriented CSS）即面向对象的 CSS，它借鉴了 OOP（面向对象编程）的抽象思维，主张将元素的样式抽象成多个独立的小型样式类，来提高样式的灵活性和可重用性。</li>
+<li><a href="https://itcss.io">ITCSS</a>（Inverted Triangle CSS，倒三角 CSS）是一套方便扩展和管理的 CSS 体系架构，它兼容 BEM、OOCSS、SMACSS 等 CSS 命名方法论</li>
+<li><a href="http://smacss.com">SMACSS</a>即可伸缩及模块化的 CSS 结构</li>
+</ul>
+<h3 id="t21.2 CSS Modules">1.2 CSS Modules <a href="#t21.2 CSS Modules"> # </a></h3>
+<ul>
+<li>CSS Modules：一个 CSS 文件就是一个独立的模块,核心思想是 通过组件名的唯一性来保证选择器的唯一性，从而保证样式不会污染到组件外</li>
+<li><a href="https://github.com/css-modules/css-modules">CSS Modules</a>允许我们像 import 一个 JS Module 一样去 import 一个 CSS Module.每一个 CSS 文件都是一个独立的模块，每一个类名都是该模块所导出对象的一个属性。通过这种方式，便可在使用时明确指定所引用的 CSS 样式。并且，CSS Modules 在打包时会自动将 id 和 class 混淆成全局唯一的 hash 值，从而避免发生命名冲突问题。</li>
+<li>使用 CSS Modules 时，推荐配合 CSS 预处理器（Sass/Less/Stylus）一起使用</li>
+<li>CSS 预处理器提供了许多有用的功能，如嵌套、变量、mixins、functions 等，同时也让定义本地名称或全局名称变得容易</li>
+</ul>
+<h3 id="t31.3 CSS-in-JS">1.3 CSS-in-JS <a href="#t31.3 CSS-in-JS"> # </a></h3>
+<ul>
+<li>React 的出现，打破了以前<code>关注点分离</code>的网页开发原则，因其采用组件结构，而组件又强制要求将 HTML、CSS 和 JS 代码写在一起。表面上看是技术的倒退，实际上并不是</li>
+<li>React 是在  JS 中实现了对 HTML 和 CSS 的封装，赋予了 HTML 和 CSS 全新的<code>编程能力</code>。对于 HTML，衍生了 JSX 这种 JS 的语法扩展，你可以将其理解为 <code>HTML-in-JS</code>；对于 CSS，衍生出一系列的第三方库，用来加强在 JS 中操作 CSS 的能力，它们被称为 <code>CSS-in-JS</code></li>
+<li>随着 React 的流行以及组件化开发模式的深入人心，这种<code>关注点混合</code>的新写法逐渐成为主流</li>
+<li>实现<ul>
+<li><a href="https://github.com/styled-components/styled-components">styled-components</a> 36.7K</li>
+<li><a href="https://github.com/emotion-js/emotion">emotion</a> 15K</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/20220605190114_1654426961172.png" alt=""></p>
+<h4 id="t41.3.1 案例">1.3.1 案例 <a href="#t41.3.1 案例"> # </a></h4>
+<ul>
+<li><a href="https://github.com/mui-org/material-ui">material-ui</a>世界上最受欢迎的 React UI 框架</li>
+</ul>
+<h4 id="t51.3.2 CSS-IN-JS优缺点">1.3.2 CSS-IN-JS优缺点 <a href="#t51.3.2 CSS-IN-JS优缺点"> # </a></h4>
+<ul>
+<li>优点</li>
+<li><code>Scoping Styles</code> 可以让CSS拥有独立的作用域，实现局部样式，防止样式冲突和影响组件外的内容</li>
+<li><code>Dead Code Elimination</code> 避免无用的CSS样式堆积  </li>
+<li><code>Critical CSS</code> 重要的CSS放在头部的<code>style</code>标签内，其它的CSS异步加载可以减少渲染阻塞</li>
+<li><code>State-based styling</code> 根据组件的状态动态地生成样式</li>
+<li><code>更彻底的封装</code> 让组件拥有更好的移植性和重用性</li>
+<li>缺点</li>
+<li><code>Steep learning curve</code> 陡峭的学习曲线</li>
+<li><code>Runtime cost</code> 运行时消耗</li>
+<li><code>Unreadable class names</code> 代码可读性差 </li>
+<li><code>No interoperability</code>没有统一的 <a href="https://github.com/cssinjs/istf-spec">业界标准</a></li>
+</ul>
+<h4 id="t61.3.3 选型">1.3.3 选型 <a href="#t61.3.3 选型"> # </a></h4>
+<ul>
+<li>我们一定要根据自己的实际情况进行衡量和取舍来确定是不是要在自己的项目中使用它<ul>
+<li>前端初学者、页面功能简单、重视代码可读性和可维护性不要选择</li>
+<li>如果经验丰富、应用交互逻辑复杂、重视封装性和可移植性可以尝试</li>
+</ul>
+</li>
+</ul>
+<h2 id="t72. emotion">2. emotion <a href="#t72. emotion"> # </a></h2>
+<ul>
+<li><a href="https://emotion.sh/docs/introduction">emotion</a>是一个用JS编写CSS样式的库</li>
+<li><code>emotion</code>是新一代的<code>CSS-IN-JS</code>解决方案</li>
+<li><code>CSS-in-JS</code>实现是通过生成唯一的CSS选择器来达到CSS局部作用域的效果</li>
+</ul>
+<h2 id="t83.@emotion/css">3.@emotion/css <a href="#t83.@emotion/css"> # </a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/@emotion/css">@emotion/css</a>与框架无关，是使用 Emotion 的最简单方法</li>
+<li>不需要额外的设置、babel插件或其他配置更改</li>
+<li>支持自动供应商前缀、嵌套选择器和媒体查询</li>
+</ul>
+<h3 id="t93.1 模板字符串">3.1 模板字符串 <a href="#t93.1 模板字符串"> # </a></h3>
+<h4 id="t103.1.1  src\main.jsx">3.1.1  src\main.jsx <a href="#t103.1.1  src\main.jsx"> # </a></h4>
+<p>src\main.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span></span>,
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'root'</span>)
+)
+</code></pre>
+<h4 id="t113.1.2 src\App.jsx">3.1.2 src\App.jsx <a href="#t113.1.2 src\App.jsx"> # </a></h4>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { css } <span class="hljs-keyword">from</span> <span class="hljs-string">'./@emotion/css'</span>
+<span class="hljs-keyword">const</span> className = css`<span class="css">
+ <span class="hljs-selector-tag">color</span>: <span class="hljs-selector-tag">red</span>;
+`</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{className}</span>&gt;</span>
+      App
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h4 id="t123.1.3 css\index.js">3.1.3 css\index.js <a href="#t123.1.3 css\index.js"> # </a></h4>
+<p>src\@emotion\css\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> css } <span class="hljs-keyword">from</span> <span class="hljs-string">'./css'</span>;
+</code></pre>
+<h4 id="t133.1.4 css.js">3.1.4 css.js <a href="#t133.1.4 css.js"> # </a></h4>
+<p>src\@emotion\css\css.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">'../serialize'</span>;
+<span class="hljs-keyword">import</span> { insertStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">css</span>(<span class="hljs-params">...args</span>) </span>{
+  <span class="hljs-keyword">const</span> serialized = serializeStyles(args);
+  insertStyles(serialized);
+  <span class="hljs-keyword">return</span> <span class="hljs-string">'css'</span> + <span class="hljs-string">"-"</span> + serialized.name;
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> css; 
+</code></pre>
+<h4 id="t143.1.5 serialize\index.jsx">3.1.5 serialize\index.jsx <a href="#t143.1.5 serialize\index.jsx"> # </a></h4>
+<p>src\@emotion\serialize\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">'./serializeStyles'</span>;
+</code></pre>
+<h4 id="t153.1.6 serializeStyles.jsx">3.1.6 serializeStyles.jsx <a href="#t153.1.6 serializeStyles.jsx"> # </a></h4>
+<p>src\@emotion\serialize\serializeStyles.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { hashString } <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">serializeStyles</span>(<span class="hljs-params">args</span>) </span>{
+  <span class="hljs-keyword">let</span> styles = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">const</span> strings = args[<span class="hljs-number">0</span>];
+  styles += strings[<span class="hljs-number">0</span>];
+  <span class="hljs-keyword">const</span> name = hashString(styles);
+  <span class="hljs-keyword">return</span> { name, styles }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> serializeStyles;
+</code></pre>
+<h4 id="t163.1.7 utils\index.jsx">3.1.7 utils\index.jsx <a href="#t163.1.7 utils\index.jsx"> # </a></h4>
+<p>src\@emotion\utils\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> insertStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">'./insertStyles'</span>
+<span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> hashString } <span class="hljs-keyword">from</span> <span class="hljs-string">'./hashString'</span>;
+</code></pre>
+<h4 id="t173.1.8 hashString.jsx">3.1.8 hashString.jsx <a href="#t173.1.8 hashString.jsx"> # </a></h4>
+<p>src\@emotion\utils\hashString.jsx</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hashString</span>(<span class="hljs-params">keys</span>) </span>{
+  <span class="hljs-keyword">let</span> val = <span class="hljs-number">10000000</span>;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; keys.length; i++) {
+    val += keys.charCodeAt(i);
+  }
+  <span class="hljs-keyword">return</span> val.toString(<span class="hljs-number">16</span>).slice(<span class="hljs-number">0</span>, <span class="hljs-number">6</span>);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> hashString;
+</code></pre>
+<h4 id="t183.1.9 insertStyles.jsx">3.1.9 insertStyles.jsx <a href="#t183.1.9 insertStyles.jsx"> # </a></h4>
+<p>src\@emotion\utils\insertStyles.jsx</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">insertStyles</span>(<span class="hljs-params">serialized</span>) </span>{
+  <span class="hljs-keyword">const</span> className = <span class="hljs-string">'css'</span> + <span class="hljs-string">"-"</span> + serialized.name;
+  <span class="hljs-keyword">const</span> rule = <span class="hljs-string">"."</span> + className + <span class="hljs-string">"{"</span> + serialized.styles + <span class="hljs-string">"}"</span>;
+  <span class="hljs-keyword">const</span> tag = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'style'</span>);
+  tag.setAttribute(<span class="hljs-string">'data-emotion'</span>, <span class="hljs-string">'css'</span>);
+  tag.appendChild(<span class="hljs-built_in">document</span>.createTextNode(rule));
+  <span class="hljs-built_in">document</span>.head.appendChild(tag);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> insertStyles;
+</code></pre>
+<h3 id="t193.2 对象">3.2 对象 <a href="#t193.2 对象"> # </a></h3>
+<h4 id="t203.2.1  src\App.jsx">3.2.1  src\App.jsx <a href="#t203.2.1  src\App.jsx"> # </a></h4>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff">import { css } from './@emotion/css'
+<span class="hljs-addition">+const className = css(</span>
+<span class="hljs-addition">+  {</span>
+<span class="hljs-addition">+    color: 'red'</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+);</span>
+function App() {
+  return (
+    &lt;div className={className}&gt;
+      App
+    &lt;/div&gt;
+  )
+}
+export default App
+</code></pre>
+<h4 id="t213.2.2 serializeStyles.jsx">3.2.2 serializeStyles.jsx <a href="#t213.2.2 serializeStyles.jsx"> # </a></h4>
+<p>src\@emotion\serialize\serializeStyles.jsx</p>
+<pre><code class="lang-diff">import { hashString } from '../utils';
+function serializeStyles(args) {
+  var styles = '';
+  var strings = args[0];
+<span class="hljs-addition">+ if (strings.raw === undefined) {</span>
+<span class="hljs-addition">+   styles += handleInterpolation(strings);</span>
+<span class="hljs-addition">+ } else {</span>
+<span class="hljs-addition">+   styles += strings[0];</span>
+<span class="hljs-addition">+ }</span>
+  var name = hashString(styles);
+  return { name, styles }
+}
+
+<span class="hljs-addition">+function handleInterpolation(interpolation) {</span>
+<span class="hljs-addition">+  switch (typeof interpolation) {</span>
+<span class="hljs-addition">+    case 'object': {</span>
+<span class="hljs-addition">+      return createStringFromObject(interpolation);</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function createStringFromObject(obj) {</span>
+<span class="hljs-addition">+  var string = '';</span>
+<span class="hljs-addition">+  for (var key in obj) {</span>
+<span class="hljs-addition">+    var value = obj[key];</span>
+<span class="hljs-addition">+    string += key + ":" + value + ";";</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  return string;</span>
+<span class="hljs-addition">+}</span>
+export default serializeStyles;
+</code></pre>
+<h2 id="t224.@emotion/react">4.@emotion/react <a href="#t224.@emotion/react"> # </a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/@emotion/react">@emotion/react</a>包需要React</li>
+<li>最好将React与可配置的构建环境一起使用</li>
+<li>css属性支持<ul>
+<li>类似于<code>style prop</code>，但也支持自动供应商前缀、嵌套选择器和媒体查询</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js">npm install @emotion/react --save
+</code></pre>
+<ul>
+<li>pragma(注解) and pragmaFrag cannot be set when runtime is automatic.</li>
+</ul>
+<h3 id="t234.1 vite.config.js">4.1 vite.config.js <a href="#t234.1 vite.config.js"> # </a></h3>
+<p>vite.config.js</p>
+<pre><code class="lang-diff">import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+export default defineConfig({
+  plugins: [react(
+    {
+<span class="hljs-addition">+     jsxRuntime: 'classic'</span>
+    }
+  )]
+})
+
+</code></pre>
+<h3 id="t244.2 src\App.jsx">4.2 src\App.jsx <a href="#t244.2 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+/** @jsx jsx */</span>
+<span class="hljs-addition">+import { css, jsx } from './@emotion/react'</span>
+<span class="hljs-addition">+const styles = css(</span>
+<span class="hljs-addition">+  {</span>
+<span class="hljs-addition">+    color: 'red'</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+);</span>
+function App() {
+  return (
+<span class="hljs-addition">+   &lt;div css={styles}&gt;</span>
+      App
+    &lt;/div&gt;
+  )
+}
+export default App
+</code></pre>
+<h3 id="t254.3 react\index.jsx">4.3 react\index.jsx <a href="#t254.3 react\index.jsx"> # </a></h3>
+<p>src\@emotion\react\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> css } <span class="hljs-keyword">from</span> <span class="hljs-string">'./css'</span>;
+<span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> jsx } <span class="hljs-keyword">from</span> <span class="hljs-string">'./jsx'</span>;
+</code></pre>
+<h3 id="t264.4 css.jsx">4.4 css.jsx <a href="#t264.4 css.jsx"> # </a></h3>
+<p>src\@emotion\react\css.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">'../serialize'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">css</span>(<span class="hljs-params">...args</span>) </span>{
+  <span class="hljs-keyword">return</span> serializeStyles(args);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> css; 
+</code></pre>
+<h3 id="t274.5 jsx.jsx">4.5 jsx.jsx <a href="#t274.5 jsx.jsx"> # </a></h3>
+<p>src\@emotion\react\jsx.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">'../serialize'</span>;
+<span class="hljs-keyword">import</span> { Insertion } <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Emotion</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">const</span> serialized = serializeStyles(props.css);
+  <span class="hljs-keyword">const</span> { css, ...newProps } = props
+  newProps.className = <span class="hljs-string">'css'</span> + <span class="hljs-string">"-"</span> + serialized.name;
+  <span class="hljs-keyword">const</span> WrappedComponent = props.type;
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Insertion</span> <span class="hljs-attr">serialized</span>=<span class="hljs-string">{serialized}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">WrappedComponent</span> {<span class="hljs-attr">...newProps</span>} /&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  )
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jsx</span>(<span class="hljs-params">type, props, ...children</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Emotion</span> {<span class="hljs-attr">...props</span>} <span class="hljs-attr">type</span>=<span class="hljs-string">{type}</span>&gt;</span>
+      {children}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Emotion</span> &gt;</span>
+  )
+}
+export default jsx;
+</span></code></pre>
+<h3 id="t284.6 serializeStyles.jsx">4.6 serializeStyles.jsx <a href="#t284.6 serializeStyles.jsx"> # </a></h3>
+<p>src\@emotion\serialize\serializeStyles.jsx</p>
+<pre><code class="lang-diff">import { hashString } from '../utils';
+function serializeStyles(args) {
+<span class="hljs-addition">+  if (typeof args === 'object' &amp;&amp; args.styles !== undefined) {</span>
+<span class="hljs-addition">+    return args;</span>
+<span class="hljs-addition">+  }</span>
+  var styles = '';
+  var strings = args[0];
+  if (strings == null || strings.raw <span class="hljs-comment">=== undefined) {</span>
+    styles += handleInterpolation(strings);
+  } else {
+    styles += strings[0];
+  }
+  var name = hashString(styles);
+  return { name, styles }
+}
+
+function handleInterpolation(interpolation) {
+  switch (typeof interpolation) {
+    case 'object': {
+      return createStringFromObject(interpolation);
+    }
+  }
+}
+function createStringFromObject(obj) {
+  var string = '';
+  for (var key in obj) {
+    var value = obj[key];
+    string += key + ":" + value + ";";
+  }
+  return string;
+}
+export default serializeStyles;
+</code></pre>
+<h3 id="t294.7 Insertion.jsx">4.7 Insertion.jsx <a href="#t294.7 Insertion.jsx"> # </a></h3>
+<p>src\@emotion\utils\Insertion.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { useLayoutEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> insertStyles <span class="hljs-keyword">from</span> <span class="hljs-string">'./insertStyles'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Insertion</span>(<span class="hljs-params">{ serialized }</span>) </span>{
+  useLayoutEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    insertStyles(serialized);
+  });
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+};
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Insertion;
+</code></pre>
+<h3 id="t304.8 utils\index.jsx">4.8 utils\index.jsx <a href="#t304.8 utils\index.jsx"> # </a></h3>
+<p>src\@emotion\utils\index.jsx</p>
+<pre><code class="lang-diff">export { default as insertStyles } from './insertStyles';
+export { default as hashString } from './hashString';
+<span class="hljs-addition">+export { default as Insertion } from './Insertion';</span>
+</code></pre>
+<h2 id="t315. @emotion/styled">5. @emotion/styled <a href="#t315. @emotion/styled"> # </a></h2>
+<ul>
+<li><a href="https://emotion.sh/docs/@emotion/styled">styled</a>是一种创建附加样式的React组件的方法</li>
+</ul>
+<pre><code class="lang-js">npm install @emotion/styled --save
+</code></pre>
+<h3 id="t325.1 src\App.jsx">5.1 src\App.jsx <a href="#t325.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+import styled from './@emotion/styled'</span>
+<span class="hljs-addition">+const Button = styled.button(</span>
+  {
+    color: 'red'
+  }
+<span class="hljs-addition">+);</span>
+function App() {
+  return (
+<span class="hljs-addition">+   &lt;Button&gt;Button&lt;/Button&gt;</span>
+  )
+}
+export default App
+</code></pre>
+<h3 id="t335.2 styled\index.jsx">5.2 styled\index.jsx <a href="#t335.2 styled\index.jsx"> # </a></h3>
+<p>src\@emotion\styled\index.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { serializeStyles } <span class="hljs-keyword">from</span> <span class="hljs-string">'../serialize'</span>;
+<span class="hljs-keyword">import</span> { Insertion } <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createStyled</span>(<span class="hljs-params">tag</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">...args</span>) </span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Styled</span>(<span class="hljs-params">props</span>) </span>{
+      <span class="hljs-keyword">const</span> serialized = serializeStyles(args);
+      <span class="hljs-keyword">const</span> className = <span class="hljs-string">'css'</span> + <span class="hljs-string">"-"</span> + serialized.name;
+      <span class="hljs-keyword">const</span> newProps = { ...props };
+      newProps.className = className;
+      <span class="hljs-keyword">const</span> FinalTag = tag;
+      <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Insertion</span> <span class="hljs-attr">serialized</span>=<span class="hljs-string">{serialized}</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">FinalTag</span> {<span class="hljs-attr">...newProps</span>} /&gt;</span>
+        <span class="hljs-tag">&lt;/&gt;</span></span>
+      )
+    }
+    <span class="hljs-keyword">return</span> Styled;
+  }
+}
+<span class="hljs-keyword">const</span> newStyled = createStyled.bind();
+<span class="hljs-keyword">const</span> tags = [<span class="hljs-string">'button'</span>, <span class="hljs-string">'div'</span>];
+tags.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">tagName</span>) </span>{
+  newStyled[tagName] = newStyled(tagName);
+});
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> newStyled;
+</code></pre>
+<h2 id="t346. 根据props属性覆盖样式">6. 根据props属性覆盖样式 <a href="#t346. 根据props属性覆盖样式"> # </a></h2>
+<h3 id="t356.1 src\App.jsx">6.1 src\App.jsx <a href="#t356.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff">import styled from './@emotion/styled'
+const Button = styled.button(
+  {
+    background: 'green',
+    color: 'red'
+<span class="hljs-addition">+ }, props =&gt; ({</span>
+<span class="hljs-addition">+   color: props.color</span>
+<span class="hljs-addition">+ })</span>
+);
+function App() {
+  return (
+<span class="hljs-addition">+   &lt;Button color="white"&gt;Button&lt;/Button&gt;</span>
+  )
+}
+export default App
+</code></pre>
+<h3 id="t366.2 styled\index.jsx">6.2 styled\index.jsx <a href="#t366.2 styled\index.jsx"> # </a></h3>
+<p>src\@emotion\styled\index.jsx</p>
+<pre><code class="lang-diff">import { serializeStyles } from '../serialize';
+import { Insertion } from '../utils';
+function createStyled(tag) {
+  return function (...args) {
+    function Styled(props) {
+<span class="hljs-addition">+     const serialized = serializeStyles(args, props);</span>
+      const className = 'css' + "-" + serialized.name;
+      const newProps = { ...props };
+      newProps.className = className;
+      const FinalTag = tag;
+      return (
+        &lt;&gt;
+          &lt;Insertion serialized={serialized} /&gt;
+          &lt;FinalTag {...newProps} /&gt;
+        &lt;/&gt;
+      )
+    }
+    return Styled;
+  }
+}
+const newStyled = createStyled.bind();
+const tags = ['button', 'div'];
+tags.forEach(function (tagName) {
+  newStyled[tagName] = newStyled(tagName);
+});
+export default newStyled;
+</code></pre>
+<h3 id="t376.3 serializeStyles.jsx">6.3 serializeStyles.jsx <a href="#t376.3 serializeStyles.jsx"> # </a></h3>
+<p>src\@emotion\serialize\serializeStyles.jsx</p>
+<pre><code class="lang-diff">import { hashString } from '../utils';
+<span class="hljs-addition">+function serializeStyles(args, props) {</span>
+  if (typeof args <span class="hljs-comment">=== 'object' &amp;&amp; args.styles !== undefined) {</span>
+    return args;
+  }
+  var styles = '';
+  var strings = args[0];
+  if (strings.raw <span class="hljs-comment">=== undefined) {</span>
+<span class="hljs-addition">+   styles += handleInterpolation(props, strings);</span>
+  } else {
+    styles += strings[0];
+  }
+  for (var i = 1; i &lt; args.length; i++) {
+    styles += handleInterpolation(props, args[i]);
+  }
+  var name = hashString(styles);
+  return { name, styles }
+}
+
+<span class="hljs-addition">+function handleInterpolation(props, interpolation) {</span>
+  switch (typeof interpolation) {
+    case 'object': {
+<span class="hljs-addition">+     return createStringFromObject(props, interpolation);</span>
+    }
+<span class="hljs-addition">+   case 'function': {</span>
+<span class="hljs-addition">+     if (props !== undefined) {</span>
+<span class="hljs-addition">+       var result = interpolation(props);</span>
+<span class="hljs-addition">+       return handleInterpolation(props, result);</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+  }
+}
+function createStringFromObject(obj) {
+  var string = '';
+  for (var key in obj) {
+    var value = obj[key];
+    string += key + ":" + value + ";";
+  }
+  return string;
+}
+export default serializeStyles;
+</code></pre>
+<h2 id="t387. 为组件添加样式">7. 为组件添加样式 <a href="#t387. 为组件添加样式"> # </a></h2>
+<h3 id="t397.1 src\App.jsx">7.1 src\App.jsx <a href="#t397.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-diff">import styled from './@emotion/styled'
+<span class="hljs-addition">+function Hello({ className }) {</span>
+<span class="hljs-addition">+  return &lt;button className={className}&gt;Hello&lt;/button&gt;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+const RedHello = styled(Hello)`</span>
+<span class="hljs-addition">+  color:red;</span>
+<span class="hljs-addition">+`</span>
+function App() {
+  return (
+<span class="hljs-addition">+   &lt;RedHello&gt;Button&lt;/RedHello&gt;</span>
+  )
+}
+export default App;
+</code></pre>
+<h2 id="t408. 父组件设置子组件">8. 父组件设置子组件 <a href="#t408. 父组件设置子组件"> # </a></h2>
+<pre><code class="lang-css"><span class="hljs-selector-class">.css-1wvgi8y-Parent</span>{<span class="hljs-attribute">background</span>:green;}
+<span class="hljs-selector-class">.css-10c6c3i-Child</span>{<span class="hljs-attribute">color</span>:red;}
+<span class="hljs-selector-class">.css-1wvgi8y-Parent</span> <span class="hljs-selector-class">.eesff8e1</span>{<span class="hljs-attribute">color</span>:blue;}
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"css-1wvgi8y-Parent eesff8e0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"css-10c6c3i-Child eesff8e1"</span>&gt;</span>App<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 id="t418.1 vite.config.js">8.1 vite.config.js <a href="#t418.1 vite.config.js"> # </a></h3>
+<pre><code class="lang-js">npm install @emotion/babel-plugin --save
+</code></pre>
+<p>vite.config.js</p>
+<pre><code class="lang-diff">import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+export default defineConfig({
+  plugins: [react(
+    {
+      jsxRuntime: 'classic',
+      babel: {
+<span class="hljs-addition">+       plugins: ['@emotion/babel-plugin']</span>
+      }
+    }
+  )]
+})
+</code></pre>
+<h3 id="t428.2 src\App.jsx">8.2 src\App.jsx <a href="#t428.2 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">'@emotion/styled'</span>
+<span class="hljs-keyword">const</span> Child = styled.div({
+  <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>
+})
+<span class="hljs-keyword">const</span> Parent = styled.div({
+  <span class="hljs-attr">background</span>: <span class="hljs-string">'green'</span>,
+  [Child]: {
+    <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span>
+  }
+})
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Parent</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>Child<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Parent</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>Child<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t439. 嵌套选择器">9. 嵌套选择器 <a href="#t439. 嵌套选择器"> # </a></h2>
+<h3 id="t449.1 src\App.jsx">9.1 src\App.jsx <a href="#t449.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">'@emotion/styled'</span>
+<span class="hljs-keyword">const</span> Container = styled.div<span class="hljs-string">`
+  width:200px;
+  height:200px;
+  background:lightgray;
+  &amp;:hover{
+    background:pink;
+  }
+  &amp; &gt; p {
+    color:green;
+  }
+`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+      Container
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>span<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t4510. as属性">10. as属性 <a href="#t4510. as属性"> # </a></h2>
+<ul>
+<li>要使用组件内的样式，但要更改呈现的元素，可以使用as属性</li>
+</ul>
+<h3 id="t4610.1 src\App.jsx">10.1 src\App.jsx <a href="#t4610.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">'@emotion/styled'</span>
+<span class="hljs-keyword">const</span> Button = styled.button<span class="hljs-string">`
+ color:red
+`</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">as</span>=<span class="hljs-string">"a"</span>&gt;</span>
+      Button
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+
+</code></pre>
+<h2 id="t4711.组合样式">11.组合样式 <a href="#t4711.组合样式"> # </a></h2>
+<ul>
+<li>要使用组件内的样式，但要更改呈现的元素，可以使用as属性</li>
+</ul>
+<h3 id="t4811.1 src\App.jsx">11.1 src\App.jsx <a href="#t4811.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-comment">/** <span class="hljs-doctag">@jsx </span>jsx */</span>
+<span class="hljs-keyword">import</span> { jsx, css } <span class="hljs-keyword">from</span> <span class="hljs-string">'@emotion/react'</span>
+<span class="hljs-keyword">const</span> base = css`<span class="css">
+  <span class="hljs-selector-tag">color</span><span class="hljs-selector-pseudo">:white</span>;
+`</span>
+<span class="hljs-keyword">const</span> warning = css`<span class="css">
+  <span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:orange</span>;
+`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">css</span>=<span class="hljs-string">{[base,</span> <span class="hljs-attr">warning</span>]}&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t4912.全局样式">12.全局样式 <a href="#t4912.全局样式"> # </a></h2>
+<h3 id="t5012.1 src\App.jsx">12.1 src\App.jsx <a href="#t5012.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-comment">/** <span class="hljs-doctag">@jsx </span>jsx */</span>
+<span class="hljs-keyword">import</span> { jsx, css, Global } <span class="hljs-keyword">from</span> <span class="hljs-string">'@emotion/react'</span>
+<span class="hljs-keyword">const</span> reset = css`<span class="css">
+  <span class="hljs-selector-tag">body</span>{
+    <span class="hljs-attribute">margin</span>:<span class="hljs-number">0</span>;
+  }
+  <span class="hljs-selector-tag">a</span>{
+    <span class="hljs-attribute">color</span>:red;
+  }
+`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Global</span> <span class="hljs-attr">styles</span>=<span class="hljs-string">{reset}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>我是a标记<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t5113.关键帧动画">13.关键帧动画 <a href="#t5113.关键帧动画"> # </a></h2>
+<h3 id="t5213.1 src\App.jsx">13.1 src\App.jsx <a href="#t5213.1 src\App.jsx"> # </a></h3>
+<p>src\App.jsx</p>
+<pre><code class="lang-js"><span class="hljs-comment">/** <span class="hljs-doctag">@jsx </span>jsx */</span>
+<span class="hljs-keyword">import</span> { jsx, css, keyframes } <span class="hljs-keyword">from</span> <span class="hljs-string">'@emotion/react'</span>
+
+<span class="hljs-keyword">const</span> bounce = keyframes<span class="hljs-string">`
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+`</span>
+<span class="hljs-keyword">const</span> base = css`<span class="css">
+  <span class="hljs-selector-tag">width</span><span class="hljs-selector-pseudo">:100px</span>;
+  <span class="hljs-selector-tag">height</span><span class="hljs-selector-pseudo">:100px</span>;
+  <span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">green</span>;
+  <span class="hljs-selector-tag">position</span>: <span class="hljs-selector-tag">absolute</span>;
+  <span class="hljs-selector-tag">animation</span>: </span><span class="hljs-subst">${bounce}</span><span class="css"> 1<span class="hljs-selector-tag">s</span> <span class="hljs-selector-tag">ease</span> <span class="hljs-selector-tag">infinite</span> <span class="hljs-selector-tag">alternate</span>;
+`</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">css</span>=<span class="hljs-string">{[base]}</span>&gt;</span>
+      文本
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h2 id="t5314.模板字符串">14.模板字符串 <a href="#t5314.模板字符串"> # </a></h2>
+<ul>
+<li>模板字符串可以紧跟在一个函数名后面，该函数将被调用来处理这个模板字符串。这被称为<code>标签模板</code>功能</li>
+<li>标签模板其实不是模板，而是函数调用的一种特殊形式</li>
+<li>标签指的就是函数，紧跟在后面的模板字符串就是它的参数</li>
+<li>如果模板字符里面有变量，就不是简单的调用了，而是会将模板字符串先处理成多个参数，再调用函数</li>
+<li>模板处理函数的第一个参数（模板字符串数组），还有一个<code>raw</code>属性,保存的是转义后的原字符串</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tag</span>(<span class="hljs-params">stringArr, ...values</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(stringArr.raw);
+  <span class="hljs-keyword">let</span> output = <span class="hljs-string">""</span>;
+  <span class="hljs-keyword">let</span> index;
+  <span class="hljs-keyword">for</span> (index = <span class="hljs-number">0</span>; index &lt; values.length; index++) {
+    output += stringArr[index] + values[index];
+  }
+  output += stringArr[index]
+  <span class="hljs-keyword">return</span> output;
+}
+<span class="hljs-keyword">let</span> v1 = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">let</span> v2 = <span class="hljs-number">2</span>;
+
+<span class="hljs-keyword">let</span> result = tag<span class="hljs-string">`a<span class="hljs-subst">${v1}</span>b<span class="hljs-subst">${v2}</span>c`</span>;
+<span class="hljs-built_in">console</span>.log(result);
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

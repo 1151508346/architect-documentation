@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li class="active"><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01.课程大纲">1.课程大纲</a></li><li><a href="#t12.BFF架构演进">2.BFF架构演进</a><ul><li><a href="#t22.1 单体服务">2.1 单体服务</a></li><li><a href="#t32.2 微服务">2.2 微服务</a></li><li><a href="#t42.3 BFF">2.3 BFF</a></li><li><a href="#t52.4 网关">2.4 网关</a></li><li><a href="#t62.5 集群化">2.5 集群化</a></li></ul></li><li><a href="#t73.创建用户微服务">3.创建用户微服务</a><ul><li><a href="#t83.1 微服务">3.1 微服务</a></li><li><a href="#t93.2 RPC">3.2 RPC</a></li><li><a href="#t103.3 sofa-rpc-node">3.3 sofa-rpc-node</a></li><li><a href="#t113.4 Protocol Buffers">3.4 Protocol Buffers</a></li><li><a href="#t123.5 Zookeeper">3.5 Zookeeper</a><ul><li><a href="#t133.5.1 简介">3.5.1 简介</a></li><li><a href="#t143.5.2 安装启动">3.5.2 安装启动</a></li></ul></li><li><a href="#t153.6 启动服务">3.6 启动服务</a><ul><li><a href="#t163.6.1 安装">3.6.1 安装</a></li><li><a href="#t173.6.2 user\package.json">3.6.2 user\package.json</a></li><li><a href="#t183.6.3 user\index.js">3.6.3 user\index.js</a></li><li><a href="#t193.6.4 client.js">3.6.4 client.js</a></li></ul></li></ul></li><li><a href="#t204.创建文章微服务">4.创建文章微服务</a><ul><li><a href="#t214.1 安装">4.1 安装</a></li><li><a href="#t224.2 article\package.json">4.2 article\package.json</a></li><li><a href="#t234.3 article\index.js">4.3 article\index.js</a></li><li><a href="#t244.4 client.js">4.4 client.js</a></li></ul></li><li><a href="#t255.创建BFF">5.创建BFF</a><ul><li><a href="#t265.1 安装">5.1 安装</a></li><li><a href="#t275.2 bff\package.json">5.2 bff\package.json</a></li><li><a href="#t285.3 bff\index.js">5.3 bff\index.js</a></li><li><a href="#t295.4 rpc.js">5.4 rpc.js</a></li><li><a href="#t305.5 bff\index.js">5.5 bff\index.js</a></li></ul></li><li><a href="#t316.缓存">6.缓存</a><ul><li><a href="#t326.1 多级缓存">6.1 多级缓存</a></li><li><a href="#t336.2 LRU">6.2 LRU</a></li><li><a href="#t346.3  redis">6.3  redis</a></li><li><a href="#t356.4 使用缓存">6.4 使用缓存</a><ul><li><a href="#t366.4.1 bff\index.js">6.4.1 bff\index.js</a></li><li><a href="#t376.4.2 cache.js">6.4.2 cache.js</a></li></ul></li></ul></li><li><a href="#t387.消息队列">7.消息队列</a><ul><li><a href="#t397.1 引入原因">7.1 引入原因</a></li><li><a href="#t407.2 RabbitMQ">7.2 RabbitMQ</a></li><li><a href="#t417.3 实现">7.3 实现</a><ul><li><a href="#t427.3.2 bff\index.js">7.3.2 bff\index.js</a></li><li><a href="#t437.3.2 mq.js">7.3.2 mq.js</a></li><li><a href="#t447.3.3 bff\logger.js">7.3.3 bff\logger.js</a></li></ul></li></ul></li><li><a href="#t458.Serverless">8.Serverless</a><ul><li><a href="#t468.1 BFF问题">8.1 BFF问题</a></li><li><a href="#t478.2 Serverless">8.2 Serverless</a></li><li><a href="#t488.3 Serverless的优势">8.3 Serverless的优势</a></li><li><a href="#t498.4 Serverless的缺点">8.4 Serverless的缺点</a></li></ul></li><li><a href="#t509.GraphQL">9.GraphQL</a><ul><li><a href="#t519.1 Apollo Server">9.1 Apollo Server</a></li><li><a href="#t529.2 GraphQL schema language">9.2 GraphQL schema language</a></li><li><a href="#t539.3 resolvers">9.3 resolvers</a></li><li><a href="#t549.4 ApolloServer示例">9.4 ApolloServer示例</a></li><li><a href="#t559.5 Apollo Server Koa">9.5 Apollo Server Koa</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <p><img src="../C:\Users\zhangrenyang\Desktop\temp\珠峰架构.png" alt=""></p>
+<h2 id="t01.课程大纲">1.课程大纲 <a href="#t01.课程大纲"> # </a></h2>
+<ul>
+<li>BFF架构演进</li>
+<li>RPC高性性能BFF实战</li>
+<li>DDD和GraphQL实战BFF</li>
+<li>Serverless实战BFF</li>
+</ul>
+<h2 id="t12.BFF架构演进">2.BFF架构演进 <a href="#t12.BFF架构演进"> # </a></h2>
+<p><img src="https://static.zhufengpeixun.com/ge_ren_zhong_xin_1673108734927.png" alt=""></p>
+<h3 id="t22.1 单体服务">2.1 单体服务 <a href="#t22.1 单体服务"> # </a></h3>
+<ul>
+<li>单体服务是指一个独立的应用程序，包含了所有的功能和业务逻辑。这种架构方式在小型应用程序中很常见</li>
+<li>随着应用程序的功能越来越多，代码库也会越来越大，维护起来也会变得更加困难。此外，单体服务的整体复杂度也会增加，这可能导致软件开发周期变长，质量下降，并且系统的扩展性也会受到限制</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/web0_1673109441373.jpg" alt=""></p>
+<h3 id="t32.2 微服务">2.2 微服务 <a href="#t32.2 微服务"> # </a></h3>
+<ul>
+<li>为了应对这些问题，许多公司开始使用微服务架构。微服务是指将一个大型应用程序拆分成若干个小型服务，每个服务负责执行特定的任务。这种架构方式可以帮助公司更快地开发和部署新功能，并提高系统的可扩展性和可维护性</li>
+<li>这种方式会有以下问题<ul>
+<li>域名开销增加<ul>
+<li>内部服务器暴露在公网，有安全隐患</li>
+<li>各个端有大量的个性化需求<ul>
+<li>数据聚合 某些功能可能需要调用多个微服务进行组合<ul>
+<li>数据裁剪 后端服务返回的数据可能需要过滤掉一些敏感数据</li>
+<li>数据适配 后端返回的数据可能需要针对不同端进行数据结构的适配，后端返回<code>XML</code>，但前端需要<code>JSON</code></li>
+<li>数据鉴权 不同的客户端有不同的权限要求</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/web15_1673110992237.jpg" alt=""></p>
+<h3 id="t42.3 BFF">2.3 BFF <a href="#t42.3 BFF"> # </a></h3>
+<ul>
+<li>BFF是<code>Backend for Frontend</code>的缩写，指的是专门为前端应用设计的后端服务</li>
+<li>主要用来为各个端提供代理数据聚合、裁剪、适配和鉴权服务，方便各个端接入后端服务</li>
+<li>BFF可以把前端和微服务进行解耦，各自可以独立演进    </li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/web23_1673111569390.jpg" alt=""></p>
+<h3 id="t52.4 网关">2.4 网关 <a href="#t52.4 网关"> # </a></h3>
+<ul>
+<li>API 网关是一种用于在应用程序和 API 之间提供安全访问的中间层</li>
+<li>API 网关还可以用于监控 API 调用，路由请求，以及在请求和响应之间添加附加功能（例如身份验证，缓存，数据转换，压缩、流量控制、限流熔断、防爬虫等）</li>
+<li>网关和BFF可能合二为一</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/web32_1673150436062.jpg" alt=""></p>
+<h3 id="t62.5 集群化">2.5 集群化 <a href="#t62.5 集群化"> # </a></h3>
+<ul>
+<li>单点服务器可能会存在以下几个问题：<ul>
+<li>单点故障：单点服务器只有一台，如果这台服务器出现故障，整个系统都会停止工作，这会导致服务中断</li>
+<li>计算能力有限：单点服务器的计算能力是有限的，无法应对大规模的计算需求</li>
+<li>可扩展性差：单点服务器的扩展能力有限，如果想要提升计算能力，就必须改造或者替换现有的服务器</li>
+</ul>
+</li>
+<li>这些问题可以通过采用服务器集群的方式来解决</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/web4_1673152233154.jpg" alt=""></p>
+<h2 id="t73.创建用户微服务">3.创建用户微服务 <a href="#t73.创建用户微服务"> # </a></h2>
+<h3 id="t83.1 微服务">3.1 微服务 <a href="#t83.1 微服务"> # </a></h3>
+<ul>
+<li>微服务是一种架构模式，它将单个应用程序划分为小的服务，每个服务都独立运行并且可以使用不同的语言开发。这种架构模式使得应用程序变得更容易开发、维护和扩展</li>
+<li>微服务架构通常会有许多不同的服务，这些服务可能位于不同的机器上，因此需要使用某种通信协议来进行通信</li>
+<li>因为<code>RPC</code>协议比<code>HTTP</code>协议具有更低的延迟和更高的性能，所以用的更多</li>
+</ul>
+<h3 id="t93.2 RPC">3.2 RPC <a href="#t93.2 RPC"> # </a></h3>
+<ul>
+<li><code>RPC（Remote Procedure Call）</code> 是远程过程调用的缩写，是一种通信协议，允许程序在不同的计算机上相互调用远程过程，就像调用本地过程一样</li>
+</ul>
+<h3 id="t103.3 sofa-rpc-node">3.3 sofa-rpc-node <a href="#t103.3 sofa-rpc-node"> # </a></h3>
+<ul>
+<li><code>sofa-rpc-node</code> 是基于 Node.js 的一个 RPC 框架，支持多种协议</li>
+</ul>
+<h3 id="t113.4 Protocol Buffers">3.4 Protocol Buffers <a href="#t113.4 Protocol Buffers"> # </a></h3>
+<ul>
+<li><code>Protocol Buffers</code>（简称 protobuf）是 Google 开发的一种数据序列化格式，可以将结构化数据序列化成二进制格式，并能够跨语言使用</li>
+</ul>
+<h3 id="t123.5 Zookeeper">3.5 Zookeeper <a href="#t123.5 Zookeeper"> # </a></h3>
+<h4 id="t133.5.1 简介">3.5.1 简介 <a href="#t133.5.1 简介"> # </a></h4>
+<ul>
+<li>ZooKeeper 是一个分布式协调服务，提供了一些简单的分布式服务，如配置维护、名字服务、组服务等。它可以用于管理分布式系统中的数据</li>
+<li><a href="https://zookeeper.apache.org/releases.html">Apache Zookeeper 官网</a></li>
+</ul>
+<h4 id="t143.5.2 安装启动">3.5.2 安装启动 <a href="#t143.5.2 安装启动"> # </a></h4>
+<ul>
+<li><ol>
+<li>下载 Zookeeper 安装包，可以从<a href="https://zookeeper.apache.org/releases.html">Apache Zookeeper 官网</a>下载最新版本的安装包</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>解压安装包，将下载的压缩包解压到指定的目录。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>配置环境变量，将 Zookeeper 安装目录添加到环境变量中</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>修改配置文件，在安装目录下的 <code>conf</code> 目录中找到 <code>zookeeper.properties</code> 文件，修改相关配置</li>
+</ol>
+</li>
+<li><ol start="5">
+<li>启动 Zookeeper，在安装目录下运行命令 <code>bin\zkServer.cmd</code> 即可启动 Zookeeper</li>
+</ol>
+</li>
+</ul>
+<p>zookeeper\conf\zoo.cfg</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+dataDir=./data</span>
+</code></pre>
+<h3 id="t153.6 启动服务">3.6 启动服务 <a href="#t153.6 启动服务"> # </a></h3>
+<ul>
+<li><code>logger</code> 是日志记录器，用于记录服务器运行时的日志信息</li>
+<li><code>registry</code> 是一个注册中心，用于维护服务的注册信息，帮助服务节点和客户端找到对方。</li>
+<li><code>server</code> 表示服务端。服务端是提供服务的节点，它会将自己所提供的服务注册到注册中心，并等待客户端的调用。服务端通常会实现具体的业务逻辑，并使用 <code>RPC</code> 或其他通信协议与客户端进行通信</li>
+<li><code>server</code> 的 <code>addService</code> 方法接受两个参数：服务接口和服务实现。服务接口是一个对象，其中包含了服务的名称信息。服务实现是一个对象，其中包含了具体实现服务方法的函数</li>
+<li>RPC 服务器的 <code>start</code> 方法，用于启动服务器</li>
+<li>RPC 服务器的 <code>publish</code> 方法，用于向注册中心注册服务。这样，客户端就可以通过注册中心获取服务的地址和端口，并直接向服务器发起调用</li>
+</ul>
+<h4 id="t163.6.1 安装">3.6.1 安装 <a href="#t163.6.1 安装"> # </a></h4>
+<pre><code class="lang-js">npm install mysql2 sofa-rpc-node --save
+</code></pre>
+<h4 id="t173.6.2 user\package.json">3.6.2 user\package.json <a href="#t173.6.2 user\package.json"> # </a></h4>
+<p>user\package.json</p>
+<pre><code class="lang-diff">{
+    "name": "user",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+<span class="hljs-addition">+ "scripts": {</span>
+<span class="hljs-addition">+     "dev": "nodemon index.js"</span>
+<span class="hljs-addition">+ },</span>
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "sofa-rpc-node": "^2.8.0"
+    }
+}
+</code></pre>
+<h4 id="t183.6.3 user\index.js">3.6.3 user\index.js <a href="#t183.6.3 user\index.js"> # </a></h4>
+<p>user\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { <span class="hljs-attr">server</span>: { RpcServer }, <span class="hljs-attr">registry</span>: { ZookeeperRegistry } } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sofa-rpc-node'</span>);
+<span class="hljs-keyword">const</span> mysql = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mysql2/promise'</span>);
+<span class="hljs-keyword">let</span> connection;
+<span class="hljs-comment">// 引入 console 模块</span>
+<span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">console</span>;
+<span class="hljs-comment">// 创建 Zookeeper 注册中心实例，传入地址为 '127.0.0.1:2181'</span>
+<span class="hljs-keyword">const</span> registry = <span class="hljs-keyword">new</span> ZookeeperRegistry({
+    logger,
+    <span class="hljs-attr">address</span>: <span class="hljs-string">'127.0.0.1:2181'</span>,
+    <span class="hljs-attr">connectTimeout</span>: <span class="hljs-number">1000</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">24</span>,
+});
+<span class="hljs-comment">// 创建 RPC 服务器实例，传入注册中心和端口号</span>
+<span class="hljs-keyword">const</span> server = <span class="hljs-keyword">new</span> RpcServer({
+    logger,
+    registry,
+    <span class="hljs-attr">port</span>: <span class="hljs-number">10000</span>
+});
+<span class="hljs-comment">// 添加服务接口，实现 getUserInfo 方法</span>
+server.addService({
+    <span class="hljs-attr">interfaceName</span>: <span class="hljs-string">'com.zhufeng.user'</span>
+}, {
+    <span class="hljs-keyword">async</span> getUserInfo(userId) {
+        <span class="hljs-keyword">const</span> [rows] = <span class="hljs-keyword">await</span> connection.execute(<span class="hljs-string">`SELECT id,username,avatar,password,phone FROM user WHERE id=<span class="hljs-subst">${userId}</span> limit 1`</span>);
+        <span class="hljs-keyword">return</span> rows[<span class="hljs-number">0</span>];
+    }
+});
+<span class="hljs-comment">// 启动 RPC 服务器，并发布服务</span>
+(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    connection = <span class="hljs-keyword">await</span> mysql.createConnection({
+        <span class="hljs-attr">host</span>: <span class="hljs-string">'localhost'</span>,
+        <span class="hljs-attr">user</span>: <span class="hljs-string">'root'</span>,
+        <span class="hljs-attr">password</span>: <span class="hljs-string">'root'</span>,
+        <span class="hljs-attr">database</span>: <span class="hljs-string">'bff'</span>
+    });
+    <span class="hljs-keyword">await</span> server.start();
+    <span class="hljs-keyword">await</span> server.publish();
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`用户微服务发布成功`</span>);
+})();
+
+</code></pre>
+<h4 id="t193.6.4 client.js">3.6.4 client.js <a href="#t193.6.4 client.js"> # </a></h4>
+<p>user\client.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { <span class="hljs-attr">client</span>: { RpcClient }, <span class="hljs-attr">registry</span>: { ZookeeperRegistry } } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sofa-rpc-node'</span>);
+<span class="hljs-comment">// 设置日志记录器</span>
+<span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">console</span>;
+<span class="hljs-comment">// 创建 Zookeeper 注册中心</span>
+<span class="hljs-keyword">const</span> registry = <span class="hljs-keyword">new</span> ZookeeperRegistry({
+    logger,
+    <span class="hljs-attr">address</span>: <span class="hljs-string">'127.0.0.1:2181'</span>,
+});
+(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// 创建 RPC 客户端</span>
+    <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> RpcClient({ logger, registry });
+    <span class="hljs-comment">// 创建 RPC 服务消费者</span>
+    <span class="hljs-keyword">const</span> userConsumer = client.createConsumer({
+        <span class="hljs-comment">// 指定服务接口名称</span>
+        <span class="hljs-attr">interfaceName</span>: <span class="hljs-string">'com.zhufeng.user'</span>
+    });
+    <span class="hljs-comment">// 等待服务就绪</span>
+    <span class="hljs-keyword">await</span> userConsumer.ready();
+    <span class="hljs-comment">// 调用服务方法</span>
+    <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> userConsumer.invoke(<span class="hljs-string">'getUserInfo'</span>, [<span class="hljs-number">1</span>], { <span class="hljs-attr">responseTimeout</span>: <span class="hljs-number">3000</span> });
+    <span class="hljs-comment">// 输出结果</span>
+    <span class="hljs-built_in">console</span>.log(result);
+    process.exit(<span class="hljs-number">0</span>);
+})()
+</code></pre>
+<h2 id="t204.创建文章微服务">4.创建文章微服务 <a href="#t204.创建文章微服务"> # </a></h2>
+<h3 id="t214.1 安装">4.1 安装 <a href="#t214.1 安装"> # </a></h3>
+<pre><code class="lang-js">npm install mysql2 sofa-rpc-node --save
+</code></pre>
+<h3 id="t224.2 article\package.json">4.2 article\package.json <a href="#t224.2 article\package.json"> # </a></h3>
+<p>article\package.json</p>
+<pre><code class="lang-diff">{
+    "name": "user",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+<span class="hljs-addition">+    "dev": "nodemon index.js"</span>
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "mysql2": "^2.3.3",
+        "sofa-rpc-node": "^2.8.0"
+    }
+}
+</code></pre>
+<h3 id="t234.3 article\index.js">4.3 article\index.js <a href="#t234.3 article\index.js"> # </a></h3>
+<p>article\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { <span class="hljs-attr">server</span>: { RpcServer }, <span class="hljs-attr">registry</span>: { ZookeeperRegistry } } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sofa-rpc-node'</span>);
+<span class="hljs-keyword">const</span> mysql = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mysql2/promise'</span>);
+<span class="hljs-keyword">let</span> connection;
+<span class="hljs-comment">// 引入 console 模块</span>
+<span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">console</span>;
+<span class="hljs-comment">// 创建 Zookeeper 注册中心实例，传入地址为 '127.0.0.1:2181'</span>
+<span class="hljs-keyword">const</span> registry = <span class="hljs-keyword">new</span> ZookeeperRegistry({
+    logger,
+    <span class="hljs-attr">address</span>: <span class="hljs-string">'127.0.0.1:2181'</span>,
+    <span class="hljs-attr">connectTimeout</span>: <span class="hljs-number">1000</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">24</span>,
+});
+<span class="hljs-comment">// 创建 RPC 服务器实例，传入注册中心和端口号</span>
+<span class="hljs-keyword">const</span> server = <span class="hljs-keyword">new</span> RpcServer({
+    logger,
+    registry,
+    <span class="hljs-attr">port</span>: <span class="hljs-number">20000</span>
+});
+<span class="hljs-comment">// 添加服务接口，实现 getPostCount 方法</span>
+server.addService({
+    <span class="hljs-attr">interfaceName</span>: <span class="hljs-string">'com.zhufeng.post'</span>
+}, {
+    <span class="hljs-keyword">async</span> getPostCount(userId) {
+        <span class="hljs-keyword">const</span> [rows] = <span class="hljs-keyword">await</span> connection.execute(<span class="hljs-string">`SELECT count(*) as postCount FROM post WHERE user_id=<span class="hljs-subst">${userId}</span> limit 1`</span>);
+        <span class="hljs-keyword">return</span> rows[<span class="hljs-number">0</span>].postCount;
+    }
+});
+<span class="hljs-comment">// 启动 RPC 服务器，并发布服务</span>
+(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    connection = <span class="hljs-keyword">await</span> mysql.createConnection({
+        <span class="hljs-attr">host</span>: <span class="hljs-string">'localhost'</span>,
+        <span class="hljs-attr">user</span>: <span class="hljs-string">'root'</span>,
+        <span class="hljs-attr">password</span>: <span class="hljs-string">'root'</span>,
+        <span class="hljs-attr">database</span>: <span class="hljs-string">'bff'</span>
+    });
+    <span class="hljs-keyword">await</span> server.start();
+    <span class="hljs-keyword">await</span> server.publish();
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`文章微服务发布成功`</span>);
+})();
+</code></pre>
+<h3 id="t244.4 client.js">4.4 client.js <a href="#t244.4 client.js"> # </a></h3>
+<p>article\client.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { <span class="hljs-attr">client</span>: { RpcClient }, <span class="hljs-attr">registry</span>: { ZookeeperRegistry } } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sofa-rpc-node'</span>);
+<span class="hljs-comment">// 设置日志记录器</span>
+<span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">console</span>;
+<span class="hljs-comment">// 创建 Zookeeper 注册中心</span>
+<span class="hljs-keyword">const</span> registry = <span class="hljs-keyword">new</span> ZookeeperRegistry({
+    logger,
+    <span class="hljs-attr">address</span>: <span class="hljs-string">'127.0.0.1:2181'</span>,
+});
+(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// 创建 RPC 客户端</span>
+    <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> RpcClient({ logger, registry });
+    <span class="hljs-comment">// 创建 RPC 服务消费者</span>
+    <span class="hljs-keyword">const</span> consumer = client.createConsumer({
+        <span class="hljs-comment">// 指定服务接口名称</span>
+        <span class="hljs-attr">interfaceName</span>: <span class="hljs-string">'com.zhufeng.post'</span>
+    });
+    <span class="hljs-comment">// 等待服务就绪</span>
+    <span class="hljs-keyword">await</span> consumer.ready();
+    <span class="hljs-comment">// 调用服务方法</span>
+    <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> consumer.invoke(<span class="hljs-string">'getPostCount'</span>, [<span class="hljs-number">1</span>], { <span class="hljs-attr">responseTimeout</span>: <span class="hljs-number">3000</span> });
+    <span class="hljs-comment">// 输出结果</span>
+    <span class="hljs-built_in">console</span>.log(result);
+    process.exit(<span class="hljs-number">0</span>);
+})()
+</code></pre>
+<h2 id="t255.创建BFF">5.创建BFF <a href="#t255.创建BFF"> # </a></h2>
+<h3 id="t265.1 安装">5.1 安装 <a href="#t265.1 安装"> # </a></h3>
+<pre><code class="lang-js">npm install koa koa-router koa-logger sofa-rpc-node lru-cache ioredis amqplib fs-extra --save
+</code></pre>
+<p>访问地址</p>
+<pre><code class="lang-js">http:<span class="hljs-comment">//localhost:3000/?userId=1</span>
+</code></pre>
+<h3 id="t275.2 bff\package.json">5.2 bff\package.json <a href="#t275.2 bff\package.json"> # </a></h3>
+<p>bff\package.json</p>
+<pre><code class="lang-diff">{
+    "name": "bff",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+<span class="hljs-addition">+    "dev": "nodemon index.js",</span>
+<span class="hljs-addition">+    "start": "pm2 start index.js --name bff"</span>
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "koa": "^2.14.1",
+        "koa-logger": "^3.2.1",
+        "koa-router": "^12.0.0",
+        "sofa-rpc-node": "^2.8.0"
+    }
+}
+</code></pre>
+<h3 id="t285.3 bff\index.js">5.3 bff\index.js <a href="#t285.3 bff\index.js"> # </a></h3>
+<p>bff\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
+<span class="hljs-keyword">const</span> router = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa-router'</span>)();
+<span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa-logger'</span>);
+<span class="hljs-keyword">const</span> rpcMiddleware = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./middleware/rpc'</span>);
+<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Koa();
+app.use(logger());
+app.use(rpcMiddleware({
+    <span class="hljs-comment">//配置 rpc 中间件的参数，表示要调用的 rpc 接口名称</span>
+    <span class="hljs-attr">interfaceNames</span>: [
+        <span class="hljs-string">'com.zhufeng.user'</span>,
+        <span class="hljs-string">'com.zhufeng.post'</span>
+    ]
+}));
+router.get(<span class="hljs-string">'/'</span>, <span class="hljs-keyword">async</span> ctx =&gt; {
+    <span class="hljs-keyword">const</span> userId = ctx.query.userId;
+    <span class="hljs-keyword">const</span> { <span class="hljs-attr">rpcConsumers</span>: { user, post } } = ctx;
+    <span class="hljs-keyword">const</span> [userInfo, postCount] = <span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.all([
+        user.invoke(<span class="hljs-string">'getUserInfo'</span>, [userId]),
+        post.invoke(<span class="hljs-string">'getPostCount'</span>, [userId])
+    ]);
+    ctx.body = { userInfo, postCount }
+});
+app.use(router.routes()).use(router.allowedMethods());
+app.listen(<span class="hljs-number">3000</span>, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'bff server is running at 3000'</span>);
+});
+</code></pre>
+<h3 id="t295.4 rpc.js">5.4 rpc.js <a href="#t295.4 rpc.js"> # </a></h3>
+<p>bff\middleware\rpc.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { <span class="hljs-attr">client</span>: { RpcClient }, <span class="hljs-attr">registry</span>: { ZookeeperRegistry } } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sofa-rpc-node'</span>);
+<span class="hljs-keyword">const</span> rpcMiddleware = <span class="hljs-function">(<span class="hljs-params">options = {}</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">ctx, next</span>) </span>{
+        <span class="hljs-keyword">const</span> logger = options.logger || <span class="hljs-built_in">console</span>;
+        <span class="hljs-comment">//创建 ZookeeperRegistry 类的实例，用于管理服务发现和注册</span>
+        <span class="hljs-keyword">const</span> registry = <span class="hljs-keyword">new</span> ZookeeperRegistry({
+            logger,
+            <span class="hljs-attr">address</span>: options.address || <span class="hljs-string">'127.0.0.1:2181'</span>,
+        });
+        <span class="hljs-comment">//创建 RpcClient 类的实例，用于发送 rpc 请求</span>
+        <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> RpcClient({ logger, registry });
+        <span class="hljs-keyword">const</span> interfaceNames = options.interfaceNames || [];
+        <span class="hljs-keyword">const</span> rpcConsumers = {};
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; interfaceNames.length; i++) {
+            <span class="hljs-keyword">const</span> interfaceName = interfaceNames[i];
+            <span class="hljs-comment">//使用 RpcClient 的 createConsumer 方法创建 rpc 消费者</span>
+            <span class="hljs-keyword">const</span> consumer = client.createConsumer({
+                interfaceName,
+            });
+            <span class="hljs-comment">//等待 rpc 消费者准备完毕</span>
+            <span class="hljs-keyword">await</span> consumer.ready();
+            rpcConsumers[interfaceName.split(<span class="hljs-string">'.'</span>).pop()] = consumer;
+        }
+        ctx.rpcConsumers = rpcConsumers;
+        <span class="hljs-keyword">await</span> next();
+    }
+};
+<span class="hljs-built_in">module</span>.exports = rpcMiddleware;
+</code></pre>
+<h3 id="t305.5 bff\index.js">5.5 bff\index.js <a href="#t305.5 bff\index.js"> # </a></h3>
+<p>数据处理</p>
+<pre><code class="lang-diff">const Koa = require('koa');
+const router = require('koa-router')();
+const logger = require('koa-logger');
+const rpcMiddleware = require('./middleware/rpc');
+const app = new Koa();
+app.use(logger());
+app.use(rpcMiddleware({
+    interfaceNames: [
+        'com.zhufeng.user',
+        'com.zhufeng.post'
+    ]
+}));
+router.get('/', async ctx =&gt; {
+    const userId = ctx.query.userId;
+    const { rpcConsumers: { user, post } } = ctx;
+    const [userInfo, postCount] = await Promise.all([
+        user.invoke('getUserInfo', [userId]),
+        post.invoke('getPostCount', [userId])
+    ]);
+<span class="hljs-addition">+ // 裁剪数据</span>
+<span class="hljs-addition">+ delete userInfo.password;</span>
+<span class="hljs-addition">+ // 数据脱敏</span>
+<span class="hljs-addition">+ userInfo.phone = userInfo.phone.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2');</span>
+<span class="hljs-addition">+ // 数据适配</span>
+<span class="hljs-addition">+ userInfo.avatar = "http://www.zhufengpeixun.cn/"+userInfo.avatar,</span>
+    ctx.body = { userInfo, postCount }
+});
+app.use(router.routes()).use(router.allowedMethods());
+app.listen(3000, () =&gt; {
+    console.log('bff server is running at 3000');
+});
+</code></pre>
+<h2 id="t316.缓存">6.缓存 <a href="#t316.缓存"> # </a></h2>
+<ul>
+<li>BFF 作为前端应用和后端系统之间的抽象层，承担了大量的请求转发和数据转换工作。使用多级缓存可以帮助 BFF 减少对后端系统的访问，从而提高应用的响应速度</li>
+<li>当 BFF 收到一个请求时，首先会检查内存缓存中是否存在对应的数据，如果有就直接返回数据。如果内存缓存中没有数据，就会检查Redis缓存，如果Redis缓存中有数据就返回数据，并将数据写入内存缓存。如果本地缓存中也没有数据，就会向后端系统发起请求，并将数据写入Redis缓存和内存缓存</li>
+</ul>
+<h3 id="t326.1 多级缓存">6.1 多级缓存 <a href="#t326.1 多级缓存"> # </a></h3>
+<ul>
+<li>多级缓存（multi-level cache）是指系统中使用了多个缓存层来存储数据的技术。这些缓存层的优先级通常是依次递减的，即最快的缓存层位于最顶层，最慢的缓存层位于最底层</li>
+</ul>
+<h3 id="t336.2 LRU">6.2 LRU <a href="#t336.2 LRU"> # </a></h3>
+<ul>
+<li>LRU（Least Recently Used）是一种常用的高速缓存淘汰算法，它的原理是将最近使用过的数据或页面保留在缓存中，而最少使用的数据或页面将被淘汰。这样做的目的是为了最大化缓存的命中率，即使用缓存尽可能多地满足用户的请求</li>
+</ul>
+<h3 id="t346.3  redis">6.3  redis <a href="#t346.3  redis"> # </a></h3>
+<ul>
+<li>Redis 是一种开源的内存数据存储系统，可以作为数据库、缓存和消息中间件使用</li>
+<li>Redis 运行在内存中，因此它的读写速度非常快</li>
+<li><code>ioredis</code> 是一个基于 Node.js 的 Redis 客户端，提供了对 Redis 命令的高度封装和支持</li>
+<li><a href="https://github.com/tporadowski/redis/releases">redis</a></li>
+<li><a href="https://static.zhufengpeixun.com/Redisx6450141_1673102444438.zip">Redis-x64-5.0.14.1</a></li>
+</ul>
+<h3 id="t356.4 使用缓存">6.4 使用缓存 <a href="#t356.4 使用缓存"> # </a></h3>
+<h4 id="t366.4.1 bff\index.js">6.4.1 bff\index.js <a href="#t366.4.1 bff\index.js"> # </a></h4>
+<p>bff\index.js</p>
+<pre><code class="lang-diff">const Koa = require('koa');
+const router = require('koa-router')();
+const logger = require('koa-logger');
+const rpcMiddleware = require('./middleware/rpc');
+<span class="hljs-addition">+const cacheMiddleware = require('./middleware/cache');</span>
+const app = new Koa();
+app.use(logger());
+app.use(rpcMiddleware({
+    interfaceNames: [
+        'com.zhufeng.user',
+        'com.zhufeng.post'
+    ]
+}));
+<span class="hljs-addition">+app.use(cacheMiddleware({}));</span>
+router.get('/profile', async ctx =&gt; {
+    const userId = ctx.query.userId;
+    const { rpcConsumers: { user, post } } = ctx;
+<span class="hljs-addition">+ const cacheKey = `${ctx.method}#${ctx.path}#${userId}`;</span>
+<span class="hljs-addition">+ let cacheData = await ctx.cache.get(cacheKey);</span>
+<span class="hljs-addition">+ if (cacheData) {</span>
+<span class="hljs-addition">+     ctx.body = cacheData;</span>
+<span class="hljs-addition">+     return;</span>
+<span class="hljs-addition">+ }</span>
+    const [userInfo, postCount] = await Promise.all([
+        user.invoke('getUserInfo', [userId]),
+        post.invoke('getPostCount', [userId])
+    ]);
+  // 裁剪数据
+  delete userInfo.password;
+  // 数据脱敏
+  userInfo.phone = userInfo.phone.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2');
+  // 数据适配
+  userInfo.avatar = "http://www.zhufengpeixun.cn/" + userInfo.avatar;
+<span class="hljs-addition">+ cacheData = { userInfo, postCount };</span>
+<span class="hljs-addition">+ await ctx.cache.set(cacheKey, cacheData);// keys *</span>
+<span class="hljs-addition">+ ctx.body = cacheData</span>
+});
+app.use(router.routes()).use(router.allowedMethods());
+app.listen(3000, () =&gt; {
+    console.log('bff server is running at 3000');
+});
+</code></pre>
+<h4 id="t376.4.2 cache.js">6.4.2 cache.js <a href="#t376.4.2 cache.js"> # </a></h4>
+<p>bff\middleware\cache.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> LRUCache = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lru-cache'</span>);
+<span class="hljs-keyword">const</span> Redis = <span class="hljs-built_in">require</span>(<span class="hljs-string">'ioredis'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CacheStore</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-keyword">this</span>.stores = [];
+    }
+    add(store) {
+        <span class="hljs-keyword">this</span>.stores.push(store);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">get</span>(key) {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> store <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.stores) {
+            <span class="hljs-keyword">const</span> value = <span class="hljs-keyword">await</span> store.get(key);
+            <span class="hljs-keyword">if</span> (value !== <span class="hljs-literal">undefined</span>) {
+                <span class="hljs-keyword">return</span> value;
+            }
+        }
+    }
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">set</span>(key, value) {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> store <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.stores) {
+            <span class="hljs-keyword">await</span> store.set(key, value);
+        }
+    }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MemoryStore</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-keyword">this</span>.cache = <span class="hljs-keyword">new</span> LRUCache({
+            <span class="hljs-attr">max</span>: <span class="hljs-number">100</span>,
+            <span class="hljs-attr">ttl</span>: <span class="hljs-number">1000</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">24</span>
+        });
+    }
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">get</span>(key) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.cache.get(key);
+    }
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">set</span>(key, value) {
+        <span class="hljs-keyword">this</span>.cache.set(key, value);
+    }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RedisStore</span> </span>{
+    <span class="hljs-keyword">constructor</span>(options) {
+        <span class="hljs-keyword">this</span>.client = <span class="hljs-keyword">new</span> Redis(options);
+    }
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">get</span>(key) {
+        <span class="hljs-keyword">let</span> value = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.client.get(key);
+        <span class="hljs-keyword">return</span> value ? <span class="hljs-built_in">JSON</span>.parse(value) : <span class="hljs-literal">undefined</span>;
+    }
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">set</span>(key, value) {
+        <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.client.set(key, <span class="hljs-built_in">JSON</span>.stringify(value));
+    }
+}
+<span class="hljs-keyword">const</span> cacheMiddleware = <span class="hljs-function">(<span class="hljs-params">options = {}</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">ctx, next</span>) </span>{
+        <span class="hljs-keyword">const</span> cacheStore = <span class="hljs-keyword">new</span> CacheStore();
+        cacheStore.add(<span class="hljs-keyword">new</span> MemoryStore());
+        <span class="hljs-keyword">const</span> redisStore = <span class="hljs-keyword">new</span> RedisStore(options);
+        cacheStore.add(redisStore);
+        ctx.cache = cacheStore;
+        <span class="hljs-keyword">await</span> next();
+    };
+};
+<span class="hljs-built_in">module</span>.exports = cacheMiddleware;
+</code></pre>
+<h2 id="t387.消息队列">7.消息队列 <a href="#t387.消息队列"> # </a></h2>
+<ul>
+<li>消息队列（Message Queue）用于在分布式系统中传递数据。它的特点是可以将消息发送者和接收者解耦，使得消息生产者和消息消费者可以独立的开发和部署</li>
+</ul>
+<h3 id="t397.1 引入原因">7.1 引入原因 <a href="#t397.1 引入原因"> # </a></h3>
+<ul>
+<li>在 BFF 中使用消息队列（message queue）有几个原因：<ul>
+<li>大并发：消息队列可以帮助应对大并发的请求，BFF 可以将请求写入消息队列，然后后端服务可以从消息队列中读取请求并处理</li>
+<li>解耦：消息队列可以帮助解耦 BFF 和后端服务，BFF 不需要关心后端服务的具体实现，只需要将请求写入消息队列，后端服务负责从消息队列中读取请求并处理</li>
+<li>异步：消息队列可以帮助实现异步调用，BFF 可以将请求写入消息队列，然后立即返回响应给前端应用，后端服务在后台处理请求<ul>
+<li>流量削峰：消息队列可以帮助流量削峰，BFF 可以将请求写入消息队列，然后后端服务可以在合适的时候处理请求，从而缓解瞬时高峰流量带来的压力</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="t407.2 RabbitMQ">7.2 RabbitMQ <a href="#t407.2 RabbitMQ"> # </a></h3>
+<ul>
+<li><code>RabbitMQ</code>是一个消息代理，它可以用来在消息生产者和消息消费者之间传递消息</li>
+<li>RabbitMQ的工作流程如下：<ul>
+<li>消息生产者将消息发送到<code>RabbitMQ</code>服务器</li>
+<li><code>RabbitMQ</code>服务器将消息保存到队列中</li>
+<li>消息消费者从队列中读取消息</li>
+<li>当消息消费者处理完消息后<code>RabbitMQ</code>服务器将消息删除</li>
+</ul>
+</li>
+<li>安装启动<ul>
+<li>在RabbitMQ下载<a href="https://www.rabbitmq.com/install-windows.html#installer">官网安装包</a>或<a href="https://static.zhufengpeixun.com/rabbitmqserver3116_1673104196680.exe">镜像安装包</a></li>
+<li>双击安装包，按照提示进行安装,直接就可以启动<ul>
+<li>安装前还要安装<a href="https://www.erlang.org/downloads">Erlang</a>,Erlang是一个结构化，动态类型编程语言，内建并行计算支持</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="t417.3 实现">7.3 实现 <a href="#t417.3 实现"> # </a></h3>
+<h4 id="t427.3.2 bff\index.js">7.3.2 bff\index.js <a href="#t427.3.2 bff\index.js"> # </a></h4>
+<p>bff\index.js</p>
+<pre><code class="lang-diff">const Koa = require('koa');
+const router = require('koa-router')();
+const logger = require('koa-logger');
+const rpcMiddleware = require('./middleware/rpc');
+const cacheMiddleware = require('./middleware/cache');
+<span class="hljs-addition">+const mqMiddleware = require('./middleware/mq');</span>
+const app = new Koa();
+app.use(logger());
+app.use(rpcMiddleware({
+    interfaceNames: [
+        'com.zhufeng.user',
+        'com.zhufeng.post'
+    ]
+}));
+app.use(cacheMiddleware({}));
+<span class="hljs-addition">+app.use(mqMiddleware({ url: 'amqp://localhost' }));</span>
+router.get('/profile', async ctx =&gt; {
+    const userId = ctx.query.userId;
+<span class="hljs-addition">+    ctx.channels.logger.sendToQueue('logger', Buffer.from(JSON.stringify({</span>
+<span class="hljs-addition">+        method: ctx.method,</span>
+<span class="hljs-addition">+        path: ctx.path,</span>
+<span class="hljs-addition">+        userId</span>
+<span class="hljs-addition">+    })));</span>
+    const { rpcConsumers: { user, post } } = ctx;
+    const cacheKey = `${ctx.method}#${ctx.path}#${userId}`;
+    let cacheData = await ctx.cache.get(cacheKey);
+    if (cacheData) {
+        ctx.body = cacheData;
+        return;
+    }
+    const [userInfo, postCount] = await Promise.all([
+        user.invoke('getUserInfo', [userId]),
+        post.invoke('getPostCount', [userId])
+    ]);
+      // 裁剪数据
+  delete userInfo.password;
+  // 数据脱敏
+  userInfo.phone = userInfo.phone.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2');
+  // 数据适配
+  userInfo.avatar = "http://www.zhufengpeixun.cn/" + userInfo.avatar,
+    cacheData = { userInfo, postCount };
+  await ctx.cache.set(cacheKey, cacheData);// keys *
+  ctx.body = cacheData
+});
+app.use(router.routes()).use(router.allowedMethods());
+app.listen(3000, () =&gt; {
+    console.log('bff server is running at 3000');
+});
+</code></pre>
+<h4 id="t437.3.2 mq.js">7.3.2 mq.js <a href="#t437.3.2 mq.js"> # </a></h4>
+<p>bff\middleware\mq.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> amqp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'amqplib'</span>);
+<span class="hljs-keyword">const</span> mqMiddleware = <span class="hljs-function">(<span class="hljs-params">options = {}</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">async</span> (ctx, next) =&gt; {
+        <span class="hljs-comment">//使用 amqp.connect 方法连接 RabbitMQ 服务器</span>
+        <span class="hljs-keyword">const</span> rabbitMQClient = <span class="hljs-keyword">await</span> amqp.connect(options.url || <span class="hljs-string">'amqp://localhost'</span>);
+        <span class="hljs-comment">//使用 rabbitMQClient 的 createChannel 方法创建 RabbitMQ 通道</span>
+        <span class="hljs-keyword">const</span> logger = <span class="hljs-keyword">await</span> rabbitMQClient.createChannel();
+        <span class="hljs-comment">//使用 logger 的 assertQueue 方法创建名为 "logger" 的队列，如果队列已经存在则不会重复创建</span>
+        <span class="hljs-keyword">await</span> logger.assertQueue(<span class="hljs-string">'logger'</span>);
+        ctx.channels = {
+            logger
+        };
+        <span class="hljs-keyword">await</span> next();
+    };
+};
+<span class="hljs-built_in">module</span>.exports = mqMiddleware;
+</code></pre>
+<h4 id="t447.3.3 bff\logger.js">7.3.3 bff\logger.js <a href="#t447.3.3 bff\logger.js"> # </a></h4>
+<p>bff\logger.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> amqplib = <span class="hljs-built_in">require</span>(<span class="hljs-string">'amqplib'</span>);
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs-extra'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> conn = <span class="hljs-keyword">await</span> amqplib.connect(<span class="hljs-string">'amqp://localhost'</span>);
+    <span class="hljs-keyword">const</span> loggerChannel = <span class="hljs-keyword">await</span> conn.createChannel();
+    <span class="hljs-keyword">await</span> loggerChannel.assertQueue(<span class="hljs-string">'logger'</span>);
+    loggerChannel.consume(<span class="hljs-string">'logger'</span>, <span class="hljs-keyword">async</span> (event) =&gt; {
+        <span class="hljs-keyword">const</span> message = <span class="hljs-built_in">JSON</span>.parse(event.content.toString());
+        <span class="hljs-keyword">await</span> fs.appendFile(path.join(__dirname, <span class="hljs-string">'logger.txt'</span>), <span class="hljs-built_in">JSON</span>.stringify(message) + <span class="hljs-string">'\n'</span>);
+    });
+})();
+</code></pre>
+<h2 id="t458.Serverless">8.Serverless <a href="#t458.Serverless"> # </a></h2>
+<h3 id="t468.1 BFF问题">8.1 BFF问题 <a href="#t468.1 BFF问题"> # </a></h3>
+<ul>
+<li>复杂性增加：添加 BFF 层会增加系统的复杂性，因为它需要在后端 API 和前端应用程序之间处理请求和响应</li>
+<li>性能问题：如果 BFF 层的实现不当，可能会导致性能问题，因为它需要在后端 API 和前端应用程序之间传输大量数据</li>
+<li>安全风险：如果 BFF 层未得到正确保护，可能会导致安全风险，因为它可能会暴露敏感数据</li>
+<li>维护成本：BFF 层需要维护和更新，这会增加维护成本</li>
+<li>测试复杂性：由于 BFF 层需要在后端 API 和前端应用程序之间进行测试，因此测试可能会变得更加复杂</li>
+<li>运维问题 要求有强大的日志、服务器监控、性能监控、负载均衡、备份冗灾、监控报警和弹性伸缩扩容等</li>
+</ul>
+<h3 id="t478.2 Serverless">8.2 Serverless <a href="#t478.2 Serverless"> # </a></h3>
+<ul>
+<li>这些问题可以通过<a href="https://docs.cloudbase.net/">Serverless</a>来解决</li>
+<li>Serverless = Faas (Function as a service) + Baas (Backend as a service)</li>
+<li>FaaS（Function-as-a-Service）是服务商提供一个平台、提供给用户开发、运行管理这些函数的功能，而无需搭建和维护基础框架，是一种事件驱动由消息触发的函数服务</li>
+<li>BaaS（Backend-as-a-Service）后端即服务，包含了后端服务组件，它是基于 API 的第三方服务，用于实现应用程序中的核心功能，包含常用的数据库、对象存储、消息队列、日志服务等等</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/fassbass_1673160507846.png" alt=""></p>
+<p><img src="https://static.zhufengpeixun.com/Serverless_1673160406503.png" alt=""></p>
+<h3 id="t488.3 Serverless的优势">8.3 Serverless的优势 <a href="#t488.3 Serverless的优势"> # </a></h3>
+<ul>
+<li>节省成本：在传统架构中，你需要为应用程序所使用的服务器付费，即使它们没有被使用。在 Serverless 架构中，你仅需为实际使用的资源付费，这可以节省大量成本</li>
+<li>更快的开发周期：Serverless 架构允许开发人员更快地构建和部署应用程序，因为它们可以更快地获得所需的资源</li>
+<li>更好的可伸缩性：Serverless 架构可以自动扩展来满足增长的流量需求，无需人工干预</li>
+<li>更好的可维护性：在 Serverless 架构中，你无需担心底层基础架构的维护，因为这些工作由云服务提供商负责</li>
+<li>更高的可用性：由于 Serverless 架构具有自动扩展功能，因此它可以更好地应对突发流量，从而提高应用程序的可用性</li>
+</ul>
+<h3 id="t498.4 Serverless的缺点">8.4 Serverless的缺点 <a href="#t498.4 Serverless的缺点"> # </a></h3>
+<ul>
+<li>复杂性：Serverless 架构可能会使应用程序的体系结构变得更加复杂，因为它需要将应用程序拆分为许多小型函数</li>
+<li>性能问题：在某些情况下，Serverless 架构可能会导致性能问题，因为函数执行需要额外的时间来启动和终止</li>
+<li>限制：每个函数都有资源限制，因此需要仔细规划应用程序的体系结构，以免超出这些限制</li>
+<li>依赖云服务提供商：使用 Serverless 架构需要依赖云服务提供商，因此如果这些服务出现故障，可能会对应用程序造成影响</li>
+<li>调试困难：由于 Serverless 架构使用许多小型函数，因此调试可能会变得更加困难</li>
+</ul>
+<h2 id="t509.GraphQL">9.GraphQL <a href="#t509.GraphQL"> # </a></h2>
+<ul>
+<li><code>GraphQL</code>是一种用于API的查询语言，它允许客户端向服务端请求特定的数据，而不是服务端将所有可能的数据全部返回。这样，客户端可以更精确地获取所需的数据，并且服务端可以更有效地满足请求</li>
+<li><code>GraphQL</code>可以让客户端自己定义所需的数据结构，可以灵活地获取所需的数据。这对于多端应用来说非常方便，因为每一个客户端可能有不同的数据需求，使用GraphQL可以让每个客户端自己定义所需的数据结构</li>
+<li><code>GraphQL</code>可以让BFF服务层从不同的数据源获取数据，并将它们组合起来返回给客户端。这对于在BFF架构中更好地组织数据是很有帮助的，因为你可以在BFF层中组合来自不同数据源的数据，而不用在客户端中再做一次组合</li>
+</ul>
+<h3 id="t519.1 Apollo Server">9.1 Apollo Server <a href="#t519.1 Apollo Server"> # </a></h3>
+<ul>
+<li><code>Apollo Server</code>是一个用于构建GraphQL API的开源服务器框架。它支持多种编程语言，允许你使用同一种方式来访问不同的后端数据源，并且具有良好的扩展性</li>
+<li><code>Apollo Server</code>是一种实现GraphQL服务端的方法，它提供了一些工具和功能，帮助你更轻松地构建和部署GraphQL API。它还提供了一些额外的功能，如缓存、身份验证和模拟数据，帮助你更快速地开发和测试你的API</li>
+</ul>
+<h3 id="t529.2 GraphQL schema language">9.2 GraphQL schema language <a href="#t529.2 GraphQL schema language"> # </a></h3>
+<ul>
+<li><a href="https://graphql.org/learn/schema/">schema</a></li>
+<li><code>GraphQL schema language</code>是一种用来定义GraphQL API的语言。它可以用来描述API中可用的数据和操作，包括支持的查询、变更、订阅等功能</li>
+<li><code>GraphQL schema</code>由一系列的类型组成，每种类型都有一个名称和一些字段。每个字段都有一个名称和类型，并可能有一些额外的限制，比如是否是必填的或者有默认值</li>
+</ul>
+<h3 id="t539.3 resolvers">9.3 resolvers <a href="#t539.3 resolvers"> # </a></h3>
+<ul>
+<li><a href="https://www.apollographql.com/docs/apollo-server/data/resolvers/">resolvers</a></li>
+<li>在GraphQL中，<code>resolvers</code>是负责解析每个字段的函数。在Apollo Server中，你可以使用resolvers对象来定义这些函数</li>
+<li><code>resolvers</code>对象是一个包含了所有解析器函数的对象。它的结构与你在schema中定义的类型的结构是一样的</li>
+<li>除了定义解析器函数以外，你还可以在resolvers对象中定义自定义操作，例如查询、变更、订阅等。这些操作的解析器函数与字段的解析器函数的定义方式是一样的，只是函数名称不同而已</li>
+</ul>
+<h3 id="t549.4 ApolloServer示例">9.4 ApolloServer示例 <a href="#t549.4 ApolloServer示例"> # </a></h3>
+<ul>
+<li><code>gql</code>函数是一个<code>template tag</code>，你可以将它放在模板字符串的前面，然后在模板字符串中编写GraphQL schema language的代码,可以定义查询和变更操作</li>
+<li>resolvers函数参数<ul>
+<li>obj：表示当前查询的父对象。例如，如果你在查询"user"类型的对象，那么obj就表示当前查询的"user"对象</li>
+<li>args：表示当前查询的参数。例如，如果你在查询带有参数的字段，那么args就表示这些参数</li>
+<li>context：表示当前的上下文对象，可以在整个查询中传递给所有的resolver</li>
+<li>info：表示当前的查询信息，包括查询字符串、查询操作（query/mutation）、查询字段等</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { ApolloServer, gql } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'apollo-server'</span>);
+<span class="hljs-keyword">const</span> typeDefs = gql<span class="hljs-string">`
+  type Query {
+    users: [User]
+    user(id: ID): User
+  }
+  type Mutation {
+    createUser(username: String, age: Int): User
+    updateUser(id: ID, username: String, age: Int): Boolean
+    deleteUser(id: ID): Boolean
+  }
+  type User {
+    id: ID
+    username: String
+    age: Int
+  }
+`</span>;
+<span class="hljs-keyword">let</span> users = [
+    { <span class="hljs-attr">id</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">username</span>: <span class="hljs-string">"zhangsan"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">25</span> },
+    { <span class="hljs-attr">id</span>: <span class="hljs-string">"2"</span>, <span class="hljs-attr">username</span>: <span class="hljs-string">"lisi"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> },
+];
+<span class="hljs-keyword">const</span> resolvers = {
+    <span class="hljs-attr">Query</span>: {
+        <span class="hljs-attr">users</span>: <span class="hljs-function">(<span class="hljs-params">obj, args, context, info</span>) =&gt;</span> {
+            <span class="hljs-keyword">return</span> users;
+        },
+        <span class="hljs-attr">user</span>: <span class="hljs-function">(<span class="hljs-params">obj, args, context, info</span>) =&gt;</span> {
+            <span class="hljs-keyword">return</span> users.find(<span class="hljs-function"><span class="hljs-params">user</span> =&gt;</span> user.id === args.id);
+        }
+    },
+    <span class="hljs-attr">Mutation</span>: {
+        <span class="hljs-attr">createUser</span>: <span class="hljs-function">(<span class="hljs-params">obj, args, context, info</span>) =&gt;</span> {
+            <span class="hljs-keyword">const</span> newUser = { <span class="hljs-attr">id</span>: users.length + <span class="hljs-number">1</span>, <span class="hljs-attr">username</span>: args.username, <span class="hljs-attr">age</span>: args.age };
+            users.push(newUser);
+            <span class="hljs-keyword">return</span> newUser;
+        },
+        <span class="hljs-attr">updateUser</span>: <span class="hljs-function">(<span class="hljs-params">obj, args, context, info</span>) =&gt;</span> {
+            <span class="hljs-keyword">const</span> updatedUser = { <span class="hljs-attr">id</span>: args.id, <span class="hljs-attr">username</span>: args.username, <span class="hljs-attr">age</span>: args.age };
+            users = users.map(<span class="hljs-function"><span class="hljs-params">user</span> =&gt;</span> {
+                <span class="hljs-keyword">if</span> (user.id === args.id) {
+                    <span class="hljs-keyword">return</span> updatedUser;
+                }
+                <span class="hljs-keyword">return</span> user;
+            });
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        },
+        <span class="hljs-attr">deleteUser</span>: <span class="hljs-function">(<span class="hljs-params">obj, args, context, info</span>) =&gt;</span> {
+            users = users.filter(<span class="hljs-function"><span class="hljs-params">user</span> =&gt;</span> user.id !== args.id);
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        },
+    },
+};
+<span class="hljs-keyword">const</span> server = <span class="hljs-keyword">new</span> ApolloServer({ typeDefs, resolvers });
+server.listen().then(<span class="hljs-function">(<span class="hljs-params">{ url }</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Server ready at <span class="hljs-subst">${url}</span>`</span>);
+});
+</code></pre>
+<pre><code class="lang-js">query {
+    users {
+        id
+        username
+        age
+    }
+}
+query {
+    user(id: <span class="hljs-string">"1"</span>) {
+        id
+        username
+        age
+    }
+}
+mutation {
+    createUser(username: <span class="hljs-string">"wangwu"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">35</span>) {
+        id
+        username
+        age
+    }
+}
+mutation {
+    updateUser(id: <span class="hljs-string">"1"</span>, <span class="hljs-attr">username</span>: <span class="hljs-string">"zhangsan2"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">26</span>)
+}
+mutation {
+    deleteUser(id: <span class="hljs-string">"1"</span>)
+}
+</code></pre>
+<h3 id="t559.5 Apollo Server Koa">9.5 Apollo Server Koa <a href="#t559.5 Apollo Server Koa"> # </a></h3>
+<ul>
+<li>Apollo Server Koa 是一个基于 Koa 的中间件，可以将 <code>GraphQL API</code> 添加到 Koa 应用程序中。它使用 <code>Apollo Server</code> 来执行 <code>GraphQL</code> 服务器逻辑，并允许使用 Koa 的优秀特性（如路由和中间件）来构建应用程序</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
+<span class="hljs-keyword">const</span> { ApolloServer } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'apollo-server-koa'</span>);
+
+<span class="hljs-keyword">const</span> typeDefs = <span class="hljs-string">`
+  type Query {
+    hello: String
+  }
+`</span>;
+
+<span class="hljs-keyword">const</span> resolvers = {
+    <span class="hljs-attr">Query</span>: {
+        <span class="hljs-attr">hello</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-string">'Hello, world!'</span>,
+    },
+};
+
+(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> server = <span class="hljs-keyword">new</span> ApolloServer({ typeDefs, resolvers });
+    <span class="hljs-keyword">await</span> server.start()
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Koa();
+    server.applyMiddleware({ app });
+    app.listen({ <span class="hljs-attr">port</span>: <span class="hljs-number">4000</span> }, () =&gt;
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`🚀 Server ready at http://localhost:4000<span class="hljs-subst">${server.graphqlPath}</span>`</span>)
+    );
+})()
+
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

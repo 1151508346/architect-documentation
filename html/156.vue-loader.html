@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li class="active"><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01.Vue Loader 是什么？">1.Vue Loader 是什么？</a></li><li><a href="#t12.起步">2.起步</a><ul><li><a href="#t22.1 安装">2.1 安装</a></li><li><a href="#t32.2 webpack.config.js">2.2 webpack.config.js</a></li><li><a href="#t42.3 main.js">2.3 main.js</a></li><li><a href="#t52.4 App.vue">2.4 App.vue</a></li><li><a href="#t62.5 index.html">2.5 index.html</a></li></ul></li><li><a href="#t73.loader实现">3.loader实现</a><ul><li><a href="#t83.1 文件结构">3.1 文件结构</a></li><li><a href="#t93.2 基础知识">3.2 基础知识</a><ul><li><a href="#t103.2.1 LoaderContext">3.2.1 LoaderContext</a></li><li><a href="#t113.2.2 pitching-loader">3.2.2 pitching-loader</a></li><li><a href="#t123.2.3 Rule.enforce">3.2.3 Rule.enforce</a></li><li><a href="#t133.2.4 resource">3.2.4 resource</a></li><li><a href="#t143.2.5 contextify">3.2.5 contextify</a></li><li><a href="#t153.2.6 @vue/compiler-sfc">3.2.6 @vue/compiler-sfc</a></li></ul></li><li><a href="#t163.3 工作流程">3.3 工作流程</a><ul><li><a href="#t173.3.1 原始内容">3.3.1 原始内容</a></li><li><a href="#t183.3.2 第1次转换">3.3.2 第1次转换</a></li><li><a href="#t193.3.3 第2次转换">3.3.3 第2次转换</a></li><li><a href="#t203.3.4 第3次转换">3.3.4 第3次转换</a></li></ul></li></ul></li><li><a href="#t214.编译script">4.编译script</a><ul><li><a href="#t224.1 webpack.config.js">4.1 webpack.config.js</a></li><li><a href="#t234.2 vue-loader\index.js">4.2 vue-loader\index.js</a></li><li><a href="#t244.3 plugin.js">4.3 plugin.js</a></li><li><a href="#t254.4 pitcher.js">4.4 pitcher.js</a></li><li><a href="#t264.5 select.js">4.5 select.js</a></li></ul></li><li><a href="#t275.编译template">5.编译template</a><ul><li><a href="#t285.1 src\App.vue">5.1 src\App.vue</a></li><li><a href="#t295.2 vue-loader\index.js">5.2 vue-loader\index.js</a></li><li><a href="#t305.3 plugin.js">5.3 plugin.js</a></li><li><a href="#t315.4 select.js">5.4 select.js</a></li><li><a href="#t325.5 templateLoader.js">5.5 templateLoader.js</a></li></ul></li><li><a href="#t336.编译style">6.编译style</a><ul><li><a href="#t346.1 webpack.config.js">6.1 webpack.config.js</a></li><li><a href="#t356.2 App.vue">6.2 App.vue</a></li><li><a href="#t366.3 vue-loader\index.js">6.3 vue-loader\index.js</a></li><li><a href="#t376.4 plugin.js">6.4 plugin.js</a></li><li><a href="#t386.5 select.js">6.5 select.js</a></li></ul></li><li><a href="#t397.Scoped CSS">7.Scoped CSS</a><ul><li><a href="#t407.1 App.vue">7.1 App.vue</a></li><li><a href="#t417.2 vue-loader\index.js">7.2 vue-loader\index.js</a></li><li><a href="#t427.3 pitcher.js">7.3 pitcher.js</a></li><li><a href="#t437.4 stylePostLoader.js">7.4 stylePostLoader.js</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01.Vue Loader 是什么？">1.Vue Loader 是什么？ <a href="#t01.Vue Loader 是什么？"> # </a></h2>
+<ul>
+<li><a href="https://vue-loader.vuejs.org/zh/">Vue Loader</a> 是一个 webpack 的 loader，它允许你以一种名为单文件组件 (SFCs)的格式撰写 Vue 组件</li>
+</ul>
+<h2 id="t12.起步">2.起步 <a href="#t12.起步"> # </a></h2>
+<h3 id="t22.1 安装">2.1 安装 <a href="#t22.1 安装"> # </a></h3>
+<pre><code class="lang-js">npm install vue --save
+npm install  webpack webpack-cli style-loader css-loader html-webpack-plugin vue-loader  vue-template-compiler  webpack-dev-server --save-dev
+</code></pre>
+<h3 id="t32.2 webpack.config.js">2.2 webpack.config.js <a href="#t32.2 webpack.config.js"> # </a></h3>
+<p>webpack.config.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { VueLoaderPlugin } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vue-loader'</span>)
+<span class="hljs-keyword">const</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'html-webpack-plugin'</span>)
+<span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>)
+<span class="hljs-built_in">module</span>.exports = {
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">'development'</span>,
+    <span class="hljs-attr">devtool</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">'./src/main.js'</span>,
+    <span class="hljs-attr">module</span>: {
+        <span class="hljs-attr">rules</span>: [
+            {
+                <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.vue$/</span>,
+                <span class="hljs-attr">loader</span>: <span class="hljs-string">'vue-loader'</span>
+            }
+        ]
+    },
+    <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-keyword">new</span> VueLoaderPlugin(),
+        <span class="hljs-keyword">new</span> HtmlWebpackPlugin({
+            <span class="hljs-attr">template</span>: <span class="hljs-string">'./src/index.html'</span>
+        }),
+        <span class="hljs-keyword">new</span> webpack.DefinePlugin({
+            <span class="hljs-attr">__VUE_OPTIONS_API__</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">__VUE_PROD_DEVTOOLS__</span>: <span class="hljs-literal">true</span>
+        })
+    ]
+}
+</code></pre>
+<h3 id="t42.3 main.js">2.3 main.js <a href="#t42.3 main.js"> # </a></h3>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>
+createApp(App).mount(<span class="hljs-string">'#app'</span>)
+</code></pre>
+<h3 id="t52.4 App.vue">2.4 App.vue <a href="#t52.4 App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-js">&lt;script&gt;
+console.log('App');
+&lt;/script&gt;
+</code></pre>
+<h3 id="t62.5 index.html">2.5 index.html <a href="#t62.5 index.html"> # </a></h3>
+<p>src\index.html</p>
+<pre><code class="lang-js">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;vue-loader&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="app"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="t73.loader实现">3.loader实现 <a href="#t73.loader实现"> # </a></h2>
+<h3 id="t83.1 文件结构">3.1 文件结构 <a href="#t83.1 文件结构"> # </a></h3>
+<ul>
+<li>vue-loader内部主要有三个部分<ul>
+<li><code>vue-loader\index.js</code> 实现了一个普通Loader,负责把SFC的不同区块转化为<code>import</code>语句</li>
+<li><code>vue-loader\pitcher.js</code>实现pitch Loader,用于拼出完整的行内路径</li>
+<li><code>vue-loader\plugin.js</code> 负责动态修改webpack配置，注入新的loader到rules规则中</li>
+</ul>
+</li>
+</ul>
+<h3 id="t93.2 基础知识">3.2 基础知识 <a href="#t93.2 基础知识"> # </a></h3>
+<h4 id="t103.2.1 LoaderContext">3.2.1 LoaderContext <a href="#t103.2.1 LoaderContext"> # </a></h4>
+<ul>
+<li><a href="https://webpack.docschina.org/api/loaders/#the-loader-context"> Loader Context</a> 表示在 loader 内使用 this 可以访问的一些方法或属性</li>
+<li><a href="https://webpack.docschina.org/api/loaders/#thiscallback">this.callback</a>可以同步或者异步调用的并返回多个结果的函数</li>
+</ul>
+<h4 id="t113.2.2 pitching-loader">3.2.2 pitching-loader <a href="#t113.2.2 pitching-loader"> # </a></h4>
+<ul>
+<li><a href="https://webpack.docschina.org/api/loaders#pitching-loader">pitching-loader</a>loader 总是 从右到左被调用。在实际（从右到左）执行 loader 之前，会先 从左到右 调用 <code>loader</code> 上的 <code>pitch</code> 方法</li>
+<li>loader 可以通过 request 添加或者禁用内联前缀，这将影响到 pitch 和执行的顺序,请看<a href="https://webpack.docschina.org/configuration/module/#ruleenforce">Rule.enforce</a></li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/loader-runner2.jpg" alt="loader-runner"></p>
+<h4 id="t123.2.3 Rule.enforce">3.2.3 Rule.enforce <a href="#t123.2.3 Rule.enforce"> # </a></h4>
+<ul>
+<li><a href="https://webpack.docschina.org/configuration/module#ruleenforce">Rule.enforce</a>可以用于指定<code>loader</code>种类</li>
+</ul>
+<h4 id="t133.2.4 resource">3.2.4 resource <a href="#t133.2.4 resource"> # </a></h4>
+<ul>
+<li><a href="https://webpack.docschina.org/configuration/module/#ruleresource">Rule.resource</a>会匹配 resource</li>
+<li><a href="https://webpack.docschina.org/configuration/module/#ruleresourcequery">Rule.resourceQuery</a>会匹配资源查询</li>
+</ul>
+<h4 id="t143.2.5 contextify">3.2.5 contextify <a href="#t143.2.5 contextify"> # </a></h4>
+<ul>
+<li><a href="https://webpack.docschina.org/api/loaders/#thisutils">contextify</a>返回一个新的请求字符串，尽可能避免使用绝对路径,将请求转换为可在内部使用<code>require</code>或<code>import</code>在避免绝对路径时使用的字符串</li>
+</ul>
+<h4 id="t153.2.6 @vue/compiler-sfc">3.2.6 @vue/compiler-sfc <a href="#t153.2.6 @vue/compiler-sfc"> # </a></h4>
+<ul>
+<li><a href="https://www.npmjs.com/package/@vue/compiler-sfc">compiler-sfc</a>用于编译Vue单文件组件的低级实用程序</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">// main script</span>
+<span class="hljs-keyword">import</span> script <span class="hljs-keyword">from</span> <span class="hljs-string">'/project/foo.vue?vue&amp;type=script'</span>
+<span class="hljs-comment">// template compiled to render function</span>
+<span class="hljs-keyword">import</span> { render } <span class="hljs-keyword">from</span> <span class="hljs-string">'/project/foo.vue?vue&amp;type=template&amp;id=xxxxxx'</span>
+<span class="hljs-comment">// css</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'/project/foo.vue?vue&amp;type=style&amp;index=0&amp;id=xxxxxx'</span>
+<span class="hljs-comment">// attach render function to script</span>
+script.render = render
+<span class="hljs-comment">// attach additional metadata</span>
+script.__file = <span class="hljs-string">'example.vue'</span>
+script.__scopeId = <span class="hljs-string">'hash'</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> script
+</code></pre>
+<h3 id="t163.3 工作流程">3.3 工作流程 <a href="#t163.3 工作流程"> # </a></h3>
+<p><img src="https://static.zhufengpeixun.com/vueloader_1661567856026.jpg" alt=""></p>
+<h4 id="t173.3.1 原始内容">3.3.1 原始内容 <a href="#t173.3.1 原始内容"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>
+</code></pre>
+<h4 id="t183.3.2 第1次转换">3.3.2 第1次转换 <a href="#t183.3.2 第1次转换"> # </a></h4>
+<ul>
+<li>1.进入vue-loader的normal处理转换代码为<pre><code class="lang-js"><span class="hljs-keyword">import</span> script <span class="hljs-keyword">from</span> <span class="hljs-string">"./App.vue?vue&amp;type=script&amp;id=4d69bc76&amp;lang=js"</span>
+<span class="hljs-keyword">import</span> {render} <span class="hljs-keyword">from</span> <span class="hljs-string">"./App.vue?vue&amp;type=template&amp;id=4d69bc76&amp;scoped=true&amp;lang=js"</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"./App.vue?vue&amp;type=style&amp;index=0&amp;id=4d69bc76&amp;scoped=true&amp;lang=css"</span>
+script.__scopeId = <span class="hljs-string">"data-v-4d69bc76"</span>
+script.render=render
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> script
+</code></pre>
+</li>
+</ul>
+<h4 id="t193.3.3 第2次转换">3.3.3 第2次转换 <a href="#t193.3.3 第2次转换"> # </a></h4>
+<ul>
+<li>2.进入pitcher，不同区块返回不同内容</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">//script区块</span>
+<span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">"-!../vue-loader/index.js!./App.vue?vue&amp;type=script&amp;id=4d69bc76&amp;lang=js"</span>; <span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">"-!../vue-loader/index.js!./App.vue?vue&amp;type=script&amp;id=4d69bc76&amp;lang=js"</span>
+<span class="hljs-comment">//template区块</span>
+<span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">"-!../vue-loader/templateLoader.js!../vue-loader/index.js!./App.vue?vue&amp;type=template&amp;id=4d69bc76&amp;scoped=true&amp;lang=js"</span>
+<span class="hljs-comment">//style区块</span>
+<span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">"-!../node_modules/style-loader/dist/cjs.js!../node_modules/css-loader/dist/cjs.js!../vue-loader/stylePostLoader.js!../vue-loader/index.js!./App.vue?vue&amp;type=style&amp;index=0&amp;id=4d69bc76&amp;scoped=true&amp;lang=css"</span>
+</code></pre>
+<h4 id="t203.3.4 第3次转换">3.3.4 第3次转换 <a href="#t203.3.4 第3次转换"> # </a></h4>
+<ul>
+<li>第二次执行<code>vue-loader</code>,从SFC中提取对应的区块内容，交给后面的loader</li>
+<li><code>script</code>内容直接编译返回</li>
+<li><code>template</code>内容交给<code>templateLoader</code></li>
+<li><code>style</code>内容交给<code>stylePostLoader</code></li>
+</ul>
+<p>vue-loader\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (incomingQuery.get(<span class="hljs-string">'type'</span>)) {
+  <span class="hljs-keyword">return</span> select.selectBlock(descriptor, id, loaderContext, incomingQuery);
+}
+</code></pre>
+<h2 id="t214.编译script">4.编译script <a href="#t214.编译script"> # </a></h2>
+<ul>
+<li>第一次的时候只走<code>vue-loader</code>,返回临时文件<code>import script from "./App.vue?vue&amp;type=script&amp;id=4d69bc76&amp;lang=js"</code></li>
+<li>第一次加载临时文件的时候会走<code>pitcher</code>,<code>pitcher</code>会拼出行内loader和加载模块的完整路径</li>
+</ul>
+<h3 id="t224.1 webpack.config.js">4.1 webpack.config.js <a href="#t224.1 webpack.config.js"> # </a></h3>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+const { VueLoaderPlugin } = require('./vue-loader')</span>
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
+<span class="hljs-addition">+const path = require('path')</span>
+module.exports = {
+    mode: 'development',
+    devtool: false,
+    entry: './src/main.js',
+    module: {
+        rules: [
+            {
+                test: /\.vue$/,
+<span class="hljs-addition">+               loader: path.resolve(__dirname, 'vue-loader')</span>
+            }
+        ]
+    },
+    plugins: [
+        new VueLoaderPlugin(),
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        }),
+        new webpack.DefinePlugin({
+            __VUE_OPTIONS_API__: true,
+            __VUE_PROD_DEVTOOLS__: true
+        })
+    ]
+}
+</code></pre>
+<h3 id="t234.2 vue-loader\index.js">4.2 vue-loader\index.js <a href="#t234.2 vue-loader\index.js"> # </a></h3>
+<p>vue-loader\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> compiler = <span class="hljs-built_in">require</span>(<span class="hljs-string">"vue/compiler-sfc"</span>);
+<span class="hljs-keyword">const</span> hash = <span class="hljs-built_in">require</span>(<span class="hljs-string">"hash-sum"</span>);
+<span class="hljs-keyword">const</span> VueLoaderPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./plugin"</span>);
+<span class="hljs-keyword">const</span> select = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./select"</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loader</span>(<span class="hljs-params">source</span>) </span>{
+    <span class="hljs-keyword">const</span> loaderContext = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">const</span> { resourcePath, resourceQuery = <span class="hljs-string">''</span> } = loaderContext;
+    <span class="hljs-keyword">const</span> rawQuery = resourceQuery.slice(<span class="hljs-number">1</span>);
+    <span class="hljs-keyword">const</span> incomingQuery = <span class="hljs-keyword">new</span> URLSearchParams(rawQuery);
+    <span class="hljs-keyword">const</span> { descriptor } = compiler.parse(source);
+    <span class="hljs-keyword">const</span> id = hash(resourcePath);
+    <span class="hljs-keyword">if</span> (incomingQuery.get(<span class="hljs-string">'type'</span>)) {
+        <span class="hljs-keyword">return</span> select.selectBlock(descriptor, id, loaderContext, incomingQuery);
+    }
+    <span class="hljs-keyword">const</span> code = [];
+    <span class="hljs-keyword">const</span> { script } = descriptor;
+    <span class="hljs-keyword">if</span> (script) {
+        <span class="hljs-keyword">const</span> query = <span class="hljs-string">`?vue&amp;type=script&amp;id=<span class="hljs-subst">${id}</span>&amp;lang=js`</span>;
+        <span class="hljs-keyword">const</span> scriptRequest = <span class="hljs-built_in">JSON</span>.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));
+        code.push(<span class="hljs-string">`import script from <span class="hljs-subst">${scriptRequest}</span>`</span>);
+    }
+    code.push(<span class="hljs-string">`export default script`</span>);
+    <span class="hljs-keyword">return</span> code.join(<span class="hljs-string">'\n'</span>);
+}
+loader.VueLoaderPlugin = VueLoaderPlugin;
+<span class="hljs-built_in">module</span>.exports = loader;
+</code></pre>
+<h3 id="t244.3 plugin.js">4.3 plugin.js <a href="#t244.3 plugin.js"> # </a></h3>
+<p>vue-loader\plugin.js</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VueLoaderPlugin</span> </span>{
+    apply(compiler) {
+        <span class="hljs-keyword">const</span> rules = compiler.options.module.rules;
+        <span class="hljs-keyword">const</span> pitcher = {
+            <span class="hljs-attr">loader</span>: <span class="hljs-built_in">require</span>.resolve(<span class="hljs-string">'./pitcher'</span>),
+            <span class="hljs-comment">//类似于test,用于判断资源的路径是否适用于此规则</span>
+            <span class="hljs-attr">resourceQuery</span>: <span class="hljs-function"><span class="hljs-params">query</span> =&gt;</span> {
+                <span class="hljs-keyword">if</span> (!query) {
+                    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+                }
+                <span class="hljs-keyword">let</span> parsed = <span class="hljs-keyword">new</span> URLSearchParams(query.slice(<span class="hljs-number">1</span>));
+                <span class="hljs-keyword">return</span> parsed.get(<span class="hljs-string">'vue'</span>) !== <span class="hljs-literal">null</span>;
+            }
+        };
+        <span class="hljs-comment">//把pitcher添加到rules数组的第一位</span>
+        compiler.options.module.rules = [pitcher, ...rules];
+    }
+}
+<span class="hljs-built_in">module</span>.exports = VueLoaderPlugin;
+</code></pre>
+<h3 id="t254.4 pitcher.js">4.4 pitcher.js <a href="#t254.4 pitcher.js"> # </a></h3>
+<p>vue-loader\pitcher.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> pitcher = <span class="hljs-function"><span class="hljs-params">code</span> =&gt;</span> code;
+<span class="hljs-keyword">const</span> isNotPitcher = <span class="hljs-function"><span class="hljs-params">loader</span> =&gt;</span> loader.path !== __filename;
+<span class="hljs-keyword">const</span> pitch = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> context = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">const</span> loaders = context.loaders.filter(isNotPitcher);
+    <span class="hljs-keyword">const</span> query = <span class="hljs-keyword">new</span> URLSearchParams(context.resourceQuery.slice(<span class="hljs-number">1</span>));
+    <span class="hljs-keyword">return</span> genProxyModule(loaders, context, query.get(<span class="hljs-string">'type'</span>) !== <span class="hljs-string">'template'</span>);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">genProxyModule</span>(<span class="hljs-params">loaders, context, exportDefault = true</span>) </span>{
+    <span class="hljs-keyword">const</span> request = genRequest(loaders, context);
+    <span class="hljs-keyword">return</span> (exportDefault ? <span class="hljs-string">`export { default } from <span class="hljs-subst">${request}</span>; `</span> : <span class="hljs-string">``</span>) + <span class="hljs-string">`export * from <span class="hljs-subst">${request}</span>`</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">genRequest</span>(<span class="hljs-params">loaders, context</span>) </span>{
+    <span class="hljs-keyword">const</span> loaderStrings = loaders.map(<span class="hljs-function"><span class="hljs-params">loader</span> =&gt;</span> loader.request);
+    <span class="hljs-keyword">const</span> resource = context.resourcePath + context.resourceQuery;
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.stringify(context.utils.contextify(context.context, <span class="hljs-string">'-!'</span> + [...loaderStrings, resource].join(<span class="hljs-string">'!'</span>)));
+}
+pitcher.pitch = pitch;
+<span class="hljs-built_in">module</span>.exports = pitcher;
+</code></pre>
+<h3 id="t264.5 select.js">4.5 select.js <a href="#t264.5 select.js"> # </a></h3>
+<p>vue-loader\select.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> compiler_sfc = <span class="hljs-built_in">require</span>(<span class="hljs-string">"vue/compiler-sfc"</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">selectBlock</span>(<span class="hljs-params">descriptor, scopeId, loaderContext, query</span>) </span>{
+    <span class="hljs-keyword">if</span> (query.get(<span class="hljs-string">'type'</span>) === <span class="hljs-string">`script`</span>) {
+        <span class="hljs-keyword">const</span> script = compiler_sfc.compileScript(descriptor, { <span class="hljs-attr">id</span>: scopeId });
+        loaderContext.callback(<span class="hljs-literal">null</span>, script.content);
+        <span class="hljs-keyword">return</span>;
+    }
+}
+exports.selectBlock = selectBlock;
+</code></pre>
+<h2 id="t275.编译template">5.编译template <a href="#t275.编译template"> # </a></h2>
+<h3 id="t285.1 src\App.vue">5.1 src\App.vue <a href="#t285.1 src\App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-js">&lt;template&gt;
+    &lt;h1&gt;hello&lt;/h1&gt;
+&lt;/template&gt;
+&lt;script&gt;
+console.log('App');
+&lt;/script&gt;
+</code></pre>
+<h3 id="t295.2 vue-loader\index.js">5.2 vue-loader\index.js <a href="#t295.2 vue-loader\index.js"> # </a></h3>
+<p>vue-loader\index.js</p>
+<pre><code class="lang-diff">const compiler = require("vue/compiler-sfc");
+const hash = require("hash-sum");
+const VueLoaderPlugin = require("./plugin");
+const select = require("./select");
+function loader(source) {
+    const loaderContext = this;
+    const { resourcePath, resourceQuery = '' } = loaderContext;
+    const rawQuery = resourceQuery.slice(1);
+    const incomingQuery = new URLSearchParams(rawQuery);
+    const { descriptor } = compiler.parse(source);
+    const id = hash(resourcePath);
+    if (incomingQuery.get('type')) {
+        return select.selectBlock(descriptor, id, loaderContext, incomingQuery);
+    }
+    const code = [];
+    const { script } = descriptor;
+    if (script) {
+        const query = `?vue&amp;type=script&amp;id=${id}&amp;lang=js`;
+        const scriptRequest = JSON.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));
+        console.log(scriptRequest);
+        code.push(`import script from ${scriptRequest}`);
+    }
+<span class="hljs-addition">+   if (descriptor.template) {</span>
+<span class="hljs-addition">+       const query = `?vue&amp;type=template&amp;id=${id}&amp;lang=js`;</span>
+<span class="hljs-addition">+       const templateRequest = JSON.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));</span>
+<span class="hljs-addition">+       code.push(`import {render} from ${templateRequest}`);</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+   code.push(`script.render=render`);</span>
+    code.push(`export default script`);
+    return code.join('\n');
+}
+loader.VueLoaderPlugin = VueLoaderPlugin;
+module.exports = loader;
+</code></pre>
+<h3 id="t305.3 plugin.js">5.3 plugin.js <a href="#t305.3 plugin.js"> # </a></h3>
+<p>vue-loader\plugin.js</p>
+<pre><code class="lang-diff">class VueLoaderPlugin {
+    apply(compiler) {
+        const rules = compiler.options.module.rules;
+        const pitcher = {
+            loader: require.resolve('./pitcher'),
+            resourceQuery: query =&gt; {
+                if (!query) {
+                    return false;
+                }
+                let parsed = new URLSearchParams(query.slice(1));
+                return parsed.get('vue') !== null;
+            }
+        };
+<span class="hljs-addition">+       const templateCompilerRule = {</span>
+<span class="hljs-addition">+           loader: require.resolve('./templateLoader'),</span>
+<span class="hljs-addition">+           resourceQuery: query =&gt; {</span>
+<span class="hljs-addition">+               if (!query) {</span>
+<span class="hljs-addition">+                   return false;</span>
+<span class="hljs-addition">+               }</span>
+<span class="hljs-addition">+               const parsed = new URLSearchParams(query.slice(1));</span>
+<span class="hljs-addition">+               return parsed.get('vue') != null &amp;&amp; parsed.get('type') === 'template';</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+       };</span>
+<span class="hljs-addition">+       compiler.options.module.rules = [pitcher, templateCompilerRule, ...rules];</span>
+    }
+}
+module.exports = VueLoaderPlugin;
+</code></pre>
+<h3 id="t315.4 select.js">5.4 select.js <a href="#t315.4 select.js"> # </a></h3>
+<p>vue-loader\select.js</p>
+<pre><code class="lang-diff">const compiler_sfc = require("vue/compiler-sfc");
+function selectBlock(descriptor, scopeId, loaderContext, query) {
+    if (query.get('type') <span class="hljs-comment">=== `script`) {</span>
+        const script = compiler_sfc.compileScript(descriptor, { id: scopeId });
+        loaderContext.callback(null, script.content);
+        return;
+    }
+<span class="hljs-addition">+   if (query.get('type') === `template`) {</span>
+<span class="hljs-addition">+       const template = descriptor.template;</span>
+<span class="hljs-addition">+       loaderContext.callback(null, template.content);</span>
+<span class="hljs-addition">+       return;</span>
+<span class="hljs-addition">+   }</span>
+}
+exports.selectBlock = selectBlock;
+</code></pre>
+<h3 id="t325.5 templateLoader.js">5.5 templateLoader.js <a href="#t325.5 templateLoader.js"> # </a></h3>
+<p>vue-loader\templateLoader.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> compiler_sfc = <span class="hljs-built_in">require</span>(<span class="hljs-string">"vue/compiler-sfc"</span>);
+<span class="hljs-keyword">const</span> TemplateLoader = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">source</span>) </span>{
+    <span class="hljs-keyword">const</span> loaderContext = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">const</span> query = <span class="hljs-keyword">new</span> URLSearchParams(loaderContext.resourceQuery.slice(<span class="hljs-number">1</span>));
+    <span class="hljs-keyword">const</span> scopeId = query.get(<span class="hljs-string">'id'</span>);
+    <span class="hljs-keyword">const</span> { code } = compiler_sfc.compileTemplate({
+        source,
+        <span class="hljs-attr">id</span>: scopeId
+    });
+    loaderContext.callback(<span class="hljs-literal">null</span>, code);
+}
+<span class="hljs-built_in">module</span>.exports = TemplateLoader;
+</code></pre>
+<h2 id="t336.编译style">6.编译style <a href="#t336.编译style"> # </a></h2>
+<h3 id="t346.1 webpack.config.js">6.1 webpack.config.js <a href="#t346.1 webpack.config.js"> # </a></h3>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">const { VueLoaderPlugin } = require('./vue-loader')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
+const path = require('path')
+module.exports = {
+    mode: 'development',
+    devtool: false,
+    entry: './src/main.js',
+    module: {
+        rules: [
+            {
+                test: /\.vue$/,
+                loader: path.resolve(__dirname, 'vue-loader')
+            },
+<span class="hljs-addition">+           {</span>
+<span class="hljs-addition">+               test: /\.css$/,</span>
+<span class="hljs-addition">+               use: [</span>
+<span class="hljs-addition">+                   'style-loader',</span>
+<span class="hljs-addition">+                   'css-loader'</span>
+<span class="hljs-addition">+               ]</span>
+<span class="hljs-addition">+           }</span>
+        ]
+    },
+    plugins: [
+        new VueLoaderPlugin(),
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        }),
+        new webpack.DefinePlugin({
+            __VUE_OPTIONS_API__: true,
+            __VUE_PROD_DEVTOOLS__: true
+        })
+    ]
+}
+</code></pre>
+<h3 id="t356.2 App.vue">6.2 App.vue <a href="#t356.2 App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-diff">&lt;template&gt;
+<span class="hljs-addition">+   &lt;h1 class="title"&gt;hello&lt;/h1&gt;</span>
+&lt;/template&gt;
+&lt;script&gt;
+console.log('App');
+&lt;/script&gt;
+<span class="hljs-addition">+&lt;style&gt;</span>
+<span class="hljs-addition">+.title {</span>
+<span class="hljs-addition">+    color: red;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+&lt;/style&gt;</span>
+</code></pre>
+<h3 id="t366.3 vue-loader\index.js">6.3 vue-loader\index.js <a href="#t366.3 vue-loader\index.js"> # </a></h3>
+<p>vue-loader\index.js</p>
+<pre><code class="lang-diff">const compiler = require("vue/compiler-sfc");
+const hash = require("hash-sum");
+const VueLoaderPlugin = require("./plugin");
+const select = require("./select");
+function loader(source) {
+    const loaderContext = this;
+    const { resourcePath, resourceQuery = '' } = loaderContext;
+    const rawQuery = resourceQuery.slice(1);
+    const incomingQuery = new URLSearchParams(rawQuery);
+    const { descriptor } = compiler.parse(source);
+    const id = hash(resourcePath);
+    if (incomingQuery.get('type')) {
+        return select.selectBlock(descriptor, id, loaderContext, incomingQuery);
+    }
+    const code = [];
+    const { script } = descriptor;
+    if (script) {
+        const query = `?vue&amp;type=script&amp;id=${id}&amp;lang=js`;
+        const scriptRequest = JSON.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));
+        console.log(scriptRequest);
+        code.push(`import script from ${scriptRequest}`);
+    }
+    if (descriptor.template) {
+        const query = `?vue&amp;type=template&amp;id=${id}&amp;lang=js`;
+        const templateRequest = JSON.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));
+        code.push(`import {render} from ${templateRequest}`);
+    }
+<span class="hljs-addition">+   if (descriptor.styles.length) {</span>
+<span class="hljs-addition">+       descriptor.styles.forEach((style, i) =&gt; {</span>
+<span class="hljs-addition">+           const query = `?vue&amp;type=style&amp;index=${i}&amp;id=${id}&amp;lang=css`;</span>
+<span class="hljs-addition">+           const styleRequest = JSON.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));</span>
+<span class="hljs-addition">+           code.push(`import ${styleRequest}`);</span>
+<span class="hljs-addition">+       })</span>
+<span class="hljs-addition">+   }</span>
+    code.push(`script.render=render`);
+    code.push(`export default script`);
+    return code.join('\n');
+}
+loader.VueLoaderPlugin = VueLoaderPlugin;
+module.exports = loader;
+</code></pre>
+<h3 id="t376.4 plugin.js">6.4 plugin.js <a href="#t376.4 plugin.js"> # </a></h3>
+<p>vue-loader\plugin.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+const langBlockRuleResource = (query, resource) =&gt; `${resource}.${query.get('lang')}`;</span>
+class VueLoaderPlugin {
+    apply(compiler) {
+        const rules = compiler.options.module.rules;
+        const pitcher = {
+            loader: require.resolve('./pitcher'),
+            resourceQuery: query =&gt; {
+                if (!query) {
+                    return false;
+                }
+                let parsed = new URLSearchParams(query.slice(1));
+                return parsed.get('vue') !== null;
+            }
+        };
+<span class="hljs-addition">+       const vueRule = rules.find(rule =&gt; 'foo.vue'.match(rule.test));</span>
+<span class="hljs-addition">+       const clonedRules = rules.filter(rule =&gt; rule !== vueRule)</span>
+<span class="hljs-addition">+           .map(rule =&gt; cloneRule(rule, langBlockRuleResource));</span>
+        const templateCompilerRule = {
+            loader: require.resolve('./templateLoader'),
+            resourceQuery: query =&gt; {
+                if (!query) {
+                    return false;
+                }
+                const parsed = new URLSearchParams(query.slice(1));
+                return parsed.get('vue') != null &amp;&amp; parsed.get('type') <span class="hljs-comment">=== 'template';</span>
+            }
+        };
+<span class="hljs-addition">+       compiler.options.module.rules = [pitcher, templateCompilerRule, ...clonedRules, ...rules];</span>
+    }
+}
+<span class="hljs-addition">+function cloneRule(rule, ruleResource) {</span>
+<span class="hljs-addition">+    let currentResource;</span>
+<span class="hljs-addition">+    const res = Object.assign(Object.assign({}, rule), {</span>
+<span class="hljs-addition">+        resource: resources =&gt; {</span>
+<span class="hljs-addition">+            currentResource = resources;</span>
+<span class="hljs-addition">+            return true;</span>
+<span class="hljs-addition">+        },</span>
+<span class="hljs-addition">+        resourceQuery: query =&gt; {</span>
+<span class="hljs-addition">+            if (!query) {</span>
+<span class="hljs-addition">+                return false;</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+            const parsed = new URLSearchParams(query.slice(1));</span>
+<span class="hljs-addition">+            if (parsed.get('vue') === null) {</span>
+<span class="hljs-addition">+                return false;</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+            //取出路径中的lang参数，生成一个虚拟路径，传入规则中判断是否满足  </span>
+<span class="hljs-addition">+            //通过这种方式，vue-loader可以为不同的区块匹配rule规则 </span>
+<span class="hljs-addition">+            const fakeResourcePath = ruleResource(parsed, currentResource);</span>
+<span class="hljs-addition">+            if (!fakeResourcePath.match(rule.test)) {</span>
+<span class="hljs-addition">+                return false;</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+            return true;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    });</span>
+<span class="hljs-addition">+    delete res.test;</span>
+<span class="hljs-addition">+    return res;</span>
+<span class="hljs-addition">+}</span>
+module.exports = VueLoaderPlugin;
+</code></pre>
+<h3 id="t386.5 select.js">6.5 select.js <a href="#t386.5 select.js"> # </a></h3>
+<p>vue-loader\select.js</p>
+<pre><code class="lang-diff">const compiler_sfc = require("vue/compiler-sfc");
+function selectBlock(descriptor, scopeId, loaderContext, query) {
+    if (query.get('type') <span class="hljs-comment">=== `script`) {</span>
+        const script = compiler_sfc.compileScript(descriptor, { id: scopeId });
+        loaderContext.callback(null, script.content);
+        return;
+    }
+    if (query.get('type') <span class="hljs-comment">=== `template`) {</span>
+        const template = descriptor.template;
+        loaderContext.callback(null, template.content);
+        return;
+    }
+<span class="hljs-addition">+   if (query.get('type') === `style` &amp;&amp; query.get('index') != null) {</span>
+<span class="hljs-addition">+       const style = descriptor.styles[Number(query.get('index'))];</span>
+<span class="hljs-addition">+       loaderContext.callback(null, style.content);</span>
+<span class="hljs-addition">+       return;</span>
+<span class="hljs-addition">+   }</span>
+}
+exports.selectBlock = selectBlock;
+</code></pre>
+<h2 id="t397.Scoped CSS">7.Scoped CSS <a href="#t397.Scoped CSS"> # </a></h2>
+<ul>
+<li>当<code>style</code>标签有<a href="https://vue-loader.vuejs.org/zh/guide/scoped-css.html">scoped</a>属性时，它的 CSS 只作用于当前组件中的元素</li>
+</ul>
+<h3 id="t407.1 App.vue">7.1 App.vue <a href="#t407.1 App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-diff">&lt;template&gt;
+    &lt;h1 class="title"&gt;hello&lt;/h1&gt;
+&lt;/template&gt;
+&lt;script&gt;
+console.log('App');
+&lt;/script&gt;
+<span class="hljs-addition">+&lt;style scoped&gt;</span>
+<span class="hljs-addition">+.title {</span>
+<span class="hljs-addition">+    color: red;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+&lt;/style&gt;</span>
+</code></pre>
+<h3 id="t417.2 vue-loader\index.js">7.2 vue-loader\index.js <a href="#t417.2 vue-loader\index.js"> # </a></h3>
+<p>vue-loader\index.js</p>
+<pre><code class="lang-diff">const compiler = require("vue/compiler-sfc");
+const hash = require("hash-sum");
+const VueLoaderPlugin = require("./plugin");
+const select = require("./select");
+function loader(source) {
+    const loaderContext = this;
+    const { resourcePath, resourceQuery = '' } = loaderContext;
+    const rawQuery = resourceQuery.slice(1);
+    const incomingQuery = new URLSearchParams(rawQuery);
+    const { descriptor } = compiler.parse(source);
+    const id = hash(resourcePath);
+    if (incomingQuery.get('type')) {
+        return select.selectBlock(descriptor, id, loaderContext, incomingQuery);
+    }
+<span class="hljs-addition">+    const hasScoped = descriptor.styles.some(s =&gt; s.scoped);</span>
+    const code = [];
+    const { script } = descriptor;
+    if (script) {
+        const query = `?vue&amp;type=script&amp;id=${id}&amp;lang=js`;
+        const scriptRequest = JSON.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));
+        code.push(`import script from ${scriptRequest}`);
+    }
+    if (descriptor.template) {
+<span class="hljs-addition">+       const scopedQuery = hasScoped ? `&amp;scoped=true` : ``;</span>
+<span class="hljs-addition">+       const query = `?vue&amp;type=template&amp;id=${id}${scopedQuery}&amp;lang=js`;</span>
+        const templateRequest = JSON.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));
+        code.push(`import {render} from ${templateRequest}`);
+    }
+    if (descriptor.styles.length) {
+        descriptor.styles.forEach((style, i) =&gt; {
+<span class="hljs-addition">+           const scopedQuery = style.scoped ? `&amp;scoped=true` : ``;</span>
+<span class="hljs-addition">+           const query = `?vue&amp;type=style&amp;index=${i}&amp;id=${id}${scopedQuery}&amp;lang=css`;</span>
+            const styleRequest = JSON.stringify(loaderContext.utils.contextify(loaderContext.context, resourcePath + query));
+            code.push(`import ${styleRequest}`);
+        })
+    }
+<span class="hljs-addition">+   if (hasScoped) {</span>
+<span class="hljs-addition">+       code.push(`script.__scopeId = "data-v-${id}"`);</span>
+<span class="hljs-addition">+   }</span>
+    code.push(`script.render=render`);
+    code.push(`export default script`);
+    return code.join('\n');
+}
+loader.VueLoaderPlugin = VueLoaderPlugin;
+module.exports = loader;
+</code></pre>
+<h3 id="t427.3 pitcher.js">7.3 pitcher.js <a href="#t427.3 pitcher.js"> # </a></h3>
+<p>vue-loader\pitcher.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+const isCSSLoader = loader =&gt; /css-loader/.test(loader.path);</span>
+<span class="hljs-addition">+const stylePostLoaderPath = require.resolve('./stylePostLoader');</span>
+const pitcher = code =&gt; code;
+const isNotPitcher = loader =&gt; loader.path !== __filename;
+const pitch = function () {
+    const context = this;
+    const loaders = context.loaders.filter(isNotPitcher);
+    const query = new URLSearchParams(context.resourceQuery.slice(1));
+<span class="hljs-addition">+   if (query.get('type') === `style`) {</span>
+<span class="hljs-addition">+       const cssLoaderIndex = loaders.findIndex(isCSSLoader);</span>
+<span class="hljs-addition">+       if (cssLoaderIndex &gt; -1) {</span>
+<span class="hljs-addition">+           const afterLoaders = loaders.slice(0, cssLoaderIndex + 1);</span>
+<span class="hljs-addition">+           const beforeLoaders = loaders.slice(cssLoaderIndex + 1);</span>
+<span class="hljs-addition">+           return genProxyModule([...afterLoaders, stylePostLoaderPath, ...beforeLoaders], context);</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+   }</span>
+    return genProxyModule(loaders, context, query.get('type') !== 'template');
+}
+function genProxyModule(loaders, context, exportDefault = true) {
+    const request = genRequest(loaders, context);
+    return (exportDefault ? `export { default } from ${request}; ` : ``) + `export * from ${request}`;
+}
+function genRequest(loaders, context) {
+<span class="hljs-addition">+   const loaderStrings = loaders.map(loader =&gt; loader.request || loader);</span>
+    const resource = context.resourcePath + context.resourceQuery;
+    return JSON.stringify(context.utils.contextify(context.context, '-!' + [...loaderStrings, resource].join('!')));
+}
+pitcher.pitch = pitch;
+module.exports = pitcher;
+</code></pre>
+<h3 id="t437.4 stylePostLoader.js">7.4 stylePostLoader.js <a href="#t437.4 stylePostLoader.js"> # </a></h3>
+<p>vue-loader\stylePostLoader.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> compiler_sfc = <span class="hljs-built_in">require</span>(<span class="hljs-string">"vue/compiler-sfc"</span>);
+<span class="hljs-keyword">const</span> StylePostLoader = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">source</span>) </span>{
+    <span class="hljs-keyword">const</span> query = <span class="hljs-keyword">new</span> URLSearchParams(<span class="hljs-keyword">this</span>.resourceQuery.slice(<span class="hljs-number">1</span>));
+    <span class="hljs-keyword">const</span> { code } = compiler_sfc.compileStyle({
+        source,
+        <span class="hljs-attr">id</span>: <span class="hljs-string">`data-v-<span class="hljs-subst">${query.get(<span class="hljs-string">'id'</span>)}</span>`</span>,
+        <span class="hljs-attr">scoped</span>: !!query.get(<span class="hljs-string">'scoped'</span>)
+    });
+    <span class="hljs-keyword">this</span>.callback(<span class="hljs-literal">null</span>, code);
+};
+<span class="hljs-built_in">module</span>.exports = StylePostLoader;
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

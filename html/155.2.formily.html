@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li class="active"><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01.UMi4+Formily2">1.UMi4+Formily2</a></li><li><a href="#t12.创建项目">2.创建项目</a></li><li><a href="#t23.配置项目">3.配置项目</a><ul><li><a href="#t33.1 .umirc.ts">3.1 .umirc.ts</a></li><li><a href="#t43.2 src\app.ts">3.2 src\app.ts</a></li><li><a href="#t53.3 tsconfig.json">3.3 tsconfig.json</a></li></ul></li><li><a href="#t64.查询删除实体">4.查询删除实体</a><ul><li><a href="#t74.1 .umirc.ts">4.1 .umirc.ts</a></li><li><a href="#t84.2 src\pages\Entity\index.tsx">4.2 src\pages\Entity\index.tsx</a></li><li><a href="#t94.3 fieldValue.tsx">4.3 fieldValue.tsx</a></li></ul></li><li><a href="#t105.添加修改实体">5.添加修改实体</a><ul><li><a href="#t115.1 .umirc.ts">5.1 .umirc.ts</a></li><li><a href="#t125.2 src\constants\enums.ts">5.2 src\constants\enums.ts</a></li><li><a href="#t135.3 EntityEdit\index.tsx">5.3 EntityEdit\index.tsx</a></li><li><a href="#t145.4 initialValues.ts">5.4 initialValues.ts</a></li></ul></li><li><a href="#t156.查看实体">6.查看实体</a><ul><li><a href="#t166.1 .umirc.ts">6.1 .umirc.ts</a></li><li><a href="#t176.2 src\pages\EntityView\index.tsx">6.2 src\pages\EntityView\index.tsx</a></li><li><a href="#t186.3 EditModal\index.tsx">6.3 EditModal\index.tsx</a></li><li><a href="#t196.4 column.tsx">6.4 column.tsx</a></li><li><a href="#t206.5 field.tsx">6.5 field.tsx</a></li><li><a href="#t216.6 operation.tsx">6.6 operation.tsx</a></li></ul></li><li><a href="#t22参考">参考</a></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01.UMi4+Formily2">1.UMi4+Formily2 <a href="#t01.UMi4+Formily2"> # </a></h2>
+<ul>
+<li><a href="https://umijs.org/">Umi4</a>是一个企业级开发框架</li>
+<li><a href="https://formilyjs.org/">formilyjs</a>是阿里巴巴统一前端表单解决方案</li>
+</ul>
+<h2 id="t12.创建项目">2.创建项目 <a href="#t12.创建项目"> # </a></h2>
+<ul>
+<li><a href="https://www.pnpm.cn">pnpm dlx</a>从源中获取包而不将其安装为依赖项，热加载，并运行它公开的任何默认命令二进制文件</li>
+</ul>
+<pre><code class="lang-js">mkdir cms-front &amp;&amp; cd cms-front 
+pnpm dlx create-umi@latest
+cnpm i ahooks query-string @formily/core @formily/react @formily/antd --save
+pnpm dev
+</code></pre>
+<h2 id="t23.配置项目">3.配置项目 <a href="#t23.配置项目"> # </a></h2>
+<h3 id="t33.1 .umirc.ts">3.1 .umirc.ts <a href="#t33.1 .umirc.ts"> # </a></h3>
+<p>.umirc.ts</p>
+<pre><code class="lang-diff">import { defineConfig } from '@umijs/max';
+export default defineConfig({
+  antd: {},
+  access: {},
+  model: {},
+  initialState: {},
+<span class="hljs-addition">+ request: { dataField: 'data' },</span>
+  layout: {
+<span class="hljs-addition">+   title: 'CMS',</span>
+  },
+  routes: [
+    {
+      path: '/',
+      redirect: '/home',
+    },
+    {
+      name: '首页',
+      path: '/home',
+      component: './Home',
+    },
+<span class="hljs-addition">+   {</span>
+<span class="hljs-addition">+     name: '实体管理',</span>
+<span class="hljs-addition">+     path: '/entity',</span>
+<span class="hljs-addition">+     component: './Table',</span>
+<span class="hljs-addition">+   }</span>
+  ],
+  npmClient: 'cnpm',
+<span class="hljs-addition">+ proxy: {</span>
+<span class="hljs-addition">+   '/api': {</span>
+<span class="hljs-addition">+     target: 'http://localhost:7001',</span>
+<span class="hljs-addition">+     pathRewrite: {</span>
+<span class="hljs-addition">+       "^/api": ""</span>
+<span class="hljs-addition">+     },</span>
+<span class="hljs-addition">+     changeOrigin: true</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ }</span>
+});
+</code></pre>
+<h3 id="t43.2 src\app.ts">3.2 src\app.ts <a href="#t43.2 src\app.ts"> # </a></h3>
+<p>src\app.ts</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+import { request } from 'umi';</span>
+export async function getInitialState(): Promise&lt;{ name: string }&gt; {
+<span class="hljs-addition">+  return { name: 'CMS' };</span>
+}
+
+export const layout = () =&gt; {
+  return {
+    logo: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',
+    menu: {
+      locale: false,
+<span class="hljs-addition">+     request: () =&gt; request('/api/menu').then(res =&gt; res.data.list)</span>
+    },
+  };
+};
+</code></pre>
+<h3 id="t53.3 tsconfig.json">3.3 tsconfig.json <a href="#t53.3 tsconfig.json"> # </a></h3>
+<p>tsconfig.json</p>
+<pre><code class="lang-diff">{
+  "extends": "./src/.umi/tsconfig.json",
+<span class="hljs-addition">+  "compilerOptions": {</span>
+<span class="hljs-addition">+    "strict": false,</span>
+<span class="hljs-addition">+    "noImplicitAny": false</span>
+<span class="hljs-addition">+  }</span>
+}
+</code></pre>
+<h2 id="t64.查询删除实体">4.查询删除实体 <a href="#t64.查询删除实体"> # </a></h2>
+<h3 id="t74.1 .umirc.ts">4.1 .umirc.ts <a href="#t74.1 .umirc.ts"> # </a></h3>
+<p>.umirc.ts</p>
+<pre><code class="lang-diff">    {
+      name: '实体管理',
+      path: '/entity',
+<span class="hljs-addition">+     component: './Entity',</span>
+    }
+</code></pre>
+<h3 id="t84.2 src\pages\Entity\index.tsx">4.2 src\pages\Entity\index.tsx <a href="#t84.2 src\pages\Entity\index.tsx"> # </a></h3>
+<p>src\pages\Entity\index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { Table, Card, Row, Col, Pagination, Space, Modal, List, message, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { createSchemaField } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> { Form, FormItem, Input, FormGrid, Submit, Reset, DatePicker, FormButtonGroup } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">import</span> { FooterToolbar, PageContainer } <span class="hljs-keyword">from</span> <span class="hljs-string">'@ant-design/pro-components'</span>;
+<span class="hljs-keyword">import</span> { request, useRequest, history } <span class="hljs-keyword">from</span> <span class="hljs-string">'umi'</span>;
+<span class="hljs-keyword">import</span> { useToggle } <span class="hljs-keyword">from</span> <span class="hljs-string">'ahooks'</span>;
+<span class="hljs-keyword">import</span> moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
+<span class="hljs-keyword">import</span> { ExclamationCircleOutlined, SearchOutlined } <span class="hljs-keyword">from</span> <span class="hljs-string">'@ant-design/icons'</span>;
+<span class="hljs-keyword">import</span> Qs <span class="hljs-keyword">from</span> <span class="hljs-string">'query-string'</span>;
+<span class="hljs-keyword">import</span> { formToValues } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/transformer/fieldValue'</span>;
+<span class="hljs-keyword">const</span> searchForm = createForm({
+  <span class="hljs-attr">validateFirst</span>: <span class="hljs-literal">true</span>,
+})
+<span class="hljs-keyword">const</span> SchemaField = createSchemaField({
+  <span class="hljs-attr">components</span>: {
+    FormItem,
+    Input,
+    FormGrid,
+    DatePicker,
+    FormButtonGroup
+  }
+})
+<span class="hljs-keyword">const</span> Entity = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-keyword">const</span> [{ current, pageSize }, setPageConfig] = useState({ <span class="hljs-attr">current</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">pageSize</span>: <span class="hljs-number">10</span> });
+  <span class="hljs-keyword">const</span> [sorter, setSorter] = useState&lt;any&gt;();
+  <span class="hljs-keyword">const</span> [searchVisible, { toggle }] = useToggle(<span class="hljs-literal">false</span>);
+  <span class="hljs-keyword">const</span> [selectedRowKeys, setSelectedRowKeys] = useState([]);
+  <span class="hljs-keyword">const</span> [selectedRows, setSelectedRows] = useState([]);
+  <span class="hljs-keyword">const</span> loadQuery = useRequest(<span class="hljs-function">(<span class="hljs-params">params = {}</span>) =&gt;</span>
+    request(<span class="hljs-string">`/api/entity`</span>, {
+      <span class="hljs-attr">params</span>: {
+        current,
+        pageSize,
+        <span class="hljs-attr">sort</span>: sorter?.field,
+        <span class="hljs-attr">order</span>: sorter?.order?.slice(<span class="hljs-number">0</span>, <span class="hljs-number">-3</span>),
+        ...params
+      },
+      paramsSerializer(params) {
+        <span class="hljs-keyword">return</span> Qs.stringify(params, { <span class="hljs-attr">arrayFormat</span>: <span class="hljs-string">'comma'</span>, <span class="hljs-attr">skipEmptyString</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">skipNull</span>: <span class="hljs-literal">true</span> })
+      },
+    }), {
+    <span class="hljs-attr">refreshDeps</span>: [current, pageSize, sorter]
+  });
+  <span class="hljs-keyword">const</span> deleteQuery = useRequest(<span class="hljs-function">(<span class="hljs-params">ids</span>) =&gt;</span>
+    request(<span class="hljs-string">`/api/entity/<span class="hljs-subst">${ids[<span class="hljs-number">0</span>]}</span>`</span>, {
+      <span class="hljs-attr">method</span>: <span class="hljs-string">'DELETE'</span>,
+      <span class="hljs-attr">data</span>: ids
+    }), {
+    <span class="hljs-attr">manual</span>: <span class="hljs-literal">true</span>,
+    onSuccess(data) {
+      message.success(data.message);
+      loadQuery.refresh();
+    },
+    formatResult(res) {
+      <span class="hljs-keyword">return</span> res;
+    }
+  });
+  <span class="hljs-keyword">const</span> deleteRecords = <span class="hljs-function">(<span class="hljs-params">records</span>) =&gt;</span> {
+    Modal.confirm({
+      <span class="hljs-attr">title</span>: <span class="hljs-string">'确定删除以下记录吗?'</span>,
+      <span class="hljs-attr">icon</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ExclamationCircleOutlined</span> /&gt;</span></span>,
+      <span class="hljs-attr">content</span>: (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">List</span>
+          <span class="hljs-attr">bordered</span>
+          <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{records.map(record</span> =&gt;</span> record.name)}
+          renderItem={(item: any) =&gt; (
+            <span class="hljs-tag">&lt;<span class="hljs-name">List.Item</span>&gt;</span>{item}<span class="hljs-tag">&lt;/<span class="hljs-name">List.Item</span>&gt;</span>
+          )}
+        /&gt;</span>
+      ),
+      <span class="hljs-attr">okText</span>: <span class="hljs-string">'是'</span>,
+      <span class="hljs-attr">cancelText</span>: <span class="hljs-string">'否'</span>,
+      <span class="hljs-attr">okType</span>: <span class="hljs-string">'danger'</span>,
+      onOk() {
+        <span class="hljs-keyword">return</span> deleteQuery.run(records.map(<span class="hljs-function"><span class="hljs-params">record</span> =&gt;</span> record.id))
+      }
+    });
+  }
+  <span class="hljs-keyword">const</span> rowSelection = {
+    selectedRowKeys,
+    <span class="hljs-attr">onChange</span>: <span class="hljs-function">(<span class="hljs-params">selectedRowKeys, selectedRows</span>) =&gt;</span> {
+      setSelectedRowKeys(selectedRowKeys);
+      setSelectedRows(selectedRows);
+    }
+  }
+  <span class="hljs-keyword">const</span> handleSubmit = <span class="hljs-function">(<span class="hljs-params">values</span>) =&gt;</span> {
+    loadQuery.run(formToValues(values));
+  }
+  <span class="hljs-keyword">const</span> columns = [
+    { <span class="hljs-attr">title</span>: <span class="hljs-string">'ID'</span>, <span class="hljs-attr">dataIndex</span>: <span class="hljs-string">'id'</span>, <span class="hljs-attr">key</span>: <span class="hljs-string">'id'</span>, <span class="hljs-attr">sorter</span>: <span class="hljs-literal">true</span> },
+    { <span class="hljs-attr">title</span>: <span class="hljs-string">'名称'</span>, <span class="hljs-attr">dataIndex</span>: <span class="hljs-string">'name'</span>, <span class="hljs-attr">key</span>: <span class="hljs-string">'name'</span> },
+    { <span class="hljs-attr">title</span>: <span class="hljs-string">'标题'</span>, <span class="hljs-attr">dataIndex</span>: <span class="hljs-string">'title'</span>, <span class="hljs-attr">key</span>: <span class="hljs-string">'title'</span> },
+    {
+      <span class="hljs-attr">title</span>: <span class="hljs-string">'操作'</span>, <span class="hljs-attr">dataIndex</span>: <span class="hljs-string">'operations'</span>, <span class="hljs-attr">key</span>: <span class="hljs-string">'operations'</span>, <span class="hljs-attr">render</span>: <span class="hljs-function">(<span class="hljs-params">_, record</span>) =&gt;</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Space</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">"default"</span>
+            <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> history.push(`/entity/edit?id=${record.id}`)}
+          &gt;编辑<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>
+            <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> deleteRecords([record])}
+          &gt;删除<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Space</span>&gt;</span></span>
+      )
+    }
+  ]
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">PageContainer</span>&gt;</span>
+      {
+        searchVisible &amp;&amp; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">key</span>=<span class="hljs-string">"search"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Form</span>
+              <span class="hljs-attr">layout</span>=<span class="hljs-string">"inline"</span>
+              <span class="hljs-attr">form</span>=<span class="hljs-string">{searchForm}</span>
+              <span class="hljs-attr">onAutoSubmit</span>=<span class="hljs-string">{handleSubmit}</span>
+            &gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormGrid"</span>
+                  <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                    <span class="hljs-attr">maxColumns:</span> <span class="hljs-attr">4</span>,
+                    <span class="hljs-attr">minColumns:</span> <span class="hljs-attr">2</span>,
+                  }}
+                &gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                    <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>
+                    <span class="hljs-attr">title</span>=<span class="hljs-string">"名称"</span>
+                    <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                  /&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                    <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span>
+                    <span class="hljs-attr">title</span>=<span class="hljs-string">"标题"</span>
+                    <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                  /&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                    <span class="hljs-attr">name</span>=<span class="hljs-string">"created"</span>
+                    <span class="hljs-attr">title</span>=<span class="hljs-string">"创建时间"</span>
+                    <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                    <span class="hljs-attr">x-decorator-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">gridSpan:</span> <span class="hljs-attr">2</span> }}
+                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"DatePicker.RangePicker"</span>
+                    <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                      <span class="hljs-attr">showTime:</span> <span class="hljs-attr">true</span>, <span class="hljs-attr">ranges:</span> {
+                        '今天'<span class="hljs-attr">:</span> [<span class="hljs-attr">moment</span>()<span class="hljs-attr">.startOf</span>('<span class="hljs-attr">day</span>'), <span class="hljs-attr">moment</span>()],
+                        '本月'<span class="hljs-attr">:</span> [<span class="hljs-attr">moment</span>()<span class="hljs-attr">.startOf</span>('<span class="hljs-attr">month</span>'), <span class="hljs-attr">moment</span>()<span class="hljs-attr">.endOf</span>('<span class="hljs-attr">month</span>')],
+                        '上周'<span class="hljs-attr">:</span> [<span class="hljs-attr">moment</span>()<span class="hljs-attr">.subtract</span>(<span class="hljs-attr">7</span>, '<span class="hljs-attr">days</span>'), <span class="hljs-attr">moment</span>()],
+                        '上月'<span class="hljs-attr">:</span> [<span class="hljs-attr">moment</span>()<span class="hljs-attr">.subtract</span>(<span class="hljs-attr">1</span>, '<span class="hljs-attr">months</span>')<span class="hljs-attr">.startOf</span>('<span class="hljs-attr">month</span>'), <span class="hljs-attr">moment</span>()<span class="hljs-attr">.subtract</span>(<span class="hljs-attr">1</span>, '<span class="hljs-attr">months</span>')<span class="hljs-attr">.endOf</span>('<span class="hljs-attr">month</span>')]
+                      }
+                    }}
+                  /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">FormButtonGroup.FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Submit</span>&gt;</span>
+                  查询
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Submit</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Reset</span> &gt;</span>
+                  重置
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Reset</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">FormButtonGroup.FormItem</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+        )
+      }
+      <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">xs</span>=<span class="hljs-string">{24}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">textAlign:</span> '<span class="hljs-attr">right</span>', <span class="hljs-attr">padding:</span> '<span class="hljs-attr">10px</span>' }}&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Space</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                <span class="hljs-attr">shape</span>=<span class="hljs-string">'circle'</span>
+                <span class="hljs-attr">icon</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">SearchOutlined</span> /&gt;</span>}
+                onClick={toggle}
+                type={searchVisible ? 'primary' : 'default'}
+              /&gt;
+              <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>
+                <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> history.push('/entity/edit')}
+              &gt;添加<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Space</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Table</span>
+          <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{loadQuery.data?.list}</span>
+          <span class="hljs-attr">columns</span>=<span class="hljs-string">{columns}</span>
+          <span class="hljs-attr">loading</span>=<span class="hljs-string">{loadQuery.loading}</span>
+          <span class="hljs-attr">rowKey</span>=<span class="hljs-string">{row</span> =&gt;</span> row.id}
+          pagination={false}
+          onChange={(_, __, sorter) =&gt; setSorter(sorter)}
+          rowSelection={rowSelection}
+        /&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">xs</span>=<span class="hljs-string">{24}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">textAlign:</span> '<span class="hljs-attr">right</span>', <span class="hljs-attr">padding:</span> '<span class="hljs-attr">10px</span>' }}&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Pagination</span>
+              <span class="hljs-attr">total</span>=<span class="hljs-string">{loadQuery.data?.total</span> || <span class="hljs-attr">0</span>}
+              <span class="hljs-attr">current</span>=<span class="hljs-string">{loadQuery.data?.current</span> || <span class="hljs-attr">1</span>}
+              <span class="hljs-attr">pageSize</span>=<span class="hljs-string">{loadQuery.data?.pageSize</span> || <span class="hljs-attr">10</span>}
+              <span class="hljs-attr">showSizeChanger</span>
+              <span class="hljs-attr">showQuickJumper</span>
+              <span class="hljs-attr">showTotal</span>=<span class="hljs-string">{total</span> =&gt;</span> `总计${total}条`}
+              onChange={(current, pageSize) =&gt; setPageConfig({ current, pageSize })}
+            /&gt;
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+      {
+        selectedRowKeys.length &gt; 0 &amp;&amp; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">FooterToolbar</span> <span class="hljs-attr">extra</span>=<span class="hljs-string">{</span>
+            &lt;<span class="hljs-attr">Space</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>
+                <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> deleteRecords(selectedRows)}
+              &gt;删除<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Space</span>&gt;</span>
+          } /&gt;
+        )
+      }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">PageContainer</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Entity
+</code></pre>
+<h3 id="t94.3 fieldValue.tsx">4.3 fieldValue.tsx <a href="#t94.3 fieldValue.tsx"> # </a></h3>
+<p>src\utils\transformer\fieldValue.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">formToValues</span>(<span class="hljs-params">values</span>) </span>{
+  <span class="hljs-keyword">let</span> result = <span class="hljs-built_in">Array</span>.isArray(values) ? [] : {};
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> key <span class="hljs-keyword">in</span> values) {
+    <span class="hljs-keyword">let</span> value = values[key];
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> value === <span class="hljs-string">'boolean'</span>) {
+      value = value ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (moment.isMoment(value)) {
+      value = value.format()
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(value)) {
+      value = formToValues(value)
+    }
+    result[key] = value;
+  }
+  <span class="hljs-keyword">return</span> result;
+}
+</code></pre>
+<h2 id="t105.添加修改实体">5.添加修改实体 <a href="#t105.添加修改实体"> # </a></h2>
+<h3 id="t115.1 .umirc.ts">5.1 .umirc.ts <a href="#t115.1 .umirc.ts"> # </a></h3>
+<p>.umirc.ts</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+   {</span>
+<span class="hljs-addition">+     name: '实体编辑',</span>
+<span class="hljs-addition">+     path: '/entity/edit',</span>
+<span class="hljs-addition">+     component: './EntityEdit',</span>
+<span class="hljs-addition">+   }</span>
+</code></pre>
+<h3 id="t125.2 src\constants\enums.ts">5.2 src\constants\enums.ts <a href="#t125.2 src\constants\enums.ts"> # </a></h3>
+<p>src\constants\enums.ts</p>
+<pre><code class="lang-js"><span class="hljs-comment">//字段类型</span>
+<span class="hljs-keyword">export</span> enum FIELD_TYPES {
+    text = <span class="hljs-string">'text'</span>,
+    number = <span class="hljs-string">'number'</span>,
+    select = <span class="hljs-string">'select'</span>,
+    datetime = <span class="hljs-string">'datetime'</span>,
+    <span class="hljs-keyword">switch</span> = <span class="hljs-string">'switch'</span>
+}
+
+<span class="hljs-comment">//按钮操作类型</span>
+<span class="hljs-keyword">export</span> enum BUTTON_ACTION_TYPES {
+    add = <span class="hljs-string">'add'</span>,
+    update = <span class="hljs-string">'update'</span>,
+    <span class="hljs-keyword">delete</span> = <span class="hljs-string">'delete'</span>,
+    refresh = <span class="hljs-string">'refresh'</span>
+}
+
+<span class="hljs-comment">//按钮类型</span>
+<span class="hljs-keyword">export</span> enum BUTTON_TYPES {
+    <span class="hljs-keyword">default</span> = <span class="hljs-string">'default'</span>,
+    primary = <span class="hljs-string">'primary'</span>,
+}
+
+<span class="hljs-comment">//方法类型</span>
+<span class="hljs-keyword">export</span> enum METHOD_TYPES {
+    DELETE = <span class="hljs-string">'DELETE'</span>,
+    POST = <span class="hljs-string">'POST'</span>,
+    PUT = <span class="hljs-string">'PUT'</span>,
+    GET = <span class="hljs-string">'GET'</span>
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> FIELD = [
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'文本'</span>, <span class="hljs-attr">value</span>: FIELD_TYPES.text },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'数字'</span>, <span class="hljs-attr">value</span>: FIELD_TYPES.number },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'下拉框'</span>, <span class="hljs-attr">value</span>: FIELD_TYPES.select },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'日期时间'</span>, <span class="hljs-attr">value</span>: FIELD_TYPES.datetime },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'开关'</span>, <span class="hljs-attr">value</span>: FIELD_TYPES.switch }
+]
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> BUTTON = [
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'默认'</span>, <span class="hljs-attr">value</span>: BUTTON_TYPES.default },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'主要'</span>, <span class="hljs-attr">value</span>: BUTTON_TYPES.primary }
+]
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> BUTTON_ACTION = [
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'添加'</span>, <span class="hljs-attr">value</span>: BUTTON_ACTION_TYPES.add },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'更新'</span>, <span class="hljs-attr">value</span>: BUTTON_ACTION_TYPES.update },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'删除'</span>, <span class="hljs-attr">value</span>: BUTTON_ACTION_TYPES.delete },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'刷新'</span>, <span class="hljs-attr">value</span>: BUTTON_ACTION_TYPES.refresh }
+]
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> METHOD = [
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'DELETE'</span>, <span class="hljs-attr">value</span>: METHOD_TYPES.DELETE },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'POST'</span>, <span class="hljs-attr">value</span>: METHOD_TYPES.POST },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'PUT'</span>, <span class="hljs-attr">value</span>: METHOD_TYPES.PUT },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'GET'</span>, <span class="hljs-attr">value</span>: METHOD_TYPES.GET }
+]
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> BOOLEAN = [
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'是'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">1</span> },
+    { <span class="hljs-attr">label</span>: <span class="hljs-string">'否'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">0</span> }
+]
+</code></pre>
+<h3 id="t135.3 EntityEdit\index.tsx">5.3 EntityEdit\index.tsx <a href="#t135.3 EntityEdit\index.tsx"> # </a></h3>
+<p>src\pages\EntityEdit\index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Card, message, List } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>
+<span class="hljs-keyword">import</span> {
+  FormItem, Input, ArrayTable, Editable, FormButtonGroup, Submit, Select, Checkbox, Switch,
+  FormLayout, FormGrid,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">import</span> { createForm, onFormValidateFailed } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { FormProvider, createSchemaField } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> { onFieldValueChange, FormPath } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>;
+<span class="hljs-keyword">import</span> { PageContainer } <span class="hljs-keyword">from</span> <span class="hljs-string">'@ant-design/pro-components'</span>;
+<span class="hljs-keyword">import</span> { request, useRequest, history, useLocation } <span class="hljs-keyword">from</span> <span class="hljs-string">'umi'</span>;
+<span class="hljs-keyword">import</span> Qs <span class="hljs-keyword">from</span> <span class="hljs-string">'query-string'</span>;
+<span class="hljs-keyword">import</span> { FIELD, BUTTON_ACTION, BUTTON, METHOD, BUTTON_ACTION_TYPES } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/constants/enums'</span>;
+<span class="hljs-keyword">import</span> { initialEntityValues } <span class="hljs-keyword">from</span> <span class="hljs-string">'./initialValues'</span>;
+<span class="hljs-keyword">import</span> { useMount } <span class="hljs-keyword">from</span> <span class="hljs-string">'ahooks'</span>;
+<span class="hljs-keyword">const</span> { parse } = FormPath;
+<span class="hljs-keyword">const</span> SchemaField = createSchemaField({
+  <span class="hljs-attr">components</span>: {
+    FormItem,
+    Editable,
+    Input,
+    ArrayTable,
+    Select,
+    Checkbox,
+    Switch,
+    FormLayout,
+    Card,
+    FormGrid
+  },
+})
+
+<span class="hljs-keyword">const</span> form = createForm({
+  effects(form) {
+    onFieldValueChange(<span class="hljs-string">'name'</span>, ({ value }) =&gt; {
+      form.setFieldState(<span class="hljs-string">'*(page.*.data,record.*.data)'</span>, (state: any) =&gt; {
+        <span class="hljs-keyword">let</span> dataValue = form.getValuesIn(state.address.entire);
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> dataValue) {
+          <span class="hljs-keyword">if</span> (item.name === <span class="hljs-string">'url'</span>) {
+            <span class="hljs-keyword">let</span> action = form.getValuesIn(parse(<span class="hljs-string">'.action'</span>, state.address.entire).entire);
+            item.value = getUrl(action, value)
+          }
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getUrl</span>(<span class="hljs-params">action, value</span>) </span>{
+          <span class="hljs-keyword">switch</span> (action) {
+            <span class="hljs-keyword">case</span> BUTTON_ACTION_TYPES.add:
+              <span class="hljs-keyword">return</span> <span class="hljs-string">`/api/<span class="hljs-subst">${value}</span>`</span>;
+            <span class="hljs-keyword">case</span> BUTTON_ACTION_TYPES.update:
+              <span class="hljs-keyword">return</span> <span class="hljs-string">`/api/<span class="hljs-subst">${value}</span>/:id`</span>;
+            <span class="hljs-keyword">case</span> BUTTON_ACTION_TYPES.delete:
+              <span class="hljs-keyword">return</span> <span class="hljs-string">`/api/<span class="hljs-subst">${value}</span>/:id`</span>;
+            <span class="hljs-keyword">default</span>:
+              <span class="hljs-keyword">break</span>;
+          }
+        }
+      });
+    })
+    onFormValidateFailed(<span class="hljs-function">(<span class="hljs-params">form</span>) =&gt;</span> {
+      message.error(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">List</span>
+        <span class="hljs-attr">bordered</span>
+        <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{form.errors.map(error</span> =&gt;</span> `${error.address} ${error.messages.join(',')}`)}
+        renderItem={(item: any) =&gt; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">List.Item</span>&gt;</span>{item}<span class="hljs-tag">&lt;/<span class="hljs-name">List.Item</span>&gt;</span>
+        )}
+      /&gt;</span>);
+    })
+  }
+})
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> location = useLocation();
+  <span class="hljs-keyword">const</span> query = Qs.parse(location.search);
+  <span class="hljs-keyword">const</span> loadQuery = useRequest(<span class="hljs-function">(<span class="hljs-params">id</span>) =&gt;</span>
+    request(<span class="hljs-string">`/api/entity/<span class="hljs-subst">${id}</span>`</span>, {
+      <span class="hljs-attr">method</span>: <span class="hljs-string">'GET'</span>
+    }), {
+    <span class="hljs-attr">manual</span>: <span class="hljs-literal">true</span>,
+    onSuccess(data: any) {
+      form.setValues(data);
+    }
+  });
+  useMount(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">if</span> (query.id) {
+      loadQuery.run(query.id);
+    } <span class="hljs-keyword">else</span> {
+      form.setValues(initialEntityValues);
+    }
+  });
+  <span class="hljs-keyword">const</span> addQuery = useRequest(<span class="hljs-function">(<span class="hljs-params">values</span>) =&gt;</span>
+    request(<span class="hljs-string">`/api/entity`</span>, {
+      <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
+      <span class="hljs-attr">data</span>: values
+    }), {
+    <span class="hljs-attr">manual</span>: <span class="hljs-literal">true</span>,
+    onSuccess() {
+      history.back();
+    },
+    formatResult(res) {
+      <span class="hljs-keyword">return</span> res;
+    }
+  });
+  <span class="hljs-keyword">const</span> updateQuery = useRequest(<span class="hljs-function">(<span class="hljs-params">id, values</span>) =&gt;</span>
+    request(<span class="hljs-string">`/api/entity/<span class="hljs-subst">${id}</span>`</span>, {
+      <span class="hljs-attr">method</span>: <span class="hljs-string">'PUT'</span>,
+      <span class="hljs-attr">data</span>: values
+    }), {
+    <span class="hljs-attr">manual</span>: <span class="hljs-literal">true</span>,
+    onSuccess() {
+      history.back();
+    },
+    formatResult(res) {
+      <span class="hljs-keyword">return</span> res;
+    }
+  });
+  <span class="hljs-keyword">const</span> handleSubmit = <span class="hljs-function">(<span class="hljs-params">values</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'values'</span>, values);
+    <span class="hljs-keyword">if</span> (query.id) {
+      updateQuery.run(query.id, values);
+    } <span class="hljs-keyword">else</span> {
+      addQuery.run(values);
+    }
+
+  }
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">PageContainer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">FormProvider</span> <span class="hljs-attr">form</span>=<span class="hljs-string">{form}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+            <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormGrid"</span>
+            <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">maxColumns:</span> <span class="hljs-attr">4</span>, <span class="hljs-attr">minColumns:</span> <span class="hljs-attr">2</span> }}
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+              <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>
+              <span class="hljs-attr">title</span>=<span class="hljs-string">"名称"</span>
+              <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+              <span class="hljs-attr">required</span>
+              <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+            /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+              <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span>
+              <span class="hljs-attr">title</span>=<span class="hljs-string">"标题"</span>
+              <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+              <span class="hljs-attr">required</span>
+              <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+            /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Array</span>
+            <span class="hljs-attr">name</span>=<span class="hljs-string">"fields"</span>
+            <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+            <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable"</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> <span class="hljs-attr">50</span>, <span class="hljs-attr">title:</span> '排序', <span class="hljs-attr">align:</span> '<span class="hljs-attr">center</span>' }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.SortHandle"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> <span class="hljs-attr">80</span>, <span class="hljs-attr">title:</span> '索引', <span class="hljs-attr">align:</span> '<span class="hljs-attr">center</span>' }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Index"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '名称', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">name</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '标题', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '类型', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"type"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Select"</span>
+                  <span class="hljs-attr">enum</span>=<span class="hljs-string">{FIELD}</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '数据', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Array</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"data"</span>
+                  <span class="hljs-attr">title</span>=<span class="hljs-string">"配置字段数据"</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"Editable.Popover"</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable"</span>
+                  <span class="hljs-attr">x-reactions</span>=<span class="hljs-string">{(field:</span> <span class="hljs-attr">any</span>) =&gt;</span> {
+                    let value = field.getState().value;
+                    if (value.length &gt; 0) {
+                      field.title = value.map(item =&gt; item.title).join(',');
+                    }
+                  }}
+                &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '标题', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">name</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                        <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span>
+                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                        <span class="hljs-attr">required</span>
+                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                      /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '值', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">value</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                        <span class="hljs-attr">name</span>=<span class="hljs-string">"value"</span>
+                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                        <span class="hljs-attr">required</span>
+                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                      /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                        <span class="hljs-attr">title:</span> '操作',
+                        <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">operations</span>',
+                        <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span>,
+                        <span class="hljs-attr">fixed:</span> '<span class="hljs-attr">right</span>'
+                      }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormItem"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Remove"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveDown"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveUp"</span> /&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Addition"</span>
+                    <span class="hljs-attr">title</span>=<span class="hljs-string">"添加字段配置"</span>
+                  /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Array</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '支持排序', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"sorter"</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Switch"</span>
+                  <span class="hljs-attr">x-reactions</span>=<span class="hljs-string">{{</span>
+                    "<span class="hljs-attr">dependencies</span>"<span class="hljs-attr">:</span> ["<span class="hljs-attr">.type</span>"],
+                    <span class="hljs-attr">when:</span> "{{$<span class="hljs-attr">deps</span>[<span class="hljs-attr">0</span>] === <span class="hljs-string">'number'</span>}}",
+                    <span class="hljs-attr">fulfill:</span> {
+                      <span class="hljs-attr">state:</span> {
+                        <span class="hljs-attr">value:</span> <span class="hljs-attr">true</span>
+                      }
+                    },
+                    <span class="hljs-attr">otherwise:</span> {
+                      <span class="hljs-attr">state:</span> {
+                        <span class="hljs-attr">value:</span> <span class="hljs-attr">false</span>
+                      }
+                    },
+                  }}
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '列表隐藏', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"hideInColumn"</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Switch"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '不允许编辑', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"disabled"</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Switch"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                  <span class="hljs-attr">title:</span> '操作',
+                  <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">operations</span>',
+                  <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span>,
+                  <span class="hljs-attr">fixed:</span> '<span class="hljs-attr">right</span>'
+                }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormItem"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Remove"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveDown"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveUp"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+              <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Addition"</span>
+              <span class="hljs-attr">title</span>=<span class="hljs-string">"添加字段"</span>
+            /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Array</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Array</span>
+            <span class="hljs-attr">name</span>=<span class="hljs-string">"page"</span>
+            <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+            <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable"</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> <span class="hljs-attr">50</span>, <span class="hljs-attr">title:</span> '排序', <span class="hljs-attr">align:</span> '<span class="hljs-attr">center</span>' }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.SortHandle"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> <span class="hljs-attr">80</span>, <span class="hljs-attr">title:</span> '索引', <span class="hljs-attr">align:</span> '<span class="hljs-attr">center</span>' }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Index"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '文本', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">title</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"Editable"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '类型', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"type"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Select"</span>
+                  <span class="hljs-attr">enum</span>=<span class="hljs-string">{BUTTON}</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '操作', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"action"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Select"</span>
+                  <span class="hljs-attr">enum</span>=<span class="hljs-string">{BUTTON_ACTION}</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '地址', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">url</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Array</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"data"</span>
+                  <span class="hljs-attr">title</span>=<span class="hljs-string">"配置按钮数据"</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"Editable.Popover"</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable"</span>
+                  <span class="hljs-attr">x-reactions</span>=<span class="hljs-string">{(field:</span> <span class="hljs-attr">any</span>) =&gt;</span> {
+                    let value = field.getState().value;
+                    if (value.length &gt; 0) {
+                      field.title = '{' + value.map(item =&gt; item.name).join(',') + '}';
+                    }
+                  }}
+                &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '属性<span class="hljs-attr">1</span>', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">name</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                        <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>
+                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                        <span class="hljs-attr">required</span>
+                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                      /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '值', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">value</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                        <span class="hljs-attr">name</span>=<span class="hljs-string">"value"</span>
+                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                        <span class="hljs-attr">required</span>
+                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                        <span class="hljs-attr">x-reactions</span>=<span class="hljs-string">{{</span>
+                          <span class="hljs-attr">dependencies:</span> ['<span class="hljs-attr">.name</span>'],
+                          <span class="hljs-attr">when:</span> "{{$<span class="hljs-attr">deps</span>[<span class="hljs-attr">0</span>] === <span class="hljs-string">'method'</span>}}",
+                          <span class="hljs-attr">fulfill:</span> {
+                            <span class="hljs-attr">schema:</span> {
+                              '<span class="hljs-attr">x-component</span>'<span class="hljs-attr">:</span> "<span class="hljs-attr">Select</span>",
+                              <span class="hljs-attr">enum:</span> <span class="hljs-attr">METHOD</span>
+                            }
+                          },
+                          <span class="hljs-attr">otherwise:</span> {
+                            <span class="hljs-attr">schema:</span> {
+                              '<span class="hljs-attr">x-component</span>'<span class="hljs-attr">:</span> "<span class="hljs-attr">Input</span>",
+                              <span class="hljs-attr">enum:</span> <span class="hljs-attr">null</span>
+                            },
+                          },
+                        }}
+                      /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                        <span class="hljs-attr">title:</span> '操作',
+                        <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">operations</span>',
+                        <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span>,
+                        <span class="hljs-attr">fixed:</span> '<span class="hljs-attr">right</span>'
+                      }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormItem"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Remove"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveDown"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveUp"</span> /&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Addition"</span>
+                    <span class="hljs-attr">title</span>=<span class="hljs-string">"添加配置"</span>
+                  /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Array</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                  <span class="hljs-attr">title:</span> '操作',
+                  <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">operations</span>',
+                  <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span>,
+                  <span class="hljs-attr">fixed:</span> '<span class="hljs-attr">right</span>'
+                }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormItem"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Remove"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveDown"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveUp"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+              <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Addition"</span>
+              <span class="hljs-attr">title</span>=<span class="hljs-string">"添加页面操作"</span>
+            /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Array</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Array</span>
+            <span class="hljs-attr">name</span>=<span class="hljs-string">"record"</span>
+            <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+            <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable"</span>
+          &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> <span class="hljs-attr">50</span>, <span class="hljs-attr">title:</span> '排序', <span class="hljs-attr">align:</span> '<span class="hljs-attr">center</span>' }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.SortHandle"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> <span class="hljs-attr">80</span>, <span class="hljs-attr">title:</span> '索引', <span class="hljs-attr">align:</span> '<span class="hljs-attr">center</span>' }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Index"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '文本', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">title</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"Editable"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '类型', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"type"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Select"</span>
+                  <span class="hljs-attr">enum</span>=<span class="hljs-string">{BUTTON}</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '操作', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"action"</span>
+                  <span class="hljs-attr">required</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Select"</span>
+                  <span class="hljs-attr">enum</span>=<span class="hljs-string">{BUTTON_ACTION}</span>
+                /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '数据', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">data</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Array</span>
+                  <span class="hljs-attr">name</span>=<span class="hljs-string">"data"</span>
+                  <span class="hljs-attr">title</span>=<span class="hljs-string">"配置数据"</span>
+                  <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"Editable.Popover"</span>
+                  <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable"</span>
+                  <span class="hljs-attr">x-reactions</span>=<span class="hljs-string">{(field:</span> <span class="hljs-attr">any</span>) =&gt;</span> {
+                    let value = field.getState().value;
+                    if (value.length &gt; 0) {
+                      field.title = '{' + value.map(item =&gt; item.name).join(',') + '}';
+                    }
+                  }}
+                &gt;
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '属性', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">name</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                        <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>
+                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                        <span class="hljs-attr">required</span>
+                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                      /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">title:</span> '值', <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">value</span>', <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span> }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                        <span class="hljs-attr">name</span>=<span class="hljs-string">"value"</span>
+                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                        <span class="hljs-attr">required</span>
+                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                      /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                      <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                      <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                        <span class="hljs-attr">title:</span> '操作',
+                        <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">operations</span>',
+                        <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span>,
+                        <span class="hljs-attr">fixed:</span> '<span class="hljs-attr">right</span>'
+                      }}
+                    &gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormItem"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Remove"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveDown"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveUp"</span> /&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Addition"</span>
+                    <span class="hljs-attr">title</span>=<span class="hljs-string">"添加配置"</span>
+                  /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Array</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Column"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                  <span class="hljs-attr">title:</span> '操作',
+                  <span class="hljs-attr">dataIndex:</span> '<span class="hljs-attr">operations</span>',
+                  <span class="hljs-attr">width:</span> <span class="hljs-attr">200</span>,
+                  <span class="hljs-attr">fixed:</span> '<span class="hljs-attr">right</span>'
+                }}
+              &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormItem"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Remove"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveDown"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span> <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.MoveUp"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Object</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+              <span class="hljs-attr">x-component</span>=<span class="hljs-string">"ArrayTable.Addition"</span>
+              <span class="hljs-attr">title</span>=<span class="hljs-string">"添加记录操作"</span>
+            /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Array</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">FormButtonGroup</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Submit</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{handleSubmit}</span>&gt;</span>提交<span class="hljs-tag">&lt;/<span class="hljs-name">Submit</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">FormButtonGroup</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">FormProvider</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">PageContainer</span>&gt;</span></span>
+  )
+}
+</code></pre>
+<h3 id="t145.4 initialValues.ts">5.4 initialValues.ts <a href="#t145.4 initialValues.ts"> # </a></h3>
+<p>src\pages\EntityEdit\initialValues.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { FIELD_TYPES, BUTTON_ACTION_TYPES, BUTTON_TYPES, METHOD_TYPES } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/constants/enums'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> initialEntityValues = {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'user'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'用户'</span>,
+    <span class="hljs-attr">fields</span>: [
+        {
+            <span class="hljs-attr">disabled</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">hideInColumn</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">name</span>: <span class="hljs-string">"name"</span>,
+            <span class="hljs-attr">sorter</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">title</span>: <span class="hljs-string">"名称"</span>,
+            <span class="hljs-attr">type</span>: FIELD_TYPES.text
+        }],
+    <span class="hljs-attr">page</span>: [
+        {
+            <span class="hljs-attr">action</span>: BUTTON_ACTION_TYPES.add,
+            <span class="hljs-attr">title</span>: <span class="hljs-string">"添加"</span>,
+            <span class="hljs-attr">type</span>: BUTTON_TYPES.primary,
+            <span class="hljs-attr">data</span>: [
+                { <span class="hljs-attr">name</span>: <span class="hljs-string">'url'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'/api/user'</span> },
+                { <span class="hljs-attr">name</span>: <span class="hljs-string">'method'</span>, <span class="hljs-attr">value</span>: METHOD_TYPES.POST }
+            ]
+        }
+    ],
+    <span class="hljs-attr">record</span>: [
+        {
+            <span class="hljs-attr">action</span>: BUTTON_ACTION_TYPES.update,
+            <span class="hljs-attr">title</span>: <span class="hljs-string">"更新"</span>,
+            <span class="hljs-attr">type</span>: BUTTON_TYPES.default,
+            <span class="hljs-attr">data</span>: [
+                { <span class="hljs-attr">name</span>: <span class="hljs-string">'url'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'/api/user/:id'</span> },
+                { <span class="hljs-attr">name</span>: <span class="hljs-string">'method'</span>, <span class="hljs-attr">value</span>: METHOD_TYPES.PUT }
+            ]
+        },
+        {
+            <span class="hljs-attr">action</span>: BUTTON_ACTION_TYPES.delete,
+            <span class="hljs-attr">title</span>: <span class="hljs-string">"删除"</span>,
+            <span class="hljs-attr">type</span>: BUTTON_TYPES.primary,
+            <span class="hljs-attr">data</span>: [
+                { <span class="hljs-attr">name</span>: <span class="hljs-string">'url'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'/api/user/:id'</span> },
+                { <span class="hljs-attr">name</span>: <span class="hljs-string">'method'</span>, <span class="hljs-attr">value</span>: METHOD_TYPES.DELETE }
+            ]
+        }
+    ]
+
+}
+</code></pre>
+<h2 id="t156.查看实体">6.查看实体 <a href="#t156.查看实体"> # </a></h2>
+<h3 id="t166.1 .umirc.ts">6.1 .umirc.ts <a href="#t166.1 .umirc.ts"> # </a></h3>
+<p>.umirc.ts</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+    {</span>
+<span class="hljs-addition">+      name: '实体',</span>
+<span class="hljs-addition">+      path: '/entity/view',</span>
+<span class="hljs-addition">+      component: './EntityView',</span>
+<span class="hljs-addition">+    }</span>
+</code></pre>
+<h3 id="t176.2 src\pages\EntityView\index.tsx">6.2 src\pages\EntityView\index.tsx <a href="#t176.2 src\pages\EntityView\index.tsx"> # </a></h3>
+<p>src\pages\EntityView\index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { Table, Card, Row, Col, Pagination, Space, Modal, List, message, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { Form, Submit, Reset, FormButtonGroup } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">import</span> { FooterToolbar, PageContainer } <span class="hljs-keyword">from</span> <span class="hljs-string">'@ant-design/pro-components'</span>;
+<span class="hljs-keyword">import</span> { request, useRequest, history, useLocation } <span class="hljs-keyword">from</span> <span class="hljs-string">'umi'</span>;
+<span class="hljs-keyword">import</span> { useToggle, useMount, useSetState } <span class="hljs-keyword">from</span> <span class="hljs-string">'ahooks'</span>;
+<span class="hljs-keyword">import</span> { ExclamationCircleOutlined, SearchOutlined } <span class="hljs-keyword">from</span> <span class="hljs-string">'@ant-design/icons'</span>;
+<span class="hljs-keyword">import</span> Qs <span class="hljs-keyword">from</span> <span class="hljs-string">'query-string'</span>;
+<span class="hljs-keyword">import</span> EditModal <span class="hljs-keyword">from</span> <span class="hljs-string">'@/components/EditModal'</span>;
+<span class="hljs-keyword">import</span> { renderColumns } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/render/column'</span>;
+<span class="hljs-keyword">import</span> { BUTTON_ACTION_TYPES } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/constants/enums'</span>
+<span class="hljs-keyword">import</span> { formToValues } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/transformer/fieldValue'</span>;
+<span class="hljs-keyword">import</span> { renderOperations } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/render/operation'</span>;
+<span class="hljs-keyword">import</span> { renderSearchFields } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/render/field'</span>;
+<span class="hljs-keyword">const</span> searchForm = createForm({
+  <span class="hljs-attr">validateFirst</span>: <span class="hljs-literal">true</span>,
+})
+<span class="hljs-keyword">const</span> Entity = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-keyword">const</span> [{ current, pageSize }, setPageConfig] = useState({ <span class="hljs-attr">current</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">pageSize</span>: <span class="hljs-number">10</span> });
+  <span class="hljs-keyword">const</span> [sorter, setSorter] = useState&lt;any&gt;();
+  <span class="hljs-keyword">const</span> [searchVisible, { toggle }] = useToggle(<span class="hljs-literal">false</span>);
+  <span class="hljs-keyword">const</span> [selectedRowKeys, setSelectedRowKeys] = useState([]);
+  <span class="hljs-keyword">const</span> [selectedRows, setSelectedRows] = useState([]);
+  <span class="hljs-keyword">const</span> location = useLocation();
+  <span class="hljs-keyword">const</span> query = Qs.parse(location.search);
+  <span class="hljs-keyword">const</span> [modalState, setModalState] = useSetState({ <span class="hljs-attr">visible</span>: <span class="hljs-literal">false</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">''</span>, <span class="hljs-attr">data</span>: [], <span class="hljs-attr">row</span>: {} });
+  <span class="hljs-keyword">const</span> loadQuery = useRequest(<span class="hljs-function">(<span class="hljs-params">params = {}</span>) =&gt;</span>
+    request(<span class="hljs-string">`/api/<span class="hljs-subst">${query.name}</span>`</span>, {
+      <span class="hljs-attr">params</span>: {
+        current,
+        pageSize,
+        <span class="hljs-attr">sort</span>: sorter?.field,
+        <span class="hljs-attr">order</span>: sorter?.order?.slice(<span class="hljs-number">0</span>, <span class="hljs-number">-3</span>),
+        ...params
+      },
+      paramsSerializer(params) {
+        <span class="hljs-keyword">return</span> Qs.stringify(params, { <span class="hljs-attr">arrayFormat</span>: <span class="hljs-string">'comma'</span>, <span class="hljs-attr">skipEmptyString</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">skipNull</span>: <span class="hljs-literal">true</span> })
+      },
+    }), {
+    <span class="hljs-attr">refreshDeps</span>: [current, pageSize, sorter]
+  });
+  useMount(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">if</span> (query.id) {
+      loadQuery.run();
+    }
+  });
+  <span class="hljs-keyword">const</span> deleteQuery = useRequest(<span class="hljs-function">(<span class="hljs-params">ids</span>) =&gt;</span>
+    request(<span class="hljs-string">`/api/<span class="hljs-subst">${query.name}</span>/<span class="hljs-subst">${ids[<span class="hljs-number">0</span>]}</span>`</span>, {
+      <span class="hljs-attr">method</span>: <span class="hljs-string">'DELETE'</span>,
+      <span class="hljs-attr">data</span>: ids
+    }), {
+    <span class="hljs-attr">manual</span>: <span class="hljs-literal">true</span>,
+    onSuccess(data) {
+      message.success(data.message);
+      loadQuery.refresh();
+    },
+    formatResult(res) {
+      <span class="hljs-keyword">return</span> res;
+    }
+  });
+  <span class="hljs-keyword">const</span> deleteRecords = <span class="hljs-function">(<span class="hljs-params">records</span>) =&gt;</span> {
+    Modal.confirm({
+      <span class="hljs-attr">title</span>: <span class="hljs-string">'确定删除以下记录吗?'</span>,
+      <span class="hljs-attr">icon</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ExclamationCircleOutlined</span> /&gt;</span></span>,
+      <span class="hljs-attr">content</span>: (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">List</span>
+          <span class="hljs-attr">bordered</span>
+          <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{records.map(record</span> =&gt;</span> record.name)}
+          renderItem={(item: any) =&gt; (
+            <span class="hljs-tag">&lt;<span class="hljs-name">List.Item</span>&gt;</span>{item}<span class="hljs-tag">&lt;/<span class="hljs-name">List.Item</span>&gt;</span>
+          )}
+        /&gt;</span>
+      ),
+      <span class="hljs-attr">okText</span>: <span class="hljs-string">'是'</span>,
+      <span class="hljs-attr">cancelText</span>: <span class="hljs-string">'否'</span>,
+      <span class="hljs-attr">okType</span>: <span class="hljs-string">'danger'</span>,
+      onOk() {
+        <span class="hljs-keyword">return</span> deleteQuery.run(records.map(<span class="hljs-function"><span class="hljs-params">record</span> =&gt;</span> record.id))
+      }
+    });
+  }
+  <span class="hljs-keyword">const</span> rowSelection = {
+    selectedRowKeys,
+    <span class="hljs-attr">onChange</span>: <span class="hljs-function">(<span class="hljs-params">selectedRowKeys, selectedRows</span>) =&gt;</span> {
+      setSelectedRowKeys(selectedRowKeys);
+      setSelectedRows(selectedRows);
+    }
+  }
+  <span class="hljs-keyword">const</span> handleSubmit = <span class="hljs-function">(<span class="hljs-params">values</span>) =&gt;</span> {
+    loadQuery.run(formToValues(values));
+  }
+
+  <span class="hljs-keyword">const</span> onAction = <span class="hljs-function">(<span class="hljs-params">operation, row</span>) =&gt;</span> {
+    <span class="hljs-keyword">switch</span> (operation.action) {
+      <span class="hljs-keyword">case</span> BUTTON_ACTION_TYPES.add:
+      <span class="hljs-keyword">case</span> BUTTON_ACTION_TYPES.update:
+        setModalState({ <span class="hljs-attr">visible</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">title</span>: operation.title, <span class="hljs-attr">data</span>: operation.data, row })
+        <span class="hljs-keyword">break</span>;
+      <span class="hljs-keyword">case</span> BUTTON_ACTION_TYPES.delete:
+        deleteRecords([row]);
+        <span class="hljs-keyword">break</span>;
+      <span class="hljs-keyword">case</span> BUTTON_ACTION_TYPES.refresh:
+        loadQuery.refresh();
+        <span class="hljs-keyword">break</span>;
+      <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">break</span>;
+    }
+  }
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">PageContainer</span>&gt;</span>
+      {
+        searchVisible &amp;&amp; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">key</span>=<span class="hljs-string">"search"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Form</span>
+              <span class="hljs-attr">layout</span>=<span class="hljs-string">"inline"</span>
+              <span class="hljs-attr">form</span>=<span class="hljs-string">{searchForm}</span>
+              <span class="hljs-attr">onAutoSubmit</span>=<span class="hljs-string">{handleSubmit}</span>
+            &gt;</span>
+              {renderSearchFields(loadQuery.data?.fields)}
+              <span class="hljs-tag">&lt;<span class="hljs-name">FormButtonGroup.FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Submit</span>&gt;</span>
+                  查询
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Submit</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Reset</span> &gt;</span>
+                  重置
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Reset</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">FormButtonGroup.FormItem</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+        )
+      }
+      <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">xs</span>=<span class="hljs-string">{24}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">textAlign:</span> '<span class="hljs-attr">right</span>', <span class="hljs-attr">padding:</span> '<span class="hljs-attr">10px</span>' }}&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Space</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                <span class="hljs-attr">shape</span>=<span class="hljs-string">'circle'</span>
+                <span class="hljs-attr">icon</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">SearchOutlined</span> /&gt;</span>}
+                onClick={toggle}
+                type={searchVisible ? 'primary' : 'default'}
+              /&gt;
+              {renderOperations(loadQuery.data?.page, onAction)}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Space</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Table</span>
+          <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{loadQuery.data?.list}</span>
+          <span class="hljs-attr">columns</span>=<span class="hljs-string">{renderColumns(loadQuery.data,</span> <span class="hljs-attr">onAction</span>)}
+          <span class="hljs-attr">loading</span>=<span class="hljs-string">{loadQuery.loading}</span>
+          <span class="hljs-attr">rowKey</span>=<span class="hljs-string">{row</span> =&gt;</span> row.id}
+          pagination={false}
+          onChange={(_, __, sorter) =&gt; setSorter(sorter)}
+          rowSelection={rowSelection}
+        /&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">xs</span>=<span class="hljs-string">{24}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">textAlign:</span> '<span class="hljs-attr">right</span>', <span class="hljs-attr">padding:</span> '<span class="hljs-attr">10px</span>' }}&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Pagination</span>
+              <span class="hljs-attr">total</span>=<span class="hljs-string">{loadQuery.data?.total</span> || <span class="hljs-attr">0</span>}
+              <span class="hljs-attr">current</span>=<span class="hljs-string">{loadQuery.data?.current</span> || <span class="hljs-attr">1</span>}
+              <span class="hljs-attr">pageSize</span>=<span class="hljs-string">{loadQuery.data?.pageSize</span> || <span class="hljs-attr">10</span>}
+              <span class="hljs-attr">showSizeChanger</span>
+              <span class="hljs-attr">showQuickJumper</span>
+              <span class="hljs-attr">showTotal</span>=<span class="hljs-string">{total</span> =&gt;</span> `总计${total}条`}
+              onChange={(current, pageSize) =&gt; setPageConfig({ current, pageSize })}
+            /&gt;
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">EditModal</span>
+        <span class="hljs-attr">title</span>=<span class="hljs-string">{modalState.title}</span>
+        <span class="hljs-attr">visible</span>=<span class="hljs-string">{modalState.visible}</span>
+        <span class="hljs-attr">data</span>=<span class="hljs-string">{modalState.data}</span>
+        <span class="hljs-attr">row</span>=<span class="hljs-string">{modalState.row}</span>
+        <span class="hljs-attr">fields</span>=<span class="hljs-string">{loadQuery.data?.fields}</span>
+        <span class="hljs-attr">onOk</span>=<span class="hljs-string">{()</span> =&gt;</span> {
+          setModalState({ visible: false });
+          loadQuery.refresh();
+        }}
+        onCancel={() =&gt; setModalState({ visible: false })}
+      /&gt;
+      {
+        selectedRowKeys.length &gt; 0 &amp;&amp; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">FooterToolbar</span> <span class="hljs-attr">extra</span>=<span class="hljs-string">{</span>
+            &lt;<span class="hljs-attr">Space</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>
+                <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> deleteRecords(selectedRows)}
+              &gt;删除<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Space</span>&gt;</span>
+          } /&gt;
+        )
+      }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">PageContainer</span>&gt;</span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Entity
+</code></pre>
+<h3 id="t186.3 EditModal\index.tsx">6.3 EditModal\index.tsx <a href="#t186.3 EditModal\index.tsx"> # </a></h3>
+<p>src\components\EditModal\index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { message, Modal } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>
+<span class="hljs-keyword">import</span> { createForm } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/core'</span>
+<span class="hljs-keyword">import</span> { FormProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">import</span> { request, useRequest } <span class="hljs-keyword">from</span> <span class="hljs-string">'umi'</span>;
+<span class="hljs-keyword">import</span> { renderFormFields } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/render/field'</span>;
+<span class="hljs-keyword">import</span> { useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">const</span> form = createForm({
+    <span class="hljs-attr">validateFirst</span>: <span class="hljs-literal">true</span>,
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">{ title, visible, onOk, onCancel, row, data = [], fields = [] }</span>) </span>{
+    <span class="hljs-keyword">const</span> options: any = data.reduce(<span class="hljs-function">(<span class="hljs-params">memo, item</span>) =&gt;</span> {
+        <span class="hljs-keyword">let</span> value = item.value;
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Object</span>.keys(row).length &gt; <span class="hljs-number">0</span> &amp;&amp; item.name === <span class="hljs-string">'url'</span>) {
+            value = value.replace(<span class="hljs-regexp">/:([^/]+)/g</span>, (match, key) =&gt; row[key]);
+        }
+        memo[item.name] = value;
+        <span class="hljs-keyword">return</span> memo
+    }, {});
+    <span class="hljs-keyword">const</span> actionQuery = useRequest(<span class="hljs-function">(<span class="hljs-params">{ method, url, data }</span>) =&gt;</span> request(url, { method, data }),
+        {
+            <span class="hljs-attr">manual</span>: <span class="hljs-literal">true</span>,
+            onSuccess(data) {
+                message.success(data.message);
+                onOk();
+            },
+            formatResult(res) {
+                <span class="hljs-keyword">return</span> res;
+            }
+        });
+    useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-keyword">if</span> (visible &amp;&amp; row) {
+            form.setValues(row);
+        }
+    });
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Modal</span>
+            <span class="hljs-attr">title</span>=<span class="hljs-string">{title}</span>
+            <span class="hljs-attr">visible</span>=<span class="hljs-string">{visible}</span>
+            <span class="hljs-attr">onOk</span>=<span class="hljs-string">{()</span> =&gt;</span> {
+                actionQuery.run({ url: options.url, method: options.method, data: form.values });
+            }}
+            onCancel={onCancel}
+            destroyOnClose
+            maskClosable={false}
+            forceRender
+        &gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">FormProvider</span> <span class="hljs-attr">form</span>=<span class="hljs-string">{form}</span>&gt;</span>
+                {renderFormFields(fields)}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">FormProvider</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Modal</span>&gt;</span></span>
+
+    )
+}
+</code></pre>
+<h3 id="t196.4 column.tsx">6.4 column.tsx <a href="#t196.4 column.tsx"> # </a></h3>
+<p>src\utils\render\column.tsx </p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
+<span class="hljs-keyword">import</span> { Tag, Space } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">import</span> { FIELD_TYPES } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/constants/enums'</span>;
+<span class="hljs-keyword">import</span> { renderOperations } <span class="hljs-keyword">from</span> <span class="hljs-string">'./operation'</span>;
+<span class="hljs-keyword">const</span> renderColumn = <span class="hljs-function">(<span class="hljs-params">column</span>) =&gt;</span> {
+    <span class="hljs-keyword">switch</span> (column.type) {
+        <span class="hljs-keyword">case</span> FIELD_TYPES.datetime:
+            column.render = <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> moment(value).format(<span class="hljs-string">'YYYY-MM-DD HH:mm:ss'</span>)
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> FIELD_TYPES.switch:
+            column.render = <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> {
+                <span class="hljs-keyword">const</span> { title } = column.data.find(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item.value === value);
+                <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Tag</span> <span class="hljs-attr">color</span>=<span class="hljs-string">{value</span> ? '<span class="hljs-attr">green</span>' <span class="hljs-attr">:</span> '<span class="hljs-attr">red</span>'}&gt;</span> {title} <span class="hljs-tag">&lt;/<span class="hljs-name">Tag</span>&gt;</span></span>
+            }
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">break</span>;
+    }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">renderColumns</span>(<span class="hljs-params">data, onAction</span>) </span>{
+    <span class="hljs-keyword">if</span> (data) {
+        <span class="hljs-keyword">const</span> { fields, record } = data;
+        <span class="hljs-keyword">return</span> fields
+            .filter(<span class="hljs-function"><span class="hljs-params">field</span> =&gt;</span> !field.hideInColumn)
+            .map(<span class="hljs-function"><span class="hljs-params">field</span> =&gt;</span> {
+                <span class="hljs-keyword">const</span> column = { ...field };
+                column.key = column.dataIndex = field.name;
+                renderColumn(column);
+                <span class="hljs-keyword">return</span> column;
+            }).concat({
+                <span class="hljs-attr">title</span>: <span class="hljs-string">'操作'</span>, <span class="hljs-attr">dataIndex</span>: <span class="hljs-string">'operations'</span>, <span class="hljs-attr">key</span>: <span class="hljs-string">'operations'</span>, <span class="hljs-attr">render</span>: <span class="hljs-function">(<span class="hljs-params">_, row</span>) =&gt;</span> (
+                    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Space</span>&gt;</span>
+                        {renderOperations(record, onAction, row)}
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Space</span>&gt;</span></span>
+                )
+            });
+    }
+    <span class="hljs-keyword">return</span> [];
+}
+</code></pre>
+<h3 id="t206.5 field.tsx">6.5 field.tsx <a href="#t206.5 field.tsx"> # </a></h3>
+<p>src\utils\render\field.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { FIELD_TYPES } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/constants/enums'</span>;
+<span class="hljs-keyword">import</span> moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
+<span class="hljs-keyword">import</span> { Card, InputNumber } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>
+<span class="hljs-keyword">import</span> {
+    FormItem, Input, ArrayTable, Editable, Select, Checkbox, Switch,
+    FormLayout, FormGrid
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/antd'</span>
+<span class="hljs-keyword">import</span> { createSchemaField } <span class="hljs-keyword">from</span> <span class="hljs-string">'@formily/react'</span>
+<span class="hljs-keyword">const</span> SchemaField = createSchemaField({
+    <span class="hljs-attr">components</span>: {
+        FormItem,
+        Editable,
+        Input,
+        ArrayTable,
+        Select,
+        Checkbox,
+        Switch,
+        FormLayout,
+        Card,
+        FormGrid,
+        InputNumber
+    },
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> renderFormFields = <span class="hljs-function">(<span class="hljs-params">fields = []</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span>&gt;</span>
+            {
+                fields.map(field =&gt; {
+                    switch (field.type) {
+                        case FIELD_TYPES.datetime:
+                            return (
+                                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                                    <span class="hljs-attr">name</span>=<span class="hljs-string">{field.name}</span>
+                                    <span class="hljs-attr">title</span>=<span class="hljs-string">{field.title}</span>
+                                    <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                                    <span class="hljs-attr">required</span>
+                                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"DatePicker"</span>
+                                    <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">showTime:</span> <span class="hljs-attr">true</span> }}
+                                /&gt;</span>
+                            )
+                        case FIELD_TYPES.switch:
+                            return (
+                                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                                    <span class="hljs-attr">name</span>=<span class="hljs-string">{field.name}</span>
+                                    <span class="hljs-attr">title</span>=<span class="hljs-string">{field.title}</span>
+                                    <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                                    <span class="hljs-attr">required</span>
+                                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Switch"</span>
+                                /&gt;</span>
+                            )
+                        case FIELD_TYPES.number:
+                            return (
+                                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                                    <span class="hljs-attr">name</span>=<span class="hljs-string">{field.name}</span>
+                                    <span class="hljs-attr">title</span>=<span class="hljs-string">{field.title}</span>
+                                    <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                                    <span class="hljs-attr">required</span>
+                                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"InputNumber"</span>
+                                /&gt;</span>
+                            );
+                        default:
+                            return (
+                                <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                                    <span class="hljs-attr">name</span>=<span class="hljs-string">{field.name}</span>
+                                    <span class="hljs-attr">title</span>=<span class="hljs-string">{field.title}</span>
+                                    <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                                    <span class="hljs-attr">required</span>
+                                    <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                                /&gt;</span>
+                            )
+                    }
+                })
+            }
+        <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField</span>&gt;</span></span>
+    )
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> renderSearchFields = <span class="hljs-function">(<span class="hljs-params">fields = []</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">SchemaField</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.Void</span>
+                <span class="hljs-attr">x-component</span>=<span class="hljs-string">"FormGrid"</span>
+                <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                    <span class="hljs-attr">maxColumns:</span> <span class="hljs-attr">4</span>,
+                    <span class="hljs-attr">minColumns:</span> <span class="hljs-attr">2</span>,
+                }}
+            &gt;</span>
+                {
+                    fields.map(field =&gt; {
+                        switch (field.type) {
+                            case 'number':
+                                return (
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                                        <span class="hljs-attr">name</span>=<span class="hljs-string">{field.name}</span>
+                                        <span class="hljs-attr">title</span>=<span class="hljs-string">{field.title}</span>
+                                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"InputNumber"</span>
+                                    /&gt;</span>
+                                )
+                            case 'datetime':
+                                return (
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                                        <span class="hljs-attr">name</span>=<span class="hljs-string">{field.name}</span>
+                                        <span class="hljs-attr">title</span>=<span class="hljs-string">{field.title}</span>
+                                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                                        <span class="hljs-attr">x-decorator-props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">gridSpan:</span> <span class="hljs-attr">2</span> }}
+                                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"DatePicker.RangePicker"</span>
+                                        <span class="hljs-attr">x-component-props</span>=<span class="hljs-string">{{</span>
+                                            <span class="hljs-attr">showTime:</span> <span class="hljs-attr">true</span>, <span class="hljs-attr">ranges:</span> {
+                                                '今天'<span class="hljs-attr">:</span> [<span class="hljs-attr">moment</span>()<span class="hljs-attr">.startOf</span>('<span class="hljs-attr">day</span>'), <span class="hljs-attr">moment</span>()],
+                                                '本月'<span class="hljs-attr">:</span> [<span class="hljs-attr">moment</span>()<span class="hljs-attr">.startOf</span>('<span class="hljs-attr">month</span>'), <span class="hljs-attr">moment</span>()<span class="hljs-attr">.endOf</span>('<span class="hljs-attr">month</span>')],
+                                                '上周'<span class="hljs-attr">:</span> [<span class="hljs-attr">moment</span>()<span class="hljs-attr">.subtract</span>(<span class="hljs-attr">7</span>, '<span class="hljs-attr">days</span>'), <span class="hljs-attr">moment</span>()],
+                                                '上月'<span class="hljs-attr">:</span> [<span class="hljs-attr">moment</span>()<span class="hljs-attr">.subtract</span>(<span class="hljs-attr">1</span>, '<span class="hljs-attr">months</span>')<span class="hljs-attr">.startOf</span>('<span class="hljs-attr">month</span>'), <span class="hljs-attr">moment</span>()<span class="hljs-attr">.subtract</span>(<span class="hljs-attr">1</span>, '<span class="hljs-attr">months</span>')<span class="hljs-attr">.endOf</span>('<span class="hljs-attr">month</span>')]
+                                            }
+                                        }}
+                                    /&gt;</span>
+                                )
+                            default:
+                                return (
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">SchemaField.String</span>
+                                        <span class="hljs-attr">name</span>=<span class="hljs-string">{field.name}</span>
+                                        <span class="hljs-attr">title</span>=<span class="hljs-string">{field.title}</span>
+                                        <span class="hljs-attr">x-decorator</span>=<span class="hljs-string">"FormItem"</span>
+                                        <span class="hljs-attr">x-component</span>=<span class="hljs-string">"Input"</span>
+                                    /&gt;</span>
+                                )
+                        }
+                    })
+                }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField.Void</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">SchemaField</span>&gt;</span></span>
+    )
+}
+</code></pre>
+<h3 id="t216.6 operation.tsx">6.6 operation.tsx <a href="#t216.6 operation.tsx"> # </a></h3>
+<p>src\utils\render\operation.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Space, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> renderOperations = <span class="hljs-function">(<span class="hljs-params">record = [], onAction, row = {}</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Space</span>&gt;</span>
+            {
+                record.map(operation =&gt; (
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                        <span class="hljs-attr">key</span>=<span class="hljs-string">{operation.title}</span>
+                        <span class="hljs-attr">type</span>=<span class="hljs-string">{operation.type}</span>
+                        <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> onAction(operation, row)}
+                    &gt;{operation.title}<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                ))
+            }
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Space</span>&gt;</span></span>
+    )
+}
+</code></pre>
+<h2 id="t22参考">参考 <a href="#t22参考"> # </a></h2>
+<ul>
+<li><a href="https://next.umijs.org/docs/api/runtime-config#getinitialstate">运行时配置</a></li>
+</ul>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

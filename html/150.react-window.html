@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li class="active"><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01. 长列表渲染">1. 长列表渲染</a></li><li><a href="#t12.长列表组件">2.长列表组件</a></li><li><a href="#t23. 固定高度列表实战">3. 固定高度列表实战</a><ul><li><a href="#t33.1 src\index.js">3.1 src\index.js</a></li><li><a href="#t43.2 fixed-size-list.js">3.2 fixed-size-list.js</a></li><li><a href="#t53.3 fixed-size-list.css">3.3 fixed-size-list.css</a></li></ul></li><li><a href="#t64. 全部渲染">4. 全部渲染</a><ul><li><a href="#t74.1 fixed-size-list.js">4.1 fixed-size-list.js</a></li><li><a href="#t84.2 react-window\index.js">4.2 react-window\index.js</a></li><li><a href="#t94.3 FixedSizeList.js">4.3 FixedSizeList.js</a></li><li><a href="#t104.4 createListComponent.js">4.4 createListComponent.js</a></li></ul></li><li><a href="#t115. 渲染首屏">5. 渲染首屏</a><ul><li><a href="#t125.1 FixedSizeList.js">5.1 FixedSizeList.js</a></li><li><a href="#t135.2 createListComponent.js">5.2 createListComponent.js</a></li></ul></li><li><a href="#t145. 监听滚动">5. 监听滚动</a><ul><li><a href="#t155.1 createListComponent.js">5.1 createListComponent.js</a></li></ul></li><li><a href="#t166. overscan">6. overscan</a><ul><li><a href="#t176.1 createListComponent.js">6.1 createListComponent.js</a></li></ul></li><li><a href="#t187. VariableSizeList实战">7. VariableSizeList实战</a><ul><li><a href="#t197.1  src\index.js">7.1  src\index.js</a></li><li><a href="#t207.2 variable-size-list.js">7.2 variable-size-list.js</a></li><li><a href="#t217.3 variable-size-list.css">7.3 variable-size-list.css</a></li></ul></li><li><a href="#t228. initInstanceProps">8. initInstanceProps</a><ul><li><a href="#t238.1 variable-size-list.js">8.1 variable-size-list.js</a></li><li><a href="#t248.2  src\react-window\index.js">8.2  src\react-window\index.js</a></li><li><a href="#t258.3 VariableSizeList.js">8.3 VariableSizeList.js</a></li><li><a href="#t268.4  createListComponent.js">8.4  createListComponent.js</a></li></ul></li><li><a href="#t279. 预估总高度">9. 预估总高度</a><ul><li><a href="#t289.1 src\react-window\VariableSizeList.js">9.1 src\react-window\VariableSizeList.js</a></li><li><a href="#t299.2 src\react-window\createListComponent.js">9.2 src\react-window\createListComponent.js</a></li></ul></li><li><a href="#t3010. 动态计算高度">10. 动态计算高度</a><ul><li><a href="#t3110.1 VariableSizeList.js">10.1 VariableSizeList.js</a></li><li><a href="#t3210.2 createListComponent.js">10.2 createListComponent.js</a></li></ul></li><li><a href="#t3311. 优化方案">11. 优化方案</a><ul><li><a href="#t3411.1 缓存样式">11.1 缓存样式</a><ul><li><a href="#t3511.1.1 createListComponent.js">11.1.1 createListComponent.js</a></li></ul></li><li><a href="#t3611.2 二分查找和指数扩充">11.2 二分查找和指数扩充</a><ul><li><a href="#t3711.2.1 VariableSizeList.js">11.2.1 VariableSizeList.js</a></li></ul></li><li><a href="#t3811.3 IntersectionObserver">11.3 IntersectionObserver</a><ul><li><a href="#t3911.3.1 createListComponent.js">11.3.1 createListComponent.js</a></li></ul></li></ul></li><li><a href="#t4013. 动态高度列表">13. 动态高度列表</a><ul><li><a href="#t4113.1 src\index.js">13.1 src\index.js</a></li><li><a href="#t4213.2 dynamic-size-list.js">13.2 dynamic-size-list.js</a></li><li><a href="#t4313.4  VariableSizeList.js">13.4  VariableSizeList.js</a></li><li><a href="#t4413.5  createListComponent.js">13.5  createListComponent.js</a></li></ul></li><li><a href="#t4514. 滚动状态">14. 滚动状态</a><ul><li><a href="#t4614.1 src\index.js">14.1 src\index.js</a></li><li><a href="#t4714.2 fixed-size-list.js">14.2 fixed-size-list.js</a></li><li><a href="#t4814.3 src\react-window\createListComponent.js">14.3 src\react-window\createListComponent.js</a></li></ul></li><li><a href="#t4915. 滚动到指定条目">15. 滚动到指定条目</a><ul><li><a href="#t5015.1 src\fixed-size-list.js">15.1 src\fixed-size-list.js</a></li><li><a href="#t5115.2 FixedSizeList.js">15.2 FixedSizeList.js</a></li><li><a href="#t5215.3 src\react-window\createListComponent.js">15.3 src\react-window\createListComponent.js</a></li></ul></li><li><a href="#t5316.其它方案">16.其它方案</a><ul><li><a href="#t5416.1 src\index.js">16.1 src\index.js</a></li><li><a href="#t5516.2 src\Virtuoso.js">16.2 src\Virtuoso.js</a><ul><li><a href="#t5616.3 ResizeObserver">16.3 ResizeObserver</a></li></ul></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <p><img src="../C:\Users\zhangrenyang\Desktop\temp\珠峰架构.png" alt=""></p>
+<h3 id="t01. 长列表渲染">1. 长列表渲染 <a href="#t01. 长列表渲染"> # </a></h3>
+<ul>
+<li>如果有海量数据在浏览器里一次性渲染会有以下问题<ul>
+<li>计算时间过长，用户需要长时间等待，体验差</li>
+<li>CPU处理时间过长，滑动过程中可能卡顿</li>
+<li>GPU负载过高，渲染不过来会出现闪动</li>
+<li>内存占用过多，严重会引起浏览器卡死和崩溃</li>
+</ul>
+</li>
+<li>优化方法<ul>
+<li>下拉底部加载更多实现懒加载，此方法随着内容越来越多，会引起大量的重排和重绘，依赖可能会卡顿</li>
+<li>虚拟列表 其实我们的屏幕可视区域是有限的，能看到的数据也是有限的,所以可以在用户滚动时，只渲染可视区域内的内容即可,不可见区域用空白占位填充, 这样的话页面中的DOM元素少，CPU、GPU和内存负载小</li>
+</ul>
+</li>
+</ul>
+<h3 id="t12.长列表组件">2.长列表组件 <a href="#t12.长列表组件"> # </a></h3>
+<ul>
+<li><a href="https://github.com/bvaughn/react-virtualized">react-virtualized</a></li>
+<li><a href="https://github.com/bvaughn/react-window">react-window</a></li>
+<li><a href="https://react-window.vercel.app/#/examples/list/fixed-size">react-window.vercel.app</a></li>
+</ul>
+<pre><code class="lang-js">npm i react-<span class="hljs-built_in">window</span> --save
+</code></pre>
+<h2 id="t23. 固定高度列表实战">3. 固定高度列表实战 <a href="#t23. 固定高度列表实战"> # </a></h2>
+<h3 id="t33.1 src\index.js">3.1 src\index.js <a href="#t33.1 src\index.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom/client'</span>;
+<span class="hljs-keyword">import</span> FixedSizeList <span class="hljs-keyword">from</span> <span class="hljs-string">'./fixed-size-list'</span>;
+<span class="hljs-keyword">const</span> root = ReactDOM.createRoot(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'root'</span>));
+root.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">FixedSizeList</span> /&gt;</span></span>);
+</code></pre>
+<h3 id="t43.2 fixed-size-list.js">3.2 fixed-size-list.js <a href="#t43.2 fixed-size-list.js"> # </a></h3>
+<p>src\fixed-size-list.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {FixedSizeList} <span class="hljs-keyword">from</span> <span class="hljs-string">'react-window'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'./fixed-size-list.css'</span>;
+<span class="hljs-keyword">const</span> Row = <span class="hljs-function">(<span class="hljs-params">{index,style}</span>)=&gt;</span>(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{index</span> % <span class="hljs-attr">2</span> ? '<span class="hljs-attr">ListItemOdd</span>' <span class="hljs-attr">:</span> '<span class="hljs-attr">ListItemEven</span>'} <span class="hljs-attr">style</span>=<span class="hljs-string">{style}</span>&gt;</span>Row{index}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">FixedSizeList</span>
+          <span class="hljs-attr">className</span>=<span class="hljs-string">'List'</span>
+          <span class="hljs-attr">height</span>=<span class="hljs-string">{200}</span>
+          <span class="hljs-attr">width</span>=<span class="hljs-string">{200}</span>
+          <span class="hljs-attr">itemSize</span>=<span class="hljs-string">{50}</span>
+          <span class="hljs-attr">itemCount</span>=<span class="hljs-string">{1000}</span>
+        &gt;</span>
+            {Row}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">FixedSizeList</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h3 id="t53.3 fixed-size-list.css">3.3 fixed-size-list.css <a href="#t53.3 fixed-size-list.css"> # </a></h3>
+<p>src\fixed-size-list.css</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.List</span> {
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid gray;
+}
+
+<span class="hljs-selector-class">.ListItemEven</span>,
+<span class="hljs-selector-class">.ListItemOdd</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">justify-content</span>: center;
+}
+<span class="hljs-selector-class">.ListItemOdd</span> {
+    <span class="hljs-attribute">background-color</span>: lightcoral;
+}
+<span class="hljs-selector-class">.ListItemEven</span> {
+    <span class="hljs-attribute">background-color</span>: lightblue;
+}
+</code></pre>
+<h2 id="t64. 全部渲染">4. 全部渲染 <a href="#t64. 全部渲染"> # </a></h2>
+<p><img src="https://static.zhufengpeixun.com/reactwindowfixed_1651225094542.jpg" alt="原理"></p>
+<h3 id="t74.1 fixed-size-list.js">4.1 fixed-size-list.js <a href="#t74.1 fixed-size-list.js"> # </a></h3>
+<p>src\fixed-size-list.js</p>
+<pre><code class="lang-diff">import {FixedSizeList} from './react-window';
+import './fixed-size-list.css';
+const Row = ({index,style})=&gt;(
+    &lt;div className={index % 2 ? 'ListItemOdd' : 'ListItemEven'} style={style}&gt;Row{index}&lt;/div&gt;
+)
+function App(){
+    return (
+        &lt;FixedSizeList
+          className='List'
+          height={200}
+          width={200}
+          itemSize={50}
+          itemCount={1000}
+        &gt;
+            {Row}
+        &lt;/FixedSizeList&gt;
+    )
+}
+export default App;
+</code></pre>
+<h3 id="t84.2 react-window\index.js">4.2 react-window\index.js <a href="#t84.2 react-window\index.js"> # </a></h3>
+<p>src\react-window\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> FixedSizeList } <span class="hljs-keyword">from</span> <span class="hljs-string">'./FixedSizeList'</span>;
+</code></pre>
+<h3 id="t94.3 FixedSizeList.js">4.3 FixedSizeList.js <a href="#t94.3 FixedSizeList.js"> # </a></h3>
+<p>src\react-window\FixedSizeList.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> createListComponent <span class="hljs-keyword">from</span> <span class="hljs-string">'./createListComponent'</span>;
+<span class="hljs-keyword">const</span> FixedSizeList = createListComponent({
+    <span class="hljs-attr">getItemSize</span>: <span class="hljs-function">(<span class="hljs-params">{ itemSize }</span>) =&gt;</span> itemSize,<span class="hljs-comment">//每个条目的高度</span>
+    <span class="hljs-attr">getEstimatedTotalSize</span>: <span class="hljs-function">(<span class="hljs-params">{ itemSize, itemCount }</span>) =&gt;</span> itemSize * itemCount, <span class="hljs-comment">//获取预计的总高度</span>
+    <span class="hljs-attr">getItemOffset</span>: <span class="hljs-function">(<span class="hljs-params">{ itemSize }, index</span>) =&gt;</span> itemSize * index <span class="hljs-comment">//获取每个条目的偏移量</span>
+});
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> FixedSizeList;
+</code></pre>
+<h3 id="t104.4 createListComponent.js">4.4 createListComponent.js <a href="#t104.4 createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createListComponent</span>(<span class="hljs-params">{
+    getEstimatedTotalSize,<span class="hljs-regexp">//</span>获取预计的总高度
+    getItemSize,<span class="hljs-regexp">//</span>每个条目的高度
+    getItemOffset<span class="hljs-regexp">//</span>获取每个条目的偏移量
+}</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+        render() {
+            <span class="hljs-keyword">const</span> {width,height,itemCount,<span class="hljs-attr">children</span>:ComponentType} = <span class="hljs-keyword">this</span>.props;
+            <span class="hljs-keyword">const</span> containerStyle = {<span class="hljs-attr">position</span>:<span class="hljs-string">'relative'</span>,width,height,<span class="hljs-attr">overflow</span>:<span class="hljs-string">'auto'</span>, <span class="hljs-attr">willChange</span>: <span class="hljs-string">'transform'</span>};
+            <span class="hljs-keyword">const</span> contentStyle = {<span class="hljs-attr">height</span>:getEstimatedTotalSize(<span class="hljs-keyword">this</span>.props),<span class="hljs-attr">width</span>:<span class="hljs-string">'100%'</span>};
+            <span class="hljs-keyword">const</span> items = [];
+            <span class="hljs-keyword">if</span>(itemCount&gt;<span class="hljs-number">0</span>){
+                <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span>;index&lt;itemCount;index++){
+                    items.push(
+                        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ComponentType</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span> <span class="hljs-attr">index</span>=<span class="hljs-string">{index}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{this._getItemStyle(index)}/</span>&gt;</span></span>
+                    );
+                }
+            }
+            <span class="hljs-keyword">return</span> (
+                <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{containerStyle}</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{contentStyle}</span>&gt;</span>
+                        {items}
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+            )
+        }
+        _getItemStyle=<span class="hljs-function">(<span class="hljs-params">index</span>)=&gt;</span>{
+            <span class="hljs-keyword">const</span> style = {
+                <span class="hljs-attr">position</span>:<span class="hljs-string">'absolute'</span>,
+                <span class="hljs-attr">width</span>:<span class="hljs-string">'100%'</span>,
+                <span class="hljs-attr">height</span>:getItemSize(<span class="hljs-keyword">this</span>.props),
+                <span class="hljs-attr">top</span>:getItemOffset(<span class="hljs-keyword">this</span>.props,index)
+            };
+            <span class="hljs-keyword">return</span> style;
+        }
+    }
+}
+</code></pre>
+<h2 id="t115. 渲染首屏">5. 渲染首屏 <a href="#t115. 渲染首屏"> # </a></h2>
+<h3 id="t125.1 FixedSizeList.js">5.1 FixedSizeList.js <a href="#t125.1 FixedSizeList.js"> # </a></h3>
+<p>src\react-window\FixedSizeList.js</p>
+<pre><code class="lang-diff">import createListComponent from './createListComponent';
+const FixedSizeList = createListComponent({
+    getItemSize: ({ itemSize }) =&gt; itemSize,//每个条目的高度
+    getEstimatedTotalSize: ({ itemSize, itemCount }) =&gt; itemSize * itemCount, //获取预计的总高度
+    getItemOffset: ({ itemSize }, index) =&gt; itemSize * index, //获取每个条目的偏移量
+<span class="hljs-addition">+   getStartIndexForOffset: ({ itemSize }, offset) =&gt; Math.floor(offset / itemSize),//获取起始索引</span>
+<span class="hljs-addition">+   getStopIndexForStartIndex: ({ height, itemSize }, startIndex) =&gt; {//获取结束索引</span>
+<span class="hljs-addition">+       const numVisibleItems = Math.ceil(height / itemSize);</span>
+<span class="hljs-addition">+       return startIndex + numVisibleItems - 1;</span>
+    }
+});
+export default FixedSizeList;
+</code></pre>
+<h3 id="t135.2 createListComponent.js">5.2 createListComponent.js <a href="#t135.2 createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+export default function createListComponent({
+    getEstimatedTotalSize,//获取预计的总高度
+    getItemSize,//每个条目的高度
+    getItemOffset,//获取每个条目的偏移量
+<span class="hljs-addition">+   getStartIndexForOffset,</span>
+<span class="hljs-addition">+   getStopIndexForStartIndex</span>
+}) {
+    return class extends React.Component {
+<span class="hljs-addition">+       state = { scrollOffset: 0 }</span>
+        render() {
+            const { width, height, itemCount, children: ComponentType } = this.props;
+            const containerStyle = { position: 'relative', width, height, overflow: 'auto', willChange: 'transform' };
+            const contentStyle = { height: getEstimatedTotalSize(this.props), width: '100%' };
+            const items = [];
+            if (itemCount &gt; 0) {
+<span class="hljs-addition">+               const [startIndex, stopIndex] = this._getRangeToRender();</span>
+<span class="hljs-addition">+               for (let index = startIndex; index &lt;= stopIndex; index++) {</span>
+                    items.push(
+                        &lt;ComponentType key={index} index={index} style={this._getItemStyle(index)} /&gt;
+                    );
+                }
+            }
+            return (
+                &lt;div style={containerStyle}&gt;
+                    &lt;div style={contentStyle}&gt;
+                        {items}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            )
+        }
+        _getItemStyle = (index) =&gt; {
+            const style = {
+                position: 'absolute',
+                width: '100%',
+                height: getItemSize(this.props),
+                top: getItemOffset(this.props, index)
+            };
+            return style;
+        }
+<span class="hljs-addition">+       _getRangeToRender = () =&gt; {</span>
+<span class="hljs-addition">+           const { scrollOffset } = this.state;</span>
+<span class="hljs-addition">+           const startIndex = getStartIndexForOffset(this.props, scrollOffset);</span>
+<span class="hljs-addition">+           const stopIndex = getStopIndexForStartIndex(this.props, startIndex);</span>
+<span class="hljs-addition">+           return [startIndex, stopIndex];</span>
+<span class="hljs-addition">+       }</span>
+    }
+}
+</code></pre>
+<h2 id="t145. 监听滚动">5. 监听滚动 <a href="#t145. 监听滚动"> # </a></h2>
+<h3 id="t155.1 createListComponent.js">5.1 createListComponent.js <a href="#t155.1 createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+export default function createListComponent({
+    getEstimatedTotalSize,//获取预计的总高度
+    getItemSize,//每个条目的高度
+    getItemOffset,//获取每个条目的偏移量
+    getStartIndexForOffset,
+    getStopIndexForStartIndex
+}) {
+    return class extends React.Component {
+        state = { scrollOffset: 0 }
+        render() {
+            const { width, height, itemCount, children: ComponentType } = this.props;
+            const containerStyle = { position: 'relative', width, height, overflow: 'auto', willChange: 'transform' };
+            const contentStyle = { height: getEstimatedTotalSize(this.props), width: '100%' };
+            const items = [];
+            if (itemCount &gt; 0) {
+                const [startIndex, stopIndex] = this._getRangeToRender();
+                for (let index = startIndex; index &lt;= stopIndex; index++) {
+                    items.push(
+                        &lt;ComponentType key={index} index={index} style={this._getItemStyle(index)} /&gt;
+                    );
+                }
+            }
+            return (
+<span class="hljs-addition">+               &lt;div style={containerStyle} onScroll={this.onScroll}&gt;</span>
+                    &lt;div style={contentStyle}&gt;
+                        {items}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            )
+        }
+<span class="hljs-addition">+       onScroll = event =&gt; {</span>
+<span class="hljs-addition">+           const { scrollTop } = event.currentTarget;</span>
+<span class="hljs-addition">+           this.setState({ scrollOffset: scrollTop });</span>
+<span class="hljs-addition">+       }</span>
+        _getItemStyle = (index) =&gt; {
+            const style = {
+                position: 'absolute',
+                width: '100%',
+                height: getItemSize(this.props),
+                top: getItemOffset(this.props, index)
+            };
+            return style;
+        }
+        _getRangeToRender = () =&gt; {
+            const { scrollOffset } = this.state;
+            const startIndex = getStartIndexForOffset(this.props, scrollOffset);
+            const stopIndex = getStopIndexForStartIndex(this.props, startIndex);
+            return [startIndex, stopIndex]
+        }
+    }
+}
+</code></pre>
+<h2 id="t166. overscan">6. overscan <a href="#t166. overscan"> # </a></h2>
+<ul>
+<li>过扫描实质上是切断图片的边缘，以确保所有重要的东西显示在屏幕上
+<img src="https://static.zhufengpeixun.com/Overscan_1651392914894.png" alt=""></li>
+</ul>
+<h3 id="t176.1 createListComponent.js">6.1 createListComponent.js <a href="#t176.1 createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+export default function createListComponent({
+    getEstimatedTotalSize,//获取预计的总高度
+    getItemSize,//每个条目的高度
+    getItemOffset,//获取每个条目的偏移量
+    getStartIndexForOffset,
+    getStopIndexForStartIndex
+}) {
+    return class extends React.Component {
+<span class="hljs-addition">+       static defaultProps = {</span>
+<span class="hljs-addition">+           overscanCount: 2</span>
+<span class="hljs-addition">+       }</span>
+        state = { scrollOffset: 0 }
+        render() {
+            const { width, height, itemCount, children: ComponentType } = this.props;
+            const containerStyle = { position: 'relative', width, height, overflow: 'auto', willChange: 'transform' };
+            const contentStyle = { height: getEstimatedTotalSize(this.props), width: '100%' };
+            const items = [];
+            if (itemCount &gt; 0) {
+                const [startIndex, stopIndex] = this._getRangeToRender();
+                for (let index = startIndex; index &lt;= stopIndex; index++) {
+                    items.push(
+                        &lt;ComponentType key={index} index={index} style={this._getItemStyle(index)} /&gt;
+                    );
+                }
+            }
+            return (
+                &lt;div style={containerStyle} onScroll={this.onScroll}&gt;
+                    &lt;div style={contentStyle}&gt;
+                        {items}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            )
+        }
+        onScroll = event =&gt; {
+            const { scrollTop } = event.currentTarget;
+            this.setState({ scrollOffset: scrollTop });
+        }
+        _getItemStyle = (index) =&gt; {
+            const style = {
+                position: 'absolute',
+                width: '100%',
+                height: getItemSize(this.props),
+                top: getItemOffset(this.props, index)
+            };
+            return style;
+        }
+        _getRangeToRender = () =&gt; {
+            const { scrollOffset } = this.state;
+<span class="hljs-addition">+           const { itemCount, overscanCount } = this.props;</span>
+            const startIndex = getStartIndexForOffset(this.props, scrollOffset);
+            const stopIndex = getStopIndexForStartIndex(this.props, startIndex);
+            return [
+<span class="hljs-addition">+               Math.max(0, startIndex - overscanCount),</span>
+<span class="hljs-addition">+               Math.max(0, Math.min(itemCount - 1, stopIndex + overscanCount)),</span>
+                startIndex, stopIndex]
+        }
+    }
+}
+</code></pre>
+<h2 id="t187. VariableSizeList实战">7. VariableSizeList实战 <a href="#t187. VariableSizeList实战"> # </a></h2>
+<h3 id="t197.1  src\index.js">7.1  src\index.js <a href="#t197.1  src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-diff">import React from 'react';
+import ReactDOM from 'react-dom/client';
+import FixedSizeList from './fixed-size-list';
+<span class="hljs-addition">+import VariableSizeList from './variable-size-list';</span>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+<span class="hljs-addition">+root.render(&lt;VariableSizeList /&gt;);</span>
+</code></pre>
+<h3 id="t207.2 variable-size-list.js">7.2 variable-size-list.js <a href="#t207.2 variable-size-list.js"> # </a></h3>
+<p>src\variable-size-list.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { VariableSizeList } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-window'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'./variable-size-list.css'</span>;
+
+<span class="hljs-keyword">const</span> rowSizes = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>)
+    .fill(<span class="hljs-literal">true</span>)
+    .map(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-number">25</span> + <span class="hljs-built_in">Math</span>.round(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">50</span>));
+
+<span class="hljs-keyword">const</span> getItemSize = <span class="hljs-function"><span class="hljs-params">index</span> =&gt;</span> rowSizes[index];
+
+<span class="hljs-keyword">const</span> Row = <span class="hljs-function">(<span class="hljs-params">{ index, style }</span>) =&gt;</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{index</span> % <span class="hljs-attr">2</span> ? '<span class="hljs-attr">ListItemOdd</span>' <span class="hljs-attr">:</span> '<span class="hljs-attr">ListItemEven</span>'} <span class="hljs-attr">style</span>=<span class="hljs-string">{style}</span>&gt;</span>
+        Row {index}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)
+<span class="hljs-keyword">const</span> App = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">VariableSizeList</span>
+            <span class="hljs-attr">className</span>=<span class="hljs-string">'List'</span>
+            <span class="hljs-attr">height</span>=<span class="hljs-string">{200}</span>
+            <span class="hljs-attr">width</span>=<span class="hljs-string">{200}</span>
+            <span class="hljs-attr">itemSize</span>=<span class="hljs-string">{getItemSize}</span>
+            <span class="hljs-attr">itemCount</span>=<span class="hljs-string">{1000}</span>
+        &gt;</span>
+            {Row}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">VariableSizeList</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h3 id="t217.3 variable-size-list.css">7.3 variable-size-list.css <a href="#t217.3 variable-size-list.css"> # </a></h3>
+<p>src\variable-size-list.css</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.List</span> {
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid gray;
+}
+
+<span class="hljs-selector-class">.ListItemEven</span>,
+<span class="hljs-selector-class">.ListItemOdd</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">justify-content</span>: center;
+}
+<span class="hljs-selector-class">.ListItemOdd</span> {
+    <span class="hljs-attribute">background-color</span>: lightcoral;
+}
+<span class="hljs-selector-class">.ListItemEven</span> {
+    <span class="hljs-attribute">background-color</span>: lightblue;
+}
+</code></pre>
+<h2 id="t228. initInstanceProps">8. initInstanceProps <a href="#t228. initInstanceProps"> # </a></h2>
+<h3 id="t238.1 variable-size-list.js">8.1 variable-size-list.js <a href="#t238.1 variable-size-list.js"> # </a></h3>
+<p>src\variable-size-list.js</p>
+<pre><code class="lang-diff">import React from 'react';
+<span class="hljs-addition">+import { VariableSizeList } from './react-window';</span>
+import './variable-size-list.css';
+
+const rowSizes = new Array(1000)
+    .fill(true)
+    .map(() =&gt; 25 + Math.round(Math.random() * 50));
+
+const getItemSize = index =&gt; rowSizes[index];
+
+const Row = ({ index, style }) =&gt; (
+    &lt;div className={index % 2 ? 'ListItemOdd' : 'ListItemEven'} style={style}&gt;
+        Row {index}
+    &lt;/div&gt;
+)
+const App = () =&gt; {
+    return (
+        &lt;VariableSizeList
+            className='List'
+            height={200}
+            width={200}
+            itemSize={getItemSize}
+            itemCount={1000}
+        &gt;
+            {Row}
+        &lt;/VariableSizeList&gt;
+    )
+}
+export default App;
+</code></pre>
+<h3 id="t248.2  src\react-window\index.js">8.2  src\react-window\index.js <a href="#t248.2  src\react-window\index.js"> # </a></h3>
+<p>src\react-window\index.js</p>
+<pre><code class="lang-diff">export { default as FixedSizeList } from './FixedSizeList';
+<span class="hljs-addition">+export { default as VariableSizeList } from './VariableSizeList';</span>
+</code></pre>
+<h3 id="t258.3 VariableSizeList.js">8.3 VariableSizeList.js <a href="#t258.3 VariableSizeList.js"> # </a></h3>
+<p>src\react-window\VariableSizeList.js</p>
+<pre><code class="lang-diff">import createListComponent from './createListComponent';
+<span class="hljs-addition">+const DEFAULT_ESTIMATED_SIZE = 50;</span>
+<span class="hljs-addition">+const getEstimatedTotalSize = () =&gt; {}</span>
+<span class="hljs-addition">+const VariableSizeList = createListComponent({</span>
+    getEstimatedTotalSize,
+    getStartIndexForOffset: () =&gt; 0,
+    getStopIndexForStart<span class="hljs-comment">Index: () =&gt; 0,</span>
+    getItemSize: () =&gt; 0,
+    getItemOffset: () =&gt; 0,
+<span class="hljs-addition">+   initInstanceProps(props) {</span>
+<span class="hljs-addition">+       const { estimatedItemSize } = props;</span>
+<span class="hljs-addition">+       const instanceProps = {</span>
+<span class="hljs-addition">+           estimatedItemSize: estimatedItemSize || DEFAULT_ESTIMATED_SIZE</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+       return instanceProps;</span>
+<span class="hljs-addition">+   }</span>
+});
+<span class="hljs-addition">+export default VariableSizeList;</span>
+</code></pre>
+<h3 id="t268.4  createListComponent.js">8.4  createListComponent.js <a href="#t268.4  createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+export default function createListComponent({
+    getEstimatedTotalSize,//获取预计的总高度
+    getItemSize,//每个条目的高度
+    getItemOffset,//获取每个条目的偏移量
+    getStartIndexForOffset,
+    getStopIndexForStartIndex,
+<span class="hljs-addition">+   initInstanceProps</span>
+}) {
+    return class extends React.Component {
+<span class="hljs-addition">+       instanceProps = initInstanceProps&amp;&amp;initInstanceProps(this.props)</span>
+        static defaultProps = {
+            overscanCount: 2
+        }
+    }
+}
+</code></pre>
+<h2 id="t279. 预估总高度">9. 预估总高度 <a href="#t279. 预估总高度"> # </a></h2>
+<h3 id="t289.1 src\react-window\VariableSizeList.js">9.1 src\react-window\VariableSizeList.js <a href="#t289.1 src\react-window\VariableSizeList.js"> # </a></h3>
+<p>src\react-window\VariableSizeList.js</p>
+<pre><code class="lang-diff">import createListComponent from './createListComponent';
+const DEFAULT_ESTIMATED_SIZE = 50;
+<span class="hljs-addition">+const getEstimatedTotalSize = ({ itemCount }, { estimatedItemSize }) =&gt; {</span>
+<span class="hljs-addition">+    const numUnmeasuredItems = itemCount;//未测量的条目</span>
+<span class="hljs-addition">+    const totalSizeOfUnmeasuredItems = numUnmeasuredItems * estimatedItemSize;//未测量条目的总高度</span>
+<span class="hljs-addition">+    return totalSizeOfUnmeasuredItems;</span>
+<span class="hljs-addition">+}</span>
+const VariableSizeList = createListComponent({
+    getEstimatedTotalSize,
+    getStartIndexForOffset: () =&gt; 0,
+    getStopIndexForStart<span class="hljs-comment">Index: () =&gt; 0,</span>
+    getItemSize: () =&gt; 0,
+    getItemOffset: () =&gt; 0,
+    initInstanceProps(props) {
+        const { estimatedItemSize } = props;
+        const instanceProps = {
+            estimatedItemSize: estimatedItemSize || DEFAULT_ESTIMATED_SIZE
+        }
+        return instanceProps;
+    }
+});
+export default VariableSizeList;
+</code></pre>
+<h3 id="t299.2 src\react-window\createListComponent.js">9.2 src\react-window\createListComponent.js <a href="#t299.2 src\react-window\createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+export default function createListComponent({
+    getEstimatedTotalSize,//获取预计的总高度
+    //......
+}) {
+    return class extends React.Component {
+        render() {
+            const { width, height, itemCount, children: ComponentType } = this.props;
+            const containerStyle = { position: 'relative', width, height, overflow: 'auto', willChange: 'transform' };
+<span class="hljs-addition">+           const contentStyle = { height: getEstimatedTotalSize(this.props, this.instanceProps), width: '100%' };</span>
+            const items = [];
+            if (itemCount &gt; 0) {
+                const [startIndex, stopIndex] = this._getRangeToRender();
+                for (let index = startIndex; index &lt;= stopIndex; index++) {
+                    items.push(
+                        &lt;ComponentType key={index} index={index} style={this._getItemStyle(index)} /&gt;
+                    );
+                }
+            }
+            return (
+                &lt;div style={containerStyle} onScroll={this.onScroll}&gt;
+                    &lt;div style={contentStyle}&gt;
+                        {items}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            )
+        }
+        //......
+    }
+}
+</code></pre>
+<h2 id="t3010. 动态计算高度">10. 动态计算高度 <a href="#t3010. 动态计算高度"> # </a></h2>
+<ul>
+<li>lastMeasuredIndex 上次测试过高度的最大索引</li>
+</ul>
+<h3 id="t3110.1 VariableSizeList.js">10.1 VariableSizeList.js <a href="#t3110.1 VariableSizeList.js"> # </a></h3>
+<p>src\react-window\VariableSizeList.js</p>
+<pre><code class="lang-diff">import createListComponent from './createListComponent';
+const DEFAULT_ESTIMATED_SIZE = 50;
+<span class="hljs-addition">+const getEstimatedTotalSize = ({ itemCount }, { estimatedItemSize, lastMeasuredIndex, itemMetadataMap }) =&gt; {</span>
+<span class="hljs-addition">+   let totalSizeOfMeasuredItems = 0;//计算过的条目总大小</span>
+<span class="hljs-addition">+   if (lastMeasuredIndex &gt;= 0) {</span>
+<span class="hljs-addition">+       const itemMetadata = itemMetadataMap[lastMeasuredIndex];</span>
+<span class="hljs-addition">+       totalSizeOfMeasuredItems = itemMetadata.offset + itemMetadata.size;//测试过的总大小</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+   const numUnmeasuredItems = itemCount - lastMeasuredIndex - 1;//未测量的条目</span>
+    const totalSizeOfUnmeasuredItems = numUnmeasuredItems * estimatedItemSize;//未测量条目的总高度
+    return totalSizeOfMeasuredItems + totalSizeOfUnmeasuredItems;
+}
+<span class="hljs-addition">+function findNearestItem(props, instanceProps, offset) {</span>
+<span class="hljs-addition">+    const { lastMeasuredIndex } = instanceProps;</span>
+<span class="hljs-addition">+    for (let index = 0; index &lt;= lastMeasuredIndex; index++) {</span>
+<span class="hljs-addition">+        const currentOffset = getItemMetadata(props, index, instanceProps).offset;</span>
+<span class="hljs-addition">+        if (currentOffset &gt;= offset) {</span>
+<span class="hljs-addition">+            return index;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    return 0;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function getItemMetadata(props, index, instanceProps) {</span>
+<span class="hljs-addition">+    const { itemSize } = props;</span>
+<span class="hljs-addition">+    const { itemMetadataMap, lastMeasuredIndex } = instanceProps;</span>
+<span class="hljs-addition">+    if (index &gt; lastMeasuredIndex) {</span>
+<span class="hljs-addition">+        let offset = 0;//先计算上一个测试过的条目的下一个offset</span>
+<span class="hljs-addition">+        if (lastMeasuredIndex &gt;= 0) {</span>
+<span class="hljs-addition">+            const itemMetadata = itemMetadataMap[lastMeasuredIndex];</span>
+<span class="hljs-addition">+            offset = itemMetadata.offset + itemMetadata.size;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+        //计算从上一个条目到本次索引的offset和size</span>
+<span class="hljs-addition">+        for (let i = lastMeasuredIndex + 1; i &lt;= index; i++) {</span>
+<span class="hljs-addition">+            let size = itemSize(i);</span>
+<span class="hljs-addition">+            itemMetadataMap[i] = { offset, size };</span>
+<span class="hljs-addition">+            offset += size;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+        instanceProps.lastMeasuredIndex = index;</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    return itemMetadataMap[index];</span>
+<span class="hljs-addition">+}</span>
+const VariableSizeList = createListComponent({
+    getEstimatedTotalSize,
+<span class="hljs-addition">+   getStartIndexForOffset: (props, offset, instanceProps) =&gt; findNearestItem(props, instanceProps, offset),</span>
+<span class="hljs-addition">+   getStopIndexForStartIndex: (props, startIndex, scrollOffset, instanceProps) =&gt; {</span>
+<span class="hljs-addition">+       const { itemCount, height } = props;</span>
+<span class="hljs-addition">+       const itemMetadata = getItemMetadata(props, startIndex, instanceProps);</span>
+<span class="hljs-addition">+       const maxOffset = scrollOffset + height;</span>
+<span class="hljs-addition">+       let offset = itemMetadata.offset + itemMetadata.size;</span>
+<span class="hljs-addition">+       let stopIndex = startIndex;</span>
+<span class="hljs-addition">+       while (stopIndex &lt; itemCount - 1 &amp;&amp; offset &lt; maxOffset) {</span>
+<span class="hljs-addition">+           stopIndex++;</span>
+<span class="hljs-addition">+           offset += getItemMetadata(props, stopIndex, instanceProps).size;</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+       return stopIndex;</span>
+<span class="hljs-addition">+   },</span>
+<span class="hljs-addition">+   getItemSize: (props, index, instanceProps) =&gt; getItemMetadata(props, index, instanceProps).size,</span>
+<span class="hljs-addition">+   getItemOffset: (props, index, instanceProps) =&gt; getItemMetadata(props, index, instanceProps).offset,</span>
+    initInstanceProps(props) {
+        const { estimatedItemSize } = props;
+        const instanceProps = {
+            estimatedItemSize: estimatedItemSize || DEFAULT_ESTIMATED_SIZE,
+<span class="hljs-addition">+           itemMetadataMap: {},//存放每个条目的高度和偏移量</span>
+<span class="hljs-addition">+           lastMeasuredIndex: -1//最后一个测量高度的索引</span>
+        }
+        return instanceProps;
+    }
+});
+export default VariableSizeList;
+</code></pre>
+<h3 id="t3210.2 createListComponent.js">10.2 createListComponent.js <a href="#t3210.2 createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+export default function createListComponent({}) {
+    return class extends React.Component {
+        _getItemStyle = (index) =&gt; {
+            const style = {
+                position: 'absolute',
+                width: '100%',
+<span class="hljs-addition">+               height: getItemSize(this.props, index, this.instanceProps),</span>
+<span class="hljs-addition">+               top: getItemOffset(this.props, index, this.instanceProps)</span>
+            };
+            return style;
+        }
+        _getRangeToRender = () =&gt; {
+            const { scrollOffset } = this.state;
+            const { itemCount, overscanCount } = this.props;
+<span class="hljs-addition">+           const startIndex = getStartIndexForOffset(this.props, scrollOffset, this.instanceProps);</span>
+<span class="hljs-addition">+           const stopIndex = getStopIndexForStartIndex(this.props, startIndex, scrollOffset, this.instanceProps);</span>
+            return [
+                Math.max(0, startIndex - overscanCount),
+                Math.max(0, Math.min(itemCount - 1, stopIndex + overscanCount)),
+                startIndex, stopIndex]
+        }
+    }
+}
+</code></pre>
+<h2 id="t3311. 优化方案">11. 优化方案 <a href="#t3311. 优化方案"> # </a></h2>
+<h3 id="t3411.1 缓存样式">11.1 缓存样式 <a href="#t3411.1 缓存样式"> # </a></h3>
+<h4 id="t3511.1.1 createListComponent.js">11.1.1 createListComponent.js <a href="#t3511.1.1 createListComponent.js"> # </a></h4>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">    return class extends React.Component {
+<span class="hljs-addition">+       itemStyleCache = new Map()</span>
+        instanceProps = initInstanceProps&amp;&amp;initInstanceProps(this.props)
+        _getItemStyle = (index) =&gt; {
+<span class="hljs-addition">+           let style;</span>
+<span class="hljs-addition">+           if (this.itemStyleCache.has(index)) {</span>
+<span class="hljs-addition">+               style = this.itemStyleCache.get(index);</span>
+<span class="hljs-addition">+           } else {</span>
+                style = {
+                    position: 'absolute',
+                    width: '100%',
+                    height: getItemSize(this.props, index, this.instanceProps),
+                    top: getItemOffset(this.props, index, this.instanceProps)
+                };
+<span class="hljs-addition">+               this.itemStyleCache.set(index, style);</span>
+<span class="hljs-addition">+           }</span>
+            return style;
+        }
+    }
+}
+</code></pre>
+<h3 id="t3611.2 二分查找和指数扩充">11.2 二分查找和指数扩充 <a href="#t3611.2 二分查找和指数扩充"> # </a></h3>
+<h4 id="t3711.2.1 VariableSizeList.js">11.2.1 VariableSizeList.js <a href="#t3711.2.1 VariableSizeList.js"> # </a></h4>
+<p>src\react-window\VariableSizeList.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+function findNearestItem(props, instanceProps, offset) {</span>
+<span class="hljs-addition">+  const { itemMetadataMap, lastMeasuredIndex } = instanceProps;</span>
+<span class="hljs-addition">+  const lastMeasuredItemOffset =</span>
+<span class="hljs-addition">+    lastMeasuredIndex &gt; 0 ? itemMetadataMap[lastMeasuredIndex].offset : 0;</span>
+<span class="hljs-addition">+  if (lastMeasuredItemOffset &gt;= offset) {</span>
+<span class="hljs-addition">+    return findNearestItemBinarySearch(props, instanceProps, lastMeasuredIndex, 0, offset);</span>
+<span class="hljs-addition">+  } else {</span>
+<span class="hljs-addition">+    return findNearestItemExponentialSearch(</span>
+<span class="hljs-addition">+      props,</span>
+<span class="hljs-addition">+      instanceProps,</span>
+<span class="hljs-addition">+      Math.max(0, lastMeasuredIndex),</span>
+<span class="hljs-addition">+      offset</span>
+<span class="hljs-addition">+    );</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  //return findNearestItemBinarySearch(props, instanceProps, lastMeasuredIndex, 0, offset);</span>
+<span class="hljs-addition">+  //在源码里此处用的是二分查找，把时间复杂度从N=&gt;logN</span>
+<span class="hljs-addition">+  /* for (let index = 0; index &lt;= lastMeasuredIndex; index++) {</span>
+<span class="hljs-addition">+    const currentOffset = getItemMetadata(props, index, instanceProps).offset;</span>
+<span class="hljs-addition">+    //currentOffset=当前条目的offset offset=当前容器向上卷去的高度</span>
+<span class="hljs-addition">+    if (currentOffset &gt;= offset) {</span>
+<span class="hljs-addition">+      return index;</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  return 0; */</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function findNearestItemExponentialSearch(props, instanceProps, index, offset) {</span>
+<span class="hljs-addition">+  const { itemCount } = props;</span>
+<span class="hljs-addition">+  let interval = 1;</span>
+<span class="hljs-addition">+  while (</span>
+<span class="hljs-addition">+    index &lt; itemCount &amp;&amp;</span>
+<span class="hljs-addition">+    getItemMetadata(props, index, instanceProps).offset &lt; offset</span>
+<span class="hljs-addition">+  ) {</span>
+<span class="hljs-addition">+    index += interval;</span>
+<span class="hljs-addition">+    interval *= 2;</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  return findNearestItemBinarySearch(props, instanceProps, Math.min(index, itemCount - 1), Math.floor(index / 2), offset);</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+const findNearestItemBinarySearch = (</span>
+<span class="hljs-addition">+  props,</span>
+<span class="hljs-addition">+  instanceProps,</span>
+<span class="hljs-addition">+  high,</span>
+<span class="hljs-addition">+  low,</span>
+<span class="hljs-addition">+  offset</span>
+<span class="hljs-addition">+) =&gt; {</span>
+<span class="hljs-addition">+  while (low &lt;= high) {</span>
+<span class="hljs-addition">+    const middle = low + Math.floor((high - low) / 2);</span>
+<span class="hljs-addition">+    const currentOffset = getItemMetadata(props, middle, instanceProps).offset;</span>
+<span class="hljs-addition">+    if (currentOffset === offset) {</span>
+<span class="hljs-addition">+      return middle;</span>
+<span class="hljs-addition">+    } else if (currentOffset &lt; offset) {</span>
+<span class="hljs-addition">+      low = middle + 1;</span>
+<span class="hljs-addition">+    } else if (currentOffset &gt; offset) {</span>
+<span class="hljs-addition">+      high = middle - 1;</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  if (low &gt; 0) {</span>
+<span class="hljs-addition">+    return low - 1;</span>
+<span class="hljs-addition">+  } else {</span>
+<span class="hljs-addition">+    return 0;</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+};</span>
+</code></pre>
+<h3 id="t3811.3 IntersectionObserver">11.3 IntersectionObserver <a href="#t3811.3 IntersectionObserver"> # </a></h3>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver">IntersectionObserver</a>接口(从属于Intersection Observer API)为开发者提供了一种可以异步监听目标元素与其祖先或视窗(viewport)交叉状态的手段。祖先元素与视窗(viewport)被称为根(root)</li>
+<li>网页开发时，常常需要判断某个元素是否进入了视口(viewport,即用户能不能看到它，然后执行相应的逻辑</li>
+<li>常见的方法是监听<code>scroll</code>事件，调用元素的<code>getBoundingClientRect</code>方法，得到它对应于视口左上角的坐标，再判断是否在视口之内。这种方法的缺点是，由于scroll事件密集发生，计算量很大，容易造成性能问题</li>
+</ul>
+<h4 id="t3911.3.1 createListComponent.js">11.3.1 createListComponent.js <a href="#t3911.3.1 createListComponent.js"> # </a></h4>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">
+function createListComponent({
+  getEstimatedTotalSize,
+  getItemSize,
+  getItemOffset,
+  getStartIndexForOffset,//根据向上卷去的高度计算开始索引
+  getStopIndexForStartIndex,//根据开始索引和容器的高度计算结束索引
+  initInstanceProps
+}) {
+  return class extends React.Component {
+    constructor(props) {
+      super(props);
+      this.instanceProps = initInstanceProps &amp;&amp; initInstanceProps(this.props)
+      this.state = { scrollOffset: 0 }
+<span class="hljs-addition">+     this.outerRef = React.createRef();</span>
+<span class="hljs-addition">+     this.oldFirstRef = React.createRef();</span>
+<span class="hljs-addition">+     this.oldLastRef = React.createRef();</span>
+<span class="hljs-addition">+     this.firstRef = React.createRef();</span>
+<span class="hljs-addition">+     this.lastRef = React.createRef();</span>
+    }
+    static defaultProps = {
+      overscanCount: 2
+    }
+<span class="hljs-addition">+   componentDidMount() {</span>
+<span class="hljs-addition">+     this.observe(this.oldFirstRef.current = this.firstRef.current);</span>
+<span class="hljs-addition">+     this.observe(this.oldLastRef.current = this.lastRef.current);</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+   componentDidUpdate() {</span>
+<span class="hljs-addition">+     if (this.oldFirstRef.current !== this.firstRef.current) {</span>
+<span class="hljs-addition">+       this.oldFirstRef.current = this.firstRef.current;</span>
+<span class="hljs-addition">+       this.observe(this.firstRef.current);</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+     if (this.oldLastRef.current !== this.lastRef.current) {</span>
+<span class="hljs-addition">+       this.oldLastRef.current = this.lastRef.current;</span>
+<span class="hljs-addition">+       this.observe(this.lastRef.current);</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+   observe = (dom) =&gt; {</span>
+<span class="hljs-addition">+     let io = new IntersectionObserver((entries) =&gt; {</span>
+<span class="hljs-addition">+       entries.forEach(this.onScroll);</span>
+<span class="hljs-addition">+     }, { root: this.outerRef.current })</span>
+<span class="hljs-addition">+     io.observe(dom);</span>
+<span class="hljs-addition">+   }</span>
+    render() {
+      const { width, height, children: Row } = this.props;
+      const containerStyle = { position: 'relative', width, height, overflow: 'auto', willChange: 'transform' };
+      const contentStyle = { width: '100%', height: getEstimatedTotalSize(this.props, this.instanceProps) };
+      const items = [];
+<span class="hljs-addition">+     const [startIndex, stopIndex, originStartIndex, originStopIndex] = this.getRangeToRender();</span>
+      for (let index = startIndex; index &lt;= stopIndex; index++) {
+<span class="hljs-addition">+       const style = this.getItemStyle(index);</span>
+<span class="hljs-addition">+       if (index === originStartIndex) {</span>
+<span class="hljs-addition">+         items.push(</span>
+<span class="hljs-addition">+           &lt;Row key={index} index={index} style={style} forwardRef={this.firstRef} /&gt;</span>
+<span class="hljs-addition">+         );</span>
+<span class="hljs-addition">+         continue;</span>
+<span class="hljs-addition">+       } else if (index === originStopIndex) {</span>
+<span class="hljs-addition">+         items.push(</span>
+<span class="hljs-addition">+           &lt;Row key={index} index={index} style={style} forwardRef={this.lastRef} /&gt;</span>
+<span class="hljs-addition">+         );</span>
+<span class="hljs-addition">+         continue;</span>
+<span class="hljs-addition">+       }</span>
+        items.push(
+          &lt;Row key={index} index={index} style={style} /&gt;
+        );
+      }
+      return (
+<span class="hljs-addition">+      &lt;div style={containerStyle} ref={this.outerRef} &gt;</span>
+          &lt;div style={contentStyle} &gt;
+            {items}
+          &lt;/div&gt;
+        &lt;/div&gt;
+      )
+    }
+    onScroll = () =&gt; {
+      const { scrollTop } = this.outerRef.current;
+      this.setState({ scrollOffset: scrollTop })
+    }
+    getRangeToRender = () =&gt; {
+      const { scrollOffset } = this.state;
+      const { itemCount, overscanCount } = this.props;
+      const startIndex = getStartIndexForOffset(this.props, scrollOffset, this.instanceProps);
+      const stopIndex = getStopIndexForStartIndex(this.props, startIndex, scrollOffset, this.instanceProps);
+      return [
+        Math.max(0, startIndex - overscanCount),
+        Math.min(itemCount - 1, stopIndex + overscanCount),
+        startIndex, stopIndex];
+    }
+    getItemStyle = (index) =&gt; {
+      const style = {
+        position: 'absolute',
+        width: '100%',
+        height: getItemSize(this.props, index, this.instanceProps),
+        top: getItemOffset(this.props, index, this.instanceProps)
+      }
+      return style;
+    }
+  }
+}
+</code></pre>
+<h2 id="t4013. 动态高度列表">13. 动态高度列表 <a href="#t4013. 动态高度列表"> # </a></h2>
+<ul>
+<li><a href="https://github.com/bvaughn/react-window/issues/6">react-window</a></li>
+<li><a href="https://react-window-next.vercel.app/#/examples/list/dynamic-size">dynamic-size</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/ResizeObserver/ResizeObserver">ResizeObserver</a></li>
+<li><a href="https://github.com/TanStack/react-virtual">react-virtual</a></li>
+<li><a href="https://virtuoso.dev/">virtuoso</a></li>
+</ul>
+<h3 id="t4113.1 src\index.js">13.1 src\index.js <a href="#t4113.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-diff">import React from 'react';
+import ReactDOM from 'react-dom/client';
+import FixedSizeList from './fixed-size-list';
+import VariableSizeList from './variable-size-list';
+<span class="hljs-addition">+import DynamicSizeList from './dynamic-size-list'</span>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+<span class="hljs-addition">+root.render(&lt;DynamicSizeList /&gt;);</span>
+</code></pre>
+<h3 id="t4213.2 dynamic-size-list.js">13.2 dynamic-size-list.js <a href="#t4213.2 dynamic-size-list.js"> # </a></h3>
+<p>src\dynamic-size-list.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { VariableSizeList } <span class="hljs-keyword">from</span> <span class="hljs-string">'./react-window'</span>;
+
+<span class="hljs-keyword">const</span> items = [];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">1000</span>; i++) {
+    <span class="hljs-keyword">const</span> height = (<span class="hljs-number">30</span> + <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">20</span>)) + <span class="hljs-string">'px'</span>;
+    <span class="hljs-keyword">const</span> style = {
+        height,
+        <span class="hljs-attr">width</span>: <span class="hljs-string">`100%`</span>,
+        <span class="hljs-attr">backgroundColor</span>: i % <span class="hljs-number">2</span> ? <span class="hljs-string">'green'</span> : <span class="hljs-string">"orange"</span>,
+        <span class="hljs-attr">display</span>: <span class="hljs-string">'flex'</span>,
+        <span class="hljs-attr">alignItems</span>: <span class="hljs-string">'center'</span>,
+        <span class="hljs-attr">justifyContent</span>: <span class="hljs-string">'center'</span>
+    }
+    items.push(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{style}</span>&gt;</span>Row {i}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>);
+}
+
+<span class="hljs-keyword">const</span> Row = <span class="hljs-function">(<span class="hljs-params">{ index }</span>) =&gt;</span> items[index]
+<span class="hljs-keyword">const</span> App = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">VariableSizeList</span>
+            <span class="hljs-attr">isDynamic</span>=<span class="hljs-string">{true}</span>
+            <span class="hljs-attr">className</span>=<span class="hljs-string">'List'</span>
+            <span class="hljs-attr">height</span>=<span class="hljs-string">{200}</span>
+            <span class="hljs-attr">width</span>=<span class="hljs-string">{200}</span>
+            <span class="hljs-attr">itemCount</span>=<span class="hljs-string">{1000}</span>
+        &gt;</span>
+            {Row}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">VariableSizeList</span>&gt;</span></span>
+    )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App
+</code></pre>
+<h3 id="t4313.4  VariableSizeList.js">13.4  VariableSizeList.js <a href="#t4313.4  VariableSizeList.js"> # </a></h3>
+<p>src\react-window\VariableSizeList.js</p>
+<pre><code class="lang-diff">function getItemMetadata(props, index, instanceProps) {
+    const { itemSize } = props;
+    const { itemMetadataMap, lastMeasuredIndex } = instanceProps;
+    if (index &gt; lastMeasuredIndex) {
+        let offset = 0;//先计算上一个测试过的条目的下一个offset
+        if (lastMeasuredIndex &gt;= 0) {
+            const itemMetadata = itemMetadataMap[lastMeasuredIndex];
+            offset = itemMetadata.offset + itemMetadata.size;
+        }
+        //计算从上一个条目到本次索引的offset和size
+        for (let i = lastMeasuredIndex + 1; i &lt;= index; i++) {
+<span class="hljs-addition">+           let size = itemSize ? itemSize(i) : DEFAULT_ESTIMATED_SIZE;</span>
+            itemMetadataMap[i] = { offset, size };
+            offset += size;
+        }
+        instanceProps.lastMeasuredIndex = index;
+    }
+    return itemMetadataMap[index];
+}
+</code></pre>
+<h3 id="t4413.5  createListComponent.js">13.5  createListComponent.js <a href="#t4413.5  createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+
+<span class="hljs-addition">+class ListItem extends React.Component {</span>
+<span class="hljs-addition">+    constructor(props) {</span>
+<span class="hljs-addition">+        super(props);</span>
+<span class="hljs-addition">+        this.domRef = React.createRef();</span>
+<span class="hljs-addition">+        this.resizeObserver = null;</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    componentDidMount() {</span>
+<span class="hljs-addition">+        if (this.domRef.current) {</span>
+<span class="hljs-addition">+            const node = this.domRef.current.firstChild;</span>
+<span class="hljs-addition">+            const { index, onSizeChange } = this.props;</span>
+<span class="hljs-addition">+            this.resizeObserver = new ResizeObserver(() =&gt; {</span>
+<span class="hljs-addition">+                onSizeChange(index, node);</span>
+<span class="hljs-addition">+            });</span>
+<span class="hljs-addition">+            this.resizeObserver.observe(node);</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    componentWillUnmount() {</span>
+<span class="hljs-addition">+        if (this.resizeObserver &amp;&amp; this.domRef.current.firstChild) {</span>
+<span class="hljs-addition">+            this.resizeObserver.unobserve(this.domRef.current.firstChild);</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    render() {</span>
+<span class="hljs-addition">+        const { index, style, ComponentType } = this.props;</span>
+<span class="hljs-addition">+        return (</span>
+<span class="hljs-addition">+            &lt;div style={style} ref={this.domRef}&gt;</span>
+<span class="hljs-addition">+                &lt;ComponentType index={index} /&gt;</span>
+<span class="hljs-addition">+            &lt;/div&gt;</span>
+<span class="hljs-addition">+        )</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+}</span>
+export default function createListComponent({
+    getEstimatedTotalSize,//获取预计的总高度
+    getItemSize,//每个条目的高度
+    getItemOffset,//获取每个条目的偏移量
+    getStartIndexForOffset,
+    getStopIndexForStartIndex,
+    initInstanceProps
+}) {
+    return class extends React.Component {
+        itemStyleCache = new Map()
+        instanceProps = initInstanceProps&amp;&amp;initInstanceProps(this.props)
+        static defaultProps = {
+            overscanCount: 2
+        }
+        state = { scrollOffset: 0 }
+<span class="hljs-addition">+       onSizeChange = (index, node) =&gt; {</span>
+<span class="hljs-addition">+           const height = node.offsetHeight;</span>
+<span class="hljs-addition">+           const { itemMetadataMap, lastMeasuredIndex } = this.instanceProps;</span>
+<span class="hljs-addition">+           const itemMetadata = itemMetadataMap[index];</span>
+<span class="hljs-addition">+           itemMetadata.size = height;</span>
+<span class="hljs-addition">+           let offset = 0;</span>
+<span class="hljs-addition">+           for (let i = 0; i &lt;= lastMeasuredIndex; i++) {</span>
+<span class="hljs-addition">+               const itemMetadata = itemMetadataMap[i];</span>
+<span class="hljs-addition">+               itemMetadata.offset = offset;</span>
+<span class="hljs-addition">+               offset = offset + itemMetadata.size;</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+           this.itemStyleCache.clear();</span>
+<span class="hljs-addition">+           this.forceUpdate();</span>
+<span class="hljs-addition">+       }</span>
+        render() {
+<span class="hljs-addition">+           const { width, height, itemCount, children: ComponentType, isDynamic } = this.props;</span>
+            const containerStyle = { position: 'relative', width, height, overflow: 'auto', willChange: 'transform' };
+            const contentStyle = { height: getEstimatedTotalSize(this.props, this.instanceProps), width: '100%' };
+            const items = [];
+            if (itemCount &gt; 0) {
+                const [startIndex, stopIndex] = this._getRangeToRender();
+                for (let index = startIndex; index &lt;= stopIndex; index++) {
+<span class="hljs-addition">+                   if (isDynamic) {</span>
+<span class="hljs-addition">+                       items.push(</span>
+<span class="hljs-addition">+                           &lt;ListItem</span>
+<span class="hljs-addition">+                               key={index} index={index}</span>
+<span class="hljs-addition">+                               style={this._getItemStyle(index)}</span>
+<span class="hljs-addition">+                               ComponentType={ComponentType}</span>
+<span class="hljs-addition">+                               onSizeChange={this.onSizeChange}</span>
+<span class="hljs-addition">+                           /&gt;</span>
+<span class="hljs-addition">+                       );</span>
+<span class="hljs-addition">+                   } else {</span>
+<span class="hljs-addition">+                       items.push(</span>
+<span class="hljs-addition">+                           &lt;ComponentType</span>
+<span class="hljs-addition">+                               key={index} index={index}</span>
+<span class="hljs-addition">+                               style={this._getItemStyle(index)}</span>
+<span class="hljs-addition">+                           /&gt;</span>
+<span class="hljs-addition">+                       );</span>
+<span class="hljs-addition">+                   }</span>
+               }
+            }
+            return (
+                &lt;div style={containerStyle} onScroll={this.onScroll}&gt;
+                    &lt;div style={contentStyle}&gt;
+                        {items}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            )
+        }
+        onScroll = event =&gt; {
+            const { scrollTop } = event.currentTarget;
+            this.setState({ scrollOffset: scrollTop });
+        }
+        _getItemStyle = (index) =&gt; {
+            let style;
+            if (this.itemStyleCache.has(index)) {
+                style = this.itemStyleCache.get(index);
+            } else {
+                style = {
+                    position: 'absolute',
+                    width: '100%',
+                    height: getItemSize(this.props, index, this.instanceProps),
+                    top: getItemOffset(this.props, index, this.instanceProps)
+                };
+                this.itemStyleCache.set(index, style);
+            }
+            return style;
+        }
+        _getRangeToRender = () =&gt; {
+            const { scrollOffset } = this.state;
+            const { itemCount, overscanCount } = this.props;
+            const startIndex = getStartIndexForOffset(this.props, scrollOffset, this.instanceProps);
+            const stopIndex = getStopIndexForStartIndex(this.props, startIndex, scrollOffset, this.instanceProps);
+            return [
+                Math.max(0, startIndex - overscanCount),
+                Math.max(0, Math.min(itemCount - 1, stopIndex + overscanCount)),
+                startIndex, stopIndex]
+        }
+    }
+}
+</code></pre>
+<h2 id="t4514. 滚动状态">14. 滚动状态 <a href="#t4514. 滚动状态"> # </a></h2>
+<h3 id="t4614.1 src\index.js">14.1 src\index.js <a href="#t4614.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-diff">import React from 'react';
+import ReactDOM from 'react-dom/client';
+import FixedSizeList from './fixed-size-list';
+import VariableSizeList from './variable-size-list';
+import DynamicSizeList from './dynamic-size-list'
+const root = ReactDOM.createRoot(document.getElementById('root'));
+<span class="hljs-addition">+root.render(&lt;FixedSizeList /&gt;);</span>
+</code></pre>
+<h3 id="t4714.2 fixed-size-list.js">14.2 fixed-size-list.js <a href="#t4714.2 fixed-size-list.js"> # </a></h3>
+<p>src\fixed-size-list.js</p>
+<pre><code class="lang-diff">import { FixedSizeList } from './react-window';
+import './fixed-size-list.css';
+<span class="hljs-addition">+const Row = ({ index, style, isScrolling }) =&gt; (</span>
+<span class="hljs-addition">+    &lt;div className={index % 2 ? 'ListItemOdd' : 'ListItemEven'} style={style}&gt;</span>
+<span class="hljs-addition">+        {isScrolling ? 'Scrolling' : `Row ${index}`}</span>
+<span class="hljs-addition">+    &lt;/div&gt;</span>
+<span class="hljs-addition">+)</span>
+
+function App() {
+    return (
+        &lt;FixedSizeList
+            className='List'
+            height={200}
+            width={200}
+            itemSize={50}
+            itemCount={1000}
+<span class="hljs-addition">+           useIsScrolling</span>
+        &gt;
+            {Row}
+        &lt;/FixedSizeList&gt;
+    )
+}
+export default App;
+</code></pre>
+<h3 id="t4814.3 src\react-window\createListComponent.js">14.3 src\react-window\createListComponent.js <a href="#t4814.3 src\react-window\createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+<span class="hljs-addition">+import { requestTimeout, cancelTimeout } from './timer';</span>
+<span class="hljs-addition">+const IS_SCROLLING_DEBOUNCE_INTERVAL = 150;</span>
+class ListItem extends React.Component {
+    constructor(props) {
+        super(props);
+        this.domRef = React.createRef();
+        this.resizeObserver = null;
+    }
+    componentDidMount() {
+        if (this.domRef.current) {
+            const node = this.domRef.current.firstChild;
+            const { index, onSizeChange } = this.props;
+            this.resizeObserver = new ResizeObserver(() =&gt; {
+                onSizeChange(index, node);
+            });
+            this.resizeObserver.observe(node);
+        }
+    }
+    componentWillUnmount() {
+        if (this.resizeObserver &amp;&amp; this.domRef.current.firstChild) {
+            this.resizeObserver.unobserve(this.domRef.current.firstChild);
+        }
+    }
+    render() {
+        const { index, style, ComponentType } = this.props;
+        return (
+            &lt;div style={style} ref={this.domRef}&gt;
+                &lt;ComponentType index={index} /&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+export default function createListComponent({
+    getEstimatedTotalSize,//获取预计的总高度
+    getItemSize,//每个条目的高度
+    getItemOffset,//获取每个条目的偏移量
+    getStartIndexForOffset,
+    getStopIndexForStartIndex,
+    initInstanceProps
+}) {
+    return class extends React.Component {
+        itemStyleCache = new Map()
+        instanceProps = initInstanceProps &amp;&amp; initInstanceProps(this.props)
+        static defaultProps = {
+            overscanCount: 2,
+<span class="hljs-addition">+           useIsScrolling: false</span>
+        }
+<span class="hljs-addition">+       state = { scrollOffset: 0, isScrolling: false }</span>
+        onSizeChange = (index, node) =&gt; {
+            const height = node.offsetHeight;
+            const { itemMetadataMap, lastMeasuredIndex } = this.instanceProps;
+            const itemMetadata = itemMetadataMap[index];
+            itemMetadata.size = height;
+            let offset = 0;
+            for (let i = 0; i &lt;= lastMeasuredIndex; i++) {
+                const itemMetadata = itemMetadataMap[i];
+                itemMetadata.offset = offset;
+                offset = offset + itemMetadata.size;
+            }
+            this.itemStyleCache.clear();
+            this.forceUpdate();
+        }
+        render() {
+<span class="hljs-addition">+           const { width, height, itemCount, children: ComponentType, isDynamic, useIsScrolling } = this.props;</span>
+<span class="hljs-addition">+           const { isScrolling } = this.state;</span>
+            const containerStyle = { position: 'relative', width, height, overflow: 'auto', willChange: 'transform' };
+            const contentStyle = { height: getEstimatedTotalSize(this.props, this.instanceProps), width: '100%' };
+            const items = [];
+            if (itemCount &gt; 0) {
+                const [startIndex, stopIndex] = this._getRangeToRender();
+                for (let index = startIndex; index &lt;= stopIndex; index++) {
+                    if (isDynamic) {
+                        items.push(
+                            &lt;ListItem
+                                key={index} index={index}
+                                style={this._getItemStyle(index)}
+                                ComponentType={ComponentType}
+                                onSizeChange={this.onSizeChange}
+<span class="hljs-addition">+                               isScrolling={useIsScrolling &amp;&amp; isScrolling}</span>
+                            /&gt;
+                        );
+                    } else {
+                        items.push(
+                            &lt;ComponentType
+                                key={index} index={index}
+                                style={this._getItemStyle(index)}
+<span class="hljs-addition">+                               isScrolling={useIsScrolling &amp;&amp; isScrolling}</span>
+                            /&gt;
+                        );
+                    }
+                }
+            }
+            return (
+                &lt;div style={containerStyle} onScroll={this.onScroll}&gt;
+                    &lt;div style={contentStyle}&gt;
+                        {items}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            )
+        }
+        onScroll = event =&gt; {
+            const { scrollTop } = event.currentTarget;
+<span class="hljs-addition">+           this.setState({ scrollOffset: scrollTop, isScrolling: true }, this._resetIsScrollingDebounced);</span>
+        }
+<span class="hljs-addition">+       _resetIsScrollingDebounced = () =&gt; {</span>
+<span class="hljs-addition">+           if (this._resetIsScrollingTimeoutId) {</span>
+<span class="hljs-addition">+               cancelTimeout(this._resetIsScrollingTimeoutId);</span>
+<span class="hljs-addition">+           }</span>
+<span class="hljs-addition">+           this._resetIsScrollingTimeoutId = requestTimeout(</span>
+<span class="hljs-addition">+               this._resetIsScrolling,</span>
+<span class="hljs-addition">+               IS_SCROLLING_DEBOUNCE_INTERVAL</span>
+<span class="hljs-addition">+           );</span>
+<span class="hljs-addition">+       };</span>
+<span class="hljs-addition">+       _resetIsScrolling = () =&gt; {</span>
+<span class="hljs-addition">+           this._resetIsScrollingTimeoutId = null;</span>
+<span class="hljs-addition">+           this.setState({ isScrolling: false });</span>
+<span class="hljs-addition">+       }</span>
+        _getItemStyle = (index) =&gt; {
+            let style;
+            if (this.itemStyleCache.has(index)) {
+                style = this.itemStyleCache.get(index);
+            } else {
+                style = {
+                    position: 'absolute',
+                    width: '100%',
+                    height: getItemSize(this.props, index, this.instanceProps),
+                    top: getItemOffset(this.props, index, this.instanceProps)
+                };
+                this.itemStyleCache.set(index, style);
+            }
+            return style;
+        }
+        _getRangeToRender = () =&gt; {
+            const { scrollOffset } = this.state;
+            const { itemCount, overscanCount } = this.props;
+            const startIndex = getStartIndexForOffset(this.props, scrollOffset, this.instanceProps);
+            const stopIndex = getStopIndexForStartIndex(this.props, startIndex, scrollOffset, this.instanceProps);
+            return [
+                Math.max(0, startIndex - overscanCount),
+                Math.max(0, Math.min(itemCount - 1, stopIndex + overscanCount)),
+                startIndex, stopIndex]
+        }
+    }
+}
+</code></pre>
+<h2 id="t4915. 滚动到指定条目">15. 滚动到指定条目 <a href="#t4915. 滚动到指定条目"> # </a></h2>
+<h3 id="t5015.1 src\fixed-size-list.js">15.1 src\fixed-size-list.js <a href="#t5015.1 src\fixed-size-list.js"> # </a></h3>
+<p>src\fixed-size-list.js</p>
+<pre><code class="lang-diff">import React from 'react';
+import { FixedSizeList } from './react-window';
+import './fixed-size-list.css';
+const Row = ({ index, style, isScrolling }) =&gt; (
+    &lt;div className={index % 2 ? 'ListItemOdd' : 'ListItemEven'} style={style}&gt;
+        {isScrolling ? 'Scrolling' : `Row ${index}`}
+    &lt;/div&gt;
+)
+
+function App() {
+<span class="hljs-addition">+   const listRef = React.useRef();</span>
+    return (
+<span class="hljs-addition">+       &lt;&gt;</span>
+<span class="hljs-addition">+           &lt;button onClick={() =&gt; listRef.current.scrollToItem(50)}&gt;滚动到50&lt;/button&gt;</span>
+            &lt;FixedSizeList
+                className='List'
+                height={200}
+                width={200}
+                itemSize={50}
+                itemCount={1000}
+                useIsScrolling
+<span class="hljs-addition">+               ref={listRef}</span>
+            &gt;
+                {Row}
+            &lt;/FixedSizeList&gt;
+<span class="hljs-addition">+       &lt;/&gt;</span>
+    )
+}
+export default App;
+</code></pre>
+<h3 id="t5115.2 FixedSizeList.js">15.2 FixedSizeList.js <a href="#t5115.2 FixedSizeList.js"> # </a></h3>
+<p>src\react-window\FixedSizeList.js</p>
+<pre><code class="lang-diff">import createListComponent from './createListComponent';
+const FixedSizeList = createListComponent({
+    getItemSize: ({ itemSize }) =&gt; itemSize,//每个条目的高度
+    getEstimatedTotalSize: ({ itemSize, itemCount }) =&gt; itemSize * itemCount, //获取预计的总高度
+    getItemOffset: ({ itemSize }, index) =&gt; itemSize * index, //获取每个条目的偏移量
+    getStartIndexForOffset: ({ itemSize }, offset) =&gt; Math.floor(offset / itemSize),//获取起始索引
+    getStopIndexForStart<span class="hljs-comment">Index: ({ height, itemSize }, startIndex) =&gt; {//获取结束索引</span>
+        const numVisibleItems = Math.ceil(height / itemSize);
+        return startIndex + numVisibleItems - 1;
+    },
+<span class="hljs-addition">+   getOffsetForIndex: (props, index) =&gt; {</span>
+<span class="hljs-addition">+       const { itemSize } = props;</span>
+<span class="hljs-addition">+       return itemSize * index;</span>
+<span class="hljs-addition">+   }</span>
+});
+export default FixedSizeList;
+</code></pre>
+<h3 id="t5215.3 src\react-window\createListComponent.js">15.3 src\react-window\createListComponent.js <a href="#t5215.3 src\react-window\createListComponent.js"> # </a></h3>
+<p>src\react-window\createListComponent.js</p>
+<pre><code class="lang-diff">import React from 'react';
+import { requestTimeout, cancelTimeout } from './timer';
+const IS_SCROLLING_DEBOUNCE_INTERVAL = 150;
+class ListItem extends React.Component {
+    constructor(props) {
+        super(props);
+        this.domRef = React.createRef();
+        this.resizeObserver = null;
+    }
+    componentDidMount() {
+        if (this.domRef.current) {
+            const node = this.domRef.current.firstChild;
+            const { index, onSizeChange } = this.props;
+            this.resizeObserver = new ResizeObserver(() =&gt; {
+                onSizeChange(index, node);
+            });
+            this.resizeObserver.observe(node);
+        }
+    }
+    componentWillUnmount() {
+        if (this.resizeObserver &amp;&amp; this.domRef.current.firstChild) {
+            this.resizeObserver.unobserve(this.domRef.current.firstChild);
+        }
+    }
+    render() {
+        const { index, style, ComponentType } = this.props;
+        return (
+            &lt;div style={style} ref={this.domRef}&gt;
+                &lt;ComponentType index={index} /&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+export default function createListComponent({
+    getEstimatedTotalSize,//获取预计的总高度
+    getItemSize,//每个条目的高度
+    getItemOffset,//获取每个条目的偏移量
+    getStartIndexForOffset,
+    getStopIndexForStartIndex,
+    initInstanceProps,
+<span class="hljs-addition">+   getOffsetForIndex</span>
+}) {
+    return class extends React.Component {
+<span class="hljs-addition">+       outerRef = React.createRef();</span>
+        itemStyleCache = new Map()
+        instanceProps = initInstanceProps &amp;&amp; initInstanceProps(this.props)
+        static defaultProps = {
+            overscanCount: 2,
+            useIsScrolling: false
+        }
+<span class="hljs-addition">+       scrollTo = (scrollOffset) =&gt; {</span>
+<span class="hljs-addition">+           this.setState({ scrollOffset: Math.max(0, scrollOffset) });</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+       scrollToItem = (index) =&gt; {</span>
+<span class="hljs-addition">+           const { itemCount } = this.props;</span>
+<span class="hljs-addition">+           index = Math.max(0, Math.min(index, itemCount - 1))</span>
+<span class="hljs-addition">+           this.scrollTo(</span>
+<span class="hljs-addition">+               getOffsetForIndex(this.props, index)</span>
+<span class="hljs-addition">+           )</span>
+<span class="hljs-addition">+       }</span>
+<span class="hljs-addition">+       componentDidUpdate() {</span>
+<span class="hljs-addition">+           const { scrollOffset } = this.state;</span>
+<span class="hljs-addition">+           this.outerRef.current.scrollTop = scrollOffset;</span>
+<span class="hljs-addition">+       }</span>
+        state = { scrollOffset: 0, isScrolling: false }
+        onSizeChange = (index, node) =&gt; {
+            const height = node.offsetHeight;
+            const { itemMetadataMap, lastMeasuredIndex } = this.instanceProps;
+            const itemMetadata = itemMetadataMap[index];
+            itemMetadata.size = height;
+            let offset = 0;
+            for (let i = 0; i &lt;= lastMeasuredIndex; i++) {
+                const itemMetadata = itemMetadataMap[i];
+                itemMetadata.offset = offset;
+                offset = offset + itemMetadata.size;
+            }
+            this.itemStyleCache.clear();
+            this.forceUpdate();
+        }
+        render() {
+            const { width, height, itemCount, children: ComponentType, isDynamic, useIsScrolling } = this.props;
+            const { isScrolling } = this.state;
+            const containerStyle = { position: 'relative', width, height, overflow: 'auto', willChange: 'transform' };
+            const contentStyle = { height: getEstimatedTotalSize(this.props, this.instanceProps), width: '100%' };
+            const items = [];
+            if (itemCount &gt; 0) {
+                const [startIndex, stopIndex] = this._getRangeToRender();
+                for (let index = startIndex; index &lt;= stopIndex; index++) {
+                    if (isDynamic) {
+                        items.push(
+                            &lt;ListItem
+                                key={index} index={index}
+                                style={this._getItemStyle(index)}
+                                ComponentType={ComponentType}
+                                onSizeChange={this.onSizeChange}
+                                isScrolling={useIsScrolling &amp;&amp; isScrolling}
+                            /&gt;
+                        );
+                    } else {
+                        items.push(
+                            &lt;ComponentType
+                                key={index} index={index}
+                                style={this._getItemStyle(index)}
+                                isScrolling={useIsScrolling &amp;&amp; isScrolling}
+                            /&gt;
+                        );
+                    }
+                }
+            }
+            return (
+<span class="hljs-addition">+               &lt;div style={containerStyle} onScroll={this.onScroll} ref={this.outerRef}&gt;</span>
+                    &lt;div style={contentStyle}&gt;
+                        {items}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            )
+        }
+        onScroll = event =&gt; {
+            const { scrollTop } = event.currentTarget;
+            this.setState({ scrollOffset: scrollTop, isScrolling: true }, this._resetIsScrollingDebounced);
+        }
+        _resetIsScrollingDebounced = () =&gt; {
+            if (this._resetIsScrollingTimeoutId) {
+                cancelTimeout(this._resetIsScrollingTimeoutId);
+            }
+            this._resetIsScrollingTimeoutId = requestTimeout(
+                this._resetIsScrolling,
+                IS_SCROLLING_DEBOUNCE_INTERVAL
+            );
+        };
+        _resetIsScrolling = () =&gt; {
+            this._resetIsScrollingTimeoutId = null;
+            this.setState({ isScrolling: false });
+        }
+        _getItemStyle = (index) =&gt; {
+            let style;
+            if (this.itemStyleCache.has(index)) {
+                style = this.itemStyleCache.get(index);
+            } else {
+                style = {
+                    position: 'absolute',
+                    width: '100%',
+                    height: getItemSize(this.props, index, this.instanceProps),
+                    top: getItemOffset(this.props, index, this.instanceProps)
+                };
+                this.itemStyleCache.set(index, style);
+            }
+            return style;
+        }
+        _getRangeToRender = () =&gt; {
+            const { scrollOffset } = this.state;
+            const { itemCount, overscanCount } = this.props;
+            const startIndex = getStartIndexForOffset(this.props, scrollOffset, this.instanceProps);
+            const stopIndex = getStopIndexForStartIndex(this.props, startIndex, scrollOffset, this.instanceProps);
+            return [
+                Math.max(0, startIndex - overscanCount),
+                Math.max(0, Math.min(itemCount - 1, stopIndex + overscanCount)),
+                startIndex, stopIndex]
+        }
+    }
+}
+</code></pre>
+<h2 id="t5316.其它方案">16.其它方案 <a href="#t5316.其它方案"> # </a></h2>
+<ul>
+<li><a href="https://github.com/TanStack/react-virtual">react-virtual</a></li>
+<li><a href="https://virtuoso.dev/">virtuoso</a></li>
+</ul>
+<h3 id="t5416.1 src\index.js">16.1 src\index.js <a href="#t5416.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-diff">import React from 'react';
+import ReactDOM from 'react-dom/client';
+import FixedSizeList from './fixed-size-list';
+import VariableSizeList from './variable-size-list';
+import DynamicSizeList from './dynamic-size-list'
+<span class="hljs-addition">+import Virtuoso from './Virtuoso'</span>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+<span class="hljs-addition">+root.render(&lt;DynamicSizeList /&gt;);</span>
+</code></pre>
+<h3 id="t5516.2 src\Virtuoso.js">16.2 src\Virtuoso.js <a href="#t5516.2 src\Virtuoso.js"> # </a></h3>
+<p>src\Virtuoso.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> { Virtuoso } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-virtuoso'</span>
+<span class="hljs-keyword">const</span> items = [];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">200</span>; i++) {
+  <span class="hljs-keyword">const</span> height = (<span class="hljs-number">30</span>+<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">20</span>) + <span class="hljs-string">'px'</span>;
+  <span class="hljs-keyword">const</span> style = {
+    height,
+    <span class="hljs-attr">width</span>: <span class="hljs-string">`100%`</span>,
+    <span class="hljs-attr">backgroundColor</span>:i%<span class="hljs-number">2</span>?<span class="hljs-string">'green'</span>:<span class="hljs-string">"orange"</span>
+  }
+  items.push(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{</span> <span class="hljs-attr">style</span> }&gt;</span>Row {i}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>);
+}
+<span class="hljs-keyword">const</span> App = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Virtuoso</span>
+        <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">height:</span> '<span class="hljs-attr">200px</span>',<span class="hljs-attr">width:</span>'<span class="hljs-attr">200px</span>' }}
+        <span class="hljs-attr">totalCount</span>=<span class="hljs-string">{200}</span>
+        <span class="hljs-attr">itemContent</span>=<span class="hljs-string">{index</span> =&gt;</span> items[index]}
+    /&gt;</span>
+)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h4 id="t5616.3 ResizeObserver">16.3 ResizeObserver <a href="#t5616.3 ResizeObserver"> # </a></h4>
+<ul>
+<li><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/ResizeObserver/ResizeObserver">ResizeObserver</a></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>ResizeObserver<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"logo"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">let</span> logo = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'logo'</span>);
+        <span class="hljs-built_in">console</span>.log(logo.offsetHeight);
+        <span class="hljs-keyword">const</span> resizeObserver = <span class="hljs-keyword">new</span> ResizeObserver(<span class="hljs-function"><span class="hljs-params">entries</span> =&gt;</span> {
+            <span class="hljs-built_in">console</span>.log(logo.offsetHeight);
+        });
+        resizeObserver.observe(logo);
+        setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+            logo.src = <span class="hljs-string">'https://img.zhufengpeixun.com/zfjglogo.png'</span>;
+        },<span class="hljs-number">1000</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

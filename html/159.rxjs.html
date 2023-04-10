@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li class="active"><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01.RxJS">1.RxJS</a><ul><li><a href="#t11.1 RxJS介绍">1.1 RxJS介绍</a></li><li><a href="#t21.2 基本概念">1.2 基本概念</a></li><li><a href="#t31.3 参考链接">1.3 参考链接</a></li></ul></li><li><a href="#t42.Observable">2.Observable</a><ul><li><a href="#t52.1 Pull和Push">2.1 Pull和Push</a></li><li><a href="#t62.2 Stream(流)">2.2 Stream(流)</a></li><li><a href="#t72.3 Observable">2.3 Observable</a></li><li><a href="#t82.4 src\index.js">2.4 src\index.js</a></li><li><a href="#t92.5 rxjs\index.js">2.5 rxjs\index.js</a></li><li><a href="#t102.6  Observable.js">2.6  Observable.js</a></li><li><a href="#t112.7  Subscriber.js">2.7  Subscriber.js</a></li><li><a href="#t122.8 isFunction.js">2.8 isFunction.js</a></li></ul></li><li><a href="#t133. of">3. of</a><ul><li><a href="#t143.1 src\index.js">3.1 src\index.js</a></li><li><a href="#t153.2 rxjs\index.js">3.2 rxjs\index.js</a></li><li><a href="#t162.3 of.js">2.3 of.js</a></li><li><a href="#t173.4 from.js">3.4 from.js</a></li><li><a href="#t183.5 innerFrom.js">3.5 innerFrom.js</a></li><li><a href="#t193.6  isArrayLike.js">3.6  isArrayLike.js</a></li><li><a href="#t203.7 isPromise.js">3.7 isPromise.js</a></li></ul></li><li><a href="#t214. fromEvent">4. fromEvent</a><ul><li><a href="#t224.1 src\index.js">4.1 src\index.js</a></li><li><a href="#t234.2 rxjs\index.js">4.2 rxjs\index.js</a></li><li><a href="#t244.3 fromEvent.js">4.3 fromEvent.js</a></li><li><a href="#t254.4 Subscriber.js">4.4 Subscriber.js</a></li><li><a href="#t264.5 Subscription.js">4.5 Subscription.js</a></li><li><a href="#t274.6 Observable.js">4.6 Observable.js</a></li></ul></li><li><a href="#t285. map&amp;filter">5. map&amp;filter</a><ul><li><a href="#t295.1 Operators">5.1 Operators</a></li><li><a href="#t305.2 src\index.js">5.2 src\index.js</a></li><li><a href="#t315.3 rxjs\index.js">5.3 rxjs\index.js</a></li><li><a href="#t325.4  Observable.js">5.4  Observable.js</a></li><li><a href="#t335.5 map.js">5.5 map.js</a></li><li><a href="#t345.6 filter.js">5.6 filter.js</a></li></ul></li><li><a href="#t356. pipe">6. pipe</a><ul><li><a href="#t366.1 src\index.js">6.1 src\index.js</a></li><li><a href="#t376.2 Observable.js">6.2 Observable.js</a></li><li><a href="#t386.3  pipe.js">6.3  pipe.js</a></li><li><a href="#t396.4  identity.js">6.4  identity.js</a></li></ul></li><li><a href="#t407.asyncScheduler">7.asyncScheduler</a><ul><li><a href="#t417.1 src\index.js">7.1 src\index.js</a></li><li><a href="#t427.2 rxjs\index.js">7.2 rxjs\index.js</a></li><li><a href="#t437.3 Scheduler.js">7.3 Scheduler.js</a></li><li><a href="#t447.4  AsyncAction.js">7.4  AsyncAction.js</a></li><li><a href="#t457.5 async.js">7.5 async.js</a></li></ul></li><li><a href="#t468.timer">8.timer</a><ul><li><a href="#t478.1 src\index.js">8.1 src\index.js</a></li><li><a href="#t488.2 rxjs\index.js">8.2 rxjs\index.js</a></li><li><a href="#t498.3 timer.js">8.3 timer.js</a></li></ul></li><li><a href="#t509.interval">9.interval</a><ul><li><a href="#t519.1 src\index.js">9.1 src\index.js</a></li><li><a href="#t529.2 rxjs\index.js">9.2 rxjs\index.js</a></li><li><a href="#t539.3 interval.js">9.3 interval.js</a></li><li><a href="#t549.4 timer.js">9.4 timer.js</a></li></ul></li><li><a href="#t5510.take">10.take</a><ul><li><a href="#t5610.1 src\index.js">10.1 src\index.js</a></li><li><a href="#t5710.2 rxjs\index.js">10.2 rxjs\index.js</a></li><li><a href="#t5810.3  take.js">10.3  take.js</a></li></ul></li><li><a href="#t5911.Subject">11.Subject</a><ul><li><a href="#t6011.1 Cold Observable和Hot Observable">11.1 Cold Observable和Hot Observable</a></li><li><a href="#t6111.1.1 Cold Observable">11.1.1 Cold Observable</a></li><li><a href="#t6211.1.2 Hot Observable">11.1.2 Hot Observable</a></li><li><a href="#t6311.1 src\index.js">11.1 src\index.js</a></li><li><a href="#t6411.2 rxjs\index.js">11.2 rxjs\index.js</a></li><li><a href="#t6511.3 Subject.js">11.3 Subject.js</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01.RxJS">1.RxJS <a href="#t01.RxJS"> # </a></h2>
+<h3 id="t11.1 RxJS介绍">1.1 RxJS介绍 <a href="#t11.1 RxJS介绍"> # </a></h3>
+<ul>
+<li><code>RxJS</code> 是一个使用可观察序列组合异步和基于事件的程序的库</li>
+<li>它提供了一种核心类型，即 <code>Observable</code>，以及卫星类型（<code>Observer</code>，<code>Schedulers</code>，<code>Subjects</code>）和操作符，这些操作符受到 <code>Array</code> 方法（map，filter，reduce，every 等）的启发，可以将异步事件处理为集合</li>
+<li><code>ReactiveX</code> 结合了观察者模式和迭代器模式，并将函数式编程与集合相结合，以满足对理想管理事件序列的需求</li>
+</ul>
+<h3 id="t21.2 基本概念">1.2 基本概念 <a href="#t21.2 基本概念"> # </a></h3>
+<ul>
+<li>Observable 表示可调用的未来值或事件的集合的想法</li>
+<li>Observer 是一组回调，知道如何监听 Observable 传递的值</li>
+<li>Subscription 表示 <code>Observable</code> 的执行，主要用于取消执行</li>
+<li>Operators 是纯函数，使用操作（如 <code>map、</code>filter、<code>concat</code>、<code>reduce</code> 等）处理集合时具有函数式编程风格</li>
+<li>Subject 等同于 <code>EventEmitter</code>，是将值或事件多播到多个 <code>Observer</code> 的唯一方法</li>
+<li>Schedulers 是集中式调度程序，用于控制并发，允许我们协调计算发生在例如 setTimeout、requestAnimationFrame 或其他位置的时间</li>
+</ul>
+<h3 id="t31.3 参考链接">1.3 参考链接 <a href="#t31.3 参考链接"> # </a></h3>
+<ul>
+<li><a href="https://rxjs.dev/">官方文档</a></li>
+<li><a href="https://rxjs.dev/guide/overview">入门指南</a></li>
+<li><a href="https://rxjs.dev/examples">例子</a></li>
+<li><a href="https://rxjs.dev/faq">常见问题</a></li>
+<li><a href="https://cn.rx.js.org/">中文文档</a></li>
+<li><a href="https://github.com/ReactiveX/rxjs">github源码</a></li>
+<li><a href="https://rxmarbles.com/">rxjs弹珠图</a></li>
+<li><a href="https://rxviz.com/">rxjs可视化</a></li>
+<li><a href="https://reactive.how/rxjs/explorer">explorer</a></li>
+</ul>
+<h2 id="t42.Observable">2.Observable <a href="#t42.Observable"> # </a></h2>
+<ul>
+<li><code>Observables(可观察对象)</code>是懒惰的多个值的 <code>Push</code> 集合,可观察对象是一种异步数据流，它可以在将来推送多个值。它们是<code>惰性</code>的，因为它们不会立即开始发送值，直到有人订阅它们</li>
+</ul>
+<h3 id="t52.1 Pull和Push">2.1 Pull和Push <a href="#t52.1 Pull和Push"> # </a></h3>
+<ul>
+<li><code>Pull</code> 和 <code>Push</code> 是两种不同的协议，用于描述数据生产者如何与数据消费者进行通信</li>
+<li>在 <code>Pull</code> 系统中，消费者决定何时从数据生产者接收数据。生产者本身并不知道何时将数据传递给消费者</li>
+<li>每个<code>JavaScript</code>函数都是<code>Pull</code>系统。函数是数据的生产者，而调用函数的代码通过<code>拉出</code>单个返回值从其调用中消费它</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">generator</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">yield</span> <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">yield</span> <span class="hljs-number">2</span>;
+  <span class="hljs-keyword">yield</span> <span class="hljs-number">3</span>;
+}
+
+<span class="hljs-keyword">const</span> iterator = generator();
+<span class="hljs-built_in">console</span>.log(iterator.next().value);  <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(iterator.next().value);  <span class="hljs-comment">// 2</span>
+<span class="hljs-built_in">console</span>.log(iterator.next().value);  <span class="hljs-comment">// 3</span>
+</code></pre>
+<ul>
+<li>在<code>Push</code>系统中，生产者决定何时将数据发送给消费者。消费者不知道何时会收到该数据</li>
+<li><code>Promise</code>是 JavaScript 中最常见的推送系统。<code>Promise</code>向已注册的回调函数（Consumers）提供已解析的值</li>
+<li><code>RxJS</code>引入了可观察对象，这是一种新的 JavaScript 推送系统。可观察对象是多个值的生产者，将它们<code>推送</code>到<code>观察者（Consumers）</code></li>
+</ul>
+<pre><code class="lang-js">button.addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Button was clicked!'</span>);
+});
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">生产者</th>
+<th style="text-align:left">消费者</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Pull</td>
+<td style="text-align:left">被动：在请求时生成数据</td>
+<td style="text-align:left">主动：决定何时请求数据</td>
+</tr>
+<tr>
+<td style="text-align:left">Push</td>
+<td style="text-align:left">主动：以自己的速度生成数据</td>
+<td style="text-align:left">被动：对收到的数据做出反应</td>
+</tr>
+</tbody>
+</table>
+<h3 id="t62.2 Stream(流)">2.2 Stream(流) <a href="#t62.2 Stream(流)"> # </a></h3>
+<ul>
+<li>流是随着时间变化的值序列</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/stream_1671959850340.gif" alt=""></p>
+<p><img src="https://static.zhufengpeixun.com/stream2_1671959921595.png" alt=""></p>
+<h3 id="t72.3 Observable">2.3 Observable <a href="#t72.3 Observable"> # </a></h3>
+<ul>
+<li><code>Observer(观察者)</code> 是由可观察对象传递的值的消费者。观察者仅仅是一组回调，每种类型的通知由可观察对象传递：<code>next</code>，<code>error</code> 和 <code>complete</code></li>
+<li>要使用<code>Observer(观察者)</code>，请将其提供给可观察对象的<code>subscribe</code></li>
+<li>观察者只是带有三个回调的对象，每种类型的通知都有一个回调，可观察对象可能传递这些通知</li>
+<li><code>RxJS</code>中的观察者也可能是部分可选的的。如果不提供其中一个回调，可观察对象的执行仍然会正常进行，但是某些类型的通知将被忽略，因为观察者中没有相应的回调</li>
+<li>在订阅可观察对象时，您也可以将<code>next</code>回调作为参数提供，而不必附加到观察者对象上,在 <code>observable.subscribe</code> 内部，它将使用回调参数作为<code>next</code>处理程序创建观察者对象</li>
+<li><code>调用</code>或<code>订阅</code>是一个隔离的操作：两次函数调用会触发两个单独的副作用，两次可观察对象订阅会触发两个单独的副作用。与<code>事件发射器（EventEmitters）</code>不同，事件发射器共享副作用并且无论是否存在订阅者都有急切执行，而可观察对象没有共享的执行并且是懒惰的</li>
+<li><code>Observables</code> 可以使用 <code>new Observable</code> 或创建操作符创建，使用观察者订阅，执行以向观察者发送 <code>next</code> / <code>error</code> / <code>complete</code> 通知，并且可以对其执行进行处理</li>
+<li>Observable 的核心关注点<ul>
+<li>创建 <code>Observables</code></li>
+<li>订阅 <code>Observables</code></li>
+<li>执行 <code>Observables</code></li>
+<li>处理 <code>Observables</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="t82.4 src\index.js">2.4 src\index.js <a href="#t82.4 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+<span class="hljs-keyword">const</span> observable = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span> =&gt;</span> {
+  subscriber.next(<span class="hljs-number">1</span>)
+  subscriber.next(<span class="hljs-number">2</span>)
+  subscriber.next(<span class="hljs-number">3</span>)
+  subscriber.complete()
+})
+observable.subscribe({
+  <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'next value:'</span>, value),
+  <span class="hljs-attr">complete</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'complete'</span>)
+  }
+})
+observable.subscribe(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'next value:'</span>, value))
+</code></pre>
+<h3 id="t92.5 rxjs\index.js">2.5 rxjs\index.js <a href="#t92.5 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'./internal/Observable'</span>;
+</code></pre>
+<h3 id="t102.6  Observable.js">2.6  Observable.js <a href="#t102.6  Observable.js"> # </a></h3>
+<p>src\rxjs\internal\Observable.js</p>
+<pre><code class="lang-js">
+<span class="hljs-keyword">import</span> { Subscriber } <span class="hljs-keyword">from</span> <span class="hljs-string">'./Subscriber'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Observable</span> </span>{
+    <span class="hljs-keyword">constructor</span>(subscribe) {
+        <span class="hljs-keyword">if</span> (subscribe) {
+            <span class="hljs-keyword">this</span>._subscribe = subscribe;
+        }
+    }
+    subscribe(observerOrNext) {
+        <span class="hljs-keyword">const</span> subscriber = <span class="hljs-keyword">new</span> Subscriber(observerOrNext);
+        <span class="hljs-keyword">this</span>._subscribe(subscriber)
+        <span class="hljs-keyword">return</span> subscriber;
+    }
+}
+</code></pre>
+<h3 id="t112.7  Subscriber.js">2.7  Subscriber.js <a href="#t112.7  Subscriber.js"> # </a></h3>
+<p>src\rxjs\internal\Subscriber.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { isFunction } <span class="hljs-keyword">from</span> <span class="hljs-string">'./util/isFunction'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subscriber</span> </span>{
+    isStopped = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">constructor</span>(observerOrNext) {
+        <span class="hljs-keyword">let</span> observer;
+        <span class="hljs-keyword">if</span> (isFunction(observerOrNext)) {
+            observer = {
+                <span class="hljs-attr">next</span>: observerOrNext
+            };
+        } <span class="hljs-keyword">else</span> {
+            observer = observerOrNext;
+        }
+        <span class="hljs-keyword">this</span>.destination = observer;
+    }
+    next(value) {
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.isStopped) {
+            <span class="hljs-keyword">this</span>.destination.next(value);
+        }
+    }
+    complete() {
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.isStopped) {
+            <span class="hljs-keyword">this</span>.isStopped = <span class="hljs-literal">true</span>;
+            <span class="hljs-keyword">this</span>.destination.complete?.();
+        }
+    }
+}
+</code></pre>
+<h3 id="t122.8 isFunction.js">2.8 isFunction.js <a href="#t122.8 isFunction.js"> # </a></h3>
+<p>src\rxjs\internal\util\isFunction.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isFunction</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> value === <span class="hljs-string">'function'</span>;
+}
+</code></pre>
+<h2 id="t133. of">3. of <a href="#t133. of"> # </a></h2>
+<ul>
+<li>RxJS 的 <code>of</code> 操作符允许你创建一个 <code>Observable</code>，它发出一组项目，然后完成</li>
+<li>你可以使用它来将任何值发送到一个 <code>Observable</code> 中，例如，你可以使用它来将一个数字数组转换为 <code>Observable</code></li>
+<li><code>of</code> 操作符是同步的，意味着它会立即发出所有的值，并立即完成,如果你需要异步发出值，你可以使用 from 操作符</li>
+<li>RxJS 的 <code>from</code> 操作符允许你将多种不同的数据类型转换为 Observable，包括数组、类数组对象(如arguments对象)、迭代器和可观察对象</li>
+<li><code>from</code> 操作符是异步的，意味着它会在内部使用内置的调度</li>
+</ul>
+<h3 id="t143.1 src\index.js">3.1 src\index.js <a href="#t143.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { <span class="hljs-keyword">of</span>, <span class="hljs-keyword">from</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+<span class="hljs-keyword">const</span> arrayLike = <span class="hljs-keyword">of</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+arrayLike.subscribe({
+  <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`arrayLike:`</span>, value),
+  <span class="hljs-attr">complete</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'arrayLike done'</span>),
+});
+
+<span class="hljs-keyword">const</span> promiseLike = <span class="hljs-keyword">from</span>(<span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-number">4</span>))
+
+promiseLike.subscribe({
+  <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`promiseLike:`</span>, value),
+  <span class="hljs-attr">complete</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'promiseLike done'</span>),
+});
+</code></pre>
+<h3 id="t153.2 rxjs\index.js">3.2 rxjs\index.js <a href="#t153.2 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-diff">export { Observable } from './internal/Observable';
+<span class="hljs-addition">+export { of } from './internal/observable/of';</span>
+<span class="hljs-addition">+export { from } from './internal/observable/from';</span>
+</code></pre>
+<h3 id="t162.3 of.js">2.3 of.js <a href="#t162.3 of.js"> # </a></h3>
+<p>src\rxjs\internal\observable\of.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { <span class="hljs-keyword">from</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./from'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">of</span>(<span class="hljs-params">...args</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">from</span>(args);
+}
+</code></pre>
+<h3 id="t173.4 from.js">3.4 from.js <a href="#t173.4 from.js"> # </a></h3>
+<p>src\rxjs\internal\observable\from.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { innerFrom } <span class="hljs-keyword">from</span> <span class="hljs-string">'./innerFrom'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">from</span>(<span class="hljs-params">input</span>) </span>{
+  <span class="hljs-keyword">return</span> innerFrom(input)
+}
+</code></pre>
+<h3 id="t183.5 innerFrom.js">3.5 innerFrom.js <a href="#t183.5 innerFrom.js"> # </a></h3>
+<p>src\rxjs\internal\observable\innerFrom.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { isArrayLike } <span class="hljs-keyword">from</span> <span class="hljs-string">'../util/isArrayLike'</span>;
+<span class="hljs-keyword">import</span> { isPromise } <span class="hljs-keyword">from</span> <span class="hljs-string">'../util/isPromise'</span>;
+<span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'../Observable'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">innerFrom</span>(<span class="hljs-params">input</span>) </span>{
+  <span class="hljs-keyword">if</span> (input <span class="hljs-keyword">instanceof</span> Observable) {
+    <span class="hljs-keyword">return</span> input;
+  }
+  <span class="hljs-keyword">if</span> (input != <span class="hljs-literal">null</span>) {
+    <span class="hljs-keyword">if</span> (isArrayLike(input)) {
+      <span class="hljs-keyword">return</span> fromArrayLike(input);
+    }
+    <span class="hljs-keyword">if</span> (isPromise(input)) {
+      <span class="hljs-keyword">return</span> fromPromise(input);
+    }
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fromArrayLike</span>(<span class="hljs-params">array</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span> =&gt;</span> {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; array.length; i++) {
+      subscriber.next(array[i]);
+    }
+    subscriber.complete();
+  });
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fromPromise</span>(<span class="hljs-params">promise</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span> =&gt;</span> {
+    promise.then(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+      subscriber.next(value);
+      subscriber.complete();
+    });
+  });
+}
+</code></pre>
+<h3 id="t193.6  isArrayLike.js">3.6  isArrayLike.js <a href="#t193.6  isArrayLike.js"> # </a></h3>
+<p>src\rxjs\internal\util\isArrayLike.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> isArrayLike = <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x &amp;&amp; <span class="hljs-keyword">typeof</span> x.length === <span class="hljs-string">'number'</span> &amp;&amp; <span class="hljs-keyword">typeof</span> x !== <span class="hljs-string">'function'</span>;
+</code></pre>
+<h3 id="t203.7 isPromise.js">3.7 isPromise.js <a href="#t203.7 isPromise.js"> # </a></h3>
+<p>src\rxjs\internal\util\isPromise.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { isFunction } <span class="hljs-keyword">from</span> <span class="hljs-string">"./isFunction"</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isPromise</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-keyword">return</span> isFunction(value?.then);
+}
+</code></pre>
+<h2 id="t214. fromEvent">4. fromEvent <a href="#t214. fromEvent"> # </a></h2>
+<ul>
+<li>RxJS 的 <code>fromEvent</code> 函数允许你将浏览器事件转换为 <code>Observable</code>。它接受两个参数：<ul>
+<li>第一个参数是事件目标，例如 DOM 元素或<code>window</code>对象</li>
+<li>第二个参数是事件名称，例如<code>click</code>或<code>scroll</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="t224.1 src\index.js">4.1 src\index.js <a href="#t224.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { fromEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+<span class="hljs-keyword">const</span> source = fromEvent(<span class="hljs-built_in">document</span>, <span class="hljs-string">'click'</span>);
+<span class="hljs-keyword">const</span> subscriber = source.subscribe(<span class="hljs-built_in">console</span>.log)
+setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  subscriber.unsubscribe();
+}, <span class="hljs-number">1000</span>)
+</code></pre>
+<h3 id="t234.2 rxjs\index.js">4.2 rxjs\index.js <a href="#t234.2 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-diff">export { Observable } from './internal/Observable';
+export { of } from './internal/observable/of';
+export { from } from './internal/observable/from';
+<span class="hljs-addition">+export { fromEvent } from './internal/observable/fromEvent';</span>
+</code></pre>
+<h3 id="t244.3 fromEvent.js">4.3 fromEvent.js <a href="#t244.3 fromEvent.js"> # </a></h3>
+<p>src\rxjs\internal\observable\fromEvent.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'../Observable'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fromEvent</span>(<span class="hljs-params">target, eventName</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span> =&gt;</span> {
+        <span class="hljs-keyword">const</span> handler = <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> subscriber.next(...args);
+        target.addEventListener(eventName, handler);
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> target.removeEventListener(eventName, handler);
+    });
+}
+</code></pre>
+<h3 id="t254.4 Subscriber.js">4.4 Subscriber.js <a href="#t254.4 Subscriber.js"> # </a></h3>
+<p>src\rxjs\internal\Subscriber.js</p>
+<pre><code class="lang-diff">import { isFunction } from './util/isFunction';
+<span class="hljs-addition">+import { Subscription } from './Subscription';</span>
+<span class="hljs-addition">+export class Subscriber extends Subscription {</span>
+    isStopped = false;
+    constructor(observerOrNext) {
+        super();
+        let observer;
+        if (isFunction(observerOrNext)) {
+            observer = {
+                next: observerOrNext
+            };
+        } else {
+            observer = observerOrNext;
+        }
+        this.destination = observer;
+    }
+    next(value) {
+        if (!this.isStopped) {
+            this.destination.next(value);
+        }
+    }
+    complete() {
+        if (!this.isStopped) {
+            this.isStopped = true;
+            this.destination.complete?.();
+        }
+    }
+}
+</code></pre>
+<h3 id="t264.5 Subscription.js">4.5 Subscription.js <a href="#t264.5 Subscription.js"> # </a></h3>
+<p>src\rxjs\internal\Subscription.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subscription</span> </span>{
+    _finalizers = []
+    unsubscribe() {
+        <span class="hljs-keyword">const</span> { _finalizers } = <span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">if</span> (_finalizers) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> finalizer <span class="hljs-keyword">of</span> _finalizers) {
+                finalizer();
+            }
+        }
+    }
+    add(teardown) {
+        <span class="hljs-keyword">this</span>._finalizers.push(teardown);
+    }
+}
+</code></pre>
+<h3 id="t274.6 Observable.js">4.6 Observable.js <a href="#t274.6 Observable.js"> # </a></h3>
+<p>src\rxjs\internal\Observable.js</p>
+<pre><code class="lang-diff">import { Subscriber } from './Subscriber';
+export class Observable {
+    constructor(subscribe) {
+        if (subscribe) {
+            this._subscribe = subscribe;
+        }
+    }
+    subscribe(observerOrNext) {
+        const subscriber = new Subscriber(observerOrNext);
+<span class="hljs-addition">+       const teardown = this._subscribe(subscriber)</span>
+<span class="hljs-addition">+       subscriber.add(teardown)</span>
+        return subscriber;
+    }
+}
+</code></pre>
+<h2 id="t285. map&amp;filter">5. map&amp;filter <a href="#t285. map&amp;filter"> # </a></h2>
+<ul>
+<li><code>map</code>操作符允许你对<code>Observable</code>中的每个值进行转换，并返回一个新的 <code>Observable</code>。它接受一个函数作为参数，该函数定义如何转换每个值。</li>
+<li><code>filter</code>操作符允许你选择性地过滤 <code>Observable</code> 中的值。它接受一个函数作为参数，该函数定义如何过滤值</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/imageoperator_1671960903708.png" alt=""></p>
+<p><img src="https://static.zhufengpeixun.com/imageoperator2_1671960942520.png" alt=""></p>
+<h3 id="t295.1 Operators">5.1 Operators <a href="#t295.1 Operators"> # </a></h3>
+<ul>
+<li>在Rx中<code>Observable</code>，控制流的状态,是它的基石，但最有用的是它的<code>operator</code>，<code>operator</code>允许复杂的异步代码以声明的方式进行轻松组合的基础单元。  <code>operator</code>主要作用是操作、组合流中的数据</li>
+<li>操作符是函数，它基于当前的 Observable 创建一个新的 Observable。这是一个无副作用的操作：前面的 Observable 保持不变</li>
+<li>操作符本质上是一个纯函数 (pure function)，它接收一个 Observable 作为输入，并生成一个新的 Observable 作为输出。订阅输出 Observable 同样会订阅输入 Observable</li>
+<li>操作符类型<ul>
+<li>Creation Operators 创建操作符,它们用于创建新的 Observable。这些操作符可以从各种不同的数据源（如数组、对象、Promise 等）创建 Observable，并可以控制 Observable 的行为（如发出值的频率、顺序等）,像<code>of</code>、<code>from</code>、<code>timer</code>、<code>interval</code>和<code>fromEvent</code>等</li>
+<li>Transformation Operators 转换操作符是 RxJS 中的一类特殊的操作符，它们用于将输入 Observable 转换为新的输出 Observable。这些操作符可以对输入 Observable 中的值进行转换、过滤、合并等操作，以便在输出 Observable 中呈现出所需的信息。像<code>map</code>等</li>
+<li>Combination Operators 组合操作符用于将多个 <code>Observable</code> 合并成一个新的 <code>Observable</code>。这些操作符可以帮助你创建复杂的数据流，并控制它们之间的关系,像<code>merge</code>和<code>concat</code>等</li>
+<li>Filtering Operators 过滤操作符用于过滤输入 Observable 中的值，只返回符合特定条件的值。这些操作符可以帮助你创建精确的数据流，并且非常实用。像<code>filter</code>等</li>
+<li>Multicasting Operators 多播操作符用于将单个<code>Observable</code>共享给多个观察者（Observer）。这些操作符可以帮助你控制 Observable 的行为，并有效地利用资源。像<code>share</code>等</li>
+</ul>
+</li>
+<li><a href="https://rxmarbles.com/">rxmarbles</a></li>
+</ul>
+<h3 id="t305.2 src\index.js">5.2 src\index.js <a href="#t305.2 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { <span class="hljs-keyword">of</span>, map, filter } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+<span class="hljs-keyword">const</span> subscriber = <span class="hljs-keyword">of</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+  .pipe(map(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> val * <span class="hljs-number">2</span>))<span class="hljs-comment">// [2,4,6]</span>
+  .pipe(filter(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> val &gt; <span class="hljs-number">3</span>))<span class="hljs-comment">//[4,6]</span>
+  .pipe(map(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> data + <span class="hljs-number">1</span>))<span class="hljs-comment">//[5,7]</span>
+subscriber.subscribe(<span class="hljs-built_in">console</span>.log)
+</code></pre>
+<h3 id="t315.3 rxjs\index.js">5.3 rxjs\index.js <a href="#t315.3 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-diff">export { Observable } from './internal/Observable';
+export { of } from './internal/observable/of';
+export { from } from './internal/observable/from';
+export { fromEvent } from './internal/observable/fromEvent';
+<span class="hljs-addition">+export { filter } from './internal/operators/filter';</span>
+<span class="hljs-addition">+export { map } from './internal/operators/map';</span>
+</code></pre>
+<h3 id="t325.4  Observable.js">5.4  Observable.js <a href="#t325.4  Observable.js"> # </a></h3>
+<p>src\rxjs\internal\Observable.js</p>
+<pre><code class="lang-diff">import { Subscriber } from './Subscriber';
+export class Observable {
+    constructor(subscribe) {
+        if (subscribe) {
+            this._subscribe = subscribe;
+        }
+    }
+    subscribe(observerOrNext) {
+        const subscriber = new Subscriber(observerOrNext);
+        const teardown = this._subscribe(subscriber)
+        subscriber.add(teardown)
+        return subscriber;
+    }
+<span class="hljs-addition">+   pipe(operation) {</span>
+<span class="hljs-addition">+       return operation(this);</span>
+<span class="hljs-addition">+   }</span>
+}
+</code></pre>
+<h3 id="t335.5 map.js">5.5 map.js <a href="#t335.5 map.js"> # </a></h3>
+<p>src\rxjs\internal\operators\map.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'../Observable'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">map</span>(<span class="hljs-params">project</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">source</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> observable = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">subscriber</span>) </span>{
+      <span class="hljs-keyword">return</span> source.subscribe({
+        ...subscriber,
+        <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+          subscriber.next(project(value));
+        }
+      });
+    });
+    <span class="hljs-keyword">return</span> observable;
+  };
+}
+</code></pre>
+<h3 id="t345.6 filter.js">5.6 filter.js <a href="#t345.6 filter.js"> # </a></h3>
+<p>src\rxjs\internal\operators\filter.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'../Observable'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filter</span>(<span class="hljs-params">predicate</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">source</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> observable = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">subscriber</span>) </span>{
+      <span class="hljs-keyword">return</span> source.subscribe({
+        ...subscriber,
+        <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+          predicate(value) &amp;&amp; subscriber.next(value)
+        }
+      });
+    });
+    <span class="hljs-keyword">return</span> observable;
+  };
+}
+</code></pre>
+<h2 id="t356. pipe">6. pipe <a href="#t356. pipe"> # </a></h2>
+<ul>
+<li>Observable 对象有一个名为 pipe 的方法，允许你将多个操作符链接在一起。它可以让你在单个表达式中执行复杂的数据处理流程。</li>
+</ul>
+<h3 id="t366.1 src\index.js">6.1 src\index.js <a href="#t366.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { <span class="hljs-keyword">of</span>, map, filter } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+<span class="hljs-keyword">const</span> subscriber = <span class="hljs-keyword">of</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+    .pipe(
+        map(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> val * <span class="hljs-number">2</span>),
+        filter(<span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> val &gt; <span class="hljs-number">3</span>),
+        map(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> data + <span class="hljs-number">1</span>)
+    )
+subscriber.subscribe(<span class="hljs-built_in">console</span>.log)
+</code></pre>
+<h3 id="t376.2 Observable.js">6.2 Observable.js <a href="#t376.2 Observable.js"> # </a></h3>
+<p>src\rxjs\internal\Observable.js</p>
+<pre><code class="lang-diff">import { Subscriber } from './Subscriber';
+<span class="hljs-addition">+import { pipeFromArray } from './util/pipe';</span>
+export class Observable {
+    constructor(subscribe) {
+        if (subscribe) {
+            this._subscribe = subscribe;
+        }
+    }
+    subscribe(observerOrNext) {
+        const subscriber = new Subscriber(observerOrNext);
+        const teardown = this._subscribe(subscriber)
+        subscriber.add(teardown)
+        return subscriber;
+    }
+<span class="hljs-addition">+   pipe(...operations) {</span>
+<span class="hljs-addition">+       return pipeFromArray(operations)(this);</span>
+<span class="hljs-addition">+   }</span>
+}
+</code></pre>
+<h3 id="t386.3  pipe.js">6.3  pipe.js <a href="#t386.3  pipe.js"> # </a></h3>
+<p>src\rxjs\internal\util\pipe.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { identity } <span class="hljs-keyword">from</span> <span class="hljs-string">'./identity'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pipeFromArray</span>(<span class="hljs-params">fns</span>) </span>{
+    <span class="hljs-keyword">if</span> (fns.length === <span class="hljs-number">0</span>) {
+        <span class="hljs-keyword">return</span> identity;
+    }
+    <span class="hljs-keyword">if</span> (fns.length === <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> fns[<span class="hljs-number">0</span>];
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">piped</span>(<span class="hljs-params">input</span>) </span>{
+        <span class="hljs-keyword">return</span> fns.reduce(<span class="hljs-function">(<span class="hljs-params">prev, fn</span>) =&gt;</span> fn(prev), input);
+    };
+}
+</code></pre>
+<h3 id="t396.4  identity.js">6.4  identity.js <a href="#t396.4  identity.js"> # </a></h3>
+<p>src\rxjs\internal\util\identity.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">identity</span>(<span class="hljs-params">x</span>) </span>{
+  <span class="hljs-keyword">return</span> x;
+}
+</code></pre>
+<h2 id="t407.asyncScheduler">7.asyncScheduler <a href="#t407.asyncScheduler"> # </a></h2>
+<ul>
+<li>使用 setTimeout（task，duration）调度任务</li>
+<li>async 调度器通过将任务放在 JavaScript 事件循环队列中异步地调度任务。它最适用于延迟任务的执行或定期执行任务</li>
+</ul>
+<h3 id="t417.1 src\index.js">7.1 src\index.js <a href="#t417.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { asyncScheduler } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">task</span>(<span class="hljs-params">state</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'state: '</span>, state);
+  <span class="hljs-keyword">if</span> (state &lt; <span class="hljs-number">5</span>) {
+    <span class="hljs-keyword">this</span>.schedule(state + <span class="hljs-number">1</span>, <span class="hljs-number">1000</span>);
+  }
+}
+asyncScheduler.schedule(task, <span class="hljs-number">1000</span>, <span class="hljs-number">0</span>);
+</code></pre>
+<h3 id="t427.2 rxjs\index.js">7.2 rxjs\index.js <a href="#t427.2 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-diff">export { Observable } from './internal/Observable';
+export { of } from './internal/observable/of';
+export { from } from './internal/observable/from';
+export { fromEvent } from './internal/observable/fromEvent';
+export { filter } from './internal/operators/filter';
+export { map } from './internal/operators/map';
+<span class="hljs-addition">+export { asyncScheduler } from './internal/scheduler/async';</span>
+</code></pre>
+<h3 id="t437.3 Scheduler.js">7.3 Scheduler.js <a href="#t437.3 Scheduler.js"> # </a></h3>
+<p>src\rxjs\internal\Scheduler.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scheduler</span> </span>{
+  <span class="hljs-keyword">constructor</span>(schedulerActionCtor) {
+    <span class="hljs-keyword">this</span>.schedulerActionCtor = schedulerActionCtor;
+  }
+  schedule(work, delay = <span class="hljs-number">0</span>, state) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-keyword">this</span>.schedulerActionCtor(work).schedule(state, delay);
+  }
+}
+</code></pre>
+<h3 id="t447.4  AsyncAction.js">7.4  AsyncAction.js <a href="#t447.4  AsyncAction.js"> # </a></h3>
+<p>src\rxjs\internal\scheduler\AsyncAction.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AsyncAction</span> </span>{
+  pending = <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">constructor</span>(work) {
+    <span class="hljs-keyword">this</span>.work = work;
+  }
+  schedule(state, delay = <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">this</span>.state = state;
+    <span class="hljs-keyword">this</span>.delay = delay;
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.id != <span class="hljs-literal">null</span>) {
+      <span class="hljs-keyword">this</span>.id = <span class="hljs-keyword">this</span>.recycleAsyncId(<span class="hljs-keyword">this</span>.id);
+    }
+    <span class="hljs-keyword">this</span>.pending = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">this</span>.id = <span class="hljs-keyword">this</span>.requestAsyncId(delay);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+  }
+  requestAsyncId(delay = <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">return</span> setInterval(<span class="hljs-keyword">this</span>.execute.bind(<span class="hljs-keyword">this</span>), delay);
+  }
+  execute() {
+    <span class="hljs-keyword">this</span>.pending = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">this</span>.work(<span class="hljs-keyword">this</span>.state);
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.pending === <span class="hljs-literal">false</span> &amp;&amp; <span class="hljs-keyword">this</span>.id !== <span class="hljs-literal">null</span>) {
+      <span class="hljs-keyword">this</span>.id = <span class="hljs-keyword">this</span>.recycleAsyncId(<span class="hljs-keyword">this</span>.id);
+    }
+  }
+  recycleAsyncId(id) {
+    <span class="hljs-keyword">if</span> (id !== <span class="hljs-literal">null</span>) {
+      clearInterval(id);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+}
+</code></pre>
+<h3 id="t457.5 async.js">7.5 async.js <a href="#t457.5 async.js"> # </a></h3>
+<p>src\rxjs\internal\scheduler\async.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { AsyncAction } <span class="hljs-keyword">from</span> <span class="hljs-string">'./AsyncAction'</span>;
+<span class="hljs-keyword">import</span> { Scheduler } <span class="hljs-keyword">from</span> <span class="hljs-string">'../Scheduler'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> asyncScheduler = <span class="hljs-keyword">new</span> Scheduler(AsyncAction);
+</code></pre>
+<h2 id="t468.timer">8.timer <a href="#t468.timer"> # </a></h2>
+<ul>
+<li><code>timer</code> 函数是一个工厂函数，可以创建一个发出数字的 <code>Observable</code>，每个数字增加<code>1</code>。它接受两个参数：起始值和间隔时间</li>
+</ul>
+<h3 id="t478.1 src\index.js">8.1 src\index.js <a href="#t478.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { timer } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+timer(<span class="hljs-number">1000</span>).subscribe(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'timer'</span>))
+</code></pre>
+<h3 id="t488.2 rxjs\index.js">8.2 rxjs\index.js <a href="#t488.2 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-diff">export { Observable } from './internal/Observable';
+export { of } from './internal/observable/of';
+export { from } from './internal/observable/from';
+export { fromEvent } from './internal/observable/fromEvent';
+export { filter } from './internal/operators/filter';
+export { map } from './internal/operators/map';
+export { asyncScheduler } from './internal/scheduler/async';
+<span class="hljs-addition">+export { timer } from './internal/observable/timer';</span>
+</code></pre>
+<h3 id="t498.3 timer.js">8.3 timer.js <a href="#t498.3 timer.js"> # </a></h3>
+<p>src\rxjs\internal\observable\timer.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'../Observable'</span>;
+<span class="hljs-keyword">import</span> { asyncScheduler } <span class="hljs-keyword">from</span> <span class="hljs-string">'../scheduler/async'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">timer</span>(<span class="hljs-params">dueTime = <span class="hljs-number">0</span>, scheduler = asyncScheduler</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span> =&gt;</span> {
+    <span class="hljs-keyword">let</span> n = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> scheduler.schedule(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      subscriber.next(n++);
+    }, dueTime);
+  });
+}
+</code></pre>
+<h2 id="t509.interval">9.interval <a href="#t509.interval"> # </a></h2>
+<ul>
+<li><code>interval</code> 函数是一个工厂函数，可以创建一个发出数字的 <code>Observable</code>，每个数字增加 1。它接受一个间隔时间参数，表示每次发送之间的时间间隔</li>
+<li><code>interval</code> 函数会一直发送数字，直到你取消订阅。你可以使用 <code>take</code> 操作符限制发送的数字数量</li>
+</ul>
+<h3 id="t519.1 src\index.js">9.1 src\index.js <a href="#t519.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+interval(<span class="hljs-number">1000</span>).subscribe(<span class="hljs-function">(<span class="hljs-params">v</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(v))
+</code></pre>
+<h3 id="t529.2 rxjs\index.js">9.2 rxjs\index.js <a href="#t529.2 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-diff">export { Observable } from './internal/Observable';
+export { of } from './internal/observable/of';
+export { from } from './internal/observable/from';
+export { fromEvent } from './internal/observable/fromEvent';
+export { filter } from './internal/operators/filter';
+export { map } from './internal/operators/map';
+export { asyncScheduler } from './internal/scheduler/async';
+export { timer } from './internal/observable/timer';
+<span class="hljs-addition">+export { interval } from './internal/observable/interval';</span>
+</code></pre>
+<h3 id="t539.3 interval.js">9.3 interval.js <a href="#t539.3 interval.js"> # </a></h3>
+<p>src\rxjs\internal\observable\interval.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { asyncScheduler } <span class="hljs-keyword">from</span> <span class="hljs-string">'../scheduler/async'</span>;
+<span class="hljs-keyword">import</span> { timer } <span class="hljs-keyword">from</span> <span class="hljs-string">'./timer'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">interval</span>(<span class="hljs-params">period = <span class="hljs-number">0</span>, scheduler = asyncScheduler</span>) </span>{
+  <span class="hljs-keyword">return</span> timer(period, period, scheduler);
+}
+</code></pre>
+<h3 id="t549.4 timer.js">9.4 timer.js <a href="#t549.4 timer.js"> # </a></h3>
+<p>src\rxjs\internal\observable\timer.js</p>
+<pre><code class="lang-diff">import { Observable } from '../Observable';
+import { asyncScheduler } from '../scheduler/async';
+<span class="hljs-addition">+export function timer(dueTime = 0, interval, scheduler = asyncScheduler) {</span>
+  return new Observable(subscriber =&gt; {
+    let n = 0;
+    return scheduler.schedule(function () {
+      subscriber.next(n++);
+<span class="hljs-addition">+    if (interval &gt;= 0) {</span>
+<span class="hljs-addition">+      this.schedule(undefined, interval);</span>
+<span class="hljs-addition">+    } else {</span>
+<span class="hljs-addition">+      subscriber.complete();</span>
+<span class="hljs-addition">+    }</span>
+    }, dueTime);
+  });
+}
+</code></pre>
+<h2 id="t5510.take">10.take <a href="#t5510.take"> # </a></h2>
+<ul>
+<li><code>take</code> 操作符会从 <code>Observable</code> 中取出前 <code>N</code> 个值，然后完成。它是一个过滤操作符，可以用来限制 Observable 发送的值的数量</li>
+<li><code>take</code> 操作符会在 <code>Observable</code> 发送完 <code>N</code> 个值之后立即完成，因此你不需要使用 <code>unsubscribe</code> 方法取消订阅</li>
+</ul>
+<h3 id="t5610.1 src\index.js">10.1 src\index.js <a href="#t5610.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { interval, take } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+interval(<span class="hljs-number">500</span>)
+    .pipe(take(<span class="hljs-number">3</span>))
+    .subscribe(<span class="hljs-built_in">console</span>.log)
+<span class="hljs-comment">// 0</span>
+<span class="hljs-comment">// 1</span>
+<span class="hljs-comment">// 2</span>
+</code></pre>
+<h3 id="t5710.2 rxjs\index.js">10.2 rxjs\index.js <a href="#t5710.2 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-diff">export { Observable } from './internal/Observable';
+export { of } from './internal/observable/of';
+export { from } from './internal/observable/from';
+export { fromEvent } from './internal/observable/fromEvent';
+export { filter } from './internal/operators/filter';
+export { map } from './internal/operators/map';
+export { asyncScheduler } from './internal/scheduler/async';
+export { timer } from './internal/observable/timer';
+export { interval } from './internal/observable/interval';
+<span class="hljs-addition">+export { take } from './internal/operators/take';</span>
+</code></pre>
+<h3 id="t5810.3  take.js">10.3  take.js <a href="#t5810.3  take.js"> # </a></h3>
+<p>src\rxjs\internal\operators\take.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'../Observable'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">take</span>(<span class="hljs-params">count</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">source</span> =&gt;</span> {
+    <span class="hljs-keyword">let</span> seen = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">const</span> observable = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">subscriber</span>) </span>{
+      <span class="hljs-keyword">return</span> source.subscribe({
+        ...subscriber,
+        <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+          seen++;
+          <span class="hljs-keyword">if</span> (seen &lt;= count) {
+            subscriber.next(value);
+            <span class="hljs-keyword">if</span> (seen &gt;= count) {
+              subscriber.complete();
+            }
+          }
+        }
+      });
+    });
+    <span class="hljs-keyword">return</span> observable;
+  };
+}
+</code></pre>
+<h2 id="t5911.Subject">11.Subject <a href="#t5911.Subject"> # </a></h2>
+<ul>
+<li>Subject 是 Observable 的一种特殊类型，它允许将值多播给许多观察者。Subject 就像 EventEmitter</li>
+<li>每个 Subject 都是一个 Observable 和一个 Observer。您可以订阅 Subject，并且还可以调用 next 来提供值，以及 error 和 complete</li>
+<li>简单来说，Subject 是一种特殊的 Observable，它既可以订阅数据流，也可以向数据流中提交数据。Subject 还具有 Observer 的特性，即可以调用 next、error 和 complete 方法</li>
+</ul>
+<h3 id="t6011.1 Cold Observable和Hot Observable">11.1 Cold Observable和Hot Observable <a href="#t6011.1 Cold Observable和Hot Observable"> # </a></h3>
+<ul>
+<li><code>Hot Observable</code> 和 <code>Cold Observable</code>是指两种不同类型的 <code>Observable</code>，它们在执行时的行为有所不同</li>
+<li><code>Cold Observable</code> 是一种会在每个观察者订阅时重新开始发出数据的 <code>Observable</code>。每个观察者都有自己的数据流，即使多个观察者订阅同一个 <code>Cold Observable</code>，它们也会收到完全独立的数据流。例如，当你订阅一个 <code>Cold Observable</code> 时，它会从头开始发出数据，不会丢失任何信息</li>
+<li><code>Hot Observable</code>是一种在发出数据时无论是否有观察者订阅都会继续发出数据的<code>Observable</code>。每个观察者都会收到相同的数据流，并且会收到所有之前发出的数据。例如，当你订阅一个<code>Hot Observable</code>时，它可能会丢失一些信息，因为它在你订阅之前就已经开始发出数据了</li>
+<li>总的来说，<code>Cold Observable</code> 适用于那些需要每个观察者都收到完整数据流的场景，而 <code>Hot Observable</code> 适用于那些数据流是连续不断的，不需要每个观察者都收到完整数据流的场景</li>
+</ul>
+<h3 id="t6111.1.1 Cold Observable">11.1.1 Cold Observable <a href="#t6111.1.1 Cold Observable"> # </a></h3>
+<ul>
+<li>推送值的生产者<code>producer</code>来自<code>Observable</code>内部。将会推送什么样的值在<code>Observable</code>创建时被定义下来，不会改变</li>
+<li><code>producer</code>与<code>observer</code>是一对一的关系，即是unicast (单播)的</li>
+<li>当有<code>observer</code>订阅时，<code>producer</code>会把预先定义好的若干值依次推送给每个<code>observer</code></li>
+<li><code>Cold Observable</code>每次订阅后就只会有一个观察者， 下一个观察者要进行订阅时是一次新的数据流程，因此<code>Cold Observable</code>与<code>observer</code>是一对一关系</li>
+<li>数据流的<code>operators</code>基本上都是属于<code>Cold Observable</code></li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Observable } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>;
+<span class="hljs-keyword">const</span> source = <span class="hljs-keyword">new</span> Observable(<span class="hljs-function"><span class="hljs-params">subscriber</span> =&gt;</span> {
+    subscriber.next(<span class="hljs-number">1</span>);
+    subscriber.next(<span class="hljs-number">2</span>);
+    subscriber.next(<span class="hljs-number">3</span>);
+    subscriber.complete();
+});
+
+source.subscribe(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`subscriberA: <span class="hljs-subst">${data}</span>`</span>));
+<span class="hljs-comment">// 1, 2, 3</span>
+source.subscribe(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`subscriberB: <span class="hljs-subst">${data}</span>`</span>));
+<span class="hljs-comment">// 1, 2, 3</span>
+</code></pre>
+<h3 id="t6211.1.2 Hot Observable">11.1.2 Hot Observable <a href="#t6211.1.2 Hot Observable"> # </a></h3>
+<ul>
+<li><ul>
+<li>推送值的<code>producer</code>来自<code>observable</code>外部，何时推送以及推送什么样的值在创建时都是未知的。<code>producer</code>与<code>observer</code>是一对多的关系，即<strong>multicast</strong> (多播)的</li>
+</ul>
+</li>
+<li>每当有<code>observer</code>订阅时，会将<code>observer</code>注册到观察者列表中</li>
+<li>当外部的<code>producer</code>被触发或执行时，会将值同时推送给所有的<code>observer</code></li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/HotObservable_1671960568953.png" alt=""></p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Subject } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>;
+<span class="hljs-keyword">const</span> source = <span class="hljs-keyword">new</span> Subject();
+source.subscribe({ <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Subject 第一次订阅: <span class="hljs-subst">${data}</span>`</span>) });
+source.next(<span class="hljs-number">1</span>);
+source.next(<span class="hljs-number">2</span>);
+source.subscribe({ <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Subject 第二次订阅: <span class="hljs-subst">${data}</span>`</span>) });
+source.next(<span class="hljs-number">3</span>);
+source.next(<span class="hljs-number">4</span>);
+</code></pre>
+<h3 id="t6311.1 src\index.js">11.1 src\index.js <a href="#t6311.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Subject } <span class="hljs-keyword">from</span> <span class="hljs-string">'./rxjs'</span>
+<span class="hljs-keyword">const</span> subject = <span class="hljs-keyword">new</span> Subject();
+
+subject.subscribe({ <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'observerA: '</span>, data) });
+subject.subscribe({ <span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'observerB: '</span>, data) });
+
+subject.next(<span class="hljs-number">1</span>);
+subject.next(<span class="hljs-number">2</span>);
+
+<span class="hljs-comment">// observerA: 1</span>
+<span class="hljs-comment">// observerB: 1</span>
+<span class="hljs-comment">// observerA: 2</span>
+<span class="hljs-comment">// observerB: 2</span>
+</code></pre>
+<h3 id="t6411.2 rxjs\index.js">11.2 rxjs\index.js <a href="#t6411.2 rxjs\index.js"> # </a></h3>
+<p>src\rxjs\index.js</p>
+<pre><code class="lang-diff">export { Observable } from './internal/Observable';
+export { of } from './internal/observable/of';
+export { from } from './internal/observable/from';
+export { fromEvent } from './internal/observable/fromEvent';
+export { filter } from './internal/operators/filter';
+export { map } from './internal/operators/map';
+export { asyncScheduler } from './internal/scheduler/async';
+export { timer } from './internal/observable/timer';
+export { interval } from './internal/observable/interval';
+export { take } from './internal/operators/take';
+<span class="hljs-addition">+export { Subject } from './internal/Subject';</span>
+</code></pre>
+<h3 id="t6511.3 Subject.js">11.3 Subject.js <a href="#t6511.3 Subject.js"> # </a></h3>
+<p>src\rxjs\internal\Subject.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Subscriber } <span class="hljs-keyword">from</span> <span class="hljs-string">'./Subscriber'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Subscriber</span> </span>{
+    observers = []
+    subscribe(subscriber) {
+        <span class="hljs-keyword">const</span> { observers } = <span class="hljs-keyword">this</span>;
+        observers.push(subscriber);
+    }
+    next(value) {
+        <span class="hljs-keyword">const</span> copy = <span class="hljs-keyword">this</span>.observers.slice();
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> observer <span class="hljs-keyword">of</span> copy) {
+            observer.next(value);
+        }
+    }
+    complete() {
+        <span class="hljs-keyword">const</span> { observers } = <span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">while</span> (observers.length) {
+            observers.shift().complete?.();
+        }
+    }
+}
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>

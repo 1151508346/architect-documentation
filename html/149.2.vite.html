@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li class="active"><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t0课程大纲">课程大纲</a></li><li><a href="#t11.测试">1.测试</a><ul><li><a href="#t21.1 初始化">1.1 初始化</a><ul><li><a href="#t31.1.1 安装">1.1.1 安装</a></li><li><a href="#t41.1.2 tsconfig.node.json">1.1.2 tsconfig.node.json</a></li><li><a href="#t51.2.3 tsconfig.json">1.2.3 tsconfig.json</a></li><li><a href="#t61.1.4 vite.config.ts">1.1.4 vite.config.ts</a></li><li><a href="#t71.1.5 package.json">1.1.5 package.json</a></li><li><a href="#t81.1.6 index.html">1.1.6 index.html</a></li><li><a href="#t91.1.7 .gitignore">1.1.7 .gitignore</a></li><li><a href="#t101.1.8 src\main.ts">1.1.8 src\main.ts</a></li><li><a href="#t111.1.9 src\env.d.ts">1.1.9 src\env.d.ts</a></li><li><a href="#t121.1.10 src\App.vue">1.1.10 src\App.vue</a></li><li><a href="#t131.1.11 TodoApp.vue">1.1.11 TodoApp.vue</a></li></ul></li><li><a href="#t141.2 添加单元测试">1.2 添加单元测试</a><ul><li><a href="#t151.2.1 package.json">1.2.1 package.json</a></li><li><a href="#t161.2.2 src\sum.ts">1.2.2 src\sum.ts</a></li><li><a href="#t171.2.3 sum.spec.ts">1.2.3 sum.spec.ts</a></li><li><a href="#t181.2.4 babel.config.ts">1.2.4 babel.config.ts</a></li><li><a href="#t191.2.5 jest.config.ts">1.2.5 jest.config.ts</a></li></ul></li><li><a href="#t201.3 测试组件">1.3 测试组件</a><ul><li><a href="#t211.3.1 TodoApp.spec.ts">1.3.1 TodoApp.spec.ts</a></li><li><a href="#t221.3.1 jest.config.ts">1.3.1 jest.config.ts</a></li></ul></li><li><a href="#t231.4 代码覆盖率">1.4 代码覆盖率</a><ul><li><a href="#t241.4.1 package.json">1.4.1 package.json</a></li><li><a href="#t251.4.2 jest.config.ts">1.4.2 jest.config.ts</a></li></ul></li><li><a href="#t261.5 E2E测试">1.5 E2E测试</a><ul><li><a href="#t271.5.1 安装">1.5.1 安装</a></li><li><a href="#t281.5.2  TodoApp.vue">1.5.2  TodoApp.vue</a></li><li><a href="#t291.5.3 TodoApp.cy.ts">1.5.3 TodoApp.cy.ts</a></li><li><a href="#t301.5.4 todoApp.spec.js">1.5.4 todoApp.spec.js</a></li><li><a href="#t311.5.5 plugins\index.js">1.5.5 plugins\index.js</a></li><li><a href="#t321.5.6 cypress.json">1.5.6 cypress.json</a></li><li><a href="#t331.5.7 package.json">1.5.7 package.json</a></li><li><a href="#t341.5.8 index.d.ts">1.5.8 index.d.ts</a></li><li><a href="#t351.5.9 cypress-expect.d.ts">1.5.9 cypress-expect.d.ts</a></li></ul></li></ul></li><li><a href="#t362. SSR服务器端渲染">2. SSR服务器端渲染</a><ul><li><a href="#t372.1 搭建项目">2.1 搭建项目</a><ul><li><a href="#t382.1.1 安装">2.1.1 安装</a></li><li><a href="#t392.1.2 tsconfig.node.json">2.1.2 tsconfig.node.json</a></li><li><a href="#t402.1.3 vite.config.ts">2.1.3 vite.config.ts</a></li><li><a href="#t412.1.4 tsconfig.json">2.1.4 tsconfig.json</a></li><li><a href="#t422.1.5 vite-env.d.ts">2.1.5 vite-env.d.ts</a></li><li><a href="#t432.1.6 index.html">2.1.6 index.html</a></li><li><a href="#t442.1.7 src\main.tsx">2.1.7 src\main.tsx</a></li><li><a href="#t452.1.8 .gitignore">2.1.8 .gitignore</a></li><li><a href="#t462.1.9 package.json">2.1.9 package.json</a></li></ul></li><li><a href="#t472.2.声明式路由">2.2.声明式路由</a><ul><li><a href="#t482.2.1 src\main.tsx">2.2.1 src\main.tsx</a></li><li><a href="#t492.2.2 Home.tsx">2.2.2 Home.tsx</a></li><li><a href="#t502.2.3 User.tsx">2.2.3 User.tsx</a></li><li><a href="#t512.2.3 Profile.tsx">2.2.3 Profile.tsx</a></li></ul></li><li><a href="#t522.3.配置式路由">2.3.配置式路由</a><ul><li><a href="#t532.3.1 src\main.tsx">2.3.1 src\main.tsx</a></li><li><a href="#t542.3.2 src\App.tsx">2.3.2 src\App.tsx</a></li><li><a href="#t552.3.3 routeConfig.tsx">2.3.3 routeConfig.tsx</a></li></ul></li><li><a href="#t562.4.SSR服务器端渲染">2.4.SSR服务器端渲染</a><ul><li><a href="#t572.4.1 安装">2.4.1 安装</a></li><li><a href="#t582.4.2 tsconfig.json">2.4.2 tsconfig.json</a></li><li><a href="#t592.4.3 tsconfig.node.json">2.4.3 tsconfig.node.json</a></li><li><a href="#t602.4.4 package.json">2.4.4 package.json</a></li><li><a href="#t612.4.5 ssr-entry.ts">2.4.5 ssr-entry.ts</a></li></ul></li><li><a href="#t622.5.开发环境SSR">2.5.开发环境SSR</a><ul><li><a href="#t632.5.1 ssr-entry.ts">2.5.1 ssr-entry.ts</a></li><li><a href="#t642.5.2 server-entry.tsx">2.5.2 server-entry.tsx</a></li><li><a href="#t652.5.3 client-entry.tsx">2.5.3 client-entry.tsx</a></li><li><a href="#t662.5.4 index.html">2.5.4 index.html</a></li></ul></li><li><a href="#t672.6.生产环境">2.6.生产环境</a><ul><li><a href="#t682.6.2 package.json">2.6.2 package.json</a></li><li><a href="#t692.6.3 ssr-entry.ts">2.6.3 ssr-entry.ts</a></li></ul></li><li><a href="#t702.7.静态化">2.7.静态化</a><ul><li><a href="#t712.7.1 package.json">2.7.1 package.json</a></li><li><a href="#t722.7.2 static.ts">2.7.2 static.ts</a></li><li><a href="#t732.7.3 tsconfig.node.json">2.7.3 tsconfig.node.json</a></li></ul></li></ul></li><li><a href="#t743.HMR">3.HMR</a><ul><li><a href="#t753.1.创建项目">3.1.创建项目</a><ul><li><a href="#t763.1.1 安装">3.1.1 安装</a></li><li><a href="#t773.1.2.package.json">3.1.2.package.json</a></li><li><a href="#t783.1.3.src\main.js">3.1.3.src\main.js</a></li><li><a href="#t793.1.4.index.html">3.1.4.index.html</a></li></ul></li><li><a href="#t803.2.封装模块">3.2.封装模块</a><ul><li><a href="#t813.2.1 src\render.js">3.2.1 src\render.js</a></li><li><a href="#t823.2.2 src\main.js">3.2.2 src\main.js</a></li></ul></li><li><a href="#t833.3.销毁副作用">3.3.销毁副作用</a><ul><li><a href="#t843.3.1 render.js">3.3.1 render.js</a></li></ul></li><li><a href="#t853.4.保留状态">3.4.保留状态</a><ul><li><a href="#t863.4.1 render.js">3.4.1 render.js</a></li></ul></li><li><a href="#t873.5.拒绝更新">3.5.拒绝更新</a><ul><li><a href="#t883.5.1 render.js">3.5.1 render.js</a></li><li><a href="#t893.5.2 src\main.js">3.5.2 src\main.js</a></li></ul></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t0课程大纲">课程大纲 <a href="#t0课程大纲"> # </a></h2>
+<ul>
+<li>单元测试和E2E测试</li>
+<li>SSR服务器端渲染</li>
+<li>静态化 </li>
+<li>HMR 热更新</li>
+</ul>
+<h2 id="t11.测试">1.测试 <a href="#t11.测试"> # </a></h2>
+<ul>
+<li><a href="https://vitejs.cn/">vitejs</a></li>
+<li><a href="https://www.tslang.cn/">tslang</a></li>
+</ul>
+<h3 id="t21.1 初始化">1.1 初始化 <a href="#t21.1 初始化"> # </a></h3>
+<h4 id="t31.1.1 安装">1.1.1 安装 <a href="#t31.1.1 安装"> # </a></h4>
+<pre><code class="lang-js">mkdir <span class="hljs-number">1.</span>test
+cd <span class="hljs-number">1.</span>test
+npm init -y
+
+pnpm install vue 
+pnpm i vite @vitejs/plugin-vue -D
+pnpm install @babel/core @babel/preset-env  typescript @babel/preset-typescript  -D
+pnpm install jest ts-jest ts-node @types/node @types/jest babel-jest @vue/vue3-jest -D
+pnpm install  @vue/test-utils@next jest-transform-stub -D
+echo done
+</code></pre>
+<h4 id="t41.1.2 tsconfig.node.json">1.1.2 tsconfig.node.json <a href="#t41.1.2 tsconfig.node.json"> # </a></h4>
+<ul>
+<li><a href="https://www.typescriptlang.org/docs/handbook/project-references.html">compiler-options</a></li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"compilerOptions"</span>: {
+    <span class="hljs-attr">"composite"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"module"</span>: <span class="hljs-string">"esnext"</span>,
+    <span class="hljs-attr">"moduleResolution"</span>: <span class="hljs-string">"node"</span>,
+    <span class="hljs-attr">"skipLibCheck"</span>: <span class="hljs-literal">true</span>,
+  },
+  <span class="hljs-attr">"include"</span>: [<span class="hljs-string">"vite.config.ts"</span>]
+}
+</code></pre>
+<h4 id="t51.2.3 tsconfig.json">1.2.3 tsconfig.json <a href="#t51.2.3 tsconfig.json"> # </a></h4>
+<p>tsconfig.json</p>
+<pre><code class="lang-json">{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "strictNullChecks":true,
+    "noEmit":true,
+    "noEmitOnError:true, 
+    "baseUrl": ".",
+    "paths": {
+     "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+</code></pre>
+<h4 id="t61.1.4 vite.config.ts">1.1.4 vite.config.ts <a href="#t61.1.4 vite.config.ts"> # </a></h4>
+<ul>
+<li><a href="https://vitejs.cn/config/">config</a></li>
+</ul>
+<p>vite.config.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>
+<span class="hljs-keyword">import</span> vue <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-vue'</span>
+<span class="hljs-keyword">import</span> { resolve } <span class="hljs-keyword">from</span> <span class="hljs-string">"path"</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({
+  <span class="hljs-attr">plugins</span>: [vue()],
+  <span class="hljs-attr">resolve</span>: {
+   <span class="hljs-attr">alias</span>: {
+     <span class="hljs-string">"@"</span>: resolve(<span class="hljs-string">"src"</span>)
+   }
+ },
+})
+</code></pre>
+<h4 id="t71.1.5 package.json">1.1.5 package.json <a href="#t71.1.5 package.json"> # </a></h4>
+<p>package.json</p>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"dev"</span>: <span class="hljs-string">"vite"</span>,
+    <span class="hljs-attr">"build"</span>: <span class="hljs-string">"vite build"</span>
+  },
+}
+</code></pre>
+<h4 id="t81.1.6 index.html">1.1.6 index.html <a href="#t81.1.6 index.html"> # </a></h4>
+<p>index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Vite App<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/main.ts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="t91.1.7 .gitignore">1.1.7 .gitignore <a href="#t91.1.7 .gitignore"> # </a></h4>
+<p>.gitignore</p>
+<pre><code class="lang-js"># Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</code></pre>
+<h4 id="t101.1.8 src\main.ts">1.1.8 src\main.ts <a href="#t101.1.8 src\main.ts"> # </a></h4>
+<p>src\main.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>
+
+createApp(App).mount(<span class="hljs-string">'#app'</span>)
+
+</code></pre>
+<h4 id="t111.1.9 src\env.d.ts">1.1.9 src\env.d.ts <a href="#t111.1.9 src\env.d.ts"> # </a></h4>
+<p>src\env.d.ts</p>
+<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types="vite/client" /&gt;</span>
+
+declare <span class="hljs-built_in">module</span> <span class="hljs-string">'*.vue'</span> {
+  <span class="hljs-keyword">import</span> type { DefineComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+  <span class="hljs-comment">// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/ban-types</span>
+  <span class="hljs-keyword">const</span> component: DefineComponent&lt;{}, {}, any&gt;
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> component
+}
+</code></pre>
+<h4 id="t121.1.10 src\App.vue">1.1.10 src\App.vue <a href="#t121.1.10 src\App.vue"> # </a></h4>
+<p>src\App.vue</p>
+<pre><code class="lang-js">&lt;script setup lang="ts"&gt;
+import TodoApp from './components/TodoApp.vue'
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;TodoApp/&gt;
+&lt;/template&gt;
+
+&lt;style&gt;&lt;/style&gt;
+</code></pre>
+<h4 id="t131.1.11 TodoApp.vue">1.1.11 TodoApp.vue <a href="#t131.1.11 TodoApp.vue"> # </a></h4>
+<p>src\components\TodoApp.vue</p>
+<pre><code class="lang-js">&lt;template&gt;
+  &lt;img :src="logoUrl"/&gt;
+  &lt;input data-test="newTodo"   /&gt;
+  &lt;button data-test="addTodo"&gt;addTodo&lt;/button&gt;
+&lt;/template&gt;
+&lt;script setup lang="ts"&gt;
+import logoUrl from "@/assets/logo.png"
+&lt;/script&gt;
+&lt;style scoped&gt;
+img{
+  width:50px;
+}
+&lt;/style&gt;
+</code></pre>
+<h3 id="t141.2 添加单元测试">1.2 添加单元测试 <a href="#t141.2 添加单元测试"> # </a></h3>
+<ul>
+<li><a href="https://www.jestjs.cn/">jestjs</a></li>
+</ul>
+<h4 id="t151.2.1 package.json">1.2.1 package.json <a href="#t151.2.1 package.json"> # </a></h4>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+    "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+<span class="hljs-addition">+   "test": "jest"</span>
+  },
+}
+</code></pre>
+<h4 id="t161.2.2 src\sum.ts">1.2.2 src\sum.ts <a href="#t161.2.2 src\sum.ts"> # </a></h4>
+<p>src\sum.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">a:number,b:number</span>) </span>{
+  <span class="hljs-keyword">return</span> a + b;
+}
+</code></pre>
+<h4 id="t171.2.3 sum.spec.ts">1.2.3 sum.spec.ts <a href="#t171.2.3 sum.spec.ts"> # </a></h4>
+<p>src\sum.spec.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> sum <span class="hljs-keyword">from</span> <span class="hljs-string">'./sum'</span>;
+it(<span class="hljs-string">'test sum'</span>, () =&gt; {
+  expect(sum(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)).toBe(<span class="hljs-number">3</span>);
+});
+</code></pre>
+<h4 id="t181.2.4 babel.config.ts">1.2.4 babel.config.ts <a href="#t181.2.4 babel.config.ts"> # </a></h4>
+<p>babel.config.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span>  {
+  <span class="hljs-attr">presets</span>: [
+    <span class="hljs-string">"@babel/preset-env"</span>,
+    <span class="hljs-string">'@babel/preset-typescript'</span>
+  ]
+}
+</code></pre>
+<h4 id="t191.2.5 jest.config.ts">1.2.5 jest.config.ts <a href="#t191.2.5 jest.config.ts"> # </a></h4>
+<ul>
+<li><a href="https://www.jestjs.cn/docs/configuration">configuration</a></li>
+</ul>
+<p>jest.config.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> type { Config } <span class="hljs-keyword">from</span> <span class="hljs-string">'@jest/types'</span>;
+<span class="hljs-keyword">const</span> config: Config.InitialOptions = {
+   <span class="hljs-attr">transform</span>: {
+    <span class="hljs-string">"^.+\\.js$"</span>: <span class="hljs-string">"babel-jest"</span>,
+    <span class="hljs-string">"^.+\\.ts$"</span>: <span class="hljs-string">"ts-jest"</span>,
+  },
+  <span class="hljs-attr">testMatch</span>: [<span class="hljs-string">"&lt;rootDir&gt;/src/**/*.spec.(t|j)s"</span>],
+  <span class="hljs-attr">testEnvironment</span>: <span class="hljs-string">"jsdom"</span>,
+  <span class="hljs-attr">transformIgnorePatterns</span>: [<span class="hljs-string">"/node_modules/"</span>]
+};
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> config;
+</code></pre>
+<h3 id="t201.3 测试组件">1.3 测试组件 <a href="#t201.3 测试组件"> # </a></h3>
+<h4 id="t211.3.1 TodoApp.spec.ts">1.3.1 TodoApp.spec.ts <a href="#t211.3.1 TodoApp.spec.ts"> # </a></h4>
+<ul>
+<li><a href="https://www.jestjs.cn/docs/expect">expect</a></li>
+</ul>
+<p>src\components\TodoApp.spec.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { mount } <span class="hljs-keyword">from</span> <span class="hljs-string">'@vue/test-utils'</span>
+<span class="hljs-keyword">import</span> TodoApp <span class="hljs-keyword">from</span> <span class="hljs-string">'./TodoApp.vue'</span>
+
+test(<span class="hljs-string">'render todoApp'</span>, () =&gt; {
+   <span class="hljs-keyword">const</span> wrapper = mount(TodoApp)
+  <span class="hljs-keyword">const</span> addTodo = wrapper.get(<span class="hljs-string">'[data-test="addTodo"]'</span>)
+  expect(addTodo.text()).toBe(<span class="hljs-string">'addTodo'</span>)
+})
+</code></pre>
+<h4 id="t221.3.1 jest.config.ts">1.3.1 jest.config.ts <a href="#t221.3.1 jest.config.ts"> # </a></h4>
+<p>jest.config.ts</p>
+<pre><code class="lang-diff">import type { Config } from '@jest/types';
+const config: Config.InitialOptions = {
+   transform: {
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.ts$": "ts-jest",
+<span class="hljs-addition">+   "^.+\\.vue$": "@vue/vue3-jest",</span>
+<span class="hljs-addition">+   ".+\\.(css|scss|png|jpg|svg)$": "jest-transform-stub"</span>
+  },
+<span class="hljs-addition">+ moduleNameMapper: {</span>
+<span class="hljs-addition">+   "^@/(.*)$": "&lt;rootDir&gt;/src/$1"</span>
+<span class="hljs-addition">+ },</span>
+  testMatch: ["&lt;rootDir&gt;/src/**/*.spec.(t|j)s"],
+  testEnvironment: "jsdom",
+  transformIgnorePatterns: ["/node_modules/"]
+};
+export default config;
+</code></pre>
+<h3 id="t231.4 代码覆盖率">1.4 代码覆盖率 <a href="#t231.4 代码覆盖率"> # </a></h3>
+<h4 id="t241.4.1 package.json">1.4.1 package.json <a href="#t241.4.1 package.json"> # </a></h4>
+<pre><code class="lang-diff">{
+    "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "jest",
+<span class="hljs-addition">+   "test:coverage": "jest --coverage"</span>
+  },
+}
+</code></pre>
+<h4 id="t251.4.2 jest.config.ts">1.4.2 jest.config.ts <a href="#t251.4.2 jest.config.ts"> # </a></h4>
+<p>jest.config.ts</p>
+<pre><code class="lang-diff">import type { Config } from '@jest/types';
+const config: Config.InitialOptions = {
+  transform: {
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.ts$": "ts-jest",
+    "^.+\\.vue$": "@vue/vue3-jest",
+    ".+\\.(css|scss|png|jpg|svg)$": "jest-transform-stub"
+  },
+  moduleNameMapper: {
+    "^@/(.*)$": "&lt;rootDir&gt;/src/$1"
+  },
+  testMatch: ["&lt;rootDir&gt;/src/**/*.spec.(t|j)s"],
+  testEnvironment: "jsdom",
+<span class="hljs-addition">+ transformIgnorePatterns: ["/node_modules/"],</span>
+<span class="hljs-addition">+ coverageDirectory: "coverage",</span>
+<span class="hljs-addition">+ coverageProvider: "v8",</span>
+<span class="hljs-addition">+ collectCoverageFrom: ["src/**/*.{js,vue}", "!src/main.ts", "!src/App.vue"],</span>
+<span class="hljs-addition">+ coverageThreshold: {</span>
+<span class="hljs-addition">+   global: {</span>
+<span class="hljs-addition">+     branches: 40,</span>
+<span class="hljs-addition">+     functions: 80,</span>
+<span class="hljs-addition">+     lines: 90,</span>
+<span class="hljs-addition">+     statements: 80</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ }</span>
+};
+export default config;
+</code></pre>
+<h3 id="t261.5 E2E测试">1.5 E2E测试 <a href="#t261.5 E2E测试"> # </a></h3>
+<ul>
+<li><a href="https://docs.cypress.io/">cypress</a></li>
+<li><a href="https://docs.cypress.io/guides/tooling/typescript-support#Clashing-types-with-Jest">Clashing-types-with-Jest</a></li>
+<li><a href="https://www.npmjs.com/package/patch-package">patch-package</a></li>
+</ul>
+<h4 id="t271.5.1 安装">1.5.1 安装 <a href="#t271.5.1 安装"> # </a></h4>
+<pre><code class="lang-js">pnpm install cypress -D
+pnpm install @cypress/vue@next @cypress/vite-dev-server -D
+echo done
+</code></pre>
+<h4 id="t281.5.2  TodoApp.vue">1.5.2  TodoApp.vue <a href="#t281.5.2  TodoApp.vue"> # </a></h4>
+<p>src\components\TodoApp.vue</p>
+<pre><code class="lang-diff">&lt;template&gt;
+<span class="hljs-addition">+ &lt;input data-test="newTodo" v-model="newTodo" /&gt;</span>
+<span class="hljs-addition">+ &lt;button data-test="addTodo" @click="addTodo"&gt;addTodo&lt;/button&gt;</span>
+<span class="hljs-addition">+ &lt;ul class="todo-list"&gt;</span>
+<span class="hljs-addition">+   &lt;li v-for="todo in todos"&gt;{{ todo.text }}&lt;/li&gt;</span>
+<span class="hljs-addition">+ &lt;/ul&gt;</span>
+&lt;/template&gt;
+&lt;script setup lang="ts"&gt;
+<span class="hljs-addition">+import { ref, reactive } from 'vue';</span>
+<span class="hljs-addition">+interface Todo {</span>
+<span class="hljs-addition">+  text: string;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+const newTodo = ref('');</span>
+<span class="hljs-addition">+const todos = reactive&lt;Array&lt;Todo&gt;&gt;([]);</span>
+<span class="hljs-addition">+const addTodo = () =&gt; {</span>
+<span class="hljs-addition">+  todos.push({ text: newTodo.value });</span>
+<span class="hljs-addition">+  newTodo.value = '';</span>
+<span class="hljs-addition">+}</span>
+&lt;/script&gt;
+</code></pre>
+<h4 id="t291.5.3 TodoApp.cy.ts">1.5.3 TodoApp.cy.ts <a href="#t291.5.3 TodoApp.cy.ts"> # </a></h4>
+<p>src\components\TodoApp.cy.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { mount } <span class="hljs-keyword">from</span> <span class="hljs-string">'@cypress/vue'</span>
+<span class="hljs-keyword">import</span> TodoApp <span class="hljs-keyword">from</span> <span class="hljs-string">'./TodoApp.vue'</span>
+describe(<span class="hljs-string">'TodoApp'</span>, () =&gt; {
+  it(<span class="hljs-string">'render TodoApp'</span>, () =&gt; {
+    mount(TodoApp)
+    <span class="hljs-keyword">const</span> text = <span class="hljs-string">'play'</span>;
+    cy.get(<span class="hljs-string">'[data-test="newTodo"]'</span>).type(text)
+    cy.get(<span class="hljs-string">'[data-test="addTodo"]'</span>).click();
+    cy.get(<span class="hljs-string">'.todo-list li'</span>)
+      .should(<span class="hljs-string">'have.length'</span>, <span class="hljs-number">1</span>)
+      .last()
+      .should(<span class="hljs-string">'have.text'</span>, text)
+  })
+});
+</code></pre>
+<h4 id="t301.5.4 todoApp.spec.js">1.5.4 todoApp.spec.js <a href="#t301.5.4 todoApp.spec.js"> # </a></h4>
+<ul>
+<li><a href="https://docs.cypress.io/api/commands/get">get</a></li>
+</ul>
+<p>cypress\integration\1-getting-started\todoApp.spec.js</p>
+<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types="cypress" /&gt;</span>
+describe(<span class="hljs-string">'TodoApp'</span>, () =&gt; {
+  beforeEach(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    cy.visit(<span class="hljs-string">'http://127.0.0.1:3000'</span>)
+  })
+  it(<span class="hljs-string">'can add new todo items'</span>, () =&gt; {
+    <span class="hljs-keyword">const</span> text = <span class="hljs-string">'play'</span>;
+    cy.get(<span class="hljs-string">'[data-test="newTodo"]'</span>).type(text)
+    cy.get(<span class="hljs-string">'[data-test="addTodo"]'</span>).click();
+    cy.get(<span class="hljs-string">'.todo-list li'</span>)
+      .should(<span class="hljs-string">'have.length'</span>, <span class="hljs-number">1</span>)
+      .last()
+      .should(<span class="hljs-string">'have.text'</span>, text)
+  })
+})
+</code></pre>
+<h4 id="t311.5.5 plugins\index.js">1.5.5 plugins\index.js <a href="#t311.5.5 plugins\index.js"> # </a></h4>
+<ul>
+<li><a href="https://www.cypress.io/blog/2021/04/06/getting-start-with-cypress-component-testing-vue-2-3/#configuringthecypresscomponenttestrunner">dev-server:start</a></li>
+</ul>
+<p>cypress\plugins\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { startDevServer } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@cypress/vite-dev-server'</span>);
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function">(<span class="hljs-params">on, config</span>) =&gt;</span> {
+  on(<span class="hljs-string">'dev-server:start'</span>, <span class="hljs-keyword">async</span> (options) =&gt; startDevServer({ options }));
+}
+</code></pre>
+<h4 id="t321.5.6 cypress.json">1.5.6 cypress.json <a href="#t321.5.6 cypress.json"> # </a></h4>
+<p>cypress.json</p>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"component"</span>: {
+    <span class="hljs-attr">"testFiles"</span>: <span class="hljs-string">"**/*.cy.{js,ts,jsx,tsx}"</span>,
+    <span class="hljs-attr">"componentFolder"</span>: <span class="hljs-string">"src"</span>
+  }
+}
+</code></pre>
+<h4 id="t331.5.7 package.json">1.5.7 package.json <a href="#t331.5.7 package.json"> # </a></h4>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+<span class="hljs-addition">+   "test:e2e": "cypress open",</span>
+<span class="hljs-addition">+   "test:ct": "cypress open-ct"</span>
+  },
+}
+</code></pre>
+<h4 id="t341.5.8 index.d.ts">1.5.8 index.d.ts <a href="#t341.5.8 index.d.ts"> # </a></h4>
+<p>node_modules\cypress\types\index.d.ts</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &lt;reference path="./cypress-expect.d.ts" /&gt;</span>
+</code></pre>
+<h4 id="t351.5.9 cypress-expect.d.ts">1.5.9 cypress-expect.d.ts <a href="#t351.5.9 cypress-expect.d.ts"> # </a></h4>
+<p>node_modules\cypress\types\cypress-expect.d.ts</p>
+<pre><code class="lang-js"><span class="hljs-comment">//declare const expect: Chai.ExpectStatic</span>
+<span class="hljs-comment">//declare const assert: Chai.AssertStatic</span>
+</code></pre>
+<h2 id="t362. SSR服务器端渲染">2. SSR服务器端渲染 <a href="#t362. SSR服务器端渲染"> # </a></h2>
+<h3 id="t372.1 搭建项目">2.1 搭建项目 <a href="#t372.1 搭建项目"> # </a></h3>
+<h4 id="t382.1.1 安装">2.1.1 安装 <a href="#t382.1.1 安装"> # </a></h4>
+<ul>
+<li><a href="https://www.typescriptlang.org/docs/handbook/project-references.html">project-references</a><pre><code class="lang-js">pnpm install react react-dom  react-router-dom
+pnpm install @types/react @types/react-dom @vitejs/plugin-react typescript vite @types/node fs-extra @types/fs-extra -D
+</code></pre>
+</li>
+</ul>
+<h4 id="t392.1.2 tsconfig.node.json">2.1.2 tsconfig.node.json <a href="#t392.1.2 tsconfig.node.json"> # </a></h4>
+<p>tsconfig.node.json</p>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"compilerOptions"</span>: {
+    <span class="hljs-attr">"composite"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"module"</span>: <span class="hljs-string">"esnext"</span>,
+    <span class="hljs-attr">"moduleResolution"</span>: <span class="hljs-string">"node"</span>
+  },
+  <span class="hljs-attr">"include"</span>: [<span class="hljs-string">"vite.config.ts"</span>]
+}
+</code></pre>
+<h4 id="t402.1.3 vite.config.ts">2.1.3 vite.config.ts <a href="#t402.1.3 vite.config.ts"> # </a></h4>
+<p>vite.config.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>
+<span class="hljs-keyword">import</span> react <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-react'</span>
+<span class="hljs-comment">// https://vitejs.dev/config/</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({
+  <span class="hljs-attr">plugins</span>: [react()]
+})
+
+</code></pre>
+<h4 id="t412.1.4 tsconfig.json">2.1.4 tsconfig.json <a href="#t412.1.4 tsconfig.json"> # </a></h4>
+<p>tsconfig.json</p>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"compilerOptions"</span>: {
+    <span class="hljs-attr">"target"</span>: <span class="hljs-string">"ESNext"</span>,
+    <span class="hljs-attr">"useDefineForClassFields"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"lib"</span>: [<span class="hljs-string">"DOM"</span>, <span class="hljs-string">"DOM.Iterable"</span>, <span class="hljs-string">"ESNext"</span>],
+    <span class="hljs-attr">"allowJs"</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"skipLibCheck"</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"esModuleInterop"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"allowSyntheticDefaultImports"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"strict"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"forceConsistentCasingInFileNames"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"module"</span>: <span class="hljs-string">"ESNext"</span>,
+    <span class="hljs-attr">"moduleResolution"</span>: <span class="hljs-string">"Node"</span>,
+    <span class="hljs-attr">"resolveJsonModule"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"isolatedModules"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"noEmit"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"noEmitOnError"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"jsx"</span>: <span class="hljs-string">"react-jsx"</span>,
+    <span class="hljs-attr">"types"</span>: [<span class="hljs-string">"vite/client"</span>]
+  },
+  <span class="hljs-attr">"include"</span>: [<span class="hljs-string">"src"</span>],
+  <span class="hljs-attr">"references"</span>: [{ <span class="hljs-attr">"path"</span>: <span class="hljs-string">"./tsconfig.node.json"</span> }]
+}
+</code></pre>
+<h4 id="t422.1.5 vite-env.d.ts">2.1.5 vite-env.d.ts <a href="#t422.1.5 vite-env.d.ts"> # </a></h4>
+<p>src\vite-env.d.ts</p>
+<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types="vite/client" /&gt;</span>
+</code></pre>
+<h4 id="t432.1.6 index.html">2.1.6 index.html <a href="#t432.1.6 index.html"> # </a></h4>
+<p>index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Vite App<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"root"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/main.tsx"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="t442.1.7 src\main.tsx">2.1.7 src\main.tsx <a href="#t442.1.7 src\main.tsx"> # </a></h4>
+<p>src\main.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>hello<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>,
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'root'</span>)
+)
+</code></pre>
+<h4 id="t452.1.8 .gitignore">2.1.8 .gitignore <a href="#t452.1.8 .gitignore"> # </a></h4>
+<p>.gitignore</p>
+<pre><code class="lang-js"># Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</code></pre>
+<h4 id="t462.1.9 package.json">2.1.9 package.json <a href="#t462.1.9 package.json"> # </a></h4>
+<p>package.json</p>
+<pre><code class="lang-json">{
+   <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"dev"</span>: <span class="hljs-string">"vite"</span>,
+    <span class="hljs-attr">"build"</span>: <span class="hljs-string">"tsc &amp;&amp; vite build"</span>
+  }
+}
+</code></pre>
+<h3 id="t472.2.声明式路由">2.2.声明式路由 <a href="#t472.2.声明式路由"> # </a></h3>
+<h4 id="t482.2.1 src\main.tsx">2.2.1 src\main.tsx <a href="#t482.2.1 src\main.tsx"> # </a></h4>
+<p>src\main.tsx</p>
+<pre><code class="lang-diff">import React from 'react'
+import ReactDOM from 'react-dom'
+<span class="hljs-addition">+import { BrowserRouter, Routes, Route,Link } from 'react-router-dom';</span>
+<span class="hljs-addition">+import Home from './routes/Home';</span>
+<span class="hljs-addition">+import User from './routes/User';</span>
+<span class="hljs-addition">+import Profile from './routes/Profile';</span>
+
+
+ReactDOM.render(
+<span class="hljs-addition">+  &lt;BrowserRouter&gt;</span>
+<span class="hljs-addition">+    &lt;Link to="/"&gt;首页&lt;/Link&gt;</span>
+<span class="hljs-addition">+    &lt;Link to="/user"&gt;用户管理&lt;/Link&gt;</span>
+<span class="hljs-addition">+    &lt;Link to="/profile"&gt;个人中心&lt;/Link&gt;</span>
+<span class="hljs-addition">+    &lt;Routes&gt;</span>
+<span class="hljs-addition">+      &lt;Route path="/" element={&lt;Home /&gt;} /&gt;</span>
+<span class="hljs-addition">+      &lt;Route path="/user" element={&lt;User /&gt;} /&gt;</span>
+<span class="hljs-addition">+      &lt;Route path="/profile" element={&lt;Profile /&gt;} /&gt;</span>
+<span class="hljs-addition">+    &lt;/Routes&gt;</span>
+<span class="hljs-addition">+  &lt;/BrowserRouter&gt;,</span>
+  document.getElementById('root')
+)
+</code></pre>
+<h4 id="t492.2.2 Home.tsx">2.2.2 Home.tsx <a href="#t492.2.2 Home.tsx"> # </a></h4>
+<p>src\routes\Home.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  )
+}
+</code></pre>
+<h4 id="t502.2.3 User.tsx">2.2.3 User.tsx <a href="#t502.2.3 User.tsx"> # </a></h4>
+<p>src\routes\User.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>User<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  )
+}
+</code></pre>
+<h4 id="t512.2.3 Profile.tsx">2.2.3 Profile.tsx <a href="#t512.2.3 Profile.tsx"> # </a></h4>
+<p>src\routes\Profile.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  )
+}
+</code></pre>
+<h3 id="t522.3.配置式路由">2.3.配置式路由 <a href="#t522.3.配置式路由"> # </a></h3>
+<h4 id="t532.3.1 src\main.tsx">2.3.1 src\main.tsx <a href="#t532.3.1 src\main.tsx"> # </a></h4>
+<p>src\main.tsx</p>
+<pre><code class="lang-diff">import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter} from 'react-router-dom';
+<span class="hljs-addition">+import App from './App';</span>
+ReactDOM.render(
+  &lt;BrowserRouter&gt;
+<span class="hljs-addition">+   &lt;App/&gt;</span>
+  &lt;/BrowserRouter&gt;,
+  document.getElementById('root')
+)
+</code></pre>
+<h4 id="t542.3.2 src\App.tsx">2.3.2 src\App.tsx <a href="#t542.3.2 src\App.tsx"> # </a></h4>
+<p>src\App.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {Link, useRoutes } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-router-dom'</span>;
+<span class="hljs-keyword">import</span> routesConfig <span class="hljs-keyword">from</span> <span class="hljs-string">'./routeConfig'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/"</span>&gt;</span>首页<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/user"</span>&gt;</span>用户管理<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/profile"</span>&gt;</span>个人中心<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+      {useRoutes(routesConfig)}
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  )
+}
+</code></pre>
+<h4 id="t552.3.3 routeConfig.tsx">2.3.3 routeConfig.tsx <a href="#t552.3.3 routeConfig.tsx"> # </a></h4>
+<p>src\routeConfig.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> routesModules = <span class="hljs-keyword">import</span>.meta.globEager(<span class="hljs-string">"./routes/*.tsx"</span>);
+<span class="hljs-keyword">const</span> routesConfig = <span class="hljs-built_in">Object</span>.keys(routesModules).map(<span class="hljs-function"><span class="hljs-params">url</span> =&gt;</span> {
+  <span class="hljs-keyword">const</span> name = url.match(<span class="hljs-regexp">/\.\/routes\/(.+)\.tsx$/</span>)![<span class="hljs-number">1</span>].toLowerCase();
+  <span class="hljs-keyword">const</span> Component = routesModules[url].default;
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">path</span>: name === <span class="hljs-string">'home'</span> ? <span class="hljs-string">`/`</span> : <span class="hljs-string">`/`</span> + name,
+    <span class="hljs-attr">element</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Component</span> /&gt;</span></span>
+  }
+});
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> routesConfig;
+</code></pre>
+<h3 id="t562.4.SSR服务器端渲染">2.4.SSR服务器端渲染 <a href="#t562.4.SSR服务器端渲染"> # </a></h3>
+<h4 id="t572.4.1 安装">2.4.1 安装 <a href="#t572.4.1 安装"> # </a></h4>
+<pre><code class="lang-js">pnpm install express  morgan
+pnpm install @types/node @types/express @types/morgan cross-env -D
+pnpm install ts-node-dev -g 
+</code></pre>
+<h4 id="t582.4.2 tsconfig.json">2.4.2 tsconfig.json <a href="#t582.4.2 tsconfig.json"> # </a></h4>
+<p>tsconfig.json</p>
+<pre><code class="lang-diff">{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noEmitOnError": true,
+    "jsx": "react-jsx",
+    "types": ["vite/client"]
+  },
+<span class="hljs-addition">+  "ts-node": {</span>
+<span class="hljs-addition">+   "compilerOptions": {</span>
+<span class="hljs-addition">+     "module": "commonjs",</span>
+<span class="hljs-addition">+     "esModuleInterop":true</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ },</span>
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+</code></pre>
+<h4 id="t592.4.3 tsconfig.node.json">2.4.3 tsconfig.node.json <a href="#t592.4.3 tsconfig.node.json"> # </a></h4>
+<p>tsconfig.node.json</p>
+<pre><code class="lang-diff">{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node"，
+    "esModuleInterop": true
+  }, 
+<span class="hljs-addition">+  "include": ["vite.config.ts","ssr-entry.ts"]</span>
+}
+</code></pre>
+<h4 id="t602.4.4 package.json">2.4.4 package.json <a href="#t602.4.4 package.json"> # </a></h4>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc &amp;&amp; vite build",
+<span class="hljs-addition">+   "ssr": "ts-node-dev --respawn ssr.ts"</span>
+  }
+}
+</code></pre>
+<h4 id="t612.4.5 ssr-entry.ts">2.4.5 ssr-entry.ts <a href="#t612.4.5 ssr-entry.ts"> # </a></h4>
+<p>ssr-entry.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> express, { Express } <span class="hljs-keyword">from</span> <span class="hljs-string">"express"</span>;
+<span class="hljs-keyword">import</span> { createServer } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>
+<span class="hljs-keyword">const</span> app: Express = express();
+
+; (<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> vite = <span class="hljs-keyword">await</span> createServer({
+    <span class="hljs-attr">server</span>: {
+      <span class="hljs-attr">middlewareMode</span>:<span class="hljs-string">'html'</span>
+   }
+  })
+  app.use(vite.middlewares);
+  app.listen(<span class="hljs-number">8000</span>,()=&gt;<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'ssr server started on 8000'</span>))
+})();
+</code></pre>
+<h3 id="t622.5.开发环境SSR">2.5.开发环境SSR <a href="#t622.5.开发环境SSR"> # </a></h3>
+<h4 id="t632.5.1 ssr-entry.ts">2.5.1 ssr-entry.ts <a href="#t632.5.1 ssr-entry.ts"> # </a></h4>
+<p>ssr-entry.ts</p>
+<pre><code class="lang-diff">import express, { Express,Request,Response } from "express";
+<span class="hljs-addition">+import logger from 'morgan';</span>
+import { createServer } from 'vite'
+<span class="hljs-addition">+import fs from 'fs-extra';</span>
+<span class="hljs-addition">+import path from 'path';</span>
+const app: Express = express();
+
+; (async function () {
+  const vite = await createServer({
+    server: {
+<span class="hljs-addition">+      middlewareMode: 'ssr'</span>
+    }
+  })
+  app.use(vite.middlewares);
+<span class="hljs-addition">+ app.use(logger('dev'));</span>
+<span class="hljs-addition">+ app.get('*', async (req:Request, res:Response) =&gt; {</span>
+<span class="hljs-addition">+   const indexPath = path.join(__dirname, 'index.html');</span>
+<span class="hljs-addition">+   let originHtml = await fs.readFile(indexPath, 'utf8');</span>
+<span class="hljs-addition">+   originHtml = await vite.transformIndexHtml(req.url, originHtml);</span>
+<span class="hljs-addition">+   const { render } = await vite.ssrLoadModule('/src/server-entry.tsx');</span>
+<span class="hljs-addition">+   const renderHtml = await render(req.url);</span>
+<span class="hljs-addition">+   originHtml = originHtml.replace('&lt;!--placeholder--&gt;', renderHtml);</span>
+<span class="hljs-addition">+   res.set('Content-Type', "text/html;charset=utf-8");</span>
+<span class="hljs-addition">+   res.send(originHtml);</span>
+<span class="hljs-addition">+ });</span>
+  app.listen(8000, () =&gt; console.log('ssr server started on 8000'))
+})();
+</code></pre>
+<h4 id="t642.5.2 server-entry.tsx">2.5.2 server-entry.tsx <a href="#t642.5.2 server-entry.tsx"> # </a></h4>
+<p>src\server-entry.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> ReactDOMServer <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom/server'</span>
+<span class="hljs-keyword">import</span> { StaticRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-router-dom/server'</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">url: string, context: string</span>) </span>{
+  <span class="hljs-keyword">return</span> ReactDOMServer.renderToString(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StaticRouter</span> <span class="hljs-attr">location</span>=<span class="hljs-string">{url}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">StaticRouter</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h4 id="t652.5.3 client-entry.tsx">2.5.3 client-entry.tsx <a href="#t652.5.3 client-entry.tsx"> # </a></h4>
+<p>src\client-entry.tsx</p>
+<pre><code class="lang-diff">import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+<span class="hljs-addition">+ReactDOM.hydrate(</span>
+  &lt;BrowserRouter&gt;
+    &lt;App /&gt;
+  &lt;/BrowserRouter&gt;,
+  document.getElementById('root')
+)
+</code></pre>
+<h4 id="t662.5.4 index.html">2.5.4 index.html <a href="#t662.5.4 index.html"> # </a></h4>
+<p>index.html</p>
+<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+  &lt;title&gt;Vite App&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id="root"&gt;
+<span class="hljs-addition">+    &lt;!--placeholder--&gt;</span>
+  &lt;/div&gt;
+<span class="hljs-addition">+ &lt;script type="module" src="/src/client-entry.tsx"&gt;&lt;/script&gt;</span>
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<h3 id="t672.6.生产环境">2.6.生产环境 <a href="#t672.6.生产环境"> # </a></h3>
+<h4 id="t682.6.2 package.json">2.6.2 package.json <a href="#t682.6.2 package.json"> # </a></h4>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc &amp;&amp; vite build",
+    "dev:ssr": "ts-node-dev --respawn ssr-entry.ts",
+<span class="hljs-addition">+    "build:ssr": "cross-env NODE_ENV=production &amp;&amp; npm run build:client &amp;&amp; npm run build:server &amp;&amp; npm run build:ssr-entry",</span>
+<span class="hljs-addition">+   "build:client": "tsc &amp;&amp; vite build  --outDir dist/client",</span>
+<span class="hljs-addition">+   "build:server": "tsc &amp;&amp; vite build --outDir dist/server --ssr src/server-entry.tsx",</span>
+<span class="hljs-addition">+   "build:ssr-entry": "tsc --esModuleInterop true --outDir dist ssr-entry.ts",</span>
+<span class="hljs-addition">+   "start:ssr": "pm2 start ./dist/ssr-entry.js"</span>
+  },
+}
+</code></pre>
+<h4 id="t692.6.3 ssr-entry.ts">2.6.3 ssr-entry.ts <a href="#t692.6.3 ssr-entry.ts"> # </a></h4>
+<p>ssr-entry.ts</p>
+<pre><code class="lang-diff">import express, { Express,Request,Response } from "express";
+import logger from 'morgan';
+import { createServer } from 'vite'
+import fs from 'fs-extra';
+import path from 'path';
+const app: Express = express();
+<span class="hljs-addition">+const NODE_ENV = process.env.NODE_ENV;</span>
+; (async function () {
+  const indexPath = path.join(__dirname, 'client/index.html');
+  let originHtml = await fs.readFile(indexPath, 'utf8');
+<span class="hljs-addition">+  if (NODE_ENV === 'development') {</span>
+    const vite = await createServer({
+      server: {
+        middlewareMode: 'ssr'
+      }
+    })
+    app.use(vite.middlewares);
+    app.use(logger('dev'));
+    app.get('*', async (req:Request, res:Response) =&gt; {
+      originHtml = await vite.transformIndexHtml(req.url, originHtml);
+      const { render } = await vite.ssrLoadModule('/src/server-entry.tsx');
+      const renderHtml = await render(req.url);
+      originHtml = originHtml.replace('&lt;!--placeholder--&gt;', renderHtml);
+      res.set('Content-Type', "text/html;charset=utf-8");
+      res.send(originHtml);
+    });
+<span class="hljs-addition">+ } else {</span>
+<span class="hljs-addition">+   app.get('*.html', async (req: Request, res: Response) =&gt; {</span>
+<span class="hljs-addition">+     serve(req, res)</span>
+<span class="hljs-addition">+   })</span>
+<span class="hljs-addition">+   app.use(express.static(path.resolve(__dirname, 'client')));</span>
+<span class="hljs-addition">+   app.get('*', async (req: Request, res: Response) =&gt; {</span>
+<span class="hljs-addition">+     serve(req, res)</span>
+<span class="hljs-addition">+   })</span>
+<span class="hljs-addition">+ }</span>
+<span class="hljs-addition">+ async function serve(req: Request, res: Response) {</span>
+<span class="hljs-addition">+     const { render } = require('./server/server.js');</span>
+<span class="hljs-addition">+     const renderHtml = await render(req.url);</span>
+<span class="hljs-addition">+     originHtml = originHtml.replace('&lt;!--placeholder--&gt;', renderHtml);</span>
+<span class="hljs-addition">+     res.set('Content-Type', "text/html;charset=utf-8");</span>
+<span class="hljs-addition">+     res.send(originHtml);</span>
+<span class="hljs-addition">+   }</span>
+  app.listen(8000, () =&gt; console.log('ssr server started on 8000'))
+})();
+</code></pre>
+<h3 id="t702.7.静态化">2.7.静态化 <a href="#t702.7.静态化"> # </a></h3>
+<h4 id="t712.7.1 package.json">2.7.1 package.json <a href="#t712.7.1 package.json"> # </a></h4>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc &amp;&amp; vite build",
+    "dev:ssr": "ts-node-dev --respawn ssr-entry.ts",
+    "build:ssr": "cross-env NODE_ENV=production &amp;&amp; npm run build:client &amp;&amp; npm run build:server &amp;&amp; npm run build:ssr-entry",
+    "build:client": "tsc &amp;&amp; vite build  --outDir dist/client",
+    "build:server": "tsc &amp;&amp; vite build --outDir dist/server --ssr src/server-entry.tsx",
+    "build:ssr-entry": "tsc --esModuleInterop true --outDir dist ssr-entry.ts",
+    "start:ssr": "pm2 start ./dist/ssr-entry.js",
+<span class="hljs-addition">+   "static": "ts-node  static.ts"</span>
+  }
+}
+</code></pre>
+<h4 id="t722.7.2 static.ts">2.7.2 static.ts <a href="#t722.7.2 static.ts"> # </a></h4>
+<p>static.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> path <span class="hljs-keyword">from</span> <span class="hljs-string">'path'</span>;
+<span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs-extra'</span>;
+(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> indexPath = path.join(__dirname, <span class="hljs-string">'dist/client/index.html'</span>);
+  <span class="hljs-keyword">let</span> originHtml = <span class="hljs-keyword">await</span> fs.readFile(indexPath, <span class="hljs-string">'utf8'</span>);
+  <span class="hljs-keyword">let</span> routes = <span class="hljs-keyword">await</span> fs.readdir(<span class="hljs-string">'./src/routes'</span>);
+  routes = routes.map(<span class="hljs-function">(<span class="hljs-params">route:string</span>) =&gt;</span> {
+    route = path.basename(route, <span class="hljs-string">'.tsx'</span>).toLowerCase();
+    <span class="hljs-keyword">return</span> route;
+  });
+  <span class="hljs-keyword">const</span> { render } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./dist/server/server-entry.js'</span>);
+  <span class="hljs-keyword">const</span> staticDir = path.join(__dirname, <span class="hljs-string">'dist/static'</span>);
+  <span class="hljs-keyword">await</span> fs.ensureDir(staticDir);
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> route <span class="hljs-keyword">of</span> routes) {
+    <span class="hljs-keyword">const</span> renderHtml = <span class="hljs-keyword">await</span> render(<span class="hljs-string">'/'</span>+(route===<span class="hljs-string">'home'</span>?<span class="hljs-string">''</span>:route))
+    <span class="hljs-keyword">let</span> routeHtml = originHtml.replace(<span class="hljs-string">'&lt;!--placeholder--&gt;'</span>, renderHtml);
+    <span class="hljs-keyword">if</span> (route === <span class="hljs-string">'home'</span>) route = <span class="hljs-string">'index'</span>;
+    <span class="hljs-keyword">await</span> fs.writeFile(path.join(__dirname, <span class="hljs-string">'dist/static'</span>, <span class="hljs-string">`<span class="hljs-subst">${route}</span>.html`</span>), routeHtml);
+  }
+  <span class="hljs-keyword">await</span> fs.copy(path.join(__dirname, <span class="hljs-string">'dist/client/assets'</span>),path.join(__dirname, <span class="hljs-string">'dist/static/assets'</span>));
+})();
+</code></pre>
+<h4 id="t732.7.3 tsconfig.node.json">2.7.3 tsconfig.node.json <a href="#t732.7.3 tsconfig.node.json"> # </a></h4>
+<p>tsconfig.node.json</p>
+<pre><code class="lang-diff">{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+<span class="hljs-addition">+  "include": ["vite.config.ts","ssr-entry.ts","static.ts"]</span>
+}
+</code></pre>
+<h2 id="t743.HMR">3.HMR <a href="#t743.HMR"> # </a></h2>
+<h3 id="t753.1.创建项目">3.1.创建项目 <a href="#t753.1.创建项目"> # </a></h3>
+<h4 id="t763.1.1 安装">3.1.1 安装 <a href="#t763.1.1 安装"> # </a></h4>
+<pre><code class="lang-js">pnpm install vite -D
+</code></pre>
+<h4 id="t773.1.2.package.json">3.1.2.package.json <a href="#t773.1.2.package.json"> # </a></h4>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"dev"</span>: <span class="hljs-string">"vite"</span>
+  }
+}
+</code></pre>
+<h4 id="t783.1.3.src\main.js">3.1.3.src\main.js <a href="#t783.1.3.src\main.js"> # </a></h4>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params"></span>) </span>{
+  app.innerHTML = <span class="hljs-string">'title'</span>;
+}
+render();
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">import</span>.meta.hot) {
+  <span class="hljs-keyword">import</span>.meta.hot.accept(<span class="hljs-function">(<span class="hljs-params">newModule</span>) =&gt;</span> {
+    newModule.render();
+  });
+}
+</code></pre>
+<h4 id="t793.1.4.index.html">3.1.4.index.html <a href="#t793.1.4.index.html"> # </a></h4>
+<p>index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>hmr<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/main.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="t803.2.封装模块">3.2.封装模块 <a href="#t803.2.封装模块"> # </a></h3>
+<h4 id="t813.2.1 src\render.js">3.2.1 src\render.js <a href="#t813.2.1 src\render.js"> # </a></h4>
+<p>src\render.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params"></span>) </span>{
+  app.innerHTML = <span class="hljs-string">'title5'</span>;
+}
+</code></pre>
+<h4 id="t823.2.2 src\main.js">3.2.2 src\main.js <a href="#t823.2.2 src\main.js"> # </a></h4>
+<p>src\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { render } <span class="hljs-keyword">from</span> <span class="hljs-string">'./render'</span>;
+render();
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">import</span>.meta.hot) {
+  <span class="hljs-keyword">import</span>.meta.hot.accept([<span class="hljs-string">'./render'</span>], ([renderMod]) =&gt; {
+    renderMod.render();
+  });
+}
+</code></pre>
+<h3 id="t833.3.销毁副作用">3.3.销毁副作用 <a href="#t833.3.销毁副作用"> # </a></h3>
+<h4 id="t843.3.1 render.js">3.3.1 render.js <a href="#t843.3.1 render.js"> # </a></h4>
+<p>src\render.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+let counter = { number: 0 };</span>
+<span class="hljs-addition">+let timer = setInterval(() =&gt; {</span>
+<span class="hljs-addition">+  console.log(counter.number++);</span>
+<span class="hljs-addition">+}, 1000);</span>
+
+export function render() {
+  app.innerHTML = 'title';
+}
+
+<span class="hljs-addition">+if (import.meta.hot) {</span>
+<span class="hljs-addition">+  import.meta.hot.dispose(() =&gt; {</span>
+<span class="hljs-addition">+    console.log('dispose render.js');</span>
+<span class="hljs-addition">+    clearInterval(timer);</span>
+<span class="hljs-addition">+  });</span>
+<span class="hljs-addition">+}</span>
+</code></pre>
+<h3 id="t853.4.保留状态">3.4.保留状态 <a href="#t853.4.保留状态"> # </a></h3>
+<h4 id="t863.4.1 render.js">3.4.1 render.js <a href="#t863.4.1 render.js"> # </a></h4>
+<p>src\render.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+let counter = import.meta.hot.data.counter || { number: 0 };</span>
+let timer;
+
+export function render() {
+  timer = setInterval(() =&gt; {
+    app.innerHTML = counter.number++;
+  }, 1000);
+}
+
+if (import.meta.hot) {
+//每个模块有一个data属性,保存热更新前的状态  
+<span class="hljs-addition">+ import.meta.hot.data.counter = counter;</span>
+  import.meta.hot.dispose(() =&gt; {
+    console.log('dispose render.js');
+    clearInterval(timer);
+  });
+}
+</code></pre>
+<h3 id="t873.5.拒绝更新">3.5.拒绝更新 <a href="#t873.5.拒绝更新"> # </a></h3>
+<h4 id="t883.5.1 render.js">3.5.1 render.js <a href="#t883.5.1 render.js"> # </a></h4>
+<p>src\render.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+export let counter = import.meta.hot.data.counter || { number: 0 };</span>
+let timer;
+
+export function render() {
+  timer = setInterval(() =&gt; {
+    app.innerHTML = counter.number++;
+  }, 1000);
+}
+
+if (import.meta.hot) {
+  import.meta.hot.data.counter = counter;
+  import.meta.hot.dispose(() =&gt; {
+    console.log('dispose render.js');
+    clearInterval(timer);
+  });
+}
+</code></pre>
+<h4 id="t893.5.2 src\main.js">3.5.2 src\main.js <a href="#t893.5.2 src\main.js"> # </a></h4>
+<p>src\main.js</p>
+<pre><code class="lang-diff">import { render } from './render';
+render();
+if (import.meta.hot) {
+  import.meta.hot.accept(['./render'], ([renderMod]) =&gt; {
+<span class="hljs-addition">+    if (renderMod.counter.number &lt; 10) {</span>
+<span class="hljs-addition">+      renderMod.render();</span>
+<span class="hljs-addition">+    } else {</span>
+<span class="hljs-addition">+      //强制刷新</span>
+<span class="hljs-addition">+      import.meta.hot.invalidate();</span>
+    }
+  });
+<span class="hljs-addition">+  //import.meta.hot.accept();</span>
+<span class="hljs-addition">+  import.meta.hot.decline();</span>
+}
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>
