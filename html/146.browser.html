@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li class="active"><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01. 进程架构">1. 进程架构</a><ul><li><a href="#t11.1 进程和线程">1.1 进程和线程</a></li><li><a href="#t21.2 Chrome的进程架构">1.2 Chrome的进程架构</a></li></ul></li><li><a href="#t32. 加载HTML">2. 加载HTML</a><ul><li><a href="#t42.1 安装npm包">2.1 安装npm包</a></li><li><a href="#t52.2 server\index.js">2.2 server\index.js</a></li><li><a href="#t62.3 index.html">2.3 index.html</a></li><li><a href="#t72.4 client\request.js">2.4 client\request.js</a></li><li><a href="#t82.5 client\render.js">2.5 client\render.js</a></li><li><a href="#t92.6 client\network.js">2.6 client\network.js</a></li><li><a href="#t102.7 client\render.js">2.7 client\render.js</a></li><li><a href="#t112.8 client\gpu.js">2.8 client\gpu.js</a></li><li><a href="#t122.9 client\main.js">2.9 client\main.js</a></li></ul></li><li><a href="#t133. 渲染流水线">3. 渲染流水线</a><ul><li><a href="#t143.1 HTML转DOM树">3.1 HTML转DOM树</a><ul><li><a href="#t153.1.1 分词">3.1.1 分词</a></li><li><a href="#t163.1.2 request.js">3.1.2 request.js</a></li></ul></li><li><a href="#t173.2 CSS转stylesheet">3.2 CSS转stylesheet</a><ul><li><a href="#t183.2.1 index.html">3.2.1 index.html</a></li><li><a href="#t193.2.2 request.js">3.2.2 request.js</a></li></ul></li><li><a href="#t203.3 计算出DOM节点的样式">3.3 计算出DOM节点的样式</a><ul><li><a href="#t213.3.1 index.html">3.3.1 index.html</a></li><li><a href="#t223.3.2 client\request.js">3.3.2 client\request.js</a></li></ul></li><li><a href="#t233.4 创建布局树">3.4 创建布局树</a><ul><li><a href="#t243.4.1 index.html">3.4.1 index.html</a></li><li><a href="#t253.4.2 request.js">3.4.2 request.js</a></li></ul></li><li><a href="#t263.5 计算布局">3.5 计算布局</a><ul><li><a href="#t273.5.1 request.js">3.5.1 request.js</a></li></ul></li><li><a href="#t283.6 生成分层树">3.6 生成分层树</a><ul><li><a href="#t293.5.1 index.html">3.5.1 index.html</a></li><li><a href="#t303.5.2 client\request.js">3.5.2 client\request.js</a></li></ul></li><li><a href="#t313.6 绘制">3.6 绘制</a><ul><li><a href="#t323.6.1 client\request.js">3.6.1 client\request.js</a></li></ul></li><li><a href="#t333.7 合成线程">3.7 合成线程</a></li><li><a href="#t343.7.1 图块">3.7.1 图块</a></li><li><a href="#t353.7.2 栅格化">3.7.2 栅格化</a><ul><li><a href="#t363.7.3 client\gpu.js">3.7.3 client\gpu.js</a></li><li><a href="#t373.7.4 request.js">3.7.4 request.js</a></li></ul></li><li><a href="#t383.8 资源加载">3.8 资源加载</a><ul><li><a href="#t393.8.1  server\public\load.html">3.8.1  server\public\load.html</a></li><li><a href="#t403.8.2 server\public\hello.css">3.8.2 server\public\hello.css</a></li><li><a href="#t413.8.3 server\public\hello.js">3.8.3 server\public\hello.js</a></li><li><a href="#t423.8.4 client\network.js">3.8.4 client\network.js</a></li><li><a href="#t433.8.5  client\request.js">3.8.5  client\request.js</a></li></ul></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01. 进程架构">1. 进程架构 <a href="#t01. 进程架构"> # </a></h2>
+<h3 id="t11.1 进程和线程">1.1 进程和线程 <a href="#t11.1 进程和线程"> # </a></h3>
+<ul>
+<li>当启动一个程序时，操作系统会为该程序分配内存，用来存放代码、运行过程中的数据，这样的运行环境叫做<code>进程</code></li>
+<li>一个进程可以启动和管理多个线程，线程之间可以共享进行数据，任何一个线程出错都可能会导致进程崩溃</li>
+</ul>
+<h3 id="t21.2 Chrome的进程架构">1.2 Chrome的进程架构 <a href="#t21.2 Chrome的进程架构"> # </a></h3>
+<ul>
+<li>浏览器主进程 负责界面显示、用户交互和子进程管理</li>
+<li>渲染进程 排版引擎和V8引擎运行在该进程中，负责把HTML、CSS和JavaScript转变成网页</li>
+<li>网络进程 用来加载网络资源的</li>
+<li>GPU进程 用来实现CSS3和3D效果</li>
+</ul>
+<h2 id="t32. 加载HTML">2. 加载HTML <a href="#t32. 加载HTML"> # </a></h2>
+<ul>
+<li>(1)主进程接收用户输入的URL</li>
+<li>(2)主进程把该URL转发给网络进程</li>
+<li>(3)在网络进程中发起URL请求</li>
+<li>(4)网络进程接收到响应头数据并转发给主进程</li>
+<li>(5)主进程发送提交导航消息到渲染进程</li>
+<li>(6)渲染进程开始从网络进程接收HTML数据</li>
+<li>(7)HTML接收接受完毕后通知主进程确认导航</li>
+<li>(8)渲染进程开始HTML解析和加载子资源</li>
+<li>(9)HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/cong_shu_ru_URL_dao_ye_mian_zhan_shi_1_1640774922934.jpg" alt=""></p>
+<h3 id="t42.1 安装npm包">2.1 安装npm包 <a href="#t42.1 安装npm包"> # </a></h3>
+<pre><code class="lang-js">cnpm install  canvas  css express htmlparser2 --save
+</code></pre>
+<h3 id="t52.2 server\index.js">2.2 server\index.js <a href="#t52.2 server\index.js"> # </a></h3>
+<p>server\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">let</span> app = express();
+app.use(express.static(<span class="hljs-string">'public'</span>));
+app.listen(<span class="hljs-number">80</span>, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'server started at 80'</span>);
+});
+</code></pre>
+<h3 id="t62.3 index.html">2.3 index.html <a href="#t62.3 index.html"> # </a></h3>
+<p>server\public\index.html</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>hello<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>world<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="t72.4 client\request.js">2.4 client\request.js <a href="#t72.4 client\request.js"> # </a></h3>
+<p>client\request.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+<span class="hljs-keyword">const</span> main = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./main.js'</span>);
+<span class="hljs-keyword">const</span> network = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./network.js'</span>);
+<span class="hljs-keyword">const</span> render = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./render.js'</span>);
+<span class="hljs-keyword">const</span> host = <span class="hljs-string">'localhost'</span>;
+<span class="hljs-keyword">const</span> port = <span class="hljs-number">80</span>;
+
+<span class="hljs-comment">/** 浏览器主进程 **/</span>
+main.on(<span class="hljs-string">'request'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">options</span>) </span>{
+    <span class="hljs-comment">//2.主进程把该URL转发给网络进程</span>
+    network.emit(<span class="hljs-string">'request'</span>, options);
+})
+<span class="hljs-comment">//开始准备渲染页面</span>
+main.on(<span class="hljs-string">'prepareRender'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+    <span class="hljs-comment">//5.主进程发送提交导航消息到渲染进程</span>
+    render.emit(<span class="hljs-string">'commitNavigation'</span>, response);
+})
+main.on(<span class="hljs-string">'confirmNavigation'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'confirmNavigation'</span>);
+})
+main.on(<span class="hljs-string">'DOMContentLoaded'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'DOMContentLoaded'</span>);
+})
+main.on(<span class="hljs-string">'Load'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Load'</span>);
+})
+
+<span class="hljs-comment">/** 网络进程 **/</span>
+network.on(<span class="hljs-string">'request'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">options</span>) </span>{
+    <span class="hljs-comment">//3.在网络进程中发起URL请求</span>
+    <span class="hljs-keyword">let</span> request = http.request(options, (response) =&gt; {
+        <span class="hljs-comment">//4.网络进程接收到响应头数据并转发给主进程</span>
+        main.emit(<span class="hljs-string">'prepareRender'</span>, response);
+    });
+    <span class="hljs-comment">//结束请求体</span>
+    request.end();
+})
+
+<span class="hljs-comment">/** 渲染进程 **/</span>
+<span class="hljs-comment">//6.渲染进程开始从网络进程接收HTML数据</span>
+render.on(<span class="hljs-string">'commitNavigation'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+    <span class="hljs-comment">//开始接收响应体</span>
+    <span class="hljs-keyword">const</span> buffers = [];
+    response.on(<span class="hljs-string">'data'</span>, (buffer) =&gt; {
+        <span class="hljs-comment">//8.渲染进程开始HTML解析和加载子资源</span>
+        buffers.push(buffer);
+    });
+    response.on(<span class="hljs-string">'end'</span>, () =&gt; {
+        <span class="hljs-keyword">let</span> resultBuffer = Buffer.concat(buffers);
+        <span class="hljs-keyword">let</span> html = resultBuffer.toString();
+        <span class="hljs-built_in">console</span>.log(html);
+        <span class="hljs-comment">//7.HTML接收接受完毕后通知主进程确认导航</span>
+        main.emit(<span class="hljs-string">'confirmNavigation'</span>, html);
+        <span class="hljs-comment">//触发DOMContentLoaded事件</span>
+        main.emit(<span class="hljs-string">'DOMContentLoaded'</span>, html);
+        <span class="hljs-comment">//9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成</span>
+        main.emit(<span class="hljs-string">'Load'</span>);
+    });
+})
+
+<span class="hljs-comment">//1.主进程接收用户输入的URL</span>
+main.emit(<span class="hljs-string">'request'</span>, { host, port, <span class="hljs-attr">path</span>: <span class="hljs-string">'/index.html'</span> });
+</code></pre>
+<h3 id="t82.5 client\render.js">2.5 client\render.js <a href="#t82.5 client\render.js"> # </a></h3>
+<p>client\render.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> EventEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'events'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Render</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">EventEmitter</span> </span>{ }
+<span class="hljs-keyword">const</span> render = <span class="hljs-keyword">new</span> Render();
+<span class="hljs-built_in">module</span>.exports = render;
+</code></pre>
+<h3 id="t92.6 client\network.js">2.6 client\network.js <a href="#t92.6 client\network.js"> # </a></h3>
+<p>client\network.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> EventEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'events'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Network</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">EventEmitter</span> </span>{ }
+<span class="hljs-keyword">const</span> network = <span class="hljs-keyword">new</span> Network();
+<span class="hljs-built_in">module</span>.exports = network;
+</code></pre>
+<h3 id="t102.7 client\render.js">2.7 client\render.js <a href="#t102.7 client\render.js"> # </a></h3>
+<p>client\render.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> EventEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'events'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Render</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">EventEmitter</span> </span>{ }
+<span class="hljs-keyword">const</span> render = <span class="hljs-keyword">new</span> Render();
+<span class="hljs-built_in">module</span>.exports = render;
+</code></pre>
+<h3 id="t112.8 client\gpu.js">2.8 client\gpu.js <a href="#t112.8 client\gpu.js"> # </a></h3>
+<p>client\gpu.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> EventEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'events'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GPU</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">EventEmitter</span> </span>{}
+<span class="hljs-keyword">const</span> gpu = <span class="hljs-keyword">new</span> GPU();
+<span class="hljs-built_in">module</span>.exports = gpu;
+</code></pre>
+<h3 id="t122.9 client\main.js">2.9 client\main.js <a href="#t122.9 client\main.js"> # </a></h3>
+<p>client\main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> EventEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'events'</span>);
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">EventEmitter</span> </span>{ }
+<span class="hljs-keyword">const</span> main = <span class="hljs-keyword">new</span> Main();
+<span class="hljs-built_in">module</span>.exports = main;
+</code></pre>
+<h2 id="t133. 渲染流水线">3. 渲染流水线 <a href="#t133. 渲染流水线"> # </a></h2>
+<ul>
+<li>（1) 渲染进程把HTML转变为DOM树型结构</li>
+<li>（2) 渲染进程把CSS文本转为浏览器中的<code>stylesheet</code></li>
+<li>（3) 通过stylesheet计算出DOM节点的样式</li>
+<li>（4) 根据DOM树创建布局树</li>
+<li>（5) 并计算各个元素的布局信息</li>
+<li>（6) 根据布局树生成分层树</li>
+<li>（7) 根据分层树进行生成绘制步骤</li>
+<li>（8) 把绘制步骤交给渲染进程中的合成线程进行合成</li>
+<li>（9) 合成线程将图层分成图块(tile)</li>
+<li>（10) 合成线程会把分好的图块发给栅格化线程池，栅格化线程会把图片(tile)转化为位图</li>
+<li>（11) 而其实栅格化线程在工作的时候会把栅格化的工作交给GPU进程来完成，最终生成的位图就保存在了<code>GPU</code>内存中</li>
+<li>（12) 当所有的图块都光栅化之后合成线程会发送绘制图块的命令给浏览器主进程</li>
+<li>（13) 浏览器主进程然后会从GPU内存中取出位图显示到页面上</li>
+</ul>
+<h3 id="t143.1 HTML转DOM树">3.1 HTML转DOM树 <a href="#t143.1 HTML转DOM树"> # </a></h3>
+<ul>
+<li>浏览器中的HTML解析器可以把HTML字符串转换成DOM结构</li>
+<li>HTML解析器边接收网络数据边解析HTML</li>
+<li>解析DOM<ul>
+<li>HTML字符串转Token</li>
+<li>Token栈用来维护节点之间的父子关系，Token会依次压入栈中</li>
+<li>如果是开始标签，把Token压入栈中并且创建新的DOM节点并添加到父节点的children中</li>
+<li>如果是文本Token，则把文本节点添加到栈顶元素的children中，文本Token不需要入栈</li>
+<li>如果是结束标签，此开始标签出栈</li>
+</ul>
+</li>
+</ul>
+<h4 id="t153.1.1 分词">3.1.1 分词 <a href="#t153.1.1 分词"> # </a></h4>
+<ul>
+<li><a href="https://www.processon.com/diagraming/61cf32be5653bb069ff43f90">token</a></li>
+</ul>
+<h4 id="t163.1.2 request.js">3.1.2 request.js <a href="#t163.1.2 request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+const htmlparser2 = require('htmlparser2');</span>
+const http = require('http');
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+const host = 'localhost';
+const port = 80;
+<span class="hljs-addition">+Array.prototype.top = function () {</span>
+<span class="hljs-addition">+    return this[this.length - 1];</span>
+<span class="hljs-addition">+}</span>
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+<span class="hljs-addition">+   const headers = response.headers;</span>
+<span class="hljs-addition">+   const contentType = headers['content-type'];</span>
+<span class="hljs-addition">+   if (contentType.indexOf('text/html') !== -1) {</span>
+<span class="hljs-addition">+       //1. 渲染进程把HTML转变为DOM树型结构</span>
+<span class="hljs-addition">+       const document = { type: 'document', attributes: {}, children: [] };</span>
+<span class="hljs-addition">+       const tokenStack = [document];</span>
+<span class="hljs-addition">+       const parser = new htmlparser2.Parser({</span>
+<span class="hljs-addition">+           onopentag(name, attributes = {}) {</span>
+<span class="hljs-addition">+               const parent = tokenStack.top();</span>
+<span class="hljs-addition">+               const element = {</span>
+<span class="hljs-addition">+                   type: 'element',</span>
+<span class="hljs-addition">+                   tagName: name,</span>
+<span class="hljs-addition">+                   children: [],</span>
+<span class="hljs-addition">+                   attributes,</span>
+<span class="hljs-addition">+                   parent</span>
+<span class="hljs-addition">+               }</span>
+<span class="hljs-addition">+               parent.children.push(element);</span>
+<span class="hljs-addition">+               tokenStack.push(element);</span>
+<span class="hljs-addition">+           },</span>
+<span class="hljs-addition">+           ontext(text) {</span>
+<span class="hljs-addition">+               if (!/^[\r\n\s]*$/.test(text)) {</span>
+<span class="hljs-addition">+                   const parent = tokenStack.top();</span>
+<span class="hljs-addition">+                   const textNode = {</span>
+<span class="hljs-addition">+                       type: 'text',</span>
+<span class="hljs-addition">+                       children: [],</span>
+<span class="hljs-addition">+                       attributes: {},</span>
+<span class="hljs-addition">+                       parent,</span>
+<span class="hljs-addition">+                       text</span>
+<span class="hljs-addition">+                   }</span>
+<span class="hljs-addition">+                   parent.children.push(textNode);</span>
+<span class="hljs-addition">+               }</span>
+<span class="hljs-addition">+           },</span>
+<span class="hljs-addition">+           /**</span>
+<span class="hljs-addition">+            * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本</span>
+<span class="hljs-addition">+            * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面</span>
+<span class="hljs-addition">+            * @param {*} tagname </span>
+<span class="hljs-addition">+            */</span>
+<span class="hljs-addition">+           onclosetag() {</span>
+<span class="hljs-addition">+               tokenStack.pop();</span>
+<span class="hljs-addition">+           },</span>
+<span class="hljs-addition">+       });</span>
+<span class="hljs-addition">+       //开始接收响应体</span>
+<span class="hljs-addition">+       const buffers = [];</span>
+<span class="hljs-addition">+       response.on('data', (buffer) =&gt; {</span>
+<span class="hljs-addition">+           //8.渲染进程开始HTML解析和加载子资源</span>
+<span class="hljs-addition">+           //网络进程加载了多少数据，HTML 解析器便解析多少数据。</span>
+<span class="hljs-addition">+           parser.write(buffer.toString());</span>
+<span class="hljs-addition">+       });</span>
+<span class="hljs-addition">+       response.on('end', () =&gt; {</span>
+<span class="hljs-deletion">-           //let resultBuffer = Buffer.concat(buffers);</span>
+<span class="hljs-deletion">-           //let html = resultBuffer.toString();</span>
+<span class="hljs-deletion">-           console.dir(document, { depth: null });</span>
+<span class="hljs-addition">+           //7.HTML接收接受完毕后通知主进程确认导航</span>
+<span class="hljs-addition">+           main.emit('confirmNavigation');</span>
+<span class="hljs-addition">+           //触发DOMContentLoaded事件</span>
+<span class="hljs-addition">+           main.emit('DOMContentLoaded');</span>
+<span class="hljs-addition">+           //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成</span>
+<span class="hljs-addition">+           main.emit('Load');</span>
+<span class="hljs-addition">+       });</span>
+<span class="hljs-addition">+  }</span>
+})
+
+//1.主进程接收用户输入的URL
+<span class="hljs-addition">+main.emit('request', { host, port, path: '/html.html' });</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> <span class="hljs-built_in">document</span> = {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'document'</span>,
+    <span class="hljs-attr">children</span>: [
+        {
+            <span class="hljs-attr">type</span>: <span class="hljs-string">'element'</span>,
+            <span class="hljs-attr">tagName</span>: <span class="hljs-string">'html'</span>,
+            <span class="hljs-attr">children</span>: [
+                {
+                    <span class="hljs-attr">type</span>: <span class="hljs-string">'element'</span>,
+                    <span class="hljs-attr">tagName</span>: <span class="hljs-string">'body'</span>,
+                    <span class="hljs-attr">children</span>: [
+                        {
+                            <span class="hljs-attr">type</span>: <span class="hljs-string">'element'</span>,
+                            <span class="hljs-attr">tagName</span>: <span class="hljs-string">'div'</span>,
+                            <span class="hljs-attr">children</span>: [
+                                {
+                                    <span class="hljs-attr">type</span>: <span class="hljs-string">'text'</span>,
+                                    <span class="hljs-attr">text</span>: <span class="hljs-string">'hello'</span>
+                                }
+                            ]
+                        },
+                        {
+                            <span class="hljs-attr">type</span>: <span class="hljs-string">'element'</span>,
+                            <span class="hljs-attr">tagName</span>: <span class="hljs-string">'div'</span>,
+                            <span class="hljs-attr">children</span>: [
+                                {
+                                    <span class="hljs-attr">type</span>: <span class="hljs-string">'text'</span>,
+                                    <span class="hljs-attr">text</span>: <span class="hljs-string">'world'</span>
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+<h3 id="t173.2 CSS转stylesheet">3.2 CSS转stylesheet <a href="#t173.2 CSS转stylesheet"> # </a></h3>
+<ul>
+<li>渲染进程把CSS文本转为浏览器中的<code>stylesheet</code></li>
+<li>CSS来源可能有link标签、style标签和style行内样式</li>
+<li>渲染引擎会把CSS转换为<code>document.styleSheets</code></li>
+</ul>
+<h4 id="t183.2.1 index.html">3.2.1 index.html <a href="#t183.2.1 index.html"> # </a></h4>
+<pre><code class="lang-diff">&lt;html&gt;
+<span class="hljs-addition">+&lt;head&gt;</span>
+<span class="hljs-addition">+    &lt;style&gt;</span>
+<span class="hljs-addition">+        div {</span>
+<span class="hljs-addition">+            color: red;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    &lt;/style&gt;</span>
+<span class="hljs-addition">+&lt;/head&gt;</span>
+&lt;body&gt;
+    &lt;div&gt;hello&lt;/div&gt;
+    &lt;div&gt;world&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="t193.2.2 request.js">3.2.2 request.js <a href="#t193.2.2 request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff">const htmlparser2 = require('htmlparser2');
+const http = require('http');
+<span class="hljs-addition">+const css = require("css");</span>
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+const host = 'localhost';
+const port = 80;
+Array.prototype.top = function () {
+    return this[this.length - 1];
+}
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+    const headers = response.headers;
+    const contentType = headers['content-type'];
+    if (contentType.indexOf('text/html') !== -1) {
+        //1. 渲染进程把HTML转变为DOM树型结构
+        const document = { type: 'document', attributes: {}, children: [] };
+<span class="hljs-addition">+       const cssRules = [];</span>
+        const tokenStack = [document];
+        const parser = new htmlparser2.Parser({
+            onopentag(name, attributes = {}) {
+                const parent = tokenStack.top();
+                const element = {
+                    type: 'element',
+                    tagName: name,
+                    children: [],
+                    attributes,
+                    parent
+                }
+                parent.children.push(element);
+                tokenStack.push(element);
+            },
+            ontext(text) {
+                if (!/^[\r\n\s]*$/.test(text)) {
+                    const parent = tokenStack.top();
+                    const textNode = {
+                        type: 'text',
+                        children: [],
+                        attributes: {},
+                        parent,
+                        text
+                    }
+                    parent.children.push(textNode);
+                }
+            },
+            /**
+             * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本
+             * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面
+             * @param {*} tagname 
+             */
+<span class="hljs-addition">+           onclosetag(tagname) {</span>
+<span class="hljs-addition">+               switch (tagname) {</span>
+<span class="hljs-addition">+                   case 'style':</span>
+<span class="hljs-addition">+                       const styleToken = tokenStack.top();</span>
+<span class="hljs-addition">+                       const cssAST = css.parse(styleToken.children[0].text);</span>
+<span class="hljs-addition">+                       cssRules.push(...cssAST.stylesheet.rules);</span>
+<span class="hljs-addition">+                       break;</span>
+<span class="hljs-addition">+                   default:</span>
+<span class="hljs-addition">+                       break;</span>
+<span class="hljs-addition">+               }</span>
+                tokenStack.pop();
+            },
+        });
+        //开始接收响应体
+        response.on('data', (buffer) =&gt; {
+            //8.渲染进程开始HTML解析和加载子资源
+            //网络进程加载了多少数据，HTML 解析器便解析多少数据。
+            parser.write(buffer.toString());
+        });
+        response.on('end', () =&gt; {
+<span class="hljs-addition">+           console.log(cssRules);</span>
+            //7.HTML接收接受完毕后通知主进程确认导航
+            main.emit('confirmNavigation');
+            //触发DOMContentLoaded事件
+            main.emit('DOMContentLoaded');
+            //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成
+            main.emit('Load');
+        });
+    }
+
+})
+
+//1.主进程接收用户输入的URL
+main.emit('request', { host, port, path: '/index.html' });
+</code></pre>
+<h3 id="t203.3 计算出DOM节点的样式">3.3 计算出DOM节点的样式 <a href="#t203.3 计算出DOM节点的样式"> # </a></h3>
+<ul>
+<li>根据CSS的继承和层叠规则计算DOM节点的样式</li>
+<li>DOM节点的样式保存在了<code>ComputedStyle</code>中</li>
+</ul>
+<h4 id="t213.3.1 index.html">3.3.1 index.html <a href="#t213.3.1 index.html"> # </a></h4>
+<p>server\public\index.html</p>
+<pre><code class="lang-diff">&lt;html&gt;
+<span class="hljs-addition">+&lt;head&gt;</span>
+<span class="hljs-addition">+    &lt;style&gt;</span>
+<span class="hljs-addition">+        #hello {</span>
+<span class="hljs-addition">+            color: red;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+        .world {</span>
+<span class="hljs-addition">+            color: green;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    &lt;/style&gt;</span>
+<span class="hljs-addition">+&lt;/head&gt;</span>
+&lt;body&gt;
+<span class="hljs-addition">+   &lt;div id="hello"&gt;hello&lt;/div&gt;</span>
+<span class="hljs-addition">+   &lt;div class="world"&gt;world&lt;/div&gt;</span>
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="t223.3.2 client\request.js">3.3.2 client\request.js <a href="#t223.3.2 client\request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff">const htmlparser2 = require('htmlparser2');
+const http = require('http');
+const css = require("css");
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+const host = 'localhost';
+const port = 80;
+Array.prototype.top = function () {
+    return this[this.length - 1];
+}
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+    const headers = response.headers;
+    const contentType = headers['content-type'];
+    if (contentType.indexOf('text/html') !== -1) {
+        //1. 渲染进程把HTML转变为DOM树型结构
+        const document = { type: 'document', attributes: {}, children: [] };
+        const cssRules = [];
+        const tokenStack = [document];
+        const parser = new htmlparser2.Parser({
+            onopentag(name, attributes = {}) {
+                const parent = tokenStack.top();
+                const element = {
+                    type: 'element',
+                    tagName: name,
+                    children: [],
+                    attributes,
+                    parent
+                }
+                parent.children.push(element);
+                tokenStack.push(element);
+            },
+            ontext(text) {
+                if (!/^[\r\n\s]*$/.test(text)) {
+                    const parent = tokenStack.top();
+                    const textNode = {
+                        type: 'text',
+                        children: [],
+                        attributes: {},
+                        parent,
+                        text
+                    }
+                    parent.children.push(textNode);
+                }
+            },
+            /**
+             * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本
+             * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面
+             * @param {*} tagname 
+             */
+            onclosetag(tagname) {
+                switch (tagname) {
+                    case 'style':
+                        const styleToken = tokenStack.top();
+                        const cssAST = css.parse(styleToken.children[0].text);
+                        cssRules.push(...cssAST.stylesheet.rules);
+                        break;
+                    default:
+                        break;
+                }
+                tokenStack.pop();
+            },
+        });
+        //开始接收响应体
+        response.on('data', (buffer) =&gt; {
+            //8.渲染进程开始HTML解析和加载子资源
+            //网络进程加载了多少数据，HTML 解析器便解析多少数据。
+            parser.write(buffer.toString());
+        });
+        response.on('end', () =&gt; {
+            //7.HTML接收接受完毕后通知主进程确认导航
+            main.emit('confirmNavigation');
+            //3. 通过stylesheet计算出DOM节点的样式
+<span class="hljs-addition">+           recalculateStyle(cssRules, document);</span>
+<span class="hljs-addition">+           console.dir(document, { depth: null });</span>
+            //触发DOMContentLoaded事件
+            main.emit('DOMContentLoaded');
+            //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成
+            main.emit('Load');
+        });
+    }
+})
+
+<span class="hljs-addition">+function recalculateStyle(cssRules, element, parentComputedStyle = {}) {</span>
+<span class="hljs-addition">+    const attributes = element.attributes;</span>
+<span class="hljs-addition">+    element.computedStyle = {color:parentComputedStyle.color}; // 计算样式</span>
+<span class="hljs-addition">+    Object.entries(attributes).forEach(([key, value]) =&gt; {</span>
+<span class="hljs-addition">+        //stylesheets</span>
+<span class="hljs-addition">+        cssRules.forEach(rule =&gt; {</span>
+<span class="hljs-addition">+            let selector = rule.selectors[0].replace(/\s+/g, '');</span>
+<span class="hljs-addition">+            if ((selector == '#' + value &amp;&amp; key == 'id') || (selector == '.' + value &amp;&amp; key == 'class')) {</span>
+<span class="hljs-addition">+                rule.declarations.forEach(({ property, value }) =&gt; {</span>
+<span class="hljs-addition">+                    element.computedStyle[property] = value;</span>
+<span class="hljs-addition">+                })</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+        })</span>
+<span class="hljs-addition">+        //行内样式</span>
+<span class="hljs-addition">+        if (key === 'style') {</span>
+<span class="hljs-addition">+            const attributes = value.split(';');</span>
+<span class="hljs-addition">+            attributes.forEach((attribute) =&gt; {</span>
+<span class="hljs-addition">+                const [property, value] = attribute.split(/:\s*/);</span>
+<span class="hljs-addition">+                element.computedStyle[property] = value;</span>
+<span class="hljs-addition">+            });</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    });</span>
+<span class="hljs-addition">+    element.children.forEach(child =&gt; recalculateStyle(cssRules, child,element.computedStyle));</span>
+<span class="hljs-addition">+}</span>
+
+//1.主进程接收用户输入的URL
+main.emit('request', { host, port, path: '/index.html' });
+</code></pre>
+<h3 id="t233.4 创建布局树">3.4 创建布局树 <a href="#t233.4 创建布局树"> # </a></h3>
+<ul>
+<li><a href="https://www.processon.com/diagraming/61cf476d0e3e744157148bfd">创建布局树</a></li>
+<li>创建一棵只包含可见元素的布局树</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/renderflow_1640974318097.jpg" alt=""></p>
+<h4 id="t243.4.1 index.html">3.4.1 index.html <a href="#t243.4.1 index.html"> # </a></h4>
+<p>server\public\index.html</p>
+<pre><code class="lang-diff">&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #hello {
+            color: red;
+        }
+        .world {
+            color: green;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="hello"&gt;hello&lt;/div&gt;
+<span class="hljs-addition">+   &lt;div class="world" style="display:none"&gt;world&lt;/div&gt;</span>
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="t253.4.2 request.js">3.4.2 request.js <a href="#t253.4.2 request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff">const htmlparser2 = require('htmlparser2');
+const http = require('http');
+const css = require("css");
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+const host = 'localhost';
+const port = 80;
+Array.prototype.top = function () {
+    return this[this.length - 1];
+}
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+    const headers = response.headers;
+    const contentType = headers['content-type'];
+    if (contentType.indexOf('text/html') !== -1) {
+        //1. 渲染进程把HTML转变为DOM树型结构
+        const document = { type: 'document', attributes: {}, children: [] };
+        const cssRules = [];
+        const tokenStack = [document];
+        const parser = new htmlparser2.Parser({
+            onopentag(name, attributes = {}) {
+                const parent = tokenStack.top();
+                const element = {
+                    type: 'element',
+                    tagName: name,
+                    children: [],
+                    attributes,
+                    parent
+                }
+                parent.children.push(element);
+                tokenStack.push(element);
+            },
+            ontext(text) {
+                if (!/^[\r\n\s]*$/.test(text)) {
+                    const parent = tokenStack.top();
+                    const textNode = {
+                        type: 'text',
+                        children: [],
+                        attributes: {},
+                        parent,
+                        text
+                    }
+                    parent.children.push(textNode);
+                }
+            },
+            /**
+             * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本
+             * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面
+             * @param {*} tagname 
+             */
+            onclosetag(tagname) {
+                switch (tagname) {
+                    case 'style':
+                        const styleToken = tokenStack.top();
+                        const cssAST = css.parse(styleToken.children[0].text);
+                        cssRules.push(...cssAST.stylesheet.rules);
+                        break;
+                    default:
+                        break;
+                }
+                tokenStack.pop();
+            },
+        });
+        //开始接收响应体
+        response.on('data', (buffer) =&gt; {
+            //8.渲染进程开始HTML解析和加载子资源
+            //网络进程加载了多少数据，HTML 解析器便解析多少数据。
+            parser.write(buffer.toString());
+        });
+        response.on('end', () =&gt; {
+            //7.HTML接收接受完毕后通知主进程确认导航
+            main.emit('confirmNavigation');
+            //3. 通过stylesheet计算出DOM节点的样式
+            recalculateStyle(cssRules, document);
+<span class="hljs-addition">+           //4. 根据DOM树创建布局树,就是复制DOM结构并过滤掉不显示的元素</span>
+<span class="hljs-addition">+           const html = document.children[0];</span>
+<span class="hljs-addition">+           const body = html.children[1];</span>
+<span class="hljs-addition">+           const layoutTree = createLayout(body);</span>
+<span class="hljs-addition">+           console.dir(layoutTree, { depth: null });</span>
+            //触发DOMContentLoaded事件
+            main.emit('DOMContentLoaded');
+            //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成
+            main.emit('Load');
+        });
+    }
+})
+<span class="hljs-addition">+function createLayout(element) {</span>
+<span class="hljs-addition">+    element.children = element.children.filter(isShow);</span>
+<span class="hljs-addition">+    element.children.forEach(child =&gt; createLayout(child));</span>
+<span class="hljs-addition">+    return element;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function isShow(element) {</span>
+<span class="hljs-addition">+    let isShow = true;</span>
+<span class="hljs-addition">+   if (element.tagName === 'head' || element.tagName === 'script') {</span>
+<span class="hljs-addition">+        isShow = false;</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    const attributes = element.attributes;</span>
+<span class="hljs-addition">+    Object.entries(attributes).forEach(([key, value]) =&gt; {</span>
+<span class="hljs-addition">+        if (key === 'style') {</span>
+<span class="hljs-addition">+            const attributes = value.split(';');</span>
+<span class="hljs-addition">+            attributes.forEach((attribute) =&gt; {</span>
+<span class="hljs-addition">+                const [property, value] = attribute.split(/:\s*/);</span>
+<span class="hljs-addition">+                if (property === 'display' &amp;&amp; value === 'none') {</span>
+<span class="hljs-addition">+                    isShow = false;</span>
+<span class="hljs-addition">+                }</span>
+<span class="hljs-addition">+            });</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    });</span>
+<span class="hljs-addition">+    return isShow;</span>
+<span class="hljs-addition">+}</span>
+function recalculateStyle(cssRules, element, parentComputedStyle = {}) {
+    const attributes = element.attributes;
+    element.computedStyle = {color:parentComputedStyle.color}; // 计算样式
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        //stylesheets
+        cssRules.forEach(rule =&gt; {
+            let selector = rule.selectors[0].replace(/\s+/g, '');
+            if ((selector == '#' + value &amp;&amp; key == 'id') || (selector == '.' + value &amp;&amp; key == 'class')) {
+                rule.declarations.forEach(({ property, value }) =&gt; {
+                    element.computedStyle[property] = value;
+                })
+            }
+        })
+        //行内样式
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                element.computedStyle[property] = value;
+            });
+        }
+    });
+    element.children.forEach(child =&gt; recalculateStyle(cssRules, child,element.computedStyle));
+}
+
+//1.主进程接收用户输入的URL
+main.emit('request', { host, port, path: '/index.html' });
+</code></pre>
+<h3 id="t263.5 计算布局">3.5 计算布局 <a href="#t263.5 计算布局"> # </a></h3>
+<ul>
+<li>计算各个元素的布局</li>
+</ul>
+<h4 id="t273.5.1 request.js">3.5.1 request.js <a href="#t273.5.1 request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff">const htmlparser2 = require('htmlparser2');
+const http = require('http');
+const css = require("css");
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+const host = 'localhost';
+const port = 80;
+Array.prototype.top = function () {
+    return this[this.length - 1];
+}
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+    const headers = response.headers;
+    const contentType = headers['content-type'];
+    if (contentType.indexOf('text/html') !== -1) {
+        //1. 渲染进程把HTML转变为DOM树型结构
+        const document = { type: 'document', attributes: {}, children: [] };
+        const cssRules = [];
+        const tokenStack = [document];
+        const parser = new htmlparser2.Parser({
+            onopentag(name, attributes = {}) {
+                const parent = tokenStack.top();
+                const element = {
+                    type: 'element',
+                    tagName: name,
+                    children: [],
+                    attributes,
+                    parent
+                }
+                parent.children.push(element);
+                tokenStack.push(element);
+            },
+            ontext(text) {
+                if (!/^[\r\n\s]*$/.test(text)) {
+                    const parent = tokenStack.top();
+                    const textNode = {
+                        type: 'text',
+                        children: [],
+                        attributes: {},
+                        parent,
+                        text
+                    }
+                    parent.children.push(textNode);
+                }
+            },
+            /**
+             * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本
+             * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面
+             * @param {*} tagname 
+             */
+            onclosetag(tagname) {
+                switch (tagname) {
+                    case 'style':
+                        const styleToken = tokenStack.top();
+                        const cssAST = css.parse(styleToken.children[0].text);
+                        cssRules.push(...cssAST.stylesheet.rules);
+                        break;
+                    default:
+                        break;
+                }
+                tokenStack.pop();
+            },
+        });
+        //开始接收响应体
+        response.on('data', (buffer) =&gt; {
+            //8.渲染进程开始HTML解析和加载子资源
+            //网络进程加载了多少数据，HTML 解析器便解析多少数据。
+            parser.write(buffer.toString());
+        });
+        response.on('end', () =&gt; {
+            //7.HTML接收接受完毕后通知主进程确认导航
+            main.emit('confirmNavigation');
+            //3. 通过stylesheet计算出DOM节点的样式
+            recalculateStyle(cssRules, document);
+           //4. 根据DOM树创建布局树,就是复制DOM结构并过滤掉不显示的元素
+           const html = document.children[0];
+           const body = html.children[1];
+           const layoutTree = createLayout(body);
+<span class="hljs-addition">+          //5.并计算各个元素的布局信息</span>
+<span class="hljs-addition">+          updateLayoutTree(layoutTree);</span>
+           //触发DOMContentLoaded事件
+           main.emit('DOMContentLoaded');
+           //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成
+           main.emit('Load');
+        });
+    }
+})
+<span class="hljs-addition">+function updateLayoutTree(element, top = 0, parentTop = 0) {</span>
+<span class="hljs-addition">+    const computedStyle = element.computedStyle;</span>
+<span class="hljs-addition">+    element.layout = {</span>
+<span class="hljs-addition">+        top: top + parentTop,</span>
+<span class="hljs-addition">+        left: 0,</span>
+<span class="hljs-addition">+        width: computedStyle.width,</span>
+<span class="hljs-addition">+        height: computedStyle.height,</span>
+<span class="hljs-addition">+        background: computedStyle.background,</span>
+<span class="hljs-addition">+        color: computedStyle.color</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    let childTop = 0;</span>
+<span class="hljs-addition">+    element.children.forEach(child =&gt; {</span>
+<span class="hljs-addition">+        updateLayoutTree(child, childTop, element.layout.top);</span>
+<span class="hljs-addition">+        childTop += parseInt(child.computedStyle.height || 0);</span>
+<span class="hljs-addition">+    });</span>
+<span class="hljs-addition">+}</span>
+function createLayout(element) {
+    element.children = element.children.filter(isShow);
+    element.children.forEach(child =&gt; createLayout(child));
+    return element;
+}
+function isShow(element) {
+    let isShow = true;
+    if (element.tagName <span class="hljs-comment">=== 'head' || element.tagName === 'script') {</span>
+        isShow = false;
+    }
+    const attributes = element.attributes;
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                if (property <span class="hljs-comment">=== 'display' &amp;&amp; value === 'none') {</span>
+                    isShow = false;
+                }
+            });
+        }
+    });
+    return isShow;
+}
+function recalculateStyle(cssRules, element, parentComputedStyle = {}) {
+    const attributes = element.attributes;
+    element.computedStyle = {color:parentComputedStyle.color}; // 计算样式
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        //stylesheets
+        cssRules.forEach(rule =&gt; {
+            let selector = rule.selectors[0].replace(/\s+/g, '');
+            if ((selector == '#' + value &amp;&amp; key == 'id') || (selector == '.' + value &amp;&amp; key == 'class')) {
+                rule.declarations.forEach(({ property, value }) =&gt; {
+                    element.computedStyle[property] = value;
+                })
+            }
+        })
+        //行内样式
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                element.computedStyle[property] = value;
+            });
+        }
+    });
+    element.children.forEach(child =&gt; recalculateStyle(cssRules, child,element.computedStyle));
+}
+
+//1.主进程接收用户输入的URL
+main.emit('request', { host, port, path: '/index.html' });
+</code></pre>
+<h3 id="t283.6 生成分层树">3.6 生成分层树 <a href="#t283.6 生成分层树"> # </a></h3>
+<ul>
+<li>根据布局树生成分层树</li>
+<li>渲染引擎需要为某些节点生成单独的图层，并组合成图层树<ul>
+<li>z-index</li>
+<li>绝对定位和固定定位</li>
+<li>滤镜</li>
+<li>透明</li>
+<li>裁剪</li>
+</ul>
+</li>
+<li>这些图层合成最终的页面</li>
+</ul>
+<h4 id="t293.5.1 index.html">3.5.1 index.html <a href="#t293.5.1 index.html"> # </a></h4>
+<p>server\public\index.html</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"main.js"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>chrome<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        * {
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+        }
+
+        <span class="hljs-selector-id">#container</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+        }
+
+        <span class="hljs-selector-class">.main</span> {
+            <span class="hljs-attribute">background</span>: red;
+        }
+
+        <span class="hljs-selector-id">#hello</span> {
+            <span class="hljs-attribute">background</span>: green;
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+        }
+
+        <span class="hljs-selector-id">#world</span> {
+            <span class="hljs-attribute">background</span>: blue;
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+        }
+
+        <span class="hljs-selector-id">#absolute</span> {
+            <span class="hljs-attribute">background</span>: pink;
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+            <span class="hljs-attribute">left</span>: <span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">top</span>: <span class="hljs-number">0px</span>;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"hello"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color:blue;"</span>&gt;</span>hello<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"world"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:none"</span>&gt;</span>world<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"absolute"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"position:absolute"</span>&gt;</span>
+        abs
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="t303.5.2 client\request.js">3.5.2 client\request.js <a href="#t303.5.2 client\request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff">const htmlparser2 = require('htmlparser2');
+const http = require('http');
+const css = require("css");
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+const host = 'localhost';
+const port = 80;
+Array.prototype.top = function () {
+    return this[this.length - 1];
+}
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+    const headers = response.headers;
+    const contentType = headers['content-type'];
+    if (contentType.indexOf('text/html') !== -1) {
+        //1. 渲染进程把HTML转变为DOM树型结构
+        const document = { type: 'document', attributes: {}, children: [] };
+        const cssRules = [];
+        const tokenStack = [document];
+        const parser = new htmlparser2.Parser({
+            onopentag(name, attributes = {}) {
+                const parent = tokenStack.top();
+                const element = {
+                    type: 'element',
+                    tagName: name,
+                    children: [],
+                    attributes,
+                    parent
+                }
+                parent.children.push(element);
+                tokenStack.push(element);
+            },
+            ontext(text) {
+                if (!/^[\r\n\s]*$/.test(text)) {
+                    const parent = tokenStack.top();
+                    const textNode = {
+                        type: 'text',
+                        children: [],
+                        attributes: {},
+                        parent,
+                        text
+                    }
+                    parent.children.push(textNode);
+                }
+            },
+            /**
+             * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本
+             * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面
+             * @param {*} tagname 
+             */
+            onclosetag(tagname) {
+                switch (tagname) {
+                    case 'style':
+                        const styleToken = tokenStack.top();
+                        const cssAST = css.parse(styleToken.children[0].text);
+                        cssRules.push(...cssAST.stylesheet.rules);
+                        break;
+                    default:
+                        break;
+                }
+                tokenStack.pop();
+            },
+        });
+        //开始接收响应体
+        response.on('data', (buffer) =&gt; {
+            //8.渲染进程开始HTML解析和加载子资源
+            //网络进程加载了多少数据，HTML 解析器便解析多少数据。
+            parser.write(buffer.toString());
+        });
+        response.on('end', () =&gt; {
+            //7.HTML接收接受完毕后通知主进程确认导航
+            main.emit('confirmNavigation');
+            //3. 通过stylesheet计算出DOM节点的样式
+            recalculateStyle(cssRules, document);
+            //4. 根据DOM树创建布局树,就是复制DOM结构并过滤掉不显示的元素
+            const html = document.children[0];
+            const body = html.children[1];
+            const layoutTree = createLayout(body);
+            //5.并计算各个元素的布局信息
+            updateLayoutTree(layoutTree);
+<span class="hljs-addition">+           //6. 根据布局树生成分层树</span>
+<span class="hljs-addition">+           const layers = [layoutTree];</span>
+<span class="hljs-addition">+           createLayerTree(layoutTree, layers);</span>
+<span class="hljs-addition">+           console.log(layers);</span>
+            //触发DOMContentLoaded事件
+            main.emit('DOMContentLoaded');
+            //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成
+            main.emit('Load');
+        });
+    }
+})
+<span class="hljs-addition">+function createLayerTree(element, layers) {</span>
+<span class="hljs-addition">+    element.children = element.children.filter((child) =&gt; createNewLayer(child, layers));</span>
+<span class="hljs-addition">+    element.children.forEach(child =&gt; createLayerTree(child, layers));</span>
+<span class="hljs-addition">+    return layers;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function createNewLayer(element, layers) {</span>
+<span class="hljs-addition">+    let created = true;</span>
+<span class="hljs-addition">+    const attributes = element.attributes;</span>
+<span class="hljs-addition">+    Object.entries(attributes).forEach(([key, value]) =&gt; {</span>
+<span class="hljs-addition">+        if (key === 'style') {</span>
+<span class="hljs-addition">+            const attributes = value.split(';');</span>
+<span class="hljs-addition">+            attributes.forEach((attribute) =&gt; {</span>
+<span class="hljs-addition">+                const [property, value] = attribute.split(/:\s*/);</span>
+<span class="hljs-addition">+                if (property === 'position' &amp;&amp; value === 'absolute') {</span>
+<span class="hljs-addition">+                    updateLayoutTree(element);//对单独的层重新计算位置</span>
+<span class="hljs-addition">+                    layers.push(element);</span>
+<span class="hljs-addition">+                    created = false;</span>
+<span class="hljs-addition">+                }</span>
+<span class="hljs-addition">+            });</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    });</span>
+<span class="hljs-addition">+    return created;</span>
+<span class="hljs-addition">+}</span>
+function updateLayoutTree(element, top = 0, parentTop = 0) {
+    const computedStyle = element.computedStyle;
+    element.layout = {
+        top: top + parentTop,
+        left: 0,
+        width: computedStyle.width,
+        height: computedStyle.height,
+        background: computedStyle.background,
+        color: computedStyle.color
+    }
+    let childTop = 0;
+    element.children.forEach(child =&gt; {
+        updateLayoutTree(child, childTop, element.layout.top);
+        childTop += parseInt(child.computedStyle.height || 0);
+    });
+}
+function createLayout(element) {
+    element.children = element.children.filter(isShow);
+    element.children.forEach(child =&gt; createLayout(child));
+    return element;
+}
+function isShow(element) {
+    let isShow = true;
+    if (element.tagName <span class="hljs-comment">=== 'head' || element.tagName === 'script') {</span>
+        isShow = false;
+    }
+    const attributes = element.attributes;
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                if (property <span class="hljs-comment">=== 'display' &amp;&amp; value === 'none') {</span>
+                    isShow = false;
+                }
+            });
+        }
+    });
+    return isShow;
+}
+function recalculateStyle(cssRules, element, parentComputedStyle = {}) {
+    const attributes = element.attributes;
+    element.computedStyle = {color:parentComputedStyle.color}; // 计算样式
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        //stylesheets
+        cssRules.forEach(rule =&gt; {
+            let selector = rule.selectors[0].replace(/\s+/g, '');
+            if ((selector == '#' + value &amp;&amp; key == 'id') || (selector == '.' + value &amp;&amp; key == 'class')) {
+                rule.declarations.forEach(({ property, value }) =&gt; {
+                    element.computedStyle[property] = value;
+                })
+            }
+        })
+        //行内样式
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                element.computedStyle[property] = value;
+            });
+        }
+    });
+    element.children.forEach(child =&gt; recalculateStyle(cssRules, child,element.computedStyle));
+}
+
+//1.主进程接收用户输入的URL
+main.emit('request', { host, port, path: '/index.html' });
+</code></pre>
+<h3 id="t313.6 绘制">3.6 绘制 <a href="#t313.6 绘制"> # </a></h3>
+<ul>
+<li>根据分层树进行生成绘制步骤复合图层</li>
+<li>每个图层会拆分成多个绘制指令，这些指令组合在一起成为绘制列表</li>
+</ul>
+<h4 id="t323.6.1 client\request.js">3.6.1 client\request.js <a href="#t323.6.1 client\request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff">const htmlparser2 = require('htmlparser2');
+const http = require('http');
+const css = require("css");
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+const host = 'localhost';
+const port = 80;
+Array.prototype.top = function () {
+    return this[this.length - 1];
+}
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+    const headers = response.headers;
+    const contentType = headers['content-type'];
+    if (contentType.indexOf('text/html') !== -1) {
+        //1. 渲染进程把HTML转变为DOM树型结构
+        const document = { type: 'document', attributes: {}, children: [] };
+        const cssRules = [];
+        const tokenStack = [document];
+        const parser = new htmlparser2.Parser({
+            onopentag(name, attributes = {}) {
+                const parent = tokenStack.top();
+                const element = {
+                    type: 'element',
+                    tagName: name,
+                    children: [],
+                    attributes,
+                    parent
+                }
+                parent.children.push(element);
+                tokenStack.push(element);
+            },
+            ontext(text) {
+                if (!/^[\r\n\s]*$/.test(text)) {
+                    const parent = tokenStack.top();
+                    const textNode = {
+                        type: 'text',
+                        children: [],
+                        attributes: {},
+                        parent,
+                        text
+                    }
+                    parent.children.push(textNode);
+                }
+            },
+            /**
+             * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本
+             * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面
+             * @param {*} tagname 
+             */
+            onclosetag(tagname) {
+                switch (tagname) {
+                    case 'style':
+                        const styleToken = tokenStack.top();
+                        const cssAST = css.parse(styleToken.children[0].text);
+                        cssRules.push(...cssAST.stylesheet.rules);
+                        break;
+                    default:
+                        break;
+                }
+                tokenStack.pop();
+            },
+        });
+        //开始接收响应体
+        response.on('data', (buffer) =&gt; {
+            //8.渲染进程开始HTML解析和加载子资源
+            //网络进程加载了多少数据，HTML 解析器便解析多少数据。
+            parser.write(buffer.toString());
+        });
+        response.on('end', () =&gt; {
+            //7.HTML接收接受完毕后通知主进程确认导航
+            main.emit('confirmNavigation');
+            //3. 通过stylesheet计算出DOM节点的样式
+            recalculateStyle(cssRules, document);
+            //4. 根据DOM树创建布局树,就是复制DOM结构并过滤掉不显示的元素
+            const html = document.children[0];
+            const body = html.children[1];
+            const layoutTree = createLayout(body);
+            //5.并计算各个元素的布局信息
+            updateLayoutTree(layoutTree);
+            //6. 根据布局树生成分层树
+            const layers = [layoutTree];
+            createLayerTree(layoutTree, layers);
+<span class="hljs-addition">+           //7. 根据分层树进行生成绘制步骤并复合图层</span>
+<span class="hljs-addition">+           const paintSteps = compositeLayers(layers);</span>
+<span class="hljs-addition">+           console.log(paintSteps.flat().join('\r\n'));</span>
+            //触发DOMContentLoaded事件
+            main.emit('DOMContentLoaded');
+            //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成
+            main.emit('Load');
+        });
+    }
+})
+<span class="hljs-addition">+function compositeLayers(layers) {</span>
+<span class="hljs-addition">+    //10.合成线程会把分好的图块发给栅格化线程池，栅格化线程会把图片(tile)转化为位图</span>
+<span class="hljs-addition">+    return layers.map(layout =&gt; paint(layout));</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function paint(element, paintSteps = []) {</span>
+<span class="hljs-addition">+    const { background = 'black', color = 'black', top = 0, left = 0, width = 100, height = 0 } = element.layout;</span>
+<span class="hljs-addition">+    if (element.type === 'text') {</span>
+<span class="hljs-addition">+        paintSteps.push(`ctx.font = '20px Impact;'`);</span>
+<span class="hljs-addition">+        paintSteps.push(`ctx.strokeStyle = '${color}';`);</span>
+<span class="hljs-addition">+        paintSteps.push(`ctx.strokeText("${element.text.replace(/(^\s+|\s+$)/g, '')}", ${left},${top + 20});`);</span>
+<span class="hljs-addition">+    } else {</span>
+<span class="hljs-addition">+        paintSteps.push(`ctx.fillStyle="${background}";`);</span>
+<span class="hljs-addition">+        paintSteps.push(`ctx.fillRect(${left},${top}, ${parseInt(width)}, ${parseInt(height)});`);</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    element.children.forEach(child =&gt; paint(child, paintSteps));</span>
+<span class="hljs-addition">+    return paintSteps;</span>
+<span class="hljs-addition">+}</span>
+function createLayerTree(element, layers) {
+    element.children = element.children.filter((child) =&gt; createNewLayer(child, layers));
+    element.children.forEach(child =&gt; createLayerTree(child, layers));
+    return layers;
+}
+function createNewLayer(element, layers) {
+    let created = true;
+    const attributes = element.attributes;
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                if (property <span class="hljs-comment">=== 'position' &amp;&amp; value === 'absolute') {</span>
+                    updateLayoutTree(element);//对单独的层重新计算位置
+                    layers.push(element);
+                    created = false;
+                }
+            });
+        }
+    });
+    return created;
+}
+function updateLayoutTree(element, top = 0, parentTop = 0) {
+    const computedStyle = element.computedStyle;
+    element.layout = {
+        top: top + parentTop,
+        left: 0,
+        width: computedStyle.width,
+        height: computedStyle.height,
+        background: computedStyle.background,
+        color: computedStyle.color
+    }
+    let childTop = 0;
+    element.children.forEach(child =&gt; {
+        updateLayoutTree(child, childTop, element.layout.top);
+        childTop += parseInt(child.computedStyle.height || 0);
+    });
+}
+function createLayout(element) {
+    element.children = element.children.filter(isShow);
+    element.children.forEach(child =&gt; createLayout(child));
+    return element;
+}
+function isShow(element) {
+    let isShow = true;
+    if (element.tagName <span class="hljs-comment">=== 'head' || element.tagName === 'script') {</span>
+        isShow = false;
+    }
+    const attributes = element.attributes;
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                if (property <span class="hljs-comment">=== 'display' &amp;&amp; value === 'none') {</span>
+                    isShow = false;
+                }
+            });
+        }
+    });
+    return isShow;
+}
+function recalculateStyle(cssRules, element, parentComputedStyle = {}) {
+    const attributes = element.attributes;
+    element.computedStyle = {color:parentComputedStyle.color};// 计算样式
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        //stylesheets
+        cssRules.forEach(rule =&gt; {
+            let selector = rule.selectors[0].replace(/\s+/g, '');
+            if ((selector == '#' + value &amp;&amp; key == 'id') || (selector == '.' + value &amp;&amp; key == 'class')) {
+                rule.declarations.forEach(({ property, value }) =&gt; {
+                    element.computedStyle[property] = value;
+                })
+            }
+        })
+        //行内样式
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                element.computedStyle[property] = value;
+            });
+        }
+    });
+    element.children.forEach(child =&gt; recalculateStyle(cssRules, child,element.computedStyle));
+}
+
+//1.主进程接收用户输入的URL
+main.emit('request', { host, port, path: '/index.html' });
+</code></pre>
+<h3 id="t333.7 合成线程">3.7 合成线程 <a href="#t333.7 合成线程"> # </a></h3>
+<ul>
+<li>合成线程将图层分成图块(tile)</li>
+<li>合成线程会把分好的图块发给栅格化线程池，栅格化线程会把图片(tile)转化为位图</li>
+<li>而其实栅格化线程在工作的时候会把栅格化的工作交给GPU进程来完成，最终生成的位图就保存在了<code>GPU</code>内存中</li>
+<li>当所有的图块都光栅化之后合成线程会发送绘制图块的命令给浏览器主进程</li>
+<li>浏览器主进程然后会从GPU内存中取出位图显示到页面上</li>
+<li><a href="https://www.processon.com/diagraming/61cf56697d9c083657bb5b68">合成线程</a></li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/renderflows_1641119664748.jpg" alt=""></p>
+<h3 id="t343.7.1 图块">3.7.1 图块 <a href="#t343.7.1 图块"> # </a></h3>
+<ul>
+<li>图块渲染也称基于瓦片渲染或基于小方块渲染</li>
+<li>它是一种通过规则的网格细分计算机图形图像并分别渲染图块(tile)各部分的过程</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/tiles_1641120036119.png" alt="tiles"></p>
+<h3 id="t353.7.2 栅格化">3.7.2 栅格化 <a href="#t353.7.2 栅格化"> # </a></h3>
+<ul>
+<li>栅格化是将矢量图形格式表示的图像转换成位图以用于显示器输出的过程</li>
+<li>栅格即像素</li>
+<li>栅格化即将矢量图形转化为位图(栅格图像)</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/raser_1641120319884.jpg" alt=""></p>
+<h4 id="t363.7.3 client\gpu.js">3.7.3 client\gpu.js <a href="#t363.7.3 client\gpu.js"> # </a></h4>
+<p>client\gpu.js</p>
+<pre><code class="lang-diff">const EventEmitter = require('events');
+class GPU extends EventEmitter {
+    constructor() {
+        super();
+<span class="hljs-addition">+       this.bitMaps = [];</span>
+    }
+}
+const gpu = new GPU();
+module.exports = gpu;
+</code></pre>
+<h4 id="t373.7.4 request.js">3.7.4 request.js <a href="#t373.7.4 request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff">const htmlparser2 = require('htmlparser2');
+const http = require('http');
+const css = require("css");
+<span class="hljs-addition">+const { createCanvas } = require('canvas')</span>
+<span class="hljs-addition">+const fs = require('fs')</span>
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+<span class="hljs-addition">+const gpu = require('./gpu.js');</span>
+const host = 'localhost';
+const port = 80;
+Array.prototype.top = function () {
+    return this[this.length - 1];
+}
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+<span class="hljs-addition">+main.on('drawQuad', function () {</span>
+<span class="hljs-addition">+    //14.浏览器主进程然后会从GPU内存中取出位图显示到页面上</span>
+<span class="hljs-addition">+    let drawSteps = gpu.bitMaps.flat();</span>
+<span class="hljs-addition">+    const canvas = createCanvas(150, 250);</span>
+<span class="hljs-addition">+    const ctx = canvas.getContext('2d');</span>
+<span class="hljs-addition">+    eval(drawSteps.join('\r\n'));</span>
+<span class="hljs-addition">+    fs.writeFileSync('result.png', canvas.toBuffer('image/png'));</span>
+<span class="hljs-addition">+})</span>
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+    const headers = response.headers;
+    const contentType = headers['content-type'];
+    if (contentType.indexOf('text/html') !== -1) {
+        //1. 渲染进程把HTML转变为DOM树型结构
+        const document = { type: 'document', attributes: {}, children: [] };
+        const cssRules = [];
+        const tokenStack = [document];
+        const parser = new htmlparser2.Parser({
+            onopentag(name, attributes = {}) {
+                const parent = tokenStack.top();
+                const element = {
+                    type: 'element',
+                    tagName: name,
+                    children: [],
+                    attributes,
+                    parent
+                }
+                parent.children.push(element);
+                tokenStack.push(element);
+            },
+            ontext(text) {
+                if (!/^[\r\n\s]*$/.test(text)) {
+                    const parent = tokenStack.top();
+                    const textNode = {
+                        type: 'text',
+                        children: [],
+                        attributes: {},
+                        parent,
+                        text
+                    }
+                    parent.children.push(textNode);
+                }
+            },
+            /**
+             * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本
+             * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面
+             * @param {*} tagname 
+             */
+            onclosetag(tagname) {
+                switch (tagname) {
+                    case 'style':
+                        const styleToken = tokenStack.top();
+                        const cssAST = css.parse(styleToken.children[0].text);
+                        cssRules.push(...cssAST.stylesheet.rules);
+                        break;
+                    default:
+                        break;
+                }
+                tokenStack.pop();
+            },
+        });
+        //开始接收响应体
+        response.on('data', (buffer) =&gt; {
+            //8.渲染进程开始HTML解析和加载子资源
+            //网络进程加载了多少数据，HTML 解析器便解析多少数据。
+            parser.write(buffer.toString());
+        });
+        response.on('end', () =&gt; {
+            //7.HTML接收接受完毕后通知主进程确认导航
+            main.emit('confirmNavigation');
+            //3. 通过stylesheet计算出DOM节点的样式
+            recalculateStyle(cssRules, document);
+            //4. 根据DOM树创建布局树,就是复制DOM结构并过滤掉不显示的元素
+            const html = document.children[0];
+            const body = html.children[1];
+            const layoutTree = createLayout(body);
+            //5.并计算各个元素的布局信息
+            updateLayoutTree(layoutTree);
+            //6. 根据布局树生成分层树
+            const layers = [layoutTree];
+            createLayerTree(layoutTree, layers);
+            //7. 根据分层树进行生成绘制步骤并复合图层
+            const paintSteps = compositeLayers(layers);
+            console.log(paintSteps.flat().join('\r\n'));
+<span class="hljs-addition">+           //8.把绘制步骤交给渲染进程中的合成线程进行合成</span>
+<span class="hljs-addition">+           //9.合成线程会把图层划分为图块(tile)</span>
+<span class="hljs-addition">+           const tiles = splitTiles(paintSteps);</span>
+<span class="hljs-addition">+           //10.合成线程会把分好的图块发给栅格化线程池</span>
+<span class="hljs-addition">+           raster(tiles);</span>
+            //触发DOMContentLoaded事件
+            main.emit('DOMContentLoaded');
+            //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成
+            main.emit('Load');
+        });
+    }
+})
+<span class="hljs-addition">+function splitTiles(paintSteps) {</span>
+<span class="hljs-addition">+    return paintSteps;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function raster(tiles) {</span>
+<span class="hljs-addition">+    //11.栅格化线程会把图片(tile)转化为位图</span>
+<span class="hljs-addition">+    tiles.forEach(tile =&gt; rasterThread(tile));</span>
+<span class="hljs-addition">+    //13.当所有的图块都光栅化之后合成线程会发送绘制图块的命令给浏览器主进程</span>
+<span class="hljs-addition">+    main.emit('drawQuad');</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function rasterThread(tile) {</span>
+<span class="hljs-addition">+    //12.而其实栅格化线程在工作的时候会把栅格化的工作交给GPU进程来完成</span>
+<span class="hljs-addition">+    gpu.emit('raster', tile);</span>
+<span class="hljs-addition">+}</span>
+function compositeLayers(layers) {
+    //10.合成线程会把分好的图块发给栅格化线程池，栅格化线程会把图片(tile)转化为位图
+    return layers.map(layout =&gt; paint(layout));
+}
+function paint(element, paintSteps = []) {
+    const { background = 'black', color = 'black', top = 0, left = 0, width = 100, height = 0 } = element.layout;
+    if (element.type <span class="hljs-comment">=== 'text') {</span>
+        paintSteps.push(`ctx.font = '20px Impact;'`);
+        paintSteps.push(`ctx.strokeStyle = '${color}';`);
+        paintSteps.push(`ctx.strokeText("${element.text.replace(/(^\s+|\s+$)/g, '')}", ${left},${top + 20});`);
+    } else {
+        paintSteps.push(`ctx.fillStyle="${background}";`);
+        paintSteps.push(`ctx.fillRect(${left},${top}, ${parseInt(width)}, ${parseInt(height)});`);
+    }
+    element.children.forEach(child =&gt; paint(child, paintSteps));
+    return paintSteps;
+}
+function createLayerTree(element, layers) {
+    element.children = element.children.filter((child) =&gt; createNewLayer(child, layers));
+    element.children.forEach(child =&gt; createLayerTree(child, layers));
+    return layers;
+}
+function createNewLayer(element, layers) {
+    let created = true;
+    const attributes = element.attributes;
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                if (property <span class="hljs-comment">=== 'position' &amp;&amp; value === 'absolute') {</span>
+                    updateLayoutTree(element);//对单独的层重新计算位置
+                    layers.push(element);
+                    created = false;
+                }
+            });
+        }
+    });
+    return created;
+}
+function updateLayoutTree(element, top = 0, parentTop = 0) {
+    const computedStyle = element.computedStyle;
+    element.layout = {
+        top: top + parentTop,
+        left: 0,
+        width: computedStyle.width,
+        height: computedStyle.height,
+        background: computedStyle.background,
+        color: computedStyle.color
+    }
+    let childTop = 0;
+    element.children.forEach(child =&gt; {
+        updateLayoutTree(child, childTop, element.layout.top);
+        childTop += parseInt(child.computedStyle.height || 0);
+    });
+}
+function createLayout(element) {
+    element.children = element.children.filter(isShow);
+    element.children.forEach(child =&gt; createLayout(child));
+    return element;
+}
+function isShow(element) {
+    let isShow = true;
+    if (element.tagName <span class="hljs-comment">=== 'head' || element.tagName === 'script') {</span>
+        isShow = false;
+    }
+    const attributes = element.attributes;
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                if (property <span class="hljs-comment">=== 'display' &amp;&amp; value === 'none') {</span>
+                    isShow = false;
+                }
+            });
+        }
+    });
+    return isShow;
+}
+function recalculateStyle(cssRules, element, parentComputedStyle = {}) {
+    const attributes = element.attributes;
+    element.computedStyle = {color:parentComputedStyle.color}; // 计算样式
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        //stylesheets
+        cssRules.forEach(rule =&gt; {
+            let selector = rule.selectors[0].replace(/\s+/g, '');
+            if ((selector == '#' + value &amp;&amp; key == 'id') || (selector == '.' + value &amp;&amp; key == 'class')) {
+                rule.declarations.forEach(({ property, value }) =&gt; {
+                    element.computedStyle[property] = value;
+                })
+            }
+        })
+        //行内样式
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                element.computedStyle[property] = value;
+            });
+        }
+    });
+    element.children.forEach(child =&gt; recalculateStyle(cssRules, child,element.computedStyle));
+}
+<span class="hljs-addition">+gpu.on('raster', (tile) =&gt; {</span>
+<span class="hljs-addition">+    //13.最终生成的位图就保存在了GPU内存中</span>
+<span class="hljs-addition">+    let bitMap = tile;</span>
+<span class="hljs-addition">+    gpu.bitMaps.push(bitMap);</span>
+<span class="hljs-addition">+});</span>
+//1.主进程接收用户输入的URL
+main.emit('request', { host, port, path: '/index.html' });
+</code></pre>
+<h3 id="t383.8 资源加载">3.8 资源加载 <a href="#t383.8 资源加载"> # </a></h3>
+<ul>
+<li>CSS加载不会影响DOM解析</li>
+<li>CSS加载不会阻塞JS加载，但是会阻塞JS执行</li>
+<li>JS会依赖CSS加载，JS会阻塞DOM解析</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/browerrender.jpg" alt=""></p>
+<h4 id="t393.8.1  server\public\load.html">3.8.1  server\public\load.html <a href="#t393.8.1  server\public\load.html"> # </a></h4>
+<p>server\public\load.html</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/hello.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"hello"</span>&gt;</span>hello<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/hello.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'world'</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="t403.8.2 server\public\hello.css">3.8.2 server\public\hello.css <a href="#t403.8.2 server\public\hello.css"> # </a></h4>
+<p>server\public\hello.css</p>
+<pre><code class="lang-css"><span class="hljs-selector-id">#hello</span> {
+    <span class="hljs-attribute">color</span>: green;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">background</span>: red;
+}
+</code></pre>
+<h4 id="t413.8.3 server\public\hello.js">3.8.3 server\public\hello.js <a href="#t413.8.3 server\public\hello.js"> # </a></h4>
+<p>server\public\hello.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'hello'</span>);
+</code></pre>
+<h4 id="t423.8.4 client\network.js">3.8.4 client\network.js <a href="#t423.8.4 client\network.js"> # </a></h4>
+<p>client\network.js</p>
+<pre><code class="lang-diff">const EventEmitter = require('events');
+<span class="hljs-addition">+const http = require('http');</span>
+class Network extends EventEmitter {
+<span class="hljs-addition">+   fetchResource(options) {</span>
+<span class="hljs-addition">+       return new Promise((resolve) =&gt; {</span>
+<span class="hljs-addition">+           //3.在网络进程中发起URL请求</span>
+<span class="hljs-addition">+           let request = http.request(options, (response) =&gt; {</span>
+<span class="hljs-addition">+               //4.网络进程接收到响应头数据并转发给主进程</span>
+<span class="hljs-addition">+               const headers = response.headers;</span>
+<span class="hljs-addition">+               const buffers = [];</span>
+<span class="hljs-addition">+               response.on('data', (buffer) =&gt; {</span>
+<span class="hljs-addition">+                   buffers.push(buffer);</span>
+<span class="hljs-addition">+               });</span>
+<span class="hljs-addition">+               response.on('end', () =&gt; {</span>
+<span class="hljs-addition">+                   resolve({</span>
+<span class="hljs-addition">+                       headers,</span>
+<span class="hljs-addition">+                       body: Buffer.concat(buffers).toString()</span>
+<span class="hljs-addition">+                   });</span>
+<span class="hljs-addition">+               });</span>
+<span class="hljs-addition">+           });</span>
+<span class="hljs-addition">+           //结束请求体</span>
+<span class="hljs-addition">+           request.end();</span>
+<span class="hljs-addition">+       });</span>
+<span class="hljs-addition">+   }</span>
+}
+const network = new Network();
+module.exports = network;
+</code></pre>
+<h4 id="t433.8.5  client\request.js">3.8.5  client\request.js <a href="#t433.8.5  client\request.js"> # </a></h4>
+<p>client\request.js</p>
+<pre><code class="lang-diff">const htmlparser2 = require('htmlparser2');
+const http = require('http');
+const css = require("css");
+const { createCanvas } = require('canvas')
+const fs = require('fs')
+const main = require('./main.js');
+const network = require('./network.js');
+const render = require('./render.js');
+const gpu = require('./gpu.js');
+const host = 'localhost';
+const port = 80;
+<span class="hljs-addition">+const loadingLinks = {};</span>
+<span class="hljs-addition">+const loadingScripts = {};</span>
+Array.prototype.top = function () {
+    return this[this.length - 1];
+}
+/** 浏览器主进程 **/
+main.on('request', function (options) {
+    //2.主进程把该URL转发给网络进程
+    network.emit('request', options);
+})
+//开始准备渲染页面
+main.on('prepareRender', function (response) {
+    //5.主进程发送提交导航消息到渲染进程
+    render.emit('commitNavigation', response);
+})
+main.on('confirmNavigation', function () {
+    console.log('confirmNavigation');
+})
+main.on('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+})
+main.on('Load', function () {
+    console.log('Load');
+})
+main.on('drawQuad', function () {
+    //14.浏览器主进程然后会从GPU内存中取出位图显示到页面上
+    let drawSteps = gpu.bitMaps.flat();
+    const canvas = createCanvas(150, 250);
+    const ctx = canvas.getContext('2d');
+    console.log(drawSteps.join('\r\n'));
+    eval(drawSteps.join('\r\n'));
+    fs.writeFileSync('result.png', canvas.toBuffer('image/png'));
+})
+
+/** 网络进程 **/
+network.on('request', function (options) {
+    //3.在网络进程中发起URL请求
+    let request = http.request(options, (response) =&gt; {
+        //4.网络进程接收到响应头数据并转发给主进程
+        main.emit('prepareRender', response);
+    });
+    //结束请求体
+    request.end();
+})
+
+/** 渲染进程 **/
+//6.渲染进程开始从网络进程接收HTML数据
+render.on('commitNavigation', function (response) {
+    const headers = response.headers;
+    const contentType = headers['content-type'];
+    if (contentType.indexOf('text/html') !== -1) {
+        //1. 渲染进程把HTML转变为DOM树型结构
+        const document = { type: 'document', attributes: {}, children: [] };
+        const cssRules = [];
+        const tokenStack = [document];
+        const parser = new htmlparser2.Parser({
+            onopentag(name, attributes = {}) {
+                const parent = tokenStack.top();
+                const element = {
+                    type: 'element',
+                    tagName: name,
+                    children: [],
+                    attributes,
+                    parent
+                }
+                parent.children.push(element);
+                tokenStack.push(element);
+            },
+            ontext(text) {
+                if (!/^[\r\n\s]*$/.test(text)) {
+                    const parent = tokenStack.top();
+                    const textNode = {
+                        type: 'text',
+                        children: [],
+                        attributes: {},
+                        parent,
+                        text
+                    }
+                    parent.children.push(textNode);
+                }
+            },
+            /**
+             * 在预解析阶段，HTML发现CSS和JS文件会并行下载，等全部下载后先把CSS生成CSSOM，然后再执行JS脚本
+             * 然后再构建DOM树，重新计算样式，构建布局树，绘制页面
+             * @param {*} tagname 
+             */
+            onclosetag(tagname) {
+                switch (tagname) {
+                    case 'style':
+                        const styleToken = tokenStack.top();
+                        const cssAST = css.parse(styleToken.children[0].text);
+                        cssRules.push(...cssAST.stylesheet.rules);
+                        break;
+<span class="hljs-addition">+                    case 'link':</span>
+<span class="hljs-addition">+                        const linkToken = tokenStack[tokenStack.length - 1];</span>
+<span class="hljs-addition">+                        const href = linkToken.attributes.href;</span>
+<span class="hljs-addition">+                        const options = { host, port, path: href }</span>
+<span class="hljs-addition">+                        const promise = network.fetchResource(options).then(({ body }) =&gt; {</span>
+<span class="hljs-addition">+                            delete loadingLinks[href];</span>
+<span class="hljs-addition">+                            const cssAST = css.parse(body);</span>
+<span class="hljs-addition">+                            cssRules.push(...cssAST.stylesheet.rules);</span>
+<span class="hljs-addition">+                        });</span>
+<span class="hljs-addition">+                        loadingLinks[href] = promise;</span>
+<span class="hljs-addition">+                        break;</span>
+<span class="hljs-addition">+                    case 'script':</span>
+<span class="hljs-addition">+                        const scriptToken = tokenStack[tokenStack.length - 1];</span>
+<span class="hljs-addition">+                        const src = scriptToken.attributes.src;</span>
+<span class="hljs-addition">+                        if (src) {</span>
+<span class="hljs-addition">+                            const options = { host, port, path: src };</span>
+<span class="hljs-addition">+                            const promise = network.fetchResource(options).then(({ body }) =&gt; {</span>
+<span class="hljs-addition">+                                delete loadingScripts[src];</span>
+<span class="hljs-addition">+                                return Promise.all([...Object.values(loadingLinks), Object.values(loadingScripts)]).then(() =&gt; {</span>
+<span class="hljs-addition">+                                    eval(body);</span>
+<span class="hljs-addition">+                                });</span>
+<span class="hljs-addition">+                            });</span>
+<span class="hljs-addition">+                            loadingScripts[src] = promise;</span>
+<span class="hljs-addition">+                        } else {</span>
+<span class="hljs-addition">+                            const script = scriptToken.children[0].text;</span>
+<span class="hljs-addition">+                            const ts = Date.now() + '';</span>
+<span class="hljs-addition">+                            const promise = Promise.all([...Object.values(loadingLinks), ...Object.values(loadingScripts)]).then(() =&gt; {</span>
+<span class="hljs-addition">+                                delete loadingScripts[ts];</span>
+<span class="hljs-addition">+                                eval(script);</span>
+<span class="hljs-addition">+                            });</span>
+<span class="hljs-addition">+                            loadingScripts[ts] = promise;</span>
+<span class="hljs-addition">+                        }</span>
+<span class="hljs-addition">+                        break;</span>
+<span class="hljs-addition">+                    default:</span>
+<span class="hljs-addition">+                        break;</span>
+<span class="hljs-addition">+                }</span>
+                tokenStack.pop();
+            },
+        });
+        //开始接收响应体
+        response.on('data', (buffer) =&gt; {
+            //8.渲染进程开始HTML解析和加载子资源
+            //网络进程加载了多少数据，HTML 解析器便解析多少数据。
+            parser.write(buffer.toString());
+        });
+        response.on('end', () =&gt; {
+<span class="hljs-addition">+            Promise.all(Object.values(loadingScripts)).then(() =&gt; {</span>
+                //7.HTML接收接受完毕后通知主进程确认导航
+                main.emit('confirmNavigation');
+                //3. 通过stylesheet计算出DOM节点的样式
+                recalculateStyle(cssRules, document);
+                //4. 根据DOM树创建布局树,就是复制DOM结构并过滤掉不显示的元素
+                const html = document.children[0];
+                const body = html.children[1];
+                const layoutTree = createLayout(body);
+                //5.并计算各个元素的布局信息
+                updateLayoutTree(layoutTree);
+                //6. 根据布局树生成分层树
+                const layers = [layoutTree];
+                createLayerTree(layoutTree, layers);
+                //7. 根据分层树进行生成绘制步骤并复合图层
+                const paintSteps = compositeLayers(layers);
+                //8.把绘制步骤交给渲染进程中的合成线程进行合成
+                //9.合成线程会把图层划分为图块(tile)
+                const tiles = splitTiles(paintSteps);
+                //10.合成线程会把分好的图块发给栅格化线程池
+                raster(tiles);
+                //触发DOMContentLoaded事件
+                main.emit('DOMContentLoaded');
+                //9.HTML解析完毕和加载子资源页面加载完成后会通知主进程页面加载完成
+                main.emit('Load');
+<span class="hljs-addition">+            });</span>
+        });
+    }
+})
+function splitTiles(paintSteps) {
+    return paintSteps;
+}
+function raster(tiles) {
+    //11.栅格化线程会把图片(tile)转化为位图
+    tiles.forEach(tile =&gt; rasterThread(tile));
+    //13.当所有的图块都光栅化之后合成线程会发送绘制图块的命令给浏览器主进程
+    main.emit('drawQuad');
+}
+function rasterThread(tile) {
+    //12.而其实栅格化线程在工作的时候会把栅格化的工作交给GPU进程来完成
+    gpu.emit('raster', tile);
+}
+function compositeLayers(layers) {
+    //10.合成线程会把分好的图块发给栅格化线程池，栅格化线程会把图片(tile)转化为位图
+    return layers.map(layout =&gt; paint(layout));
+}
+function paint(element, paintSteps = []) {
+    const { background = 'black', color = 'black', top = 0, left = 0, width = 100, height = 0 } = element.layout;
+    if (element.type <span class="hljs-comment">=== 'text') {</span>
+        paintSteps.push(`ctx.font = '20px Impact;'`);
+        paintSteps.push(`ctx.strokeStyle = '${color}';`);
+        paintSteps.push(`ctx.strokeText("${element.text.replace(/(^\s+|\s+$)/g, '')}", ${left},${top + 20});`);
+    } else if (element.tagName) {
+        paintSteps.push(`ctx.fillStyle="${background}";`);
+        paintSteps.push(`ctx.fillRect(${left},${top}, ${parseInt(width)}, ${parseInt(height)});`);
+    }
+    element.children.forEach(child =&gt; paint(child, paintSteps));
+    return paintSteps;
+}
+function createLayerTree(element, layers) {
+    element.children = element.children.filter((child) =&gt; createNewLayer(child, layers));
+    element.children.forEach(child =&gt; createLayerTree(child, layers));
+    return layers;
+}
+function createNewLayer(element, layers) {
+    let created = true;
+    const attributes = element.attributes;
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                if (property <span class="hljs-comment">=== 'position' &amp;&amp; value === 'absolute') {</span>
+                    updateLayoutTree(element);//对单独的层重新计算位置
+                    layers.push(element);
+                    created = false;
+                }
+            });
+        }
+    });
+    return created;
+}
+function updateLayoutTree(element, top = 0, parentTop = 0) {
+    const computedStyle = element.computedStyle;
+    element.layout = {
+        top: top + parentTop,
+        left: 0,
+        width: computedStyle.width,
+        height: computedStyle.height,
+        background: computedStyle.background,
+        color: computedStyle.color,
+    }
+    let childTop = 0;
+    element.children.forEach(child =&gt; {
+        updateLayoutTree(child, childTop, element.layout.top);
+        childTop += parseInt(child.computedStyle.height || 0);
+    });
+}
+function createLayout(element) {
+    element.children = element.children.filter(isShow);
+    element.children.forEach(child =&gt; createLayout(child));
+    return element;
+}
+function isShow(element) {
+    let isShow = true;
+    if (element.tagName <span class="hljs-comment">=== 'head' || element.tagName === 'script') {</span>
+        isShow = false;
+    }
+    const attributes = element.attributes;
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                if (property <span class="hljs-comment">=== 'display' &amp;&amp; value === 'none') {</span>
+                    isShow = false;
+                }
+            });
+        }
+    });
+    return isShow;
+}
+function recalculateStyle(cssRules, element, parentComputedStyle = {}) {
+    const attributes = element.attributes;
+    element.computedStyle = { color: parentComputedStyle.color }; // 计算样式
+    Object.entries(attributes).forEach(([key, value]) =&gt; {
+        //stylesheets
+        cssRules.forEach(rule =&gt; {
+            let selector = rule.selectors[0].replace(/\s+/g, '');
+            if ((selector == '#' + value &amp;&amp; key == 'id') || (selector == '.' + value &amp;&amp; key == 'class')) {
+                rule.declarations.forEach(({ property, value }) =&gt; {
+                    element.computedStyle[property] = value;
+                })
+            }
+        })
+        //行内样式
+        if (key <span class="hljs-comment">=== 'style') {</span>
+            const attributes = value.split(';');
+            attributes.forEach((attribute) =&gt; {
+                const [property, value] = attribute.split(/:\s*/);
+                element.computedStyle[property] = value;
+            });
+        }
+    });
+    element.children.forEach(child =&gt; recalculateStyle(cssRules, child, element.computedStyle));
+}
+gpu.on('raster', (tile) =&gt; {
+    //13.最终生成的位图就保存在了GPU内存中
+    let bitMap = tile;
+    gpu.bitMaps.push(bitMap);
+});
+//1.主进程接收用户输入的URL
+<span class="hljs-addition">+main.emit('request', { host, port, path: '/load.html' });</span>
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+</body></html>

@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://static.zhufengpeixun.com/bootstrapmin_1645176572503.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav" style="height: 80.8px;">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="../html/0.Async.html">0.Async</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.11.webpack5.html">103.11.webpack5</a></li><li><a href="../html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.rollup.1.html">103.16.rollup.1</a></li><li><a href="../html/103.16.rollup.2.html">103.16.rollup.2</a></li><li><a href="../html/103.16.rollup.3.html">103.16.rollup.3</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/103.16.vite.plugin.html">103.16.vite.plugin</a></li><li><a href="../html/103.16.vite.1.html">103.16.vite.1</a></li><li><a href="../html/103.16.vite.2.html">103.16.vite.2</a></li><li><a href="../html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.ketang.html">106.10.ketang</a></li><li><a href="../html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="../html/106.12.antpro.html">106.12.antpro</a></li><li><a href="../html/106.13.router-6.html">106.13.router-6</a></li><li><a href="../html/106.14.ssr.html">106.14.ssr</a></li><li><a href="../html/106.15.nextjs.html">106.15.nextjs</a></li><li><a href="../html/106.16.1.cms.html">106.16.1.cms</a></li><li><a href="../html/106.16.2.cms.html">106.16.2.cms</a></li><li><a href="../html/106.16.3.cms.html">106.16.3.cms</a></li><li><a href="../html/106.16.4.cms.html">106.16.4.cms</a></li><li><a href="../html/106.16.mobx.html">106.16.mobx</a></li><li><a href="../html/106.17.fomily.html">106.17.fomily</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/126.12.react-5.html">126.12.react-5</a></li><li><a href="../html/126.12.react-6.html">126.12.react-6</a></li><li><a href="../html/126.12.react-7.html">126.12.react-7</a></li><li><a href="../html/126.12.react-8.html">126.12.react-8</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/134.2.react18.html">134.2.react18</a></li><li><a href="../html/134.3.react18.html">134.3.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li><li><a href="../html/137.lerna.html">137.lerna</a></li><li><a href="../html/138.create-vite.html">138.create-vite</a></li><li><a href="../html/139.cli.html">139.cli</a></li><li><a href="../html/140.antd.html">140.antd</a></li><li><a href="../html/141.react-dnd.html">141.react-dnd</a></li><li><a href="../html/142.1.link.html">142.1.link</a></li><li><a href="../html/143.1.gulp.html">143.1.gulp</a></li><li><a href="../html/143.2.stream.html">143.2.stream</a></li><li><a href="../html/143.3.gulp.html">143.3.gulp</a></li><li><a href="../html/144.1.closure.html">144.1.closure</a></li><li><a href="../html/144.2.v8.html">144.2.v8</a></li><li><a href="../html/144.3.gc.html">144.3.gc</a></li><li><a href="../html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="../html/146.browser.html">146.browser</a></li><li><a href="../html/147.lighthouse.html">147.lighthouse</a></li><li><a href="../html/148.1.basic.html">148.1.basic</a></li><li><a href="../html/148.2.basic .html">148.2.basic </a></li><li><a href="../html/148.3.basic.html">148.3.basic</a></li><li><a href="../html/148.4.basic.html">148.4.basic</a></li><li><a href="../html/148.5.basic.html">148.5.basic</a></li><li class="active"><a href="../html/149.1.vite.html">149.1.vite</a></li><li><a href="../html/149.2.vite.html">149.2.vite</a></li><li><a href="../html/149.3.vite.html">149.3.vite</a></li><li><a href="../html/149.4.vite.html">149.4.vite</a></li><li><a href="../html/150.react-window.html">150.react-window</a></li><li><a href="../html/151.react-query.html">151.react-query</a></li><li><a href="../html/152.useRequest.html">152.useRequest</a></li><li><a href="../html/153.transition.html">153.transition</a></li><li><a href="../html/154.emotion.html">154.emotion</a></li><li><a href="../html/155.1.formily.html">155.1.formily</a></li><li><a href="../html/155.2.formily.html">155.2.formily</a></li><li><a href="../html/155.3.formily.html">155.3.formily</a></li><li><a href="../html/155.3.1.mobx.usage.html">155.3.1.mobx.usage</a></li><li><a href="../html/155.3.2.mobx.source.html">155.3.2.mobx.source</a></li><li><a href="../html/156.vue-loader.html">156.vue-loader</a></li><li><a href="../html/103.11.mf.html">103.11.mf</a></li><li><a href="../html/157.1.react18.html">157.1.react18</a></li><li><a href="../html/158.umi4.html">158.umi4</a></li><li><a href="../html/159.rxjs.html">159.rxjs</a></li><li><a href="../html/159.rxjs2.html">159.rxjs2</a></li><li><a href="../html/160.bff.html">160.bff</a></li><li><a href="../html/161.zustand.html">161.zustand</a></li><li><a href="../html/162.vscode.html">162.vscode</a></li><li><a href="../html/163.emp.html">163.emp</a></li></ul>                        </div>
+
+                        
+  <div class="warpper">
+    <div class="page-toc">
+      <ul><li><a href="#t01.课程大纲">1.课程大纲</a><ul><li><a href="#t11.1 Vite2+Vue3+Typescript 搭建开发环境">1.1 Vite2+Vue3+Typescript 搭建开发环境</a></li><li><a href="#t21.2 rollup和vite2插件系统和自定义插件">1.2 rollup和vite2插件系统和自定义插件</a></li><li><a href="#t31.3 从零实现vite2">1.3 从零实现vite2</a></li></ul></li><li><a href="#t42.安装 vite">2.安装 vite</a><ul><li><a href="#t52.1 vite 介绍">2.1 vite 介绍</a></li><li><a href="#t62.2 vite 安装">2.2 vite 安装</a></li></ul></li><li><a href="#t73.启动 vite">3.启动 vite</a><ul><li><a href="#t83.1 package.json">3.1 package.json</a></li><li><a href="#t93.2 vite.config.js">3.2 vite.config.js</a></li><li><a href="#t103.3 index.html">3.3 index.html</a></li><li><a href="#t113.4 src\env.d.ts">3.4 src\env.d.ts</a></li><li><a href="#t123.5 src\main.ts">3.5 src\main.ts</a></li><li><a href="#t133.6 tsconfig.json">3.6 tsconfig.json</a></li><li><a href="#t143.7 .gitignore">3.7 .gitignore</a></li></ul></li><li><a href="#t154.支持 vue3">4.支持 vue3</a><ul><li><a href="#t164.1 安装 vue">4.1 安装 vue</a></li><li><a href="#t174.2 vite.config.ts">4.2 vite.config.ts</a></li><li><a href="#t184.3 src\env.d.ts">4.3 src\env.d.ts</a></li><li><a href="#t194.4 src\main.ts">4.4 src\main.ts</a></li><li><a href="#t204.5 src\App.vue">4.5 src\App.vue</a></li><li><a href="#t214.6 HelloWorld.vue">4.6 HelloWorld.vue</a></li></ul></li><li><a href="#t225.支持 typescript">5.支持 typescript</a><ul><li><a href="#t235.1 安装">5.1 安装</a></li><li><a href="#t245.2 package.json">5.2 package.json</a></li><li><a href="#t255.3 msg.ts">5.3 msg.ts</a></li><li><a href="#t265.4 App.vue">5.4 App.vue</a></li></ul></li><li><a href="#t276.ESLint">6.ESLint</a><ul><li><a href="#t286.1 安装">6.1 安装</a></li><li><a href="#t296.2 .eslintrc.js">6.2 .eslintrc.js</a></li><li><a href="#t306.3 .eslintignore">6.3 .eslintignore</a></li><li><a href="#t316.4 package.json">6.4 package.json</a></li></ul></li><li><a href="#t327.Prettier">7.Prettier</a><ul><li><a href="#t337.1 安装">7.1 安装</a></li><li><a href="#t347.2 .eslintrc.js">7.2 .eslintrc.js</a></li><li><a href="#t357.3 .prettierrc.js">7.3 .prettierrc.js</a></li><li><a href="#t367.4 .prettierignore">7.4 .prettierignore</a></li><li><a href="#t377.5 editorconfig">7.5 editorconfig</a><ul><li><a href="#t387.5.1 .editorconfig">7.5.1 .editorconfig</a></li></ul></li><li><a href="#t397.6 自动格式化">7.6 自动格式化</a></li></ul></li><li><a href="#t408.git hooks">8.git hooks</a><ul><li><a href="#t418.1 lint-staged">8.1 lint-staged</a><ul><li><a href="#t428.1.1 安装">8.1.1 安装</a></li><li><a href="#t438.1.2 package.json">8.1.2 package.json</a></li></ul></li><li><a href="#t448.2 commitlint">8.2 commitlint</a><ul><li><a href="#t458.2.1 type">8.2.1 type</a></li><li><a href="#t468.2.2 安装">8.2.2 安装</a></li><li><a href="#t478.2.3 配置">8.2.3 配置</a></li><li><a href="#t488.2.4 commitlint.config.js">8.2.4 commitlint.config.js</a></li></ul></li></ul></li><li><a href="#t499.配置别名">9.配置别名</a><ul><li><a href="#t509.1 vite.config.ts">9.1 vite.config.ts</a></li><li><a href="#t519.2 tsconfig.json">9.2 tsconfig.json</a></li><li><a href="#t529.3 App.vue">9.3 App.vue</a></li></ul></li><li><a href="#t5310.样式处理">10.样式处理</a><ul><li><a href="#t5410.1 全局样式">10.1 全局样式</a><ul><li><a href="#t5510.1.1 src\global.css">10.1.1 src\global.css</a></li><li><a href="#t5610.1.2 src\main.ts">10.1.2 src\main.ts</a></li></ul></li><li><a href="#t5710.2 局部样式">10.2 局部样式</a><ul><li><a href="#t5810.2.1 HelloWorld.vue">10.2.1 HelloWorld.vue</a></li></ul></li><li><a href="#t5910.3 CSS Modules">10.3 CSS Modules</a><ul><li><a href="#t6010.3.1 内联">10.3.1 内联</a><ul><li><a href="#t6110.3.1.1 HelloWorld.vue">10.3.1.1 HelloWorld.vue</a></li></ul></li><li><a href="#t6210.3.2 外联">10.3.2 外联</a><ul><li><a href="#t6310.3.2.1 HelloWorld.module.css">10.3.2.1 HelloWorld.module.css</a></li><li><a href="#t6410.3.2.2 HelloWorld.vue">10.3.2.2 HelloWorld.vue</a></li></ul></li></ul></li><li><a href="#t6510.4 预处理器">10.4 预处理器</a><ul><li><a href="#t6610.4.1 安装">10.4.1 安装</a></li><li><a href="#t6710.4.2 src\components\HelloWorld.vue">10.4.2 src\components\HelloWorld.vue</a></li></ul></li><li><a href="#t6810.5 全局注入">10.5 全局注入</a><ul><li><a href="#t6910.5.1 vite.config.ts">10.5.1 vite.config.ts</a></li><li><a href="#t7010.5.2 src\styles\theme.less">10.5.2 src\styles\theme.less</a></li><li><a href="#t7110.5.3 src\styles\theme.scss">10.5.3 src\styles\theme.scss</a></li><li><a href="#t7210.5.4 src\components\HelloWorld.vue">10.5.4 src\components\HelloWorld.vue</a></li></ul></li><li><a href="#t7310.6 PostCSS">10.6 PostCSS</a><ul><li><a href="#t7410.6.1 安装">10.6.1 安装</a></li><li><a href="#t7510.6.2 postcss.config.js">10.6.2 postcss.config.js</a></li><li><a href="#t7610.6.3 .browserslistrc">10.6.3 .browserslistrc</a></li><li><a href="#t7710.6.4 HelloWorld.vue">10.6.4 HelloWorld.vue</a></li></ul></li></ul></li><li><a href="#t7811.静态资源处理">11.静态资源处理</a><ul><li><a href="#t7911.1 模板引入">11.1 模板引入</a></li><li><a href="#t8011.2 JS 中引入">11.2 JS 中引入</a></li><li><a href="#t8111.3 CSS 引入">11.3 CSS 引入</a></li><li><a href="#t8211.4 public 目录">11.4 public 目录</a></li></ul></li><li><a href="#t8312. mock">12. mock</a><ul><li><a href="#t8412.1 安装">12.1 安装</a></li><li><a href="#t8512.2 vite.config.ts">12.2 vite.config.ts</a></li><li><a href="#t8612.3 mock\auth.ts">12.3 mock\auth.ts</a></li></ul></li><li><a href="#t8713. 封装请求">13. 封装请求</a><ul><li><a href="#t8813.1 安装">13.1 安装</a></li><li><a href="#t8913.2 mock\auth.ts">13.2 mock\auth.ts</a></li><li><a href="#t9013.3 http.ts">13.3 http.ts</a></li><li><a href="#t9113.4 src\api\auth.ts">13.4 src\api\auth.ts</a></li><li><a href="#t9213.5 auth.ts">13.5 auth.ts</a></li><li><a href="#t9313.6 src\request.ts">13.6 src\request.ts</a></li><li><a href="#t9413.7 main.ts">13.7 main.ts</a></li></ul></li><li><a href="#t9514. 状态管理">14. 状态管理</a><ul><li><a href="#t9614.1 安装">14.1 安装</a></li><li><a href="#t9714.2 src\main.ts">14.2 src\main.ts</a></li><li><a href="#t9814.3 store\index.ts">14.3 store\index.ts</a></li><li><a href="#t9914.4 HelloWorld.vue">14.4 HelloWorld.vue</a></li></ul></li><li><a href="#t10015. 路由">15. 路由</a><ul><li><a href="#t10115.1 安装">15.1 安装</a></li><li><a href="#t10215.2 router\index.ts">15.2 router\index.ts</a></li><li><a href="#t10315.3 HomePage.vue">15.3 HomePage.vue</a></li><li><a href="#t10415.4 LoginPage.vue">15.4 LoginPage.vue</a></li><li><a href="#t10515.5 src\main.ts">15.5 src\main.ts</a></li><li><a href="#t10615.6 App.vue">15.6 App.vue</a></li></ul></li><li><a href="#t10716. UI 组件库">16. UI 组件库</a><ul><li><a href="#t10816.1 安装">16.1 安装</a></li><li><a href="#t10916.2 src\App.vue">16.2 src\App.vue</a></li></ul></li><li><a href="#t11017. 环境变量和模式">17. 环境变量和模式</a><ul><li><a href="#t11117.1 .env.development">17.1 .env.development</a></li><li><a href="#t11217.2 .env.production">17.2 .env.production</a></li><li><a href="#t11317.3 src\main.ts">17.3 src\main.ts</a></li><li><a href="#t11417.4 package.json">17.4 package.json</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+      <h2 id="t01.课程大纲">1.课程大纲 <a href="#t01.课程大纲"> # </a></h2>
+<h3 id="t11.1 Vite2+Vue3+Typescript 搭建开发环境">1.1 Vite2+Vue3+Typescript 搭建开发环境 <a href="#t11.1 Vite2+Vue3+Typescript 搭建开发环境"> # </a></h3>
+<ul>
+<li>安装使用vite2</li>
+<li>支持vue3</li>
+<li>支持typescript</li>
+<li>支持eslint、prettier和editorconfig</li>
+<li>git hooks </li>
+<li>别名</li>
+<li>样式</li>
+<li>静态资源</li>
+<li>mock</li>
+<li>axios请求封装</li>
+<li>pinia状态管理 </li>
+<li>路由</li>
+<li>NaïveUI组件库</li>
+<li>环境变量和模式</li>
+</ul>
+<h3 id="t21.2 rollup和vite2插件系统和自定义插件">1.2 rollup和vite2插件系统和自定义插件 <a href="#t21.2 rollup和vite2插件系统和自定义插件"> # </a></h3>
+<h3 id="t31.3 从零实现vite2">1.3 从零实现vite2 <a href="#t31.3 从零实现vite2"> # </a></h3>
+<h2 id="t42.安装 vite">2.安装 vite <a href="#t42.安装 vite"> # </a></h2>
+<h3 id="t52.1 vite 介绍">2.1 vite 介绍 <a href="#t52.1 vite 介绍"> # </a></h3>
+<ul>
+<li>Vite (法语意为 "快速的"，发音 /vit/) 是下一代前端开发与构建工具</li>
+<li>💡 极速的服务启动 使用原生 ESM 文件，无需打包!</li>
+<li>⚡️ 轻量快速的热重载 无论应用程序大小如何，都始终极快的模块热重载（HMR）</li>
+<li>🛠️ 丰富的功能 对 TypeScript、JSX、CSS 等支持开箱即用。</li>
+<li>📦 优化的构建 可选 “多页应用” 或 “库” 模式的预配置 Rollup 构建</li>
+<li>🔩 通用的插件 在开发和构建之间共享 Rollup-superset 插件接口。</li>
+<li>🔑 完全类型化的 API 灵活的 API 和完整 TypeScript</li>
+</ul>
+<h3 id="t62.2 vite 安装">2.2 vite 安装 <a href="#t62.2 vite 安装"> # </a></h3>
+<ul>
+<li><a href="https://pnpm.io/">pnpm</a></li>
+<li><a href="https://vitejs.dev/config">https://vitejs.dev/config</a></li>
+</ul>
+<pre><code class="lang-js">pnpm install vite -D
+</code></pre>
+<h2 id="t73.启动 vite">3.启动 vite <a href="#t73.启动 vite"> # </a></h2>
+<ul>
+<li><a href="https://esbuild.github.io">https://esbuild.github.io</a></li>
+<li>Vite 主要由两部分组成<ul>
+<li>一个开发服务器，它基于 原生 ES 模块 提供了 丰富的内建功能，如速度快到惊人的 模块热更新（HMR）,Vite 将会使用 <code>esbuild</code> 预构建依赖。<code>Esbuild</code> 使用 <code>Go</code> 编写，并且比以 JavaScript 编写的打包器预构建依赖快 10-100 倍</li>
+<li>一套构建指令，它使用 Rollup 打包你的代码，并且它是预配置的，可输出用于生产环境的高度优化过的静态资源</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/websocket_1645812565010.png" width="50%">
+<img src="https://static.zhufengpeixun.com/validtejs_1645813926867.png" width="50%"></p>
+<h3 id="t83.1 package.json">3.1 package.json <a href="#t83.1 package.json"> # </a></h3>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"dev"</span>: <span class="hljs-string">"vite"</span>,
+    <span class="hljs-attr">"build"</span>: <span class="hljs-string">"vite build"</span>
+  }
+}
+</code></pre>
+<h3 id="t93.2 vite.config.js">3.2 vite.config.js <a href="#t93.2 vite.config.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">"vite"</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({})
+</code></pre>
+<h3 id="t103.3 index.html">3.3 index.html <a href="#t103.3 index.html"> # </a></h3>
+<p>index.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Vite App<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/main.ts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="t113.4 src\env.d.ts">3.4 src\env.d.ts <a href="#t113.4 src\env.d.ts"> # </a></h3>
+<ul>
+<li>Vite 默认的类型定义是写给它的 Node.js API 的,要将其补充到一个 Vite 应用的客户端代码环境中</li>
+<li><a href="https://vitejs.cn/guide/features.html#typescript-compiler-options">客户端类型</a></li>
+<li>如果你的库依赖于某个全局库<ul>
+<li>使用<code>///</code> 指令</li>
+<li>三斜线指令仅可放在包含它的文件的最顶端</li>
+<li>三斜线引用告诉编译器在编译过程中要引入的额外的文件</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types="vite/client" /&gt;</span>
+</code></pre>
+<h3 id="t123.5 src\main.ts">3.5 src\main.ts <a href="#t123.5 src\main.ts"> # </a></h3>
+<p>src\main.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"app"</span>)!.innerHTML = <span class="hljs-string">"main"</span>;
+}
+render();
+
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">import</span>.meta.hot) {
+  <span class="hljs-keyword">import</span>.meta.hot.accept(<span class="hljs-function">(<span class="hljs-params">updatedModule</span>) =&gt;</span> updatedModule.render());
+}
+
+</code></pre>
+<h3 id="t133.6 tsconfig.json">3.6 tsconfig.json <a href="#t133.6 tsconfig.json"> # </a></h3>
+<p>tsconfig.json</p>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">"compilerOptions"</span>: {
+    <span class="hljs-attr">"target"</span>: <span class="hljs-string">"esnext"</span>,
+    <span class="hljs-attr">"module"</span>: <span class="hljs-string">"esnext"</span>,
+    <span class="hljs-attr">"moduleResolution"</span>: <span class="hljs-string">"node"</span>,
+    <span class="hljs-attr">"strict"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"jsx"</span>: <span class="hljs-string">"preserve"</span>,
+    <span class="hljs-attr">"sourceMap"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"esModuleInterop"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"lib"</span>: [<span class="hljs-string">"esnext"</span>, <span class="hljs-string">"dom"</span>, <span class="hljs-string">"es2018.promise"</span>]
+  },
+  <span class="hljs-attr">"include"</span>: [<span class="hljs-string">"src/**/*.ts"</span>, <span class="hljs-string">"src/**/*.d.ts"</span>, <span class="hljs-string">"src/**/*.tsx"</span>, <span class="hljs-string">"src/**/*.vue"</span>]
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">target</td>
+<td style="text-align:left">用于指定编译之后的版本目标</td>
+</tr>
+<tr>
+<td style="text-align:left">module</td>
+<td style="text-align:left">生成的模块形式：none、commonjs、amd、system、umd、es6、es2015 或 esnext 只有 amd 和 system 能和 outFile 一起使用 target 为 es5 或更低时可用 es6 和 es2015</td>
+</tr>
+<tr>
+<td style="text-align:left">moduleResolution</td>
+<td style="text-align:left">选择模块解析策略，有 node 和 classic 两种类型 <a href="https://www.typescriptlang.org/docs/handbook/module-resolution.html">module-resolution</a></td>
+</tr>
+<tr>
+<td style="text-align:left">strict</td>
+<td style="text-align:left">是否启动所有类型检查</td>
+</tr>
+<tr>
+<td style="text-align:left">jsx</td>
+<td style="text-align:left">react 模式会生成 React.createElement，在使用前不需要再进行转换操作了，输出文件的扩展名为.js</td>
+</tr>
+<tr>
+<td style="text-align:left">sourceMap</td>
+<td style="text-align:left">把 ts 文件编译成 js 文件的时候，同时生成对应的 sourceMap 文件</td>
+</tr>
+<tr>
+<td style="text-align:left">esModuleInterop</td>
+<td style="text-align:left">为导入内容创建命名空间,实现 CommonJS 和 ES 模块之间的互相访问</td>
+</tr>
+<tr>
+<td style="text-align:left">lib</td>
+<td style="text-align:left">编译时引入的 ES 功能库，包括：es5 、es6、es7、dom 等。如果未设置，则默认为： target 为 es5 时: ["dom", "es5", "scripthost"] target 为 es6 时: ["dom", "es6", "dom.iterable", "scripthost"]</td>
+</tr>
+<tr>
+<td style="text-align:left">include</td>
+<td style="text-align:left">include 也可以指定要编译的路径列表，但是和 files 的区别在于，这里的路径可以是文件夹，也可以是文件</td>
+</tr>
+</tbody>
+</table>
+<h3 id="t143.7 .gitignore">3.7 .gitignore <a href="#t143.7 .gitignore"> # </a></h3>
+<p>.gitignore</p>
+<pre><code class="lang-js">node_modules
+pnpm-debug.log*
+.vscode<span class="hljs-comment">/*
+sh.exe.stackdump
+dist
+coverage
+</span></code></pre>
+<h2 id="t154.支持 vue3">4.支持 vue3 <a href="#t154.支持 vue3"> # </a></h2>
+<h3 id="t164.1 安装 vue">4.1 安装 vue <a href="#t164.1 安装 vue"> # </a></h3>
+<pre><code class="lang-js">pnpm install vue
+pnpm install @vitejs/plugin-vue -D
+</code></pre>
+<h3 id="t174.2 vite.config.ts">4.2 vite.config.ts <a href="#t174.2 vite.config.ts"> # </a></h3>
+<p>vite.config.ts</p>
+<pre><code class="lang-diff">import { defineConfig } from 'vite'
+<span class="hljs-addition">+import vue from "@vitejs/plugin-vue";</span>
+export default defineConfig({
+<span class="hljs-addition">+ plugins: [vue()]</span>
+})
+</code></pre>
+<h3 id="t184.3 src\env.d.ts">4.3 src\env.d.ts <a href="#t184.3 src\env.d.ts"> # </a></h3>
+<p>src\env.d.ts</p>
+<pre><code class="lang-diff">/// &lt;reference types="vite/client" /&gt;
+<span class="hljs-addition">+declare module "*.vue" {</span>
+<span class="hljs-addition">+  import type { DefineComponent } from "vue";</span>
+<span class="hljs-addition">+  const component: DefineComponent&lt;{}, {}, any&gt;;</span>
+<span class="hljs-addition">+  export default component;</span>
+<span class="hljs-addition">+}</span>
+</code></pre>
+<h3 id="t194.4 src\main.ts">4.4 src\main.ts <a href="#t194.4 src\main.ts"> # </a></h3>
+<p>src\main.ts</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+import { createApp } from "vue";</span>
+<span class="hljs-addition">+import App from "./App.vue";</span>
+<span class="hljs-addition">+const app = createApp(App)</span>
+<span class="hljs-addition">+app.mount("#app");</span>
+</code></pre>
+<h3 id="t204.5 src\App.vue">4.5 src\App.vue <a href="#t204.5 src\App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-js">&lt;script setup lang="ts"&gt;
+import HelloWorld from './components/HelloWorld.vue'
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;HelloWorld msg="Vue3 + TypeScript + Vite2" /&gt;
+&lt;/template&gt;
+
+&lt;style&gt;&lt;/style&gt;
+</code></pre>
+<h3 id="t214.6 HelloWorld.vue">4.6 HelloWorld.vue <a href="#t214.6 HelloWorld.vue"> # </a></h3>
+<p>src\components\HelloWorld.vue</p>
+<ul>
+<li><a href="https://v3.cn.vuejs.org/api/sfc-script-setup.html#%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6-script-setup">单文件组件 <code>&lt;script setup&gt;</code></a>是在单文件组件 (SFC) 中使用组合式 API 的编译时语法糖</li>
+<li><a href="https://v3.cn.vuejs.org/api/sfc-spec.html#%E9%A2%84%E5%A4%84%E7%90%86">lang</a>属性可以声明预处理语言</li>
+<li><a href="https://v3.cn.vuejs.org/api/refs-api.html#ref"><code>ref</code></a>接受一个内部值并返回一个响应式且可变的 ref 对象。ref 对象仅有一个 <code>.value</code> 属性，指向该内部值,在 JS 中操作数据需要<code>.value</code>,在模板中读取不需要<code>.value</code></li>
+<li>在 <code>&lt;script setup&gt;</code> 中必须使用 <a href="https://v3.cn.vuejs.org/api/sfc-script-setup.html#defineprops-%E5%92%8C-defineemits">defineProps</a> API 来声明 props，只在 <code>&lt;script setup&gt;</code> 中才能使用的编译器宏。他们不需要导入且会随着 <code>&lt;script setup&gt;</code> 处理过程一同被编译掉</li>
+</ul>
+<pre><code class="lang-js">&lt;script setup lang="ts"&gt;
+import { ref } from 'vue'
+import logoUrl from '../assets/logo.png'
+defineProps&lt;{ msg: string }&gt;()
+const count = ref(0)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;img :src="logoUrl" /&gt;
+  &lt;div&gt;
+    &lt;button type="button" @click="count++"&gt;count is: {{ count }}&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+img {
+  width: 100px;
+  height: 100px;
+}
+&lt;/style&gt;
+</code></pre>
+<h2 id="t225.支持 typescript">5.支持 typescript <a href="#t225.支持 typescript"> # </a></h2>
+<ul>
+<li>只编译不校验</li>
+</ul>
+<h3 id="t235.1 安装">5.1 安装 <a href="#t235.1 安装"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/typescript">typescript</a>是一种基于 JavaScript 的强类型编程语言</li>
+<li><a href="https://www.npmjs.com/package/vue-tsc">vue-tsc</a>可以对 Vue3 进行 Typescript 类型较验</li>
+</ul>
+<pre><code class="lang-js">pnpm install typescript vue-tsc  -D
+</code></pre>
+<h3 id="t245.2 package.json">5.2 package.json <a href="#t245.2 package.json"> # </a></h3>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+  "scripts": {
+    "dev": "vite",
+<span class="hljs-addition">+   "build": "vue-tsc --noEmit &amp;&amp; vite build"</span>
+  },
+}
+</code></pre>
+<h3 id="t255.3 msg.ts">5.3 msg.ts <a href="#t255.3 msg.ts"> # </a></h3>
+<p>src\msg.ts</p>
+<pre><code class="lang-js">interface Msg {
+  <span class="hljs-attr">text</span>: string;
+}
+<span class="hljs-keyword">const</span> msg: Msg = {
+  <span class="hljs-attr">text</span>: <span class="hljs-string">"zhufeng"</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">13</span>
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> msg
+</code></pre>
+<h3 id="t265.4 App.vue">5.4 App.vue <a href="#t265.4 App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import HelloWorld from './components/HelloWorld.vue'
+<span class="hljs-addition">+import msg from "./msg"</span>
+&lt;/script&gt;
+
+&lt;template&gt;
+<span class="hljs-addition">+  &lt;HelloWorld :msg="msg.text" /&gt;</span>
+&lt;/template&gt;
+
+&lt;style&gt;&lt;/style&gt;
+</code></pre>
+<h2 id="t276.ESLint">6.ESLint <a href="#t276.ESLint"> # </a></h2>
+<ul>
+<li>ESLint<a href="https://eslint.bootcss.com/">eslint</a> 是一个插件化并且可配置的 JavaScript 语法规则和代码风格的检查工具<ul>
+<li>代码质量问题：使用方式有可能有问题</li>
+<li>代码风格问题：风格不符合一定规则</li>
+</ul>
+</li>
+</ul>
+<h3 id="t286.1 安装">6.1 安装 <a href="#t286.1 安装"> # </a></h3>
+<pre><code class="lang-js">pnpm install eslint eslint-plugin-vue  @typescript-eslint/parser @typescript-eslint/eslint-plugin @vue/eslint-config-typescript   -D
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">eslint</td>
+<td style="text-align:left">ESLint 是一个用于识别和报告在 ECMAScript/JavaScript 代码中发现的模式的工具</td>
+</tr>
+<tr>
+<td style="text-align:left">eslint-plugin-vue</td>
+<td style="text-align:left">Vue 的官方 ESLint 插件</td>
+</tr>
+<tr>
+<td style="text-align:left">@typescript-eslint/parser</td>
+<td style="text-align:left">一个 ESLint 解析器，它利用 TypeScript-ESTree 允许 ESLint 检查 TypeScript 源代码</td>
+</tr>
+<tr>
+<td style="text-align:left">@typescript-eslint/eslint-plugin</td>
+<td style="text-align:left">一个 ESLint 插件，为 TypeScript 代码库提供 lint 规则</td>
+</tr>
+<tr>
+<td style="text-align:left">@vue/eslint-config-typescript</td>
+<td style="text-align:left">Vue 的 eslint-config-typescript</td>
+</tr>
+</tbody>
+</table>
+<h3 id="t296.2 .eslintrc.js">6.2 .eslintrc.js <a href="#t296.2 .eslintrc.js"> # </a></h3>
+<p>.eslintrc.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">root</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">env</span>: {
+    <span class="hljs-attr">browser</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">es2021</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">node</span>: <span class="hljs-literal">true</span>
+  },
+
+  <span class="hljs-attr">extends</span>: [
+    <span class="hljs-string">"plugin:vue/vue3-recommended"</span>,
+    <span class="hljs-string">"eslint:recommended"</span>,
+    <span class="hljs-string">"@vue/typescript/recommended"</span>
+  ],
+  <span class="hljs-attr">parserOptions</span>: {
+    <span class="hljs-attr">parser</span>: <span class="hljs-string">"@typescript-eslint/parser"</span>,
+    <span class="hljs-attr">ecmaVersion</span>: <span class="hljs-number">2021</span>
+  },
+  <span class="hljs-attr">rules</span>: {
+    <span class="hljs-string">"no-unused-vars"</span>: <span class="hljs-string">"off"</span>,
+    <span class="hljs-string">"vue/no-unused-vars"</span>: <span class="hljs-string">"off"</span>,
+    <span class="hljs-string">"@typescript-eslint/no-unused-vars"</span>: <span class="hljs-string">"off"</span>
+  },
+  <span class="hljs-attr">globals</span>: {
+    <span class="hljs-attr">defineProps</span>: <span class="hljs-string">"readonly"</span>
+  }
+}
+</code></pre>
+<h3 id="t306.3 .eslintignore">6.3 .eslintignore <a href="#t306.3 .eslintignore"> # </a></h3>
+<p>.eslintignore</p>
+<pre><code class="lang-js">node_modules
+dist
+*.css
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.d.ts
+</code></pre>
+<h3 id="t316.4 package.json">6.4 package.json <a href="#t316.4 package.json"> # </a></h3>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+    "scripts": {
+     "dev": "vite",
+     "build": "vue-tsc --noEmit &amp;&amp; vite build",
+<span class="hljs-addition">+    "lint": "eslint --ext .ts,.tsx,vue src/** --no-error-on-unmatched-pattern --quiet",</span>
+<span class="hljs-addition">+    "lint:fix": "eslint --ext .ts,.tsx,vue src/** --no-error-on-unmatched-pattern --quiet --fix"</span>
+  },
+}
+</code></pre>
+<h2 id="t327.Prettier">7.Prettier <a href="#t327.Prettier"> # </a></h2>
+<ul>
+<li>ESLint 主要解决的是代码质量问题</li>
+<li><a href="https://eslint.bootcss.com/docs/rules/">代码质量规则</a><ul>
+<li>no-unused-vars 禁止出现未使用过的变量</li>
+<li>no-implicit-globals 禁止在全局范围内使用变量声明和 function 声明</li>
+<li>prefer-promise-reject-errors 要求使用 Error 对象作为 Promise 拒绝的原因</li>
+</ul>
+</li>
+<li><a href="https://prettier.io/">prettier</a>主要解决的是代码风格问题<ul>
+<li>max-len 最大长度</li>
+<li>no-mixed-spaces-and-tabs 不允许空格和 tab 混合</li>
+<li>keyword-spacing 关键字的空</li>
+<li>comma-style 冒号风格</li>
+</ul>
+</li>
+</ul>
+<h3 id="t337.1 安装">7.1 安装 <a href="#t337.1 安装"> # </a></h3>
+<pre><code class="lang-js">pnpm install prettier eslint-plugin-prettier  @vue/eslint-config-prettier -D
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">prettier</td>
+<td style="text-align:left">代码格式化</td>
+</tr>
+<tr>
+<td style="text-align:left">eslint-plugin-prettier</td>
+<td style="text-align:left">作为 ESLint 规则运行得 prettier</td>
+</tr>
+<tr>
+<td style="text-align:left">@vue/eslint-config-prettier</td>
+<td style="text-align:left">Vue 的 eslint-config-prettier</td>
+</tr>
+</tbody>
+</table>
+<h3 id="t347.2 .eslintrc.js">7.2 .eslintrc.js <a href="#t347.2 .eslintrc.js"> # </a></h3>
+<p>.eslintrc.js</p>
+<pre><code class="lang-diff">module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    es2021: true,
+    node: true
+  },
+
+  extends: [
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+<span class="hljs-addition">+   "prettier",</span>
+<span class="hljs-addition">+   "@vue/eslint-config-prettier"</span>
+  ],
+  parserOptions: {
+    parser: "@typescript-eslint/parser",
+    ecmaVersion: 2021
+  },
+  rules: {
+<span class="hljs-addition">+   "prettier/prettier": [</span>
+<span class="hljs-addition">+     "error",</span>
+<span class="hljs-addition">+     {</span>
+<span class="hljs-addition">+       singleQuote: false,</span>
+<span class="hljs-addition">+       tabWidth: 2,</span>
+<span class="hljs-addition">+       indent: 2,</span>
+<span class="hljs-addition">+       semi: false,</span>
+<span class="hljs-addition">+       trailingComma: "none",</span>
+<span class="hljs-addition">+       endOfLine: "auto"</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   ],</span>
+<span class="hljs-addition">+   "no-unused-vars": "off",</span>
+<span class="hljs-addition">+   "vue/no-unused-vars": "off",</span>
+<span class="hljs-addition">+   "@typescript-eslint/no-unused-vars": "off"</span>
+<span class="hljs-addition">+ },</span>
+  globals: {
+    defineProps: "readonly"
+  }
+}
+
+</code></pre>
+<h3 id="t357.3 .prettierrc.js">7.3 .prettierrc.js <a href="#t357.3 .prettierrc.js"> # </a></h3>
+<p>.prettierrc.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">singleQuote</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">//使用单引号</span>
+  <span class="hljs-attr">semi</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">////末尾添加分号</span>
+  <span class="hljs-attr">tabWidth</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-attr">trailingComma</span>: <span class="hljs-string">"none"</span>,
+  <span class="hljs-attr">useTabs</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">endOfLine</span>: <span class="hljs-string">"auto"</span>
+}
+</code></pre>
+<h3 id="t367.4 .prettierignore">7.4 .prettierignore <a href="#t367.4 .prettierignore"> # </a></h3>
+<p>.prettierignore</p>
+<pre><code class="lang-js">node_modules
+dist
+</code></pre>
+<h3 id="t377.5 editorconfig">7.5 editorconfig <a href="#t377.5 editorconfig"> # </a></h3>
+<ul>
+<li><a href="https://editorconfig.org/">editorconfig</a>帮助开发人员在不同的编辑器和 IDE 之间定义和维护一致的编码样式</li>
+<li>不同的开发人员，不同的编辑器，有不同的编码风格，而 EditorConfig 就是用来协同团队开发人员之间的代码的风格及样式规范化的一个工具，而.editorconfig 正是它的默认配置文件</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig</a></li>
+<li>vscode 这类编辑器，需要自行安装 editorconfig 插件</li>
+</ul>
+<h4 id="t387.5.1 .editorconfig">7.5.1 .editorconfig <a href="#t387.5.1 .editorconfig"> # </a></h4>
+<ul>
+<li>Unix 系统里，每行结尾只有换行,即<code>\n</code> LF(Line Feed)</li>
+<li>Windows 系统里面，每行结尾是<code>换行 回车</code>，即<code>\r\n</code> CR/LF</li>
+<li>Mac 系统里，每行结尾是<code>回车</code>，即<code>\r</code> CR(Carriage Return)</li>
+</ul>
+<pre><code class="lang-js">root = <span class="hljs-literal">true</span>
+
+[*]
+charset = utf<span class="hljs-number">-8</span>
+indent_style = space
+indent_size = <span class="hljs-number">2</span>
+end_of_line = lf
+</code></pre>
+<h3 id="t397.6 自动格式化">7.6 自动格式化 <a href="#t397.6 自动格式化"> # </a></h3>
+<p><img src="https://static.zhufengpeixun.com/formatonsave_1645855381499.png" alt=""></p>
+<p><img src="https://static.zhufengpeixun.com/formatter_1645855386534.png" alt=""></p>
+<h2 id="t408.git hooks">8.git hooks <a href="#t408.git hooks"> # </a></h2>
+<ul>
+<li>可以在<code>git commit</code>之前检查代码，保证所有提交到版本库中的代码都是符合规范的</li>
+<li>可以在<code>git push</code>之前执行单元测试,保证所有的提交的代码经过的单元测试</li>
+<li><a href="https://typicode.github.io/husky">husky</a>可以让我们向项目中方便添加<code>git hooks</code>,它会自动在仓库中的 <code>.git/</code> 目录下增加相应的钩子,比如 <code>pre-commit</code> 钩子就会在你执行 <code>git commit</code>命令的时候的触发</li>
+<li><a href="https://www.npmjs.com/package/lint-staged">lint-staged</a>用于实现每次提交只检查本次提交所修改的文件</li>
+<li><a href="https://www.npmjs.com/package/mrm">mrm</a>可以根据<code>package.json</code>依赖项中的代码质量工具来安装和配置 <code>husky</code> 和 <code>lint-staged</code></li>
+<li>Commitlint 可以规范<code>git commit -m ""</code>中的描述信息</li>
+</ul>
+<h3 id="t418.1 lint-staged">8.1 lint-staged <a href="#t418.1 lint-staged"> # </a></h3>
+<h4 id="t428.1.1 安装">8.1.1 安装 <a href="#t428.1.1 安装"> # </a></h4>
+<ul>
+<li><code>mrm</code>安装<code>lint-staged</code>的同时会安装<code>husky</code></li>
+</ul>
+<pre><code class="lang-js">pnpm install mrm  -D
+npx mrm lint-staged
+</code></pre>
+<h4 id="t438.1.2 package.json">8.1.2 package.json <a href="#t438.1.2 package.json"> # </a></h4>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+  "name": "vite2vue3ts-prepare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit &amp;&amp; vite build",
+    "lint": "eslint --ext .ts,vue src/** --no-error-on-unmatched-pattern --quiet",
+    "lint:fix": "eslint --ext .ts,vue src/** --no-error-on-unmatched-pattern --fix",
+<span class="hljs-addition">+   "prepare": "husky install"</span>
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "@vitejs/plugin-vue": "^2.2.2",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.5.0",
+<span class="hljs-addition">+   "husky": "^7.0.0",</span>
+<span class="hljs-addition">+   "lint-staged": "^12.3.4",</span>
+<span class="hljs-addition">+   "mrm": "^3.0.10",</span>
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5",
+    "vite": "^2.8.4",
+    "vue-tsc": "^0.32.0"
+  },
+<span class="hljs-addition">+ "lint-staged": {</span>
+<span class="hljs-addition">+   "*.{ts,vue}": "eslint --cache --fix"</span>
+<span class="hljs-addition">+ }</span>
+}
+</code></pre>
+<h3 id="t448.2 commitlint">8.2 commitlint <a href="#t448.2 commitlint"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/@commitlint/cli">commitlint</a>推荐我们使用<a href="https://www.npmjs.com/package/@commitlint/config-conventional">onfig-conventional</a>配置去写 <code>commit</code></li>
+<li>提交格式 <code>git commit -m &lt;type&gt;[optional scope]: &lt;description&gt;</code><ul>
+<li><code>type</code> ：用于表明我们这次提交的改动类型，是新增了功能？还是修改了测试代码？又或者是更新了文档？</li>
+<li><code>optional scope</code>：一个可选的修改范围。用于标识此次提交主要涉及到代码中哪个模块</li>
+<li><code>description</code>：一句话描述此次提交的主要内容，做到言简意赅</li>
+</ul>
+</li>
+</ul>
+<h4 id="t458.2.1 type">8.2.1 type <a href="#t458.2.1 type"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">build</td>
+<td style="text-align:left">编译相关的修改，例如发布版本、对项目构建或者依赖的改动</td>
+</tr>
+<tr>
+<td style="text-align:left">chore</td>
+<td style="text-align:left">其他修改, 比如改变构建流程、或者增加依赖库、工具等</td>
+</tr>
+<tr>
+<td style="text-align:left">ci</td>
+<td style="text-align:left">持续集成修改</td>
+</tr>
+<tr>
+<td style="text-align:left">docs</td>
+<td style="text-align:left">文档修改</td>
+</tr>
+<tr>
+<td style="text-align:left">feature</td>
+<td style="text-align:left">新特性、新功能</td>
+</tr>
+<tr>
+<td style="text-align:left">fix</td>
+<td style="text-align:left">修改 bug</td>
+</tr>
+<tr>
+<td style="text-align:left">perf</td>
+<td style="text-align:left">优化相关，比如提升性能、体验</td>
+</tr>
+<tr>
+<td style="text-align:left">refactor</td>
+<td style="text-align:left">代码重构</td>
+</tr>
+<tr>
+<td style="text-align:left">revert</td>
+<td style="text-align:left">回滚到上一个版本</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">代码格式修改</td>
+</tr>
+<tr>
+<td style="text-align:left">test</td>
+<td style="text-align:left">测试用例修改</td>
+</tr>
+</tbody>
+</table>
+<h4 id="t468.2.2 安装">8.2.2 安装 <a href="#t468.2.2 安装"> # </a></h4>
+<pre><code class="lang-js">pnpm install @commitlint/cli @commitlint/config-conventional -D
+</code></pre>
+<h4 id="t478.2.3 配置">8.2.3 配置 <a href="#t478.2.3 配置"> # </a></h4>
+<pre><code class="lang-js">npx husky add .husky/commit-msg <span class="hljs-string">"npx --no-install commitlint --edit $1"</span>
+</code></pre>
+<h4 id="t488.2.4 commitlint.config.js">8.2.4 commitlint.config.js <a href="#t488.2.4 commitlint.config.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">extends</span>: [<span class="hljs-string">"@commitlint/config-conventional"</span>],
+  <span class="hljs-attr">rules</span>: {
+    <span class="hljs-string">"type-enum"</span>: [
+      <span class="hljs-number">2</span>,
+      <span class="hljs-string">"always"</span>,
+      [
+        <span class="hljs-string">"build"</span>,
+        <span class="hljs-string">"chore"</span>,
+        <span class="hljs-string">"ci"</span>,
+        <span class="hljs-string">"docs"</span>,
+        <span class="hljs-string">"feature"</span>,
+        <span class="hljs-string">"fix"</span>,
+        <span class="hljs-string">"perf"</span>,
+        <span class="hljs-string">"refactor"</span>,
+        <span class="hljs-string">"revert"</span>,
+        <span class="hljs-string">"style"</span>,
+        <span class="hljs-string">"test"</span>
+      ]
+    ]
+  }
+}
+</code></pre>
+<h2 id="t499.配置别名">9.配置别名 <a href="#t499.配置别名"> # </a></h2>
+<h3 id="t509.1 vite.config.ts">9.1 vite.config.ts <a href="#t509.1 vite.config.ts"> # </a></h3>
+<pre><code class="lang-diff">import { defineConfig } from "vite"
+<span class="hljs-addition">+import { resolve } from "path"</span>
+import vue from "@vitejs/plugin-vue"
+export default defineConfig({
+<span class="hljs-addition">+ resolve: {</span>
+<span class="hljs-addition">+   alias: {</span>
+<span class="hljs-addition">+     "@": resolve("src")</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ },</span>
+  plugins: [vue()]
+})
+
+</code></pre>
+<h3 id="t519.2 tsconfig.json">9.2 tsconfig.json <a href="#t519.2 tsconfig.json"> # </a></h3>
+<p>tsconfig.json</p>
+<pre><code class="lang-diff">{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom", "es2018.promise"],
+<span class="hljs-addition">+   "baseUrl": ".",</span>
+<span class="hljs-addition">+   "paths": {</span>
+<span class="hljs-addition">+     "@/*": ["src/*"]</span>
+<span class="hljs-addition">+   }</span>
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
+</code></pre>
+<h3 id="t529.3 App.vue">9.3 App.vue <a href="#t529.3 App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+<span class="hljs-addition">+import HelloWorld from "@/components/HelloWorld.vue"</span>
+import msg from "./msg"
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;HelloWorld :msg="msg.text" /&gt;
+&lt;/template&gt;
+
+&lt;style&gt;&lt;/style&gt;
+
+</code></pre>
+<h2 id="t5310.样式处理">10.样式处理 <a href="#t5310.样式处理"> # </a></h2>
+<h3 id="t5410.1 全局样式">10.1 全局样式 <a href="#t5410.1 全局样式"> # </a></h3>
+<h4 id="t5510.1.1 src\global.css">10.1.1 src\global.css <a href="#t5510.1.1 src\global.css"> # </a></h4>
+<pre><code class="lang-css"><span class="hljs-selector-id">#app</span> {
+  <span class="hljs-attribute">background-color</span>: lightgrey;
+}
+</code></pre>
+<h4 id="t5610.1.2 src\main.ts">10.1.2 src\main.ts <a href="#t5610.1.2 src\main.ts"> # </a></h4>
+<p>src\main.ts</p>
+<pre><code class="lang-diff">import { createApp } from "vue"
+import App from "./App.vue"
+<span class="hljs-addition">+import "./global.css"</span>
+const app = createApp(App)
+app.mount("#app")
+</code></pre>
+<h3 id="t5710.2 局部样式">10.2 局部样式 <a href="#t5710.2 局部样式"> # </a></h3>
+<ul>
+<li>当 <code>style</code>标签有 <code>scoped</code> 属性时，它的 <code>CSS</code> 只作用于当前组件中的元素</li>
+<li>它使用了 <code>data-v-hash</code> 的方式来使 css 有了它对应模块的标识</li>
+</ul>
+<h4 id="t5810.2.1 HelloWorld.vue">10.2.1 HelloWorld.vue <a href="#t5810.2.1 HelloWorld.vue"> # </a></h4>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import { ref } from "vue"
+import logoUrl from "../assets/logo.png"
+defineProps&lt;{ msg: string }&gt;()
+const count = ref(0)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;img :src="logoUrl" /&gt;
+  &lt;div&gt;
+    &lt;button type="button" @click="count++"&gt;count is: {{ count }}&lt;/button&gt;
+  &lt;/div&gt;
+<span class="hljs-addition">+ &lt;a&gt;超链接&lt;/a&gt;</span>
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+img {
+  width: 100px;
+  height: 100px;
+}
+<span class="hljs-addition">+a {</span>
+<span class="hljs-addition">+  color: red;</span>
+<span class="hljs-addition">+}</span>
+&lt;/style&gt;
+
+</code></pre>
+<h3 id="t5910.3 CSS Modules">10.3 CSS Modules <a href="#t5910.3 CSS Modules"> # </a></h3>
+<ul>
+<li>通过 <code>module</code> 作用的 <code>style</code> 都被保存到<code>$style</code> 对象中</li>
+</ul>
+<h4 id="t6010.3.1 内联">10.3.1 内联 <a href="#t6010.3.1 内联"> # </a></h4>
+<h5 id="t6110.3.1.1 HelloWorld.vue">10.3.1.1 HelloWorld.vue <a href="#t6110.3.1.1 HelloWorld.vue"> # </a></h5>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import { ref } from "vue"
+import logoUrl from "../assets/logo.png"
+defineProps&lt;{ msg: string }&gt;()
+const count = ref(0)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;img :src="logoUrl" /&gt;
+  &lt;div&gt;
+    &lt;button type="button" @click="count++"&gt;count is: {{ count }}&lt;/button&gt;
+  &lt;/div&gt;
+<span class="hljs-addition">+ &lt;a :class="$style.link"&gt;超链接&lt;/a&gt;</span>
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+img {
+  width: 100px;
+  height: 100px;
+}
+&lt;/style&gt;
+<span class="hljs-addition">+&lt;style module&gt;</span>
+<span class="hljs-addition">+.link {</span>
+<span class="hljs-addition">+  color: red;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+&lt;/style&gt;</span>
+
+
+</code></pre>
+<h4 id="t6210.3.2 外联">10.3.2 外联 <a href="#t6210.3.2 外联"> # </a></h4>
+<ul>
+<li>任何以 <code>.module.css</code> 为后缀名的 CSS 文件都被认为是一个 <code>CSS modules</code> 文件</li>
+<li>导入这样的文件会返回一个相应的模块对象</li>
+</ul>
+<h5 id="t6310.3.2.1 HelloWorld.module.css">10.3.2.1 HelloWorld.module.css <a href="#t6310.3.2.1 HelloWorld.module.css"> # </a></h5>
+<p>src\components\HelloWorld.module.css</p>
+<pre><code class="lang-js">.link {
+    <span class="hljs-attr">color</span>: red;
+}
+</code></pre>
+<h5 id="t6410.3.2.2 HelloWorld.vue">10.3.2.2 HelloWorld.vue <a href="#t6410.3.2.2 HelloWorld.vue"> # </a></h5>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import { ref } from "vue"
+import logoUrl from "../assets/logo.png"
+<span class="hljs-addition">+import style from "./HelloWorld.module.css"</span>
+defineProps&lt;{ msg: string }&gt;()
+const count = ref(0)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;img :src="logoUrl" /&gt;
+  &lt;div&gt;
+    &lt;button type="button" @click="count++"&gt;count is: {{ count }}&lt;/button&gt;
+  &lt;/div&gt;
+<span class="hljs-addition">+ &lt;a :class="style.link"&gt;超链接&lt;/a&gt;</span>
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+img {
+  width: 100px;
+  height: 100px;
+}
+&lt;/style&gt;
+<span class="hljs-deletion">-&lt;style module&gt;</span>
+<span class="hljs-deletion">-.link {</span>
+<span class="hljs-deletion">-  color: red;</span>
+<span class="hljs-deletion">-}</span>
+<span class="hljs-deletion">-&lt;/style&gt;</span>
+
+</code></pre>
+<h3 id="t6510.4 预处理器">10.4 预处理器 <a href="#t6510.4 预处理器"> # </a></h3>
+<ul>
+<li>Vite 也同时提供了对<a href="https://cn.vitejs.dev/guide/features.html#css-pre-processors">.scss, .sass, .less, .styl 和 stylus</a>文件的内置支持</li>
+<li>没有必要为它们安装特定的 Vite 插件，但必须安装相应的预处理器依赖</li>
+<li><code>Vite</code>为<code>Sass</code>和<code>Less</code>改进了<code>@import</code>解析，以保证<code>Vite</code>别名也能被使用</li>
+</ul>
+<h4 id="t6610.4.1 安装">10.4.1 安装 <a href="#t6610.4.1 安装"> # </a></h4>
+<pre><code class="lang-js">pnpm install sass less -D
+</code></pre>
+<h4 id="t6710.4.2 src\components\HelloWorld.vue">10.4.2 src\components\HelloWorld.vue <a href="#t6710.4.2 src\components\HelloWorld.vue"> # </a></h4>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import { ref } from "vue"
+import logoUrl from "../assets/logo.png"
+import style from "./HelloWorld.module.css"
+defineProps&lt;{ msg: string }&gt;()
+const count = ref(0)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;img :src="logoUrl" /&gt;
+  &lt;div&gt;
+    &lt;button type="button" @click="count++"&gt;count is: {{ count }}&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;a :class="style.link"&gt;超链接&lt;/a&gt;
+  &lt;h2&gt;less&lt;/h2&gt;
+  &lt;h3&gt;sass&lt;/h3&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+img {
+  width: 100px;
+  height: 100px;
+}
+&lt;/style&gt;
+&lt;style module&gt;
+.link {
+  color: red;
+}
+&lt;/style&gt;
+<span class="hljs-addition">+&lt;style scoped lang="less"&gt;</span>
+<span class="hljs-addition">+@color: red;</span>
+<span class="hljs-addition">+h2 {</span>
+<span class="hljs-addition">+  color: @color;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+&lt;/style&gt;</span>
+<span class="hljs-addition">+&lt;style scoped lang="scss"&gt;</span>
+<span class="hljs-addition">+$color: green;</span>
+<span class="hljs-addition">+h3 {</span>
+<span class="hljs-addition">+  color: $color;</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+&lt;/style&gt;</span>
+</code></pre>
+<h3 id="t6810.5 全局注入">10.5 全局注入 <a href="#t6810.5 全局注入"> # </a></h3>
+<ul>
+<li>可以把全局样式文件全局注入到项目中</li>
+</ul>
+<h4 id="t6910.5.1 vite.config.ts">10.5.1 vite.config.ts <a href="#t6910.5.1 vite.config.ts"> # </a></h4>
+<p>vite.config.ts</p>
+<pre><code class="lang-diff">import { defineConfig } from "vite"
+import { resolve } from "path"
+import vue from "@vitejs/plugin-vue"
+export default defineConfig({
+  resolve: {
+    alias: {
+      "@": resolve("src")
+    }
+  },
+  plugins: [vue()],
+<span class="hljs-addition">+ css: {</span>
+<span class="hljs-addition">+   preprocessorOptions: {</span>
+<span class="hljs-addition">+     scss: {</span>
+<span class="hljs-addition">+       additionalData: '@import "@/styles/theme.scss";'</span>
+<span class="hljs-addition">+     },</span>
+<span class="hljs-addition">+     less: {</span>
+<span class="hljs-addition">+       additionalData: '@import "@/styles/theme.less";'</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ }</span>
+})
+
+</code></pre>
+<h4 id="t7010.5.2 src\styles\theme.less">10.5.2 src\styles\theme.less <a href="#t7010.5.2 src\styles\theme.less"> # </a></h4>
+<p>src\styles\theme.less</p>
+<pre><code class="lang-diff">@color: red;
+</code></pre>
+<h4 id="t7110.5.3 src\styles\theme.scss">10.5.3 src\styles\theme.scss <a href="#t7110.5.3 src\styles\theme.scss"> # </a></h4>
+<p>src\styles\theme.scss</p>
+<pre><code class="lang-diff">$color: green;
+</code></pre>
+<h4 id="t7210.5.4 src\components\HelloWorld.vue">10.5.4 src\components\HelloWorld.vue <a href="#t7210.5.4 src\components\HelloWorld.vue"> # </a></h4>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import { ref } from "vue"
+import logoUrl from "../assets/logo.png"
+import style from "./HelloWorld.module.css"
+defineProps&lt;{ msg: string }&gt;()
+const count = ref(0)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;img :src="logoUrl" /&gt;
+  &lt;div&gt;
+    &lt;button type="button" @click="count++"&gt;count is: {{ count }}&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;a :class="style.link"&gt;超链接&lt;/a&gt;
+  &lt;h2&gt;less&lt;/h2&gt;
+  &lt;h3&gt;sass&lt;/h3&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+img {
+  width: 100px;
+  height: 100px;
+}
+&lt;/style&gt;
+&lt;style module&gt;
+.link {
+  color: red;
+}
+&lt;/style&gt;
+&lt;style scoped lang="less"&gt;
+<span class="hljs-deletion">-@color: red;</span>
+h2 {
+  color: @color;
+}
+&lt;/style&gt;
+&lt;style scoped lang="scss"&gt;
+<span class="hljs-deletion">-$color: green;</span>
+h3 {
+  color: $color;
+}
+&lt;/style&gt;
+
+
+</code></pre>
+<h3 id="t7310.6 PostCSS">10.6 PostCSS <a href="#t7310.6 PostCSS"> # </a></h3>
+<ul>
+<li>为了浏览器的兼容性，有时候我们必须加入-webkit,-ms,-o,-moz 这些前缀<ul>
+<li>Trident 内核：主要代表为 IE 浏览器, 前缀为-ms</li>
+<li>Gecko 内核：主要代表为 Firefox, 前缀为-moz</li>
+<li>Presto 内核：主要代表为 Opera, 前缀为-o</li>
+<li>Webkit 内核：产要代表为 Chrome 和 Safari, 前缀为-webkit</li>
+</ul>
+</li>
+<li>如果项目包含有效的 PostCSS 配置，它将会自动应用于所有已导入的 CSS</li>
+</ul>
+<h4 id="t7410.6.1 安装">10.6.1 安装 <a href="#t7410.6.1 安装"> # </a></h4>
+<pre><code class="lang-js">pnpm install autoprefixer  -D
+</code></pre>
+<h4 id="t7510.6.2 postcss.config.js">10.6.2 postcss.config.js <a href="#t7510.6.2 postcss.config.js"> # </a></h4>
+<p>postcss.config.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">plugins</span>: [<span class="hljs-built_in">require</span>(<span class="hljs-string">"autoprefixer"</span>)]
+}
+</code></pre>
+<h4 id="t7610.6.3 .browserslistrc">10.6.3 .browserslistrc <a href="#t7610.6.3 .browserslistrc"> # </a></h4>
+<p>.browserslistrc</p>
+<pre><code class="lang-js">&gt;<span class="hljs-number">0.2</span>%
+not dead
+not op_mini all
+</code></pre>
+<h4 id="t7710.6.4 HelloWorld.vue">10.6.4 HelloWorld.vue <a href="#t7710.6.4 HelloWorld.vue"> # </a></h4>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import { ref } from "vue"
+import logoUrl from "../assets/logo.png"
+import style from "./HelloWorld.module.css"
+defineProps&lt;{ msg: string }&gt;()
+const count = ref(0)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;img :src="logoUrl" /&gt;
+  &lt;div&gt;
+    &lt;button type="button" @click="count++"&gt;count is: {{ count }}&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;a :class="style.link"&gt;超链接&lt;/a&gt;
+  &lt;h2&gt;less&lt;/h2&gt;
+  &lt;h3&gt;sass&lt;/h3&gt;
+<span class="hljs-addition">+ &lt;div class="postcss"&gt;&lt;/div&gt;</span>
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+img {
+  width: 100px;
+  height: 100px;
+}
+&lt;/style&gt;
+&lt;style module&gt;
+.link {
+  color: red;
+}
+&lt;/style&gt;
+&lt;style scoped lang="less"&gt;
+@color: red;
+h2 {
+  color: @color;
+}
+&lt;/style&gt;
+&lt;style scoped lang="scss"&gt;
+$color: green;
+h3 {
+  color: $color;
+}
+&lt;/style&gt;
+<span class="hljs-addition">+&lt;style scoped&gt;</span>
+<span class="hljs-addition">+.postcss {</span>
+<span class="hljs-addition">+  height: 30px;</span>
+<span class="hljs-addition">+  width: 60px;</span>
+<span class="hljs-addition">+  background-color: orange;</span>
+<span class="hljs-addition">+  transform: rotate(25deg);</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+&lt;/style&gt;</span>
+</code></pre>
+<h2 id="t7811.静态资源处理">11.静态资源处理 <a href="#t7811.静态资源处理"> # </a></h2>
+<ul>
+<li><a href="https://cn.vitejs.dev/guide/assets.html">assets</a></li>
+<li>服务时引入一个静态资源会返回解析后的公共路径</li>
+</ul>
+<h3 id="t7911.1 模板引入">11.1 模板引入 <a href="#t7911.1 模板引入"> # </a></h3>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;template&gt;
+<span class="hljs-addition">+ &lt;img src="@/assets/logo.png" style="width: 50px" /&gt;</span>
+&lt;/template&gt;
+</code></pre>
+<h3 id="t8011.2 JS 中引入">11.2 JS 中引入 <a href="#t8011.2 JS 中引入"> # </a></h3>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+<span class="hljs-addition">+import logoUrl from "@/assets/logo.png"</span>
+&lt;/script&gt;
+&lt;template&gt;
+<span class="hljs-addition">+ &lt;img :src="logoUrl" style="width: 50px" /&gt;</span>
+&lt;/template&gt;
+</code></pre>
+<h3 id="t8111.3 CSS 引入">11.3 CSS 引入 <a href="#t8111.3 CSS 引入"> # </a></h3>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;template&gt;
+<span class="hljs-addition">+ &lt;div class="logo"&gt;&lt;/div&gt;</span>
+&lt;/template&gt;
+&lt;style scoped&gt;
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(@/assets/logo.png);
+  background-size: contain;
+}
+&lt;/style&gt;
+</code></pre>
+<h3 id="t8211.4 public 目录">11.4 public 目录 <a href="#t8211.4 public 目录"> # </a></h3>
+<ul>
+<li><a href="https://cn.vitejs.dev/guide/assets.html#the-public-directory">public 目录</a></li>
+<li>如果有以下需求<ul>
+<li>这些资源不会被源码引用（例如 robots.txt）</li>
+<li>这些资源必须保持原有文件名（没有经过 hash）</li>
+<li>那么你可以将该资源放在指定的 public 目录中，它应位于你的项目根目录</li>
+<li>该目录中的资源在开发时能直接通过 / 根路径访问到，并且打包时会被完整复制到目标目录的根目录下</li>
+</ul>
+</li>
+</ul>
+<p>index.html</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/logo.png"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width:50px"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<h2 id="t8312. mock">12. mock <a href="#t8312. mock"> # </a></h2>
+<ul>
+<li><a href="https://github.com/vbenjs/vite-plugin-mock/blob/HEAD/README.zh_CN.md">vite-plugin-mock</a>提供本地和生产模拟服务</li>
+<li>vite 的数据模拟插件，是基于 vite.js 开发的。 并同时支持本地环境和生产环境</li>
+</ul>
+<h3 id="t8412.1 安装">12.1 安装 <a href="#t8412.1 安装"> # </a></h3>
+<pre><code class="lang-js">pnpm install mockjs  vite-plugin-mock -D
+</code></pre>
+<h3 id="t8512.2 vite.config.ts">12.2 vite.config.ts <a href="#t8512.2 vite.config.ts"> # </a></h3>
+<p>vite.config.ts</p>
+<pre><code class="lang-diff">import { defineConfig } from "vite"
+import { resolve } from "path"
+import vue from "@vitejs/plugin-vue"
+<span class="hljs-addition">+import { viteMockServe } from "vite-plugin-mock"</span>
+export default defineConfig({
+  resolve: {
+    alias: {
+      "@": resolve("src")
+    }
+  },
+<span class="hljs-addition">+ plugins: [vue(), viteMockServe()],</span>
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/styles/theme.scss";'
+      },
+      less: {
+        additionalData: '@import "@/styles/theme.less";'
+      }
+    }
+  }
+})
+
+</code></pre>
+<h3 id="t8612.3 mock\auth.ts">12.3 mock\auth.ts <a href="#t8612.3 mock\auth.ts"> # </a></h3>
+<p>mock\auth.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { MockMethod } <span class="hljs-keyword">from</span> <span class="hljs-string">"vite-plugin-mock"</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> [
+  {
+    <span class="hljs-attr">url</span>: <span class="hljs-string">"/api/currentUser"</span>,
+    <span class="hljs-attr">method</span>: <span class="hljs-string">"get"</span>,
+    <span class="hljs-attr">response</span>: <span class="hljs-function">(<span class="hljs-params">{ query }</span>) =&gt;</span> {
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">code</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">data</span>: <span class="hljs-string">"zhufeng"</span>
+      }
+    }
+  }
+] <span class="hljs-keyword">as</span> MockMethod[]
+</code></pre>
+<h2 id="t8713. 封装请求">13. 封装请求 <a href="#t8713. 封装请求"> # </a></h2>
+<ul>
+<li><a href="https://www.attojs.com/">VueRequest</a></li>
+</ul>
+<h3 id="t8813.1 安装">13.1 安装 <a href="#t8813.1 安装"> # </a></h3>
+<pre><code class="lang-js">pnpm install axios
+</code></pre>
+<h3 id="t8913.2 mock\auth.ts">13.2 mock\auth.ts <a href="#t8913.2 mock\auth.ts"> # </a></h3>
+<p>mock\auth.ts</p>
+<pre><code class="lang-diff">import { MockMethod } from "vite-plugin-mock"
+export default [
+<span class="hljs-addition">+ {</span>
+<span class="hljs-addition">+   url: "/api/currentUser",</span>
+<span class="hljs-addition">+   method: "get",</span>
+<span class="hljs-addition">+   response: ({ headers }) =&gt; {</span>
+<span class="hljs-addition">+     const { token } = headers</span>
+<span class="hljs-addition">+     return {</span>
+<span class="hljs-addition">+       code: 0,</span>
+<span class="hljs-addition">+       data: token</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ },</span>
+<span class="hljs-addition">+ {</span>
+<span class="hljs-addition">+   url: "/api/login",</span>
+<span class="hljs-addition">+   method: "post",</span>
+<span class="hljs-addition">+   response: ({ body }) =&gt; {</span>
+<span class="hljs-addition">+     //url body,query headers</span>
+<span class="hljs-addition">+     return {</span>
+<span class="hljs-addition">+       code: 0,</span>
+<span class="hljs-addition">+       data: `${body.username}-token`</span>
+<span class="hljs-addition">+     }</span>
+<span class="hljs-addition">+   }</span>
+<span class="hljs-addition">+ }</span>
+] as MockMethod[]
+</code></pre>
+<h3 id="t9013.3 http.ts">13.3 http.ts <a href="#t9013.3 http.ts"> # </a></h3>
+<p>src\api\http.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> axios, { AxiosRequestConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">"axios"</span>
+axios.defaults.baseURL = <span class="hljs-string">"/api"</span>
+axios.defaults.timeout = <span class="hljs-number">10000</span>
+axios.defaults.headers.post[<span class="hljs-string">"Content-Type"</span>] = <span class="hljs-string">"application/json;charset=UTF-8"</span>
+axios.interceptors.request.use(
+  (config): <span class="hljs-function"><span class="hljs-params">AxiosRequestConfig</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> token = <span class="hljs-built_in">window</span>.sessionStorage.getItem(<span class="hljs-string">"token"</span>)
+    <span class="hljs-keyword">if</span> (token) {
+      ;(config.headers = config.headers || {}).token = token
+    }
+    <span class="hljs-keyword">return</span> config
+  },
+  (error) =&gt; {
+    <span class="hljs-keyword">throw</span> error
+  }
+)
+<span class="hljs-comment">// 响应拦截</span>
+axios.interceptors.response.use(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+  <span class="hljs-keyword">return</span> res.data
+})
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> axios
+</code></pre>
+<h3 id="t9113.4 src\api\auth.ts">13.4 src\api\auth.ts <a href="#t9113.4 src\api\auth.ts"> # </a></h3>
+<p>src\api\auth.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> http <span class="hljs-keyword">from</span> <span class="hljs-string">"./http"</span>
+<span class="hljs-keyword">import</span> { LoginParams } <span class="hljs-keyword">from</span> <span class="hljs-string">"@/typings/auth"</span>
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">login</span>(<span class="hljs-params">loginParams: LoginParams</span>) </span>{
+  <span class="hljs-keyword">return</span> http.post(<span class="hljs-string">"/login"</span>, loginParams)
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getCurrentUser</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> http.get(<span class="hljs-string">"/currentUser"</span>)
+}
+</code></pre>
+<h3 id="t9213.5 auth.ts">13.5 auth.ts <a href="#t9213.5 auth.ts"> # </a></h3>
+<p>src\typings\auth.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> interface LoginParams {
+  <span class="hljs-attr">username</span>: string
+  <span class="hljs-attr">password</span>: string
+}
+<span class="hljs-keyword">export</span> interface Response {
+  <span class="hljs-attr">code</span>: number
+  <span class="hljs-attr">data</span>: any
+}
+</code></pre>
+<h3 id="t9313.6 src\request.ts">13.6 src\request.ts <a href="#t9313.6 src\request.ts"> # </a></h3>
+<p>src\request.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { LoginParams, Response } <span class="hljs-keyword">from</span> <span class="hljs-string">"@/typings/auth"</span>
+<span class="hljs-keyword">import</span> { login, getCurrentUser } <span class="hljs-keyword">from</span> <span class="hljs-string">"@/api/auth"</span>
+<span class="hljs-keyword">const</span> loginParams: LoginParams = { <span class="hljs-attr">username</span>: <span class="hljs-string">"zhufeng"</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">"123456"</span> }
+login(loginParams).then(<span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> token = result.data
+  <span class="hljs-built_in">window</span>.sessionStorage.setItem(<span class="hljs-string">"token"</span>, token)
+  getCurrentUser().then(<span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(result.data)
+  })
+})
+</code></pre>
+<h3 id="t9413.7 main.ts">13.7 main.ts <a href="#t9413.7 main.ts"> # </a></h3>
+<p>src\main.ts</p>
+<pre><code class="lang-diff">import { createApp } from "vue"
+import App from "./App.vue"
+import "./global.css"
+<span class="hljs-addition">+import "@/request"</span>
+const app = createApp(App)
+app.mount("#app")
+
+
+</code></pre>
+<h2 id="t9514. 状态管理">14. 状态管理 <a href="#t9514. 状态管理"> # </a></h2>
+<ul>
+<li><a href="https://devtools.vuejs.org/">devtools</a></li>
+<li><a href="https://pinia.vuejs.org/introduction.html">pinia</a><ul>
+<li>支持 Vue3</li>
+<li>抛弃 Mutations，只有 state、getters 和 actions</li>
+</ul>
+</li>
+</ul>
+<h3 id="t9614.1 安装">14.1 安装 <a href="#t9614.1 安装"> # </a></h3>
+<pre><code class="lang-js">pnpm install pinia
+</code></pre>
+<h3 id="t9714.2 src\main.ts">14.2 src\main.ts <a href="#t9714.2 src\main.ts"> # </a></h3>
+<p>src\main.ts</p>
+<pre><code class="lang-diff">import { createApp } from "vue"
+import App from "./App.vue"
+import "./global.css"
+import "@/request"
+<span class="hljs-addition">+import { createPinia } from "pinia"</span>
+const app = createApp(App)
+<span class="hljs-addition">+app.use(createPinia())</span>
+app.mount("#app")
+</code></pre>
+<h3 id="t9814.3 store\index.ts">14.3 store\index.ts <a href="#t9814.3 store\index.ts"> # </a></h3>
+<p>src\store\index.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineStore } <span class="hljs-keyword">from</span> <span class="hljs-string">"pinia"</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> useMainStore = defineStore({
+  <span class="hljs-attr">id</span>: <span class="hljs-string">"main"</span>,
+  <span class="hljs-attr">state</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> ({
+    <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">firstName</span>: <span class="hljs-string">"张"</span>,
+    <span class="hljs-attr">lastName</span>: <span class="hljs-string">"三"</span>
+  }),
+  <span class="hljs-comment">//计算属性</span>
+  <span class="hljs-attr">getters</span>: {
+    <span class="hljs-attr">name</span>: <span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.firstName + state.lastName
+  },
+  <span class="hljs-attr">actions</span>: {
+    <span class="hljs-keyword">async</span> addAmount(amount: number) {
+      <span class="hljs-keyword">this</span>.count += amount
+    }
+  }
+})
+</code></pre>
+<h3 id="t9914.4 HelloWorld.vue">14.4 HelloWorld.vue <a href="#t9914.4 HelloWorld.vue"> # </a></h3>
+<p>src\components\HelloWorld.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import { ref } from "vue"
+import logoUrl from "../assets/logo.png"
+import style from "./HelloWorld.module.css"
+<span class="hljs-addition">+import { useMainStore } from "@/store"</span>
+<span class="hljs-addition">+import { storeToRefs } from "pinia"</span>
+<span class="hljs-addition">+defineProps&lt;{ msg: string }&gt;()</span>
+<span class="hljs-addition">+const count = ref(0)</span>
+<span class="hljs-addition">+const mainStore = useMainStore()</span>
+<span class="hljs-addition">+//const storeCount = mainStore.count</span>
+<span class="hljs-addition">+const { count: storeCount } = storeToRefs(mainStore)</span>
+
+<span class="hljs-addition">+const add = () =&gt; {</span>
+<span class="hljs-addition">+  //适合多字段改变</span>
+<span class="hljs-addition">+  mainStore.$patch({</span>
+<span class="hljs-addition">+    name: "arch",</span>
+<span class="hljs-addition">+    count: mainStore.count + 1</span>
+<span class="hljs-addition">+  })</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+const add2 = () =&gt; {</span>
+<span class="hljs-addition">+  //适合多字段改变</span>
+<span class="hljs-addition">+  mainStore.$patch((state) =&gt; ({</span>
+<span class="hljs-addition">+    name: "arch2",</span>
+<span class="hljs-addition">+    count: mainStore.count + 2</span>
+<span class="hljs-addition">+  }))</span>
+<span class="hljs-addition">+}</span>
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;img :src="logoUrl" /&gt;
+  &lt;div&gt;
+    &lt;button type="button" @click="count++"&gt;count is: {{ count }}&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;a :class="style.link"&gt;超链接&lt;/a&gt;
+  &lt;h2&gt;less&lt;/h2&gt;
+  &lt;h3&gt;sass&lt;/h3&gt;
+  &lt;div class="postcss"&gt;&lt;/div&gt;
+<span class="hljs-addition">+ &lt;div&gt;</span>
+<span class="hljs-addition">+   &lt;p&gt;name:{{ mainStore.name }}&lt;/p&gt;</span>
+<span class="hljs-addition">+   &lt;p&gt;count:{{ mainStore.count }}&lt;/p&gt;</span>
+<span class="hljs-addition">+   &lt;p&gt;count:{{ storeCount }}&lt;/p&gt;</span>
+<span class="hljs-addition">+   &lt;button @click="mainStore.count++"&gt;mainStore.count++&lt;/button&gt;</span>
+<span class="hljs-addition">+   &lt;button @click="add()"&gt;add()&lt;/button&gt;</span>
+<span class="hljs-addition">+   &lt;button @click="add2()"&gt;add2()&lt;/button&gt;</span>
+<span class="hljs-addition">+   &lt;button @click="mainStore.addAmount(3)"&gt;mainStore.addAmount(3)&lt;/button&gt;</span>
+<span class="hljs-addition">+   &lt;p&gt;name:{{ mainStore.name }}&lt;/p&gt;</span>
+<span class="hljs-addition">+ &lt;/div&gt;</span>
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+img {
+  width: 100px;
+  height: 100px;
+}
+&lt;/style&gt;
+&lt;style module&gt;
+.link {
+  color: red;
+}
+&lt;/style&gt;
+&lt;style scoped lang="less"&gt;
+@color: red;
+h2 {
+  color: @color;
+}
+&lt;/style&gt;
+&lt;style scoped lang="scss"&gt;
+$color: green;
+h3 {
+  color: $color;
+}
+&lt;/style&gt;
+&lt;style scoped&gt;
+.postcss {
+  height: 30px;
+  width: 60px;
+  background-color: orange;
+  transform: rotate(25deg);
+}
+&lt;/style&gt;
+
+
+</code></pre>
+<h2 id="t10015. 路由">15. 路由 <a href="#t10015. 路由"> # </a></h2>
+<ul>
+<li><a href="https://next.router.vuejs.org/zh/guide/">router</a></li>
+</ul>
+<h3 id="t10115.1 安装">15.1 安装 <a href="#t10115.1 安装"> # </a></h3>
+<pre><code class="lang-js">pnpm install vue-router
+</code></pre>
+<h3 id="t10215.2 router\index.ts">15.2 router\index.ts <a href="#t10215.2 router\index.ts"> # </a></h3>
+<p>src\router\index.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createRouter, createWebHistory, RouteRecordRaw } <span class="hljs-keyword">from</span> <span class="hljs-string">"vue-router"</span>
+
+<span class="hljs-keyword">const</span> routes: RouteRecordRaw[] = [
+  {
+    <span class="hljs-attr">path</span>: <span class="hljs-string">"/"</span>,
+    <span class="hljs-attr">name</span>: <span class="hljs-string">"home"</span>,
+    <span class="hljs-attr">component</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">"@/pages/HomePage.vue"</span>)
+  },
+  {
+    <span class="hljs-attr">path</span>: <span class="hljs-string">"/login"</span>,
+    <span class="hljs-attr">name</span>: <span class="hljs-string">"login"</span>,
+    <span class="hljs-attr">component</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">"@/pages/LoginPage.vue"</span>)
+  }
+]
+
+<span class="hljs-keyword">const</span> router = createRouter({
+  <span class="hljs-attr">history</span>: createWebHistory(),
+  routes
+})
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> router
+</code></pre>
+<h3 id="t10315.3 HomePage.vue">15.3 HomePage.vue <a href="#t10315.3 HomePage.vue"> # </a></h3>
+<p>src\pages\HomePage.vue</p>
+<pre><code class="lang-js">&lt;template&gt;
+  &lt;h1&gt;Home&lt;/h1&gt;
+&lt;/template&gt;
+</code></pre>
+<h3 id="t10415.4 LoginPage.vue">15.4 LoginPage.vue <a href="#t10415.4 LoginPage.vue"> # </a></h3>
+<p>src\pages\LoginPage.vue</p>
+<pre><code class="lang-js">&lt;template&gt;
+  &lt;form&gt;
+    用户名 &lt;input /&gt;
+  &lt;/form&gt;
+&lt;/template&gt;
+</code></pre>
+<h3 id="t10515.5 src\main.ts">15.5 src\main.ts <a href="#t10515.5 src\main.ts"> # </a></h3>
+<p>src\main.ts</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">"vue"</span>
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">"./App.vue"</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"./global.css"</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"@/request"</span>
+<span class="hljs-keyword">import</span> { createPinia } <span class="hljs-keyword">from</span> <span class="hljs-string">"pinia"</span>
++<span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">"./router"</span>
+<span class="hljs-keyword">const</span> app = createApp(App)
+app.use(createPinia())
++app.use(router)
+app.mount(<span class="hljs-string">"#app"</span>)
+
+</code></pre>
+<h3 id="t10615.6 App.vue">15.6 App.vue <a href="#t10615.6 App.vue"> # </a></h3>
+<p>src\App.vue</p>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import HelloWorld from "@/components/HelloWorld.vue"
+import msg from "./msg"
+&lt;/script&gt;
+
+&lt;template&gt;
+<span class="hljs-addition">+  &lt;router-view&gt;&lt;/router-view&gt;</span>
+&lt;/template&gt;
+
+&lt;style&gt;&lt;/style&gt;
+
+</code></pre>
+<h2 id="t10716. UI 组件库">16. UI 组件库 <a href="#t10716. UI 组件库"> # </a></h2>
+<ul>
+<li><a href="https://www.naiveui.com/zh-CN/os-theme">Naïve UI</a>是一个 Vue 3 组件库</li>
+<li><a href="https://v3.cn.vuejs.org/api/global-api.html#h">h</a>返回一个”虚拟节点“，通常缩写为 VNode,接收三个参数：type，props 和 children</li>
+<li><a href="https://www.naiveui.com/zh-CN/os-theme/components/menu">menu</a></li>
+</ul>
+<h3 id="t10816.1 安装">16.1 安装 <a href="#t10816.1 安装"> # </a></h3>
+<pre><code class="lang-js">pnpm install naive-ui vfonts @vicons/ionicons5
+</code></pre>
+<h3 id="t10916.2 src\App.vue">16.2 src\App.vue <a href="#t10916.2 src\App.vue"> # </a></h3>
+<ul>
+<li>Non-function value encountered for default slot. Prefer function slots for better performance.
+src\App.vue</li>
+<li><a href="https://v3.cn.vuejs.org/api/built-in-components.html#slot">slot</a>用于具名插槽</li>
+</ul>
+<pre><code class="lang-diff">&lt;script setup lang="ts"&gt;
+import HelloWorld from "@/components/HelloWorld.vue"
+import msg from "./msg"
+<span class="hljs-addition">+import { h, Component } from "vue"</span>
+<span class="hljs-addition">+import { NIcon, NMenu } from "naive-ui"</span>
+<span class="hljs-addition">+import type { MenuOption } from "naive-ui"</span>
+<span class="hljs-addition">+import { RouterLink } from "vue-router"</span>
+<span class="hljs-addition">+import { HomeOutline, LogInOutline } from "@vicons/ionicons5"</span>
+<span class="hljs-addition">+const menuOptions: MenuOption[] = [</span>
+<span class="hljs-addition">+  {</span>
+<span class="hljs-addition">+    label: () =&gt;</span>
+<span class="hljs-addition">+      h(RouterLink, { to: { name: "home" } }, { default: () =&gt; "首页" }),</span>
+<span class="hljs-addition">+    key: "home",</span>
+<span class="hljs-addition">+    icon: () =&gt; h(NIcon, null, { default: () =&gt; h(HomeOutline) }) //带有插槽的对象</span>
+<span class="hljs-addition">+  },</span>
+<span class="hljs-addition">+  {</span>
+<span class="hljs-addition">+    label: () =&gt;</span>
+<span class="hljs-addition">+      h(RouterLink, { to: { name: "login" } }, { default: () =&gt; "登录" }),</span>
+<span class="hljs-addition">+    key: "login",</span>
+<span class="hljs-addition">+    icon: () =&gt; h(NIcon, null, { default: () =&gt; h(LogInOutline) })</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+]</span>
+&lt;/script&gt;
+
+&lt;template&gt;
+<span class="hljs-addition">+  &lt;n-menu :options="menuOptions" /&gt;</span>
+  &lt;router-view&gt;&lt;/router-view&gt;
+&lt;/template&gt;
+
+&lt;style&gt;&lt;/style&gt;
+
+</code></pre>
+<h2 id="t11017. 环境变量和模式">17. 环境变量和模式 <a href="#t11017. 环境变量和模式"> # </a></h2>
+<ul>
+<li>Vite 在一个特殊的 import.meta.env 对象上暴露<a href="https://vitejs.cn/guide/env-and-mode.html">环境变量</a><ul>
+<li>import.meta.env.MODE: {string} 应用运行的模式</li>
+<li>import.meta.env.BASE_URL: {string} 部署应用时的基本 URL。他由 base 配置项决定</li>
+<li>import.meta.env.PROD: {boolean} 应用是否运行在生产环境</li>
+<li>import.meta.env.DEV: {boolean} 应用是否运行在开发环境 (永远与 import.meta.env.PROD 相反)</li>
+</ul>
+</li>
+</ul>
+<h3 id="t11117.1 .env.development">17.1 .env.development <a href="#t11117.1 .env.development"> # </a></h3>
+<pre><code class="lang-js">VITE_APP_WEB_URL = <span class="hljs-string">"/dev"</span>
+</code></pre>
+<h3 id="t11217.2 .env.production">17.2 .env.production <a href="#t11217.2 .env.production"> # </a></h3>
+<pre><code class="lang-js">VITE_APP_WEB_URL = <span class="hljs-string">"/prod"</span>
+</code></pre>
+<h3 id="t11317.3 src\main.ts">17.3 src\main.ts <a href="#t11317.3 src\main.ts"> # </a></h3>
+<pre><code class="lang-diff"><span class="hljs-addition">+console.log(import.meta.env)</span>
+</code></pre>
+<h3 id="t11417.4 package.json">17.4 package.json <a href="#t11417.4 package.json"> # </a></h3>
+<p>package.json</p>
+<pre><code class="lang-diff">{
+  "scripts": {
+<span class="hljs-addition">+    "build:dev": "vue-tsc --noEmit &amp;&amp; vite build --mode development",</span>
+<span class="hljs-addition">+    "build:prod": "vue-tsc --noEmit &amp;&amp; vite build --mode production",</span>
+  },
+}
+</code></pre>
+
+    </div>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="control-label">姓名:</label>
+              <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label">密码:</label>
+              <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.zhufengpeixun.com/jquerymin_1645176580555.js"></script>
+  <script src="https://static.zhufengpeixun.com/bootstrapmin_1645176554753.js"></script>
+  <script>
+  </script>
+  <script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script><script type="text/javascript" src="../static/js/theme.js"></script>
+
+
+</body></html>
