@@ -609,7 +609,7 @@ html {
 
 .warpper {
     width: 100%;
-    padding: 80px 0 0 0;
+    /* padding: 80px 0 0 0; */
     height: 100%;
     overflow: auto;
 }

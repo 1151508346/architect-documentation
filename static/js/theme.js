@@ -445,7 +445,7 @@ function main() {
     settingLoginFonSize()
     toggleMenuState()
 
-    addMobileMenu()
+    // addMobileMenu()
 
 }
 window.onload = () => {
