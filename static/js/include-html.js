@@ -64,7 +64,7 @@ function initNavEvent(){
     $('.nav').height('80px');
   })
   $('.logo').on('click',function(){
-    $('.nav').css('display','none');
+    // $(".nav").css("display", "none");
    $('.warpper').css('padding','0px');
   })
 }
