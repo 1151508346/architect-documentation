@@ -77,6 +77,12 @@ exports.copyImg = copy = () => {
   return src("./static/img/*.*")
   .pipe(dest('dist/static/img'))
 }
+
+const copyHtmlFile = () => {
+  return src("./html/*/**")
+  .pipe(dest('dist/html/'))
+}
+exports.copyHtmlFile =  copyHtmlFile
 exports.copyzhufengImg = copy = () => {
   return src("./static/zhufengImg/*.*")
   .pipe(dest('dist/static/zhufengImg'))
@@ -99,4 +105,4 @@ exports.clean = clean = () => {
 
 exports.htmls = () => gulp.series(htmls())
 exports.indexHtml = indexHtml;
-exports.default = gulp.parallel([gulp.series([indexHtml,scripts,copy, csss]),gulp.series(htmls())])
+exports.default = gulp.parallel([gulp.series([indexHtml,scripts,copy,copyHtmlFile, csss]),gulp.series(htmls())])
