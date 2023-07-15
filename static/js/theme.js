@@ -1870,7 +1870,7 @@ function modifyLogo() {
 }
 
 const getSearchTemplate = (value) => {
-  let str = `<ul class='menu-ul' style='overflow: initial;'>`
+  let str = `<ul class='menu-ul' style='overflow: initial; display:block'>`
   const existList = menuList.filter(item => {
     const {href,name} = item; 
     if(!value) return true;
@@ -1910,7 +1910,7 @@ const searchInputList = () => {
   }
   searchInput.onblur = () => {
     setTimeout(() => {
-      searchList.style.display = 'none';
+      // searchList.style.display = 'none';
     },200)
   }
 }

@@ -533,8 +533,10 @@ html {
         display: -ms-inline-flexbox;
         display: inline-flex;
         width: 100%;
-        overflow: auto
+        overflow: auto;
+        display: none;
     }
+
 }
 
 .nav ul ul {
