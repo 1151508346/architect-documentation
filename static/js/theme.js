@@ -317,6 +317,7 @@ const menuTemplate = `
   <li style='float:none;'><a href="../html/132.keepalive.html">132.keepalive</a></li>
   <li style='float:none;'><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
   <li style='float:none;'><a href="../html/134.react18.html">134.react18</a></li>
+  <li style='float:none;'><a href="../html/134.2.react18.html">134.2.react18.</a></li>
   <li style='float:none;'><a href="../html/135.function.html">135.function</a></li>
   <li style='float:none;'><a href="../html/136.toolkit.html">136.toolkit</a></li>
   <li style='float:none;'><a href="../html/137.lerna.html">137.lerna</a></li>
@@ -1622,6 +1623,10 @@ const menuList = [
     name: '134.react18'
   },
   {
+    href: '../html/134.2.react18.html',
+    name: '134.2.react18'
+  },
+  {
     href: '../html/135.function.html',
     name: '135.function'
   },
@@ -2041,9 +2046,11 @@ function bindEvent() {
   }
   selectTheme.onchange = function (e) {
     const v = e.target.selectedIndex
+
     localStorage.setItem('$$_THEME_STYLE', v)
 
     if (v === 0) {
+      document.documentElement.classList.remove('dark-theme')
       lightTheme()
       if (toggleImg.src.indexOf('toggle-left') !== -1) {
         toggleImg.src = '/static/icon/toggle-left.png'
@@ -2052,6 +2059,7 @@ function bindEvent() {
       }
 
     } else if (v === 1) {
+      document.documentElement.classList.add('dark-theme')
       darkTheme()
       if (toggleImg.src.indexOf('toggle-left') !== -1) {
         toggleImg.src = '/static/icon/fff_toggle-left.png'
@@ -2103,6 +2111,9 @@ function addThemeSelectList() {
     } else {
       v = 0
     }
+  }
+  if(v == 1 && !document.documentElement.classList.contains('dart-theme')){
+    document.documentElement.classList.add('dark-theme')
   }
   let s = ``
   const map = {
